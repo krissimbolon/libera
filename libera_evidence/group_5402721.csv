@@ -1,0 +1,758 @@
+﻿id;conversation_id;num_characters;relative_time_seconds;message_type;responds_to_id;array_emojis;interrogative;exclamatory;sender_hash;mentioned_phones_hash;message_content
+1;1;0;0.0;system;;[];False;False;281facb8a6854323;[];[Pesan sistem]
+2;1;11-50;5.0;text;;['🐛'];False;False;ab4c5e9fff7f5840;[];hujan deres ga bawa payung
+3;2;51-100;5882271.0;text;;[];True;False;ed47ed97e5e07ca1;[];LU PERNAH COBA BELAJAR BARENG DI PERPUS KOTA GA, ENAK GA DISANA?
+4;2;11-50;5882854.0;text;;[];False;False;ed47ed97e5e07ca1;[];TEMEN GW SAKIT MASUK RS
+5;2;101-500;5883273.0;text;;[];False;False;ed47ed97e5e07ca1;[];HARI INI GW ISENG NYOBA BIKIN KOPI PAKE METODE V60 YANG LAGI HYPE DI KALANGAN ANAK ANAK KAMPUS. BELI ALATNYA LUMAYAN MAHAL SIH TAPI HASILNYA EMANG BEDA DARI KOPI SACHET BIASA. KOPINYA LEBIH SMOOTH DAN GA TERLALU PAHIT. KAYAKNYA GW BAKAL KETAGIHAN NIH BIKIN KOPI SENDIRI TIAP PAGI SEBELUM KE KAMPUS
+6;2;51-100;5883364.0;text;;[];True;False;ed47ed97e5e07ca1;[];LU PERNAH COBA BELAJAR BARENG DI PERPUS KOTA GA, ENAK GA DISANA?
+7;2;11-50;5883475.0;text;;['💪🏽', '💃'];False;True;ed47ed97e5e07ca1;[];GW KAGET PAS DENGER ITU!
+8;3;51-100;5921815.0;text;;[];False;False;03bff00c94babaff;[];hari ni gw ad rapat organisasi sampe sore jadi ga bs ikut nongkrong
+9;3;11-50;5921816.0;text;;[];False;False;03bff00c94babaff;[];reuni kapan ya kita
+10;4;51-100;5941151.0;text;;[];False;True;ed47ed97e5e07ca1;['c6a2611d16f13869'];SENENG BANGET GW DAPET TAWARAN MAGANG DI PERUSAHAAN IMPIAN GW!
+11;4;101-500;5943611.0;text;;[];False;False;c6a2611d16f13869;[];hari ini gw,,, iseng,,, nyoba bikin,,, kopi pake metode,,, v60,,, yang lagi hype di kalangan anak,,, anak kampus.,,, beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya,,, lebih smooth dan ga terlalu pahit.,,, kayaknya gw bakal ketagihan,,, nih bikin kopi sendiri tiap pagi sebelum ke kampus
+12;5;51-100;5948932.0;text;;['😋'];False;False;ed47ed97e5e07ca1;[];GW SENENG BANGET AKHIRNYA BISA KETEMU TEMEN TEMEN LAMA SETELAH LAMA GA
+13;5;11-50;5953942.0;text;;[];False;False;03bff00c94babaff;[];charger hp gw rusak lg
+14;5;11-50;5953954.0;text;;['😅'];False;False;03bff00c94babaff;[];gw mau tidur dulu ya
+15;6;11-50;5956436.0;text;;[];True;False;5477803cd11c63e4;[];bayar berapa sih tadi?
+16;6;11-50;5956501.0;text;;[];False;False;ed47ed97e5e07ca1;[];PORSI MAKAN GW NAMBAH TERUS
+17;6;11-50;5956846.0;text;;[];False;False;5477803cd11c63e4;[];gw mau nyoba restoran baru
+18;6;1-10;5957314.0;text;;[];False;False;ed47ed97e5e07ca1;[];WOY
+19;6;1-10;5958440.0;text;;[];False;False;5477803cd11c63e4;[];gass
+20;6;1-10;5958710.0;text;;[];False;False;ed47ed97e5e07ca1;[];NGAB
+21;6;1-10;5958757.0;text;;[];False;False;5477803cd11c63e4;[];gass
+22;6;1-10;5958950.0;text;;[];False;False;ed47ed97e5e07ca1;[];LOL
+23;7;51-100;5959583.0;text;;[];True;False;ed47ed97e5e07ca1;['ab4c5e9fff7f5840', 'c6a2611d16f13869'];GIMANA CARANYA BIAR BISA FOKUS BELAJAR TANPA MAIN HP TERUS YA?
+24;7;1-10;5959611.0;text;;[];False;False;ed47ed97e5e07ca1;[];KOK
+25;7;11-50;5959617.0;text;;[];True;False;ed47ed97e5e07ca1;[];ADA YG MAU BARENG?
+26;7;11-50;5960141.0;text;;['😰'];False;False;c6a2611d16f13869;[];lu dimana sih lama banget
+27;7;1-10;5960147.0;text;;[];False;False;c6a2611d16f13869;[];hoo
+28;7;0;5960892.0;unknown;;[];False;False;5477803cd11c63e4;[];[Media tidak dikenal]
+29;7;0;5960923.0;unknown;;[];False;False;5477803cd11c63e4;[];[Media tidak dikenal]
+30;7;11-50;5961126.0;text;;[];True;False;5477803cd11c63e4;[];wifi password nya apa sih?
+31;7;1-10;5963507.0;text;;['👍🏼'];False;False;03bff00c94babaff;[];woi
+32;7;11-50;5963663.0;text;;[];True;False;03bff00c94babaff;[];nilai keluar kapan ya?
+33;7;11-50;5963682.0;text;;[];True;False;03bff00c94babaff;[];makan apa ntar siang?
+34;7;11-50;5964476.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di warkop nih
+35;7;101-500;5964753.0;text;;[];False;False;03bff00c94babaff;[];gw baru aja beres beresin kosan dan nemu barang barang lama dr jaman sma. ad foto kelas, surat dr mantan, sm buku diary yg isinya cringe bgt kalo dibaca skrg. jadi nostalgia sendiri inget masa masa dulu yg lebih sederhana. kadang kangen jg sih jadi anak sma lg tanpa mikirin skripsi
+36;7;11-50;5964784.0;text;;[];False;False;03bff00c94babaff;[];gw udah di parkiran nih
+37;7;51-100;5964837.0;text;;[];False;False;5477803cd11c63e4;[];motor gw mogok di tengah... jalan tadi pagi jadi gw telat masuk kelas
+38;7;11-50;5964849.0;text;;[];False;False;03bff00c94babaff;[];gw naik ojol aja deh
+39;7;11-50;5964865.0;text;;[];False;False;5477803cd11c63e4;[];macet parah di jalan tol...
+40;7;51-100;5964870.0;text;;[];False;False;03bff00c94babaff;[];temen sekamar gw pindah kosan jadi skrg gw sendirian di kamar
+41;7;11-50;5964879.0;text;;[];False;False;03bff00c94babaff;[];bsk sore ad waktu ga
+42;7;1-10;5964882.0;text;;[];False;False;03bff00c94babaff;[];hoo
+43;7;11-50;5964884.0;text;;[];False;False;03bff00c94babaff;[];ketemuan di mall jam 3 ya
+44;7;51-100;5964905.0;text;;[];False;False;03bff00c94babaff;[];gw hrs nabung lebih banyak sih buat bayar uang semester yg naik
+45;7;51-100;5964949.0;text;;[];True;False;03bff00c94babaff;[];gmn caranya biar bs fokus belajar tanpa main hp terus ya?
+46;7;1-10;5964962.0;text;;[];False;False;5477803cd11c63e4;[];mah
+47;7;101-500;5964974.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW BARU AJA BERES BERESIN KOSAN DAN NEMU BARANG BARANG LAMA DARI JAMAN SMA. ADA FOTO KELAS, SURAT DARI MANTAN, SAMA BUKU DIARY YANG ISINYA CRINGE BANGET KALO DIBACA SEKARANG. JADI NOSTALGIA SENDIRI INGET MASA MASA DULU YANG LEBIH SEDERHANA. KADANG KANGEN JUGA SIH JADI ANAK SMA LAGI TANPA MIKIRIN SKRIPSI
+48;7;11-50;5964974.0;text;;[];False;False;5477803cd11c63e4;[];gw naik ojol... aja deh
+49;7;1-10;5964976.0;text;;[];False;False;5477803cd11c63e4;[];yaa
+50;7;1-10;5964977.0;text;;[];False;False;03bff00c94babaff;[];ooh
+51;7;11-50;5964980.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di warkop nih
+52;7;1-10;5964980.0;text;;[];False;False;03bff00c94babaff;[];emm
+53;7;11-50;5964990.0;text;;[];False;False;03bff00c94babaff;[];gw lg di warkop nih
+54;7;51-100;5965047.0;text;;['😅'];False;False;03bff00c94babaff;[];motor gw mogok di tengah jalan tadi pagi jadi gw telat masuk kelas
+55;7;51-100;5965093.0;text;;[];False;False;03bff00c94babaff;[];gw lg nyoba masak rendang resep nyokap tp kayaknya gagal total deh
+56;7;11-50;5965106.0;text;;[];False;False;03bff00c94babaff;[];rame bgt disini cuy
+57;7;51-100;5965160.0;text;;[];False;False;ed47ed97e5e07ca1;[];MOTOR GW MOGOK DI TENGAH JALAN TADI PAGI JADI GW TELAT MASUK KELAS
+58;7;11-50;5965189.0;text;;[];False;False;03bff00c94babaff;[];macet parah di jalan tol
+59;7;11-50;5965193.0;text;;[];False;False;03bff00c94babaff;[];gw ngga bs ikut malem ni
+60;7;11-50;5965204.0;text;;[];False;False;03bff00c94babaff;[];gw naik ojol aja deh
+61;7;11-50;5965213.0;text;;[];False;False;03bff00c94babaff;[];bsk sore ad waktu ga
+62;7;11-50;5965219.0;text;;[];False;False;ed47ed97e5e07ca1;[];KITA KETEMUAN DIMANA AJA DEH
+63;7;51-100;5965269.0;text;59.0;[];False;False;03bff00c94babaff;[];motor gw mogok di tengah jalan tadi pagi jadi gw telat masuk kelas
+64;7;1-10;5965294.0;text;;[];False;False;03bff00c94babaff;[];kan
+65;7;11-50;5965322.0;text;;[];True;False;03bff00c94babaff;[];nilai keluar kapan ya?
+66;7;11-50;5965329.0;text;;[];False;False;03bff00c94babaff;[];gw naik ojol aja deh
+67;7;11-50;5965338.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW UDAH DI PARKIRAN NIH
+68;7;1-10;5965344.0;text;;[];False;False;03bff00c94babaff;[];kok
+69;7;1-10;5965356.0;text;;[];False;False;03bff00c94babaff;[];woi
+70;7;1-10;5965359.0;text;;[];False;False;03bff00c94babaff;[];ahh
+71;7;11-50;5965374.0;text;;[];False;False;03bff00c94babaff;[];gw ngga bs ikut malem ni
+72;7;11-50;5965386.0;text;;[];False;False;03bff00c94babaff;[];gw naik ojol aja deh
+73;8;11-50;6018302.0;text;;[];False;True;03bff00c94babaff;[];mantap bgt hasilnya!
+74;8;11-50;6018312.0;text;;[];True;False;03bff00c94babaff;[];jadi ketemuan ga hari ni?
+75;8;11-50;6021497.0;text;;[];False;False;5477803cd11c63e4;[];matkul ini susah banget...
+76;9;101-500;6029563.0;text;;[];True;False;ab4c5e9fff7f5840;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+77;9;11-50;6030006.0;text;;[];False;False;ed47ed97e5e07ca1;[];SARAPAN DULU BARU MIKIR
+78;9;51-100;6030082.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI BINGUNG MILIH TOPIK SKRIPSI ANTARA DUA TEMA YANG SAMA MENARIKNYA
+79;9;11-50;6030097.0;text;;[];True;False;ed47ed97e5e07ca1;[];UDAH SAMPE BELOM?
+80;9;11-50;6030204.0;text;;[];False;False;5477803cd11c63e4;[];bakso malang itu buka ga ya
+81;9;1-10;6030252.0;text;;[];False;False;ab4c5e9fff7f5840;[];gass
+82;9;11-50;6030255.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi gw makan nasi padang
+83;9;51-100;6030270.0;text;;[];False;False;ab4c5e9fff7f5840;[];weekend ini gw mau staycation aja di kosan binge watching series baru
+84;9;0;6030289.0;image/jpeg;;[];False;False;ab4c5e9fff7f5840;[];[Foto]
+85;9;51-100;6030306.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi bingung milih topik skripsi antara dua tema yang sama menariknya
+86;9;1-10;6030599.0;text;;['👌🏼'];False;False;ed47ed97e5e07ca1;[];CUY
+87;9;11-50;6030687.0;text;;[];True;False;ab4c5e9fff7f5840;[];bawa motor apa naik apa?
+88;9;1-10;6033023.0;text;;[];False;False;ed47ed97e5e07ca1;[];SIS
+89;10;11-50;6036580.0;text;;[];True;False;ab4c5e9fff7f5840;[];gimana kabar lu sekarang?
+90;10;11-50;6036769.0;text;;[];False;False;ed47ed97e5e07ca1;[];SIDANG MINGGU DEPAN DOAIN YA
+91;10;11-50;6037194.0;text;;[];False;False;ab4c5e9fff7f5840;[];lu udah makan belum
+92;10;51-100;6037223.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw udah bikin slides presentasi tapi kayaknya masih kurang bagus deh isinya
+93;10;11-50;6037230.0;text;;[];False;False;ab4c5e9fff7f5840;[];proposal skripsi gw ditolak
+94;10;11-50;6037846.0;application/pdf;;[];False;False;ed47ed97e5e07ca1;[];[Dokumen PDF]
+95;10;11-50;6037850.0;text;;[];False;False;ed47ed97e5e07ca1;[];PROPOSAL SKRIPSI GW DITOLAK
+96;10;1-10;6038186.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];HMM
+97;10;11-50;6040161.0;text;;[];False;False;ab4c5e9fff7f5840;[];kelas tambahan hari sabtu sih
+98;10;1-10;6040203.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];NAH
+99;10;101-500;6040324.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+100;10;11-50;6040536.0;text;;[];False;False;5477803cd11c63e4;[];warteg depan kampus enak
+101;10;101-500;6040733.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi galau banget nih soal masa depan. mau lanjut s2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+102;10;51-100;6040754.0;image/jpeg;;[];True;False;ab4c5e9fff7f5840;[];[Foto]
+103;10;11-50;6040930.0;text;;[];False;False;ab4c5e9fff7f5840;[];warteg depan kampus enak
+104;10;101-500;6040931.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi galau banget nih soal masa depan. mau lanjut s2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+105;10;51-100;6043106.0;text;;[];False;False;ed47ed97e5e07ca1;[];JANGAN LUPA BESOK KUMPUL DI LOBBY KAMPUS JAM 8 PAGI BUAT BERANGKAT BARENG
+106;10;101-500;6043138.0;image/jpeg;;[];True;False;ed47ed97e5e07ca1;[];[Foto]
+107;10;11-50;6043182.0;text;;['😅'];False;False;03bff00c94babaff;[];gw mau ambil cuti semester
+108;10;11-50;6043187.0;text;;[];True;False;03bff00c94babaff;[];boleh gw ikut ga?
+109;10;11-50;6043220.0;text;;[];True;False;03bff00c94babaff;[];gmn kabar lu skrg?
+110;10;101-500;6043333.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+111;10;11-50;6043353.0;text;;[];False;False;03bff00c94babaff;[];sidang minggu depan doain ya
+112;10;1-10;6043370.0;text;;[];True;False;ab4c5e9fff7f5840;[];dimana?
+113;10;51-100;6043418.0;text;;['🙈'];False;False;ed47ed97e5e07ca1;[];JANGAN LUPA BESOK KUMPUL DI LOBBY KAMPUS JAM 8 PAGI BUAT BERANGKAT BARENG
+114;10;11-50;6043434.0;text;;[];False;False;03bff00c94babaff;[];proposal skripsi gw ditolak
+115;10;1-10;6043439.0;text;;[];False;False;03bff00c94babaff;[];bole
+116;10;51-100;6043610.0;text;;[];True;False;03bff00c94babaff;[];menurut lu gw hrs ambil mata kuliah pilihan yg mana semester depan?
+117;10;11-50;6043666.0;text;;[];False;False;03bff00c94babaff;[];tugas kelompok bikin pusing
+118;10;1-10;6043701.0;text;;[];False;False;03bff00c94babaff;[];aman
+119;10;101-500;6043739.0;text;;[];False;False;03bff00c94babaff;[];gw lg galau bgt nih soal masa depan. mau lanjut s2 tp duit ga ad, mau langsung kerja tp pengalaman msh minim. nyokap bilang terserah gw aja tp gw tau dia pengen gw cepet kerja biar bs bantu ekonomi keluarga. bingung bgt sih, kyk smua pilihan ad plus minusnya
+120;10;51-100;6043776.0;text;;[];False;False;03bff00c94babaff;[];jangan lupa besok kumpul di lobby kampus jam 8 pagi buat berangkat bareng
+121;10;51-100;6043798.0;text;;[];False;False;03bff00c94babaff;[];gw udah bikin slides presentasi tp kayaknya msh kurang bagus deh isinya
+122;10;51-100;6043853.0;text;;[];True;False;03bff00c94babaff;[];menurut lu gw hrs ambil mata kuliah pilihan yg mana semester depan?
+123;10;51-100;6043899.0;text;;['👍🏼'];False;False;03bff00c94babaff;[];jangan lupa besok kumpul di lobby kampus jam 8 pagi buat berangkat bareng
+124;10;101-500;6044559.0;text;;[];True;False;ed47ed97e5e07ca1;[];MENURUT KALIAN KENAPA YA GENERASI KITA TUH KAYAKNYA LEBIH GAMPANG STRES DAN BURNOUT DIBANDING GENERASI ORANG TUA KITA DULU? APA KARENA TEKANAN SOSMED ATAU EMANG TUNTUTAN HIDUP YANG MAKIN TINGGI YA? GW PENASARAN AJA SIH SOALNYA TEMEN TEMEN GW BANYAK YANG NGELUH HAL YANG SAMA
+125;10;1-10;6044604.0;text;;[];False;False;5477803cd11c63e4;[];done
+126;10;101-500;6044610.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi galau banget nih soal masa depan. mau lanjut s2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+127;10;101-500;6044699.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+128;10;11-50;6044965.0;text;;[];False;False;5477803cd11c63e4;[];sidang minggu depan doain ya
+129;10;11-50;6045061.0;text;;[];False;False;ed47ed97e5e07ca1;[];MIE AYAM PAK KUMIS JUARA SIH
+130;10;500+;6045066.0;text;;[];False;False;ed47ed97e5e07ca1;[];MIE AYAM PAK KUMIS JUARA SIH
+131;10;11-50;6045244.0;text;;[];False;False;ed47ed97e5e07ca1;[];SIDANG MINGGU DEPAN DOAIN YA
+132;10;11-50;6045249.0;text;;[];False;False;ed47ed97e5e07ca1;[];DOSEN PEMBIMBING SUSAH DITEMUI
+133;10;11-50;6046608.0;text;;[];False;False;ab4c5e9fff7f5840;[];tugas kelompok bikin pusing
+134;11;101-500;6047255.0;text;;[];True;False;ab4c5e9fff7f5840;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian krs? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+135;11;0;6047526.0;image/jpeg;;[];False;False;ab4c5e9fff7f5840;[];[Foto]
+136;11;51-100;6047536.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw baru aja selesai ngerjain tugas sampe jam 3 pagi, mau mati rasanya
+137;11;51-100;6047547.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw baru aja selesai ngerjain tugas sampe jam 3 pagi, mau mati rasanya
+138;11;11-50;6047574.0;text;;[];False;False;ab4c5e9fff7f5840;[];matkul ini susah banget
+139;11;11-50;6047580.0;text;;[];False;False;ab4c5e9fff7f5840;[];perpus tutup jam berapa ya
+140;11;1-10;6047980.0;text;;[];False;False;ab4c5e9fff7f5840;[];haha
+141;11;51-100;6048057.0;text;;[];False;False;ed47ed97e5e07ca1;[];NYOKAP GW NELFON TADI NANYAIN KAPAN PULANG, GW BILANG AJA ABIS UJIAN
+142;12;1-10;6052226.0;text;;[];False;False;ed47ed97e5e07ca1;[];CUY
+143;12;1-10;6053026.0;text;;['🤦🏽\u200d♀'];False;False;ed47ed97e5e07ca1;[];CUY
+144;12;1-10;6053046.0;text;;[];False;False;ed47ed97e5e07ca1;[];BENER
+145;13;11-50;6062629.0;text;;[];False;False;c6a2611d16f13869;[];lu udah makan,,, belum
+146;13;51-100;6062646.0;text;;[];False;False;c6a2611d16f13869;[];gw udah bikin slides presentasi tapi kayaknya masih kurang bagus deh isinya,,,
+147;13;51-100;6062699.0;text;;[];False;False;c6a2611d16f13869;[];kemarin gw ke toko,,, buku beli novel baru sama,,, buku referensi buat,,, skripsi
+148;14;11-50;6069670.0;image/jpeg;;[];True;False;ab4c5e9fff7f5840;[];[Foto]
+149;14;11-50;6069694.0;image/jpeg;;[];False;False;ab4c5e9fff7f5840;[];[Foto]
+150;14;11-50;6069698.0;text;;[];True;False;ab4c5e9fff7f5840;[];lu punya kontak dia ga?
+151;14;1-10;6069769.0;text;;[];False;False;ab4c5e9fff7f5840;[];eh
+152;14;11-50;6069788.0;text;;[];False;False;ab4c5e9fff7f5840;[];internet mati lagi di kosan
+153;14;11-50;6069794.0;text;;[];False;False;ab4c5e9fff7f5840;[];baru bangun nih masih ngantuk
+154;14;101-500;6069830.0;text;;[];False;False;03bff00c94babaff;[];gw baru selesai nonton dokumenter tentang kehidupan nelayan di pesisir utara jawa. sedih bgt liat perjuangan mrk yg hrs melaut berhari hari cuma buat dapet ikan yg harganya ga seberapa di pasar. bikin gw makin bersyukur sih sm kehidupan gw skrg walau kadang ngeluh jg
+155;14;101-500;6072945.0;text;;[];False;False;03bff00c94babaff;[];gw lg belajar coding otodidak dr youtube buat nambah skill. mulai dr html css dulu baru pelan pelan ke javascript. lumayan susah sih awalnya tp lama lama mulai paham jg. siapa tau ntr bs bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+156;15;11-50;6114489.0;text;;[];True;False;5477803cd11c63e4;[];booking duluan apa langsung aja?
+157;15;11-50;6114502.0;text;;[];False;False;5477803cd11c63e4;[];konser itu mahal banget... tiketnya
+158;15;1-10;6115236.0;text;;['😖'];False;False;ed47ed97e5e07ca1;[];JIR
+159;15;1-10;6115263.0;text;;[];False;False;5477803cd11c63e4;[];sans
+160;15;11-50;6115269.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi baca novel baru nih
+161;15;11-50;6115584.0;text;;['😪'];False;False;ed47ed97e5e07ca1;[];FUTSAL BESOK JADI GA
+162;15;11-50;6115645.0;text;;[];False;False;5477803cd11c63e4;[];konser itu mahal banget... tiketnya
+163;15;11-50;6115646.0;text;;[];False;False;5477803cd11c63e4;[];podcast yg lu rekomen mana
+164;15;11-50;6115657.0;text;;[];False;False;ab4c5e9fff7f5840;[];futsal besok jadi ga
+165;15;1-10;6115660.0;text;;[];False;False;ab4c5e9fff7f5840;[];zonk
+166;15;11-50;6115674.0;text;;[];False;False;ab4c5e9fff7f5840;[];pertandingan bola tadi malam gila
+167;15;11-50;6115730.0;text;;[];False;False;ed47ed97e5e07ca1;[];GYM HARI INI SKIP DEH
+168;15;51-100;6115763.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];SEMALAM HUJAN GEDE BANGET SAMPE KOSAN GW MATI LAMPU SEMALEMAN GILA
+169;16;101-500;6122456.0;text;;[];True;False;ed47ed97e5e07ca1;[];GUYS ADA YANG TAU GA SIH KENAPA SISTEM REGISTRASI ONLINE KAMPUS SERING BANGET ERROR PAS MASA PENGISIAN KRS? TIAP SEMESTER SELALU GITU BIKIN STRES, MANA HARUS REBUTAN MATA KULIAH YANG KUOTANYA DIKIT BANGET LAGI. APA EMANG SERVERNYA GA KUAT YA NAMPUNG BANYAK MAHASISWA SEKALIGUS?
+170;16;1-10;6122815.0;text;;[];False;False;5477803cd11c63e4;[];asli
+171;16;11-50;6122979.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw baru aja dari kampus
+172;16;11-50;6122979.0;text;;[];False;False;ab4c5e9fff7f5840;[];dosen pembimbing susah ditemui
+173;16;1-10;6123747.0;text;;[];False;False;ed47ed97e5e07ca1;[];HMM
+174;16;51-100;6123785.0;text;;[];False;False;ed47ed97e5e07ca1;[];JANGAN LUPA BESOK KUMPUL DI LOBBY KAMPUS JAM 8 PAGI BUAT BERANGKAT BARENG
+175;16;1-10;6123985.0;text;;[];False;False;ab4c5e9fff7f5840;[];bole
+176;16;11-50;6123995.0;text;;[];True;False;ab4c5e9fff7f5840;[];ada yang punya catetan?
+177;16;1-10;6124018.0;text;;[];False;False;ed47ed97e5e07ca1;[];DONE
+178;16;51-100;6124023.0;text;;[];False;False;ed47ed97e5e07ca1;[];KEMARIN GW KE TOKO BUKU BELI NOVEL BARU SAMA BUKU REFERENSI BUAT SKRIPSI
+179;16;1-10;6124026.0;text;;[];False;False;ab4c5e9fff7f5840;[];asli
+180;16;11-50;6124034.0;text;;[];False;False;ab4c5e9fff7f5840;[];mie ayam pak kumis juara sih
+181;16;101-500;6124376.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+182;16;11-50;6125350.0;text;;[];True;False;03bff00c94babaff;[];boleh gw ikut ga?
+183;16;1-10;6125379.0;text;;[];False;False;03bff00c94babaff;[];tuh
+184;16;1-10;6125620.0;text;;['👍🏼'];False;False;03bff00c94babaff;[];hmm
+185;16;11-50;6125636.0;text;;[];False;False;5477803cd11c63e4;[];gw mau ambil... cuti semester
+186;16;51-100;6125670.0;text;;[];False;False;03bff00c94babaff;[];gw lg mikirin mau ambil magang di perusahaan mana buat semester depan
+187;16;11-50;6127228.0;text;;[];False;False;ed47ed97e5e07ca1;[];TUGAS KELOMPOK BIKIN PUSING
+188;16;11-50;6127246.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw laper banget nih
+189;16;51-100;6127248.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW UDAH BIKIN SLIDES PRESENTASI TAPI KAYAKNYA MASIH KURANG BAGUS DEH ISINYA
+190;16;51-100;6127258.0;text;;['🙈'];False;False;ab4c5e9fff7f5840;[];gw udah bikin slides presentasi tapi kayaknya masih kurang bagus deh isinya
+191;16;11-50;6127330.0;text;;[];True;False;ab4c5e9fff7f5840;[];ntar malem ngapain?
+192;16;11-50;6127335.0;text;;[];False;False;ab4c5e9fff7f5840;[];tugas kelompok bikin pusing
+193;16;11-50;6127748.0;text;;[];True;False;03bff00c94babaff;[];boleh gw ikut ga?
+194;16;101-500;6127796.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi galau banget nih soal masa depan. mau lanjut s2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+195;16;11-50;6127801.0;text;;[];True;False;03bff00c94babaff;[];ad yg pny catetan?
+196;16;101-500;6127842.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+197;16;1-10;6127869.0;text;;[];False;False;03bff00c94babaff;[];tuh
+198;17;51-100;6130590.0;text;;[];True;False;03bff00c94babaff;[];menurut lu gw hrs ambil mata kuliah pilihan yg mana semester depan?
+199;17;51-100;6130632.0;text;;[];False;False;03bff00c94babaff;[];jangan lupa besok kumpul di lobby kampus jam 8 pagi buat berangkat bareng
+200;18;51-100;6132680.0;text;;[];False;False;03bff00c94babaff;[];nyokap gw nelfon tadi nanyain kapan pulang, gw bilang aja abis ujian
+201;18;11-50;6132693.0;text;;[];False;False;03bff00c94babaff;[];matkul ni susah bgt
+202;18;1-10;6132863.0;text;;['😨'];False;False;ab4c5e9fff7f5840;[];otw
+203;18;11-50;6133420.0;text;;[];False;False;5477803cd11c63e4;[];perpus tutup jam berapa ya
+204;18;11-50;6133990.0;text;;[];True;False;ed47ed97e5e07ca1;[];TUGAS DIKUMPUL KAPAN SIH?
+205;18;11-50;6134007.0;text;;[];False;False;ed47ed97e5e07ca1;[];PERPUS TUTUP JAM BERAPA YA
+206;18;11-50;6134234.0;image/jpeg;;[];False;False;ab4c5e9fff7f5840;[];[Foto]
+207;18;11-50;6134270.0;text;;[];False;False;5477803cd11c63e4;[];gw lg ngerjain... tugas nih
+208;18;101-500;6134271.0;text;;[];True;False;5477803cd11c63e4;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat... kuliah dan ngoding ga? laptop gw yang sekarang... udah mulai lemot dan... sering ngehang kalo... buka banyak tab.... pengennya sih... yang... ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+209;18;11-50;6134278.0;text;;[];False;False;5477803cd11c63e4;[];gw belom mulai tugas
+210;18;1-10;6134316.0;text;;[];False;False;ab4c5e9fff7f5840;[];dah
+211;18;51-100;6134352.0;text;;[];False;False;03bff00c94babaff;[];gw baru aja selesai ngerjain tugas sampe jam 3 pagi, mau mati rasanya
+212;18;51-100;6135125.0;text;;[];True;False;c6a2611d16f13869;[];eh lu,,, udah,,, dapet,,, info jadwal ujian akhir semester,,, belum dari prodi?
+213;18;11-50;6135180.0;text;;[];False;False;5477803cd11c63e4;[];deadline besok pagi bro
+214;18;1-10;6135477.0;text;;[];False;False;c6a2611d16f13869;[];iya
+215;18;51-100;6135494.0;text;;[];False;False;c6a2611d16f13869;[];eh besok kita,,, jadi ketemuan di kafe deket stasiun kan ya jam 2 siang,,,
+216;18;11-50;6135503.0;text;;[];False;False;c6a2611d16f13869;[];gw lg ngerjain tugas nih
+217;18;51-100;6135523.0;text;;[];False;False;c6a2611d16f13869;[];tadi gw ketemu dosen pembimbing dan dia minta revisi lagi untuk bab,,, 3
+218;18;1-10;6135610.0;text;;['👍🏻'];False;False;5477803cd11c63e4;[];oke
+219;18;11-50;6135719.0;text;;[];False;False;ab4c5e9fff7f5840;[];deadline besok pagi bro
+220;18;1-10;6135742.0;text;;[];False;False;ab4c5e9fff7f5840;[];yoi
+221;18;11-50;6135748.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw skip kelas hari ini
+222;18;101-500;6136003.0;text;;[];False;False;03bff00c94babaff;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem smua sm anak angkatan sebelah. akhirnya gw cuma bs fotokopi dr temen yg kebetulan pny. lumayan lah daripada ga dapet sm sekali, tinggal di rangkum aja sisanya
+223;18;11-50;6136033.0;text;;[];False;False;03bff00c94babaff;[];gw lg ngerjain tugas nih
+224;18;51-100;6136033.0;text;;[];False;False;03bff00c94babaff;[];gw baru aja selesai ngerjain tugas sampe jam 3 pagi, mau mati rasanya
+225;18;11-50;6136256.0;text;;[];False;False;5477803cd11c63e4;[];tadi absen ga sih kamu...
+226;18;11-50;6136270.0;text;;[];False;False;5477803cd11c63e4;[];tadi absen ga sih kamu
+227;18;51-100;6136468.0;text;;[];False;False;03bff00c94babaff;[];gw denger katanya semester depan ad mata kuliah baru yg wajib diambil
+228;18;51-100;6136487.0;text;;[];False;False;03bff00c94babaff;[];gw denger katanya semester depan ad mata kuliah baru yg wajib diambil
+229;18;101-500;6136530.0;text;;[];False;False;03bff00c94babaff;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem smua sm anak angkatan sebelah. akhirnya gw cuma bs fotokopi dr temen yg kebetulan pny. lumayan lah daripada ga dapet sm sekali, tinggal di rangkum aja sisanya
+230;18;11-50;6136531.0;text;;[];False;False;03bff00c94babaff;[];gw belom mulai tugas
+231;18;101-500;6136593.0;text;;[];False;False;03bff00c94babaff;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem smua sm anak angkatan sebelah. akhirnya gw cuma bs fotokopi dr temen yg kebetulan pny. lumayan lah daripada ga dapet sm sekali, tinggal di rangkum aja sisanya
+232;18;1-10;6136593.0;text;;[];False;False;03bff00c94babaff;[];hehe
+233;18;101-500;6136617.0;text;;[];False;False;ab4c5e9fff7f5840;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+234;18;11-50;6136625.0;text;;[];False;False;ab4c5e9fff7f5840;[];lab komputer penuh terus
+235;18;1-10;6136627.0;text;;[];False;False;03bff00c94babaff;[];yuk
+236;18;11-50;6136656.0;text;;[];False;False;03bff00c94babaff;[];lab komputer penuh terus
+237;18;11-50;6136660.0;text;;[];False;False;03bff00c94babaff;[];tadi absen ga sih km
+238;18;11-50;6136664.0;text;;['🙏'];False;False;03bff00c94babaff;[];lab komputer penuh terus
+239;18;51-100;6137955.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw denger katanya semester depan ada mata kuliah baru yang wajib diambil
+240;18;51-100;6137979.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw denger katanya semester depan ada mata kuliah baru yang wajib diambil
+241;18;11-50;6138002.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi absen ga sih kamu
+242;18;11-50;6138050.0;text;;[];False;False;ab4c5e9fff7f5840;[];deadline besok pagi bro
+243;18;11-50;6138587.0;text;;[];True;False;03bff00c94babaff;[];tugas dikumpul kapan sih?
+244;18;11-50;6138601.0;text;;[];False;False;03bff00c94babaff;[];perpus tutup jam berapa ya
+245;18;11-50;6138604.0;text;;[];True;False;03bff00c94babaff;[];siapa yg mau ikut?
+246;18;11-50;6138668.0;text;;[];False;False;5477803cd11c63e4;[];presentasi gw amburadul...
+247;18;11-50;6138677.0;text;;[];False;False;03bff00c94babaff;[];gw skip kelas hari ni
+248;18;11-50;6138680.0;text;;[];False;False;5477803cd11c63e4;[];gw lg ngerjain tugas nih...
+249;18;11-50;6138689.0;text;;[];False;False;5477803cd11c63e4;[];gw belom mulai... tugas
+250;18;1-10;6138694.0;text;;['👍🏼'];False;False;03bff00c94babaff;[];siap
+251;19;1-10;6143063.0;text;;[];False;False;ab4c5e9fff7f5840;[];lol
+252;19;11-50;6143076.0;text;;[];False;False;ab4c5e9fff7f5840;[];bakso malang itu buka ga ya
+253;19;1-10;6143077.0;text;;[];False;False;ab4c5e9fff7f5840;[];ayok
+254;19;1-10;6143083.0;text;;[];False;False;ab4c5e9fff7f5840;[];lol
+255;19;11-50;6143085.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw mau nyoba restoran baru
+256;19;11-50;6143497.0;text;;[];False;False;ab4c5e9fff7f5840;[];sarapan dulu baru mikir
+257;19;11-50;6143503.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw mau nyoba restoran baru
+258;19;11-50;6143749.0;text;;[];False;False;c6a2611d16f13869;[];sarapan dulu baru mikir
+259;19;11-50;6144150.0;text;;[];False;False;5477803cd11c63e4;[];gw mau nyoba restoran baru
+260;19;11-50;6144191.0;text;;[];False;False;03bff00c94babaff;[];gw lg diet tp gagal mulu
+261;19;51-100;6144212.0;text;;[];False;False;03bff00c94babaff;[];gw lg bingung milih topik skripsi antara dua tema yg sm menariknya
+262;19;11-50;6145585.0;text;;[];False;False;ed47ed97e5e07ca1;[];ES TEH MANIS SATU YA BANG
+263;19;1-10;6145594.0;text;;['🙄'];False;False;ed47ed97e5e07ca1;[];AYOK
+264;19;1-10;6145595.0;text;;[];False;False;ed47ed97e5e07ca1;[];CUY
+265;19;1-10;6145630.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];BENER
+266;20;1-10;6147213.0;text;;[];False;False;ed47ed97e5e07ca1;[];BET
+267;20;11-50;6147230.0;text;;[];False;False;ed47ed97e5e07ca1;[];SIDANG MINGGU DEPAN DOAIN YA
+268;20;101-500;6147302.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+269;20;101-500;6148729.0;text;;[];True;False;03bff00c94babaff;[];gw lg bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gmn sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yg bilang bs nambah soft skill tp di sisi lain waktu buat belajar jadi berkurang kan, gmn pengalaman kalian?
+270;20;51-100;6148765.0;text;;[];False;False;03bff00c94babaff;[];gw lg mikirin mau ambil magang di perusahaan mana buat semester depan
+271;20;51-100;6150286.0;text;;[];True;False;ed47ed97e5e07ca1;[];MENURUT LU GW HARUS AMBIL MATA KULIAH PILIHAN YANG MANA SEMESTER DEPAN?
+272;21;11-50;6162769.0;image/jpeg;;['🤦🏽\u200d♀'];True;False;ed47ed97e5e07ca1;[];[Foto]
+273;21;1-10;6163775.0;text;;[];False;False;ab4c5e9fff7f5840;[];cuy
+274;21;11-50;6163793.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi diet tapi gagal mulu
+275;21;1-10;6163841.0;text;;[];False;False;ed47ed97e5e07ca1;[];AYOK
+276;21;51-100;6163869.0;text;;[];True;False;ab4c5e9fff7f5840;[];ada yang tau kenapa kantin kampus tutup lebih awal hari ini ga sih?
+277;21;11-50;6163882.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw mau nyoba restoran baru
+278;21;11-50;6163890.0;text;;[];True;False;ab4c5e9fff7f5840;[];udah sampe belom?
+279;21;101-500;6163923.0;text;;[];False;False;ed47ed97e5e07ca1;[];KEMARIN MALEM GW SAMA TEMEN TEMEN NONGKRONG DI WARKOP BIASA SAMPE JAM 12 MALEM. KITA NGOBROL BANYAK HAL DARI MULAI TUGAS KULIAH, RENCANA LIBURAN, SAMPE MASALAH PERCINTAAN. SERU SIH WALAU BESOKNYA GW KESIANGAN MASUK KELAS PAGI DAN DOSEN NEGUR DI DEPAN SEMUA ORANG. MALU TAPI YA GIMANA LAGI
+280;21;51-100;6163928.0;text;;[];True;False;ab4c5e9fff7f5840;[];ada yang tau kenapa kantin kampus tutup lebih awal hari ini ga sih?
+281;21;11-50;6163941.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];GW MAU PESEN GOFOOD DULU
+282;21;11-50;6164255.0;text;;[];True;False;ab4c5e9fff7f5840;['5477803cd11c63e4'];bayar berapa sih tadi?
+283;22;0;6197820.0;image/jpeg;;[];False;False;5477803cd11c63e4;[];[Foto]
+284;22;0;6197828.0;image/jpeg;;[];False;False;5477803cd11c63e4;[];[Foto]
+285;23;11-50;6222344.0;text;;[];False;False;5477803cd11c63e4;[];perpus tutup jam berapa ya
+286;23;11-50;6222350.0;text;;[];False;False;5477803cd11c63e4;[];presentasi gw amburadul...
+287;23;11-50;6222354.0;text;;[];False;False;ab4c5e9fff7f5840;[];deadline besok pagi bro
+288;23;11-50;6222366.0;text;;[];False;False;5477803cd11c63e4;[];gw belom mulai tugas
+289;23;101-500;6222378.0;text;;[];False;False;ab4c5e9fff7f5840;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+290;23;11-50;6223426.0;text;;[];False;False;c6a2611d16f13869;[];gw belom mulai tugas
+291;23;11-50;6223439.0;text;;[];False;False;c6a2611d16f13869;[];tadi absen ga sih kamu
+292;23;11-50;6223753.0;text;;[];False;True;ed47ed97e5e07ca1;[];MANTAP BANGET HASILNYA!
+293;23;1-10;6224532.0;text;;['👍🏼'];False;False;03bff00c94babaff;[];oke
+294;24;11-50;6309206.0;text;;[];True;False;5477803cd11c63e4;[];kapan terakhir kali... ketemu?
+295;24;51-100;6309952.0;text;;[];False;False;ab4c5e9fff7f5840;[];wifi kosan gw lemot banget jadi gw ke perpus aja buat ngerjain tugas
+296;25;51-100;6314828.0;text;;[];False;False;c6a2611d16f13869;[];nyokap gw nelfon tadi nanyain kapan pulang, gw bilang aja abis ujian
+297;25;11-50;6314848.0;text;;[];False;False;c6a2611d16f13869;[];lab komputer penuh terus
+298;26;11-50;6479966.0;text;;[];False;False;03bff00c94babaff;[];kopi susu yg biasa ya
+299;26;11-50;6482649.0;text;;[];False;False;5477803cd11c63e4;[];masak sendiri lebih hemat sih
+300;26;51-100;6482884.0;text;;[];False;False;03bff00c94babaff;[];gw lg bingung milih topik skripsi antara dua tema yg sm menariknya
+301;27;0;6485135.0;sticker/webp;;[];False;False;03bff00c94babaff;[];[Stiker]
+302;27;0;6485151.0;sticker/webp;;[];False;False;ab4c5e9fff7f5840;[];[Stiker]
+303;27;0;6485165.0;sticker/webp;;[];False;False;ab4c5e9fff7f5840;[];[Stiker]
+304;27;0;6486029.0;sticker/webp;;[];False;False;03bff00c94babaff;[];[Stiker]
+305;27;0;6486035.0;sticker/webp;;[];False;False;03bff00c94babaff;[];[Stiker]
+306;27;0;6486040.0;sticker/webp;;[];False;False;03bff00c94babaff;[];[Stiker]
+307;27;0;6486040.0;sticker/webp;;[];False;False;03bff00c94babaff;[];[Stiker]
+308;28;1-10;6497743.0;text;;[];False;False;03bff00c94babaff;[];gas
+309;28;101-500;6497769.0;text;;[];False;False;03bff00c94babaff;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem smua sm anak angkatan sebelah. akhirnya gw cuma bs fotokopi dr temen yg kebetulan pny. lumayan lah daripada ga dapet sm sekali, tinggal di rangkum aja sisanya
+310;29;500+;6499235.0;text;;[];False;False;03bff00c94babaff;[];gw skip kelas hari ni
+311;29;51-100;6499260.0;text;;[];False;False;03bff00c94babaff;[];nyokap gw nelfon tadi nanyain kapan pulang, gw bilang aja abis ujian
+312;29;11-50;6499263.0;text;;[];False;False;03bff00c94babaff;[];tadi absen ga sih km
+313;29;51-100;6499294.0;text;;[];False;False;03bff00c94babaff;[];eh besok kita jadi ketemuan di kafe deket stasiun kan ya jam 2 siang
+314;30;51-100;6552750.0;text;;[];True;False;ed47ed97e5e07ca1;[];GIMANA CARANYA BIAR BISA FOKUS BELAJAR TANPA MAIN HP TERUS YA?
+315;30;1-10;6552868.0;text;;[];False;False;5477803cd11c63e4;[];mah
+316;30;11-50;6552892.0;text;;[];True;False;ab4c5e9fff7f5840;[];nilai keluar kapan ya?
+317;30;1-10;6552907.0;text;;[];False;False;ab4c5e9fff7f5840;[];mah
+318;30;1-10;6552920.0;text;;[];False;False;ab4c5e9fff7f5840;[];hoo
+319;30;51-100;6553024.0;text;;['😖'];False;False;ed47ed97e5e07ca1;[];MOTOR GW MOGOK DI TENGAH JALAN TADI PAGI JADI GW TELAT MASUK KELAS
+320;30;11-50;6553067.0;text;;[];False;False;5477803cd11c63e4;[];macet parah di jalan tol
+321;30;1-10;6553068.0;text;;[];False;False;5477803cd11c63e4;[];oii
+322;30;1-10;6553072.0;text;;['🤣'];False;False;ab4c5e9fff7f5840;[];ahh
+323;30;11-50;6553080.0;text;;[];False;False;5477803cd11c63e4;[];ketemuan di mall jam 3 ya
+324;30;1-10;6553083.0;text;;[];False;False;5477803cd11c63e4;[];ahh
+325;30;51-100;6553097.0;text;;[];False;False;5477803cd11c63e4;[];motor gw mogok di... tengah jalan... tadi pagi jadi... gw telat masuk... kelas
+326;30;11-50;6553175.0;text;;[];False;False;03bff00c94babaff;[];gw ngga bs ikut malem ni
+327;30;1-10;6553184.0;text;;['🙈', '🤣'];False;False;ed47ed97e5e07ca1;[];YAA
+328;30;1-10;6553193.0;text;;[];False;False;ed47ed97e5e07ca1;[];KOK
+329;30;0;6553215.0;sticker/webp;;[];False;False;03bff00c94babaff;[];[Stiker]
+330;30;11-50;6553223.0;text;;[];False;False;ab4c5e9fff7f5840;[];lu dimana sih lama banget
+331;30;51-100;6553251.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw begadang nonton bola sampe subuh terus ketiduran
+332;30;51-100;6553276.0;text;;[];False;False;03bff00c94babaff;[];motor gw mogok di tengah jalan tadi pagi jadi gw telat masuk kelas
+333;30;11-50;6553288.0;text;;[];False;False;03bff00c94babaff;[];jangan lupa bawa duit cash
+334;30;11-50;6553289.0;text;;[];False;False;5477803cd11c63e4;[];gw naik ojol aja deh
+335;30;11-50;6553293.0;text;;[];False;False;5477803cd11c63e4;[];bsk sore ada waktu... ga
+336;30;11-50;6553298.0;text;;[];False;False;03bff00c94babaff;[];bsk sore ad waktu ga
+337;30;11-50;6553302.0;text;;[];False;False;5477803cd11c63e4;[];gw udah di parkiran nih
+338;30;11-50;6553319.0;text;;[];False;False;03bff00c94babaff;[];gw lg di warkop nih
+339;30;11-50;6553339.0;text;;[];True;False;03bff00c94babaff;[];wifi password nya apa sih?
+340;30;1-10;6553342.0;text;;[];False;False;5477803cd11c63e4;[];kan
+341;30;11-50;6553346.0;text;;[];True;False;03bff00c94babaff;[];ad yg mau bareng?
+342;30;11-50;6553349.0;text;;[];False;False;5477803cd11c63e4;[];macet parah di jalan... tol...
+343;30;51-100;6553827.0;text;341.0;[];False;False;ed47ed97e5e07ca1;[];MOTOR GW MOGOK DI TENGAH JALAN TADI PAGI JADI GW TELAT MASUK KELAS
+344;30;11-50;6553854.0;text;;[];False;False;5477803cd11c63e4;[];gw ngga bisa ikut malem ini
+345;30;1-10;6553856.0;text;;[];False;False;5477803cd11c63e4;[];emm
+346;30;101-500;6553878.0;text;;['😖'];False;False;ed47ed97e5e07ca1;[];GW BARU AJA BERES BERESIN KOSAN DAN NEMU BARANG BARANG LAMA DARI JAMAN SMA. ADA FOTO KELAS, SURAT DARI MANTAN, SAMA BUKU DIARY YANG ISINYA CRINGE BANGET KALO DIBACA SEKARANG. JADI NOSTALGIA SENDIRI INGET MASA MASA DULU YANG LEBIH SEDERHANA. KADANG KANGEN JUGA SIH JADI ANAK SMA LAGI TANPA MIKIRIN SKRIPSI
+347;31;51-100;6556499.0;text;;[];False;False;03bff00c94babaff;[];tadi gw ketemu dosen pembimbing dan dia minta revisi lg utk bab 3
+348;31;11-50;6556528.0;text;;[];False;False;03bff00c94babaff;[];gw lg ngerjain tugas nih
+349;31;11-50;6557040.0;text;;[];False;False;03bff00c94babaff;[];gw belom mulai tugas
+350;31;1-10;6557047.0;text;;[];False;False;03bff00c94babaff;[];iya
+351;31;11-50;6557054.0;text;;[];False;False;03bff00c94babaff;[];gw skip kelas hari ni
+352;31;11-50;6557062.0;text;;[];False;False;03bff00c94babaff;[];ipk gw turun semester ni
+353;31;1-10;6557071.0;text;;[];False;False;03bff00c94babaff;[];yuk
+354;32;51-100;6558422.0;text;;[];False;False;03bff00c94babaff;[];dompet gw ilang kemarin di angkot tp alhamdulillah ad yg nemuin
+355;32;11-50;6558435.0;text;;[];False;False;03bff00c94babaff;[];porsi makan gw nambah terus
+356;32;11-50;6558442.0;text;;[];False;False;03bff00c94babaff;[];bakso malang tu buka ga ya
+357;32;11-50;6558521.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw mau pesen gofood dulu
+358;32;11-50;6558522.0;text;;[];False;False;ab4c5e9fff7f5840;[];porsi makan gw nambah terus
+359;32;51-100;6559035.0;text;;[];False;False;ed47ed97e5e07ca1;[];DOMPET GW ILANG KEMARIN DI ANGKOT TAPI ALHAMDULILLAH ADA YANG NEMUIN
+360;32;51-100;6559278.0;text;;[];False;False;ed47ed97e5e07ca1;[];DOMPET GW ILANG KEMARIN DI ANGKOT TAPI ALHAMDULILLAH ADA YANG NEMUIN
+361;32;101-500;6560164.0;text;;[];True;False;c6a2611d16f13869;[];eh ada yang punya,,, rekomendasi laptop,,, budget 5 jutaan yang bagus buat,,, kuliah dan ngoding ga?,,, laptop gw yang sekarang udah mulai,,, lemot dan sering ngehang kalo buka banyak tab.,,, pengennya sih,,, yang ringan buat dibawa ke kampus tapi tetep,,, kenceng performanya,,,, ada saran?
+362;32;51-100;6560176.0;text;;[];False;False;c6a2611d16f13869;[];gw udah download semua materi kuliah tapi belum sempat baca sama sekali
+363;32;11-50;6560725.0;text;;[];False;False;03bff00c94babaff;[];kopi susu yg biasa ya
+364;32;51-100;6560754.0;text;;[];False;False;03bff00c94babaff;[];dompet gw ilang kemarin di angkot tp alhamdulillah ad yg nemuin
+365;32;11-50;6560757.0;text;;[];False;False;03bff00c94babaff;[];nongkrong yuk di kafe biasa
+366;32;51-100;6560785.0;text;;[];False;False;03bff00c94babaff;[];gw udah download smua materi kuliah tp blm sempat baca sm sekali
+367;32;11-50;6560877.0;text;;[];True;False;03bff00c94babaff;[];udah sampe belom?
+368;32;1-10;6560896.0;text;;[];True;False;03bff00c94babaff;[];yakin?
+369;32;1-10;6560967.0;text;;[];False;False;03bff00c94babaff;[];gass
+370;32;11-50;6560968.0;text;;[];True;False;03bff00c94babaff;[];udah sampe belom?
+371;32;11-50;6560970.0;text;;['🤣'];False;False;03bff00c94babaff;[];bakso malang tu buka ga ya
+372;32;11-50;6560971.0;text;;[];False;False;03bff00c94babaff;[];gw lg diet tp gagal mulu
+373;32;51-100;6561008.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi bingung milih... topik skripsi antara dua tema... yang sama menariknya...
+374;32;11-50;6561010.0;text;;[];False;False;5477803cd11c63e4;[];tadi gw makan nasi padang
+375;32;101-500;6561013.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+376;32;11-50;6561041.0;text;;[];False;False;03bff00c94babaff;[];sarapan dulu baru mikir
+377;32;11-50;6561043.0;text;;[];False;False;03bff00c94babaff;[];tadi gw makan nasi padang
+378;32;51-100;6561043.0;text;367.0;[];False;False;c6a2611d16f13869;[];gw lagi,,, bingung milih topik skripsi,,, antara dua tema yang sama menariknya
+379;32;11-50;6561060.0;text;;[];False;False;c6a2611d16f13869;[];bakso malang itu buka ga ya
+380;32;51-100;6561077.0;text;;[];False;False;5477803cd11c63e4;[];gw udah download... semua materi kuliah tapi belum sempat... baca sama sekali...
+381;32;11-50;6561078.0;text;;[];False;False;c6a2611d16f13869;[];sarapan dulu baru mikir
+382;32;1-10;6561099.0;text;;[];True;False;03bff00c94babaff;[];kok?
+383;32;11-50;6561112.0;text;;[];False;False;03bff00c94babaff;[];indomie telor udah cukup kok
+384;32;0;6561119.0;image/jpeg;;[];False;False;5477803cd11c63e4;[];[Foto]
+385;32;11-50;6561131.0;text;;[];True;False;5477803cd11c63e4;[];udah sampe belom?
+386;32;11-50;6561142.0;text;;[];False;False;03bff00c94babaff;[];nongkrong yuk di kafe biasa
+387;32;51-100;6561144.0;text;;[];False;False;5477803cd11c63e4;[];tadi di kantin ketemu anak angkatan bawah yang kenal sama temen SMA... gw
+388;32;51-100;6561179.0;text;;[];False;False;5477803cd11c63e4;[];tadi di kantin... ketemu anak... angkatan bawah yang kenal sama temen SMA gw
+389;32;51-100;6561187.0;text;;[];False;False;03bff00c94babaff;[];dompet gw ilang kemarin di angkot tp alhamdulillah ad yg nemuin
+390;32;101-500;6561278.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+391;32;51-100;6561308.0;text;;[];True;False;ed47ed97e5e07ca1;[];ADA YANG TAU KENAPA KANTIN KAMPUS TUTUP LEBIH AWAL HARI INI GA SIH?
+392;32;51-100;6561321.0;text;;[];False;False;ed47ed97e5e07ca1;[];TADI DI KANTIN KETEMU ANAK ANGKATAN BAWAH YANG KENAL SAMA TEMEN SMA GW
+393;32;11-50;6561349.0;text;;[];False;False;5477803cd11c63e4;[];bakso malang itu buka... ga... ya
+394;32;101-500;6561354.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+395;32;51-100;6561355.0;text;;[];False;False;5477803cd11c63e4;[];dompet gw ilang kemarin di angkot... tapi alhamdulillah ada yang nemuin
+396;32;11-50;6561358.0;text;;[];False;False;5477803cd11c63e4;[];masak sendiri lebih hemat sih
+397;32;11-50;6561403.0;text;;[];False;False;03bff00c94babaff;[];kopi susu yg biasa ya
+398;32;51-100;6561463.0;text;;[];False;False;03bff00c94babaff;[];gw lg bingung milih topik skripsi antara dua tema yg sm menariknya
+399;32;11-50;6561491.0;text;;[];False;False;03bff00c94babaff;[];kopi susu yg biasa ya
+400;32;11-50;6561772.0;text;;[];True;False;03bff00c94babaff;[];udah sampe belom?
+401;32;51-100;6561823.0;text;;[];True;False;ab4c5e9fff7f5840;[];ada yang tau kenapa kantin kampus tutup lebih awal hari ini ga sih?
+402;32;11-50;6561832.0;text;;[];False;False;ed47ed97e5e07ca1;[];TADI GW MAKAN NASI PADANG
+403;32;11-50;6561893.0;text;;[];False;False;03bff00c94babaff;[];tadi gw makan nasi padang
+404;32;11-50;6561903.0;text;;[];False;False;03bff00c94babaff;[];masak sendiri lebih hemat sih
+405;32;51-100;6561933.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw udah download semua materi kuliah tapi belum sempat baca sama sekali
+406;32;11-50;6561936.0;text;;[];False;False;03bff00c94babaff;[];gw mau nyoba restoran baru
+407;32;11-50;6561946.0;text;;[];False;False;5477803cd11c63e4;[];gw mau pesen gofood... dulu
+408;32;51-100;6561949.0;text;;[];False;False;5477803cd11c63e4;[];weekend ini gw mau staycation aja di kosan binge... watching series baru
+409;32;11-50;6561952.0;text;;[];False;False;5477803cd11c63e4;[];es teh manis satu ya bang
+410;32;11-50;6561956.0;text;;[];False;False;5477803cd11c63e4;[];tadi gw makan nasi padang
+411;32;101-500;6562005.0;text;;[];False;False;ab4c5e9fff7f5840;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+412;32;11-50;6562025.0;text;;[];False;False;03bff00c94babaff;[];es teh manis satu ya bang
+413;32;51-100;6562041.0;text;411.0;[];False;False;5477803cd11c63e4;[];dompet gw ilang kemarin... di angkot tapi alhamdulillah ada yang nemuin
+414;32;51-100;6562052.0;text;;[];False;False;03bff00c94babaff;[];dompet gw ilang kemarin di angkot tp alhamdulillah ad yg nemuin
+415;32;51-100;6562107.0;text;;[];False;False;03bff00c94babaff;[];gw udah download smua materi kuliah tp blm sempat baca sm sekali
+416;32;11-50;6562108.0;text;;[];False;False;5477803cd11c63e4;[];bakso malang itu buka ga ya
+417;32;11-50;6562108.0;text;;[];False;False;5477803cd11c63e4;[];masak sendiri lebih hemat sih
+418;32;1-10;6562117.0;text;;[];False;False;03bff00c94babaff;[];woy
+419;32;11-50;6562136.0;text;;[];False;False;03bff00c94babaff;[];indomie telor udah cukup kok
+420;32;101-500;6562142.0;text;;[];False;False;ed47ed97e5e07ca1;[];KEMARIN MALEM GW SAMA TEMEN TEMEN NONGKRONG DI WARKOP BIASA SAMPE JAM 12 MALEM. KITA NGOBROL BANYAK HAL DARI MULAI TUGAS KULIAH, RENCANA LIBURAN, SAMPE MASALAH PERCINTAAN. SERU SIH WALAU BESOKNYA GW KESIANGAN MASUK KELAS PAGI DAN DOSEN NEGUR DI DEPAN SEMUA ORANG. MALU TAPI YA GIMANA LAGI
+421;32;11-50;6562170.0;text;;[];False;False;03bff00c94babaff;[];es teh manis satu ya bang
+422;32;51-100;6562204.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI BINGUNG MILIH TOPIK SKRIPSI ANTARA DUA TEMA YANG SAMA MENARIKNYA
+423;32;11-50;6562214.0;text;;[];False;False;03bff00c94babaff;[];es teh manis satu ya bang
+424;32;11-50;6562226.0;text;;[];False;False;5477803cd11c63e4;[];bakso malang itu buka... ga... ya
+425;32;51-100;6562234.0;text;;[];False;False;03bff00c94babaff;[];gw udah download smua materi kuliah tp blm sempat baca sm sekali
+426;32;51-100;6562239.0;text;;[];False;False;5477803cd11c63e4;[];weekend ini gw... mau staycation aja... di kosan binge watching series baru
+427;32;11-50;6562250.0;text;;[];False;False;5477803cd11c63e4;[];nongkrong yuk di kafe biasa...
+428;32;1-10;6562268.0;text;;[];False;False;03bff00c94babaff;[];sip
+429;32;11-50;6562270.0;text;;[];False;False;5477803cd11c63e4;[];gw mau pesen gofood dulu...
+430;32;11-50;6562294.0;text;;[];False;False;03bff00c94babaff;[];indomie telor udah cukup kok
+431;32;1-10;6562302.0;text;;[];False;False;03bff00c94babaff;[];woy
+432;32;11-50;6562557.0;text;;[];False;False;03bff00c94babaff;[];tadi gw makan nasi padang
+433;32;101-500;6562624.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+434;32;101-500;6562651.0;text;;[];False;False;ed47ed97e5e07ca1;[];KEMARIN MALEM GW SAMA TEMEN TEMEN NONGKRONG DI WARKOP BIASA SAMPE JAM 12 MALEM. KITA NGOBROL BANYAK HAL DARI MULAI TUGAS KULIAH, RENCANA LIBURAN, SAMPE MASALAH PERCINTAAN. SERU SIH WALAU BESOKNYA GW KESIANGAN MASUK KELAS PAGI DAN DOSEN NEGUR DI DEPAN SEMUA ORANG. MALU TAPI YA GIMANA LAGI
+435;32;101-500;6562663.0;text;;[];True;False;03bff00c94babaff;[];menurut kalian knp ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa krn tekanan sosmed atau emang tuntutan hidup yg makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yg ngeluh hal yg sm
+436;32;11-50;6562682.0;text;;[];False;False;5477803cd11c63e4;[];gw mau nyoba restoran... baru
+437;32;51-100;6562700.0;text;;[];False;False;03bff00c94babaff;[];tadi di kantin ketemu anak angkatan bawah yg kenal sm temen sma gw
+438;32;11-50;6562731.0;text;;[];False;False;03bff00c94babaff;[];bakso malang tu buka ga ya
+439;32;51-100;6562745.0;text;;[];False;False;ed47ed97e5e07ca1;[];WEEKEND INI GW MAU STAYCATION AJA DI KOSAN BINGE WATCHING SERIES BARU
+440;32;51-100;6563087.0;text;;[];False;False;03bff00c94babaff;[];dompet gw ilang kemarin di angkot tp alhamdulillah ad yg nemuin
+441;32;11-50;6563099.0;text;;[];True;False;03bff00c94babaff;[];bayar berapa sih tadi?
+442;32;11-50;6563111.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi gw makan nasi padang
+443;32;101-500;6563122.0;text;;[];True;False;03bff00c94babaff;[];gw lg bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gmn sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yg bilang bs nambah soft skill tp di sisi lain waktu buat belajar jadi berkurang kan, gmn pengalaman kalian?
+444;32;11-50;6563130.0;text;;[];False;False;ab4c5e9fff7f5840;[];bakso malang itu buka ga ya
+445;32;11-50;6563134.0;text;;[];False;False;ab4c5e9fff7f5840;[];es teh manis satu ya bang
+446;32;101-500;6563142.0;text;;[];False;False;5477803cd11c63e4;[];kemarin malem gw sama temen temen... nongkrong di warkop... biasa... sampe jam... 12 malem. kita ngobrol banyak hal... dari mulai tugas kuliah, rencana liburan, sampe... masalah percintaan.... seru sih walau besoknya gw... kesiangan masuk kelas... pagi dan dosen negur di... depan semua... orang. malu tapi... ya gimana lagi
+447;32;11-50;6563145.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw mau pesen gofood dulu
+448;32;51-100;6563147.0;text;;[];False;False;03bff00c94babaff;[];dompet gw ilang kemarin di angkot tp alhamdulillah ad yg nemuin
+449;32;11-50;6563157.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi diet... tapi gagal... mulu
+450;32;11-50;6563159.0;text;;[];False;False;ab4c5e9fff7f5840;[];sarapan dulu baru mikir
+451;32;11-50;6563163.0;text;;[];False;False;ab4c5e9fff7f5840;[];sarapan dulu baru mikir
+452;32;51-100;6563175.0;text;;[];False;False;5477803cd11c63e4;[];tadi di kantin ketemu anak angkatan bawah yang kenal sama temen SMA gw
+453;32;51-100;6563192.0;text;;[];False;False;03bff00c94babaff;[];weekend ni gw mau staycation aja di kosan binge watching series baru
+454;32;51-100;6563203.0;text;;[];False;False;5477803cd11c63e4;[];dompet gw ilang kemarin... di... angkot... tapi alhamdulillah ada yang nemuin
+455;32;101-500;6563257.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+456;32;101-500;6563300.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+457;32;1-10;6563316.0;text;;[];False;False;03bff00c94babaff;[];gass
+458;32;11-50;6563319.0;text;;[];False;False;03bff00c94babaff;[];nongkrong yuk di kafe biasa
+459;32;11-50;6563328.0;text;;[];True;False;03bff00c94babaff;[];bawa motor apa naik apa?
+460;32;101-500;6563370.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+461;32;11-50;6563388.0;text;;[];False;False;03bff00c94babaff;[];indomie telor udah cukup kok
+462;32;1-10;6563406.0;text;;[];False;False;03bff00c94babaff;[];ngab
+463;32;11-50;6563421.0;text;;[];True;False;03bff00c94babaff;[];bayar berapa sih tadi?
+464;32;51-100;6563444.0;text;;[];False;False;03bff00c94babaff;[];weekend ni gw mau staycation aja di kosan binge watching series baru
+465;32;11-50;6563448.0;text;;[];False;False;03bff00c94babaff;[];gw lg diet tp gagal mulu
+466;32;11-50;6563506.0;text;;[];False;False;03bff00c94babaff;[];indomie telor udah cukup kok
+467;32;11-50;6563506.0;text;;[];False;False;03bff00c94babaff;[];nongkrong yuk di kafe biasa
+468;32;51-100;6563512.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi di kantin ketemu anak angkatan bawah yang kenal sama temen sma gw
+469;32;51-100;6563537.0;text;;[];False;False;ab4c5e9fff7f5840;['281facb8a6854323'];tadi di kantin ketemu anak angkatan bawah yang kenal sama temen sma gw
+470;32;101-500;6563919.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+471;32;1-10;6565625.0;text;;[];False;False;ab4c5e9fff7f5840;[];ayok
+472;32;11-50;6565646.0;text;;[];False;False;ab4c5e9fff7f5840;[];indomie telor udah cukup kok
+473;32;11-50;6565734.0;text;;[];False;False;03bff00c94babaff;[];bakso malang tu buka ga ya
+474;32;101-500;6566085.0;text;;[];False;False;03bff00c94babaff;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+475;32;11-50;6566140.0;text;;[];False;False;03bff00c94babaff;[];es teh manis satu ya bang
+476;33;11-50;6567234.0;application/vnd.openxmlformats-officedocument.wordprocessingml.document;;[];False;False;03bff00c94babaff;[];[Dokumen Word]
+477;33;11-50;6567243.0;text;;[];False;False;03bff00c94babaff;[];sidang minggu depan doain ya
+478;33;11-50;6567251.0;text;;[];False;False;03bff00c94babaff;[];dosen pembimbing susah ditemui
+479;33;51-100;6567326.0;text;;[];True;False;03bff00c94babaff;[];menurut lu gw hrs ambil mata kuliah pilihan yg mana semester depan?
+480;33;51-100;6568418.0;text;;[];False;False;03bff00c94babaff;[];kosan gw bocor lg pas hujan semalam, kasur gw basah smua parah bgt
+481;34;51-100;6570062.0;image/jpeg;;[];False;False;03bff00c94babaff;[];[Foto]
+482;34;11-50;6570093.0;image/jpeg;;[];True;False;03bff00c94babaff;[];[Foto]
+483;34;101-500;6570143.0;text;;[];False;False;03bff00c94babaff;[];gw lg galau bgt nih soal masa depan. mau lanjut s2 tp duit ga ad, mau langsung kerja tp pengalaman msh minim. nyokap bilang terserah gw aja tp gw tau dia pengen gw cepet kerja biar bs bantu ekonomi keluarga. bingung bgt sih, kyk smua pilihan ad plus minusnya
+484;34;51-100;6570172.0;text;;[];False;False;03bff00c94babaff;[];kosan gw bocor lg pas hujan semalam, kasur gw basah smua parah bgt
+485;34;51-100;6570231.0;text;;[];False;False;03bff00c94babaff;[];kosan gw bocor lg pas hujan semalam, kasur gw basah smua parah bgt
+486;34;11-50;6570278.0;text;;[];False;False;5477803cd11c63e4;[];sidang minggu depan doain ya
+487;34;11-50;6570281.0;text;;[];False;False;5477803cd11c63e4;[];tugas kelompok bikin... pusing
+488;34;1-10;6570296.0;text;;[];False;False;03bff00c94babaff;[];bole
+489;34;11-50;6570297.0;text;;[];False;False;5477803cd11c63e4;[];kelas tambahan hari sabtu sih
+490;34;1-10;6570300.0;text;;[];False;False;5477803cd11c63e4;[];asli
+491;34;11-50;6570306.0;text;;[];True;False;03bff00c94babaff;[];boleh gw ikut ga?
+492;34;11-50;6570323.0;text;;[];False;False;5477803cd11c63e4;[];gw mau ambil cuti semester
+493;34;11-50;6570340.0;text;;[];False;False;5477803cd11c63e4;[];tugas kelompok bikin pusing
+494;34;11-50;6570396.0;text;;[];False;False;03bff00c94babaff;[];kelas tambahan hari sabtu sih
+495;34;11-50;6570467.0;text;;[];False;False;5477803cd11c63e4;[];sidang minggu depan doain ya
+496;34;11-50;6570470.0;text;;[];False;False;5477803cd11c63e4;[];proposal skripsi gw ditolak...
+497;34;11-50;6570480.0;text;;[];False;False;5477803cd11c63e4;[];warteg depan kampus enak
+498;34;51-100;6570493.0;text;;[];False;False;03bff00c94babaff;[];jangan lupa besok kumpul di lobby kampus jam 8 pagi buat berangkat bareng
+499;34;1-10;6570555.0;text;;[];False;False;03bff00c94babaff;[];gaje
+500;34;11-50;6570564.0;text;;[];True;False;03bff00c94babaff;[];ntar malem ngapain?
+501;34;11-50;6570594.0;text;;[];False;False;03bff00c94babaff;[];dosen pembimbing susah ditemui
+502;34;1-10;6570606.0;text;;[];False;False;03bff00c94babaff;[];asli
+503;34;11-50;6570610.0;text;;[];False;False;03bff00c94babaff;[];gw laper bgt nih
+504;34;11-50;6570612.0;text;;[];False;False;03bff00c94babaff;[];kelas tambahan hari sabtu sih
+505;34;1-10;6570626.0;text;;[];False;False;03bff00c94babaff;[];nah
+506;34;11-50;6570657.0;text;;[];False;False;03bff00c94babaff;[];warteg depan kampus enak
+507;34;11-50;6570663.0;text;;[];False;False;03bff00c94babaff;[];proposal skripsi gw ditolak
+508;34;1-10;6570681.0;text;;[];False;False;03bff00c94babaff;[];done
+509;34;11-50;6570691.0;text;;[];False;False;03bff00c94babaff;[];tugas kelompok bikin pusing
+510;34;11-50;6570698.0;text;;[];False;False;03bff00c94babaff;[];gw baru aja dr kampus
+511;34;11-50;6570767.0;text;;[];False;False;03bff00c94babaff;[];proposal skripsi gw ditolak
+512;34;11-50;6570828.0;text;;[];False;False;03bff00c94babaff;[];warteg depan kampus enak
+513;34;11-50;6570846.0;text;;[];False;False;03bff00c94babaff;[];lu udah makan blm
+514;34;11-50;6570906.0;text;;[];False;False;5477803cd11c63e4;[];gw mau ambil cuti semester
+515;35;11-50;6579460.0;application/vnd.openxmlformats-officedocument.wordprocessingml.document;;[];False;False;ab4c5e9fff7f5840;[];[Dokumen Word]
+516;35;11-50;6579465.0;text;;[];False;False;ab4c5e9fff7f5840;[];proposal skripsi gw ditolak
+517;35;101-500;6579523.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi galau banget nih soal masa depan. mau lanjut s2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+518;36;101-500;6581136.0;text;;['🤣'];True;False;ab4c5e9fff7f5840;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian krs? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+519;36;11-50;6581534.0;text;;[];False;False;ab4c5e9fff7f5840;[];macet parah di jalan tol
+520;36;11-50;6581535.0;text;;[];False;False;ab4c5e9fff7f5840;[];ketemuan di mall jam 3 ya
+521;36;1-10;6581536.0;text;;[];False;False;ab4c5e9fff7f5840;[];kok
+522;37;11-50;6585116.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW MAU PESEN GOFOOD DULU
+523;37;11-50;6585131.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi diet tapi gagal mulu
+524;38;51-100;6587166.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw udah download semua materi kuliah tapi belum sempat baca sama sekali
+525;38;11-50;6587166.0;text;;[];False;False;ab4c5e9fff7f5840;[];porsi makan gw nambah terus
+526;38;11-50;6587226.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi gw makan nasi padang
+527;38;51-100;6587231.0;text;;[];False;False;ab4c5e9fff7f5840;[];weekend ini gw mau staycation aja di kosan binge watching series baru
+528;38;11-50;6587241.0;text;;[];False;False;ab4c5e9fff7f5840;[];nongkrong yuk di kafe biasa
+529;38;11-50;6587243.0;text;;[];False;False;ab4c5e9fff7f5840;[];sarapan dulu baru mikir
+530;38;1-10;6587253.0;text;;[];False;False;ab4c5e9fff7f5840;[];fix
+531;38;1-10;6587273.0;text;;[];False;False;ab4c5e9fff7f5840;[];bro
+532;38;1-10;6587281.0;text;;[];False;False;ab4c5e9fff7f5840;[];ayok
+533;38;11-50;6587283.0;text;;[];False;False;ab4c5e9fff7f5840;[];bakso malang itu buka ga ya
+534;38;11-50;6587321.0;text;;[];False;False;ab4c5e9fff7f5840;[];kopi susu yg biasa ya
+535;38;1-10;6587418.0;text;;['🤣'];False;False;ab4c5e9fff7f5840;[];sis
+536;38;1-10;6587898.0;text;;['👌🏼'];False;False;ed47ed97e5e07ca1;[];NGAB
+537;38;11-50;6588298.0;text;;[];False;False;03bff00c94babaff;[];masak sendiri lebih hemat sih
+538;38;11-50;6588329.0;text;;[];False;False;03bff00c94babaff;[];masak sendiri lebih hemat sih
+539;39;101-500;6625016.0;text;;[];True;False;ed47ed97e5e07ca1;[];MENURUT KALIAN KENAPA YA GENERASI KITA TUH KAYAKNYA LEBIH GAMPANG STRES DAN BURNOUT DIBANDING GENERASI ORANG TUA KITA DULU? APA KARENA TEKANAN SOSMED ATAU EMANG TUNTUTAN HIDUP YANG MAKIN TINGGI YA? GW PENASARAN AJA SIH SOALNYA TEMEN TEMEN GW BANYAK YANG NGELUH HAL YANG SAMA
+540;39;11-50;6625031.0;text;;[];False;False;ed47ed97e5e07ca1;[];ADEK GW MASUK SMA TAHUN INI
+541;39;11-50;6625083.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW BARU AJA KETEMU MANTAN
+542;39;1-10;6625299.0;text;;[];False;False;5477803cd11c63e4;[];gitu
+543;39;101-500;6625743.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW PENGEN CURHAT SEDIKIT NIH. AKHIR AKHIR INI GW NGERASA BURNOUT BANGET SAMA RUTINITAS KULIAH YANG ITU ITU AJA. BANGUN PAGI, KULIAH, TUGAS, TIDUR, REPEAT. KADANG GW NGERASA KAYAK ROBOT YANG CUMA JALAN SESUAI PROGRAM TANPA TAU TUJUAN AKHIRNYA APA. MUNGKIN GW BUTUH LIBURAN BENERAN BUAT REFRESH OTAK
+544;39;11-50;6625759.0;text;;[];False;False;ed47ed97e5e07ca1;[];BOKAP GW LAGI DI LUAR KOTA
+545;39;51-100;6626397.0;text;;['🤣'];False;False;ab4c5e9fff7f5840;[];gw lagi belajar masak sendiri biar ga jajan terus lumayan hemat soalnya
+546;39;11-50;6627264.0;text;;[];False;False;ed47ed97e5e07ca1;[];PLAYLIST LO YANG MANA SIH
+547;40;11-50;6641778.0;text;;[];False;False;ed47ed97e5e07ca1;[];BSK SORE ADA WAKTU GA
+548;40;11-50;6643678.0;text;;[];False;False;03bff00c94babaff;[];macet parah di jalan tol
+549;40;11-50;6643688.0;text;;[];False;False;03bff00c94babaff;[];lu dmn sih lama bgt
+550;40;11-50;6644922.0;text;;[];False;False;ed47ed97e5e07ca1;[];LU DIMANA SIH LAMA BANGET
+551;40;11-50;6644932.0;text;;[];False;False;03bff00c94babaff;[];gw ngga bs ikut malem ni
+552;41;0;6651195.0;system;;[];False;False;03bff00c94babaff;[];[Pesan sistem]
+553;41;11-50;6653857.0;text;;[];False;False;ed47ed97e5e07ca1;[];KELAS TAMBAHAN HARI SABTU SIH
+554;41;11-50;6653864.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAPER BANGET NIH
+555;41;11-50;6653873.0;text;;[];False;False;ed47ed97e5e07ca1;[];KELAS TAMBAHAN HARI SABTU SIH
+556;41;1-10;6653875.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];ASLI
+557;41;1-10;6653950.0;text;;[];False;False;5477803cd11c63e4;[];nah
+558;41;11-50;6654259.0;text;;[];False;False;ab4c5e9fff7f5840;[];sidang minggu depan doain ya
+559;41;1-10;6654290.0;text;;[];False;False;ab4c5e9fff7f5840;[];nih
+560;41;1-10;6654306.0;text;;[];False;False;ab4c5e9fff7f5840;[];gpp
+561;41;11-50;6654309.0;text;;[];False;False;ab4c5e9fff7f5840;[];mie ayam pak kumis juara sih
+562;41;1-10;6654321.0;text;;[];False;False;ab4c5e9fff7f5840;[];sabi
+563;41;1-10;6654326.0;text;;[];False;False;ab4c5e9fff7f5840;[];sabi
+564;41;1-10;6654338.0;text;;[];False;False;ab4c5e9fff7f5840;[];asli
+565;41;11-50;6654341.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw laper banget nih
+566;41;11-50;6654351.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw baru aja dari kampus
+567;41;11-50;6654381.0;text;;[];False;False;5477803cd11c63e4;[];gw mau ambil cuti semester
+568;41;11-50;6654772.0;text;;[];False;False;5477803cd11c63e4;[];dosen pembimbing susah ditemui
+569;41;51-100;6654800.0;text;;[];False;False;ed47ed97e5e07ca1;[];JANGAN LUPA BESOK KUMPUL DI LOBBY KAMPUS JAM 8 PAGI BUAT BERANGKAT BARENG
+570;41;11-50;6654806.0;text;;[];True;False;ed47ed97e5e07ca1;[];ADA YANG PUNYA CATETAN?
+571;41;11-50;6654857.0;text;;[];False;False;5477803cd11c63e4;[];gw laper banget nih
+572;41;51-100;6654866.0;text;;[];False;False;5477803cd11c63e4;[];kemarin gw ke toko buku beli novel baru sama buku referensi buat skripsi
+573;41;11-50;6654891.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW MAU AMBIL CUTI SEMESTER
+574;41;0;6654933.0;audio;;[];False;False;5477803cd11c63e4;[];[Voice Note]
+575;41;0;6654934.0;audio;;[];False;False;5477803cd11c63e4;[];[Voice Note]
+576;41;0;6654937.0;audio;;[];False;False;5477803cd11c63e4;[];[Voice Note]
+577;41;11-50;6654964.0;text;;[];False;False;5477803cd11c63e4;[];sidang minggu depan... doain ya
+578;41;51-100;6654970.0;text;;[];False;False;5477803cd11c63e4;[];gw udah bikin slides... presentasi tapi kayaknya masih kurang bagus deh isinya
+579;41;101-500;6655326.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI GALAU BANGET NIH SOAL MASA DEPAN. MAU LANJUT S2 TAPI DUIT GA ADA, MAU LANGSUNG KERJA TAPI PENGALAMAN MASIH MINIM. NYOKAP BILANG TERSERAH GW AJA TAPI GW TAU DIA PENGEN GW CEPET KERJA BIAR BISA BANTU EKONOMI KELUARGA. BINGUNG BANGET SIH, KAYAK SEMUA PILIHAN ADA PLUS MINUSNYA
+580;42;51-100;6660010.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW UDAH BIKIN SLIDES PRESENTASI TAPI KAYAKNYA MASIH KURANG BAGUS DEH ISINYA
+581;42;1-10;6660224.0;text;;[];False;False;5477803cd11c63e4;[];bole
+582;42;1-10;6660227.0;text;;[];False;False;5477803cd11c63e4;[];asli
+583;42;11-50;6660248.0;text;;['🙈'];True;False;ed47ed97e5e07ca1;[];GIMANA KABAR LU SEKARANG?
+584;42;1-10;6660267.0;text;;[];False;False;5477803cd11c63e4;[];bet
+585;42;11-50;6660270.0;text;;[];False;False;5477803cd11c63e4;[];warteg depan kampus enak
+586;42;1-10;6660278.0;text;;['😂'];False;False;ed47ed97e5e07ca1;[];AMAN
+587;43;0;6663036.0;image/jpeg;;[];False;False;5477803cd11c63e4;[];[Foto]
+588;43;11-50;6663038.0;text;;[];False;False;5477803cd11c63e4;[];perpus tutup jam berapa ya
+589;44;1-10;6664364.0;text;;[];False;False;5477803cd11c63e4;[];iyaa
+590;44;1-10;6664559.0;text;;[];False;False;ed47ed97e5e07ca1;[];HEM
+591;44;11-50;6664567.0;text;;[];True;False;ed47ed97e5e07ca1;[];MASIH BUKA GA WARUNGNYA?
+592;44;1-10;6664743.0;text;;[];False;False;ed47ed97e5e07ca1;[];OH
+593;44;11-50;6664768.0;text;;[];True;False;ed47ed97e5e07ca1;[];GW HARUS BAWA APA AJA?
+594;44;51-100;6664785.0;text;;[];False;False;ed47ed97e5e07ca1;['5477803cd11c63e4', '281facb8a6854323', 'ab4c5e9fff7f5840', 'c6a2611d16f13869'];DUIT JAJAN GW ABIS PADAHAL BARU TANGGAL 15 HARUS NGIRIT BANGET NIH
+595;44;11-50;6664842.0;text;;[];False;False;5477803cd11c63e4;[];capek banget hari ini asli
+596;44;11-50;6664853.0;text;;[];False;False;5477803cd11c63e4;[];wifi kampus lemot... parah
+597;44;0;6664873.0;video/mp4;;[];False;False;5477803cd11c63e4;[];[Video]
+598;44;11-50;6664921.0;text;;[];True;False;ed47ed97e5e07ca1;[];MAU NITIP APA GA?
+599;44;11-50;6664927.0;text;;[];True;False;ed47ed97e5e07ca1;[];LU PUNYA KONTAK DIA GA?
+600;44;11-50;6664929.0;text;;[];True;False;ed47ed97e5e07ca1;[];GW HARUS BAWA APA AJA?
+601;44;11-50;6664943.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di... atm... sebentar
+602;44;1-10;6664945.0;text;;[];False;False;ed47ed97e5e07ca1;[];SIAPP
+603;44;11-50;6664945.0;text;;[];False;False;5477803cd11c63e4;[];hp gw lowbat... nih
+604;44;1-10;6664946.0;text;;[];False;False;5477803cd11c63e4;[];seep
+605;44;51-100;6664962.0;text;;[];False;False;ed47ed97e5e07ca1;['281facb8a6854323', '281facb8a6854323', '281facb8a6854323'];LAPTOP GW MULAI LEMOT NIH KAYAKNYA HARUS INSTALL ULANG ATAU GANTI RAM
+606;44;11-50;6664967.0;text;;[];True;False;ed47ed97e5e07ca1;[];BISA JEMPUT GW GA?
+607;44;1-10;6664976.0;text;;[];False;False;5477803cd11c63e4;[];gassss
+608;44;1-10;6664985.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];GASSSS
+609;44;11-50;6664986.0;text;;[];False;False;5477803cd11c63e4;[];charger hp gw rusak lagi
+610;44;11-50;6665000.0;text;;[];True;False;5477803cd11c63e4;[];masih buka ga warungnya?...
+611;44;11-50;6665010.0;text;;[];True;False;ed47ed97e5e07ca1;[];BESOK LIBUR BUKAN SIH?
+612;44;11-50;6665014.0;text;;[];False;False;ed47ed97e5e07ca1;[];NTAR GW KABARIN LAGI DEH
+613;44;11-50;6665033.0;text;;[];False;False;5477803cd11c63e4;['ab4c5e9fff7f5840'];gw lagi di atm sebentar
+614;44;11-50;6665039.0;text;;['💃🏼'];False;False;ed47ed97e5e07ca1;[];WIFI KAMPUS LEMOT PARAH
+615;44;11-50;6665046.0;text;;[];False;False;ed47ed97e5e07ca1;[];NTAR GW KABARIN LAGI DEH
+616;44;11-50;6665061.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di atm sebentar
+617;44;11-50;6665076.0;text;;[];False;False;5477803cd11c63e4;[];wifi kampus lemot parah
+618;44;1-10;6665130.0;text;;[];False;False;ed47ed97e5e07ca1;[];OKEY
+619;44;11-50;6665132.0;text;;[];True;False;ed47ed97e5e07ca1;['281facb8a6854323'];LU PUNYA KONTAK DIA GA?
+620;44;11-50;6665156.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw baru ganti nomor btw
+621;44;0;6665157.0;sticker/webp;;[];False;False;ab4c5e9fff7f5840;[];[Stiker]
+622;44;11-50;6665161.0;text;;[];False;False;5477803cd11c63e4;[];cuaca hari ini panas banget
+623;44;11-50;6665162.0;text;;[];True;False;ed47ed97e5e07ca1;[];LU PUNYA KONTAK DIA GA?
+624;44;11-50;6665173.0;text;;['😅'];False;False;ed47ed97e5e07ca1;[];GW BARU GANTI NOMOR BTW
+625;44;51-100;6665175.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi dengerin podcast tentang... psikologi, lumayan buat nambah wawasan...
+626;44;11-50;6665222.0;text;;[];True;False;ed47ed97e5e07ca1;[];MAU NITIP APA GA?
+627;44;1-10;6665223.0;text;;[];False;False;5477803cd11c63e4;[];okk
+628;44;11-50;6665231.0;text;;[];False;False;5477803cd11c63e4;[];wifi kampus lemot parah
+629;44;1-10;6665243.0;text;;[];False;False;ed47ed97e5e07ca1;[];GASSSS
+630;44;1-10;6665246.0;text;;[];False;False;ed47ed97e5e07ca1;[];OKK
+631;44;1-10;6665295.0;text;;[];False;False;ab4c5e9fff7f5840;[];oh
+632;44;51-100;6665302.0;text;;[];False;False;ed47ed97e5e07ca1;[];LAPTOP GW MULAI LEMOT NIH KAYAKNYA HARUS INSTALL ULANG ATAU GANTI RAM
+633;44;1-10;6665313.0;text;;[];False;False;5477803cd11c63e4;[];oh
+634;44;1-10;6665318.0;text;;[];False;False;5477803cd11c63e4;[];okk
+635;44;11-50;6665326.0;text;;[];False;False;ed47ed97e5e07ca1;[];BENTAR YA GW LG DI JALAN
+636;44;51-100;6665328.0;text;;[];False;False;5477803cd11c63e4;[];gw seneng banget akhirnya bisa ketemu temen temen lama setelah lama ga...
+637;44;1-10;6665329.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];IYAA
+638;44;11-50;6665367.0;text;;[];True;False;ed47ed97e5e07ca1;[];MASIH BUKA GA WARUNGNYA?
+639;44;11-50;6665374.0;text;;[];True;False;ed47ed97e5e07ca1;['281facb8a6854323', '5477803cd11c63e4'];BESOK LIBUR BUKAN SIH?
+640;44;1-10;6665412.0;text;;[];False;False;ed47ed97e5e07ca1;[];AH
+641;44;11-50;6665419.0;text;;[];False;False;ed47ed97e5e07ca1;[];NTAR GW KABARIN LAGI DEH
+642;44;11-50;6665441.0;text;;[];False;False;ed47ed97e5e07ca1;[];NTAR GW KABARIN LAGI DEH
+643;44;11-50;6665446.0;text;;[];True;False;ed47ed97e5e07ca1;[];MAU NITIP APA GA?
+644;44;11-50;6665459.0;text;;[];False;False;ed47ed97e5e07ca1;[];INTERNET MATI LAGI DI KOSAN
+645;44;11-50;6665476.0;text;;[];False;False;5477803cd11c63e4;['281facb8a6854323'];charger hp gw rusak lagi...
+646;44;11-50;6665479.0;text;;[];False;False;5477803cd11c63e4;[];ntar gw kabarin lagi deh
+647;44;11-50;6665487.0;text;;[];False;False;5477803cd11c63e4;[];lu tim mana dukungnya
+648;44;11-50;6665494.0;text;;['😅'];False;False;ed47ed97e5e07ca1;[];LU TIM MANA DUKUNGNYA
+649;44;11-50;6665548.0;text;;[];True;False;ed47ed97e5e07ca1;[];MAU NITIP APA GA?
+650;44;51-100;6665572.0;text;;[];True;False;ab4c5e9fff7f5840;[];ada yang mau patungan buat beli kado ulang tahun si anu ga?
+651;44;1-10;6665593.0;text;;[];False;False;ab4c5e9fff7f5840;[];seep
+652;44;1-10;6665612.0;text;;[];False;False;ed47ed97e5e07ca1;[];SIAPP
+653;44;11-50;6665617.0;text;;[];True;False;ed47ed97e5e07ca1;[];MAU NITIP APA GA?
+654;44;11-50;6665629.0;text;;[];True;False;ed47ed97e5e07ca1;[];MASIH BUKA GA WARUNGNYA?
+655;44;1-10;6665631.0;text;;[];False;False;ed47ed97e5e07ca1;[];IYAA
+656;44;11-50;6665639.0;text;;[];False;False;ed47ed97e5e07ca1;[];DOMPET GW KETINGGALAN DI RUMAH
+657;44;1-10;6665974.0;text;;[];False;False;ed47ed97e5e07ca1;[];OH
+658;44;11-50;6666167.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di atm sebentar
+659;44;1-10;6666189.0;text;;[];False;False;ed47ed97e5e07ca1;[];AH
+660;44;11-50;6666197.0;text;;[];False;False;ed47ed97e5e07ca1;['c6a2611d16f13869'];BENTAR YA GW LG DI JALAN
+661;44;11-50;6666201.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI DI ATM SEBENTAR
+662;44;11-50;6666376.0;text;;[];True;False;5477803cd11c63e4;[];besok libur bukan sih?
+663;44;11-50;6666388.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di... atm... sebentar
+664;44;11-50;6666433.0;text;;[];False;False;5477803cd11c63e4;[];gw mau tidur dulu ya
+665;44;11-50;6666456.0;text;;[];False;False;5477803cd11c63e4;[];capek banget hari... ini asli
+666;44;11-50;6666510.0;text;;[];False;False;5477803cd11c63e4;[];internet mati lagi... di kosan...
+667;44;1-10;6666540.0;text;;[];False;False;5477803cd11c63e4;[];okey
+668;44;1-10;6666541.0;text;;[];False;False;5477803cd11c63e4;[];yess
+669;44;11-50;6666562.0;text;;[];False;False;5477803cd11c63e4;[];gw mau tidur dulu ya
+670;44;11-50;6666566.0;text;;[];False;False;5477803cd11c63e4;[];bentar ya gw lg di jalan
+671;44;11-50;6666568.0;text;;[];False;False;5477803cd11c63e4;[];gw lg sibuk bgt... minggu ini
+672;44;11-50;6666571.0;text;;[];False;False;5477803cd11c63e4;[];gw mau tidur dulu ya
+673;44;11-50;6666633.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW MAU TIDUR DULU YA
+674;44;51-100;6666641.0;text;;[];False;False;ed47ed97e5e07ca1;[];DUIT JAJAN GW ABIS PADAHAL BARU TANGGAL 15 HARUS NGIRIT BANGET NIH
+675;44;1-10;6666646.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];GASSSS
+676;44;1-10;6666848.0;text;;[];False;False;5477803cd11c63e4;[];eh
+677;44;11-50;6666981.0;text;;[];True;False;5477803cd11c63e4;[];masih buka ga... warungnya?
+678;45;11-50;6677939.0;image/jpeg;;['😂'];False;False;ed47ed97e5e07ca1;[];[Foto]
+679;45;11-50;6679992.0;text;;[];False;False;c6a2611d16f13869;[];baru bangun nih,,, masih,,, ngantuk
+680;45;51-100;6679994.0;text;;[];False;False;c6a2611d16f13869;[];gw lagi dengerin podcast,,, tentang psikologi,,,, lumayan buat nambah wawasan
+681;45;11-50;6680012.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW LAGI DI ATM SEBENTAR
+682;45;11-50;6680018.0;text;;[];False;False;ed47ed97e5e07ca1;[];DOMPET GW KETINGGALAN DI RUMAH
+683;45;11-50;6680025.0;text;;[];False;False;ab4c5e9fff7f5840;[];hp gw lowbat nih
+684;45;1-10;6680027.0;text;;[];False;False;ab4c5e9fff7f5840;[];okk
+685;45;11-50;6680038.0;text;;[];False;False;ab4c5e9fff7f5840;[];wifi kampus lemot parah
+686;45;11-50;6680039.0;text;;[];False;False;5477803cd11c63e4;[];gw lagi di atm sebentar
+687;46;1-10;6752333.0;text;;[];False;False;ab4c5e9fff7f5840;[];bete
+688;46;1-10;6752346.0;text;;[];False;False;ab4c5e9fff7f5840;[];fyi
+689;46;51-100;6752370.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw baru dapet info beasiswa buat semester depan mau coba daftar deh
+690;46;1-10;6752373.0;text;;[];False;False;ab4c5e9fff7f5840;[];sans
+691;47;11-50;6895318.0;text;;[];True;False;ab4c5e9fff7f5840;[];itu beneran apa hoax?
+692;47;11-50;6895376.0;text;;[];False;False;ab4c5e9fff7f5840;[];nongkrong yuk di kafe biasa
+693;47;11-50;6895383.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw mau pesen gofood dulu
+694;47;1-10;6895390.0;text;;['🤣'];False;False;ab4c5e9fff7f5840;[];lol
+695;47;11-50;6895399.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi gw makan nasi padang
+696;47;11-50;6897122.0;text;;['😲'];False;False;ed47ed97e5e07ca1;[];GW LAGI DIET TAPI GAGAL MULU
+697;47;1-10;6897128.0;text;;['☺', '😘'];False;False;ab4c5e9fff7f5840;[];bener
+698;48;1-10;6903134.0;text;;['🤣', '😘'];False;False;ed47ed97e5e07ca1;[];HOO
+699;48;11-50;6903161.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];KETEMUAN DI MALL JAM 3 YA
+700;49;101-500;7278126.0;text;;[];True;False;ab4c5e9fff7f5840;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian krs? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+701;49;11-50;7278128.0;text;;[];False;False;ab4c5e9fff7f5840;[];perpus tutup jam berapa ya
+702;49;11-50;7278406.0;text;;[];True;False;ab4c5e9fff7f5840;[];lu dimana sekarang?
+703;49;11-50;7278411.0;text;;[];False;False;ab4c5e9fff7f5840;[];eh tadi kelas seru banget
+704;49;11-50;7278417.0;text;;[];False;False;ab4c5e9fff7f5840;[];matkul ini susah banget
+705;49;11-50;7278424.0;text;;['🤣'];True;False;ab4c5e9fff7f5840;[];lu dimana sekarang?
+706;49;11-50;7278469.0;text;;[];False;False;ab4c5e9fff7f5840;[];ipk gw turun semester ini
+707;49;101-500;7278964.0;text;;[];False;False;ab4c5e9fff7f5840;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+708;49;51-100;7278981.0;text;;[];False;False;ab4c5e9fff7f5840;[];tadi gw ketemu dosen pembimbing dan dia minta revisi lagi untuk bab 3
+709;49;1-10;7278983.0;text;;[];False;False;ab4c5e9fff7f5840;[];wkwk
+710;49;51-100;7279067.0;text;;[];False;False;ed47ed97e5e07ca1;[];NYOKAP GW NELFON TADI NANYAIN KAPAN PULANG, GW BILANG AJA ABIS UJIAN
+711;49;11-50;7281070.0;text;;[];True;False;ab4c5e9fff7f5840;[];jadi ketemuan ga hari ini?
+712;49;11-50;7281072.0;text;;[];False;False;ab4c5e9fff7f5840;[];matkul ini susah banget
+713;49;1-10;7281500.0;text;;['🤦🏽\u200d♀'];False;False;ed47ed97e5e07ca1;[];OTW
+714;49;11-50;7281523.0;text;;['😖'];False;False;ed47ed97e5e07ca1;[];GW LG NGERJAIN TUGAS NIH
+715;50;11-50;7671198.0;image/jpeg;;[];False;False;ed47ed97e5e07ca1;[];[Foto]
+716;50;1-10;7671203.0;text;;[];False;True;5477803cd11c63e4;[];luar biasa!
+717;50;1-10;7671205.0;text;;[];False;False;5477803cd11c63e4;[];hem
+718;50;11-50;7671210.0;text;;[];False;True;ed47ed97e5e07ca1;[];SAKIT HATI GW DENGERNYA!
+719;50;51-100;7671235.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;['5477803cd11c63e4'];GW LAGI DENGERIN PODCAST TENTANG PSIKOLOGI, LUMAYAN BUAT NAMBAH WAWASAN
+720;50;1-10;7671275.0;text;;['👍'];False;False;5477803cd11c63e4;[];eh
+721;51;101-500;7933152.0;text;;['🙃'];False;True;ed47ed97e5e07ca1;[];YESSS GW AKHIRNYA DAPET NILAI A DI MATA KULIAH YANG PALING GW TAKUTIN SELAMA INI! PADAHAL GW UDAH PASRAH BANGET PAS UJIAN SOALNYA SOALNYA SUSAH PARAH. TERNYATA TUGAS DAN PRESENTASI GW NILAINYA BAGUS JADI BISA NUTUPIN NILAI UJIAN. ALHAMDULILLAH BANGET PERJUANGAN GA SIA SIA!
+722;51;1-10;7933183.0;text;;[];False;False;ed47ed97e5e07ca1;[];GITU
+723;51;11-50;7933299.0;text;;[];False;False;5477803cd11c63e4;[];bokap gw lagi di luar kota
+724;51;11-50;7933445.0;text;;[];True;False;ab4c5e9fff7f5840;[];kenapa ga bales chat gw?
+725;51;101-500;7933566.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW PENGEN CURHAT SEDIKIT NIH. AKHIR AKHIR INI GW NGERASA BURNOUT BANGET SAMA RUTINITAS KULIAH YANG ITU ITU AJA. BANGUN PAGI, KULIAH, TUGAS, TIDUR, REPEAT. KADANG GW NGERASA KAYAK ROBOT YANG CUMA JALAN SESUAI PROGRAM TANPA TAU TUJUAN AKHIRNYA APA. MUNGKIN GW BUTUH LIBURAN BENERAN BUAT REFRESH OTAK
+726;51;11-50;7934156.0;application/pdf;;[];False;False;ed47ed97e5e07ca1;[];[Dokumen PDF]
+727;51;51-100;7934175.0;text;;[];False;False;ed47ed97e5e07ca1;[];TADI PAGI GW OLAHRAGA LARI KELILING KAMPUS 5 PUTARAN BADAN PEGEL SEMUA
+728;51;1-10;7934248.0;text;;[];False;False;ab4c5e9fff7f5840;[];pasti
+729;51;11-50;7934263.0;text;;[];False;True;ed47ed97e5e07ca1;[];SERU BANGET TADI MALEM!
+730;51;0;7934531.0;audio;;[];False;False;ab4c5e9fff7f5840;[];[Voice Note]
+731;51;11-50;7934566.0;text;;[];False;False;ed47ed97e5e07ca1;[];MAMA MINTA GW PULANG WEEKEND
+732;51;11-50;7935561.0;application/pdf;;[];False;False;ab4c5e9fff7f5840;[];[Dokumen PDF]
+733;51;51-100;7935567.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw lagi belajar masak sendiri biar ga jajan terus lumayan hemat soalnya
+734;51;11-50;7935577.0;text;;[];False;False;ab4c5e9fff7f5840;[];bokap gw lagi di luar kota
+735;51;1-10;7935580.0;text;;[];False;False;ab4c5e9fff7f5840;[];hayuk
+736;51;1-10;7935582.0;text;;['🤣'];False;False;ab4c5e9fff7f5840;[];anjay
+737;51;11-50;7935619.0;text;;['🙈'];False;True;ed47ed97e5e07ca1;[];NGAKAK GW LIAT VIDEO ITU!
+738;52;1-10;8035710.0;text;;[];False;False;5477803cd11c63e4;[];kuy
+739;52;1-10;8035717.0;text;;[];True;False;5477803cd11c63e4;[];ya?
+740;52;11-50;8035719.0;text;;[];False;False;5477803cd11c63e4;[];gym hari ini skip deh
+741;52;101-500;8035763.0;text;;[];False;False;ed47ed97e5e07ca1;[];TADI SIANG GW MAKAN DI WARUNG MAKAN BARU DEKET GERBANG BELAKANG KAMPUS. NASI GORENGNYA LUMAYAN ENAK DAN HARGANYA MURAH BANGET CUMA 12 RIBU UDAH SAMA ES TEH. KAYAKNYA BAKAL JADI LANGGANAN BARU DEH SOALNYA WARTEG BIASA GW UDAH MULAI NAIK HARGA DAN PORSINYA MAKIN DIKIT AJA
+742;52;11-50;8035979.0;text;;[];False;False;5477803cd11c63e4;[];gym hari ini skip deh
+743;52;11-50;8035993.0;text;;[];False;False;5477803cd11c63e4;[];gw abis lari pagi tadi
+744;52;11-50;8036038.0;text;;[];False;False;ab4c5e9fff7f5840;[];gw abis lari pagi tadi
+745;52;11-50;8036039.0;text;;[];False;False;ab4c5e9fff7f5840;[];badminton yuk sore ini
+746;52;51-100;8036063.0;text;;[];False;False;ed47ed97e5e07ca1;[];GW HARUS GANTI STRATEGI BELAJAR SIH SOALNYA NILAI UTS KEMARIN JELEK BGT
+747;52;11-50;8036069.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];GW LAGI BACA NOVEL BARU NIH
+748;52;1-10;8036101.0;text;;['😏'];False;False;5477803cd11c63e4;[];kuy
+749;52;1-10;8036109.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];NJIR
+750;52;11-50;8036115.0;text;;[];True;False;ed47ed97e5e07ca1;['c6a2611d16f13869'];ADA SINYAL GA DISITU?
+751;52;11-50;8036373.0;text;;[];False;False;c6a2611d16f13869;[];futsal besok jadi ga,,,
+752;52;51-100;8036425.0;text;;[];False;False;c6a2611d16f13869;[];semalam hujan gede,,, banget sampe kosan,,, gw mati lampu semaleman gila
+753;52;1-10;8036489.0;text;;[];False;False;5477803cd11c63e4;[];zonk
+754;52;1-10;8036586.0;text;;['🤣'];False;False;ed47ed97e5e07ca1;[];BETE
+755;52;0;23307096.0;system;;[];False;False;ed47ed97e5e07ca1;[];[Pesan sistem]
+756;52;0;54977069.0;system;;[];False;False;ab4c5e9fff7f5840;[];[Pesan sistem]
+757;52;0;90885784.0;system;;[];False;False;5477803cd11c63e4;[];[Pesan sistem]

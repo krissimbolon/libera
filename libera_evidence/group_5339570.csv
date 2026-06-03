@@ -1,0 +1,1264 @@
+﻿id;conversation_id;num_characters;relative_time_seconds;message_type;responds_to_id;array_emojis;interrogative;exclamatory;sender_hash;mentioned_phones_hash;message_content
+1;1;11-50;0.0;text;;['🎮'];False;False;510fe0ecdcd7f4cb;[];gw nyari parkir dulu bentar
+2;1;101-500;74160.0;text;;['😏', '😜'];False;False;510fe0ecdcd7f4cb;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+3;1;101-500;405393.0;image/jpeg;;[];False;True;510fe0ecdcd7f4cb;[];[Foto]
+4;2;51-100;1567664.0;text;;[];True;True;510fe0ecdcd7f4cb;[];siapa sih yang spread gosip itu ke grup sebelah, tau ga orangnya?
+5;2;101-500;1567860.0;text;;[];False;False;510fe0ecdcd7f4cb;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+6;2;101-500;1632281.0;text;;[];False;True;510fe0ecdcd7f4cb;[];YESSS gw akhirnya dapet nilai A di mata kuliah yang paling gw takutin selama ini! padahal gw udah pasrah banget pas ujian soalnya soalnya susah parah. ternyata tugas dan presentasi gw nilainya bagus jadi bisa nutupin nilai ujian. alhamdulillah banget perjuangan ga sia sia!
+7;3;0;2264737.0;image/jpeg;;[];False;False;510fe0ecdcd7f4cb;[];[Foto]
+8;3;101-500;2264778.0;text;;['😉'];False;False;510fe0ecdcd7f4cb;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+9;4;500+;2951274.0;image/jpeg;;[];True;True;510fe0ecdcd7f4cb;[];[Foto]
+10;5;500+;3527856.0;text;;[];True;False;510fe0ecdcd7f4cb;[];pinjam catetan boleh ga?
+11;5;500+;3792027.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];diem diem ternyata jadian
+12;5;0;3792734.0;system;;[];False;False;aca1caf0e4f018c0;[];[Pesan sistem]
+13;5;0;4006430.0;system;;[];False;False;5332be727cad20fe;[];[Pesan sistem]
+14;5;101-500;4129924.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+15;5;51-100;4676413.0;text;;[];True;False;510fe0ecdcd7f4cb;[];lu pernah coba belajar bareng di perpus kota ga, enak ga disana?
+16;6;101-500;5701639.0;text;;['😏'];True;False;510fe0ecdcd7f4cb;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+17;6;51-100;6134305.0;text;;[];True;False;510fe0ecdcd7f4cb;[];menurut lu gw harus ambil mata kuliah pilihan yang mana semester depan?
+18;6;0;6134307.0;image/jpeg;;[];False;False;510fe0ecdcd7f4cb;[];[Foto]
+19;6;101-500;6134368.0;text;;[];False;False;510fe0ecdcd7f4cb;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+20;7;500+;7057154.0;text;;['⚠'];False;False;510fe0ecdcd7f4cb;[];reuni kapan ya kita
+21;8;500+;7408493.0;text;;[];False;False;510fe0ecdcd7f4cb;[];bsk sore ada waktu ga
+22;8;101-500;7666833.0;text;;['📌'];True;False;510fe0ecdcd7f4cb;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+23;9;101-500;8811823.0;text;;['📌'];False;True;510fe0ecdcd7f4cb;[];temen temen gw baru aja ngasih surprise ulang tahun yang paling berkesan dalam hidup gw! mereka diem diem booking tempat makan favorit gw dan undang semua temen deket. ada kue tart dan hadiah yang gw pengen dari lama. gw sampe nangis terharu sumpah ga nyangka mereka sebaik itu!
+24;9;101-500;9434181.0;image/jpeg;;['🥫'];False;True;510fe0ecdcd7f4cb;[];[Foto]
+25;10;0;10075448.0;image/jpeg;;[];False;False;510fe0ecdcd7f4cb;[];[Foto]
+26;10;101-500;10075451.0;text;;['📌'];False;True;510fe0ecdcd7f4cb;[];gila sih guys tadi pas gw lagi di jalan tiba tiba motor gw diserempet sama mobil yang belok tanpa sein! untung gw ga jatoh tapi spion gw patah dan baret di bodi motor. orangnya langsung kabur lagi ga tanggung jawab! sumpah kesel banget gw sampe sekarang masih gemetaran!
+27;11;500+;10783946.0;text;;['🗳', '🗣'];False;True;510fe0ecdcd7f4cb;[];capek banget hari ini!
+28;11;0;10784578.0;system;;[];False;False;92bf58a06a3b8363;[];[Pesan sistem]
+29;11;500+;11753817.0;text;;[];False;False;510fe0ecdcd7f4cb;[];sarapan dulu baru mikir
+30;11;51-100;11753834.0;text;;[];False;False;510fe0ecdcd7f4cb;[];gw lagi bingung milih topik skripsi antara dua tema yang sama menariknya
+31;11;0;11901628.0;system;;[];False;False;00260ccd508255a4;[];[Pesan sistem]
+32;11;51-100;12611198.0;text;;['❓', '🌐'];False;False;510fe0ecdcd7f4cb;[];dompet gw ilang kemarin di angkot tapi alhamdulillah ada yang nemuin
+33;12;101-500;13198435.0;text;;[];False;False;510fe0ecdcd7f4cb;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+34;12;0;13252845.0;system;;[];False;False;4c4665ffbdcfa6fb;[];[Pesan sistem]
+35;12;0;13612738.0;image/jpeg;;[];False;False;510fe0ecdcd7f4cb;[];[Foto]
+36;13;500+;13803458.0;text;;[];False;False;510fe0ecdcd7f4cb;[];porsi makan gw nambah terus
+37;13;500+;13815784.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];indomie telor udah cukup kok
+38;13;101-500;13870696.0;text;;[];False;False;510fe0ecdcd7f4cb;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+39;14;500+;14148978.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];pertandingan bola tadi malam gila
+40;14;11-50;14149030.0;application/pdf;;[];False;False;510fe0ecdcd7f4cb;[];[Dokumen PDF]
+41;14;11-50;14149033.0;text;;[];False;False;510fe0ecdcd7f4cb;[];badminton yuk sore ini
+42;14;101-500;14257977.0;text;;[];False;False;510fe0ecdcd7f4cb;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+43;14;101-500;14526591.0;text;;['🧐', 'ℹ️', '💪', '📩'];True;False;510fe0ecdcd7f4cb;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+44;15;101-500;15006934.0;text;;['😊'];True;False;510fe0ecdcd7f4cb;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+45;15;500+;15022143.0;text;;['📌'];True;False;510fe0ecdcd7f4cb;[];kenapa ga bales chat gw?
+46;15;500+;15120283.0;text;;['👋🏻', '➡️'];True;False;510fe0ecdcd7f4cb;[];kenapa ga bales chat gw?
+47;16;101-500;15544890.0;text;;['🗞'];False;False;510fe0ecdcd7f4cb;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+48;16;0;15553609.0;image/jpeg;;[];False;False;510fe0ecdcd7f4cb;[];[Foto]
+49;17;101-500;16315354.0;text;;['😊', '😏'];True;False;510fe0ecdcd7f4cb;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+50;18;101-500;16671632.0;text;;['💪'];False;False;510fe0ecdcd7f4cb;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+51;18;101-500;16829291.0;text;;[];False;False;510fe0ecdcd7f4cb;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+52;18;11-50;16829297.0;application/pdf;;[];False;False;510fe0ecdcd7f4cb;[];[Dokumen PDF]
+53;19;101-500;16956036.0;text;;['ℹ️'];True;False;510fe0ecdcd7f4cb;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+54;19;500+;17004274.0;text;;['ℹ️'];False;False;510fe0ecdcd7f4cb;[];podcast yg lu rekomen mana
+55;20;101-500;17277169.0;text;;['ℹ️', '🏠'];False;False;510fe0ecdcd7f4cb;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+56;20;51-100;17277172.0;application/pdf;;[];False;False;510fe0ecdcd7f4cb;[];[Dokumen PDF]
+57;21;101-500;17439531.0;text;;['📝', 'ℹ️'];True;False;510fe0ecdcd7f4cb;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+58;21;101-500;17458267.0;text;;[];False;False;510fe0ecdcd7f4cb;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+59;21;101-500;17521583.0;text;;[];False;False;510fe0ecdcd7f4cb;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+60;22;101-500;18710603.0;text;;['🆕', '🏠', '🏫', '🗓', 'ℹ️'];False;False;510fe0ecdcd7f4cb;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+61;22;101-500;19888908.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];minggu lalu gw akhirnya beraniin diri buat ngomong sama dosen pembimbing soal progress skripsi yang mandek. ternyata beliau pengertian banget dan kasih banyak masukan yang berguna. gw nyesel ga ngomong dari awal soalnya selama ini gw cuma takut ditolak atau dimarahin padahal dosennya baik banget
+62;23;101-500;21082256.0;text;;['🤦\u200d♂️', '🤦\u200d♀️', '✅', 'ℹ️'];True;False;510fe0ecdcd7f4cb;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+63;23;11-50;21082430.0;application/pdf;;[];False;False;510fe0ecdcd7f4cb;[];[Dokumen PDF]
+64;23;11-50;21082431.0;text;;['🗓️'];False;False;510fe0ecdcd7f4cb;[];sarapan dulu baru mikir
+65;23;11-50;21082432.0;application/pdf;;[];False;False;510fe0ecdcd7f4cb;[];[Dokumen PDF]
+66;23;11-50;21082436.0;text;;['✍️'];False;False;510fe0ecdcd7f4cb;[];es teh manis satu ya bang
+67;24;101-500;21605812.0;text;;['🏃\u200d♂️', 'ℹ️'];False;False;510fe0ecdcd7f4cb;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+68;24;101-500;21605871.0;text;;['📌'];True;True;510fe0ecdcd7f4cb;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+69;25;101-500;21767425.0;text;;['🤔', '🤪', 'ℹ️', '➕'];True;True;510fe0ecdcd7f4cb;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+70;25;0;23434152.0;system;;[];False;False;fd3184371dc8fd89;[];[Pesan sistem]
+71;25;0;24222411.0;system;;[];False;False;a339dd1e2c9489f8;[];[Pesan sistem]
+72;25;101-500;25447651.0;text;;['🤑', 'ℹ️', '✍'];False;False;510fe0ecdcd7f4cb;[];gw baru selesai nonton dokumenter tentang kehidupan nelayan di pesisir utara Jawa. sedih banget liat perjuangan mereka yang harus melaut berhari hari cuma buat dapet ikan yang harganya ga seberapa di pasar. bikin gw makin bersyukur sih sama kehidupan gw sekarang walau kadang ngeluh juga
+73;25;0;25852668.0;system;;[];False;False;0071c2e06f0ccdb1;[];[Pesan sistem]
+74;25;101-500;27027347.0;text;;['🤔', '📄', 'ℹ️', '👩\u200d💼'];True;False;510fe0ecdcd7f4cb;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+75;25;0;27285850.0;system;;[];False;False;c734f23f3c1993b2;[];[Pesan sistem]
+76;25;101-500;27365525.0;text;;[];False;False;510fe0ecdcd7f4cb;[];gw baru selesai nonton dokumenter tentang kehidupan nelayan di pesisir utara Jawa. sedih banget liat perjuangan mereka yang harus melaut berhari hari cuma buat dapet ikan yang harganya ga seberapa di pasar. bikin gw makin bersyukur sih sama kehidupan gw sekarang walau kadang ngeluh juga
+77;25;0;27366466.0;system;;[];False;False;6eae8a0f7cb7399d;[];[Pesan sistem]
+78;25;101-500;27649433.0;text;;['🙄', '📚', 'ℹ️', '✍️'];True;False;510fe0ecdcd7f4cb;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+79;25;0;27649448.0;system;;[];False;False;1f7e6b8d0ed44d31;[];[Pesan sistem]
+80;25;0;27649676.0;system;;[];False;False;0656f118682ef14a;[];[Pesan sistem]
+81;25;0;27649723.0;system;;[];False;False;95b1adb81d349119;[];[Pesan sistem]
+82;25;0;27717597.0;system;;[];False;False;652b7ada34eba3e7;[];[Pesan sistem]
+83;25;0;27718625.0;system;;[];False;False;30d1e4f31c5b7d4d;[];[Pesan sistem]
+84;25;0;27720451.0;system;;[];False;False;3bdcec00d01f0f45;[];[Pesan sistem]
+85;25;0;27790117.0;system;;[];False;False;652b7ada34eba3e7;[];[Pesan sistem]
+86;25;101-500;27809445.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+87;25;101-500;27809825.0;text;;['📌'];True;False;510fe0ecdcd7f4cb;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+88;25;51-100;27893818.0;text;;[];True;False;510fe0ecdcd7f4cb;[];ada yang punya softcopy buku mata kuliah statistik semester ini ga?
+89;26;500+;27983412.0;text;;['⚠️', '📧', '🖥️', '0️⃣', '↪️', 'ℹ️'];False;False;510fe0ecdcd7f4cb;[];pertandingan bola tadi malam gila
+90;26;0;27983485.0;system;;[];False;False;72e236fd2e319602;[];[Pesan sistem]
+91;26;101-500;28000015.0;text;;[];False;False;510fe0ecdcd7f4cb;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+92;27;101-500;28084814.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+93;27;101-500;28143856.0;text;;[];False;False;510fe0ecdcd7f4cb;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+94;28;0;28265670.0;image/jpeg;;[];False;False;510fe0ecdcd7f4cb;[];[Foto]
+95;28;0;28266437.0;system;;[];False;False;391a8162f212eafb;[];[Pesan sistem]
+96;28;101-500;28325863.0;text;;['🔀', 'ℹ️', '🗓️'];False;False;510fe0ecdcd7f4cb;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+97;28;0;28326316.0;system;;[];False;False;0351e3c613651f54;[];[Pesan sistem]
+98;28;0;28326662.0;system;;[];False;False;925e99b8517e1540;[];[Pesan sistem]
+99;28;0;28328320.0;system;;[];False;False;6946f89957c0e21d;[];[Pesan sistem]
+100;28;101-500;28854882.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+101;29;101-500;29100274.0;text;;[];False;False;510fe0ecdcd7f4cb;[];minggu lalu gw akhirnya beraniin diri buat ngomong sama dosen pembimbing soal progress skripsi yang mandek. ternyata beliau pengertian banget dan kasih banyak masukan yang berguna. gw nyesel ga ngomong dari awal soalnya selama ini gw cuma takut ditolak atau dimarahin padahal dosennya baik banget
+102;29;0;29611736.0;system;;[];False;False;70297e0a11aa5624;[];[Pesan sistem]
+103;29;500+;29622407.0;text;;[];False;True;510fe0ecdcd7f4cb;[];sumpah itu lucu parah!
+104;29;0;29622494.0;system;;[];False;False;cfa32738ee1cb7d9;[];[Pesan sistem]
+105;29;500+;29887390.0;text;;['✊', '📄', '📚', '❎', '🧑\u200d🏫', '🤐', '💶', '💻', '🗓'];False;False;510fe0ecdcd7f4cb;[];gw lagi di atm sebentar
+106;30;101-500;30394509.0;text;;['😖', '🔋', '🔜'];True;False;510fe0ecdcd7f4cb;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+107;30;101-500;30656247.0;text;;['⚠️', '🖨', '🤷🏻\u200d♀'];False;False;6c3ec96eff8a3b48;[];gw baru selesai nonton dokumenter tentang kehidupan nelayan di pesisir utara Jawa. sedih banget liat perjuangan mereka yang harus melaut berhari hari cuma buat dapet ikan yang harganya ga seberapa di pasar. bikin gw makin bersyukur sih sama kehidupan gw sekarang walau kadang ngeluh juga
+108;30;500+;30684848.0;text;;['🗳️', '😓', '📧'];True;False;6c3ec96eff8a3b48;[];mau nitip apa ga?
+109;31;101-500;30757806.0;text;;['🖨', '🔜'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+110;31;500+;30818063.0;text;;['🗳️', '😓', '📧'];True;False;6c3ec96eff8a3b48;[];ntar malem ngapain?
+111;31;101-500;30901077.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+112;32;101-500;31007913.0;text;;['📝'];False;False;6c3ec96eff8a3b48;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+113;32;101-500;31426251.0;text;;['🙋\u200d♂', '✍️'];False;True;510fe0ecdcd7f4cb;[];YESSS gw akhirnya dapet nilai A di mata kuliah yang paling gw takutin selama ini! padahal gw udah pasrah banget pas ujian soalnya soalnya susah parah. ternyata tugas dan presentasi gw nilainya bagus jadi bisa nutupin nilai ujian. alhamdulillah banget perjuangan ga sia sia!
+114;32;0;31427199.0;system;;[];False;False;c7082f4e3c1cce5c;[];[Pesan sistem]
+115;32;101-500;31555886.0;text;;[];False;False;6c3ec96eff8a3b48;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+116;33;101-500;31708967.0;text;;['👾'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+117;33;1-10;31709010.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+118;34;101-500;32498322.0;text;;['🎮', '💸', '💪'];True;False;6c3ec96eff8a3b48;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+119;34;101-500;32552709.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+120;35;500+;32643523.0;text;;['🗳', '📨', '🙋\u200d♂️', '🙋\u200d♀️'];True;False;6c3ec96eff8a3b48;[];boleh gw ikut ga?
+121;35;500+;33066980.0;text;;[];True;True;510fe0ecdcd7f4cb;[];boleh gw ikut ga?
+122;36;101-500;33249779.0;text;;['🗳'];True;False;510fe0ecdcd7f4cb;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+123;36;500+;33666995.0;text;;['🎓'];False;True;6c3ec96eff8a3b48;[];sedih banget ceritanya!
+124;36;0;33684090.0;system;;[];False;False;6704bd65df728e63;[];[Pesan sistem]
+125;36;51-100;33758517.0;text;;[];True;False;6c3ec96eff8a3b48;[];lu pernah coba belajar bareng di perpus kota ga, enak ga disana?
+126;37;101-500;35678492.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+127;37;1-10;35678545.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+128;37;101-500;37380654.0;text;;['📌'];False;False;510fe0ecdcd7f4cb;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+129;37;101-500;37401916.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+130;37;51-100;37580535.0;text;;[];True;False;6c3ec96eff8a3b48;[];lu pernah coba belajar bareng di perpus kota ga, enak ga disana?
+131;37;101-500;38076574.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+132;38;101-500;39217563.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+133;38;101-500;39379182.0;text;;['🇪🇺'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+134;39;101-500;39711471.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+135;39;101-500;39929539.0;text;;['📌'];True;True;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+136;40;101-500;40445629.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+137;40;101-500;40445704.0;text;;[];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+138;41;101-500;40794667.0;text;;['⚠️'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+139;41;0;40794677.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+140;41;0;40794680.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+141;41;0;40794681.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+142;42;101-500;40871221.0;text;;['🎓', '💶'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+143;43;500+;40926195.0;text;;[];True;True;6c3ec96eff8a3b48;[];wifi password nya apa sih?
+144;43;0;40953645.0;system;;[];False;False;6c3ec96eff8a3b48;[];[Pesan sistem]
+145;44;500+;41130865.0;text;;['📌', '👩\u200d💻', '🧑\u200d💻', '🧬', '🤖', '🕹', '📡', '🤑'];True;False;6c3ec96eff8a3b48;[];siapa aja yg dateng?
+146;44;101-500;41183511.0;text;;['🆕', 'ℹ️', '🗓'];False;False;6c3ec96eff8a3b48;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+147;44;0;41184001.0;system;;[];False;False;46952cc2f65ef553;[];[Pesan sistem]
+148;44;0;41192549.0;system;;[];False;False;f884e70dfed6c00a;[];[Pesan sistem]
+149;44;51-100;41217672.0;text;;['🔙'];False;False;6c3ec96eff8a3b48;[];gw nonton film dokumenter semalam tentang laut dan ikan, bagus banget
+150;45;500+;41622636.0;text;;['🤨', '😉'];True;False;6c3ec96eff8a3b48;[];bisa jemput gw ga?
+151;45;101-500;41707811.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+152;46;101-500;43033240.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+153;46;1-10;43033283.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+154;47;101-500;43370806.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+155;47;1-10;43370859.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+156;47;101-500;44031621.0;text;;['📌', '🔍', '💶'];False;False;6c3ec96eff8a3b48;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+157;48;101-500;46044037.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+158;48;101-500;46044074.0;text;;['💶', '💻', '👉'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+159;48;101-500;46060361.0;text;;['🎟', '🔗', '😉', '⤵'];True;True;6c3ec96eff8a3b48;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+160;49;101-500;46450518.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];minggu lalu gw akhirnya beraniin diri buat ngomong sama dosen pembimbing soal progress skripsi yang mandek. ternyata beliau pengertian banget dan kasih banyak masukan yang berguna. gw nyesel ga ngomong dari awal soalnya selama ini gw cuma takut ditolak atau dimarahin padahal dosennya baik banget
+161;49;0;46471564.0;system;;[];False;False;51f7a98124398c7c;[];[Pesan sistem]
+162;49;0;46796756.0;system;;[];False;False;0022a83055394f54;[];[Pesan sistem]
+163;49;0;47064614.0;system;;[];False;False;6b8d6bc1345ba6a5;[];[Pesan sistem]
+164;49;101-500;47142527.0;text;;['📌', '📸', '💶'];False;False;6c3ec96eff8a3b48;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+165;50;101-500;48177272.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+166;50;101-500;48213493.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+167;50;0;48213520.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+168;50;101-500;48521151.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+169;51;0;48890020.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+170;52;500+;49056988.0;text;;[];False;False;6c3ec96eff8a3b48;[];macet parah di jalan tol
+171;52;101-500;49126063.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+172;53;101-500;49488551.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+173;54;101-500;49821701.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+174;54;101-500;50076596.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+175;54;0;50101312.0;system;;[];False;False;911f015ab13e01af;[];[Pesan sistem]
+176;54;51-100;50358979.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+177;55;101-500;50803292.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+178;55;101-500;50870812.0;text;;[];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+179;56;500+;51338509.0;text;;['📝'];False;True;6c3ec96eff8a3b48;[];stress berat gw sama tugas!
+180;56;500+;51505190.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];masih bangun ga lu jam segini?
+181;57;11-50;51843619.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+182;57;51-100;51843649.0;text;;[];False;False;6c3ec96eff8a3b48;[];gw harus ganti strategi belajar sih soalnya nilai UTS kemarin jelek bgt
+183;57;0;52077235.0;system;;[];False;False;97c9e938ddf8fc30;[];[Pesan sistem]
+184;57;101-500;52194417.0;text;;['📌', '😱', '👇🏻'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+185;57;0;52773924.0;system;;[];False;False;3c68f9a5f19b3792;[];[Pesan sistem]
+186;57;101-500;53104913.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+187;57;11-50;53108492.0;text;;[];False;False;6c3ec96eff8a3b48;[];gym hari ini skip deh
+188;58;101-500;53188703.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+189;58;0;53188726.0;system;;[];False;False;0f39b0963e6311ae;[];[Pesan sistem]
+190;58;0;53189970.0;system;;[];False;False;09f5a5e5d8512b62;[];[Pesan sistem]
+191;58;0;53685424.0;system;;[];False;False;4dfb74128a7c4083;[];[Pesan sistem]
+192;58;0;54110835.0;system;;[];False;False;62fc71c6e20e42b1;[];[Pesan sistem]
+193;58;101-500;55176005.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+194;58;101-500;55176019.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];minggu lalu gw akhirnya beraniin diri buat ngomong sama dosen pembimbing soal progress skripsi yang mandek. ternyata beliau pengertian banget dan kasih banyak masukan yang berguna. gw nyesel ga ngomong dari awal soalnya selama ini gw cuma takut ditolak atau dimarahin padahal dosennya baik banget
+195;58;0;55176749.0;system;;[];False;False;8ffa8658a559e5aa;[];[Pesan sistem]
+196;58;0;55181872.0;system;;[];False;False;a229b39d6edfb719;[];[Pesan sistem]
+197;58;0;55282749.0;system;;[];False;False;a62c62468c125ff6;[];[Pesan sistem]
+198;58;101-500;55640651.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw baru selesai nonton dokumenter tentang kehidupan nelayan di pesisir utara Jawa. sedih banget liat perjuangan mereka yang harus melaut berhari hari cuma buat dapet ikan yang harganya ga seberapa di pasar. bikin gw makin bersyukur sih sama kehidupan gw sekarang walau kadang ngeluh juga
+199;58;0;56128084.0;system;;[];False;False;00260ccd508255a4;[];[Pesan sistem]
+200;58;101-500;58061684.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];kemarin gw ikut kegiatan bakti sosial yang diadain sama BEM fakultas. kita ke panti asuhan di pinggiran kota buat ngajar anak anak dan bagi bagi sembako. seru banget sih dan bikin hati adem. anak anaknya lucu lucu dan semangat banget belajar walau fasilitas mereka terbatas. jadi pengen rutin kesana
+201;58;0;58061796.0;system;;[];False;False;bd8cb2e580a07731;[];[Pesan sistem]
+202;58;0;58061925.0;system;;[];False;False;74428c56596cd7bc;[];[Pesan sistem]
+203;58;0;58062296.0;system;;[];False;False;a85c1d14fb99b971;[];[Pesan sistem]
+204;58;0;58082915.0;system;;[];False;False;83e1beeb3eb89f6c;[];[Pesan sistem]
+205;58;101-500;58217039.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];minggu lalu gw akhirnya beraniin diri buat ngomong sama dosen pembimbing soal progress skripsi yang mandek. ternyata beliau pengertian banget dan kasih banyak masukan yang berguna. gw nyesel ga ngomong dari awal soalnya selama ini gw cuma takut ditolak atau dimarahin padahal dosennya baik banget
+206;58;0;58217066.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+207;58;51-100;58217071.0;text;;[];False;False;6c3ec96eff8a3b48;[];gw seneng banget akhirnya bisa ketemu temen temen lama setelah lama ga
+208;58;0;58219762.0;system;;[];False;False;dfe7f7a42ab0f273;[];[Pesan sistem]
+209;58;0;58225050.0;system;;[];False;False;9e57b216f09112b9;[];[Pesan sistem]
+210;58;0;58409116.0;system;;[];False;False;00260ccd508255a4;[];[Pesan sistem]
+211;58;101-500;58648473.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw baru selesai nonton dokumenter tentang kehidupan nelayan di pesisir utara Jawa. sedih banget liat perjuangan mereka yang harus melaut berhari hari cuma buat dapet ikan yang harganya ga seberapa di pasar. bikin gw makin bersyukur sih sama kehidupan gw sekarang walau kadang ngeluh juga
+212;59;101-500;58836530.0;text;;['🔴'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+213;59;0;58839955.0;system;;[];False;False;6fb5e7b392431b97;[];[Pesan sistem]
+214;59;101-500;58840173.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+215;59;0;58840200.0;system;;[];False;False;4dabdf55bb3d84c5;[];[Pesan sistem]
+216;59;0;58840233.0;system;;[];False;False;4dabdf55bb3d84c5;[];[Pesan sistem]
+217;59;51-100;58840241.0;text;;[];False;False;6c3ec96eff8a3b48;[];nyokap gw nelfon tadi nanyain kapan pulang, gw bilang aja abis ujian
+218;59;0;58840821.0;system;;[];False;False;bb8cffeaf8a831aa;[];[Pesan sistem]
+219;59;101-500;59062250.0;text;;['🙋🏽\u200d♀️', '🗓', '🗺'];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+220;59;101-500;59083352.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+221;60;0;59428629.0;unknown;;[];False;False;6c3ec96eff8a3b48;[];[Media tidak dikenal]
+222;61;0;59668797.0;unknown;;[];False;False;6c3ec96eff8a3b48;[];[Media tidak dikenal]
+223;61;101-500;59757198.0;text;;['📌'];True;True;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+224;61;0;59758230.0;system;;[];False;False;5d89ce838f685164;[];[Pesan sistem]
+225;61;500+;59851273.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];lu punya kontak dia ga?
+226;62;101-500;59927434.0;text;;['😉'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+227;62;0;59927488.0;system;;[];False;False;3a967e92e980ad96;[];[Pesan sistem]
+228;62;0;59930218.0;system;;[];False;False;36f44445dc0be3d0;[];[Pesan sistem]
+229;62;500+;60060235.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];mie ayam pak kumis juara sih
+230;63;101-500;60270714.0;text;;['📌', '🏛️', '😷'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+231;63;101-500;60277875.0;text;;['🗳️'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+232;63;500+;60286704.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];gw abis lari pagi tadi
+233;64;101-500;60305891.0;text;;['🎉', '🔜', '🙋\u200d♂', '🤪', '🔗'];False;True;6c3ec96eff8a3b48;[];temen temen gw baru aja ngasih surprise ulang tahun yang paling berkesan dalam hidup gw! mereka diem diem booking tempat makan favorit gw dan undang semua temen deket. ada kue tart dan hadiah yang gw pengen dari lama. gw sampe nangis terharu sumpah ga nyangka mereka sebaik itu!
+234;64;0;60397357.0;system;;[];False;False;807215a20c5543a7;[];[Pesan sistem]
+235;64;101-500;60454471.0;text;;['😢', '🙌', '🎟️', '🔊', '📍', '🤪'];True;True;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+236;64;101-500;60454753.0;text;;['😈', '🙌🏼', '🌯', '1️⃣', '2️⃣', '📍'];True;True;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+237;65;0;60557227.0;unknown;;[];False;False;6c3ec96eff8a3b48;[];[Media tidak dikenal]
+238;65;101-500;60557379.0;text;;['🗳️'];False;False;6c3ec96eff8a3b48;[];kemarin gw ikut kegiatan bakti sosial yang diadain sama BEM fakultas. kita ke panti asuhan di pinggiran kota buat ngajar anak anak dan bagi bagi sembako. seru banget sih dan bikin hati adem. anak anaknya lucu lucu dan semangat banget belajar walau fasilitas mereka terbatas. jadi pengen rutin kesana
+239;66;500+;61015801.0;text;;['🔐', '🙄', '🗓', '💻', '👭', '🔗', '❗'];True;False;6c3ec96eff8a3b48;[];ada yang punya catetan?
+240;67;101-500;61235024.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+241;67;51-100;61271536.0;text;;['⏰'];False;False;6c3ec96eff8a3b48;[];eh besok kita jadi ketemuan di kafe deket stasiun kan ya jam 2 siang
+242;68;101-500;61740390.0;text;;['📌', '🗓', '🏆', '🗺️'];True;False;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+243;68;51-100;61788635.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+244;68;11-50;61788653.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+245;68;500+;62313397.0;text;;['📌', '📅', '💵', '🎓'];False;False;6c3ec96eff8a3b48;[];temenin gw dong besok
+246;69;101-500;64178108.0;text;;['📌'];True;True;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+247;69;500+;64178963.0;text;;['📌', '🤔', '🤪', '⬇️', '📆', '✨', '👀', '😋', '😎'];True;True;6c3ec96eff8a3b48;[];mau nitip apa ga?
+248;70;101-500;64588245.0;text;;['📌', '📍', '🗓️', '🔗'];False;True;6c3ec96eff8a3b48;[];YESSS gw akhirnya dapet nilai A di mata kuliah yang paling gw takutin selama ini! padahal gw udah pasrah banget pas ujian soalnya soalnya susah parah. ternyata tugas dan presentasi gw nilainya bagus jadi bisa nutupin nilai ujian. alhamdulillah banget perjuangan ga sia sia!
+249;70;101-500;64705513.0;text;;[];False;False;6c3ec96eff8a3b48;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+250;71;101-500;64889970.0;text;;['📌', '❗', '🗓️', '🙄', '🔗'];False;False;6c3ec96eff8a3b48;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+251;71;500+;64940040.0;text;;['📌', '🌐', '🖥', '💻', '🔗'];True;False;6c3ec96eff8a3b48;[];nilai keluar kapan ya?
+252;72;500+;65291364.0;text;;['📌', '🥴', '🧬', '🗓️', '📍', '🎥', '🔬', '🧑\u200d🔬', '🔗'];True;False;6c3ec96eff8a3b48;[];gw harus bawa apa aja?
+253;73;500+;65555243.0;text;;['📌', '🗓️', '📍', '❗', '🔗'];True;False;6c3ec96eff8a3b48;[];ada yang punya catetan?
+254;73;101-500;65717824.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+255;74;101-500;65912465.0;text;;['📌', '👀', '🥳', '🔗'];True;False;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+256;74;0;65914332.0;system;;[];False;False;05d07e70275fcbf4;[];[Pesan sistem]
+257;74;500+;66028048.0;text;;['🥶', '😡', '⏰', '🔧', '💭'];False;True;6c3ec96eff8a3b48;[];gw seneng banget dapet A!
+258;75;500+;66086414.0;text;;['📌', '🗳', '🔝', '🙋\u200d♂️', '📩', 'ℹ️'];False;False;6c3ec96eff8a3b48;[];hp gw lowbat nih
+259;75;0;66098280.0;system;;[];False;False;66b95e7686b3f286;[];[Pesan sistem]
+260;75;101-500;66952059.0;text;;['📌', '👀', '🤯', '🔗'];True;False;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+261;76;101-500;66963965.0;text;;['📝'];True;True;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+262;76;500+;66967854.0;text;;['📌', '🏨', '🔗'];False;False;6c3ec96eff8a3b48;[];si itu udah putus katanya
+263;76;101-500;67892783.0;image/jpeg;;['😡', '💪'];False;True;6c3ec96eff8a3b48;[];[Foto]
+264;77;0;69094725.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+265;77;51-100;69100237.0;text;;[];False;False;6c3ec96eff8a3b48;[];gw lagi dengerin podcast tentang psikologi, lumayan buat nambah wawasan
+266;77;0;69102302.0;system;;[];False;False;79cfc5adfbd360a1;[];[Pesan sistem]
+267;77;0;69107111.0;system;;[];False;False;8514678cf4780af0;[];[Pesan sistem]
+268;77;0;69115633.0;system;;[];False;False;e44347f5fd28d791;[];[Pesan sistem]
+269;77;0;69349990.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+270;77;0;69350783.0;system;;[];False;False;fcda449472a2383f;[];[Pesan sistem]
+271;77;0;69353562.0;system;;[];False;False;ccf54e40bdb804d5;[];[Pesan sistem]
+272;77;0;69355372.0;system;;[];False;False;26fa4de8988ca4ed;[];[Pesan sistem]
+273;77;0;69369010.0;system;;[];False;False;097c41734674e99b;[];[Pesan sistem]
+274;77;0;69377231.0;system;;[];False;False;8c81a3da1880696f;[];[Pesan sistem]
+275;77;101-500;69445009.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+276;78;51-100;69960388.0;text;;[];True;False;6c3ec96eff8a3b48;[];gimana caranya biar bisa fokus belajar tanpa main hp terus ya?
+277;79;51-100;70135425.0;text;;[];False;False;6c3ec96eff8a3b48;[];eh besok kita jadi ketemuan di kafe deket stasiun kan ya jam 2 siang
+278;80;101-500;70234266.0;text;;['🎮', '📌'];False;False;6c3ec96eff8a3b48;[];jadi ceritanya kemarin gw ke perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem semua sama anak angkatan sebelah. akhirnya gw cuma bisa fotokopi dari temen yang kebetulan punya. lumayan lah daripada ga dapet sama sekali, tinggal di rangkum aja sisanya
+279;80;11-50;70242899.0;application/pdf;;[];False;False;6c3ec96eff8a3b48;[];[Dokumen PDF]
+280;80;51-100;70242921.0;text;;['📌'];False;False;6c3ec96eff8a3b48;[];tadi gw ketemu dosen pembimbing dan dia minta revisi lagi untuk bab 3
+281;80;0;70243664.0;system;;[];False;False;3d6087a9f902bb8c;[];[Pesan sistem]
+282;80;0;70255364.0;system;;[];False;False;f7877a62b40573c5;[];[Pesan sistem]
+283;80;0;70306983.0;system;;[];False;False;b505b028456e8d72;[];[Pesan sistem]
+284;80;101-500;70681482.0;text;;['📌', '👨\u200d💻', '🆕', '😜'];False;True;6c3ec96eff8a3b48;[];parah banget banjir di daerah kosan gw semalam sampai air masuk ke kamar setinggi betis! barang barang gw banyak yang kerendem termasuk buku kuliah dan sepatu. gw harus ngungsi ke kosan temen dan sekarang lagi bersihin semua barang. semoga ga ada yang rusak parah sih!
+285;80;0;70681494.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+286;81;101-500;70829620.0;text;;['📆'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+287;81;101-500;70940859.0;text;;['📌', '📆'];True;False;6c3ec96eff8a3b48;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian KRS? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+288;82;500+;71766249.0;text;;['🔐', '🙄', '🗓', '💻', '👭', '🔗', '❗'];True;False;6c3ec96eff8a3b48;[];bawa motor apa naik apa?
+289;82;0;71769247.0;system;;[];False;False;3b62b3971f3d04a1;[];[Pesan sistem]
+290;82;0;71770078.0;system;;[];False;False;7262863affec5114;[];[Pesan sistem]
+291;82;0;71773419.0;system;;[];False;False;aff2c7aef0371c9f;[];[Pesan sistem]
+292;82;101-500;71783498.0;text;;['🌍', '📆', '💰'];False;False;6c3ec96eff8a3b48;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+293;82;0;71783888.0;system;;[];False;False;834d9c5900a4f397;[];[Pesan sistem]
+294;82;0;71786770.0;system;;[];False;False;9153a5cf9af30061;[];[Pesan sistem]
+295;82;0;72476951.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+296;82;0;72482232.0;system;;[];False;False;1088b83dd5ad0cd0;[];[Pesan sistem]
+297;82;101-500;73015965.0;text;;['📝'];False;True;6c3ec96eff8a3b48;[];YESSS gw akhirnya dapet nilai A di mata kuliah yang paling gw takutin selama ini! padahal gw udah pasrah banget pas ujian soalnya soalnya susah parah. ternyata tugas dan presentasi gw nilainya bagus jadi bisa nutupin nilai ujian. alhamdulillah banget perjuangan ga sia sia!
+298;83;0;73519830.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+299;83;0;73679284.0;system;;[];False;False;e85306080333ad75;[];[Pesan sistem]
+300;83;101-500;73875847.0;text;;[];False;False;6c3ec96eff8a3b48;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+301;84;500+;73938811.0;text;;['🗣', '👉', '🤑', '💭', '🗓', '🔗', '📩', '😉'];True;False;6c3ec96eff8a3b48;[];nilai keluar kapan ya?
+302;84;101-500;73938839.0;text;;['🔌', '🛠'];True;False;6c3ec96eff8a3b48;[];gw lagi bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut kalian gimana sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yang bilang bisa nambah soft skill tapi di sisi lain waktu buat belajar jadi berkurang kan, gimana pengalaman kalian?
+303;85;500+;74319781.0;text;;['🥘', '😎', '🤔', '✨', '👀'];True;False;6c3ec96eff8a3b48;[];gimana kabar lu sekarang?
+304;85;0;74320564.0;system;;[];False;False;d98a37db22a3c1fe;[];[Pesan sistem]
+305;85;101-500;74550545.0;text;;['🥘', '😡'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+306;86;101-500;74805786.0;text;;['🎽', '🥘'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+307;86;101-500;74810370.0;text;;[];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+308;86;500+;74841207.0;text;;['👕', '🚨'];False;False;6c3ec96eff8a3b48;[];game baru udah download belum
+309;86;101-500;74908590.0;text;;['🚨', '🥘'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+310;87;500+;75010490.0;text;;['💶', '🚨'];True;False;6c3ec96eff8a3b48;[];masih buka ga warungnya?
+311;87;101-500;75060301.0;text;;['🚨', '👍🏼'];False;False;6c3ec96eff8a3b48;[];gw lagi belajar coding otodidak dari YouTube buat nambah skill. mulai dari HTML CSS dulu baru pelan pelan ke JavaScript. lumayan susah sih awalnya tapi lama lama mulai paham juga. siapa tau nanti bisa bikin portfolio sendiri dan dapet kerjaan freelance buat nambah uang jajan selama kuliah
+312;87;11-50;75060331.0;text;;[];False;False;6c3ec96eff8a3b48;[];bentar ya gw lg di jalan
+313;87;101-500;75143413.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];eh ada yang punya rekomendasi laptop budget 5 jutaan yang bagus buat kuliah dan ngoding ga? laptop gw yang sekarang udah mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yang ringan buat dibawa ke kampus tapi tetep kenceng performanya, ada saran?
+314;88;0;75402124.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+315;88;101-500;75452144.0;text;;['🤔', '😲', '⬇️'];True;False;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+316;89;51-100;75586543.0;text;;[];True;False;6c3ec96eff8a3b48;[];ada yang tau kenapa kantin kampus tutup lebih awal hari ini ga sih?
+317;89;101-500;75586673.0;text;;['🥳', '✨', '🥰', '📆'];False;True;6c3ec96eff8a3b48;[];parah banget banjir di daerah kosan gw semalam sampai air masuk ke kamar setinggi betis! barang barang gw banyak yang kerendem termasuk buku kuliah dan sepatu. gw harus ngungsi ke kosan temen dan sekarang lagi bersihin semua barang. semoga ga ada yang rusak parah sih!
+318;89;0;75586692.0;system;;[];False;False;b6662bfccc764fdc;[];[Pesan sistem]
+319;89;0;75586745.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+320;89;101-500;75612792.0;text;;['👉', '❌'];False;False;6c3ec96eff8a3b48;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+321;89;101-500;75747957.0;text;;['⛔', '👮\u200d♀', '🚙'];False;False;6c3ec96eff8a3b48;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+322;90;0;76124290.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+323;91;101-500;76287345.0;text;;[];False;False;6c3ec96eff8a3b48;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+324;91;500+;76351522.0;text;;['📅', '⚠️', '⏰', 'ℹ️'];False;False;6c3ec96eff8a3b48;[];porsi makan gw nambah terus
+325;91;101-500;76553476.0;text;;['📌'];False;True;6c3ec96eff8a3b48;[];temen temen gw baru aja ngasih surprise ulang tahun yang paling berkesan dalam hidup gw! mereka diem diem booking tempat makan favorit gw dan undang semua temen deket. ada kue tart dan hadiah yang gw pengen dari lama. gw sampe nangis terharu sumpah ga nyangka mereka sebaik itu!
+326;92;101-500;77239184.0;text;;['👕', '🥘', '🕘'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+327;92;0;77239193.0;system;;[];False;False;e1ba3c94c38bbdcb;[];[Pesan sistem]
+328;92;0;77239222.0;system;;[];False;False;90da362974e7a3ed;[];[Pesan sistem]
+329;92;500+;78452326.0;text;;['😷'];False;True;6c3ec96eff8a3b48;[];gw kaget pas denger itu!
+330;93;101-500;79028190.0;text;;['ℹ️', '📅'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+331;93;500+;79111669.0;text;;['🎮', '📆', '📍', '💻'];True;True;6c3ec96eff8a3b48;[];ada yang punya catetan?
+332;93;0;79254033.0;system;;[];False;False;5789298907312b54;[];[Pesan sistem]
+333;93;101-500;79316430.0;text;;['📆', '🏫'];False;False;6c3ec96eff8a3b48;[];gw lagi galau banget nih soal masa depan. mau lanjut S2 tapi duit ga ada, mau langsung kerja tapi pengalaman masih minim. nyokap bilang terserah gw aja tapi gw tau dia pengen gw cepet kerja biar bisa bantu ekonomi keluarga. bingung banget sih, kayak semua pilihan ada plus minusnya
+334;93;101-500;79377972.0;text;;['👾', '🕺🏼', '🎲', '🎮', '🧙🏽\u200d♂️', '🎬'];True;True;6c3ec96eff8a3b48;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+335;93;0;79474032.0;image/jpeg;;[];False;False;6c3ec96eff8a3b48;[];[Foto]
+336;93;101-500;79728656.0;text;;['⚠️', '📆', '❗', 'ℹ️'];False;True;6c3ec96eff8a3b48;[];temen temen gw baru aja ngasih surprise ulang tahun yang paling berkesan dalam hidup gw! mereka diem diem booking tempat makan favorit gw dan undang semua temen deket. ada kue tart dan hadiah yang gw pengen dari lama. gw sampe nangis terharu sumpah ga nyangka mereka sebaik itu!
+337;94;101-500;80430336.0;text;;['🎮', '🕹', '📆', '😜'];False;True;6c3ec96eff8a3b48;[];temen temen gw baru aja ngasih surprise ulang tahun yang paling berkesan dalam hidup gw! mereka diem diem booking tempat makan favorit gw dan undang semua temen deket. ada kue tart dan hadiah yang gw pengen dari lama. gw sampe nangis terharu sumpah ga nyangka mereka sebaik itu!
+338;95;101-500;80933619.0;text;;['📌', '📆'];False;False;6c3ec96eff8a3b48;[];kemarin malem gw sama temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+339;96;101-500;81113601.0;text;;['📍', '📆'];False;False;6c3ec96eff8a3b48;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+340;96;500+;81197587.0;text;;['⚠️', '📆', '❗', 'ℹ️'];False;True;6c3ec96eff8a3b48;[];seru banget tadi malem!
+341;97;0;85775216.0;system;;[];False;False;a2068fc33552562d;[];[Pesan sistem]
+342;97;0;86647674.0;system;;[];False;False;28d2dcf0a5919e9d;[];[Pesan sistem]
+343;97;0;90356708.0;system;;[];False;False;64bf8ce6226310ca;[];[Pesan sistem]
+344;97;500+;90628365.0;text;;['👀', '📆', '📍', '🔗'];False;False;6c3ec96eff8a3b48;[];album baru dia enak banget
+345;97;0;90661313.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+346;97;101-500;90782601.0;text;;['👅', '📝', '🔗', '💰'];False;False;6c3ec96eff8a3b48;[];tadi siang gw makan di warung makan baru deket gerbang belakang kampus. nasi gorengnya lumayan enak dan harganya murah banget cuma 12 ribu udah sama es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+347;98;500+;90784786.0;text;;['📌'];True;False;6c3ec96eff8a3b48;[];bayar berapa sih tadi?
+348;98;0;90819493.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+349;98;0;90888209.0;system;;[];False;False;f8d248d3e3071e01;[];[Pesan sistem]
+350;98;0;90940327.0;system;;[];False;False;422ac3bfd84ce9de;[];[Pesan sistem]
+351;98;0;90964947.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+352;98;500+;91208237.0;text;;['📌', '👀', '📆', '📍', '🔗'];False;False;6c3ec96eff8a3b48;[];gw mau pesen gofood dulu
+353;98;0;91209838.0;system;;[];False;False;936b5951028dcbec;[];[Pesan sistem]
+354;98;0;91269815.0;system;;[];False;False;86cebda3173c7fa6;[];[Pesan sistem]
+355;99;0;91278613.0;system;;[];False;False;86cebda3173c7fa6;[];[Pesan sistem]
+356;99;0;91322036.0;system;;[];False;False;8e0a8a9151cdb432;[];[Pesan sistem]
+357;99;0;91324949.0;system;;[];False;False;506ca04cc032b0ff;[];[Pesan sistem]
+358;100;0;91330741.0;system;;[];False;False;506ca04cc032b0ff;[];[Pesan sistem]
+359;100;0;91500897.0;system;;[];False;False;1922a0b0533ae53e;[];[Pesan sistem]
+360;100;0;91506734.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+361;100;0;91594832.0;system;;[];False;False;506ca04cc032b0ff;[];[Pesan sistem]
+362;100;0;91653625.0;system;;[];False;False;6b7f3b834d833e30;[];[Pesan sistem]
+363;100;0;91740633.0;system;;[];False;False;dd6c60e0a92ab9a2;[];[Pesan sistem]
+364;100;0;91826066.0;system;;[];False;False;506ca04cc032b0ff;[];[Pesan sistem]
+365;100;101-500;91938597.0;text;;['❗', '👇'];False;False;6c3ec96eff8a3b48;[];gw pengen curhat sedikit nih. akhir akhir ini gw ngerasa burnout banget sama rutinitas kuliah yang itu itu aja. bangun pagi, kuliah, tugas, tidur, repeat. kadang gw ngerasa kayak robot yang cuma jalan sesuai program tanpa tau tujuan akhirnya apa. mungkin gw butuh liburan beneran buat refresh otak
+366;100;0;92860238.0;system;;[];False;False;90ff9851e571eb31;[];[Pesan sistem]
+367;100;0;92864997.0;system;;[];False;False;7489c7cc2ab84aa0;[];[Pesan sistem]
+368;100;0;92993900.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+369;100;0;92994994.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+370;101;0;93020147.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+371;101;0;93123111.0;system;;[];False;False;9536c6e20231fb4d;[];[Pesan sistem]
+372;101;0;93139108.0;system;;[];False;False;9c91e520fdffbbeb;[];[Pesan sistem]
+373;101;0;93237632.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+374;102;0;93324813.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+375;102;0;93326223.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+376;102;500+;93639889.0;text;;['👀'];True;True;6c3ec96eff8a3b48;[];ada yg mau bareng?
+377;102;0;93661300.0;system;;[];False;False;1b00ee386afc9055;[];[Pesan sistem]
+378;102;0;93674074.0;system;;[];False;False;89e4bd13207ca241;[];[Pesan sistem]
+379;102;0;93757840.0;system;;[];False;False;dd6c60e0a92ab9a2;[];[Pesan sistem]
+380;102;11-50;93809043.0;text;376.0;[];False;True;6c3ec96eff8a3b48;[];asik besok libur guys!
+381;102;0;93897044.0;system;;[];False;False;9c91e520fdffbbeb;[];[Pesan sistem]
+382;102;0;94276357.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+383;103;0;94281828.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+384;103;101-500;94347143.0;text;;['⚠️', '👇🏼'];False;False;6c3ec96eff8a3b48;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+385;103;0;95103426.0;system;;[];False;False;345c5d588851edec;[];[Pesan sistem]
+386;103;0;95117207.0;system;;[];False;False;1a2004d1d8b2783e;[];[Pesan sistem]
+387;103;0;95271005.0;system;;[];False;False;6b7f3b834d833e30;[];[Pesan sistem]
+388;103;0;95495283.0;system;;[];False;False;a061a1049719875d;[];[Pesan sistem]
+389;103;0;95664875.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+390;103;0;95668084.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+391;104;0;95696403.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+392;104;0;95727333.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+393;104;0;95813346.0;system;;[];False;False;6ea75f5649f1ddd3;[];[Pesan sistem]
+394;105;0;95903675.0;system;;[];False;False;6ea75f5649f1ddd3;[];[Pesan sistem]
+395;105;0;96058051.0;system;;[];False;False;dad074d7641ef73b;[];[Pesan sistem]
+396;105;0;96143419.0;system;;[];False;False;9c4756f63f103839;[];[Pesan sistem]
+397;105;0;96232756.0;system;;[];False;False;a884c6c3ee21717f;[];[Pesan sistem]
+398;106;0;96357253.0;system;;[];False;False;a884c6c3ee21717f;[];[Pesan sistem]
+399;106;0;96360785.0;system;;[];False;False;414878f11bd5c538;[];[Pesan sistem]
+400;106;0;96786122.0;system;;[];False;False;83c8d821e059ae44;[];[Pesan sistem]
+401;106;0;96801812.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+402;106;0;96901620.0;system;;[];False;False;3f15cc36eb063f18;[];[Pesan sistem]
+403;106;0;97118579.0;system;;[];False;False;a718b77fe198a68e;[];[Pesan sistem]
+404;106;0;97216509.0;system;;[];False;False;1922a0b0533ae53e;[];[Pesan sistem]
+405;106;0;97543181.0;system;;[];False;False;820d5e46adf44d5f;[];[Pesan sistem]
+406;106;0;97569405.0;system;;[];False;False;9c4756f63f103839;[];[Pesan sistem]
+407;106;0;97622813.0;system;;[];False;False;218c93998fb0552f;[];[Pesan sistem]
+408;106;0;97716878.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+409;106;0;98070980.0;system;;[];False;False;6ef45131161c0521;[];[Pesan sistem]
+410;106;0;98072824.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+411;107;0;98131623.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+412;107;0;98500659.0;system;;[];False;False;510fe0ecdcd7f4cb;[];[Pesan sistem]
+413;107;0;98758437.0;system;;[];False;False;6924c5f0fbe278fc;[];[Pesan sistem]
+414;107;0;98844026.0;system;;[];False;False;510fe0ecdcd7f4cb;[];[Pesan sistem]
+415;107;0;99103576.0;system;;[];False;False;daacb2cc76a34392;[];[Pesan sistem]
+416;107;0;99469672.0;system;;[];False;False;c6eb37ca78919624;[];[Pesan sistem]
+417;107;0;99505361.0;system;;[];False;False;0b12d6049bc45fe7;[];[Pesan sistem]
+418;107;0;99512981.0;system;;[];False;False;c6eb37ca78919624;[];[Pesan sistem]
+419;107;0;99591666.0;system;;[];False;False;dbfd87fe8b2e857c;[];[Pesan sistem]
+420;107;0;99697370.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+421;107;0;99697484.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+422;107;0;99780887.0;system;;[];False;False;b6014881faa9b303;[];[Pesan sistem]
+423;107;0;100119593.0;system;;[];False;False;36e08e12ba1796de;[];[Pesan sistem]
+424;107;0;100218109.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+425;107;0;100303442.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+426;107;0;100303718.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+427;107;0;100305034.0;system;;[];False;False;437b3d6c9edc01b7;[];[Pesan sistem]
+428;107;0;100464939.0;system;;[];False;False;6c3ec96eff8a3b48;[];[Pesan sistem]
+429;107;0;100548257.0;system;;[];False;False;a6580eb9215e3890;[];[Pesan sistem]
+430;107;0;100625764.0;system;;[];False;False;6d5d3278b95906db;[];[Pesan sistem]
+431;107;0;100799254.0;system;;[];False;False;6c3ec96eff8a3b48;[];[Pesan sistem]
+432;107;0;100842188.0;system;;[];False;False;c6eb37ca78919624;[];[Pesan sistem]
+433;107;0;100919763.0;system;;[];False;False;417f32b176bb9d20;[];[Pesan sistem]
+434;107;0;101052602.0;system;;[];False;False;b6014881faa9b303;[];[Pesan sistem]
+435;107;0;101074699.0;system;;[];False;False;6c3ec96eff8a3b48;[];[Pesan sistem]
+436;107;0;101086262.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+437;108;0;101173648.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+438;108;0;101265664.0;system;;[];False;False;aa8bc577c9552788;[];[Pesan sistem]
+439;109;0;101276792.0;system;;[];False;False;aa8bc577c9552788;[];[Pesan sistem]
+440;109;0;101358914.0;system;;[];False;False;1a2004d1d8b2783e;[];[Pesan sistem]
+441;109;0;101445082.0;system;;[];False;False;e41fc01f281ad556;[];[Pesan sistem]
+442;109;0;101498310.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+443;110;0;101501785.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+444;110;0;101502009.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+445;111;0;101506356.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+446;111;0;101527269.0;system;;[];False;False;aa8bc577c9552788;[];[Pesan sistem]
+447;112;0;101529998.0;system;;[];False;False;aa8bc577c9552788;[];[Pesan sistem]
+448;112;0;101540227.0;system;;[];False;False;4de0f784f26f2a09;[];[Pesan sistem]
+449;112;0;101540328.0;system;;[];False;False;4de0f784f26f2a09;[];[Pesan sistem]
+450;113;0;101545781.0;system;;[];False;False;4de0f784f26f2a09;[];[Pesan sistem]
+451;113;0;101547060.0;system;;[];False;False;4de0f784f26f2a09;[];[Pesan sistem]
+452;114;0;101574653.0;system;;[];False;False;4de0f784f26f2a09;[];[Pesan sistem]
+453;114;0;101678837.0;system;;[];False;False;c0671efd03c10241;[];[Pesan sistem]
+454;114;0;101695268.0;system;;[];False;False;d565da71a628e0b6;[];[Pesan sistem]
+455;114;0;101759403.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+456;114;0;101777859.0;system;;[];False;False;6ef45131161c0521;[];[Pesan sistem]
+457;114;0;101853564.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+458;114;0;101855096.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+459;115;0;101869800.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+460;115;0;102385518.0;system;;[];False;False;db3175b92837e66a;[];[Pesan sistem]
+461;115;0;102475338.0;system;;[];False;False;510fe0ecdcd7f4cb;[];[Pesan sistem]
+462;115;0;102663484.0;system;;[];False;False;b6014881faa9b303;[];[Pesan sistem]
+463;115;0;102714560.0;system;;[];False;False;c0671efd03c10241;[];[Pesan sistem]
+464;115;0;102872212.0;system;;[];False;False;9a8586ffad2e7bd3;[];[Pesan sistem]
+465;115;0;102875977.0;system;;[];False;False;6985b0359f85d526;[];[Pesan sistem]
+466;115;0;102981272.0;system;;[];False;False;f248f77ead2ad245;[];[Pesan sistem]
+467;115;0;102992016.0;system;;[];False;False;bee04a5f2eda0295;[];[Pesan sistem]
+468;115;0;103239487.0;system;;[];False;False;467d9eb1dd306139;[];[Pesan sistem]
+469;115;0;103416634.0;system;;[];False;False;253225b3a19ca301;[];[Pesan sistem]
+470;115;0;103489300.0;system;;[];False;False;1b10688ce3b856ca;[];[Pesan sistem]
+471;115;0;103689194.0;system;;[];False;False;9536c6e20231fb4d;[];[Pesan sistem]
+472;115;0;103922552.0;system;;[];False;False;d565da71a628e0b6;[];[Pesan sistem]
+473;115;0;104025315.0;system;;[];False;False;1cd91dde8452fbab;[];[Pesan sistem]
+474;115;0;104029104.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+475;115;0;104466490.0;system;;[];False;False;54fc6f09269ec023;[];[Pesan sistem]
+476;115;0;104869797.0;system;;[];False;False;510fe0ecdcd7f4cb;[];[Pesan sistem]
+477;115;0;105043137.0;system;;[];False;False;4bcdba1b97666569;[];[Pesan sistem]
+478;115;0;105087045.0;system;;[];False;False;6274f5768b457310;[];[Pesan sistem]
+479;115;0;105228221.0;system;;[];False;False;4bcdba1b97666569;[];[Pesan sistem]
+480;115;0;105726884.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+481;116;0;105796789.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+482;116;0;105854664.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+483;116;0;105891517.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+484;116;0;106283657.0;system;;[];False;False;3280fe068f428dc6;[];[Pesan sistem]
+485;117;0;106888253.0;system;;[];False;False;3280fe068f428dc6;[];[Pesan sistem]
+486;117;0;106896533.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+487;117;0;106901342.0;system;;[];False;False;6c3ec96eff8a3b48;[];[Pesan sistem]
+488;117;0;107078574.0;system;;[];False;False;d9893b6331570da1;[];[Pesan sistem]
+489;117;0;107220990.0;system;;[];False;False;d98e2733a3c779b8;[];[Pesan sistem]
+490;118;0;107390595.0;system;;[];False;False;d98e2733a3c779b8;[];[Pesan sistem]
+491;118;0;107499259.0;system;;[];False;False;9a8586ffad2e7bd3;[];[Pesan sistem]
+492;118;0;107576392.0;system;;[];False;False;345c5d588851edec;[];[Pesan sistem]
+493;118;0;107909031.0;system;;[];False;False;8bd15b3bbf188676;[];[Pesan sistem]
+494;118;0;108586734.0;system;;[];False;False;e1fc235cb087971f;[];[Pesan sistem]
+495;118;0;108858756.0;system;;[];False;False;7ba3bc645264d55e;[];[Pesan sistem]
+496;118;0;108865901.0;system;;[];False;False;d8936acbe7dc21b1;[];[Pesan sistem]
+497;118;0;109473776.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+498;118;0;109477924.0;system;;[];False;False;e0aa2f2ae789b0a1;[];[Pesan sistem]
+499;118;0;109797050.0;system;;[];False;False;ed4e7a2d8b9ff6cc;[];[Pesan sistem]
+500;118;0;109972455.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+501;118;0;110738599.0;system;;[];False;False;89d2d64305d927be;[];[Pesan sistem]
+502;118;0;110770391.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+503;118;0;110770666.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+504;118;0;110954760.0;system;;[];False;False;8bd15b3bbf188676;[];[Pesan sistem]
+505;118;0;111027314.0;system;;[];False;False;e1fc235cb087971f;[];[Pesan sistem]
+506;118;0;111302594.0;system;;[];False;False;6ea75f5649f1ddd3;[];[Pesan sistem]
+507;118;0;111552473.0;system;;[];False;False;1b00ee386afc9055;[];[Pesan sistem]
+508;118;0;111556658.0;system;;[];False;False;b05df1f21accb1c0;[];[Pesan sistem]
+509;118;0;111609572.0;system;;[];False;False;1b00ee386afc9055;[];[Pesan sistem]
+510;119;0;111629534.0;system;;[];False;False;1b00ee386afc9055;[];[Pesan sistem]
+511;119;0;111729887.0;system;;[];False;False;d8936acbe7dc21b1;[];[Pesan sistem]
+512;120;0;111734487.0;system;;[];False;False;d8936acbe7dc21b1;[];[Pesan sistem]
+513;120;0;111978044.0;system;;[];False;False;3ecf1520da5097e5;[];[Pesan sistem]
+514;120;0;112250876.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+515;120;0;112250960.0;system;;[];False;False;fc473daeb6d077b4;[];[Pesan sistem]
+516;120;0;112733864.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+517;121;0;112735445.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+518;121;0;112859503.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+519;121;0;113199274.0;system;;[];False;False;c0671efd03c10241;[];[Pesan sistem]
+520;122;0;113264992.0;system;;[];False;False;c0671efd03c10241;[];[Pesan sistem]
+521;122;0;113497624.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+522;122;0;113744514.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+523;123;0;114132754.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+524;123;0;114305253.0;system;;[];False;False;bce3b544e233da73;[];[Pesan sistem]
+525;123;0;114525676.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+526;123;0;116637577.0;system;;[];False;False;1aa3830049fcb300;[];[Pesan sistem]
+527;123;0;117089899.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+528;123;0;117236459.0;system;;[];False;False;a05005047cd4d5e3;[];[Pesan sistem]
+529;123;0;117302221.0;system;;[];False;False;6ea75f5649f1ddd3;[];[Pesan sistem]
+530;123;0;117514892.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+531;123;0;117700436.0;system;;[];False;False;a718b77fe198a68e;[];[Pesan sistem]
+532;123;0;119257001.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+533;123;0;119396011.0;system;;[];False;False;832f2934e584eff5;[];[Pesan sistem]
+534;123;0;119476088.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+535;123;0;119509222.0;system;;[];False;False;97a898af66ec88ac;[];[Pesan sistem]
+536;123;0;119858160.0;system;;[];False;False;cdecd465c6d6bcb4;[];[Pesan sistem]
+537;123;0;120014721.0;system;;[];False;False;a718b77fe198a68e;[];[Pesan sistem]
+538;123;0;120049071.0;system;;[];False;False;1b00ee386afc9055;[];[Pesan sistem]
+539;123;0;120371648.0;system;;[];False;False;cf5fd700110872a9;[];[Pesan sistem]
+540;123;0;120636294.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+541;123;0;120719712.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+542;123;0;120899889.0;system;;[];False;False;f476d3cd642ea9c7;[];[Pesan sistem]
+543;123;0;120926843.0;system;;[];False;False;cf5fd700110872a9;[];[Pesan sistem]
+544;123;0;121461944.0;system;;[];False;False;9176b96bc805d836;[];[Pesan sistem]
+545;123;0;121552036.0;system;;[];False;False;57442d0259476ea4;[];[Pesan sistem]
+546;123;0;121653197.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+547;123;0;121744299.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+548;123;0;121814278.0;system;;[];False;False;f8d248d3e3071e01;[];[Pesan sistem]
+549;123;0;121864993.0;system;;[];False;False;516d48b3c485e22c;[];[Pesan sistem]
+550;123;0;121936777.0;system;;[];False;False;57442d0259476ea4;[];[Pesan sistem]
+551;123;0;122172335.0;system;;[];False;False;7ccb413e9c6cc4fc;[];[Pesan sistem]
+552;123;0;122174876.0;system;;[];False;False;9176b96bc805d836;[];[Pesan sistem]
+553;123;0;122327464.0;system;;[];False;False;0c4aa273a8011524;[];[Pesan sistem]
+554;123;0;122431560.0;system;;[];False;False;88a87e4058512f4b;[];[Pesan sistem]
+555;123;0;122780575.0;system;;[];False;False;fefb6f11e85d8172;[];[Pesan sistem]
+556;123;0;122946990.0;system;;[];False;False;8223c1760b9815de;[];[Pesan sistem]
+557;123;0;122951665.0;system;;[];False;False;f8d248d3e3071e01;[];[Pesan sistem]
+558;123;0;122954805.0;system;;[];False;False;8223c1760b9815de;[];[Pesan sistem]
+559;123;0;123046515.0;system;;[];False;False;f5758e3577b00a7e;[];[Pesan sistem]
+560;123;0;124047585.0;system;;[];False;False;44db4373dbe2163a;[];[Pesan sistem]
+561;123;0;124213939.0;system;;[];False;False;f63b1fe8272d5712;[];[Pesan sistem]
+562;123;0;124549716.0;system;;[];False;False;0d218d0b0f523b5e;[];[Pesan sistem]
+563;123;0;124727535.0;system;;[];False;False;a884c6c3ee21717f;[];[Pesan sistem]
+564;123;0;125289017.0;system;;[];False;False;8956821d843696d2;[];[Pesan sistem]
+565;123;0;125622681.0;system;;[];False;False;5f0623f92d81d1be;[];[Pesan sistem]
+566;123;0;125677723.0;system;;[];False;False;85a251e993f7760f;[];[Pesan sistem]
+567;123;0;125794854.0;system;;[];False;False;8ea2160431b0fa98;[];[Pesan sistem]
+568;123;0;125817828.0;system;;[];False;False;79580be91a3e9396;[];[Pesan sistem]
+569;123;0;126247853.0;system;;[];False;False;1aa3830049fcb300;[];[Pesan sistem]
+570;123;0;126274712.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+571;124;0;126784219.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+572;124;0;126784726.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+573;125;0;126823162.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+574;125;0;126823165.0;system;;[];False;False;1aa3830049fcb300;[];[Pesan sistem]
+575;125;0;126825467.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+576;126;0;126879685.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+577;126;0;127434375.0;system;;[];False;False;f9976ac7a6caf822;[];[Pesan sistem]
+578;126;0;127604902.0;system;;[];False;False;14abe7e97e8cc382;[];[Pesan sistem]
+579;126;0;127747225.0;system;;[];False;False;ed4e7a2d8b9ff6cc;[];[Pesan sistem]
+580;126;0;127870032.0;system;;[];False;False;5f7e0eae5f235d17;[];[Pesan sistem]
+581;126;0;127878441.0;system;;[];False;False;322aae68c9d8236a;[];[Pesan sistem]
+582;126;0;127878958.0;system;;[];False;False;322aae68c9d8236a;[];[Pesan sistem]
+583;126;0;128019735.0;system;;[];False;False;b6014881faa9b303;[];[Pesan sistem]
+584;126;0;128142171.0;system;;[];False;False;7c46714754764554;[];[Pesan sistem]
+585;126;0;128142242.0;system;;[];False;False;7c46714754764554;[];[Pesan sistem]
+586;126;0;128205594.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+587;126;0;128291323.0;system;;[];False;False;7c46714754764554;[];[Pesan sistem]
+588;126;0;128301006.0;system;;[];False;False;02bced3326f0717b;[];[Pesan sistem]
+589;126;0;128402702.0;system;;[];False;False;a2bd61382cc63ce1;[];[Pesan sistem]
+590;126;0;128402981.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+591;126;0;128403490.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+592;126;0;128504585.0;system;;[];False;False;516d48b3c485e22c;[];[Pesan sistem]
+593;126;0;128560024.0;system;;[];False;False;cdecd465c6d6bcb4;[];[Pesan sistem]
+594;126;0;128560025.0;system;;[];False;False;e41fc01f281ad556;[];[Pesan sistem]
+595;126;0;128567972.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+596;126;0;129250934.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+597;126;0;129486319.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+598;126;0;129605599.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+599;126;0;129606531.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+600;127;0;130537416.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+601;127;0;130643636.0;system;;[];False;False;5dc3c644838e42b5;[];[Pesan sistem]
+602;127;0;130780007.0;system;;[];False;False;c35775199fcd2a01;[];[Pesan sistem]
+603;127;0;130807752.0;system;;[];False;False;014acae8c6b1308b;[];[Pesan sistem]
+604;127;0;131054653.0;system;;[];False;False;1aa3830049fcb300;[];[Pesan sistem]
+605;127;0;131063587.0;system;;[];False;False;8ef8c37addaad858;[];[Pesan sistem]
+606;127;0;131080039.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+607;128;0;131081696.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+608;128;0;131103353.0;system;;[];False;False;506ca04cc032b0ff;[];[Pesan sistem]
+609;128;0;131129390.0;system;;[];False;False;a4ad84e1e1d5cb51;[];[Pesan sistem]
+610;128;0;131346189.0;system;;[];False;False;515a17c8815b656b;[];[Pesan sistem]
+611;128;0;131439098.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+612;128;0;131439530.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+613;128;0;131605812.0;system;;[];False;False;337b083a6129741e;[];[Pesan sistem]
+614;128;0;131705464.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+615;128;0;131732444.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+616;129;0;131765981.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+617;129;0;131780043.0;system;;[];False;False;8029fd5ddadf45ea;[];[Pesan sistem]
+618;129;0;131980877.0;system;;[];False;False;322aae68c9d8236a;[];[Pesan sistem]
+619;129;0;132017109.0;system;;[];False;False;a718b77fe198a68e;[];[Pesan sistem]
+620;129;0;132025913.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+621;129;0;132053930.0;system;;[];False;False;6ea75f5649f1ddd3;[];[Pesan sistem]
+622;129;0;132075875.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+623;129;0;132098632.0;system;;[];False;False;3133fceab8396c82;[];[Pesan sistem]
+624;129;0;132103558.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+625;129;0;132136151.0;system;;[];False;False;ac9a054723d1a522;[];[Pesan sistem]
+626;129;0;132351581.0;system;;[];False;False;cdecd465c6d6bcb4;[];[Pesan sistem]
+627;129;0;132362467.0;system;;[];False;False;4f16e19d0cf46f73;[];[Pesan sistem]
+628;129;0;132447162.0;system;;[];False;False;1cc99e1b0ee1ca50;[];[Pesan sistem]
+629;130;0;132449935.0;system;;[];False;False;1cc99e1b0ee1ca50;[];[Pesan sistem]
+630;130;0;133233554.0;system;;[];False;False;1a2004d1d8b2783e;[];[Pesan sistem]
+631;130;0;133313770.0;system;;[];False;False;f248f77ead2ad245;[];[Pesan sistem]
+632;130;0;133496126.0;system;;[];False;False;b6014881faa9b303;[];[Pesan sistem]
+633;130;0;133657166.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+634;130;0;133761931.0;system;;[];False;False;1451d52b027403e6;[];[Pesan sistem]
+635;130;0;133842408.0;system;;[];False;False;8559a5f4d46e9a97;[];[Pesan sistem]
+636;130;0;134588421.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+637;131;0;134592268.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+638;131;0;134593162.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+639;131;0;134772296.0;system;;[];False;False;7c46714754764554;[];[Pesan sistem]
+640;131;0;134797509.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+641;131;0;134811994.0;system;;[];False;False;12d7c63a11a6a31a;[];[Pesan sistem]
+642;131;0;135115896.0;system;;[];False;False;64bf8ce6226310ca;[];[Pesan sistem]
+643;131;0;135116209.0;system;;[];False;False;64bf8ce6226310ca;[];[Pesan sistem]
+644;132;0;135309491.0;system;;[];False;False;64bf8ce6226310ca;[];[Pesan sistem]
+645;132;0;135734138.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+646;133;0;135807578.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+647;133;0;135911389.0;system;;[];False;False;00fad0a42113ee09;[];[Pesan sistem]
+648;133;0;135918384.0;system;;[];False;False;85a251e993f7760f;[];[Pesan sistem]
+649;133;0;136079326.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+650;133;0;136088578.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+651;133;0;136159143.0;system;;[];False;False;8119ee5d4d083df3;[];[Pesan sistem]
+652;133;0;136605231.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+653;134;0;136609358.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+654;134;0;136610261.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+655;135;0;136640461.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+656;135;0;136791470.0;system;;[];False;False;a81787b905fa32da;[];[Pesan sistem]
+657;135;0;137201222.0;system;;[];False;False;fefb6f11e85d8172;[];[Pesan sistem]
+658;135;0;139012767.0;system;;[];False;False;8b900f3f6c9ac57d;[];[Pesan sistem]
+659;135;0;139168888.0;system;;[];False;False;c6eb37ca78919624;[];[Pesan sistem]
+660;135;0;139276557.0;system;;[];False;False;7c46714754764554;[];[Pesan sistem]
+661;135;0;139597293.0;system;;[];False;False;0107b24118887e0d;[];[Pesan sistem]
+662;135;0;139636943.0;system;;[];False;False;a7b65b18c325f618;[];[Pesan sistem]
+663;135;0;140549494.0;system;;[];False;False;322aae68c9d8236a;[];[Pesan sistem]
+664;135;0;140715194.0;system;;[];False;False;fefb6f11e85d8172;[];[Pesan sistem]
+665;135;0;141439631.0;system;;[];False;False;a143d2cd7ae15974;[];[Pesan sistem]
+666;135;0;141516965.0;system;;[];False;False;630bc16bdf33b86b;[];[Pesan sistem]
+667;135;0;141523122.0;system;;[];False;False;a143d2cd7ae15974;[];[Pesan sistem]
+668;135;0;141856268.0;system;;[];False;False;322aae68c9d8236a;[];[Pesan sistem]
+669;135;0;141948205.0;system;;[];False;False;895d2007d82cf892;[];[Pesan sistem]
+670;135;0;142802800.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+671;135;0;142802808.0;system;;[];False;False;510fe0ecdcd7f4cb;[];[Pesan sistem]
+672;135;500+;142814420.0;text;;['👾', '⚡', '🏆', '‼', '💪', '💡'];False;True;f84bb385e508518c;[];ngakak gw liat video tu!
+673;135;0;142904892.0;system;;[];False;False;6a3ee11bdc064847;[];[Pesan sistem]
+674;135;0;142905513.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+675;135;0;142971255.0;system;;[];False;False;4deaf14fcd6a8df4;[];[Pesan sistem]
+676;135;0;143052198.0;system;;[];False;False;5bd756025bcc18be;[];[Pesan sistem]
+677;135;11-50;143352441.0;text;672.0;['🫣'];False;True;f84bb385e508518c;[];ngakak gw liat video... tu!
+678;135;101-500;143393256.0;image/jpeg;;['👾', '⚡', '🏆', '‼', '💪'];False;True;f84bb385e508518c;[];[Foto]
+679;136;500+;143520857.0;text;;[];True;False;f84bb385e508518c;[];pinjam catetan boleh ga?
+680;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];udah
+681;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];dong
+682;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];wkwkw
+683;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];udah
+684;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];udah
+685;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];sm
+686;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];males
+687;136;1-10;143520930.0;text;;[];False;False;f84bb385e508518c;[];gabut
+688;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];dong
+689;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];setuju
+690;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];males
+691;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];sm
+692;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];males
+693;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];cape
+694;136;1-10;143520931.0;text;;[];False;False;f84bb385e508518c;[];cape
+695;136;1-10;143520932.0;text;;[];False;False;f84bb385e508518c;[];udah
+696;136;1-10;143520932.0;text;;[];False;False;f84bb385e508518c;[];dong
+697;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];trus
+698;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];males
+699;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];sm
+700;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];udah
+701;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];gabut
+702;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];amin
+703;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];trus
+704;136;1-10;143520933.0;text;;[];False;False;f84bb385e508518c;[];gabut
+705;136;1-10;143520934.0;text;;[];False;False;f84bb385e508518c;[];dong
+706;136;1-10;143520934.0;text;;[];False;False;f84bb385e508518c;[];udah
+707;136;1-10;143520934.0;text;;[];False;False;f84bb385e508518c;[];dong
+708;136;1-10;143520934.0;text;;[];False;False;f84bb385e508518c;[];amin
+709;136;1-10;143520934.0;text;;[];False;False;f84bb385e508518c;[];gabut
+710;136;1-10;143520935.0;text;;[];False;False;f84bb385e508518c;[];udah
+711;136;1-10;143520935.0;text;;[];False;False;f84bb385e508518c;[];cape
+712;136;1-10;143520935.0;text;;[];False;False;f84bb385e508518c;[];dong
+713;136;1-10;143520935.0;text;;[];False;False;f84bb385e508518c;[];setuju
+714;136;1-10;143520935.0;text;;[];False;False;f84bb385e508518c;[];males
+715;136;1-10;143520935.0;text;;[];False;False;f84bb385e508518c;[];trus
+716;136;1-10;143520936.0;text;;[];False;False;f84bb385e508518c;[];udah
+717;136;1-10;143520936.0;text;;[];False;False;f84bb385e508518c;[];ywd
+718;136;1-10;143520937.0;text;;[];False;False;f84bb385e508518c;[];udah
+719;136;1-10;143520937.0;text;;[];False;False;f84bb385e508518c;[];wkwkw
+720;136;1-10;143520937.0;text;;[];False;False;f84bb385e508518c;[];hihi
+721;136;1-10;143520937.0;text;;[];False;False;f84bb385e508518c;[];amin
+722;136;1-10;143520937.0;text;;[];False;False;f84bb385e508518c;[];cape
+723;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];setuju
+724;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];sm
+725;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];setuju
+726;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];hihi
+727;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];trus
+728;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];sm
+729;136;1-10;143520938.0;text;;[];False;False;f84bb385e508518c;[];trus
+730;136;51-100;143522263.0;text;705.0;[];False;False;f84bb385e508518c;[];gw pengen bgt liburan ke... pantai... tp duit lg tipis bgt skrg
+731;137;101-500;143584497.0;text;;[];False;True;f84bb385e508518c;[];parah bgt banjir di daerah kosan... gw semalam smp air masuk ke... kamar setinggi betis!... barang barang gw banyak yg kerendem termasuk buku kuliah... dan sepatu. gw hrs ngungsi ke kosan temen... dan... skrg lg bersihin smua barang. semoga ga ad yg rusak parah... sih!
+732;137;0;143647912.0;system;;[];False;False;f248f77ead2ad245;[];[Pesan sistem]
+733;137;101-500;143773213.0;text;;['‼️', '🕛'];False;False;f84bb385e508518c;[];kemarin malem gw... sm temen temen nongkrong di... warkop biasa sampe jam... 12 malem. kita ngobrol banyak hal... dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru... sih walau... besoknya gw... kesiangan masuk kelas pagi dan dosen negur di depan smua... orang. malu tp ya gmn lg
+734;137;101-500;143773216.0;text;;['‼️', '🕛'];False;False;f84bb385e508518c;[];kemarin malem gw... sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal... dr mulai tugas kuliah, rencana liburan, sampe... masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi... dan dosen negur di... depan smua orang. malu... tp ya gmn lg...
+735;137;0;143851285.0;system;;[];False;False;6db49f54700c9a2e;[];[Pesan sistem]
+736;138;0;143856398.0;system;;[];False;False;6db49f54700c9a2e;[];[Pesan sistem]
+737;138;101-500;143868301.0;text;;[];False;True;f84bb385e508518c;[];parah bgt banjir di daerah... kosan gw semalam... smp air masuk ke kamar setinggi betis! barang... barang gw banyak yg... kerendem... termasuk buku kuliah dan... sepatu. gw hrs ngungsi ke... kosan temen dan skrg lg bersihin smua barang. semoga... ga ad yg rusak parah sih!
+738;138;101-500;143868303.0;text;;[];False;True;f84bb385e508518c;[];temen temen gw... baru... aja ngasih surprise ulang... tahun yg paling berkesan dalam hidup gw!... mrk diem diem... booking tempat... makan favorit gw dan... undang smua temen... deket. ad kue... tart dan hadiah... yg gw pengen dr lama. gw sampe nangis terharu sumpah ga... nyangka... mrk sebaik tu!
+739;138;101-500;143868307.0;text;;[];False;True;f84bb385e508518c;[];parah bgt banjir di daerah kosan gw semalam smp air masuk ke kamar setinggi betis! barang barang gw banyak yg... kerendem termasuk buku kuliah dan sepatu. gw hrs ngungsi ke kosan temen... dan skrg lg... bersihin smua barang. semoga ga ad yg rusak parah sih!
+740;138;101-500;143872381.0;text;738.0;['😃'];False;False;f84bb385e508518c;[];gw lg galau bgt nih soal masa depan. mau lanjut s2 tp duit ga ad, mau langsung kerja tp pengalaman... msh... minim. nyokap bilang terserah gw aja... tp gw tau dia pengen gw cepet kerja biar bs bantu ekonomi... keluarga. bingung bgt sih, kyk smua pilihan ad plus minusnya
+741;139;101-500;143927938.0;text;738.0;['‼️'];False;True;f84bb385e508518c;[];parah bgt banjir di daerah kosan gw semalam smp air masuk ke kamar setinggi betis! barang barang gw banyak yg kerendem termasuk buku kuliah... dan sepatu. gw hrs ngungsi ke kosan temen... dan skrg lg bersihin... smua barang. semoga ga... ad yg rusak parah sih!
+742;139;0;144034315.0;system;;[];False;False;8dcdd2619b29c6d8;[];[Pesan sistem]
+743;139;0;144294620.0;system;;[];False;False;d739ab8938628f11;[];[Pesan sistem]
+744;139;101-500;144542735.0;text;;['🌞', '👎🏼', '❗'];False;True;f84bb385e508518c;[];parah bgt banjir di daerah kosan... gw semalam smp air masuk ke kamar setinggi betis! barang barang gw banyak yg kerendem termasuk buku kuliah dan sepatu. gw hrs ngungsi ke kosan temen dan... skrg lg bersihin smua barang. semoga... ga ad yg rusak parah sih!
+745;139;0;144736590.0;system;;[];False;False;753cf86d992cdd4c;[];[Pesan sistem]
+746;139;0;144770649.0;system;;[];False;False;5dc3c644838e42b5;[];[Pesan sistem]
+747;139;0;144786467.0;system;;[];False;False;753cf86d992cdd4c;[];[Pesan sistem]
+748;139;0;144811657.0;system;;[];False;False;3e0ddf6280029779;[];[Pesan sistem]
+749;139;0;144819313.0;system;;[];False;False;4cd28f6d489d2cc4;[];[Pesan sistem]
+750;139;0;145067461.0;system;;[];False;False;0d76df822d1c8538;[];[Pesan sistem]
+751;139;0;145077184.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+752;139;0;145082107.0;system;;[];False;False;e0aa2f2ae789b0a1;[];[Pesan sistem]
+753;139;0;145152490.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+754;140;0;145173261.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+755;140;0;145173573.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+756;140;0;145194459.0;system;;[];False;False;8cac496f833cf60d;[];[Pesan sistem]
+757;140;0;145208375.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+758;141;0;145210937.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+759;141;0;145211484.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+760;141;0;145211584.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+761;141;0;145211670.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+762;141;0;145211829.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+763;141;0;145211892.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+764;141;0;145212294.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+765;141;0;145322607.0;system;;[];False;False;99ba6592005e6dd0;[];[Pesan sistem]
+766;142;0;145396321.0;system;;[];False;False;99ba6592005e6dd0;[];[Pesan sistem]
+767;142;0;145589250.0;system;;[];False;False;3e0ddf6280029779;[];[Pesan sistem]
+768;142;101-500;145591806.0;text;;['🙌🏼'];False;False;f84bb385e508518c;[];kemarin malem gw sm temen... temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai... tugas kuliah, rencana liburan, sampe masalah percintaan.... seru sih walau... besoknya gw kesiangan masuk kelas pagi... dan dosen negur... di depan smua orang. malu tp... ya gmn lg
+769;142;0;145672456.0;system;;[];False;False;99ba6592005e6dd0;[];[Pesan sistem]
+770;143;0;145789667.0;system;;[];False;False;99ba6592005e6dd0;[];[Pesan sistem]
+771;143;0;145937266.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+772;143;0;145982579.0;system;;[];False;False;e262842b64d92287;[];[Pesan sistem]
+773;143;0;146013514.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+774;143;0;146045193.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+775;143;0;146132942.0;system;;[];False;False;6db49f54700c9a2e;[];[Pesan sistem]
+776;143;0;146133148.0;system;;[];False;False;6db49f54700c9a2e;[];[Pesan sistem]
+777;143;0;146220583.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+778;143;0;146342296.0;system;;[];False;False;8bd15b3bbf188676;[];[Pesan sistem]
+779;143;500+;146364148.0;text;;['🔊', '📚', '‼️', '🏆', '📝', '🖊', '📍', '🌐'];False;False;f84bb385e508518c;[];game baru udah download blm
+780;143;0;146429710.0;system;;[];False;False;31a480df80098e5a;[];[Pesan sistem]
+781;143;0;146441249.0;system;;[];False;False;35789375fe1ea2b9;[];[Pesan sistem]
+782;143;0;146872101.0;system;;[];False;False;d74d85f5d8e1a7f2;[];[Pesan sistem]
+783;143;0;147024405.0;system;;[];False;False;d7ce9bd7dd56d77b;[];[Pesan sistem]
+784;143;0;147125901.0;system;;[];False;False;cc07e6147cdde662;[];[Pesan sistem]
+785;143;0;147133794.0;system;;[];False;False;8e0a999ef70d8cee;[];[Pesan sistem]
+786;143;0;147830485.0;system;;[];False;False;3e0ddf6280029779;[];[Pesan sistem]
+787;143;0;148766090.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+788;144;0;148952539.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+789;144;0;149045967.0;system;;[];False;False;422ac3bfd84ce9de;[];[Pesan sistem]
+790;144;0;149105910.0;system;;[];False;False;92e2e87335f64a09;[];[Pesan sistem]
+791;144;0;149114068.0;system;;[];False;False;92e2e87335f64a09;[];[Pesan sistem]
+792;145;0;149122482.0;system;;[];False;False;92e2e87335f64a09;[];[Pesan sistem]
+793;145;0;149381585.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+794;146;0;149443003.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+795;146;0;149472419.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+796;146;0;149524987.0;system;;[];False;False;b05df1f21accb1c0;[];[Pesan sistem]
+797;147;0;149542761.0;system;;[];False;False;b05df1f21accb1c0;[];[Pesan sistem]
+798;147;0;149542767.0;system;;[];False;False;49f33c9d74594b45;[];[Pesan sistem]
+799;148;0;149567582.0;system;;[];False;False;49f33c9d74594b45;[];[Pesan sistem]
+800;148;0;149567643.0;system;;[];False;False;49f33c9d74594b45;[];[Pesan sistem]
+801;148;0;149968676.0;system;;[];False;False;8dc8417e41e3bed3;[];[Pesan sistem]
+802;148;0;150092765.0;system;;[];False;False;daeac2da35fe8bbf;[];[Pesan sistem]
+803;148;0;150263734.0;system;;[];False;False;630bc16bdf33b86b;[];[Pesan sistem]
+804;148;0;150371556.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+805;149;0;150387633.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+806;149;0;150425795.0;system;;[];False;False;1416b39918f81748;[];[Pesan sistem]
+807;149;0;150513486.0;system;;[];False;False;99ba6592005e6dd0;[];[Pesan sistem]
+808;149;0;150514446.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+809;149;0;151093547.0;system;;[];False;False;159a3c324bb0ba71;[];[Pesan sistem]
+810;149;0;151177377.0;system;;[];False;False;45a8646cdd1e7c57;[];[Pesan sistem]
+811;149;0;151225636.0;system;;[];False;False;1416b39918f81748;[];[Pesan sistem]
+812;149;0;151387080.0;system;;[];False;False;a81787b905fa32da;[];[Pesan sistem]
+813;149;0;151480311.0;system;;[];False;False;718c22ff35c3c603;[];[Pesan sistem]
+814;149;0;152244165.0;system;;[];False;False;8223c1760b9815de;[];[Pesan sistem]
+815;149;0;152336998.0;system;;[];False;False;db80b79f06a3ba51;[];[Pesan sistem]
+816;149;0;152357763.0;system;;[];False;False;fd46bc18fc8cd23a;[];[Pesan sistem]
+817;150;0;152387031.0;system;;[];False;False;fd46bc18fc8cd23a;[];[Pesan sistem]
+818;150;0;152791772.0;system;;[];False;False;e35b2543e0461022;[];[Pesan sistem]
+819;150;0;152998783.0;system;;[];False;False;718c22ff35c3c603;[];[Pesan sistem]
+820;150;101-500;153251875.0;text;;['‼️'];False;False;f84bb385e508518c;[];tadi siang gw makan di... warung makan baru deket... gerbang belakang kampus.... nasi gorengnya lumayan enak dan harganya murah bgt... cuma 12 ribu udah sm es teh. kayaknya bakal jadi... langganan baru deh soalnya warteg... biasa gw udah mulai naik harga dan porsinya makin dikit aja
+821;150;0;153286940.0;system;;[];False;False;5539d6db678cda34;[];[Pesan sistem]
+822;151;0;153377755.0;system;;[];False;False;5539d6db678cda34;[];[Pesan sistem]
+823;151;0;153391116.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+824;151;500+;153425942.0;text;;[];True;False;f84bb385e508518c;[];jadwal sidang kapan bro?
+825;151;500+;153425945.0;text;;[];True;False;f84bb385e508518c;[];pinjam catetan boleh ga?...
+826;152;500+;154042852.0;text;;[];False;True;f84bb385e508518c;[];gila sih lu bs... gitu!
+827;152;0;154042857.0;image/jpeg;;[];False;False;f84bb385e508518c;[];[Foto]
+828;152;0;154042858.0;image/jpeg;;[];False;False;f84bb385e508518c;[];[Foto]
+829;153;101-500;154153113.0;image/jpeg;;['🗓️', '💡', '💧', '✍️'];False;True;f84bb385e508518c;[];[Foto]
+830;153;0;154157447.0;system;;[];False;False;792dcba8ccd6027f;[];[Pesan sistem]
+831;153;11-50;154307548.0;application/pdf;;[];False;False;f84bb385e508518c;[];[Dokumen PDF]
+832;153;11-50;154307554.0;application/pdf;;[];False;False;f84bb385e508518c;[];[Dokumen PDF]
+833;154;101-500;154371717.0;text;;[];True;True;f84bb385e508518c;[];gw lg bimbang nih antara mau ikut organisasi kampus... atau fokus ke akademik aja. menurut... kalian gmn sih, worth it... ga sih ikut organisasi? soalnya... gw denger banyak yg bilang... bs nambah soft skill tp di... sisi lain waktu buat belajar jadi... berkurang kan, gmn... pengalaman kalian?
+834;154;101-500;154385796.0;image/jpeg;;[];False;True;f84bb385e508518c;[];[Foto]
+835;154;0;154644864.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+836;154;0;154645324.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+837;155;0;154647520.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+838;155;0;154647628.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+839;155;0;154647841.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+840;156;0;154911439.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+841;156;0;154911867.0;system;;[];False;False;6de5a1cbf46859f0;[];[Pesan sistem]
+842;156;0;154991187.0;system;;[];False;False;f8d248d3e3071e01;[];[Pesan sistem]
+843;156;0;155074124.0;system;;[];False;False;476108f232ef79da;[];[Pesan sistem]
+844;156;101-500;155179435.0;text;;['🎓', '💧', '🥇', '🏅'];False;True;f84bb385e508518c;[];yesss gw akhirnya dapet nilai... a di mata kuliah yg paling gw... takutin selama ni!... padahal gw udah pasrah bgt... pas ujian soalnya soalnya susah parah. ternyata tugas dan presentasi gw nilainya bagus jadi bs nutupin... nilai ujian. alhamdulillah bgt perjuangan ga sia sia!...
+845;156;0;155249936.0;system;;[];False;False;5539d6db678cda34;[];[Pesan sistem]
+846;157;0;155250728.0;system;;[];False;False;5539d6db678cda34;[];[Pesan sistem]
+847;157;0;155250813.0;system;;[];False;False;5539d6db678cda34;[];[Pesan sistem]
+848;158;0;155266309.0;system;;[];False;False;5539d6db678cda34;[];[Pesan sistem]
+849;158;0;155276121.0;system;;[];False;False;90ff9851e571eb31;[];[Pesan sistem]
+850;158;0;155351968.0;system;;[];False;False;db8795848b60deea;[];[Pesan sistem]
+851;158;0;155382206.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+852;158;500+;155444920.0;text;;['🤖'];True;False;f84bb385e508518c;[];tu beneran apa hoax?
+853;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya...
+854;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya
+855;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup... kok
+856;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+857;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya
+858;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg... biasa ya
+859;158;11-50;155444952.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu ya bang
+860;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+861;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal mulu
+862;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+863;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat sih
+864;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya
+865;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood... dulu
+866;158;11-50;155444953.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup kok...
+867;158;11-50;155444954.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang...
+868;158;11-50;155444954.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di... kafe biasa
+869;158;11-50;155444954.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+870;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu... ya bang...
+871;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat... sih
+872;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen... gofood dulu
+873;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih... hemat sih
+874;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang...
+875;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+876;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw nambah... terus
+877;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+878;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw... nambah terus
+879;158;11-50;155444955.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi... padang
+880;158;11-50;155444956.0;text;;[];False;False;f84bb385e508518c;[];es teh manis... satu ya... bang
+881;158;11-50;155444956.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood... dulu...
+882;158;11-50;155444956.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+883;158;11-50;155444956.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya...
+884;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu ya bang...
+885;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang...
+886;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu... buka ga ya
+887;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya
+888;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet... tp gagal mulu
+889;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal... mulu...
+890;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu... buka ga ya
+891;158;11-50;155444957.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu... ya bang...
+892;158;11-50;155444958.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+893;158;11-50;155444958.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah... cukup kok
+894;158;11-50;155444958.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup... kok
+895;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat... sih
+896;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal mulu
+897;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba... restoran baru
+898;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup kok
+899;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih... hemat sih
+900;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+901;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw nambah... terus
+902;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw nambah terus
+903;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+904;158;11-50;155444959.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan... nasi padang
+905;158;11-50;155444960.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+906;158;11-50;155444960.0;text;;[];False;False;f84bb385e508518c;[];es teh manis... satu... ya bang
+907;158;11-50;155444960.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+908;158;11-50;155444960.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu ya bang
+909;158;11-50;155444960.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka... ga ya
+910;158;11-50;155444960.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru... mikir...
+911;158;0;155456825.0;system;;[];False;False;90ff9851e571eb31;[];[Pesan sistem]
+912;158;11-50;155520565.0;text;880.0;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+913;159;101-500;155526234.0;text;;['🙂\u200d↕️'];False;False;f84bb385e508518c;[];kemarin malem gw... sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai... tugas kuliah, rencana liburan, sampe... masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi... dan dosen negur di... depan smua orang. malu tp ya gmn lg...
+914;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal... mulu
+915;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+916;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat sih
+917;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+918;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih... hemat sih
+919;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw... nambah terus
+920;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang
+921;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+922;159;11-50;155526250.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+923;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+924;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal mulu
+925;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat sih
+926;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+927;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang
+928;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba... restoran baru
+929;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet... tp gagal... mulu
+930;159;11-50;155526251.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+931;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+932;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal mulu
+933;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw nambah terus
+934;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup... kok
+935;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru...
+936;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru... mikir
+937;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup kok
+938;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup... kok
+939;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi... padang
+940;159;11-50;155526252.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba... restoran baru
+941;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp... gagal mulu
+942;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+943;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp... gagal mulu
+944;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+945;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+946;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang
+947;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu... ya bang
+948;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru...
+949;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu...
+950;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang
+951;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah cukup kok...
+952;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal mulu
+953;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat sih
+954;159;11-50;155526253.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+955;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+956;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya
+957;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+958;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+959;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+960;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa...
+961;159;11-50;155526254.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir...
+962;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+963;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya
+964;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];es teh manis satu ya bang
+965;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya...
+966;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu buka ga ya...
+967;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen... gofood dulu
+968;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa...
+969;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang
+970;159;11-50;155526255.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+971;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+972;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi padang...
+973;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+974;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];es teh manis... satu... ya bang...
+975;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];tadi gw makan nasi... padang...
+976;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+977;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir
+978;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];bakso malang tu... buka ga ya
+979;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];indomie telor udah... cukup kok
+980;159;11-50;155526256.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+981;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di... kafe biasa
+982;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di... kafe biasa
+983;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];masak sendiri lebih hemat sih
+984;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];porsi makan gw nambah terus
+985;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];kopi susu yg biasa ya
+986;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+987;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];nongkrong yuk di kafe biasa
+988;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+989;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru... mikir
+990;159;11-50;155526257.0;text;;[];False;False;f84bb385e508518c;[];sarapan dulu baru mikir...
+991;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet... tp gagal... mulu
+992;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+993;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+994;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw mau pesen gofood dulu
+995;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw lg diet tp gagal... mulu...
+996;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba... restoran baru
+997;159;11-50;155526258.0;text;;[];False;False;f84bb385e508518c;[];gw mau nyoba restoran baru
+998;159;51-100;155526375.0;text;;[];False;False;f84bb385e508518c;[];gw lg bingung... milih topik... skripsi antara dua tema yg sm menariknya
+999;160;11-50;155582456.0;text;955.0;[];False;True;f84bb385e508518c;[];gokil abis pertandingannya!
+1000;160;0;155582906.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+1001;161;0;155589073.0;unknown;;[];False;False;f84bb385e508518c;[];[Media tidak dikenal]
+1002;161;101-500;155592317.0;text;;['😵', '🔥', '🔗'];False;False;f84bb385e508518c;[];hari ni gw iseng... nyoba bikin... kopi pake metode v60 yg lg hype di kalangan anak anak kampus. beli alatnya... lumayan mahal sih tp hasilnya emang beda dr kopi sachet... biasa. kopinya lebih smooth dan... ga terlalu pahit. kayaknya gw... bakal ketagihan nih bikin kopi sendiri tiap pagi... sebelum ke... kampus
+1003;161;101-500;155592319.0;text;;['😵', '🔥', '🔗'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin kopi pake metode v60 yg lg hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tp... hasilnya emang beda dr kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin... kopi sendiri tiap pagi sebelum ke kampus
+1004;161;11-50;155592322.0;text;;[];False;False;f84bb385e508518c;[];gw kangen temen temen... sma
+1005;162;101-500;155595396.0;text;;['😬'];False;False;f84bb385e508518c;[];gw baru aja beres beresin kosan dan nemu barang barang lama dr jaman sma. ad foto kelas, surat dr mantan,... sm buku diary yg... isinya cringe bgt kalo dibaca skrg.... jadi nostalgia sendiri... inget masa... masa... dulu yg lebih sederhana. kadang kangen jg sih jadi... anak sma lg tanpa mikirin... skripsi
+1006;162;0;155668332.0;system;;[];False;False;4798f189d9e53c06;[];[Pesan sistem]
+1007;162;11-50;155778262.0;text;;[];False;True;f84bb385e508518c;[];gw seneng bgt dapet a!
+1008;162;11-50;155778263.0;text;;[];False;True;f84bb385e508518c;[];gw seneng bgt dapet a!
+1009;163;101-500;155778915.0;text;;[];False;False;f84bb385e508518c;['277a08f752772962', 'aab54642d06d0b4c', 'b5da3bf5fc16b5fa', '79647a7fc2d05d14', '9e89c3f310bbc720', '9536c6e20231fb4d', 'e048679b1f4fe3c5'];tadi siang gw makan... di warung makan baru deket gerbang belakang kampus.... nasi gorengnya lumayan... enak... dan harganya... murah bgt cuma 12 ribu udah sm es teh. kayaknya bakal jadi langganan baru deh soalnya warteg biasa gw udah mulai naik harga dan porsinya makin dikit aja
+1010;163;0;155810906.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+1011;163;0;155850673.0;system;;[];False;False;37b023c2ed7f40bf;[];[Pesan sistem]
+1012;163;0;155933925.0;system;;[];False;False;f84bb385e508518c;[];[Pesan sistem]
+1013;164;101-500;155954941.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw... iseng nyoba bikin... kopi pake metode v60... yg lg hype di kalangan anak anak kampus. beli alatnya lumayan... mahal sih tp... hasilnya emang beda... dr kopi sachet... biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin... kopi sendiri tiap pagi... sebelum ke kampus...
+1014;164;101-500;155954942.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba... bikin kopi pake metode v60 yg lg... hype di kalangan... anak anak kampus. beli alatnya... lumayan mahal sih tp hasilnya emang beda dr kopi sachet biasa. kopinya lebih smooth dan ga... terlalu pahit. kayaknya gw bakal ketagihan nih bikin... kopi sendiri tiap pagi sebelum ke kampus
+1015;164;101-500;155954942.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin kopi pake... metode v60 yg lg hype di kalangan... anak... anak kampus.... beli alatnya lumayan mahal sih tp hasilnya... emang beda... dr kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya... gw bakal ketagihan nih bikin kopi sendiri tiap pagi... sebelum ke kampus
+1016;164;101-500;155954944.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw... iseng nyoba bikin kopi pake metode v60... yg lg... hype di kalangan anak anak kampus. beli alatnya... lumayan mahal sih tp... hasilnya emang beda dr kopi sachet biasa. kopinya lebih... smooth dan ga... terlalu pahit. kayaknya gw... bakal ketagihan nih bikin kopi... sendiri tiap pagi sebelum ke kampus
+1017;164;101-500;155954944.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin kopi pake metode v60 yg lg... hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tp... hasilnya emang beda dr kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw... bakal ketagihan nih bikin kopi sendiri tiap pagi... sebelum ke kampus
+1018;164;101-500;155954945.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin... kopi pake... metode v60 yg lg hype di kalangan... anak anak kampus. beli alatnya... lumayan mahal sih tp... hasilnya emang beda dr... kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw... bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke... kampus
+1019;164;101-500;155954946.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw iseng... nyoba... bikin kopi pake metode v60 yg lg hype di kalangan... anak anak kampus. beli alatnya lumayan... mahal sih tp... hasilnya... emang beda dr kopi sachet... biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin... kopi... sendiri tiap pagi sebelum ke kampus...
+1020;164;101-500;155954946.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba... bikin... kopi pake metode v60... yg lg hype di kalangan... anak anak kampus. beli alatnya lumayan mahal sih tp hasilnya... emang beda dr... kopi sachet biasa. kopinya lebih smooth dan ga... terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi... sendiri tiap pagi sebelum ke kampus
+1021;164;101-500;155954948.0;text;;['‼️', '😔', '💞'];False;False;f84bb385e508518c;[];hari ni gw... iseng nyoba bikin kopi pake metode v60 yg lg hype di kalangan... anak anak kampus. beli alatnya lumayan mahal sih tp... hasilnya... emang beda dr kopi sachet biasa. kopinya lebih... smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+1022;164;101-500;155955151.0;text;;['😵'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin kopi pake metode v60 yg lg... hype di kalangan... anak anak kampus. beli alatnya lumayan mahal sih tp... hasilnya emang beda... dr... kopi sachet biasa. kopinya lebih smooth dan ga... terlalu pahit. kayaknya gw... bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+1023;164;101-500;155955158.0;text;;['😵'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin kopi pake metode v60 yg lg... hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tp... hasilnya... emang beda dr kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin... kopi sendiri tiap pagi sebelum ke... kampus...
+1024;165;101-500;155956123.0;text;;['🙂\u200d↕️'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba... bikin kopi pake metode v60 yg lg... hype di kalangan... anak anak kampus.... beli alatnya lumayan mahal sih tp... hasilnya emang beda... dr kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw... bakal ketagihan nih bikin kopi... sendiri tiap pagi sebelum ke kampus
+1025;165;0;155963365.0;system;;[];False;False;48c1bbc12cbb1fad;[];[Pesan sistem]
+1026;165;51-100;156045202.0;text;;['‼️', '🤘🏼'];False;False;f84bb385e508518c;[];gw pengen bgt liburan ke pantai tp duit lg tipis... bgt skrg
+1027;165;0;156195984.0;system;;[];False;False;9f64bb83e4c2a1e7;[];[Pesan sistem]
+1028;165;0;156196277.0;system;;[];False;False;9f64bb83e4c2a1e7;[];[Pesan sistem]
+1029;165;101-500;156197184.0;text;;['😀'];False;False;f84bb385e508518c;[];hari ni gw iseng... nyoba bikin... kopi pake metode v60 yg lg... hype di kalangan anak anak kampus. beli alatnya... lumayan mahal sih tp hasilnya emang beda dr kopi sachet... biasa. kopinya... lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi... sendiri tiap pagi sebelum ke... kampus
+1030;165;0;156197550.0;system;;[];False;False;8b1f27e58feb456c;[];[Pesan sistem]
+1031;165;0;156388657.0;system;;[];False;False;1d7428ed032a112f;[];[Pesan sistem]
+1032;165;0;156421119.0;system;;[];False;False;bf1eb86513148a73;[];[Pesan sistem]
+1033;165;101-500;156441685.0;text;;['😮'];False;False;f84bb385e508518c;[];hari ni gw iseng nyoba bikin kopi pake metode v60 yg lg... hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tp hasilnya emang beda... dr kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi... sebelum ke kampus
+1034;165;0;156459610.0;system;;[];False;False;227afd1aa12bfdf1;[];[Pesan sistem]
+1035;165;11-50;156494051.0;text;;['⚠️'];False;False;f84bb385e508518c;[];temenin gw dong besok
+1036;165;11-50;156494054.0;text;;['⚠️'];False;False;f84bb385e508518c;[];temenin gw dong besok...
+1037;165;11-50;156494055.0;text;;['⚠️'];False;False;f84bb385e508518c;[];reuni kapan ya... kita
+1038;165;11-50;156494057.0;text;;['⚠️'];False;False;f84bb385e508518c;[];pacarnya baru siapa sih
+1039;166;500+;156619621.0;text;;[];False;False;f84bb385e508518c;[];lab komputer penuh terus
+1040;166;0;156898306.0;system;;[];False;False;accd8d61f0f4c959;[];[Pesan sistem]
+1041;166;0;156979118.0;system;;[];False;False;6924c5f0fbe278fc;[];[Pesan sistem]
+1042;166;500+;157064948.0;text;;['🎓', '📚', '📍', '📅', '💌', '📄', '🌐'];False;False;f84bb385e508518c;[];perpus tutup jam berapa ya
+1043;166;0;157071066.0;system;;[];False;False;bf1eb86513148a73;[];[Pesan sistem]
+1044;166;0;157250906.0;system;;[];False;False;8cac496f833cf60d;[];[Pesan sistem]
+1045;166;0;157256840.0;system;;[];False;False;2a0ab6e5e06e4872;[];[Pesan sistem]
+1046;166;0;157382279.0;system;;[];False;False;277a08f752772962;[];[Pesan sistem]
+1047;166;0;157508093.0;system;;[];False;False;76d21a396c53253d;[];[Pesan sistem]
+1048;166;0;157562286.0;system;;[];False;False;f36afcecfaf875dc;[];[Pesan sistem]
+1049;166;101-500;157854108.0;text;;['😃'];False;True;f84bb385e508518c;[];yesss gw akhirnya dapet nilai a di mata kuliah yg paling gw... takutin selama ni! padahal gw udah pasrah bgt... pas ujian soalnya soalnya... susah... parah. ternyata tugas dan presentasi gw nilainya bagus jadi bs nutupin... nilai ujian. alhamdulillah... bgt perjuangan ga sia sia!...
+1050;166;0;158102706.0;system;;[];False;False;e26ed6836f804c13;[];[Pesan sistem]
+1051;166;500+;158108453.0;text;;['📢', '🥫', '🧻', '🌧', '❤️', '🙌', '☕', '🍫', '✨', '💪', '💫'];False;True;f84bb385e508518c;[];gila sih lu bs gitu!...
+1052;167;101-500;158120643.0;text;;['🫶🏼'];True;False;f84bb385e508518c;[];eh ad yg pny rekomendasi laptop budget 5 jutaan yg bagus buat... kuliah dan ngoding... ga?... laptop gw yg skrg udah... mulai lemot dan sering ngehang kalo buka banyak tab. pengennya sih yg ringan buat dibawa... ke kampus tp tetep kenceng performanya,... ad saran?
+1053;167;0;158180626.0;system;;[];False;False;bb9178365b5ba0ac;[];[Pesan sistem]
+1054;167;51-100;158189656.0;text;;[];False;False;f84bb385e508518c;[];semalam hujan gede bgt sampe... kosan gw mati lampu semaleman gila
+1055;168;500+;158193105.0;text;;[];False;False;f84bb385e508518c;[];proposal skripsi gw ditolak
+1056;168;0;158223360.0;system;;[];False;False;b5da3bf5fc16b5fa;[];[Pesan sistem]
+1057;168;500+;158275152.0;text;;['‼️', '📍', '🗓️', '📋'];False;False;f84bb385e508518c;[];seminar tadi lama bgt
+1058;169;500+;158463293.0;text;;[];True;False;f84bb385e508518c;[];udah sampe belom?
+1059;169;0;158469449.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+1060;169;0;158533226.0;system;;[];False;False;a95cb02762f6f260;[];[Pesan sistem]
+1061;169;0;158649601.0;system;;[];False;False;eb4110f1d8cbedc1;[];[Pesan sistem]
+1062;169;0;158706655.0;system;;[];False;False;d5be3301b30ac5f8;[];[Pesan sistem]
+1063;169;0;158749596.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+1064;169;0;158809215.0;system;;[];False;False;9e5690b793cdfe47;[];[Pesan sistem]
+1065;169;0;159087911.0;system;;[];False;False;4e1108d8d8052f61;[];[Pesan sistem]
+1066;169;0;159135724.0;system;;[];False;False;630bc16bdf33b86b;[];[Pesan sistem]
+1067;169;0;159150334.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+1068;170;0;159182416.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+1069;170;0;159238756.0;system;;[];False;False;9e5690b793cdfe47;[];[Pesan sistem]
+1070;170;0;159250724.0;system;;[];False;False;3ea37c0318799b59;[];[Pesan sistem]
+1071;170;0;159394986.0;system;;[];False;False;eb4110f1d8cbedc1;[];[Pesan sistem]
+1072;170;0;159395283.0;system;;[];False;False;eb4110f1d8cbedc1;[];[Pesan sistem]
+1073;170;0;159459251.0;system;;[];False;False;e262842b64d92287;[];[Pesan sistem]
+1074;170;500+;159587785.0;image/jpeg;;['💪', '🔊'];False;False;f84bb385e508518c;[];[Foto]
+1075;170;500+;159587791.0;image/jpeg;;['💪', '🔊'];False;False;f84bb385e508518c;[];[Foto]
+1076;170;0;159590196.0;system;;[];False;False;9f64bb83e4c2a1e7;[];[Pesan sistem]
+1077;170;0;159680061.0;system;;[];False;False;40daaa0d6f6d00f6;[];[Pesan sistem]
+1078;170;0;159736185.0;system;;[];False;False;98730ed6ecfe5602;[];[Pesan sistem]
+1079;170;500+;159822152.0;text;;['📍', '📅', '🚨', '👉🏼'];False;True;f84bb385e508518c;[];mantap bgt hasilnya!
+1080;170;0;160024643.0;system;;[];False;False;33fb7346c9d5aa9a;[];[Pesan sistem]
+1081;170;101-500;160089400.0;text;;[];True;False;f84bb385e508518c;[];gw lg bimbang nih antara... mau ikut organisasi kampus atau fokus ke akademik aja. menurut... kalian gmn sih, worth it ga sih ikut organisasi? soalnya gw denger banyak yg bilang bs nambah soft... skill tp... di... sisi lain waktu buat... belajar jadi berkurang kan, gmn... pengalaman kalian?
+1082;171;101-500;160170767.0;text;;[];False;True;f84bb385e508518c;[];parah bgt banjir di... daerah... kosan gw semalam... smp air... masuk ke kamar setinggi betis! barang barang gw banyak yg kerendem termasuk buku kuliah dan sepatu. gw hrs... ngungsi ke kosan temen dan skrg lg bersihin smua barang. semoga ga ad yg rusak parah sih!
+1083;171;0;160170774.0;system;;[];False;False;3ea37c0318799b59;[];[Pesan sistem]
+1084;171;0;160194541.0;system;;[];False;False;9f64bb83e4c2a1e7;[];[Pesan sistem]
+1085;171;0;160205269.0;system;;[];False;False;5642bd4a9f626cfc;[];[Pesan sistem]
+1086;171;0;160255857.0;system;;[];False;False;9f64bb83e4c2a1e7;[];[Pesan sistem]
+1087;171;500+;160263291.0;text;;['🗳', '📆', '🚨', '❓', '🌐', '📩'];False;True;f84bb385e508518c;[];keren abis presentasinya!...
+1088;171;101-500;160263317.0;text;;['📩'];False;False;f84bb385e508518c;[];gw lg galau bgt nih... soal... masa depan. mau... lanjut s2 tp duit ga ad, mau langsung kerja tp pengalaman msh minim. nyokap bilang... terserah... gw aja tp gw tau dia pengen gw cepet kerja... biar... bs bantu ekonomi keluarga.... bingung bgt sih, kyk... smua pilihan ad plus minusnya
+1089;172;51-100;160332208.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];dompet gw ilang kemarin di angkot... tp alhamdulillah ad yg nemuin
+1090;172;51-100;160332208.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];gw udah download smua materi kuliah... tp blm sempat... baca sm sekali
+1091;172;51-100;160332211.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];tadi di kantin ketemu anak angkatan bawah yg... kenal sm temen sma... gw
+1092;172;51-100;160332211.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];gw lg bingung... milih topik skripsi... antara dua tema... yg sm menariknya...
+1093;172;51-100;160332211.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];gw lg bingung milih topik skripsi... antara dua tema yg sm menariknya
+1094;172;51-100;160332213.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];gw udah download smua materi kuliah tp blm... sempat baca sm sekali...
+1095;172;51-100;160332213.0;text;;['‼️', '📈'];False;False;f84bb385e508518c;[];gw lg bingung... milih... topik skripsi antara dua tema yg sm menariknya
+1096;173;101-500;160346896.0;text;;['🎉', '⚽', '🎲', '👏', '🏫', '☕', '💙', '👩\u200d🎓', '👨\u200d🎓'];False;True;f84bb385e508518c;[];temen temen gw baru aja ngasih... surprise ulang... tahun yg paling berkesan dalam hidup gw! mrk diem diem booking tempat makan favorit gw dan undang smua temen... deket. ad kue tart dan hadiah yg gw pengen dr lama. gw... sampe... nangis terharu sumpah ga nyangka mrk sebaik tu!
+1097;173;0;160454686.0;system;;[];False;False;29591ec8aeb6b8cb;[];[Pesan sistem]
+1098;173;0;160516055.0;system;;[];False;False;aa814c9648ca9f63;[];[Pesan sistem]
+1099;173;0;160519345.0;system;;[];False;False;aa814c9648ca9f63;[];[Pesan sistem]
+1100;174;0;160539981.0;system;;[];False;False;aa814c9648ca9f63;[];[Pesan sistem]
+1101;174;0;160540558.0;system;;[];False;False;aa814c9648ca9f63;[];[Pesan sistem]
+1102;174;101-500;160540922.0;text;;['🍀', '💓', '‼️'];False;True;f84bb385e508518c;[];yesss gw akhirnya... dapet... nilai a... di mata... kuliah yg paling gw takutin selama ni!... padahal... gw udah pasrah bgt pas... ujian soalnya soalnya... susah parah. ternyata... tugas... dan presentasi... gw nilainya bagus jadi bs... nutupin nilai ujian. alhamdulillah bgt perjuangan ga sia sia!...
+1103;174;0;160554589.0;system;;[];False;False;812968228e8c1f62;[];[Pesan sistem]
+1104;174;0;160891608.0;system;;[];False;False;76d21a396c53253d;[];[Pesan sistem]
+1105;174;0;160928693.0;system;;[];False;False;9112a019d19610ab;[];[Pesan sistem]
+1106;174;0;160963540.0;system;;[];False;False;cd7b35302075033f;[];[Pesan sistem]
+1107;174;0;161034916.0;system;;[];False;False;718c22ff35c3c603;[];[Pesan sistem]
+1108;174;0;161044052.0;system;;[];False;False;d5be3301b30ac5f8;[];[Pesan sistem]
+1109;174;0;161357934.0;system;;[];False;False;c70a4dcb055e82e9;[];[Pesan sistem]
+1110;174;0;161503238.0;system;;[];False;False;86cebda3173c7fa6;[];[Pesan sistem]
+1111;174;0;161504073.0;system;;[];False;False;86cebda3173c7fa6;[];[Pesan sistem]
+1112;175;0;161506221.0;system;;[];False;False;86cebda3173c7fa6;[];[Pesan sistem]
+1113;175;0;162462531.0;system;;[];False;False;18cd61bd518f08a8;[];[Pesan sistem]
+1114;175;0;162585412.0;system;;[];False;False;42ce72239dc4767a;[];[Pesan sistem]
+1115;175;0;162696171.0;system;;[];False;False;0e6fc0d22cd9eeb5;[];[Pesan sistem]
+1116;175;0;162704970.0;system;;[];False;False;6b128f874a0216fc;[];[Pesan sistem]
+1117;175;0;162784078.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1118;175;0;162785576.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1119;176;0;162787407.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1120;176;0;162788636.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1121;177;0;162847648.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1122;177;0;162848093.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1123;178;0;162882287.0;system;;[];False;False;6fa1e7c41fea4a42;[];[Pesan sistem]
+1124;178;0;163663843.0;system;;[];False;False;654fcb74390ead5f;[];[Pesan sistem]
+1125;178;0;163719737.0;system;;[];False;False;7c46714754764554;[];[Pesan sistem]
+1126;178;0;163839088.0;system;;[];False;False;aab54642d06d0b4c;[];[Pesan sistem]
+1127;178;0;164067077.0;system;;[];False;False;227afd1aa12bfdf1;[];[Pesan sistem]
+1128;178;0;164067439.0;system;;[];False;False;227afd1aa12bfdf1;[];[Pesan sistem]
+1129;178;101-500;164313492.0;text;;[];False;True;f84bb385e508518c;[];parah bgt banjir di daerah kosan... gw semalam smp air masuk ke... kamar setinggi betis!... barang barang gw... banyak yg kerendem termasuk buku kuliah dan sepatu. gw hrs ngungsi ke kosan temen... dan... skrg lg bersihin smua barang. semoga ga ad yg rusak parah sih!
+1130;179;101-500;164345314.0;text;;['🎮', '🎯', '🌍', '🗓️', '📍', '⏰', '✨', '🔸', '🏆', '🌟', 'ℹ️', '👉', '📱'];True;True;f84bb385e508518c;[];guys ad yg tau ga sih knp sistem registrasi online kampus sering bgt error pas masa pengisian krs? tiap semester selalu gitu bikin stres, mana hrs rebutan mata kuliah yg kuotanya dikit bgt lg. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+1131;179;101-500;164345319.0;text;;['🎮', '🎯', '🌍', '🗓️', '📍', '⏰', '✨', '🔸', '🏆', '🌟', 'ℹ️', '👉', '📱'];True;True;f84bb385e508518c;[];menurut kalian knp ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa... krn tekanan sosmed atau... emang tuntutan hidup yg makin tinggi ya? gw penasaran aja sih... soalnya... temen temen gw... banyak... yg ngeluh hal yg sm...
+1132;179;51-100;164345880.0;text;;['📢'];False;False;f84bb385e508518c;[];kosan gw bocor lg pas hujan semalam, kasur gw basah... smua parah bgt
+1133;180;11-50;164508729.0;text;;['🫶🏼'];False;False;f84bb385e508518c;[];gw ngga bs ikut malem ni
+1134;180;11-50;164508729.0;text;;['🫶🏼'];False;False;f84bb385e508518c;[];rame bgt disini cuy
+1135;180;11-50;164508733.0;text;;['🫶🏼'];False;False;f84bb385e508518c;[];gw naik ojol aja deh
+1136;180;0;164765593.0;system;;[];False;False;9108fe211cba3a4c;[];[Pesan sistem]
+1137;180;0;164779684.0;system;;[];False;False;36e08e12ba1796de;[];[Pesan sistem]
+1138;180;0;165003993.0;system;;[];False;False;661f1c7b0fca2de3;[];[Pesan sistem]
+1139;180;500+;165124608.0;text;;['📢', '👋', '📅', '⚠️', '🔄', '🚨', '📩'];False;True;f84bb385e508518c;[];gw seneng bgt dapet a!
+1140;180;0;165359566.0;system;;[];False;False;b3439c6ee78afc67;[];[Pesan sistem]
+1141;180;0;165435632.0;system;;[];False;False;d739ab8938628f11;[];[Pesan sistem]
+1142;180;500+;165554474.0;text;;['📢', '🚧', '🔹', '🚨', '📌', '✅', '🌐'];False;True;f84bb385e508518c;[];asik besok libur guys!
+1143;180;0;165599822.0;system;;[];False;False;8c81a3da1880696f;[];[Pesan sistem]
+1144;181;0;165601188.0;system;;[];False;False;8c81a3da1880696f;[];[Pesan sistem]
+1145;181;0;166233661.0;system;;[];False;False;1355b5368dc08a3d;[];[Pesan sistem]
+1146;181;0;166246742.0;system;;[];False;False;59b5ba849e6513f5;[];[Pesan sistem]
+1147;181;0;166822128.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+1148;181;0;166852105.0;system;;[];False;False;d739ab8938628f11;[];[Pesan sistem]
+1149;181;101-500;166977300.0;text;;['👾', '📋', '⏳'];False;True;f84bb385e508518c;[];gila sih guys tadi pas... gw lg di jalan tiba tiba motor gw diserempet sm... mobil yg belok tanpa sein! untung gw ga jatoh... tp spion gw patah dan baret di bodi motor. orangnya langsung kabur lg ga tanggung jawab! sumpah kesel bgt gw sampe skrg msh gemetaran!
+1150;182;51-100;166983514.0;text;;['😉'];False;False;f84bb385e508518c;[];gw pengen bgt liburan ke pantai tp duit... lg... tipis bgt skrg
+1151;182;51-100;166983515.0;text;;['😉'];False;False;f84bb385e508518c;[];gw pengen bgt liburan ke pantai tp duit lg tipis bgt skrg
+1152;182;0;167003037.0;system;;[];False;False;9a4513429a629ba0;[];[Pesan sistem]
+1153;182;0;167033762.0;system;;[];False;False;516d48b3c485e22c;[];[Pesan sistem]
+1154;182;0;167037415.0;system;;[];False;False;516d48b3c485e22c;[];[Pesan sistem]
+1155;183;0;167072990.0;system;;[];False;False;516d48b3c485e22c;[];[Pesan sistem]
+1156;183;0;167233670.0;system;;[];False;False;09c4e292aa058788;[];[Pesan sistem]
+1157;184;0;167434585.0;system;;[];False;False;09c4e292aa058788;[];[Pesan sistem]
+1158;184;0;167780581.0;system;;[];False;False;aa8bc577c9552788;[];[Pesan sistem]
+1159;184;0;167888203.0;system;;[];False;False;e858f3b2e44345a3;[];[Pesan sistem]
+1160;184;0;168043818.0;system;;[];False;False;227afd1aa12bfdf1;[];[Pesan sistem]
+1161;184;0;168063620.0;system;;[];False;False;337b083a6129741e;[];[Pesan sistem]
+1162;184;0;168066427.0;system;;[];False;False;337b083a6129741e;[];[Pesan sistem]
+1163;185;0;168110376.0;system;;[];False;False;337b083a6129741e;[];[Pesan sistem]
+1164;185;0;168112329.0;system;;[];False;False;337b083a6129741e;[];[Pesan sistem]
+1165;185;0;168593098.0;system;;[];False;False;a188146060bd6161;[];[Pesan sistem]
+1166;185;0;168642438.0;system;;[];False;False;a95cb02762f6f260;[];[Pesan sistem]
+1167;185;0;168744649.0;system;;[];False;False;37b9e640893d51a7;[];[Pesan sistem]
+1168;185;0;168771045.0;system;;[];False;False;3c4f611354327b55;[];[Pesan sistem]
+1169;185;0;169021445.0;system;;[];False;False;d739ab8938628f11;[];[Pesan sistem]
+1170;185;0;169083155.0;system;;[];False;False;6da154ead7291434;[];[Pesan sistem]
+1171;185;0;169099250.0;system;;[];False;False;8adae674e0e3bab7;[];[Pesan sistem]
+1172;186;0;169103295.0;system;;[];False;False;8adae674e0e3bab7;[];[Pesan sistem]
+1173;186;500+;169186292.0;text;;['📅', '⏰', '📍'];False;True;f84bb385e508518c;[];seru bgt tadi... malem!
+1174;186;500+;169186294.0;text;;['📅', '⏰', '📍'];False;True;f84bb385e508518c;[];ngakak gw liat video tu!
+1175;186;0;169187307.0;system;;[];False;False;6b121f41e012afad;[];[Pesan sistem]
+1176;186;0;169239000.0;system;;[];False;False;8adae674e0e3bab7;[];[Pesan sistem]
+1177;186;0;169437633.0;system;;[];False;False;0fbb20421b42d5f6;[];[Pesan sistem]
+1178;186;0;169661345.0;system;;[];False;False;89e4bd13207ca241;[];[Pesan sistem]
+1179;186;0;169693238.0;unknown;;[];False;False;f84bb385e508518c;[];[Media tidak dikenal]
+1180;186;500+;169703626.0;text;;['🗓️', '❓', '🤝', '🎉', '😔', '🙏🏼', '❌'];False;False;f84bb385e508518c;[];keluarga ngumpul lebaran ntr
+1181;186;101-500;169753156.0;video/mp4;;[];False;False;f84bb385e508518c;[];[Video]
+1182;187;101-500;169831397.0;text;;['🗳️'];False;False;f84bb385e508518c;[];jadi ceritanya kemarin... gw ke... perpustakaan pusat buat nyari bahan referensi skripsi, ternyata bukunya udah dipinjem smua sm anak angkatan... sebelah. akhirnya gw cuma bs fotokopi dr temen yg kebetulan... pny. lumayan lah... daripada ga dapet... sm sekali, tinggal di rangkum aja sisanya
+1183;187;0;169871164.0;system;;[];False;False;e35b2543e0461022;[];[Pesan sistem]
+1184;187;0;170205495.0;system;;[];False;False;1aa3830049fcb300;[];[Pesan sistem]
+1185;187;500+;170307945.0;text;;['🗓️', '✨', '📍', '👾', '🛜', '🎁', '🫂'];False;True;f84bb385e508518c;[];gila sih lu... bs gitu!
+1186;187;500+;170307946.0;text;;['🗓️', '✨', '📍', '👾', '🛜', '🎁', '🫂'];False;True;f84bb385e508518c;[];mantap bgt hasilnya!
+1187;187;500+;170307947.0;text;;['🗓️', '✨', '📍', '👾', '🛜', '🎁', '🫂'];False;True;f84bb385e508518c;[];mantap bgt hasilnya!
+1188;187;500+;170307947.0;text;;['🗓️', '✨', '📍', '👾', '🛜', '🎁', '🫂'];False;True;f84bb385e508518c;[];mantap bgt hasilnya!
+1189;187;500+;170307948.0;text;;['🗓️', '✨', '📍', '👾', '🛜', '🎁', '🫂'];False;True;f84bb385e508518c;[];gila sih lu bs gitu!
+1190;187;500+;170307949.0;text;;['🗓️', '✨', '📍', '👾', '🛜', '🎁', '🫂'];False;True;f84bb385e508518c;[];mantap bgt hasilnya!...
+1191;187;0;170394351.0;system;;[];False;False;eb625370d9b9c15d;[];[Pesan sistem]
+1192;187;0;170463508.0;system;;[];False;False;0c4aa273a8011524;[];[Pesan sistem]
+1193;187;0;170553609.0;system;;[];False;False;9a8586ffad2e7bd3;[];[Pesan sistem]
+1194;187;0;170553888.0;system;;[];False;False;9a8586ffad2e7bd3;[];[Pesan sistem]
+1195;187;0;170645880.0;system;;[];False;False;1aa3830049fcb300;[];[Pesan sistem]
+1196;187;11-50;170983807.0;text;1187.0;['‼️'];False;False;f84bb385e508518c;[];tadi absen ga sih km
+1197;187;11-50;170983807.0;text;1187.0;['‼️'];False;False;f84bb385e508518c;[];dosen gw galak bgt... sih
+1198;187;11-50;170983812.0;text;1187.0;['‼️'];False;False;f84bb385e508518c;[];eh tadi kelas seru bgt
+1199;187;11-50;170983814.0;text;1187.0;['‼️'];False;False;f84bb385e508518c;[];gw belom mulai tugas...
+1200;187;0;171044380.0;system;;[];False;False;0d218d0b0f523b5e;[];[Pesan sistem]
+1201;187;0;171150011.0;system;;[];False;False;936b5951028dcbec;[];[Pesan sistem]
+1202;187;0;171172867.0;system;;[];False;False;9a8586ffad2e7bd3;[];[Pesan sistem]
+1203;187;0;171664781.0;system;;[];False;False;7cdf5c535cbdf7b3;[];[Pesan sistem]
+1204;187;0;171740460.0;system;;[];False;False;1922a0b0533ae53e;[];[Pesan sistem]
+1205;187;0;171770527.0;system;;[];False;False;59b5ba849e6513f5;[];[Pesan sistem]
+1206;187;0;171822039.0;system;;[];False;False;db1be0cfa3ba6a11;[];[Pesan sistem]
+1207;187;0;171857701.0;system;;[];False;False;ef0f3c214787463d;[];[Pesan sistem]
+1208;187;0;171862748.0;system;;[];False;False;ef0f3c214787463d;[];[Pesan sistem]
+1209;188;0;172093109.0;system;;[];False;False;ef0f3c214787463d;[];[Pesan sistem]
+1210;188;0;172112018.0;system;;[];False;False;db1be0cfa3ba6a11;[];[Pesan sistem]
+1211;189;0;172137637.0;system;;[];False;False;db1be0cfa3ba6a11;[];[Pesan sistem]
+1212;189;0;172387130.0;system;;[];False;False;cd7b35302075033f;[];[Pesan sistem]
+1213;189;0;172627707.0;system;;[];False;False;1ba434cf0509afb7;[];[Pesan sistem]
+1214;190;0;172901524.0;system;;[];False;False;1ba434cf0509afb7;[];[Pesan sistem]
+1215;190;0;172909009.0;system;;[];False;False;3e370b5db02fe5a5;[];[Pesan sistem]
+1216;191;0;172928441.0;system;;[];False;False;3e370b5db02fe5a5;[];[Pesan sistem]
+1217;191;0;173261786.0;system;;[];False;False;ed4e7a2d8b9ff6cc;[];[Pesan sistem]
+1218;191;500+;173450836.0;text;;['🚨'];False;False;f84bb385e508518c;[];charger hp gw rusak lg
+1219;192;101-500;173478792.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw... sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita... ngobrol banyak hal dr mulai tugas... kuliah, rencana liburan,... sampe masalah percintaan. seru sih walau... besoknya gw kesiangan masuk kelas pagi... dan dosen negur di... depan smua... orang. malu tp ya gmn lg...
+1220;192;101-500;173478792.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam... 12 malem. kita ngobrol banyak hal... dr mulai tugas kuliah, rencana liburan,... sampe... masalah percintaan. seru sih walau... besoknya gw kesiangan masuk kelas pagi... dan dosen negur di depan smua orang. malu tp ya gmn lg
+1221;192;101-500;173478793.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw sm temen... temen nongkrong di warkop... biasa sampe jam 12 malem. kita ngobrol... banyak hal dr mulai tugas kuliah, rencana liburan, sampe... masalah percintaan. seru sih walau... besoknya gw kesiangan masuk kelas pagi dan dosen negur... di depan smua orang. malu tp... ya gmn lg
+1222;192;101-500;173478794.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw sm temen temen nongkrong di warkop biasa... sampe jam... 12 malem. kita... ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau... besoknya gw kesiangan... masuk kelas pagi... dan dosen negur... di depan smua... orang. malu tp... ya gmn lg
+1223;192;101-500;173478795.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw sm temen temen nongkrong di warkop biasa sampe jam 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan,... sampe... masalah percintaan. seru sih walau besoknya gw kesiangan... masuk kelas pagi... dan dosen negur... di depan smua orang. malu tp ya gmn lg
+1224;192;101-500;173478796.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw sm... temen temen nongkrong di warkop biasa sampe jam... 12 malem. kita ngobrol banyak hal dr mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan... masuk kelas pagi dan dosen negur di depan smua... orang. malu tp ya gmn lg
+1225;192;101-500;173478797.0;text;;['🚨'];False;False;f84bb385e508518c;[];kemarin malem gw... sm temen temen... nongkrong di warkop biasa sampe jam 12 malem. kita... ngobrol banyak hal dr mulai... tugas kuliah, rencana liburan, sampe masalah percintaan. seru... sih walau besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg...
+1226;192;0;173519458.0;system;;[];False;False;014acae8c6b1308b;[];[Pesan sistem]
+1227;192;0;173573707.0;system;;[];False;False;ef0f3c214787463d;[];[Pesan sistem]
+1228;192;500+;173734959.0;text;;['📚', '📌', '🫶🏻'];False;True;f84bb385e508518c;[];capek bgt hari ni!
+1229;193;101-500;174000157.0;text;;['🕹️', '💃', '👾', '‼️'];True;False;f84bb385e508518c;[];gw lg bimbang nih antara mau ikut organisasi kampus atau fokus ke akademik aja. menurut... kalian... gmn sih, worth it... ga sih ikut organisasi?... soalnya gw denger banyak yg bilang... bs nambah... soft skill tp di... sisi lain waktu buat belajar jadi... berkurang kan, gmn pengalaman kalian?
+1230;193;101-500;174000158.0;text;;['🕹️', '💃', '👾', '‼️'];True;False;f84bb385e508518c;[];menurut kalian knp ya generasi kita... tuh kayaknya... lebih... gampang stres dan burnout dibanding generasi orang tua kita dulu? apa krn tekanan sosmed atau emang... tuntutan hidup yg... makin tinggi ya? gw... penasaran aja sih soalnya... temen temen gw banyak... yg ngeluh hal yg sm...
+1231;193;101-500;174000160.0;text;;['🕹️', '💃', '👾', '‼️'];True;False;f84bb385e508518c;[];menurut kalian knp ya generasi kita tuh kayaknya... lebih gampang stres dan burnout dibanding generasi orang... tua kita dulu? apa... krn tekanan sosmed atau... emang... tuntutan hidup yg... makin tinggi ya? gw... penasaran... aja sih... soalnya... temen temen gw banyak... yg ngeluh hal yg sm...
+1232;194;101-500;174018474.0;text;;['😔', '💅🏼', '🤠'];False;False;f84bb385e508518c;[];kemarin malem gw sm... temen temen nongkrong di... warkop biasa sampe jam 12 malem. kita... ngobrol banyak hal dr mulai tugas... kuliah, rencana liburan, sampe masalah percintaan. seru sih walau... besoknya gw kesiangan masuk kelas pagi dan dosen negur di depan smua orang. malu tp ya gmn lg
+1233;194;0;174091269.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+1234;194;0;174106950.0;system;;[];False;False;9536c6e20231fb4d;[];[Pesan sistem]
+1235;194;0;174110435.0;system;;[];False;False;9536c6e20231fb4d;[];[Pesan sistem]
+1236;195;0;174117044.0;system;;[];False;False;9536c6e20231fb4d;[];[Pesan sistem]
+1237;195;500+;174167410.0;text;;['🔥', '📅', '🕘', '📍', '🔗', '🎯', '✔️', '💼', '✨'];True;True;f84bb385e508518c;[];knp ga bales chat gw?...
+1238;195;0;174325818.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+1239;196;0;174332280.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+1240;196;500+;174341565.0;text;;['✨', '🌴', '🚀', '📅', '📍', '🛏️', '🚤', '🧠', '🤝', '🗣️', '🧩', '🏃\u200d♂️', '💥', '🎯', '🌟', '📲', '👇'];True;True;f84bb385e508518c;[];booking duluan apa langsung aja?
+1241;196;0;174352915.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+1242;196;500+;174607957.0;text;;[];False;False;f84bb385e508518c;[];konser tu mahal bgt tiketnya...
+1243;196;0;174715595.0;system;;[];False;False;3e0ddf6280029779;[];[Pesan sistem]
+1244;196;0;174795115.0;system;;[];False;False;eb625370d9b9c15d;[];[Pesan sistem]
+1245;196;0;174872804.0;system;;[];False;False;3c7a49193d400bab;[];[Pesan sistem]
+1246;196;0;175055590.0;system;;[];False;False;3288cd300d3032b2;[];[Pesan sistem]
+1247;196;0;175062693.0;system;;[];False;False;e35b2543e0461022;[];[Pesan sistem]
+1248;196;101-500;175369407.0;image/jpeg;;[];False;False;f84bb385e508518c;[];[Foto]
+1249;196;51-100;175376034.0;text;;[];False;False;f84bb385e508518c;[];dosen killer tu ternyata baik... bgt orangnya kalo diajak ngobrol santai
+1250;197;101-500;175556837.0;text;;[];False;False;f84bb385e508518c;[];minggu lalu gw akhirnya... beraniin diri buat ngomong sm dosen pembimbing soal progress skripsi yg mandek. ternyata beliau pengertian bgt dan kasih banyak masukan... yg... berguna. gw nyesel ga ngomong dr awal soalnya selama ni... gw... cuma takut ditolak atau dimarahin padahal... dosennya baik bgt
+1251;197;0;175577876.0;system;;[];False;False;a2a59f8b3ea870a2;[];[Pesan sistem]
+1252;197;0;175625607.0;system;;[];False;False;3bc354681d7f3c18;[];[Pesan sistem]
+1253;197;500+;175802275.0;text;;[];False;False;f84bb385e508518c;[];gw lg sibuk bgt minggu ni
+1254;197;0;175806916.0;system;;[];False;False;e1fc235cb087971f;[];[Pesan sistem]
+1255;197;0;176092133.0;system;;[];False;False;93af0889093de31e;[];[Pesan sistem]
+1256;197;0;176399630.0;system;;[];False;False;5642bd4a9f626cfc;[];[Pesan sistem]
+1257;197;0;176946800.0;system;;[];False;False;3288cd300d3032b2;[];[Pesan sistem]
+1258;197;0;177386657.0;system;;[];False;False;607f84a9883134bf;[];[Pesan sistem]
+1259;197;0;177442996.0;system;;[];False;False;6985b0359f85d526;[];[Pesan sistem]
+1260;197;0;177470379.0;system;;[];False;False;ff102fcbac9f406d;[];[Pesan sistem]
+1261;197;0;178027121.0;system;;[];False;False;f248f77ead2ad245;[];[Pesan sistem]
+1262;197;0;178175829.0;system;;[];False;False;0d218d0b0f523b5e;[];[Pesan sistem]
+1263;197;0;178199192.0;system;;[];False;False;f248f77ead2ad245;[];[Pesan sistem]

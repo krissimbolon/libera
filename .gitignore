@@ -1,0 +1,12 @@
+# Lingkungan virtual & cache Python
+env/
+__pycache__/
+
+# Abaikan dataset mentah ukuran raksasa
+*.zip
+
+# Abaikan kunci jawaban agar tidak bocor (opsional)
+libera_ground_truth/
+
+# Konfigurasi editor lokal
+.vscode/

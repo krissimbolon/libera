@@ -1,0 +1,1389 @@
+﻿id;conversation_id;num_characters;relative_time_seconds;message_type;responds_to_id;array_emojis;interrogative;exclamatory;sender_hash;mentioned_phones_hash;message_content
+1;1;0;0.0;system;;[];False;False;83fe7582ca65359d;[];[Pesan sistem]
+2;1;11-50;3.0;text;;[];False;False;83fe7582ca65359d;[];gw berantem sama si anu
+3;1;1-10;4.0;text;;[];False;False;83fe7582ca65359d;[];setuju
+4;1;1-10;40.0;text;;[];False;True;83fe7582ca65359d;[];goks!
+5;1;1-10;56.0;text;;[];False;False;3210ab1b1e4d038d;[];udah
+6;1;51-100;963.0;text;;[];False;False;83fe7582ca65359d;[];lu harus coba kedai kopi baru di jalan belakang kampus, enak banget
+7;1;11-50;990.0;text;;[];True;False;83fe7582ca65359d;[];jadwal sidang kapan bro?
+8;1;1-10;1270.0;text;;[];False;False;185e4769bf6c342c;[];SETUJU
+9;1;11-50;1273.0;text;;[];False;False;185e4769bf6c342c;[];TEMENIN GW DONG BESOK
+10;1;1-10;1279.0;text;;[];False;False;185e4769bf6c342c;[];AMIN
+11;1;11-50;1311.0;text;;[];False;False;84d524c84afe0189;[];reuni kapan ya kita
+12;1;11-50;1317.0;text;;[];False;False;84d524c84afe0189;[];diem diem ternyata jadian
+13;1;1-10;1367.0;text;;[];False;False;b6ee3a1cc0f88aee;[];setuju
+14;1;1-10;1405.0;text;;[];False;False;185e4769bf6c342c;[];YWD
+15;1;1-10;1406.0;text;11.0;[];False;False;b6ee3a1cc0f88aee;[];hihi
+16;1;1-10;1417.0;text;;[];False;False;83fe7582ca65359d;[];udah
+17;1;11-50;1431.0;text;;[];False;False;185e4769bf6c342c;[];ANGKOT KE SANA MASIH ADA GA
+18;1;11-50;1571.0;text;;[];True;False;83fe7582ca65359d;[];kapan terakhir kali ketemu?
+19;1;51-100;1913.0;text;;[];False;False;83fe7582ca65359d;[];gw baru aja dapet kabar kalo temen kita diterima kerja di luar negeri
+20;1;11-50;1940.0;text;;[];False;False;83fe7582ca65359d;[];si itu udah putus katanya
+21;1;101-500;2304.0;text;;[];False;False;83fe7582ca65359d;[];hari ini gw iseng nyoba bikin kopi pake metode V60 yang lagi hype di kalangan anak anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emang beda dari kopi sachet biasa. kopinya lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopi sendiri tiap pagi sebelum ke kampus
+22;1;1-10;2327.0;text;;[];False;False;185e4769bf6c342c;[];UDAH
+23;1;11-50;2382.0;text;;[];False;False;185e4769bf6c342c;[];GW BERANTEM SAMA SI ANU
+24;1;101-500;2567.0;text;;[];True;True;b6ee3a1cc0f88aee;[];guys ada,,, yang tau ga sih kenapa sistem,,, registrasi online,,, kampus sering,,, banget error pas,,, masa pengisian krs?,,, tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga,,, kuat ya nampung banyak mahasiswa sekaligus?,,,
+25;1;11-50;2576.0;text;;[];False;False;83fe7582ca65359d;[];temenin gw dong besok
+26;1;11-50;2952.0;text;;[];False;False;185e4769bf6c342c;[];DIEM DIEM TERNYATA JADIAN
+27;1;11-50;2957.0;text;;[];False;False;185e4769bf6c342c;[];GW BERANTEM SAMA SI ANU
+28;1;11-50;2965.0;text;;[];False;False;83fe7582ca65359d;[];pacarnya baru siapa sih
+29;1;1-10;3769.0;text;;[];False;False;11fab79471d816f1;[];trus
+30;2;11-50;8484.0;text;;[];True;False;3210ab1b1e4d038d;[];gimana kabar lu sekarang?
+31;2;51-100;8551.0;text;;[];False;False;3210ab1b1e4d038d;[];jangan lupa besok kumpul di lobby kampus jam 8 pagi buat berangkat bareng
+32;2;11-50;8623.0;text;;[];True;False;83fe7582ca65359d;[];gimana kabar lu sekarang?
+33;2;11-50;8661.0;text;;[];False;False;3210ab1b1e4d038d;[];dosen pembimbing susah ditemui
+34;2;11-50;8679.0;text;;[];False;False;83fe7582ca65359d;[];sidang minggu depan doain ya
+35;2;1-10;8690.0;text;;[];False;False;3210ab1b1e4d038d;[];bet
+36;3;11-50;84585.0;text;;[];False;True;83fe7582ca65359d;[];parah sih tadi kejadiannya!
+37;3;1-10;84725.0;text;;['👏🏻'];False;False;b6ee3a1cc0f88aee;[];nih
+38;3;11-50;84768.0;text;;[];True;False;b6ee3a1cc0f88aee;[];ada yang punya,,, catetan?,,,
+39;3;11-50;84784.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw laper banget nih
+40;3;1-10;84795.0;text;;[];False;False;b6ee3a1cc0f88aee;[];bole
+41;3;11-50;84855.0;text;;[];True;False;3210ab1b1e4d038d;[];ntar malem ngapain?
+42;3;11-50;84875.0;text;;[];False;False;83fe7582ca65359d;[];tugas kelompok bikin pusing
+43;3;1-10;84891.0;text;;[];False;False;83fe7582ca65359d;[];bet
+44;3;11-50;84892.0;text;;[];False;False;3210ab1b1e4d038d;[];proposal skripsi gw ditolak
+45;3;11-50;84898.0;text;;[];False;False;83fe7582ca65359d;[];lu udah makan belum
+46;3;11-50;84915.0;text;;[];False;False;3210ab1b1e4d038d;[];gw laper banget nih
+47;3;11-50;84919.0;text;;[];False;False;83fe7582ca65359d;[];gw laper banget nih
+48;3;11-50;85078.0;text;;[];True;False;b6ee3a1cc0f88aee;[];boleh gw ikut ga?
+49;3;11-50;85186.0;text;;[];False;False;b6ee3a1cc0f88aee;[];proposal skripsi gw ditolak,,,
+50;3;11-50;85238.0;text;;[];False;False;3210ab1b1e4d038d;[];dosen pembimbing susah ditemui
+51;3;11-50;85245.0;text;;[];False;False;83fe7582ca65359d;[];dosen pembimbing susah ditemui
+52;3;11-50;85306.0;text;;[];False;False;b6ee3a1cc0f88aee;[];dosen pembimbing susah ditemui
+53;3;1-10;85317.0;text;;[];False;False;b6ee3a1cc0f88aee;[];asli
+54;3;11-50;85355.0;text;;[];True;False;3210ab1b1e4d038d;[];ntar malem ngapain?
+55;3;11-50;85387.0;text;;[];True;False;3210ab1b1e4d038d;[];ada yang punya catetan?
+56;3;1-10;85416.0;text;;['😁'];False;False;83fe7582ca65359d;[];nih
+57;3;11-50;85535.0;text;;[];True;False;83fe7582ca65359d;[];ada yang punya catetan?
+58;3;11-50;85538.0;text;;[];False;False;3210ab1b1e4d038d;[];seminar tadi lama banget
+59;3;51-100;85589.0;text;;[];False;False;3210ab1b1e4d038d;[];jangan lupa besok kumpul di lobby kampus jam 8 pagi buat berangkat bareng
+60;3;1-10;85682.0;text;;['😔'];False;False;83fe7582ca65359d;[];nih
+61;4;51-100;740563.0;text;;[];True;False;b6ee3a1cc0f88aee;[];menurut lu,,, gw harus ambil mata kuliah pilihan,,, yang mana semester depan?
+62;4;1-10;742578.0;text;;[];False;False;83fe7582ca65359d;[];gpp
+63;4;1-10;743191.0;text;62.0;['😉'];False;False;b6ee3a1cc0f88aee;[];done
+64;4;1-10;743665.0;text;;[];False;False;83fe7582ca65359d;[];bet
+65;5;11-50;2847514.0;text;;[];True;False;3210ab1b1e4d038d;[];siapa aja yg dateng?
+66;5;11-50;2847562.0;text;;[];True;False;3210ab1b1e4d038d;[];itu tempatnya jauh ga?
+67;5;11-50;2847608.0;text;;[];True;False;3210ab1b1e4d038d;[];lu lagi ngapain sih?
+68;5;11-50;2847633.0;text;;[];False;False;3210ab1b1e4d038d;[];film baru di bioskop bagus ga
+69;5;11-50;2847657.0;text;;['😃'];False;False;ebfe3a7a3350d3c2;[];bokap gw lagi di luarrrr kotaaaa
+70;5;11-50;2847674.0;text;;[];False;False;3210ab1b1e4d038d;[];gw baru aja ketemu mantan
+71;5;51-100;2847738.0;text;;[];True;False;3210ab1b1e4d038d;[];siapa sih yang spread gosip itu ke grup sebelah, tau ga orangnya?
+72;5;51-100;2847844.0;text;;[];False;False;3210ab1b1e4d038d;[];tadi pagi gw olahraga lari keliling kampus 5 putaran badan pegel semua
+73;5;11-50;2847934.0;text;71.0;[];False;True;83fe7582ca65359d;[];ngakak gw liat video itu!
+74;5;11-50;2848090.0;text;;[];False;False;3210ab1b1e4d038d;[];film baru di bioskop bagus ga
+75;5;1-10;2848093.0;text;;[];False;False;3210ab1b1e4d038d;[];woles
+76;5;11-50;2848155.0;text;;[];False;True;3210ab1b1e4d038d;[];seru banget tadi malem!
+77;6;51-100;2850342.0;text;;[];False;False;83fe7582ca65359d;[];lu harus coba kedai kopi baru di jalan belakang kampus, enak banget
+78;6;51-100;2850404.0;text;;[];False;False;83fe7582ca65359d;[];hari ini gw ada rapat organisasi sampe sore jadi ga bisa ikut nongkrong
+79;7;1-10;2856191.0;text;;[];False;False;3210ab1b1e4d038d;[];udah
+80;7;51-100;2858288.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw pengen banget liburan ke pantai tapi duit lagi,,, tipis banget sekarang,,,
+81;7;11-50;2858311.0;text;;[];False;False;b6ee3a1cc0f88aee;[];temen gw sakit masuk,,, rs
+82;7;11-50;2858325.0;text;;['😁'];False;False;b6ee3a1cc0f88aee;[];jangan bilang siapa siapa,,, ya
+83;7;11-50;2858339.0;text;;[];False;False;b6ee3a1cc0f88aee;[];eh denger gosip,,, belum
+84;7;51-100;2858745.0;text;;[];False;False;83fe7582ca65359d;[];lu harus coba kedai kopi baru di jalan belakang kampus, enak banget
+85;8;11-50;2906456.0;text;;[];True;False;b6ee3a1cc0f88aee;[];lu dimana,,, sekarang?
+86;8;11-50;2906807.0;text;;[];False;False;3210ab1b1e4d038d;[];matkul ini susah banget
+87;8;11-50;2906808.0;text;;[];False;True;3210ab1b1e4d038d;[];mantap banget hasilnya!
+88;8;1-10;2907148.0;text;86.0;['😉'];False;False;b6ee3a1cc0f88aee;[];yoi
+89;8;1-10;2911612.0;text;;['👏'];False;False;83fe7582ca65359d;[];wkwk
+90;9;51-100;3025218.0;text;;[];False;True;ebfe3a7a3350d3c2;[];sedih bangettt gw harus pisah sama temen kos gw yang udah pindah!
+91;9;11-50;3025248.0;text;;[];True;False;ebfe3a7a3350d3c2;[];tadiii ngomong apa sih dosennya?
+92;9;11-50;3025280.0;text;;[];True;False;ebfe3a7a3350d3c2;[];booking duluannnn apaaaa langsung aja?
+93;9;11-50;3025734.0;text;;['🤣'];True;False;ebfe3a7a3350d3c2;[];tadi ngomong apa sihh dosennya?
+94;9;0;3028023.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+95;10;51-100;3111828.0;text;;[];False;False;83fe7582ca65359d;[];tadi gw ketemu dosen pembimbing dan dia minta revisi lagi untuk bab 3
+96;10;11-50;3111872.0;text;;[];False;True;ebfe3a7a3350d3c2;[];mantap banget hasilnya!
+97;10;1-10;3111889.0;text;;['👍'];False;False;83fe7582ca65359d;[];gas
+98;10;11-50;3111892.0;text;;[];False;False;ebfe3a7a3350d3c2;[];tadi absennnn ga sihhhh kamu
+99;10;1-10;3111905.0;text;;[];True;False;84d524c84afe0189;[];mana?
+100;10;11-50;3111918.0;text;;[];True;False;ebfe3a7a3350d3c2;[];jadi ketemuannnn ga hari ini?
+101;10;11-50;3111927.0;text;;[];False;False;83fe7582ca65359d;[];tadi absen ga sih kamu
+102;10;11-50;3111946.0;text;;[];True;False;83fe7582ca65359d;[];jadi ketemuan ga hari ini?
+103;10;11-50;3112023.0;text;;[];False;False;83fe7582ca65359d;[];gw skip kelas hari ini
+104;10;101-500;3112057.0;text;;[];False;False;ebfe3a7a3350d3c2;[];jadi ceritanyaaa kemarin gw ke perpustakaan pusatt buat nyariii bahan referensii skripsi, ternyata bukunyaaa udahhhh dipinjem semuaaaa sama anakk angkatannnn sebelah. akhirnya gw cuma bisa fotokopi dari temennn yang kebetulan punya. lumayan lah daripadaa ga dapet samaa sekali, tinggal di rangkumm ajaa sisanya
+105;10;1-10;3112537.0;text;;[];False;False;83fe7582ca65359d;[];yoi
+106;10;11-50;3113769.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw belom mulai tugas
+107;11;51-100;3116540.0;text;;['😬'];False;False;b6ee3a1cc0f88aee;[];laptop gw mulai lemot,,, nih kayaknya harus install ulang atau,,, ganti ram
+108;11;1-10;3116948.0;text;;[];False;False;185e4769bf6c342c;[];OKEY
+109;11;1-10;3117053.0;text;;['👍🏻'];False;False;ebfe3a7a3350d3c2;[];hem
+110;12;11-50;3177092.0;text;;[];False;False;3210ab1b1e4d038d;[];badminton yuk sore ini
+111;12;51-100;3179647.0;image/jpeg;;['🥶'];False;False;b6ee3a1cc0f88aee;[];[Foto]
+112;12;51-100;3179756.0;text;;[];False;True;3210ab1b1e4d038d;[];sedih banget gw harus pisah sama temen kos gw yang udah pindah!
+113;13;11-50;3186819.0;text;;[];False;False;3210ab1b1e4d038d;[];tadi absen ga sih kamu
+114;13;11-50;3186833.0;text;;[];False;False;3210ab1b1e4d038d;[];lab komputer penuh terus
+115;13;51-100;3187049.0;text;;[];False;False;83fe7582ca65359d;[];gw denger katanya semester depan ada mata kuliah baru yang wajib diambil
+116;13;11-50;3187068.0;text;;[];False;False;83fe7582ca65359d;[];tadi absen ga sih kamu
+117;14;11-50;3195252.0;text;;[];False;False;11fab79471d816f1;[];futsal besok jadi ga
+118;14;11-50;3195254.0;text;;[];False;False;11fab79471d816f1;[];konser itu mahal banget tiketnya...
+119;14;1-10;3195263.0;text;;[];False;False;11fab79471d816f1;[];hoki
+120;15;101-500;3272809.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kemarin malem,,, gw sama temen temen nongkrong di,,, warkop,,, biasa sampe jam,,, 12 malem. kita,,, ngobrol,,, banyak hal dari mulai tugas kuliah, rencana liburan, sampe masalah percintaan. seru sih walau besoknya gw kesiangan masuk kelas pagi,,, dan dosen negur di depan semua,,, orang. malu tapi ya,,, gimana lagi
+121;15;101-500;3272894.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kemarin malem gw sama temen temen,,, nongkrong di warkop,,, biasa,,, sampe jam 12 malem.,,, kita ngobrol,,, banyak hal dari mulai,,, tugas kuliah, rencana liburan,,,, sampe masalah percintaan. seru,,, sih walau,,, besoknya gw kesiangan masuk kelas pagi,,, dan dosen negur di depan semua orang. malu tapi ya gimana lagi
+122;15;11-50;3272941.0;text;;['👏🏻', '😋'];False;True;ebfe3a7a3350d3c2;[];capekkk banget hariii ini!
+123;15;1-10;3272966.0;text;;['👏'];False;False;83fe7582ca65359d;[];yep
+124;15;11-50;3273095.0;text;;[];False;False;3210ab1b1e4d038d;[];gw mau nyoba restoran baru
+125;15;1-10;3275943.0;text;120.0;['🤤'];False;False;84d524c84afe0189;[];bro
+126;16;51-100;3379536.0;text;;[];True;True;ebfe3a7a3350d3c2;[];menurutttt lu gw harussss ambill mataa kuliahhh pilihan yang manaaa semester depan?
+127;16;1-10;3380644.0;text;;[];True;False;84d524c84afe0189;[];gmn?
+128;16;11-50;3380690.0;text;;[];False;False;83fe7582ca65359d;[];mie ayam pak kumis juara sih
+129;16;51-100;3380742.0;text;;['🤔'];False;False;ebfe3a7a3350d3c2;[];kosan gw bocor lagi pas hujan semalam, kasur gw basah semua parah banget
+130;16;1-10;3380754.0;text;;[];False;False;185e4769bf6c342c;[];NAH
+131;16;11-50;3380761.0;text;;[];True;False;ebfe3a7a3350d3c2;[];ntarrr malem ngapain?
+132;16;11-50;3381487.0;text;;[];False;False;b6ee3a1cc0f88aee;[];tugas kelompok bikin pusing
+133;16;11-50;3381532.0;text;;[];False;False;b6ee3a1cc0f88aee;[];tugas kelompok,,, bikin pusing
+134;16;11-50;3381684.0;text;;[];False;False;ebfe3a7a3350d3c2;[];seminar tadi lama bangett
+135;16;11-50;3382037.0;text;;[];False;False;b6ee3a1cc0f88aee;[];sidang minggu depan doain,,, ya
+136;17;101-500;3445821.0;text;;['😅', '🥶'];True;False;b6ee3a1cc0f88aee;['231b8d3f0d13f6be'];guys ada,,, yang tau ga sih,,, kenapa sistem registrasi online kampus sering banget error,,, pas masa pengisian krs?,,, tiap semester,,, selalu gitu,,, bikin stres, mana harus rebutan mata,,, kuliah yang,,, kuotanya dikit,,, banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+137;17;11-50;3446400.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kakak gw baru aja,,, nikah
+138;17;51-100;3446602.0;text;;['😭'];False;False;83fe7582ca65359d;[];gw lagi belajar masak sendiri biar ga jajan terus lumayan hemat soalnya
+139;18;11-50;3448269.0;text;;[];False;False;3210ab1b1e4d038d;[];gw lg sibuk bgt minggu ini
+140;18;51-100;3448429.0;text;;[];False;False;3210ab1b1e4d038d;[];laptop gw mulai lemot nih kayaknya harus install ulang atau ganti ram
+141;18;1-10;3448489.0;text;;[];False;False;3210ab1b1e4d038d;[];siapp
+142;19;11-50;3470378.0;text;;[];True;False;3210ab1b1e4d038d;[];siapa aja yg dateng?
+143;19;11-50;3470409.0;text;;[];False;True;3210ab1b1e4d038d;[];seru banget tadi malem!
+144;19;11-50;3470442.0;text;;['😅'];False;False;b6ee3a1cc0f88aee;[];film baru di bioskop bagus ga
+145;19;11-50;3471201.0;text;;[];False;False;3210ab1b1e4d038d;[];bokap gw lagi di luar kota
+146;20;11-50;3498246.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kopi susu yg biasa ya
+147;20;11-50;3498272.0;text;;[];False;False;185e4769bf6c342c;[];SARAPAN DULU BARU MIKIR
+148;20;1-10;3498276.0;text;;['👍🏻'];False;False;ebfe3a7a3350d3c2;[];ngabbbb
+149;20;11-50;3498734.0;text;;[];False;False;b6ee3a1cc0f88aee;[];indomie telor udah cukup kok
+150;21;11-50;3500466.0;text;;[];True;True;b6ee3a1cc0f88aee;[];ada yg mau bareng?
+151;21;11-50;3500476.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw ngga bisa ikut malem ini
+152;21;11-50;3500949.0;text;;[];True;False;b6ee3a1cc0f88aee;[];ada yg mau bareng?,,,
+153;21;11-50;3501605.0;text;;[];False;False;3210ab1b1e4d038d;[];rame banget disini cuy
+154;21;11-50;3501667.0;text;;[];True;False;b6ee3a1cc0f88aee;[];ada yg mau bareng?,,,
+155;21;1-10;3501743.0;text;;[];False;False;ebfe3a7a3350d3c2;[];ooh
+156;21;1-10;3501747.0;text;;[];False;False;ebfe3a7a3350d3c2;[];emm
+157;21;11-50;3502259.0;text;;[];False;False;83fe7582ca65359d;[];gw nyari parkir dulu bentar
+158;21;0;3502288.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+159;21;1-10;3502289.0;text;;[];False;False;b6ee3a1cc0f88aee;[];oii
+160;21;11-50;3502291.0;text;;[];False;False;b6ee3a1cc0f88aee;[];bsk sore ada waktu ga
+161;21;0;3502494.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+162;22;11-50;3510840.0;text;;[];True;False;83fe7582ca65359d;[];booking duluan apa langsung aja?
+163;22;1-10;3510877.0;text;;[];False;False;b6ee3a1cc0f88aee;[];jir
+164;22;11-50;3510880.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw lagi baca novel baru nih
+165;22;11-50;3510919.0;text;;[];False;False;83fe7582ca65359d;[];gym hari ini skip deh
+166;22;1-10;3511097.0;text;;[];False;False;b6ee3a1cc0f88aee;[];jir
+167;22;11-50;3511321.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gym hari ini skip dehh
+168;23;1-10;3512961.0;text;;[];False;False;3210ab1b1e4d038d;[];jir
+169;23;51-100;3513520.0;text;;['🥶'];False;False;ebfe3a7a3350d3c2;[];gw gagal diet lagiiii soalnyaa tadi sore diajak makann bakso sama temen
+170;23;11-50;3513577.0;text;;[];True;False;ebfe3a7a3350d3c2;[];tadi ngomonggg apa sih dosennya?
+171;23;11-50;3514633.0;text;;[];False;False;b6ee3a1cc0f88aee;[];manga terbaru udah keluar loh
+172;23;1-10;3514639.0;text;;['😅'];False;False;b6ee3a1cc0f88aee;[];btw
+173;23;1-10;3514675.0;text;;['😱'];False;False;83fe7582ca65359d;[];ih
+174;23;1-10;3514811.0;text;;['🥶'];False;False;ebfe3a7a3350d3c2;[];jirrr
+175;23;101-500;3515344.0;text;;[];False;False;ebfe3a7a3350d3c2;[];tadii siang gw makan di warungggg makann baru deket gerbang belakang kampus. nasi gorengnya lumayannn enakkkk dann harganya murah banget cumaaaa 12 ribuu udah samaaaa es teh. kayaknya bakalll jadi langganannnn baruuu deh soalnya warteg biasa gw udah mulai naik hargaaaa dan porsinya makin dikitt aja
+176;23;51-100;3515372.0;text;;[];True;False;ebfe3a7a3350d3c2;[];kira kiraaaa kalo gw apply magang sekarang masih keburu ga ya?
+177;23;11-50;3516019.0;text;;[];False;False;b6ee3a1cc0f88aee;[];game baru udah download belum
+178;23;11-50;3516028.0;text;;[];False;False;b6ee3a1cc0f88aee;[];series itu endingnya zonk bgt
+179;23;11-50;3516039.0;text;;[];False;False;b6ee3a1cc0f88aee;[];podcast yg lu rekomen mana
+180;23;11-50;3516645.0;text;;['😝'];False;True;ebfe3a7a3350d3c2;[];akhirnya kelarrr jugaaa nih!
+181;23;11-50;3516685.0;text;;[];True;False;ebfe3a7a3350d3c2;[];booking duluan apaaa langsung aja?
+182;23;11-50;3516762.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gym hari ini skip deh
+183;23;11-50;3516871.0;text;;[];False;False;ebfe3a7a3350d3c2;[];manga terbaruuu udahhhh keluar lohhh
+184;23;51-100;3516939.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw baru dapet info beasiswaa buat semester depan mauuuu cobaaaa daftar deh
+185;23;11-50;3516983.0;text;;['🤦🏻\u200d♀️'];False;False;ebfe3a7a3350d3c2;[];seriesss itu endingnya zonkk bgt
+186;23;101-500;3517099.0;text;;['😝'];False;False;ebfe3a7a3350d3c2;[];tadi siang gw makannnn di warungg makann baru deket gerbanggg belakangg kampus. nasi gorengnya lumayannn enak dannn harganya murah banget cuma 12 ribuu udah samaaaa es teh. kayaknyaaa bakall jadi langganan baruuuu dehhh soalnyaa warteggg biasa gw udah mulai naikkk harga dan porsinyaa makin dikit aja
+187;23;11-50;3517258.0;text;;['🤦🏻\u200d♀️', '😓'];False;False;ebfe3a7a3350d3c2;[];seriesss ituu endingnya zonk bgt
+188;23;1-10;3517397.0;text;;[];False;False;ebfe3a7a3350d3c2;[];ih
+189;23;11-50;3517426.0;text;;[];True;False;ebfe3a7a3350d3c2;[];booking duluan apa langsung aja?
+190;23;11-50;3517454.0;text;;[];False;False;ebfe3a7a3350d3c2;[];albummmm baru dia enakkkk bangett
+191;23;1-10;3517525.0;text;;[];False;False;b6ee3a1cc0f88aee;[];hoki
+192;23;51-100;3517560.0;text;;[];True;False;b6ee3a1cc0f88aee;[];kira kira kalo gw,,, apply magang,,, sekarang masih,,, keburu ga ya?
+193;23;1-10;3518333.0;text;;['😂'];False;False;83fe7582ca65359d;[];sans
+194;23;11-50;3518361.0;text;;[];False;False;83fe7582ca65359d;[];series itu endingnya zonk bgt
+195;23;11-50;3518373.0;text;;[];True;False;83fe7582ca65359d;[];tadi ngomong apa sih dosennya?
+196;23;1-10;3518384.0;text;;[];False;False;b6ee3a1cc0f88aee;[];bete
+197;23;11-50;3518430.0;text;;[];False;False;83fe7582ca65359d;[];manga terbaru udah keluar loh
+198;23;51-100;3518440.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw haruss gantiiii strategi belajar sih soalnya nilai utss kemarin jelek bgt
+199;23;11-50;3518792.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gym hari ini skip,,, deh
+200;23;1-10;3518890.0;text;;[];False;True;83fe7582ca65359d;[];edan!
+201;23;11-50;3518892.0;text;;[];True;False;83fe7582ca65359d;[];booking duluan apa langsung aja?
+202;23;1-10;3518899.0;text;;[];False;False;b6ee3a1cc0f88aee;[];zonk
+203;23;1-10;3518914.0;text;;['👍'];False;False;83fe7582ca65359d;[];kuy
+204;24;11-50;3521069.0;text;;[];False;True;ebfe3a7a3350d3c2;[];gila sih lu bisaaa gitu!
+205;24;11-50;3521076.0;text;;[];False;False;ebfe3a7a3350d3c2;[];tadiii absen ga sih kamuuuu
+206;24;11-50;3521092.0;text;;[];True;False;ebfe3a7a3350d3c2;[];jadii ketemuannnn ga hari ini?
+207;24;51-100;3521417.0;text;;[];True;False;ebfe3a7a3350d3c2;[];eh lu udah dapet infoo jadwallll ujian akhirrr semester belum dari prodi?
+208;24;11-50;3521437.0;text;;[];True;False;ebfe3a7a3350d3c2;[];siapa yang mau ikut?
+209;24;1-10;3521471.0;text;;[];False;False;b6ee3a1cc0f88aee;[];yuk
+210;24;51-100;3521481.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw dengerrr katanya semester depannnn ada mata kuliah baruuuu yanggg wajib diambil
+211;25;51-100;3526176.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+212;25;11-50;3526182.0;text;;[];False;False;84d524c84afe0189;[];gw baru aja ketemu mantan
+213;25;1-10;3527084.0;text;;['😱'];False;False;83fe7582ca65359d;[];noted
+214;25;1-10;3527095.0;text;;[];False;True;ebfe3a7a3350d3c2;[];duh!
+215;25;1-10;3528580.0;text;;[];False;True;ebfe3a7a3350d3c2;[];top!
+216;26;11-50;3533070.0;text;;[];True;False;b6ee3a1cc0f88aee;[];masih bangun ga lu,,, jam segini?
+217;26;1-10;3533078.0;text;;[];False;False;83fe7582ca65359d;[];jir
+218;26;11-50;3533079.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw abis lari pagi tadi
+219;26;11-50;3533117.0;text;;[];False;False;83fe7582ca65359d;[];manga terbaru udah keluar loh
+220;26;11-50;3533222.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw abis lari pagi tadi
+221;27;11-50;3534851.0;text;;[];False;False;11fab79471d816f1;[];gw lg ngerjain tugas nih
+222;27;1-10;3534875.0;text;;[];False;False;ebfe3a7a3350d3c2;[];otww
+223;27;11-50;3534917.0;text;;[];False;False;ebfe3a7a3350d3c2;[];presentasi gw amburadullll
+224;27;11-50;3535233.0;text;;[];True;False;ebfe3a7a3350d3c2;[];tugas dikumpul kapan sih?
+225;27;11-50;3535255.0;text;;[];False;False;b6ee3a1cc0f88aee;[];deadline besok pagi bro,,,
+226;27;11-50;3535267.0;text;;[];False;False;b6ee3a1cc0f88aee;[];matkul ini susah banget,,,
+227;27;11-50;3535304.0;text;;[];False;False;b6ee3a1cc0f88aee;[];ipk gw turun semester ini
+228;27;0;3535367.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+229;27;0;3535381.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+230;27;0;3535460.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+231;27;1-10;3535643.0;text;;[];False;False;ebfe3a7a3350d3c2;[];yukk
+232;27;1-10;3535648.0;text;;[];False;False;ebfe3a7a3350d3c2;[];dahhhh
+233;27;1-10;3535655.0;text;;[];False;False;b6ee3a1cc0f88aee;[];oke
+234;27;11-50;3535683.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+235;27;11-50;3535734.0;text;;[];False;False;ebfe3a7a3350d3c2;[];lab komputer penuh terus
+236;27;11-50;3536165.0;text;;[];False;False;b6ee3a1cc0f88aee;[];dosen gw,,, galak banget sih
+237;27;11-50;3536172.0;text;;[];False;False;b6ee3a1cc0f88aee;[];deadline besok,,, pagi bro
+238;27;11-50;3536484.0;text;;[];False;False;11fab79471d816f1;[];IPK gw turun semester... ini
+239;27;11-50;3536493.0;text;;[];False;False;11fab79471d816f1;[];presentasi gw amburadul
+240;27;1-10;3536510.0;text;;[];False;False;ebfe3a7a3350d3c2;[];yoi
+241;27;11-50;3536520.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw belom mulaiii tugas
+242;28;51-100;3538162.0;text;;['👏🏻'];False;True;ebfe3a7a3350d3c2;[];sumpah gw kagett banget pas tauuuu nilai ujian gw ternyata bagus banget!
+243;28;11-50;3538523.0;text;;[];True;False;ebfe3a7a3350d3c2;[];bawaa motor apa naik apa?
+244;29;11-50;3539464.0;text;;[];True;False;ebfe3a7a3350d3c2;[];lu dimanaaaa sekarang?
+245;29;11-50;3539497.0;text;;[];False;False;b6ee3a1cc0f88aee;[];perpus tutup jam berapa ya
+246;29;11-50;3540763.0;text;;[];True;False;11fab79471d816f1;[];lu dimana sekarang?...
+247;29;11-50;3540855.0;text;;[];False;True;ebfe3a7a3350d3c2;[];mantap banget hasilnya!
+248;30;0;3551329.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+249;30;0;3551412.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+250;30;11-50;3561445.0;application/pdf;;[];False;False;84d524c84afe0189;[];[Dokumen PDF]
+251;31;11-50;3603437.0;text;;[];False;False;3210ab1b1e4d038d;[];indomie telor udah cukup kok
+252;31;51-100;3603810.0;text;;[];False;False;83fe7582ca65359d;[];tadi di kantin ketemu anak angkatan bawah yang kenal sama temen SMA gw
+253;31;51-100;3603880.0;text;;[];False;False;83fe7582ca65359d;[];dompet gw ilang kemarin di angkot tapi alhamdulillah ada yang nemuin
+254;31;11-50;3603956.0;text;;[];False;False;83fe7582ca65359d;[];tadi gw makan nasi padang
+255;31;1-10;3603959.0;text;;[];False;False;83fe7582ca65359d;[];yep
+256;31;1-10;3604102.0;text;;[];False;False;84d524c84afe0189;[];cuy
+257;31;0;3604581.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+258;31;11-50;3604590.0;text;;[];False;True;ebfe3a7a3350d3c2;[];enak bangettt makanannya!
+259;31;11-50;3604638.0;text;;['🤪', '🍻'];False;False;ebfe3a7a3350d3c2;[];nongkrongg yukkk di kafeee biasaaaa
+260;31;11-50;3604789.0;text;;[];False;False;84d524c84afe0189;[];kopi susu yg biasa ya
+261;31;0;3604887.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+262;31;1-10;3607127.0;text;;[];False;False;83fe7582ca65359d;[];gass
+263;32;0;3612500.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+264;32;0;3612930.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+265;32;11-50;3612948.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kelas tambahan hari sabtu sih
+266;32;11-50;3612953.0;text;;[];False;False;b6ee3a1cc0f88aee;[];dosen pembimbing susah ditemui,,,
+267;32;1-10;3612982.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gaje
+268;32;11-50;3612982.0;text;;[];False;False;b6ee3a1cc0f88aee;[];sidang minggu depan doain,,, ya
+269;33;0;3627935.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+270;33;0;3627943.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+271;33;0;3627943.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+272;33;0;3628254.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+273;33;0;3628307.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+274;33;0;3628681.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+275;33;0;3628711.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+276;33;0;3628834.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+277;33;0;3628873.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+278;33;0;3628914.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+279;34;0;3636416.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+280;34;0;3636536.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+281;34;0;3636879.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+282;34;0;3636881.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+283;34;0;3636881.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+284;34;0;3636882.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+285;34;0;3636883.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+286;34;0;3636883.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+287;34;0;3636884.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+288;34;0;3636886.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+289;34;0;3636886.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+290;34;0;3636886.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+291;34;0;3636887.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+292;34;0;3636888.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+293;34;0;3636950.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+294;34;0;3636977.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+295;34;0;3637043.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+296;34;0;3637062.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+297;34;0;3637163.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+298;34;0;3637195.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+299;34;0;3637221.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+300;34;0;3637243.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+301;34;0;3637258.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+302;35;0;3639243.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+303;35;0;3639246.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+304;35;0;3639247.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+305;35;0;3639248.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+306;35;0;3639248.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+307;35;0;3639250.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+308;35;0;3639250.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+309;35;0;3639251.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+310;36;11-50;3680880.0;text;;[];False;True;ebfe3a7a3350d3c2;[];stress berat gw sama tugas!
+311;36;11-50;3683424.0;text;;[];True;False;ebfe3a7a3350d3c2;[];tadi ngomong apa sih dosennya?
+312;36;1-10;3683426.0;text;;[];False;False;84d524c84afe0189;[];bete
+313;37;1-10;3699389.0;text;;[];False;False;11fab79471d816f1;[];mah
+314;37;51-100;3699519.0;text;;[];False;False;84d524c84afe0189;[];kemarin malem gw begadang nonton bola sampe subuh terus ketiduran
+315;37;1-10;3699543.0;text;;[];False;False;ebfe3a7a3350d3c2;[];yaa
+316;37;11-50;3699544.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw nggaa bisaaa ikutt malem inii
+317;37;11-50;3700147.0;text;;[];False;False;ebfe3a7a3350d3c2;[];jangannn lupa bawa duit cashh
+318;38;11-50;3705275.0;text;;['😉'];False;False;ebfe3a7a3350d3c2;[];gw kangen temen temen smaaaa
+319;38;51-100;3705373.0;text;;[];False;False;ebfe3a7a3350d3c2;[];hari inii gw ada rapat organisasi sampe sore jadi ga bisa ikut nongkrongg
+320;38;11-50;3705396.0;text;;[];False;False;ebfe3a7a3350d3c2;[];diem diem ternyataaa jadian
+321;39;51-100;3709724.0;text;;['🤣'];False;False;3210ab1b1e4d038d;[];gw harus nabung lebih banyak sih buat bayar uang semester yang naik
+322;39;11-50;3709744.0;text;;['😅', '😂'];True;False;3210ab1b1e4d038d;[];makan apa ntar siang?
+323;39;11-50;3709773.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kita ketemuan dimana aja deh
+324;39;11-50;3709781.0;text;;[];False;False;b6ee3a1cc0f88aee;[];macet parah di jalan tol
+325;39;1-10;3709901.0;text;;[];True;False;b6ee3a1cc0f88aee;[];mau?
+326;39;1-10;3709923.0;text;;[];False;False;3210ab1b1e4d038d;[];woi
+327;39;11-50;3709940.0;text;;[];False;False;3210ab1b1e4d038d;[];gw ngga bisa ikut malem ini
+328;39;11-50;3710015.0;text;;[];False;False;11fab79471d816f1;[];jangan lupa bawa duit cash
+329;39;11-50;3710018.0;text;;[];False;False;11fab79471d816f1;[];gw nyari parkir dulu bentar
+330;39;1-10;3710060.0;text;;[];False;False;3210ab1b1e4d038d;[];ooh
+331;40;11-50;3710901.0;text;;['👍🏻', '😍'];False;False;3210ab1b1e4d038d;[];gw mau tidur dulu ya
+332;40;11-50;3710921.0;text;;[];False;False;3210ab1b1e4d038d;[];cuaca hari ini panas banget
+333;40;1-10;3710935.0;text;;[];False;False;b6ee3a1cc0f88aee;[];eh
+334;40;51-100;3710953.0;text;;[];False;False;3210ab1b1e4d038d;[];gw lagi dengerin podcast tentang psikologi, lumayan buat nambah wawasan
+335;40;11-50;3710975.0;text;;['😉'];False;False;3210ab1b1e4d038d;[];bentar ya gw lg di jalan
+336;40;11-50;3711032.0;text;;['😅', '😂'];False;False;3210ab1b1e4d038d;[];internet mati lagi di kosan
+337;40;11-50;3711061.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw lagi di atm sebentar
+338;41;0;3712669.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+339;41;0;3712677.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+340;41;0;3712681.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+341;41;0;3712684.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+342;41;0;3712686.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+343;41;0;3712688.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+344;41;0;3712692.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+345;41;0;3712693.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+346;41;0;3712693.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+347;41;0;3712698.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+348;41;0;3712707.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+349;41;0;3712718.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+350;41;0;3712719.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+351;41;0;3712720.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+352;41;0;3712720.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+353;41;0;3712720.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+354;41;0;3712721.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+355;41;0;3712721.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+356;41;0;3712723.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+357;41;0;3712724.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+358;41;0;3712724.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+359;41;0;3712725.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+360;41;0;3712725.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+361;41;0;3712726.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+362;41;0;3712726.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+363;41;0;3712727.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+364;41;0;3712727.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+365;41;0;3712727.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+366;41;0;3712728.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+367;41;0;3712730.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+368;41;0;3712730.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+369;41;0;3712731.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+370;41;0;3712731.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+371;41;0;3712731.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+372;41;0;3712732.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+373;41;0;3712732.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+374;41;0;3712734.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+375;41;0;3712735.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+376;41;0;3712735.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+377;41;0;3712737.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+378;41;0;3712737.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+379;41;0;3712738.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+380;41;0;3712738.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+381;41;0;3712738.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+382;41;0;3712740.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+383;41;0;3712740.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+384;41;0;3712740.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+385;41;0;3712740.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+386;41;0;3712740.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+387;41;0;3712740.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+388;41;0;3712741.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+389;41;0;3712741.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+390;41;0;3712741.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+391;41;0;3712742.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+392;41;0;3712742.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+393;41;0;3712743.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+394;41;0;3712744.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+395;41;0;3712744.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+396;41;0;3712744.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+397;41;0;3712745.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+398;41;0;3712746.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+399;41;0;3712746.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+400;41;0;3712748.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+401;41;0;3712780.0;video/mp4;;[];False;False;84d524c84afe0189;[];[Video]
+402;41;0;3712781.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+403;41;0;3712783.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+404;41;0;3712784.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+405;41;0;3712784.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+406;41;0;3712784.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+407;41;0;3712786.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+408;41;0;3712787.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+409;41;0;3712789.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+410;41;0;3712789.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+411;41;0;3712789.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+412;41;0;3712789.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+413;41;0;3712790.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+414;41;0;3712790.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+415;41;0;3712791.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+416;41;0;3712792.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+417;41;0;3712792.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+418;41;0;3712838.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+419;41;0;3712841.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+420;41;0;3712843.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+421;41;0;3712843.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+422;41;0;3712844.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+423;41;0;3712845.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+424;41;0;3712846.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+425;41;0;3712847.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+426;41;0;3712847.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+427;41;0;3712848.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+428;41;0;3712849.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+429;41;0;3712849.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+430;41;0;3712850.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+431;41;0;3712851.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+432;41;0;3712851.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+433;41;0;3712851.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+434;41;0;3712851.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+435;41;0;3712852.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+436;41;0;3712852.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+437;41;0;3712852.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+438;41;0;3712852.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+439;41;0;3712854.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+440;41;0;3712854.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+441;41;0;3712855.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+442;41;0;3712855.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+443;41;0;3712856.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+444;41;0;3712857.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+445;41;0;3712857.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+446;41;0;3712858.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+447;41;0;3712860.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+448;41;11-50;3712935.0;text;;[];False;False;ebfe3a7a3350d3c2;[];konserrrr itu mahalll banget tiketnya
+449;41;0;3713504.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+450;41;0;3713510.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+451;41;0;3713514.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+452;41;0;3713514.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+453;41;0;3713517.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+454;41;0;3713518.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+455;41;0;3713525.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+456;41;0;3713525.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+457;41;0;3713528.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+458;41;0;3713533.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+459;41;0;3713534.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+460;41;0;3713535.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+461;41;0;3713539.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+462;41;0;3713543.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+463;41;0;3713546.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+464;41;0;3713548.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+465;41;0;3713551.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+466;41;0;3713552.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+467;41;0;3713576.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+468;41;0;3713600.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+469;41;0;3713837.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+470;41;0;3713841.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+471;41;0;3713841.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+472;41;0;3713842.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+473;41;0;3713843.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+474;41;0;3713843.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+475;41;0;3713844.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+476;41;0;3713844.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+477;41;0;3713844.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+478;41;0;3713844.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+479;41;0;3713846.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+480;41;0;3713846.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+481;41;0;3713848.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+482;41;0;3713848.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+483;41;0;3713849.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+484;41;0;3713850.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+485;41;0;3713877.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+486;41;0;3713878.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+487;41;0;3713878.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+488;41;0;3713879.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+489;41;0;3713879.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+490;41;0;3713880.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+491;41;0;3713882.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+492;41;0;3713882.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+493;41;0;3713884.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+494;41;0;3713949.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+495;41;0;3713949.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+496;41;0;3713950.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+497;41;0;3713951.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+498;41;0;3713951.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+499;41;0;3713953.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+500;41;0;3713954.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+501;41;0;3713955.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+502;41;0;3713956.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+503;41;0;3713956.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+504;41;0;3713957.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+505;41;0;3713958.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+506;41;0;3713958.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+507;41;0;3713958.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+508;41;0;3713958.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+509;41;0;3713959.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+510;41;0;3713959.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+511;41;0;3713960.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+512;41;0;3713961.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+513;41;0;3713961.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+514;41;0;3713962.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+515;41;0;3713962.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+516;41;0;3713963.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+517;41;0;3713963.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+518;41;0;3713963.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+519;41;0;3713963.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+520;41;0;3713964.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+521;41;0;3713964.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+522;41;0;3713965.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+523;41;0;3714027.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+524;41;0;3714065.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+525;41;0;3714094.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+526;41;0;3714096.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+527;41;0;3714102.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+528;41;0;3714103.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+529;41;0;3714202.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+530;41;0;3714270.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+531;41;0;3714279.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+532;41;0;3714284.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+533;41;0;3714311.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+534;41;0;3714316.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+535;41;0;3714350.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+536;41;0;3714434.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+537;41;0;3714434.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+538;41;0;3714435.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+539;41;0;3714439.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+540;41;0;3714441.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+541;41;0;3714442.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+542;41;0;3714444.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+543;41;0;3714458.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+544;41;0;3714544.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+545;41;0;3714555.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+546;41;0;3714556.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+547;41;0;3714558.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+548;41;0;3714561.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+549;41;0;3714563.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+550;41;0;3714566.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+551;41;0;3714566.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+552;41;0;3714571.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+553;41;0;3714573.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+554;41;0;3714575.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+555;41;0;3714599.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+556;41;0;3714773.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+557;41;0;3714774.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+558;41;0;3714776.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+559;41;0;3714776.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+560;41;0;3714779.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+561;41;0;3714779.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+562;41;0;3714781.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+563;42;11-50;3718789.0;text;;[];False;False;11fab79471d816f1;[];film baru di bioskop bagus ga
+564;42;11-50;3718814.0;text;;[];False;False;11fab79471d816f1;[];duit bulanan belum dikirim
+565;43;0;3722387.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+566;43;0;3722388.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+567;43;0;3722388.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+568;43;0;3722388.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+569;43;0;3722389.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+570;43;0;3722389.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+571;43;0;3722390.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+572;43;0;3722390.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+573;43;0;3722391.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+574;43;0;3722391.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+575;43;0;3722392.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+576;43;0;3722393.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+577;43;0;3722394.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+578;43;0;3722395.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+579;43;0;3722397.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+580;43;0;3722397.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+581;43;0;3722398.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+582;43;0;3722450.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+583;43;0;3722506.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+584;43;0;3722507.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+585;43;0;3722508.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+586;43;0;3722510.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+587;43;0;3722510.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+588;43;0;3722510.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+589;43;0;3722511.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+590;43;0;3722511.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+591;43;0;3722511.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+592;43;0;3722511.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+593;43;0;3722512.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+594;43;0;3722512.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+595;43;0;3722512.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+596;43;0;3722513.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+597;43;0;3722513.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+598;43;0;3722515.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+599;43;0;3722515.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+600;43;0;3722883.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+601;43;0;3722886.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+602;43;0;3722888.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+603;43;0;3722889.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+604;43;0;3722892.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+605;43;0;3722895.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+606;43;0;3722896.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+607;43;0;3722898.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+608;43;0;3722898.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+609;43;0;3722899.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+610;43;0;3722899.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+611;43;0;3722904.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+612;43;0;3722906.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+613;43;0;3722906.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+614;43;0;3722907.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+615;43;0;3722909.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+616;43;0;3722910.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+617;43;0;3722911.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+618;43;0;3722912.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+619;43;0;3722912.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+620;43;0;3723059.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+621;43;0;3723063.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+622;43;0;3723065.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+623;43;0;3723068.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+624;43;0;3723068.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+625;43;0;3723069.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+626;43;0;3723071.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+627;43;0;3723072.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+628;43;0;3723073.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+629;43;0;3723075.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+630;43;0;3723076.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+631;43;0;3723076.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+632;43;0;3723079.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+633;43;0;3723079.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+634;43;0;3723080.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+635;43;0;3723082.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+636;43;0;3723086.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+637;43;0;3723086.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+638;43;0;3723089.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+639;43;0;3723093.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+640;44;51-100;3782156.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw gagallll diet lagiii soalnya tadi soreee diajak makannnn bakso sama temen
+641;44;11-50;3792137.0;text;;[];False;False;84d524c84afe0189;[];podcast yg lu rekomen mana
+642;44;11-50;3792145.0;text;;[];False;False;84d524c84afe0189;[];game baru udah download blm
+643;44;1-10;3792167.0;text;;[];False;False;83fe7582ca65359d;[];ih
+644;45;101-500;3793971.0;text;;['🤣'];True;True;ebfe3a7a3350d3c2;[];menurut kalian kenapa ya generasi kitaaaa tuh kayaknya lebih gampang stress dann burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmeddd atauuu emang tuntutan hidup yang makinnn tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluhhhh hallll yangg samaa
+645;45;11-50;3794014.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw berantem sama si anu
+646;45;0;3794036.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+647;45;11-50;3794171.0;text;;[];False;False;ebfe3a7a3350d3c2;[];jangan bilang siapa siapa ya
+648;46;1-10;3800827.0;text;;[];False;False;84d524c84afe0189;[];aman
+649;46;0;3800838.0;audio;;[];False;False;84d524c84afe0189;[];[Voice Note]
+650;47;0;3802446.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+651;47;11-50;3802658.0;text;;[];False;True;ebfe3a7a3350d3c2;[];enak bangettt makanannya!
+652;47;11-50;3802678.0;text;;[];False;False;84d524c84afe0189;[];sarapan dulu baru mikir
+653;47;0;3802690.0;unknown;;[];False;False;84d524c84afe0189;[];[Media tidak dikenal]
+654;48;0;3806710.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+655;48;0;3806713.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+656;48;0;3806714.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+657;48;0;3806715.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+658;48;0;3806716.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+659;48;0;3806716.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+660;48;0;3806716.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+661;48;0;3806717.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+662;48;0;3806717.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+663;48;0;3806717.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+664;48;0;3806718.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+665;48;0;3806720.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+666;48;0;3806720.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+667;48;0;3806720.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+668;48;0;3806722.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+669;48;0;3806724.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+670;48;0;3806786.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+671;48;0;3806789.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+672;48;0;3806791.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+673;48;0;3806794.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+674;48;0;3806794.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+675;48;0;3806794.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+676;48;0;3806794.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+677;48;0;3806799.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+678;48;0;3806800.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+679;48;0;3806801.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+680;48;0;3806801.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+681;48;0;3806805.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+682;48;0;3806807.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+683;48;0;3806931.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+684;48;0;3806931.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+685;48;0;3806937.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+686;48;0;3806937.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+687;48;0;3806938.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+688;48;0;3806938.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+689;48;0;3806938.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+690;48;0;3806939.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+691;48;0;3806941.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+692;48;0;3806942.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+693;48;0;3806943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+694;48;0;3806943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+695;48;0;3806943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+696;48;0;3806943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+697;48;0;3806943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+698;48;0;3806943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+699;48;0;3806944.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+700;48;0;3806945.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+701;48;0;3806945.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+702;48;0;3806945.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+703;48;0;3806946.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+704;48;0;3806947.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+705;48;0;3806947.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+706;48;0;3806947.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+707;48;0;3806948.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+708;48;0;3806948.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+709;48;0;3806948.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+710;48;0;3806949.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+711;48;0;3806950.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+712;48;0;3806950.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+713;48;0;3806950.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+714;48;0;3806951.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+715;48;0;3806952.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+716;48;0;3807080.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+717;48;0;3807081.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+718;48;0;3807082.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+719;48;0;3807083.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+720;48;0;3807086.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+721;48;0;3807089.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+722;48;0;3807089.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+723;48;0;3807089.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+724;48;0;3807089.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+725;48;0;3807090.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+726;48;0;3807090.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+727;48;0;3807090.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+728;48;0;3807091.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+729;48;0;3807091.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+730;48;0;3807093.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+731;48;0;3807093.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+732;48;0;3807094.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+733;48;0;3807095.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+734;48;0;3807095.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+735;48;0;3807095.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+736;48;0;3807095.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+737;48;0;3807096.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+738;48;0;3807096.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+739;48;0;3807096.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+740;48;0;3807097.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+741;48;0;3807097.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+742;48;0;3807097.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+743;48;0;3807098.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+744;48;0;3807098.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+745;48;0;3807098.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+746;48;0;3807099.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+747;48;0;3807103.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+748;48;0;3807103.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+749;48;0;3807104.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+750;48;0;3807105.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+751;48;0;3807127.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+752;48;0;3807127.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+753;48;0;3807128.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+754;48;0;3807128.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+755;48;0;3807130.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+756;48;0;3807131.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+757;48;0;3807131.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+758;48;0;3807132.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+759;48;0;3807132.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+760;48;0;3807132.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+761;48;0;3807133.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+762;48;0;3807138.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+763;48;0;3807139.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+764;48;0;3807140.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+765;48;0;3807142.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+766;48;0;3807144.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+767;48;0;3807145.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+768;48;0;3807146.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+769;48;0;3807147.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+770;48;0;3807148.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+771;48;0;3807148.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+772;48;0;3807148.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+773;48;0;3807149.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+774;48;0;3807149.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+775;48;0;3807348.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+776;48;0;3807351.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+777;48;0;3807352.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+778;48;0;3807352.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+779;48;0;3807354.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+780;48;0;3807355.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+781;48;0;3807355.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+782;48;0;3807356.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+783;48;0;3807390.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+784;48;0;3807390.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+785;48;0;3807393.0;video/mp4;;[];False;False;185e4769bf6c342c;[];[Video]
+786;48;0;3807393.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+787;48;0;3807393.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+788;48;0;3807393.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+789;48;0;3807393.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+790;48;0;3807394.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+791;48;0;3807395.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+792;48;0;3807395.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+793;48;0;3807397.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+794;48;0;3807397.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+795;48;0;3807398.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+796;48;0;3807398.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+797;48;0;3807399.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+798;48;0;3807399.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+799;49;11-50;3848453.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+800;50;11-50;3859231.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw mau,,, pesen gofood,,, dulu
+801;50;11-50;3861779.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw mau nyoba,,, restoran,,, baru
+802;50;101-500;3861901.0;text;;[];True;False;ebfe3a7a3350d3c2;[];menurut kalian kenapa ya generasii kitaaaa tuhhh kayaknyaaa lebih gampang stres dan burnout dibanding generasi orangggg tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasarannn aja sih soalnyaa temen temen gw banyak yang ngeluh hal yang sama
+803;50;1-10;3861980.0;text;;[];False;False;83fe7582ca65359d;[];woy
+804;50;0;3862727.0;unknown;;[];False;False;84d524c84afe0189;[];[Media tidak dikenal]
+805;50;11-50;3862942.0;text;;[];False;False;ebfe3a7a3350d3c2;[];tadi gw makannnn nasiiii padang
+806;50;11-50;3862949.0;text;;[];True;False;ebfe3a7a3350d3c2;[];udah sampeeee belom?
+807;50;0;3863655.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+808;51;51-100;3867805.0;text;;[];False;False;ebfe3a7a3350d3c2;[];motorr gw mogok di tengah jalan tadi pagiii jadi gw telat masuk kelas
+809;51;0;3868755.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+810;51;11-50;3868764.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw lagi di,,, warkop nih
+811;51;0;3869015.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+812;51;0;3869016.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+813;51;0;3869016.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+814;51;0;3869017.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+815;51;0;3869018.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+816;51;0;3869018.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+817;51;0;3869018.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+818;51;0;3869018.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+819;51;0;3869019.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+820;51;0;3869019.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+821;51;0;3869019.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+822;51;0;3869019.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+823;51;0;3869019.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+824;51;0;3869019.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+825;51;0;3869020.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+826;51;0;3869020.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+827;51;0;3869020.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+828;51;0;3869022.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+829;51;0;3869022.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+830;51;0;3869022.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+831;51;0;3869022.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+832;51;0;3869022.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+833;51;0;3869023.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+834;51;0;3869023.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+835;51;0;3869023.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+836;51;0;3869024.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+837;51;0;3869025.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+838;51;0;3869029.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+839;51;0;3869029.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+840;52;0;3869979.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+841;52;0;3869981.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+842;52;0;3869982.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+843;52;0;3869982.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+844;52;0;3869984.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+845;52;0;3869984.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+846;52;0;3869985.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+847;52;0;3869986.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+848;52;0;3869986.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+849;52;0;3869987.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+850;52;0;3869987.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+851;52;0;3869988.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+852;52;0;3869989.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+853;52;0;3869989.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+854;52;0;3869990.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+855;52;0;3869991.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+856;52;0;3870065.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+857;52;0;3870065.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+858;52;0;3870066.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+859;52;0;3870067.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+860;52;0;3870069.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+861;52;0;3870069.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+862;52;0;3870070.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+863;52;0;3870071.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+864;52;0;3870071.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+865;52;0;3870071.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+866;52;0;3870072.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+867;52;0;3870073.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+868;52;0;3870077.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+869;52;0;3870080.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+870;52;0;3870083.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+871;52;0;3870086.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+872;53;0;3871890.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+873;53;0;3871891.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+874;53;0;3871891.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+875;53;0;3871891.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+876;53;0;3871892.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+877;53;0;3871893.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+878;53;0;3871893.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+879;53;0;3871893.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+880;53;0;3871895.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+881;53;0;3871896.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+882;53;0;3871896.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+883;53;0;3871898.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+884;53;0;3871898.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+885;53;0;3871898.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+886;53;0;3871899.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+887;53;0;3871899.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+888;53;0;3871903.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+889;53;0;3871904.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+890;53;0;3871904.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+891;53;0;3871905.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+892;53;0;3871907.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+893;53;0;3871907.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+894;53;0;3872223.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+895;53;0;3872225.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+896;53;0;3872231.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+897;53;0;3872232.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+898;53;0;3872234.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+899;53;0;3872236.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+900;53;0;3872245.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+901;53;0;3872245.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+902;53;0;3872247.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+903;53;0;3872250.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+904;53;0;3872256.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+905;53;0;3872258.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+906;53;0;3872258.0;video/mp4;;[];False;False;ebfe3a7a3350d3c2;[];[Video]
+907;53;0;3872260.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+908;53;0;3872262.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+909;53;0;3872262.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+910;53;0;3872266.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+911;53;0;3872268.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+912;54;11-50;3888376.0;text;;[];True;False;3210ab1b1e4d038d;[];ada yang punya catetan?
+913;54;11-50;3888418.0;text;;[];False;False;3210ab1b1e4d038d;[];gw laper banget nih
+914;55;11-50;3891835.0;text;;[];False;False;83fe7582ca65359d;[];album baru dia enak banget
+915;55;11-50;3891895.0;text;;[];False;False;3210ab1b1e4d038d;[];album baru dia enak banget
+916;55;11-50;3891930.0;text;;['😉'];False;False;ebfe3a7a3350d3c2;[];konser itu mahal bangetttt tiketnya
+917;55;1-10;3892421.0;text;;['💃🏻'];False;False;83fe7582ca65359d;[];kuy
+918;56;0;3902214.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+919;56;0;3902216.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+920;56;0;3902220.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+921;57;101-500;3945530.0;text;;[];True;False;ebfe3a7a3350d3c2;[];guys ada yang tau ga sihhhh kenapaaa sistem registrasi onlinee kampus seringg banget error pas masa pengisiannnn krs? tiapp semester selaluu gitu bikinnn stres, mana harus rebutan mata kuliah yang kuotanyaaaa dikit bangettt lagi. apa emangg servernya ga kuat ya nampunggg banyak mahasiswaaaa sekaligus?
+922;57;11-50;3945606.0;text;;['🤣'];False;False;ebfe3a7a3350d3c2;[];adek gw masukk smaaaa tahun ini
+923;57;11-50;3945632.0;text;;[];False;False;ebfe3a7a3350d3c2;[];playlistttt lo yangg mana sihhhh
+924;57;51-100;3945672.0;text;;[];False;False;ebfe3a7a3350d3c2;[];adekkk gw mau masuk kuliahhhh tahun depann gw harus bantu cariin infooo jurusan
+925;57;0;3945674.0;audio;;[];False;False;84d524c84afe0189;[];[Voice Note]
+926;57;51-100;3945678.0;text;;[];False;False;ebfe3a7a3350d3c2;[];adekkkk gw mau masuk kuliah tahun depan gw harus bantuuu cariinnnn info jurusan
+927;57;1-10;3945684.0;text;;[];False;False;b6ee3a1cc0f88aee;[];yess
+928;57;1-10;3945687.0;text;;[];False;False;84d524c84afe0189;[];gila
+929;57;51-100;3945717.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw lagii belajarrr masakkk sendiriii biarrr ga jajan terussss lumayann hemat soalnyaaaa
+930;57;51-100;3945795.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw nonton film dokumenter semalammm tentang lautt dan ikan, bagus banget
+931;57;51-100;3945834.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw lagi belajarr masak sendiriii biar ga jajannnn terus lumayan hemat soalnya
+932;58;11-50;3948279.0;text;;['🤣'];False;False;ebfe3a7a3350d3c2;[];konser ituuuu mahal banget tiketnya
+933;58;51-100;3948574.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw harusss gantiiii strategiii belajarr sih soalnya nilai uts kemarinn jelek bgt
+934;58;0;3949484.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+935;58;51-100;3950095.0;text;;['😱', '🤣'];False;True;ebfe3a7a3350d3c2;[];sedih bangetttt gw harusss pisah sama temennn kossss gw yang udah pindah!
+936;58;11-50;3950123.0;text;;[];False;False;ebfe3a7a3350d3c2;[];konserrr ituu mahal bangetttt tiketnya
+937;58;0;3950612.0;unknown;;[];False;False;84d524c84afe0189;[];[Media tidak dikenal]
+938;58;11-50;3951057.0;text;;[];False;False;84d524c84afe0189;[];konser tu mahal bgt tiketnya
+939;58;11-50;3951061.0;text;;[];False;False;84d524c84afe0189;[];gw lg baca novel baru nih
+940;58;1-10;3951081.0;text;;[];False;False;83fe7582ca65359d;[];dih
+941;58;0;3952940.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+942;59;0;3969715.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+943;59;0;3972338.0;unknown;;[];False;False;3210ab1b1e4d038d;[];[Media tidak dikenal]
+944;59;0;3972602.0;unknown;;[];False;False;185e4769bf6c342c;[];[Media tidak dikenal]
+945;59;0;3972714.0;unknown;;[];False;False;84d524c84afe0189;[];[Media tidak dikenal]
+946;60;101-500;3982386.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw baruu aja beres beresin kosan dan nemuuu barang barangg lama darii jaman sma. ada fotoooo kelas, surattt darii mantan, samaaa buku diary yang isinya cringe bangetttt kalo dibaca sekarang. jadiii nostalgia sendiri ingettt masa masa dulu yang lebih sederhana. kadangg kangen juga sih jadi anak sma lagi tanpa mikirin skripsi
+947;60;11-50;3983292.0;text;;[];False;False;11fab79471d816f1;[];gw ngga bisa ikut... malem ini
+948;60;11-50;3983307.0;text;;[];False;False;11fab79471d816f1;[];macet parah di jalan tol...
+949;60;11-50;3983369.0;text;;['🤷🏻\u200d♀️'];False;False;ebfe3a7a3350d3c2;[];gw nyarii parkir dulu bentarrrr
+950;60;11-50;3983413.0;text;;[];True;False;ebfe3a7a3350d3c2;[];adaaa yg mau bareng?
+951;60;1-10;3983449.0;text;;[];False;False;84d524c84afe0189;[];mah
+952;60;11-50;3983484.0;text;;[];False;False;11fab79471d816f1;[];ketemuan di mall jam... 3 ya
+953;60;11-50;3983495.0;text;;[];False;False;11fab79471d816f1;[];macet parah di jalan tol
+954;60;0;3983522.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+955;60;11-50;3983747.0;text;;[];True;False;ebfe3a7a3350d3c2;[];wifi passwordddd nya apaaa sih?
+956;60;11-50;3983778.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw ngga bisa ikut malem ini
+957;60;11-50;3983797.0;text;;['🤷🏻\u200d♀️'];False;False;ebfe3a7a3350d3c2;[];gw nyariiii parkir duluuuu bentar
+958;60;11-50;3983831.0;text;;[];False;False;ebfe3a7a3350d3c2;[];kita ketemuann dimanaaaa aja dehh
+959;60;1-10;3983866.0;text;;[];False;False;11fab79471d816f1;[];ooh
+960;60;51-100;3983879.0;text;;[];False;False;11fab79471d816f1;[];kemarin malem gw begadang nonton bola sampe subuh terus ketiduran
+961;60;1-10;3983951.0;text;;[];False;False;ebfe3a7a3350d3c2;[];dehh
+962;60;1-10;3984148.0;text;;[];False;False;11fab79471d816f1;[];ahh
+963;61;0;3985320.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+964;61;0;3985321.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+965;61;0;3985322.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+966;61;0;3985326.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+967;61;0;3985329.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+968;61;0;3985333.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+969;61;0;3985334.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+970;61;0;3985337.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+971;61;0;3985340.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+972;61;0;3985340.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+973;61;0;3985343.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+974;61;0;3985343.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+975;61;0;3985347.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+976;61;0;3985400.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+977;61;0;3985401.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+978;61;0;3985402.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+979;61;0;3985403.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+980;61;0;3985411.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+981;61;0;3985413.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+982;61;0;3985420.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+983;61;0;3985421.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+984;61;0;3985425.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+985;61;0;3985426.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+986;61;0;3985427.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+987;61;0;3985429.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+988;61;0;3985431.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+989;61;0;3985432.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+990;61;0;3985433.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+991;61;0;3985435.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+992;61;0;3985474.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+993;61;0;3985481.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+994;61;0;3985489.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+995;61;0;3985491.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+996;61;0;3985496.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+997;61;0;3985498.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+998;61;0;3985498.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+999;61;0;3985500.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+1000;61;0;3985504.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+1001;61;0;3985505.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+1002;61;0;3985508.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+1003;61;0;3985509.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+1004;61;0;3986006.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1005;61;0;3986009.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1006;61;0;3986011.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1007;61;0;3986011.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1008;61;0;3986012.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1009;61;0;3986013.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1010;61;0;3986014.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1011;61;0;3986014.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1012;61;0;3986015.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1013;62;0;3987034.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1014;62;0;3987035.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1015;62;11-50;3987044.0;text;;[];False;False;11fab79471d816f1;[];gw skip kelas hari... ini
+1016;62;0;3987119.0;image/jpeg;;[];False;False;ebfe3a7a3350d3c2;[];[Foto]
+1017;63;0;3990928.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1018;63;0;3990929.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1019;63;0;3990929.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1020;63;0;3990930.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1021;63;0;3990931.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1022;63;0;3990931.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1023;63;0;3990932.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1024;63;0;3990932.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1025;63;0;3990933.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1026;63;0;3990934.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1027;63;0;3990934.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1028;63;0;3990934.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1029;63;0;3990936.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1030;63;0;3990936.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1031;63;0;3990937.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1032;63;0;3990938.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1033;63;0;3990943.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1034;63;0;3990944.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+1035;63;0;3990944.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1036;63;0;3990944.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1037;63;0;3990945.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1038;63;0;3990946.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1039;63;0;3990947.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1040;63;0;3990948.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1041;63;0;3991142.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1042;63;0;3991144.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1043;63;0;3991145.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1044;63;0;3991146.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1045;63;0;3991146.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1046;63;0;3991146.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1047;63;0;3991147.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1048;63;0;3991148.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1049;63;0;3991149.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1050;63;0;3991149.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1051;63;0;3991149.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1052;63;0;3991149.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1053;63;0;3991150.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1054;63;0;3991185.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1055;63;0;3991186.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1056;63;0;3991189.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1057;63;0;3991189.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1058;63;0;3991190.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1059;63;0;3991191.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1060;63;0;3991191.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1061;63;0;3991191.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1062;63;0;3991192.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1063;63;0;3991192.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1064;63;0;3991194.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1065;63;0;3991194.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1066;63;0;3991371.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1067;63;0;3991373.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1068;63;0;3991375.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1069;63;0;3991377.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1070;63;0;3991377.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1071;63;0;3991377.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1072;63;0;3991378.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1073;63;0;3991379.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1074;63;0;3991379.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1075;63;0;3991380.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1076;63;0;3991380.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1077;63;0;3991381.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1078;63;0;3991381.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1079;63;0;3991381.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1080;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1081;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1082;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1083;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1084;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1085;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1086;63;0;3991382.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1087;63;0;3991384.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1088;63;0;3991386.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1089;63;0;3991388.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1090;63;0;3991443.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1091;63;0;3991448.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1092;63;0;3991449.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1093;63;0;3991451.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1094;63;0;3991451.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1095;63;0;3991451.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1096;63;0;3991451.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1097;64;0;4025781.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1098;64;0;4025788.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1099;64;0;4025788.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1100;64;0;4025789.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1101;64;0;4025790.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1102;64;0;4025790.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1103;64;0;4025791.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1104;64;0;4025792.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1105;64;0;4025792.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1106;64;0;4025793.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1107;64;0;4025793.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1108;64;0;4025794.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1109;64;0;4025795.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1110;64;0;4025795.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1111;64;0;4025795.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1112;64;0;4025796.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1113;64;0;4025796.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1114;64;0;4025797.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1115;64;0;4025797.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1116;64;0;4025797.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1117;64;0;4025797.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1118;64;0;4025797.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1119;64;0;4025798.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1120;64;0;4025799.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1121;64;0;4025799.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1122;64;0;4025799.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1123;64;0;4025799.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1124;64;0;4025802.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1125;64;0;4025802.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1126;64;0;4025802.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1127;65;11-50;4035500.0;text;;[];True;False;ebfe3a7a3350d3c2;[];makannnn apaaaa ntar siang?
+1128;65;11-50;4035506.0;text;;[];True;False;ebfe3a7a3350d3c2;[];wifi passwordddd nya apa sih?
+1129;65;0;4035608.0;unknown;;[];False;False;84d524c84afe0189;[];[Media tidak dikenal]
+1130;65;0;4040880.0;unknown;;[];False;False;83fe7582ca65359d;[];[Media tidak dikenal]
+1131;66;11-50;4066493.0;text;;[];True;False;ebfe3a7a3350d3c2;[];kapannn terakhirrrr kaliiii ketemu?
+1132;66;11-50;4066583.0;text;;['🤣'];True;False;ebfe3a7a3350d3c2;[];kos lu dimanaa sihhhh tepatnya?
+1133;66;11-50;4066645.0;text;;[];True;False;ebfe3a7a3350d3c2;[];koss lu dimana sih tepatnya?
+1134;66;11-50;4066722.0;text;;[];True;False;ebfe3a7a3350d3c2;[];kapan terakhirr kalii ketemu?
+1135;66;1-10;4066843.0;text;;['👍🏻', '👏🏻'];False;False;ebfe3a7a3350d3c2;[];males
+1136;66;51-100;4067151.0;text;;['😖'];False;False;ebfe3a7a3350d3c2;[];hari ini gw ada rapat organisasi sampee sore jadi ga bisaaaa ikut nongkrong
+1137;66;11-50;4067213.0;text;;[];False;False;ebfe3a7a3350d3c2;[];reuniii kapan ya kita
+1138;66;11-50;4067609.0;text;;[];False;False;84d524c84afe0189;[];si tu udah putus katanya
+1139;66;0;4067657.0;unknown;;[];False;False;83fe7582ca65359d;[];[Media tidak dikenal]
+1140;66;11-50;4067682.0;text;;[];False;False;84d524c84afe0189;[];angkot ke sana msh ad ga
+1141;66;1-10;4067687.0;text;;[];False;False;84d524c84afe0189;[];sm
+1142;66;0;4067711.0;unknown;;[];False;False;83fe7582ca65359d;[];[Media tidak dikenal]
+1143;66;1-10;4067713.0;text;;[];False;False;83fe7582ca65359d;[];hihi
+1144;66;11-50;4067789.0;text;;[];False;False;ebfe3a7a3350d3c2;[];reuni kapan ya kitaaa
+1145;66;1-10;4067896.0;text;;[];False;True;11fab79471d816f1;[];goks!
+1146;66;11-50;4067901.0;text;;[];False;False;11fab79471d816f1;[];jangan bilang siapa siapa ya
+1147;66;11-50;4067914.0;text;;[];False;False;11fab79471d816f1;[];temenin gw dong besok
+1148;66;11-50;4067918.0;text;;[];False;False;11fab79471d816f1;[];temenin gw dong besok
+1149;66;1-10;4067989.0;text;;[];False;False;11fab79471d816f1;[];cape
+1150;66;11-50;4068217.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw kangen temen temen sma
+1151;66;1-10;4068314.0;text;;[];False;False;11fab79471d816f1;[];sama
+1152;66;11-50;4068328.0;text;;[];False;False;11fab79471d816f1;[];angkot ke sana masih ada ga
+1153;66;11-50;4068330.0;text;;[];False;False;11fab79471d816f1;[];diem diem ternyata jadian
+1154;66;1-10;4068682.0;text;;[];False;False;b6ee3a1cc0f88aee;[];sama
+1155;66;0;4068731.0;image/jpeg;;[];False;False;11fab79471d816f1;[];[Foto]
+1156;66;11-50;4068764.0;text;;[];False;False;11fab79471d816f1;[];gw kangen temen temen SMA
+1157;66;51-100;4068782.0;text;;[];False;False;11fab79471d816f1;[];hari ini gw ada rapat organisasi sampe sore jadi ga bisa ikut... nongkrong
+1158;66;11-50;4068822.0;text;;[];False;False;11fab79471d816f1;[];reuni kapan ya... kita
+1159;66;11-50;4068828.0;text;;['😏'];False;False;11fab79471d816f1;[];gw kangen temen... temen SMA...
+1160;66;11-50;4069186.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw ga percaya sihh gosipnya
+1161;66;11-50;4069186.0;text;;[];True;False;ebfe3a7a3350d3c2;[];jadwall sidang kapan bro?
+1162;66;0;4069193.0;video/mp4;;[];False;False;11fab79471d816f1;[];[Video]
+1163;66;1-10;4069208.0;text;;[];False;False;11fab79471d816f1;[];gabut
+1164;66;51-100;4069231.0;text;;[];False;False;11fab79471d816f1;[];lu harus coba kedai kopi baru di jalan belakang kampus, enak banget
+1165;66;1-10;4069257.0;text;;[];False;False;ebfe3a7a3350d3c2;[];ywd
+1166;66;11-50;4069959.0;text;;[];False;False;11fab79471d816f1;[];gw ga percaya sih gosipnya
+1167;66;11-50;4069984.0;text;;[];False;False;11fab79471d816f1;[];gw kangen temen temen SMA
+1168;66;11-50;4070184.0;video/mp4;;[];False;False;11fab79471d816f1;[];[Video]
+1169;66;1-10;4070198.0;text;;[];False;False;3210ab1b1e4d038d;[];hihi
+1170;67;1-10;4106381.0;text;;[];False;False;b6ee3a1cc0f88aee;[];ayok
+1171;67;11-50;4134782.0;text;;[];True;False;ebfe3a7a3350d3c2;[];udahhh sampe belom?
+1172;67;11-50;4135765.0;text;;[];False;False;3210ab1b1e4d038d;[];porsi makan gw nambah terus
+1173;67;11-50;4135779.0;text;;[];True;False;3210ab1b1e4d038d;[];bayar berapa sih tadi?
+1174;67;11-50;4136206.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw mau nyoba restoran baru
+1175;67;51-100;4136451.0;text;;[];True;False;3210ab1b1e4d038d;[];ada yang tau kenapa kantin kampus tutup lebih awal hari ini ga sih?
+1176;67;11-50;4136635.0;text;;[];False;False;ebfe3a7a3350d3c2;[];bakso malang itu bukaaa ga ya
+1177;67;11-50;4136961.0;text;;[];False;False;84d524c84afe0189;[];kopi susu yg biasa ya
+1178;67;11-50;4137015.0;text;;[];False;False;ebfe3a7a3350d3c2;[];porsi makan gw nambahhhh terus
+1179;68;0;4139523.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1180;68;0;4139526.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1181;68;0;4139528.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1182;68;0;4139531.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1183;68;0;4139532.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1184;68;0;4139534.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1185;68;0;4139537.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1186;68;0;4139537.0;image/jpeg;;[];False;False;83fe7582ca65359d;[];[Foto]
+1187;69;0;4145508.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1188;69;0;4145509.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1189;69;0;4145509.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1190;69;0;4145511.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1191;69;0;4145512.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1192;69;0;4145513.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1193;69;0;4145514.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1194;69;0;4145515.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1195;69;0;4145515.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1196;69;0;4145516.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1197;69;0;4145516.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1198;69;0;4145516.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1199;69;0;4145516.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1200;69;0;4145518.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1201;69;0;4145519.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1202;69;0;4145520.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1203;69;0;4145521.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1204;69;0;4145522.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1205;69;0;4145522.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1206;69;0;4145522.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1207;69;0;4145523.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1208;69;0;4145523.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1209;69;0;4145523.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1210;69;0;4145524.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1211;69;0;4145525.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1212;69;0;4145525.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1213;69;0;4145526.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1214;69;0;4145529.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1215;69;0;4145531.0;video/mp4;;[];False;False;b6ee3a1cc0f88aee;[];[Video]
+1216;69;0;4145532.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1217;69;0;4145562.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1218;69;0;4145562.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1219;69;0;4145565.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1220;69;0;4145567.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1221;69;0;4145568.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1222;69;0;4145568.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1223;69;0;4145569.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1224;69;0;4145570.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1225;69;0;4145570.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1226;69;0;4145571.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1227;69;0;4145572.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1228;69;0;4145573.0;image/jpeg;;[];False;False;b6ee3a1cc0f88aee;[];[Foto]
+1229;69;0;4145678.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1230;69;0;4145679.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1231;69;0;4145680.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1232;69;0;4145681.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1233;69;0;4145681.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1234;69;0;4145682.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1235;69;0;4145683.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1236;69;0;4145683.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1237;69;0;4145683.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1238;69;0;4145684.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1239;69;0;4145684.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1240;69;0;4145688.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1241;69;0;4145688.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1242;70;0;4172804.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1243;70;0;4172804.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1244;70;0;4172805.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1245;70;0;4172805.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1246;70;0;4172805.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1247;70;0;4172807.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1248;70;0;4172809.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1249;70;0;4172809.0;image/jpeg;;[];False;False;84d524c84afe0189;[];[Foto]
+1250;71;0;4196184.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1251;71;0;4196185.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1252;71;0;4196186.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1253;71;0;4196188.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1254;71;0;4196189.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1255;71;0;4196191.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1256;71;0;4196192.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1257;71;0;4196193.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1258;71;0;4196202.0;video/mp4;;[];False;False;185e4769bf6c342c;[];[Video]
+1259;71;0;4196204.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1260;71;0;4196206.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1261;71;0;4196209.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1262;72;0;4200362.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1263;72;0;4200364.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1264;72;0;4200368.0;image/jpeg;;[];False;False;185e4769bf6c342c;[];[Foto]
+1265;73;11-50;4209445.0;text;;[];True;False;ebfe3a7a3350d3c2;[];ituuuu beneran apa hoax?
+1266;73;11-50;4209482.0;text;;['😅', '😊'];False;True;ebfe3a7a3350d3c2;[];capek banget hari ini!
+1267;73;0;4209507.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+1268;73;11-50;4209534.0;text;;[];False;False;ebfe3a7a3350d3c2;[];es teh manis satu ya bang
+1269;73;0;4209830.0;unknown;;[];False;False;b6ee3a1cc0f88aee;[];[Media tidak dikenal]
+1270;73;11-50;4209926.0;text;;[];False;False;b6ee3a1cc0f88aee;[];kopi susu yg,,, biasa ya
+1271;73;11-50;4209952.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw mau nyoba restoran baru
+1272;73;11-50;4209955.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw mau nyoba restorann baru
+1273;73;51-100;4209995.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw lagi bingunggg milih topik skripsiiii antara duaaaa tema yanggg samaaa menariknyaaaa
+1274;73;11-50;4210417.0;text;;['😩'];False;False;ebfe3a7a3350d3c2;[];tadi gw makan nasi padang
+1275;73;11-50;4210474.0;text;;[];True;False;11fab79471d816f1;[];bawa motor apa naik apa?
+1276;73;11-50;4210487.0;text;;[];False;False;11fab79471d816f1;[];tadi gw makan nasi padang
+1277;74;0;4211522.0;unknown;;[];False;False;11fab79471d816f1;[];[Media tidak dikenal]
+1278;74;11-50;4211563.0;text;;[];False;False;ebfe3a7a3350d3c2;[];dosen gw galak banget sihhh
+1279;74;11-50;4211594.0;text;;[];False;False;ebfe3a7a3350d3c2;[];deadline besokkk pagi broooo
+1280;74;11-50;4211626.0;text;;[];False;False;ebfe3a7a3350d3c2;[];ipk gw turun semester ini
+1281;74;11-50;4211686.0;text;;[];False;False;ebfe3a7a3350d3c2;[];ipk gw turun semester ini
+1282;75;0;4213144.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+1283;75;11-50;4214311.0;text;;[];True;False;ebfe3a7a3350d3c2;[];adaaaa sinyalll ga disitu?
+1284;75;1-10;4214341.0;text;;[];True;False;11fab79471d816f1;[];gitu?
+1285;75;1-10;4214341.0;text;;[];False;False;11fab79471d816f1;[];oot
+1286;75;51-100;4214378.0;text;;['🤣'];False;False;ebfe3a7a3350d3c2;[];dosennn killer ituu ternyata baik bangetttt orangnyaaaa kaloo diajak ngobrol santai
+1287;75;11-50;4214451.0;text;;['😂'];False;False;ebfe3a7a3350d3c2;[];futsal besok jadii ga
+1288;75;11-50;4214465.0;text;;[];False;False;11fab79471d816f1;[];series itu endingnya zonk bgt
+1289;75;1-10;4214468.0;text;;[];False;False;11fab79471d816f1;[];hoki
+1290;75;0;4215415.0;unknown;;[];False;False;11fab79471d816f1;[];[Media tidak dikenal]
+1291;75;0;4216796.0;unknown;;[];False;False;ebfe3a7a3350d3c2;[];[Media tidak dikenal]
+1292;76;51-100;4218974.0;text;;[];True;False;ebfe3a7a3350d3c2;[];lu pernahh cobaa belajar bareng di perpus kotaaa ga, enak ga disana?
+1293;76;51-100;4219089.0;text;;[];True;False;ebfe3a7a3350d3c2;[];lu pernah coba belajar barengg di perpus kota ga, enakkkk ga disana?
+1294;76;51-100;4219134.0;text;;[];False;False;ebfe3a7a3350d3c2;[];lu harus cobaa kedai kopi baru di jalan belakang kampus, enak banget
+1295;76;0;4219159.0;unknown;;[];False;False;11fab79471d816f1;[];[Media tidak dikenal]
+1296;76;1-10;4219182.0;text;;['👍🏻'];False;False;ebfe3a7a3350d3c2;[];trus
+1297;76;11-50;4219189.0;text;1292.0;[];False;False;b6ee3a1cc0f88aee;[];angkot ke sana,,, masih ada ga
+1298;76;11-50;4219208.0;text;;[];True;False;ebfe3a7a3350d3c2;[];jadwalll sidangg kapann bro?
+1299;76;11-50;4219213.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw ga percaya sih gosipnya
+1300;76;1-10;4219217.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gabut
+1301;76;11-50;4219220.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gw berantem sama si,,, anu
+1302;76;11-50;4219316.0;text;;['😅'];False;False;b6ee3a1cc0f88aee;[];temenin gw dong besok
+1303;76;11-50;4219342.0;text;;[];False;False;ebfe3a7a3350d3c2;[];si itu udah putussss katanya
+1304;76;51-100;4219378.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw pengen banget liburannn ke pantai tapi duit lagiiii tipisss banget sekarang
+1305;76;11-50;4219430.0;text;;[];False;False;83fe7582ca65359d;[];reuni kapan ya kita
+1306;76;11-50;4219827.0;text;;[];False;False;11fab79471d816f1;[];angkot ke sana masih ada... ga
+1307;76;11-50;4219836.0;text;;[];False;False;11fab79471d816f1;[];gw berantem sama si anu
+1308;76;1-10;4219845.0;text;;[];False;False;ebfe3a7a3350d3c2;[];trussss
+1309;76;0;4219849.0;unknown;;[];False;False;11fab79471d816f1;[];[Media tidak dikenal]
+1310;76;11-50;4219906.0;text;;[];False;False;ebfe3a7a3350d3c2;[];si itu udahh putus katanya
+1311;77;11-50;4234728.0;text;;[];True;False;83fe7582ca65359d;[];bayar berapa sih tadi?
+1312;77;1-10;4234755.0;text;;[];False;False;185e4769bf6c342c;[];NGAB
+1313;77;1-10;4234802.0;text;;[];False;False;83fe7582ca65359d;[];ngab
+1314;77;11-50;4234823.0;text;;[];False;False;83fe7582ca65359d;[];porsi makan gw nambah terus
+1315;77;1-10;4235176.0;text;;[];False;False;b6ee3a1cc0f88aee;[];yep
+1316;77;11-50;4235812.0;text;;[];True;False;83fe7582ca65359d;[];bayar berapa sih tadi?
+1317;77;1-10;4235823.0;text;;[];False;False;b6ee3a1cc0f88aee;[];gass
+1318;77;1-10;4235832.0;text;;[];False;False;83fe7582ca65359d;[];cuy
+1319;77;11-50;4236468.0;text;;[];False;False;ebfe3a7a3350d3c2;[];es teh maniss satu ya banggg
+1320;77;11-50;4236571.0;text;;[];True;False;b6ee3a1cc0f88aee;[];bawa motor apa naik apa?
+1321;77;11-50;4236805.0;text;;[];False;False;ebfe3a7a3350d3c2;[];kopiii susu yg biasa ya
+1322;77;1-10;4236919.0;text;;[];False;False;b6ee3a1cc0f88aee;[];lol
+1323;78;0;4240769.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1324;78;0;4240769.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1325;78;0;4240771.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1326;78;0;4240772.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1327;78;0;4240772.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1328;78;0;4240772.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1329;78;0;4240773.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1330;78;0;4240773.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1331;78;0;4240774.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1332;78;0;4240775.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1333;78;0;4240775.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1334;78;0;4240776.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1335;78;0;4240776.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1336;78;0;4240776.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1337;78;0;4240777.0;image/jpeg;;[];False;False;3210ab1b1e4d038d;[];[Foto]
+1338;78;0;4240777.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+1339;78;0;4240779.0;video/mp4;;[];False;False;3210ab1b1e4d038d;[];[Video]
+1340;79;101-500;4292032.0;text;;[];True;False;3210ab1b1e4d038d;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian krs? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+1341;79;51-100;4292207.0;text;;[];False;False;3210ab1b1e4d038d;[];tadi gw antri di administrasi kampus 2 jam cuma buat ngurus surat
+1342;79;51-100;4292303.0;text;;[];False;False;b6ee3a1cc0f88aee;[];tadi gw antri di,,, administrasi kampus 2 jam,,, cuma buat ngurus surat,,,
+1343;79;11-50;4292457.0;text;;['🙋🏻\u200d♀️'];False;False;ebfe3a7a3350d3c2;[];gw baru ganti nomorrrr btw
+1344;79;11-50;4292532.0;text;;[];False;False;84d524c84afe0189;[];lu tim mana dukungnya
+1345;79;1-10;4292896.0;text;;[];False;False;3210ab1b1e4d038d;[];oh
+1346;79;1-10;4293378.0;text;;[];False;False;83fe7582ca65359d;[];yoii
+1347;79;1-10;4297514.0;text;;[];False;False;185e4769bf6c342c;[];OKEY
+1348;80;51-100;4302288.0;text;;['🤔'];True;False;ebfe3a7a3350d3c2;[];gimana caranyaaaa biar bisa fokus belajar tanpaaaa main hp terus ya?
+1349;80;1-10;4304784.0;text;;[];False;False;11fab79471d816f1;[];ahh
+1350;80;51-100;4305280.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw lagiiii nyoba masakk rendang resep nyokap tapi kayaknyaaa gagal total deh
+1351;80;101-500;4305530.0;text;;[];False;False;ebfe3a7a3350d3c2;[];gw baruuuu aja beres beresin kosan dan nemu barang barang lama dari jaman sma. adaa fotooo kelas, suratttt dari mantan, samaaa bukuuu diary yang isinyaa cringe banget kalo dibaca sekarang. jadi nostalgia sendiriiii inget masaa masa duluuuu yang lebih sederhana. kadang kangen juga sih jadi anakk sma lagi tanpa mikirin skripsiiii
+1352;80;51-100;4306603.0;text;;[];False;False;b6ee3a1cc0f88aee;[];motor gw mogok di tengah jalan tadi pagi jadi gw telat masuk,,, kelas
+1353;80;11-50;4313221.0;text;;[];False;False;83fe7582ca65359d;[];bsk sore ada waktu ga
+1354;81;51-100;4491364.0;text;;[];True;False;ebfe3a7a3350d3c2;[];kira kiraaaa kalo gw apply magang sekarangg masih keburu ga ya?
+1355;81;1-10;4491640.0;text;;[];False;False;ebfe3a7a3350d3c2;[];hoki
+1356;81;11-50;4491736.0;text;;[];False;False;3210ab1b1e4d038d;[];pertandingan bola tadi malam gila
+1357;82;101-500;4497658.0;text;;['🤣'];False;False;ebfe3a7a3350d3c2;[];hari ini gw isengggg nyoba bikin kopi pake metodeee v60 yang lagii hypeeee di kalangan anakk anak kampus. beli alatnya lumayan mahal sih tapi hasilnya emangg beda dari kopiii sachet biasa. kopinyaaa lebih smooth dan ga terlalu pahit. kayaknya gw bakal ketagihan nih bikin kopiii sendiri tiap pagii sebelummmm ke kampuss
+1358;82;1-10;4498170.0;text;;['🙉'];False;False;83fe7582ca65359d;[];sama
+1359;82;1-10;4537056.0;text;;[];False;False;ebfe3a7a3350d3c2;[];donggg
+1360;82;51-100;4576587.0;text;;[];True;False;ebfe3a7a3350d3c2;[];lu pernah coba belajar bareng di perpus kota ga, enakkkk ga disana?
+1361;83;1-10;4662453.0;text;;['😱'];False;False;b6ee3a1cc0f88aee;[];oh
+1362;83;51-100;4662541.0;text;;[];False;False;3210ab1b1e4d038d;[];gw seneng banget akhirnya bisa ketemu temen temen lama setelah lama ga
+1363;83;11-50;4663746.0;text;;[];True;False;83fe7582ca65359d;[];besok libur bukan sih?
+1364;83;1-10;4665416.0;text;;['😓'];False;False;83fe7582ca65359d;[];yess
+1365;84;51-100;4668154.0;text;;['😱'];False;False;ebfe3a7a3350d3c2;[];gw lagiiii nyoba masak rendang resep nyokap tapi kayaknya gagal totall deh
+1366;84;11-50;4670016.0;text;;[];False;False;3210ab1b1e4d038d;[];lu dimana sih lama banget
+1367;84;51-100;4670968.0;text;;[];False;False;11fab79471d816f1;[];motor gw mogok di tengah jalan tadi pagi jadi gw telat masuk kelas
+1368;85;1-10;5009617.0;text;;['👀'];False;True;ebfe3a7a3350d3c2;[];yay!
+1369;85;1-10;5009711.0;text;;['👏🏻'];False;False;ebfe3a7a3350d3c2;[];emmmm
+1370;85;11-50;5009865.0;text;;[];True;False;3210ab1b1e4d038d;[];nilai keluar kapan ya?
+1371;85;11-50;5009886.0;text;;[];False;True;3210ab1b1e4d038d;[];asik besok libur guys!
+1372;85;1-10;5010313.0;text;;['👏🏻'];False;False;b6ee3a1cc0f88aee;[];woi
+1373;85;101-500;5010597.0;text;;['🤣'];True;False;ebfe3a7a3350d3c2;[];gw lagi bimbang nih antara mau ikut organisasiiii kampusss atau fokussss ke akademik aja. menurutt kaliannnn gimana sih, worth it ga sihhh ikutt organisasi? soalnya gw denger banyakkkk yang bilang bisaaaa nambahh softtt skill tapiiii di sisi lain waktu buattt belajar jadi berkurang kan, gimana pengalaman kalian?
+1374;85;1-10;5010712.0;text;;['👏'];False;False;83fe7582ca65359d;[];wah
+1375;85;11-50;5010724.0;text;;['😊'];False;False;ebfe3a7a3350d3c2;[];gw udah di parkiran nih
+1376;85;11-50;5010757.0;text;;[];False;True;83fe7582ca65359d;[];gw seneng banget dapet A!
+1377;86;1-10;5016902.0;text;;[];False;False;3210ab1b1e4d038d;[];tuh
+1378;86;11-50;5016928.0;text;;[];False;False;3210ab1b1e4d038d;[];dosen pembimbing susah ditemui
+1379;86;11-50;5016956.0;text;;['🤣'];False;True;ebfe3a7a3350d3c2;[];keren abissss presentasinya!
+1380;86;1-10;5017788.0;text;;['😂'];False;False;83fe7582ca65359d;[];nih
+1381;87;11-50;5704770.0;text;;['😝', '😜', '😂'];False;True;ebfe3a7a3350d3c2;[];gw kagettt passss dengerrr itu!
+1382;87;1-10;5704815.0;text;;['😭'];False;False;83fe7582ca65359d;[];hihi
+1383;88;0;42161981.0;system;;[];False;False;84d524c84afe0189;[];[Pesan sistem]
+1384;88;0;42855116.0;system;;[];False;False;11fab79471d816f1;[];[Pesan sistem]
+1385;88;0;52897072.0;system;;[];False;False;11fab79471d816f1;[];[Pesan sistem]
+1386;88;0;80798515.0;system;;[];False;False;83fe7582ca65359d;[];[Pesan sistem]
+1387;89;0;110700597.0;system;;[];False;False;ebfe3a7a3350d3c2;[];[Pesan sistem]
+1388;89;0;110727865.0;system;;[];False;False;ebfe3a7a3350d3c2;[];[Pesan sistem]

@@ -1,0 +1,300 @@
+﻿id;conversation_id;num_characters;relative_time_seconds;message_type;responds_to_id;array_emojis;interrogative;exclamatory;sender_hash;mentioned_phones_hash;message_content
+1;1;0;0.0;system;;[];False;False;a48355e01845fd3e;[];[Pesan sistem]
+2;1;1-10;2.0;text;;[];False;False;a48355e01845fd3e;[];males
+3;1;0;8.0;image/jpeg;;[];False;False;a48355e01845fd3e;[];[Foto]
+4;1;11-50;172.0;text;;[];False;False;5b98ff7cdb1e63ca;[];temenin gw dong besok
+5;1;11-50;179.0;text;;[];False;False;5b98ff7cdb1e63ca;[];jangan bilang siapa siapa ya
+6;1;1-10;8584.0;text;;[];False;False;90d3bf00873d20ea;[];WKWKW
+7;1;11-50;9518.0;text;;['🤣'];False;False;5b98ff7cdb1e63ca;[];temen gw sakit masuk rs
+8;2;11-50;26454.0;text;;[];False;False;90d3bf00873d20ea;[];BSK SORE ADA WAKTU GA
+9;2;11-50;26461.0;text;;['😂'];False;False;90d3bf00873d20ea;[];JANGAN LUPA BAWA DUIT CASH
+10;2;1-10;26474.0;text;;[];False;False;a48355e01845fd3e;[];oii
+11;2;1-10;26517.0;text;;[];False;False;90d3bf00873d20ea;[];AHH
+12;2;11-50;26518.0;text;;[];False;False;90d3bf00873d20ea;[];GW NGGA BISA IKUT MALEM INI
+13;2;11-50;26639.0;text;;[];False;False;5b98ff7cdb1e63ca;[];kita ketemuan dimana aja deh
+14;2;1-10;26674.0;text;;['🤣'];False;False;5b98ff7cdb1e63ca;[];yaa
+15;3;11-50;76897.0;text;;[];False;True;5b98ff7cdb1e63ca;[];stress berat gw sama tugas!
+16;3;11-50;76911.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw lagi baca novel baru nih
+17;3;51-100;76946.0;text;;[];True;True;90d3bf00873d20ea;[];KIRA KIRA KALO GW APPLY MAGANG SEKARANG MASIH KEBURU GA YA?
+18;3;1-10;77091.0;text;;[];False;False;5b98ff7cdb1e63ca;[];ih
+19;3;11-50;77093.0;text;;[];False;False;5b98ff7cdb1e63ca;[];manga terbaru udah keluar loh
+20;3;51-100;77113.0;text;;[];False;False;5b98ff7cdb1e63ca;[];dosen killer itu ternyata baik banget orangnya kalo diajak ngobrol santai
+21;3;11-50;77125.0;text;;[];False;False;90d3bf00873d20ea;[];PERTANDINGAN BOLA TADI MALAM GILA
+22;3;11-50;77134.0;text;;['😂'];False;False;90d3bf00873d20ea;[];ALBUM BARU DIA ENAK BANGET
+23;3;51-100;77284.0;text;;[];False;False;a48355e01845fd3e;[];gw harus ganti strategi belajar sih soalnya nilai UTS kemarin jelek bgt
+24;3;1-10;77300.0;text;;['🤣'];False;False;5b98ff7cdb1e63ca;[];zonk
+25;3;11-50;77440.0;text;;[];False;False;90d3bf00873d20ea;[];GW LAGI BACA NOVEL BARU NIH
+26;3;11-50;77530.0;text;;[];False;False;90d3bf00873d20ea;[];GYM HARI INI SKIP DEH
+27;3;11-50;77676.0;text;;['🤔'];True;False;90d3bf00873d20ea;['5b98ff7cdb1e63ca', 'a48355e01845fd3e'];MASIH BANGUN GA LU JAM SEGINI?
+28;3;1-10;77751.0;text;;[];False;True;5b98ff7cdb1e63ca;[];edan!
+29;3;11-50;77753.0;text;;[];False;False;5b98ff7cdb1e63ca;[];badminton yuk sore ini
+30;3;11-50;77764.0;text;;['😂'];False;False;90d3bf00873d20ea;[];MANGA TERBARU UDAH KELUAR LOH
+31;3;11-50;78073.0;text;;[];False;False;a48355e01845fd3e;[];podcast yg lu rekomen mana
+32;3;11-50;86567.0;text;;[];False;False;90d3bf00873d20ea;[];PERTANDINGAN BOLA TADI MALAM GILA
+33;3;11-50;86570.0;text;;[];False;False;90d3bf00873d20ea;[];SERIES ITU ENDINGNYA ZONK BGT
+34;3;11-50;86578.0;text;;[];False;False;90d3bf00873d20ea;[];FUTSAL BESOK JADI GA
+35;3;11-50;88680.0;text;;[];True;False;a48355e01845fd3e;[];booking duluan apa langsung aja?
+36;4;51-100;373041.0;text;;[];True;False;a48355e01845fd3e;[];lu pernah coba belajar bareng di perpus kota ga, enak ga disana?
+37;4;11-50;373053.0;text;;[];False;False;a48355e01845fd3e;[];temenin gw dong besok
+38;4;51-100;373089.0;text;;[];False;False;90d3bf00873d20ea;[];GW BARU AJA DAPET KABAR KALO TEMEN KITA DITERIMA KERJA DI LUAR NEGERI
+39;4;11-50;373091.0;text;;[];False;False;90d3bf00873d20ea;[];GW GA PERCAYA SIH GOSIPNYA
+40;4;11-50;373105.0;text;;[];False;False;90d3bf00873d20ea;[];REUNI KAPAN YA KITA
+41;4;51-100;373138.0;text;;[];False;False;90d3bf00873d20ea;[];GW PENGEN BANGET LIBURAN KE PANTAI TAPI DUIT LAGI TIPIS BANGET SEKARANG
+42;4;11-50;373241.0;text;;[];False;False;5b98ff7cdb1e63ca;[];angkot ke sana masih ada ga
+43;4;51-100;373283.0;text;;[];False;False;a48355e01845fd3e;[];gw pengen banget liburan ke pantai tapi duit lagi tipis banget sekarang
+44;4;11-50;373285.0;text;;[];False;False;a48355e01845fd3e;[];diem diem ternyata jadian
+45;4;11-50;373288.0;text;;[];False;False;a48355e01845fd3e;[];temen gw sakit masuk RS
+46;4;51-100;373407.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw pengen banget liburan ke pantai tapi duit lagi tipis banget sekarang
+47;5;101-500;376664.0;text;;[];True;False;5b98ff7cdb1e63ca;[];guys ada yang tau ga sih kenapa sistem registrasi online kampus sering banget error pas masa pengisian krs? tiap semester selalu gitu bikin stres, mana harus rebutan mata kuliah yang kuotanya dikit banget lagi. apa emang servernya ga kuat ya nampung banyak mahasiswa sekaligus?
+48;5;51-100;377707.0;text;;[];False;False;90d3bf00873d20ea;[];GW LAGI NYOBA MASAK RENDANG RESEP NYOKAP TAPI KAYAKNYA GAGAL TOTAL DEH
+49;5;11-50;377710.0;text;;[];False;False;90d3bf00873d20ea;[];RAME BANGET DISINI CUY
+50;5;11-50;377716.0;text;;[];False;False;90d3bf00873d20ea;[];GW NAIK OJOL AJA DEH
+51;5;11-50;377723.0;text;;[];False;False;90d3bf00873d20ea;[];LU DIMANA SIH LAMA BANGET
+52;5;1-10;378057.0;text;;[];False;False;a48355e01845fd3e;[];hoo
+53;5;51-100;378095.0;text;;[];False;False;a48355e01845fd3e;[];temen sekamar gw pindah kosan jadi sekarang gw sendirian di kamar
+54;5;11-50;378105.0;text;;[];False;False;a48355e01845fd3e;[];gw naik ojol aja deh
+55;5;51-100;378125.0;text;;[];False;False;90d3bf00873d20ea;[];MOTOR GW MOGOK DI TENGAH JALAN TADI PAGI JADI GW TELAT MASUK KELAS
+56;5;1-10;378178.0;text;;[];False;False;a48355e01845fd3e;[];kok
+57;5;101-500;378202.0;text;;[];False;False;a48355e01845fd3e;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+58;5;0;378479.0;audio;;[];False;False;90d3bf00873d20ea;[];[Voice Note]
+59;5;11-50;379601.0;text;;[];True;False;5b98ff7cdb1e63ca;[];wifi password nya apa sih?
+60;5;11-50;379835.0;text;;[];False;False;90d3bf00873d20ea;[];GW UDAH DI PARKIRAN NIH
+61;5;1-10;379838.0;text;;[];False;False;90d3bf00873d20ea;[];OOH
+62;6;1-10;426061.0;text;;[];False;False;90d3bf00873d20ea;[];OOT
+63;6;51-100;426071.0;text;;[];True;False;90d3bf00873d20ea;[];KIRA KIRA KALO GW APPLY MAGANG SEKARANG MASIH KEBURU GA YA?
+64;6;11-50;426101.0;text;;[];False;False;5b98ff7cdb1e63ca;[];badminton yuk sore ini
+65;6;1-10;426115.0;text;;[];False;False;90d3bf00873d20ea;[];BTW
+66;6;11-50;427001.0;text;;[];False;False;a48355e01845fd3e;[];gym hari ini skip deh
+67;7;1-10;553118.0;text;;[];False;True;5b98ff7cdb1e63ca;[];top!
+68;7;11-50;553500.0;text;;[];False;False;90d3bf00873d20ea;[];DUIT BULANAN BELUM DIKIRIM
+69;7;11-50;553515.0;text;;['🤬'];False;False;90d3bf00873d20ea;[];GW LAGI MARATHON DRAKOR NIH
+70;8;11-50;595447.0;text;;[];False;False;90d3bf00873d20ea;[];REUNI KAPAN YA KITA
+71;8;11-50;595455.0;text;;[];False;False;90d3bf00873d20ea;[];JANGAN BILANG SIAPA SIAPA YA
+72;8;11-50;595468.0;text;;[];False;False;a48355e01845fd3e;[];gw ga percaya sih gosipnya
+73;8;11-50;595503.0;text;;[];False;False;90d3bf00873d20ea;[];TEMENIN GW DONG BESOK
+74;8;1-10;595742.0;text;;[];False;False;5b98ff7cdb1e63ca;[];ywd
+75;8;1-10;603505.0;text;;[];False;False;90d3bf00873d20ea;[];DONG
+76;8;11-50;603506.0;text;;[];False;False;90d3bf00873d20ea;[];EH DENGER GOSIP BELUM
+77;8;1-10;603524.0;text;;[];False;False;5b98ff7cdb1e63ca;[];trus
+78;8;1-10;603529.0;text;;[];False;False;5b98ff7cdb1e63ca;[];hihi
+79;8;0;603563.0;image/jpeg;;[];False;False;a48355e01845fd3e;[];[Foto]
+80;8;11-50;603621.0;text;;[];False;False;90d3bf00873d20ea;[];REUNI KAPAN YA KITA
+81;8;11-50;603852.0;text;;[];False;False;90d3bf00873d20ea;[];ANGKOT KE SANA MASIH ADA GA
+82;8;11-50;603903.0;text;;[];True;False;90d3bf00873d20ea;[];KAPAN TERAKHIR KALI KETEMU?
+83;9;11-50;681904.0;text;;[];False;False;90d3bf00873d20ea;[];CUACA HARI INI PANAS BANGET
+84;9;11-50;681925.0;text;;[];False;False;a48355e01845fd3e;[];lu tim mana dukungnya
+85;9;11-50;681939.0;text;;[];False;False;a48355e01845fd3e;[];gw lagi di atm sebentar
+86;9;11-50;682025.0;text;;[];False;False;5b98ff7cdb1e63ca;[];hp gw lowbat nih
+87;9;11-50;684844.0;text;;[];False;False;90d3bf00873d20ea;[];CHARGER HP GW RUSAK LAGI
+88;9;11-50;684849.0;text;;[];False;False;90d3bf00873d20ea;[];DOMPET GW KETINGGALAN DI RUMAH
+89;9;11-50;686171.0;text;;[];False;False;5b98ff7cdb1e63ca;[];lu tim mana dukungnya
+90;9;11-50;686208.0;text;;[];False;False;90d3bf00873d20ea;[];BENTAR YA GW LG DI JALAN
+91;9;11-50;686737.0;text;;[];False;False;90d3bf00873d20ea;[];GW MAU TIDUR DULU YA
+92;10;11-50;782383.0;text;;[];False;True;5b98ff7cdb1e63ca;[];asik besok libur guys!
+93;10;11-50;782384.0;text;;[];False;False;5b98ff7cdb1e63ca;[];bsk sore ada waktu ga
+94;10;1-10;782389.0;text;;[];False;False;5b98ff7cdb1e63ca;[];kan
+95;10;1-10;782701.0;text;;[];False;False;90d3bf00873d20ea;[];WOI
+96;10;11-50;782706.0;text;;[];False;False;90d3bf00873d20ea;[];KITA KETEMUAN DIMANA AJA DEH
+97;10;11-50;782737.0;text;;[];False;False;a48355e01845fd3e;[];macet parah di jalan tol
+98;11;0;820110.0;image/jpeg;;[];False;False;a48355e01845fd3e;[];[Foto]
+99;11;11-50;820115.0;text;;[];False;False;a48355e01845fd3e;['249fca1b13541fb4'];gw naik ojol aja deh
+100;11;11-50;820123.0;text;;[];False;False;a48355e01845fd3e;[];gw ngga bisa ikut malem ini
+101;11;51-100;820141.0;text;;[];False;False;a48355e01845fd3e;[];motor gw mogok di tengah jalan tadi pagi jadi gw telat masuk kelas
+102;11;51-100;820165.0;text;;[];False;False;a48355e01845fd3e;[];gw lagi nyoba masak rendang resep nyokap tapi kayaknya gagal total deh
+103;11;51-100;820184.0;text;;[];False;False;a48355e01845fd3e;[];gw harus nabung lebih banyak sih buat bayar uang semester yang naik
+104;12;101-500;850606.0;text;;[];True;False;a48355e01845fd3e;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+105;12;1-10;850782.0;text;;[];False;False;a48355e01845fd3e;[];hayuk
+106;12;11-50;850782.0;text;;[];False;False;a48355e01845fd3e;[];film baru di bioskop bagus ga
+107;12;51-100;850799.0;text;;[];False;False;a48355e01845fd3e;[];adek gw mau masuk kuliah tahun depan gw harus bantu cariin info jurusan
+108;12;11-50;851024.0;text;;[];True;False;90d3bf00873d20ea;[];KENAPA GA BALES CHAT GW?
+109;12;11-50;851049.0;text;;[];False;False;a48355e01845fd3e;[];mama minta gw pulang weekend
+110;12;11-50;851063.0;text;;[];False;False;a48355e01845fd3e;[];film baru di bioskop bagus ga
+111;12;11-50;851086.0;text;110.0;[];False;False;a48355e01845fd3e;[];playlist lo yang mana sih
+112;12;0;851138.0;sticker/webp;;[];False;False;90d3bf00873d20ea;[];[Stiker]
+113;13;11-50;898980.0;text;;[];False;False;a48355e01845fd3e;[];hp gw lowbat nih
+114;13;51-100;898994.0;text;;[];False;False;a48355e01845fd3e;[];tadi gw antri di administrasi kampus 2 jam cuma buat ngurus surat
+115;13;11-50;899001.0;text;;[];False;False;a48355e01845fd3e;[];hp gw lowbat nih
+116;13;11-50;899007.0;text;;[];False;False;a48355e01845fd3e;[];internet mati lagi di kosan
+117;13;51-100;899037.0;text;;[];False;False;a48355e01845fd3e;[];laptop gw mulai lemot nih kayaknya harus install ulang atau ganti RAM
+118;14;51-100;948159.0;text;;[];False;False;a48355e01845fd3e;[];gw pengen banget liburan ke pantai tapi duit lagi tipis banget sekarang
+119;14;11-50;948170.0;text;;[];False;False;a48355e01845fd3e;[];temenin gw dong besok
+120;15;11-50;949054.0;text;;[];False;False;a48355e01845fd3e;['5b98ff7cdb1e63ca', '90d3bf00873d20ea'];si itu udah putus katanya
+121;15;11-50;949057.0;text;;[];False;False;a48355e01845fd3e;[];gw kangen temen temen SMA
+122;15;11-50;949058.0;text;;[];False;False;a48355e01845fd3e;[];gw berantem sama si anu
+123;15;11-50;949063.0;text;;[];False;False;a48355e01845fd3e;[];jangan bilang siapa siapa ya
+124;15;11-50;949076.0;text;;[];False;True;a48355e01845fd3e;[];sedih banget ceritanya!
+125;15;51-100;949106.0;text;;[];False;False;5b98ff7cdb1e63ca;[];hari ini gw ada rapat organisasi sampe sore jadi ga bisa ikut nongkrong
+126;15;11-50;949273.0;text;;[];False;False;90d3bf00873d20ea;[];ANGKOT KE SANA MASIH ADA GA
+127;15;11-50;949276.0;text;;[];False;False;90d3bf00873d20ea;[];GW GA PERCAYA SIH GOSIPNYA
+128;15;11-50;949296.0;image/jpeg;;[];False;False;90d3bf00873d20ea;[];[Foto]
+129;15;11-50;949375.0;text;;[];False;False;a48355e01845fd3e;[];jangan bilang siapa siapa ya
+130;15;11-50;949381.0;text;;[];False;False;a48355e01845fd3e;[];pacarnya baru siapa sih
+131;15;11-50;949390.0;text;;[];False;False;a48355e01845fd3e;[];si itu udah putus katanya
+132;15;11-50;949399.0;text;;[];False;False;90d3bf00873d20ea;[];REUNI KAPAN YA KITA
+133;15;11-50;949409.0;text;;[];False;True;90d3bf00873d20ea;[];SEDIH BANGET CERITANYA!
+134;15;51-100;949537.0;text;;[];False;False;a48355e01845fd3e;[];gw pengen banget liburan ke pantai tapi duit lagi tipis banget sekarang
+135;15;51-100;949604.0;text;;[];False;False;a48355e01845fd3e;[];wifi kosan gw lemot banget jadi gw ke perpus aja buat ngerjain tugas
+136;16;11-50;1071144.0;text;;[];True;False;90d3bf00873d20ea;['a48355e01845fd3e'];WIFI PASSWORD NYA APA SIH?
+137;16;11-50;1071211.0;text;;[];False;False;90d3bf00873d20ea;[];MACET PARAH DI JALAN TOL
+138;16;1-10;1071591.0;text;;[];False;False;a48355e01845fd3e;[];woi
+139;16;11-50;1071591.0;text;;[];False;False;a48355e01845fd3e;[];gw nyari parkir dulu bentar
+140;16;11-50;1071594.0;text;;[];False;False;a48355e01845fd3e;[];jangan lupa bawa duit cash
+141;16;51-100;1071611.0;text;;[];False;False;a48355e01845fd3e;[];gw harus nabung lebih banyak sih buat bayar uang semester yang naik
+142;16;1-10;1071715.0;text;;[];False;False;a48355e01845fd3e;[];mah
+143;16;11-50;1071721.0;text;;[];True;False;a48355e01845fd3e;[];nilai keluar kapan ya?
+144;17;11-50;1072352.0;text;;[];False;False;a48355e01845fd3e;[];gw berantem sama si anu
+145;17;11-50;1072966.0;text;;[];False;False;a48355e01845fd3e;[];temenin gw dong besok
+146;17;11-50;1074397.0;text;;[];False;True;5b98ff7cdb1e63ca;[];sedih banget ceritanya!
+147;18;11-50;1076822.0;text;;[];True;False;5b98ff7cdb1e63ca;[];siapa aja yg dateng?
+148;18;11-50;1076830.0;text;;[];False;False;a48355e01845fd3e;['249fca1b13541fb4'];gw kangen masakan rumah
+149;18;1-10;1076830.0;text;;[];False;False;a48355e01845fd3e;[];mager
+150;18;1-10;1076846.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gitu
+151;18;11-50;1076850.0;text;;[];False;False;5b98ff7cdb1e63ca;[];nyokap nanya kapan lulus
+152;18;1-10;1076854.0;text;;['🤣'];False;False;5b98ff7cdb1e63ca;[];pasti
+153;19;101-500;1208187.0;text;;[];True;False;a48355e01845fd3e;[];menurut kalian kenapa ya generasi kita tuh kayaknya lebih gampang stres dan burnout dibanding generasi orang tua kita dulu? apa karena tekanan sosmed atau emang tuntutan hidup yang makin tinggi ya? gw penasaran aja sih soalnya temen temen gw banyak yang ngeluh hal yang sama
+154;19;11-50;1208463.0;text;;[];False;False;5b98ff7cdb1e63ca;[];ketemuan di mall jam 3 ya
+155;19;11-50;1208475.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw lagi di warkop nih
+156;19;11-50;1208488.0;text;;[];False;False;5b98ff7cdb1e63ca;[];kita ketemuan dimana aja deh
+157;19;11-50;1208516.0;text;;[];False;False;90d3bf00873d20ea;[];RAME BANGET DISINI CUY
+158;19;101-500;1208517.0;text;;[];False;False;a48355e01845fd3e;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman SMA. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak SMA lagi tanpa mikirin skripsi
+159;19;11-50;1208730.0;text;;[];False;False;a48355e01845fd3e;[];jangan lupa bawa duit cash
+160;19;11-50;1209332.0;text;;[];True;False;5b98ff7cdb1e63ca;[];wifi password nya apa sih?
+161;19;11-50;1209420.0;text;;[];False;False;90d3bf00873d20ea;[];RAME BANGET DISINI CUY
+162;20;11-50;1318884.0;text;;[];True;False;90d3bf00873d20ea;[];LU DIMANA SEKARANG?
+163;20;1-10;1318895.0;text;;[];False;False;a48355e01845fd3e;[];yoi
+164;20;1-10;1319168.0;text;;['🤣'];False;False;5b98ff7cdb1e63ca;[];oke
+165;21;51-100;1503911.0;text;;[];True;False;a48355e01845fd3e;[];menurut lu gw harus ambil mata kuliah pilihan yang mana semester depan?
+166;21;1-10;1504091.0;text;;[];False;False;a48355e01845fd3e;[];bet
+167;21;11-50;1506637.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw baru aja dari kampus
+168;21;1-10;1506638.0;text;;[];False;False;5b98ff7cdb1e63ca;[];nah
+169;22;11-50;1660448.0;text;;[];True;False;90d3bf00873d20ea;[];ITU TEMPATNYA JAUH GA?
+170;22;11-50;1660478.0;text;;[];False;False;5b98ff7cdb1e63ca;[];duit bulanan belum dikirim
+171;22;0;1660642.0;sticker/webp;;[];False;False;90d3bf00873d20ea;[];[Stiker]
+172;23;11-50;1664996.0;text;;[];True;False;90d3bf00873d20ea;[];MAU NITIP APA GA?
+173;23;1-10;1665072.0;text;;['😁'];False;False;5b98ff7cdb1e63ca;[];yoii
+174;23;51-100;1665227.0;text;;[];True;False;90d3bf00873d20ea;[];KENAPA YA AKHIR AKHIR INI GW SUSAH BANGET TIDUR PADAHAL CAPEK?
+175;23;1-10;1665269.0;text;;[];False;False;5b98ff7cdb1e63ca;[];iyaa
+176;23;0;1665291.0;image/jpeg;;[];False;False;90d3bf00873d20ea;[];[Foto]
+177;23;11-50;1665304.0;text;;[];False;False;5b98ff7cdb1e63ca;[];capek banget hari ini asli
+178;23;11-50;1665307.0;text;;[];False;False;90d3bf00873d20ea;[];HP GW LOWBAT NIH
+179;24;11-50;1924312.0;text;;[];False;False;5b98ff7cdb1e63ca;[];lu dimana sih lama banget
+180;24;11-50;1924392.0;text;;[];True;False;5b98ff7cdb1e63ca;[];nilai keluar kapan ya?
+181;24;1-10;1924395.0;text;;['😁'];False;False;5b98ff7cdb1e63ca;[];emm
+182;24;11-50;1925480.0;text;;[];False;False;90d3bf00873d20ea;[];KITA KETEMUAN DIMANA AJA DEH
+183;24;1-10;1925487.0;text;;[];False;False;90d3bf00873d20ea;[];AHH
+184;24;1-10;1925489.0;text;;['😂'];False;False;90d3bf00873d20ea;[];WOI
+185;24;1-10;1925532.0;text;;[];False;False;5b98ff7cdb1e63ca;[];woi
+186;24;11-50;1925534.0;text;;[];True;False;5b98ff7cdb1e63ca;[];nilai keluar kapan ya?
+187;24;1-10;1925626.0;text;;[];False;False;a48355e01845fd3e;[];oii
+188;25;0;1929795.0;image/jpeg;;[];False;False;a48355e01845fd3e;[];[Foto]
+189;25;101-500;1933786.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw baru aja beres beresin kosan dan nemu barang barang lama dari jaman sma. ada foto kelas, surat dari mantan, sama buku diary yang isinya cringe banget kalo dibaca sekarang. jadi nostalgia sendiri inget masa masa dulu yang lebih sederhana. kadang kangen juga sih jadi anak sma lagi tanpa mikirin skripsi
+190;25;11-50;1933795.0;text;;[];False;False;5b98ff7cdb1e63ca;[];rame banget disini cuy
+191;25;1-10;1937663.0;text;;['🙄'];False;False;a48355e01845fd3e;[];ahh
+192;25;51-100;1937691.0;text;;[];False;False;a48355e01845fd3e;[];gw lagi nyoba masak rendang resep nyokap tapi kayaknya gagal total deh
+193;25;11-50;1937695.0;text;;[];False;False;a48355e01845fd3e;[];macet parah di jalan tol
+194;25;51-100;1991145.0;text;;[];True;False;5b98ff7cdb1e63ca;[];gimana caranya biar bisa fokus belajar tanpa main hp terus ya?
+195;26;11-50;2089275.0;text;;[];False;False;90d3bf00873d20ea;[];EH DENGER GOSIP BELUM
+196;26;51-100;2089285.0;text;;[];False;False;90d3bf00873d20ea;[];WIFI KOSAN GW LEMOT BANGET JADI GW KE PERPUS AJA BUAT NGERJAIN TUGAS
+197;26;11-50;2090435.0;text;;[];False;False;a48355e01845fd3e;[];temen gw sakit masuk RS
+198;26;11-50;2090629.0;text;;[];False;False;5b98ff7cdb1e63ca;[];temenin gw dong besok
+199;26;11-50;2090677.0;text;;[];True;False;90d3bf00873d20ea;[];KAPAN TERAKHIR KALI KETEMU?
+200;26;11-50;2090688.0;text;;[];False;False;90d3bf00873d20ea;['a48355e01845fd3e'];GW GA PERCAYA SIH GOSIPNYA
+201;26;1-10;2090696.0;text;;['😂'];False;False;90d3bf00873d20ea;[];MALES
+202;26;11-50;2090702.0;text;;[];False;False;5b98ff7cdb1e63ca;[];pacarnya baru siapa sih
+203;26;51-100;2090723.0;text;;[];False;False;90d3bf00873d20ea;[];WIFI KOSAN GW LEMOT BANGET JADI GW KE PERPUS AJA BUAT NGERJAIN TUGAS
+204;26;11-50;2090725.0;text;;[];False;False;90d3bf00873d20ea;[];ANGKOT KE SANA MASIH ADA GA
+205;26;11-50;2090728.0;text;;[];False;False;5b98ff7cdb1e63ca;[];jangan bilang siapa siapa ya
+206;26;1-10;2090734.0;text;;[];False;False;5b98ff7cdb1e63ca;[];trus
+207;27;11-50;2105985.0;text;;['😂'];False;False;90d3bf00873d20ea;[];PODCAST YG LU REKOMEN MANA
+208;27;51-100;2106458.0;text;;[];False;False;a48355e01845fd3e;[];semalam hujan gede banget sampe kosan gw mati lampu semaleman gila
+209;27;11-50;2106874.0;text;;[];False;False;90d3bf00873d20ea;[];BADMINTON YUK SORE INI
+210;27;11-50;2106884.0;text;;[];False;False;90d3bf00873d20ea;[];GW ABIS LARI PAGI TADI
+211;27;11-50;2106888.0;text;;[];False;False;90d3bf00873d20ea;[];GW ABIS LARI PAGI TADI
+212;28;11-50;2107811.0;text;;[];False;False;90d3bf00873d20ea;[];ALBUM BARU DIA ENAK BANGET
+213;28;1-10;2107913.0;text;;[];False;False;a48355e01845fd3e;[];hoki
+214;28;11-50;2108086.0;text;;[];False;False;5b98ff7cdb1e63ca;[];podcast yg lu rekomen mana
+215;28;1-10;2108586.0;text;;[];True;False;5b98ff7cdb1e63ca;[];ya?
+216;28;1-10;2108597.0;text;;[];False;False;a48355e01845fd3e;[];ih
+217;28;1-10;2108600.0;text;;[];False;False;90d3bf00873d20ea;[];OOT
+218;28;11-50;2108608.0;text;;[];False;True;5b98ff7cdb1e63ca;[];akhirnya kelar juga nih!
+219;29;51-100;2148647.0;image/jpeg;;[];True;False;a48355e01845fd3e;[];[Foto]
+220;29;0;2148662.0;image/jpeg;;[];False;False;a48355e01845fd3e;[];[Foto]
+221;29;1-10;2148730.0;text;;[];False;False;90d3bf00873d20ea;[];GPP
+222;29;1-10;2148732.0;text;;[];False;False;90d3bf00873d20ea;[];AMAN
+223;29;11-50;2148758.0;text;;['😂'];False;False;90d3bf00873d20ea;[];GW LAPER BANGET NIH
+224;29;51-100;2148767.0;text;;[];False;False;a48355e01845fd3e;[];gw lagi mikirin mau ambil magang di perusahaan mana buat semester depan
+225;29;11-50;2148774.0;text;;[];False;False;a48355e01845fd3e;[];gw mau ambil cuti semester
+226;29;11-50;2148797.0;text;219.0;[];False;False;a48355e01845fd3e;[];gw laper banget nih
+227;29;11-50;2148960.0;text;;[];False;False;90d3bf00873d20ea;[];GW LAPER BANGET NIH
+228;29;11-50;2151542.0;text;;[];False;False;5b98ff7cdb1e63ca;[];seminar tadi lama banget
+229;29;11-50;2151552.0;text;;[];True;False;5b98ff7cdb1e63ca;[];ada yang punya catetan?
+230;29;11-50;2151555.0;text;;[];False;False;5b98ff7cdb1e63ca;[];tugas kelompok bikin pusing
+231;29;1-10;2152659.0;text;;[];False;True;5b98ff7cdb1e63ca;[];parah!
+232;30;101-500;2163505.0;text;;['🤔'];False;False;90d3bf00873d20ea;[];TADI SIANG GW MAKAN DI WARUNG MAKAN BARU DEKET GERBANG BELAKANG KAMPUS. NASI GORENGNYA LUMAYAN ENAK DAN HARGANYA MURAH BANGET CUMA 12 RIBU UDAH SAMA ES TEH. KAYAKNYA BAKAL JADI LANGGANAN BARU DEH SOALNYA WARTEG BIASA GW UDAH MULAI NAIK HARGA DAN PORSINYA MAKIN DIKIT AJA
+233;30;11-50;2163595.0;text;;[];False;False;a48355e01845fd3e;[];gym hari ini skip deh
+234;30;11-50;2163666.0;text;;[];False;False;5b98ff7cdb1e63ca;[];manga terbaru udah keluar loh
+235;30;11-50;2165927.0;text;;[];False;False;90d3bf00873d20ea;[];BADMINTON YUK SORE INI
+236;30;11-50;2165928.0;text;;[];False;False;90d3bf00873d20ea;[];ALBUM BARU DIA ENAK BANGET
+237;30;11-50;2166835.0;text;;[];False;False;a48355e01845fd3e;[];gw abis lari pagi tadi
+238;30;1-10;2166839.0;text;;[];False;False;a48355e01845fd3e;[];bete
+239;30;11-50;2166842.0;text;;[];False;False;a48355e01845fd3e;[];badminton yuk sore ini
+240;30;11-50;2166846.0;text;;[];False;False;a48355e01845fd3e;[];podcast yg lu rekomen mana
+241;30;11-50;2166873.0;text;;[];False;False;90d3bf00873d20ea;[];KONSER ITU MAHAL BANGET TIKETNYA
+242;30;11-50;2167015.0;text;241.0;[];False;False;a48355e01845fd3e;[];konser itu mahal banget tiketnya
+243;30;51-100;2167035.0;text;;[];False;False;a48355e01845fd3e;[];dosen killer itu ternyata baik banget orangnya kalo diajak ngobrol santai
+244;30;11-50;2167050.0;text;;[];False;False;a48355e01845fd3e;[];album baru dia enak banget
+245;30;51-100;2167177.0;text;;[];False;False;90d3bf00873d20ea;[];DOSEN KILLER ITU TERNYATA BAIK BANGET ORANGNYA KALO DIAJAK NGOBROL SANTAI
+246;30;11-50;2168412.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw lagi baca novel baru nih
+247;30;11-50;2168413.0;text;;[];False;False;5b98ff7cdb1e63ca;[];series itu endingnya zonk bgt
+248;30;11-50;2173835.0;text;;[];False;False;a48355e01845fd3e;[];gw lagi baca novel baru nih
+249;30;11-50;2174362.0;text;;[];False;False;a48355e01845fd3e;[];gw lagi baca novel baru nih
+250;30;11-50;2174362.0;text;;[];False;False;a48355e01845fd3e;[];manga terbaru udah keluar loh
+251;30;11-50;2174471.0;text;;[];False;False;a48355e01845fd3e;[];manga terbaru udah keluar loh
+252;30;11-50;2174479.0;text;;[];False;False;a48355e01845fd3e;[];pertandingan bola tadi malam gila
+253;30;51-100;2174497.0;text;;[];False;False;a48355e01845fd3e;[];semalam hujan gede banget sampe kosan gw mati lampu semaleman gila
+254;30;11-50;2174544.0;text;;[];False;False;a48355e01845fd3e;[];futsal besok jadi ga
+255;31;11-50;2176504.0;text;;['😘', '🔥'];False;False;a48355e01845fd3e;[];reuni kapan ya kita
+256;31;11-50;2176505.0;text;;[];False;False;a48355e01845fd3e;[];gw berantem sama si anu
+257;31;11-50;2181225.0;text;;[];False;False;5b98ff7cdb1e63ca;[];jangan bilang siapa siapa ya
+258;31;1-10;2181229.0;text;;[];False;False;5b98ff7cdb1e63ca;[];wkwkw
+259;31;11-50;2182360.0;text;;[];False;False;a48355e01845fd3e;[];temen gw sakit masuk RS
+260;31;11-50;2182383.0;text;;[];False;False;5b98ff7cdb1e63ca;[];angkot ke sana masih ada ga
+261;31;1-10;2182405.0;text;;[];False;False;5b98ff7cdb1e63ca;[];udah
+262;31;0;2191118.0;audio;;[];False;False;a48355e01845fd3e;[];[Voice Note]
+263;31;0;2191707.0;audio;;[];False;False;5b98ff7cdb1e63ca;[];[Voice Note]
+264;31;51-100;2191828.0;text;;[];False;False;a48355e01845fd3e;[];lu harus coba kedai kopi baru di jalan belakang kampus, enak banget
+265;31;11-50;2191835.0;text;;[];False;False;a48355e01845fd3e;[];temenin gw dong besok
+266;31;51-100;2191858.0;text;;[];False;False;a48355e01845fd3e;[];lu harus coba kedai kopi baru di jalan belakang kampus, enak banget
+267;31;11-50;2191878.0;text;;[];False;False;a48355e01845fd3e;[];diem diem ternyata jadian
+268;31;51-100;2191901.0;text;;[];False;False;a48355e01845fd3e;[];hari ini gw ada rapat organisasi sampe sore jadi ga bisa ikut nongkrong
+269;31;51-100;2191932.0;text;;['💪🏻'];False;False;a48355e01845fd3e;[];gw pengen banget liburan ke pantai tapi duit lagi tipis banget sekarang
+270;31;1-10;2192005.0;text;;[];False;False;a48355e01845fd3e;[];hihi
+271;31;11-50;2192014.0;text;;[];False;False;a48355e01845fd3e;[];gw ga percaya sih gosipnya
+272;31;11-50;2192907.0;text;;[];False;False;90d3bf00873d20ea;[];SI ITU UDAH PUTUS KATANYA
+273;31;11-50;2192914.0;text;;[];False;False;90d3bf00873d20ea;[];TEMENIN GW DONG BESOK
+274;31;51-100;2193458.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gw pengen banget liburan ke pantai tapi duit lagi tipis banget sekarang
+275;31;11-50;2193479.0;text;;[];False;True;5b98ff7cdb1e63ca;[];gw kaget pas denger itu!
+276;31;11-50;2193489.0;text;;[];False;True;5b98ff7cdb1e63ca;[];gw kaget pas denger itu!
+277;31;11-50;2193512.0;text;;[];False;False;5b98ff7cdb1e63ca;[];si itu udah putus katanya
+278;31;11-50;2193977.0;text;277.0;[];False;False;90d3bf00873d20ea;[];JANGAN BILANG SIAPA SIAPA YA
+279;31;51-100;2193993.0;text;;[];False;False;90d3bf00873d20ea;[];GW BARU AJA DAPET KABAR KALO TEMEN KITA DITERIMA KERJA DI LUAR NEGERI
+280;31;11-50;2193998.0;text;;['😂'];False;False;90d3bf00873d20ea;[];TEMEN GW SAKIT MASUK RS
+281;31;1-10;2194265.0;text;;['🤬'];False;False;a48355e01845fd3e;[];sama
+282;31;11-50;2194269.0;text;;[];False;False;a48355e01845fd3e;[];diem diem ternyata jadian
+283;32;51-100;3398795.0;text;;[];False;False;a48355e01845fd3e;[];dosen killer itu ternyata baik banget orangnya kalo diajak ngobrol santai
+284;32;11-50;3398805.0;text;;[];False;False;a48355e01845fd3e;[];pertandingan bola tadi malam gila
+285;32;51-100;3398825.0;text;;[];False;False;a48355e01845fd3e;[];gw gagal diet lagi soalnya tadi sore diajak makan bakso sama temen
+286;32;11-50;3398833.0;text;;[];False;False;a48355e01845fd3e;[];futsal besok jadi ga
+287;32;11-50;3398845.0;text;;[];False;False;a48355e01845fd3e;[];series itu endingnya zonk bgt
+288;32;11-50;3398854.0;text;;[];False;False;5b98ff7cdb1e63ca;[];game baru udah download belum
+289;32;51-100;3398855.0;text;;[];False;False;5b98ff7cdb1e63ca;[];semalam hujan gede banget sampe kosan gw mati lampu semaleman gila
+290;32;1-10;3398936.0;text;;['😂'];False;False;5b98ff7cdb1e63ca;[];kuy
+291;32;11-50;3398941.0;text;;[];False;False;5b98ff7cdb1e63ca;[];gym hari ini skip deh
+292;32;51-100;3398959.0;text;;[];False;False;5b98ff7cdb1e63ca;[];dosen killer itu ternyata baik banget orangnya kalo diajak ngobrol santai
+293;32;11-50;3398963.0;text;;[];False;False;5b98ff7cdb1e63ca;[];badminton yuk sore ini
+294;32;1-10;4528204.0;text;;[];False;True;5b98ff7cdb1e63ca;[];serem!
+295;33;0;14254125.0;system;;[];False;False;90d3bf00873d20ea;[];[Pesan sistem]
+296;33;0;16526166.0;system;;[];False;False;5b98ff7cdb1e63ca;[];[Pesan sistem]
+297;34;0;115891041.0;system;;[];False;False;a48355e01845fd3e;[];[Pesan sistem]
+298;34;0;116218186.0;system;;[];False;False;a48355e01845fd3e;[];[Pesan sistem]
+299;34;0;125987495.0;system;;[];False;False;a48355e01845fd3e;[];[Pesan sistem]
