@@ -27,9 +27,10 @@ Updated: 2026-09-23
 - resource collection checklist created
 - team/environment intake template created
 - evidence/artifact ID convention created
+- team roles assigned: Chris, Bela, Meldiro, Daffa
 
 Remaining P0 item:
-- replace Member A–D placeholders with real team names and confirm test-device/workstation details
+- confirm test-device/workstation details and private evidence-storage location
 
 ## P1 completed items
 - initialized exact 1–543 reconstruction skeleton
@@ -51,9 +52,7 @@ Next P1 action:
 Collect public court records, human-trafficking domain sources, and test-environment metadata using `docs/00_project_management/resource_collection_checklist.md`.
 
 ## Team roles
-- Member A — Digital Forensics Lead
-- Member B — Case & Data Lead
-- Member C — AI/RAG Lead
-- Member D — Validation & Documentation Lead
-
-Names will replace placeholders after team confirmation.
+- Chris — Member A — Digital Forensics Lead
+- Bela — Member B — Case & Data Lead
+- Meldiro — Member C — AI/RAG Lead
+- Daffa — Member D — Validation & Documentation Lead
