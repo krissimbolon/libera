@@ -1,0 +1,138 @@
+conversation_id	timestamp	sender_id	message_text
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:36:06+07:00	AKT-RENA	Aku bangun sebelum alarm, jadi malah bingung mau apa.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:39:23+07:00	AKT-RAKA	Kamu bisa sarapan pelan-pelan.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:46:40+07:00	AKT-RENA	Belum lapar. Aku cuma mau duduk dekat jendela.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:48:06+07:00	AKT-RAKA	Udara pagi enak di sana?
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:53:23+07:00	AKT-RENA	Lumayan, cuma motor mulai ramai.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:54:40+07:00	AKT-RAKA	Tutup setengah kalau berisik.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T08:58:06+07:00	AKT-RENA	Aku bawa buku, mau baca beberapa halaman.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T09:06:23+07:00	AKT-RAKA	Oke. Jangan merasa harus mengisi setiap menit.
+KONV-CTX-RENA-0714-PAGI	2026-07-14T09:09:40+07:00	AKT-RENA	Aku tahu. Tadi cuma terasa aneh bangun lebih awal.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:18:06+07:00	AKT-REZA	Pintu lemari yang miring akhirnya bisa kututup.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:21:23+07:00	AKT-RAKA	Kamu memperbaikinya?
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:28:40+07:00	AKT-REZA	Nggak. Aku geser tas yang mengganjal.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:30:06+07:00	AKT-RAKA	Jadi bukan engselnya rusak.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:35:23+07:00	AKT-REZA	Iya, dari kemarin aku menyalahkan pintu.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:36:40+07:00	AKT-RAKA	Tasnya pasti diam saja dituduh.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:40:06+07:00	AKT-REZA	Sekarang kutaruh di atas kursi.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:48:23+07:00	AKT-RAKA	Kalau kursinya masih dipakai, taruh di lantai kering.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:51:40+07:00	AKT-REZA	Kursinya kosong. Aku nggak akan menyalahkan dia juga.
+KONV-CTX-REZA-0714-PINTU	2026-07-14T14:57:06+07:00	AKT-RAKA	Kabar baik untuk semua perabot.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T06:58:06+07:00	AKT-TANIA	Aku terbangun karena nada telepon orang lain.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:01:23+07:00	AKT-RAKA	Kamu kira HP-mu yang bunyi?
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:08:40+07:00	AKT-TANIA	Iya. Aku langsung cari di bawah bantal.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:10:06+07:00	AKT-RAKA	Punya siapa ternyata?
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:15:23+07:00	AKT-TANIA	Nggak tahu. Sumbernya dari luar kamar.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:16:40+07:00	AKT-RAKA	Kalau begitu kamu masih bisa tidur lagi.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:20:06+07:00	AKT-TANIA	Sudah terlalu terang. Aku mau cuci muka.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:28:23+07:00	AKT-RAKA	Minum juga kalau baru bangun.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:31:40+07:00	AKT-TANIA	Iya. Aku belum mau telepon siapa-siapa sekarang.
+KONV-CTX-TANIA-0715-SUARA	2026-07-15T07:37:06+07:00	AKT-RAKA	Oke, aku nggak menunggu panggilanmu.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:07:06+07:00	AKT-NARA	Satu earbud-ku bunyinya lebih kecil.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:10:23+07:00	AKT-RAKA	Sudah cek volumenya di aplikasi?
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:17:40+07:00	AKT-NARA	Sama. Yang kanan mungkin kotor.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:19:06+07:00	AKT-RAKA	Bersihkan pelan, jangan tusuk lubangnya.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:24:23+07:00	AKT-NARA	Aku cuma lap bagian luar. Sekarang sedikit lebih jelas.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:25:40+07:00	AKT-RAKA	Kalau masih berat sebelah, pakai satu dulu.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:29:06+07:00	AKT-NARA	Aku sedang dengar lagu, bukan perlu telepon.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:37:23+07:00	AKT-RAKA	Berarti nggak mendesak. Simpan sampai nanti.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:40:40+07:00	AKT-NARA	Ya. Aku nggak mau bongkar benda kecil malam ini.
+KONV-CTX-NARA-0715-KUPING	2026-07-15T21:46:06+07:00	AKT-RAKA	Keputusan bijak.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:33:06+07:00	AKT-DINI	Roti yang kubeli kemarin ternyata isi dua rasa.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:36:23+07:00	AKT-RAKA	Kamu pilih yang mana?
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:43:40+07:00	AKT-DINI	Satu cokelat, satu keju. Bungkusnya tidak jelas.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:45:06+07:00	AKT-RAKA	Makan yang kamu suka dulu.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:50:23+07:00	AKT-DINI	Aku mau simpan keju buat nanti, tapi takut lupa.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:51:40+07:00	AKT-RAKA	Tulis di tasmu 'ada roti' 😂
+KONV-CTX-DINI-0716-ROTI	2026-07-16T07:55:06+07:00	AKT-DINI	Aku nggak akan menempel catatan di tas.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T08:03:23+07:00	AKT-RAKA	Taruh dekat botol air yang sering kamu ambil.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T08:06:40+07:00	AKT-DINI	Oke. Cokelatnya sudah habis, enak juga.
+KONV-CTX-DINI-0716-ROTI	2026-07-16T08:12:06+07:00	AKT-RAKA	Kalau lupa keju, aku ingatkan nanti.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:27:06+07:00	AKT-BAGAS	Aku duduk di sini hampir setengah jam.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:30:23+07:00	AKT-RAKA	Menunggu siapa?
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:37:40+07:00	AKT-BAGAS	Orang yang bilang mau menyerahkan kertas, belum muncul.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:39:06+07:00	AKT-RAKA	Dia kasih perkiraan jam?
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:44:23+07:00	AKT-BAGAS	Katanya 'siang', itu saja.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:45:40+07:00	AKT-RAKA	Tanya kapan lebih jelas kalau kamu perlu pergi.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:49:06+07:00	AKT-BAGAS	Sudah kutanya. Belum dibalas.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T13:57:23+07:00	AKT-RAKA	Kalau begitu jangan menunggu tanpa batas.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T14:00:40+07:00	AKT-BAGAS	Aku beri waktu sebentar lagi, lalu pergi.
+KONV-CTX-BAGAS-0716-TUNGGU	2026-07-16T14:06:06+07:00	AKT-RAKA	Oke. Kabarin kalau ada pesan baru.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:24:06+07:00	AKT-RENA	Pagi ini lantai dingin sekali.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:27:23+07:00	AKT-RAKA	Kamu lupa pakai sandal?
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:34:40+07:00	AKT-RENA	Iya, ada di dekat kasur tapi aku langsung jalan.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:36:06+07:00	AKT-RAKA	Ambil dulu, jangan berdiri di keramik lama-lama.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:41:23+07:00	AKT-RENA	Sudah kupakai. Kaki jadi lebih enak.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:42:40+07:00	AKT-RAKA	Jendelanya dibuka sejak malam?
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:46:06+07:00	AKT-RENA	Sedikit, supaya nggak pengap.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:54:23+07:00	AKT-RAKA	Kalau angin masuk, tutup sampai siang.
+KONV-CTX-RENA-0717-DINGIN	2026-07-17T06:57:40+07:00	AKT-RENA	Kututup separuh. Aku mau tidur lagi sebentar.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:34:06+07:00	AKT-DINI	Aku sempat telepon, tapi langsung mati di detik pertama.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:37:23+07:00	AKT-RAKA	Sinyalku tadi hilang beberapa menit.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:44:40+07:00	AKT-DINI	Aku kira kamu menolak panggilan.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:46:06+07:00	AKT-RAKA	Nggak, layar malah nggak menunjukkan apa-apa.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:51:23+07:00	AKT-DINI	Aku mau tanya soal kertas di meja, sudah ketemu jawabannya.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:52:40+07:00	AKT-RAKA	Oh, kertas yang mana?
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T20:56:06+07:00	AKT-DINI	Yang ada daftar barang. Ada tanggal di baliknya.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T21:04:23+07:00	AKT-RAKA	Bagus. Maaf teleponnya tidak masuk.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T21:07:40+07:00	AKT-DINI	Nggak apa. Aku juga akhirnya baca sisi lain.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:31:06+07:00	AKT-RENA	Langit warnanya kelabu, tapi panasnya tetap terasa.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:34:23+07:00	AKT-RAKA	Awan tipis bisa bikin begitu.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:41:40+07:00	AKT-RENA	Aku mau jemur handuk, takut hujan sebentar lagi.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:43:06+07:00	AKT-RAKA	Kalau cuma satu, gantung di tempat yang bisa cepat diangkat.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:48:23+07:00	AKT-RENA	Ada dekat jendela. Aku masih bisa lihat dari meja.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:49:40+07:00	AKT-RAKA	Jangan tutup ventilasinya.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T10:53:06+07:00	AKT-RENA	Aku geser. Sekarang anginnya masuk juga.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T11:01:23+07:00	AKT-RAKA	Kalau tetes pertama turun, angkat segera.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T11:04:40+07:00	AKT-RENA	Aku belum pergi dari dekat sini.
+KONV-CTX-RENA-0718-LANGIT	2026-07-18T11:10:06+07:00	AKT-RAKA	Oke, kamu yang paling tahu langitnya di sana.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:36:06+07:00	AKT-BAGAS	Aku sudah membaca pesanmu, cuma belum tahu jawabannya.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:39:23+07:00	AKT-RAKA	Nggak mendesak. Tulis besok kalau perlu.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:46:40+07:00	AKT-BAGAS	Aku takut kamu pikir aku mengabaikan.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:48:06+07:00	AKT-RAKA	Aku lihat tanda sudah dibaca, itu cukup.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:53:23+07:00	AKT-BAGAS	Oke. Kepalaku capek, angka di layar jadi menari.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:54:40+07:00	AKT-RAKA	Simpan HP, tidur dulu.
+KONV-CTX-BAGAS-0718-BACA	2026-07-18T23:58:06+07:00	AKT-BAGAS	Aku pasang alarm dan taruh jauh dari bantal.
+KONV-CTX-BAGAS-0718-BACA	2026-07-19T00:06:23+07:00	AKT-RAKA	Kalau jauh, kamu harus bangun buat mematikannya.
+KONV-CTX-BAGAS-0718-BACA	2026-07-19T00:09:40+07:00	AKT-BAGAS	Itu rencananya, supaya nggak ketiduran lagi.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T07:51:06+07:00	AKT-REZA	Aku cuma butuh sabun, tapi di toko malah melihat gelas.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T07:54:23+07:00	AKT-RAKA	Kamu beli gelasnya?
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:01:40+07:00	AKT-REZA	Belum. Aku sadar bawa uang pas-pasan.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:03:06+07:00	AKT-RAKA	Kalau begitu fokus sabunnya dulu.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:08:23+07:00	AKT-REZA	Sudah bayar. Gelasnya mirip yang pecah dulu.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:09:40+07:00	AKT-RAKA	Bisa dibeli lain kali kalau masih ingin.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:13:06+07:00	AKT-REZA	Aku nggak benar-benar butuh. Cuma teringat.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:21:23+07:00	AKT-RAKA	Ya, jangan bawa pulang semua yang mengingatkanmu sesuatu.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:24:40+07:00	AKT-REZA	Aku tahu. Aku keluar toko dengan satu sabun saja.
+KONV-CTX-REZA-0719-BELANJA	2026-07-19T08:30:06+07:00	AKT-RAKA	Kemenangan buat dompetmu.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T06:53:06+07:00	AKT-RENA	Aku menemukan catatan angka lama di bawah tas.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T06:56:23+07:00	AKT-RAKA	Tanggalnya ada?
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:03:40+07:00	AKT-RENA	Ada, dari minggu lalu. Aku hampir pakai lagi.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:05:06+07:00	AKT-RAKA	Simpan terpisah dari yang baru.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:10:23+07:00	AKT-RENA	Aku tulis 'lama' di pojok, lalu lipat.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:11:40+07:00	AKT-RAKA	Jangan sampai tinta tembus ke halaman baru.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:15:06+07:00	AKT-RENA	Pakai pensil. Sudah masuk map belakang.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:23:23+07:00	AKT-RAKA	Oke, kalau butuh angka terbaru lihat pesan yang kemarin.
+KONV-CTX-RENA-0720-KERTAS	2026-07-20T07:26:40+07:00	AKT-RENA	Aku tahu. Aku cuma memberi tahu supaya tidak ada dua versi di meja.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:23:06+07:00	AKT-DINI	Pesanan makanan datang tanpa sendok lagi.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:26:23+07:00	AKT-RAKA	Di tempatmu ada sendok cadangan?
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:33:40+07:00	AKT-DINI	Ada satu. Untung kemarin belum kubuang.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:35:06+07:00	AKT-RAKA	Kalau plastiknya masih tertutup, bersih kan?
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:40:23+07:00	AKT-DINI	Ini sendok logam dari tas sendiri.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:41:40+07:00	AKT-RAKA	Lebih baik. Kamu sudah makan?
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:45:06+07:00	AKT-DINI	Belum, aku masih menyiapkan minum.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:53:23+07:00	AKT-RAKA	Jangan biarkan makanannya dingin cuma karena chat.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T17:56:40+07:00	AKT-DINI	Iya, aku taruh HP dulu. Nanti balas.
+KONV-CTX-DINI-0721-PESANAN	2026-07-21T18:02:06+07:00	AKT-RAKA	Oke, makan dulu.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:12:06+07:00	AKT-TANIA	Aku mau bilang sesuatu, tapi besok saja boleh?
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:15:23+07:00	AKT-RAKA	Boleh. Jam segini kamu terdengar capek.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:22:40+07:00	AKT-TANIA	Aku tidak mau membahasnya sambil emosi.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:24:06+07:00	AKT-RAKA	Ya, ambil waktu. Aku nggak minta jawabannya malam ini.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:29:23+07:00	AKT-TANIA	Makasih. Aku cuma perlu tahu chat ini masuk.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:30:40+07:00	AKT-RAKA	Masuk. Aku masih baca.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:34:06+07:00	AKT-TANIA	Oke, aku matikan lampu dulu.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:42:23+07:00	AKT-RAKA	Istirahat. Kita bicara kalau kamu siap.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:45:40+07:00	AKT-TANIA	Kalau aku bangun pagi, mungkin kukirim pesan singkat.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T22:51:06+07:00	AKT-RAKA	Nggak harus pagi. Pilih waktu yang enak.
+KONV-CTX-DINI-0717-TELEPON	2026-07-17T21:28:54+07:00	AKT-DINI	Kertasnya sudah kusimpan lagi di meja, bukan kubawa.
+KONV-CTX-TANIA-0721-MALAM	2026-07-21T23:12:20+07:00	AKT-TANIA	Iya. Aku cuma mau tidur tanpa memikirkan jam dulu.

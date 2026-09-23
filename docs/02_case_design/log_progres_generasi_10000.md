@@ -6,8 +6,8 @@ Branch: `p2-10k-work`
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
 | 2.000 | LULUS QA CHECKPOINT | 2.000 | 500 | 500 | 800 | 200 | Batch 005 +432 pesan; audit otomatis dan spot-check continuity selesai |
-| 4.000 | DALAM PROSES | 3.600 | 500 | 820 | 1.840 | 440 | Batch 009 +400 pesan lolos QA draf; lanjut |
-| 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
+| 4.000 | LULUS QA CHECKPOINT | 4.000 | 500 | 900 | 2.100 | 500 | Batch 010 +400 pesan; QA checkpoint dan spot-check selesai |
+| 6.000 | DALAM PROSES | 4.000 | 500 | 900 | 2.100 | 500 | Lanjut batch berikut tanpa menunggu konfirmasi |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 10.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | QA final | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -100,3 +100,11 @@ Pada setiap checkpoint catat:
 - Satu teks identik pada bridge R062/P34-YY tertangkap validator lalu diubah. Review lintas chat menemukan Dini pada dua conversation di menit sama, serta Raka berbalas dalam percakapan netral saat anchor lain sedang aktif; empat thread netral digeser.
 - Bridge R001/R002 menandai informasi tentang Maya sebagai belum pasti; tidak menambah penemuan atau hasil pencarian. Bridge R100 tentang Jihan tetap terkait komunikasi keluarga dan telepon, tanpa memperinci rokok atau aktivitas terlarang.
 - Ke checkpoint 4.000 tinggal 80 bridge, 260 context, dan 60 distractor. Audit final 10.000 masih tertunda.
+
+## Checkpoint 4.000 — Batch 010
+
+- Tambahan 400 pesan: 80 bridge, 260 context, 60 distractor. Kumulatif tepat 500/900/2.100/500; 353 conversation.
+- `message_id` unik 4.000/4.000; exact duplicate row 0; exact duplicate teks sintetis 0; tabrakan timestamp per conversation 0; kandidat near-duplicate panjang 0; kebocoran identitas sumber 0; seluruh 500 anchor exact-match. Empat conversation pasangan campur yang ada pada anchor baseline tidak diisi.
+- Replay bridge R048–R051, R058/R060/R061, R070, R093, R095: R050 menyambung keluarnya orang yang sebelumnya disebut belum selesai, tanpa mengubah janji berikutnya; R093 tetap berada pada percakapan penjemputan Jihan dari rumah ibu tanpa mengklaim perpindahan terjadi.
+- Audit lintas thread menemukan context Rena seolah sudah tidur/mute HP tepat sebelum anchor memintanya siap-siap; dipindah ke dini hari. Lima pasang pesan Dini yang terjadi hampir bersamaan di dua conversation dipisahkan waktunya. Balasan Raka tentang pintu lemari tidak lagi menempel pada chat Bagas. Tidak ditemukan konflik kronologi/state baru pada potongan yang ditinjau setelah koreksi. Audit semantik menyeluruh 4.000 baris belum setara dengan QA final 10.000.
+- Hash pada manifest anchor lama (`63ee…`) tetap berbeda dari bytes anchor di branch (`1285…`), sementara baris anchor pada corpus sama persis. Perlu rekonsiliasi provenance sebelum final. Lanjut ke batch 6.000: butuh 300 bridge, 1.300 context, 400 distractor sampai checkpoint berikutnya.
