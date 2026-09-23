@@ -1,12 +1,50 @@
-# Lingkungan virtual & cache Python
+# Python environments & cache
 env/
+.venv/
+venv/
 __pycache__/
+*.py[cod]
 
-# Abaikan dataset mentah ukuran raksasa
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large/raw archives
 *.zip
 
-# Abaikan kunci jawaban agar tidak bocor (opsional)
+# Legacy hidden ground truth
 libera_ground_truth/
 
-# Konfigurasi editor lokal
-.vscode/
+# Restricted/private research material
+evidence_vault/*
+!evidence_vault/README.md
+data/source_restricted/
+data/private/
+logs/raw/
+
+# Forensic image / acquisition formats
+*.E01
+*.e01
+*.dd
+*.img
+*.ad1
+*.ufdr
+*.ab
+
+# Local model/runtime artifacts
+.ollama/
+models/
+chroma/
+vector_store/
+*.sqlite3
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Temporary outputs
+tmp/
+temp/
