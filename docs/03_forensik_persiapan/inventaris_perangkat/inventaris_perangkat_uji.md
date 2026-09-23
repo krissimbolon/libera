@@ -25,6 +25,12 @@ Diperbarui: 2026-09-23
 - Set time zone automatically: **ON**
 - Sinkronisasi jam perangkat vs workstation: **selisih 1 detik (LULUS verifikasi awal)**
 
+## Developer options dan debugging
+
+- Developer options: **ON**
+- USB debugging: **ON**
+- Catatan: kondisi ini sudah aktif sebelum verifikasi ADB pada sesi P3 ini.
+
 ## Status jaringan baseline
 
 - Wi-Fi: **ON**
