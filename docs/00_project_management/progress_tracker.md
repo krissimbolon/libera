@@ -18,7 +18,7 @@ Updated: 2026-09-23
 | P11 | Presentation/demo | reproducible demo and defense materials | NOT STARTED | 0% |
 
 ## P0 completed items
-- research branch created: `uas-forensic-research-v2`
+- research branch created and renamed for active work: `proyek-uas-df`
 - v2 README created
 - research questions and evidence flow documented
 - provenance rules documented
