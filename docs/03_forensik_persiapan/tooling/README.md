@@ -122,3 +122,26 @@ FTK Imager / Autopsy / The Sleuth Kit akan diperlakukan terutama sebagai tool im
 
 ### Fallback bila Oxygen tidak tersedia
 Gunakan ADB untuk logical collection yang memang dapat diakses, ditambah artefak ekspor WhatsApp sebagai validation artefact, dengan limitation yang dinyatakan eksplisit. Jangan mengklaim full-file-system atau protected WhatsApp database acquisition dari ADB biasa.
+
+
+## Tool acquisition dipilih
+
+**Primary acquisition tool: Oxygen Forensic® Detective → Device Extractor → Android Agent**
+
+Status keputusan: **DIPILIH untuk workflow P3 LIBERA**.
+
+Rationale:
+- perangkat uji adalah Android 16, unlocked, non-root;
+- target acquisition adalah logical/selective collection yang terdokumentasi;
+- Android Agent berjalan sebagai aplikasi user-level/unprivileged;
+- mendukung logical extraction via USB/Wi-Fi;
+- mendukung WhatsApp sebagai supported app extraction pada workflow Android Agent;
+- tidak diklaim sebagai full-file-system extraction;
+- hasil acquisition tetap akan dipreservasi sebagai master evidence, di-hash SHA-256, lalu diperiksa dari working copy.
+
+Batasan yang wajib dicantumkan:
+- Android Agent memasang aplikasi pada perangkat sehingga terjadi perubahan state terkontrol;
+- Android Agent tidak memberi akses penuh ke internal memory / seluruh protected application files;
+- full file system/physical extraction adalah metode berbeda dan tidak akan diklaim bila tidak dilakukan.
+
+Versi exact Oxygen Forensic Detective dan Android Agent: **BELUM DICATAT — isi setelah trial/install berhasil**.
