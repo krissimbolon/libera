@@ -18,7 +18,9 @@ Catatan:
 ## Runtime / tooling
 
 - ADB: sudah didokumentasikan pada `../tooling/README.md`.
-- Python: **BELUM DICATAT**.
+- Python command `python --version`: **TIDAK TERSEDIA**
+- Output Windows: `Python was not found; run without arguments to install from the Microsoft Store...`
+- Status Python final: **BELUM DIKUNCI** — perlu cek launcher `py` sebelum menyimpulkan Python belum terpasang.
 - Hashing tool: **BELUM DIKUNCI**.
 - Acquisition tool: **BELUM DIKUNCI**.
 - Extraction tool: **BELUM DIKUNCI**.
