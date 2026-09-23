@@ -1,65 +1,65 @@
-# Master Progress Tracker
+# Pelacak Progres Utama
 
-Updated: 2026-09-23
+Diperbarui: 2026-09-23
 
-| ID | Milestone | Primary output | Status | Progress |
+| ID | Tahap | Luaran utama | Status | Progres |
 |---|---|---|---|---:|
-| P0 | Project setup & scope | research design, branch, folder structure, source/provenance rules | IN PROGRESS | 97% |
-| P1 | Source reconstruction & case design | 1–543 skeleton, verbatim recoveries, gaps, source registry | IN PROGRESS | 35% |
-| P2 | Indonesian synthetic adaptation | adapted actors, events, messages, distractors, ground truth | NOT STARTED | 0% |
-| P3 | Seizure & acquisition | seizure record, device documentation, acquisition, hashes | NOT STARTED | 0% |
-| P4 | Evidence extraction | structured WhatsApp artifacts, attachments, timestamps, evidence IDs | NOT STARTED | 0% |
-| P5 | Traditional forensic baseline | keyword, timeline, entity, relationship analysis | NOT STARTED | 0% |
-| P6 | RAG | domain KB, evidence index, provenance-aware retrieval | NOT STARTED | 0% |
-| P7 | Local LLM | Ollama model config, prompts, run logs | NOT STARTED | 0% |
-| P8 | Experiments | LLM-only vs RAG vs RAG + structured reasoning | NOT STARTED | 0% |
-| P9 | Validation & error mitigation | metrics, hallucination audit, SOLVE-IT-inspired error register | NOT STARTED | 0% |
-| P10 | Final report | verified findings, limitations, chain of custody, appendices | NOT STARTED | 0% |
-| P11 | Presentation/demo | reproducible demo and defense materials | NOT STARTED | 0% |
+| P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | BERJALAN | 99% |
+| P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 35% |
+| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BELUM MULAI | 0% |
+| P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
+| P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
+| P5 | Baseline forensik tradisional | kata kunci, timeline, entitas, analisis relasi | BELUM MULAI | 0% |
+| P6 | RAG | knowledge base domain, indeks bukti, retrieval berprovenance | BELUM MULAI | 0% |
+| P7 | LLM lokal | konfigurasi Ollama, prompt, log run | BELUM MULAI | 0% |
+| P8 | Eksperimen | LLM-only vs RAG vs RAG + structured reasoning | BELUM MULAI | 0% |
+| P9 | Validasi & mitigasi kesalahan | metrik, audit hallucination, error register berbasis SOLVE-IT | BELUM MULAI | 0% |
+| P10 | Laporan akhir | temuan terverifikasi, keterbatasan, chain of custody, lampiran | BELUM MULAI | 0% |
+| P11 | Presentasi/demo | demo yang dapat direproduksi dan materi pertahanan | BELUM MULAI | 0% |
 
-## P0 completed items
-- active research branch: `proyek-uas-df`
-- v2 README created
-- research questions and evidence flow documented
-- provenance rules documented
-- public/private evidence boundaries documented
-- forensic-safe .gitignore hardened
-- resource collection checklist created
-- team/environment intake template created
-- evidence/artifact ID convention created
-- team roles assigned: Chris, Bela, Meldiro, Daffa
-- candidate test device recorded: OPPO CPH2819 / Android 16 / Snapdragon 685 / 6 GB RAM
+## P0 yang sudah selesai
+- branch aktif: `proyek-uas-df`
+- README v2 tersedia
+- pertanyaan penelitian dan alur bukti terdokumentasi
+- aturan provenance terdokumentasi
+- batas data publik/privat terdokumentasi
+- `.gitignore` diperkeras untuk kebutuhan forensik
+- checklist pengumpulan sumber tersedia
+- konvensi ID bukti/artefak tersedia
+- peran tim: Chris, Bela, Meldiro, Daffa
+- perangkat uji: OPPO CPH2819 / Android 16 / Snapdragon 685 / RAM 6 GB
+- workstation: Intel Core i7-1255U / RAM 16 GB / Intel Iris Xe / ruang kosong sekitar 327 GB
 
-Remaining P0 items:
-- confirm acquisition/LLM workstation details;
-- confirm private evidence-storage location;
-- confirm remaining device metadata before acquisition (storage, WhatsApp version, test account, timezone, root state).
+## Sisa P0
+- konfirmasi lokasi penyimpanan bukti privat.
 
-## P1 completed items
-- initialized exact 1–543 reconstruction skeleton
-- initialized reconstruction coverage table
-- initialized QA review log
-- initialized resource intake and source-extraction logs
-- source registry created
-- provenance validator added
-- reconstruction schema test added
-- Document 547 ingested as SRC-001 and hashed
-- initial Exhibit 1A line-reference scan completed
-- internal source-reference anomalies identified and documented
-- explicit rule: no LLM gap filling during source reconstruction
+Metadata operasional perangkat dan versi alat yang belum ada akan dikunci sebelum P3, bukan menghambat penutupan desain proyek.
 
-Next P1 action:
-- extract message clusters into a restricted reconstruction workspace;
-- map only unambiguous messages to original lines;
-- keep contradictory/ambiguous line references unresolved;
-- seek corroboration from Docs. 382, 427, 512, exhibit lists, or Exhibit 1A;
-- calculate verified (not merely referenced) public-record coverage.
+## P1 yang sudah selesai
+- skeleton rekonstruksi 1–543 dibuat
+- tabel coverage rekonstruksi dibuat
+- log QA rekonstruksi dibuat
+- log intake sumber dan ekstraksi dibuat
+- registri sumber dibuat
+- validator provenance rekonstruksi dibuat
+- pengujian skema rekonstruksi dibuat
+- Document 547 diingest sebagai SRC-001 dan di-hash
+- audit awal referensi line Exhibit 1A selesai
+- anomali internal referensi sumber didokumentasikan
+- aturan eksplisit: tidak ada pengisian gap dengan LLM pada rekonstruksi sumber
 
-## Parallel team task
-Collect additional court records, authoritative human-trafficking domain sources, and workstation metadata using `docs/00_project_management/resource_collection_checklist.md`.
+## Tindakan P1 berikutnya
+- ekstrak klaster pesan ke ruang kerja rekonstruksi terbatas;
+- petakan hanya pesan dengan line yang tidak ambigu;
+- biarkan referensi konflik/ambigu tetap unresolved;
+- cari corroboration dari Doc. 382, 427, 512, daftar exhibit, atau Exhibit 1A;
+- hitung coverage publik yang benar-benar terverifikasi.
 
-## Team roles
-- Chris — Member A — Digital Forensics Lead
-- Bela — Member B — Case & Data Lead
-- Meldiro — Member C — AI/RAG Lead
-- Daffa — Member D — Validation & Documentation Lead
+## Tugas paralel tim
+Kumpulkan court record tambahan, sumber domain perdagangan orang yang otoritatif, dan sumber metodologis tambahan yang relevan.
+
+## Pembagian tim
+- Chris — Anggota A — Lead Forensik Digital
+- Bela — Anggota B — Lead Kasus & Data
+- Meldiro — Anggota C — Lead AI/RAG
+- Daffa — Anggota D — Lead Validasi & Dokumentasi
