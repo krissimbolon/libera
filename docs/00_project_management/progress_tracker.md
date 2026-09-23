@@ -6,7 +6,7 @@ Diperbarui: 2026-09-23
 |---|---|---|---|---:|
 | P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
 | P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 60% |
-| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BELUM MULAI | 0% |
+| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 12% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
 | P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
 | P5 | Baseline forensik tradisional | kata kunci, timeline, entitas, analisis relasi | BELUM MULAI | 0% |
@@ -39,6 +39,19 @@ Diperbarui: 2026-09-23
 - QA manual silang oleh anggota kedua;
 - bentuk actor/event/timeline ground truth yang tidak membocorkan evidence ke examiner;
 - kunci versi final rekonstruksi sebelum P2.
+
+## P2 — sudah dimulai
+- target corpus ditetapkan 10.000 pesan;
+- 500 pesan anchor berasal dari line Galloway yang sudah dipetakan;
+- 1.500 pesan bridge, 6.500 context, dan 1.500 distractor akan dibuat dalam semesta kasus yang sama;
+- latar utama dilokalisasi ke Bandung Raya dengan hotel/alamat/platform fiktif;
+- peta aktor sumber → aktor Indonesia telah ditetapkan;
+- aturan anti-duplikasi, provenance, ground-truth leakage, dan QA batch telah didokumentasikan.
+
+## Tindakan P2 berikutnya
+- produksi Batch A: 500 anchor Bahasa Indonesia;
+- validasi source_original_line dan transformation_id;
+- setelah anchor lolos QA, lanjutkan bridge/context/distractor secara bertahap.
 
 ## Tugas paralel tim
 Prioritaskan pencarian Doc. 382, Doc. 427, Doc. 512, exhibit list, atau Exhibit 1A. Sumber domain perdagangan orang Indonesia dapat terus dikumpulkan untuk P2/P6.
