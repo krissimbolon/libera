@@ -6,7 +6,7 @@ Branch: `p2-10k-work`
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
 | 2.000 | LULUS QA CHECKPOINT | 2.000 | 500 | 500 | 800 | 200 | Batch 005 +432 pesan; audit otomatis dan spot-check continuity selesai |
-| 4.000 | DALAM PROSES | 2.400 | 500 | 580 | 1.060 | 260 | Batch 006 +400 pesan lolos QA draf; lanjut |
+| 4.000 | DALAM PROSES | 2.800 | 500 | 660 | 1.320 | 320 | Batch 007 +400 pesan lolos QA draf; lanjut |
 | 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 10.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -76,3 +76,11 @@ Pada setiap checkpoint catat:
 - Bridge pada percakapan Tania/Nara/Caca/Dini ditinjau berurutan dengan anchor. Detail jam tutup kantor Dini yang tidak didukung anchor dihapus; kalimat pembelian charger diselaraskan dengan posisi Raka yang belum berangkat.
 - Context dipindah waktunya setelah ditemukan chat Rena yang bertumpuk dengan thread lain. Dialog sarapan Dini ditulis ulang karena proses memasak di kamar setelah pindah penginapan tidak terdukung. Distractor mempertahankan callback stiker ikan, kucing, dan payung tanpa outcome perkara baru.
 - QA final dan hash manifest jangkar masih terbuka. Perlu 320 bridge, 1.040 context, 240 distractor lagi untuk checkpoint 4.000.
+
+## Batch 007 — 2.800/10.000 (menuju checkpoint 4.000)
+
+- Tambahan 400 pesan: 80 bridge, 260 context, 60 distractor. Kumulatif 500/660/1.320/320; 256 conversation.
+- Validator: 0 ID/row/teks sintetis ganda, 0 collision timestamp conversation, 0 near-duplicate panjang, 0 leakage identitas sumber, 0 pasangan conversation baru bercampur. Anchor exact-match 500.
+- Replay bridge R063, R065, R066, R068, R069, R071, R075, R090–R092: tidak mengarang hasil perjalanan bus Tania atau menyelesaikan tekanan pada Jihan. Konten minor tetap pada komunikasi keluarga dan waktu penjemputan.
+- Reza dalam dua chat bersamaan serta Rena selama chat Nara dipisah waktunya. Dini pada 20 Juli digeser dari anchor Raka yang berdekatan. Context dan distractor menambah percakapan benda sehari-hari; ritme masih cenderung rapi dan perlu lebih banyak jeda/fragmen dalam batch selanjutnya.
+- Ke checkpoint 4.000 masih perlu 240 bridge, 780 context, 180 distractor. QA final belum selesai; mismatch hash manifest jangkar tetap dilacak.
