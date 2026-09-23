@@ -18,6 +18,13 @@ Diperbarui: 2026-09-23
 - Aplikasi: WhatsApp Messenger
 - Versi: **2.26.36.74**
 
+## Waktu dan timezone
+
+- Time zone: **GMT+07:00 / Jakarta**
+- Set time automatically: **ON**
+- Set time zone automatically: **ON**
+- Sinkronisasi jam perangkat vs workstation: BELUM DIUJI
+
 ## Status akun WhatsApp
 
 - Pengguna memiliki 2 akun WhatsApp aktif.
@@ -30,7 +37,7 @@ Diperbarui: 2026-09-23
 
 - versi WhatsApp: **WhatsApp Messenger 2.26.36.74**;
 - akun/SIM uji final;
-- timezone perangkat;
+- timezone perangkat: **GMT+07:00 / Jakarta; automatic time ON; automatic timezone ON**;
 - sinkronisasi jam perangkat vs workstation;
 - status root;
 - status jaringan;
