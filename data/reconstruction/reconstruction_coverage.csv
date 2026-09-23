@@ -1,8 +1,13 @@
 metric,value,notes
-expected_original_lines,543,Minimum line range referenced by the public court record
-court_verbatim,0,Populate only from explicit public-record quotations
-court_paraphrased,0,Use only when the record clearly paraphrases a message rather than quoting it
-inferred_metadata,0,Metadata inferred from surrounding court text must remain distinct from message text
-missing_from_public_record,543,Initial state before extraction
-coverage_verbatim_pct,0,Recalculate after source extraction
-coverage_any_public_support_pct,0,Recalculate after source extraction
+expected_original_lines,543,Rentang line Government Exhibit 1A yang digunakan pada rekonstruksi
+verified_line_mapping,500,Pemetaan pesan-line yang dapat dipertahankan setelah QA sumber Markdown kanonik
+court_verbatim,500,Isi pesan verbatim disimpan hanya pada workspace privat
+court_paraphrased,0,Tidak digunakan untuk line-level reconstruction v2
+inferred_metadata,0,Resolusi anomali dicatat pada confidence/notes dan tidak disamarkan sebagai sumber baru
+unresolved_quoted_or_referenced,42,Pesan/rentang disebut atau dikutip tetapi posisi line per pesan belum dapat ditentukan
+not_mentioned_doc547,1,Line 27 belum didukung cukup oleh Document 547
+unresolved_total,43,16-27;116-117;168-175;208-217;531-541
+verified_mapping_pct,92.08,500/543
+unresolved_pct,7.92,43/543
+canonical_source_sha256,195a880e87f59d882e70c16b4c42a9df23a0eaec547b928f1ad1a9afae4ae889,Document 547 Galloway.md
+private_package_sha256,5cf1e2e3f1631942fa98a8a5cc1a5307d8d08aad3419caad215b5e332e54785e,paket_rekonstruksi_privat_doc547_v2.zip
