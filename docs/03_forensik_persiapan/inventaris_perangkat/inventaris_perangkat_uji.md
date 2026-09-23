@@ -85,3 +85,10 @@ Sisa ±13 GB cukup untuk tahap persiapan dan corpus teks, tetapi dinilai terlalu
 - `adb shell su -c id`: `su: inaccessible or not found`.
 - Kesimpulan operasional: **tidak ada indikasi perangkat rooted pada baseline pemeriksaan saat ini**.
 - Catatan metodologis: ini adalah kesimpulan berbasis pemeriksaan aplikasi dan ADB, bukan pembuktian absolut terhadap seluruh kemungkinan modifikasi sistem.
+
+
+## Battery/power baseline
+- Snapshot saat persiapan P3: **28%**
+- Charging saat snapshot: **YES**
+- Status ini **bukan karakteristik tetap perangkat** dan tidak dikunci sebagai kondisi final akuisisi.
+- Battery level dan charging state wajib dicatat ulang pada saat simulasi/replay, tepat sebelum akuisisi, dan bila relevan saat akuisisi selesai.
