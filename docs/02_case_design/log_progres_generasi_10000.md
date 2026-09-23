@@ -6,7 +6,7 @@ Branch: `p2-10k-work`
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
 | 2.000 | LULUS QA CHECKPOINT | 2.000 | 500 | 500 | 800 | 200 | Batch 005 +432 pesan; audit otomatis dan spot-check continuity selesai |
-| 4.000 | DALAM PROSES | 2.800 | 500 | 660 | 1.320 | 320 | Batch 007 +400 pesan lolos QA draf; lanjut |
+| 4.000 | DALAM PROSES | 3.200 | 500 | 740 | 1.580 | 380 | Batch 008 +400 pesan lolos QA draf; lanjut |
 | 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 10.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -84,3 +84,11 @@ Pada setiap checkpoint catat:
 - Replay bridge R063, R065, R066, R068, R069, R071, R075, R090–R092: tidak mengarang hasil perjalanan bus Tania atau menyelesaikan tekanan pada Jihan. Konten minor tetap pada komunikasi keluarga dan waktu penjemputan.
 - Reza dalam dua chat bersamaan serta Rena selama chat Nara dipisah waktunya. Dini pada 20 Juli digeser dari anchor Raka yang berdekatan. Context dan distractor menambah percakapan benda sehari-hari; ritme masih cenderung rapi dan perlu lebih banyak jeda/fragmen dalam batch selanjutnya.
 - Ke checkpoint 4.000 masih perlu 240 bridge, 780 context, 180 distractor. QA final belum selesai; mismatch hash manifest jangkar tetap dilacak.
+
+## Batch 008 — 3.200/10.000 (menuju checkpoint 4.000)
+
+- Tambahan 400 pesan: 80 bridge, 260 context, 60 distractor. Kumulatif 500/740/1.580/380; 288 conversation.
+- QA otomatis: 0 message ID ganda, duplikat baris, teks sintetis identik, collision timestamp conversation, kandidat near-duplicate panjang, leakage sumber, dan pasangan conversation baru bercampur; 500 anchor tetap exact-match.
+- Saat review ditemukan tiga ID kontak yang keliru di draft R007/R009/R010; diperbaiki sebelum merge. Dua dialog Nara yang terformat sebagai Rena juga diperbaiki. Chat Caca dan Reza yang terlalu dekat dengan anchor lain digeser.
+- Bridge baru pada R006/R007/R009–R012, R024, R041, R062, R113 menjawab anchor tanpa memaksakan outcome. Beberapa penutup rapi di context dipotong dan diganti pesan lanjutan agar ritme tidak seragam.
+- Ke checkpoint 4.000 perlu 160 bridge, 520 context, dan 120 distractor lagi. Mismatch manifest SHA tetap terbuka.
