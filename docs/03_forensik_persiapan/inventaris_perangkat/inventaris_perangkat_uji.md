@@ -25,6 +25,14 @@ Diperbarui: 2026-09-23
 - Set time zone automatically: **ON**
 - Sinkronisasi jam perangkat vs workstation: **selisih 1 detik (LULUS verifikasi awal)**
 
+## Status jaringan baseline
+
+- Wi-Fi: **ON**
+- Mobile data: **ON**
+- Bluetooth: **ON**
+- Airplane mode: **OFF**
+- Status koneksi Wi-Fi aktif/terhubung: BELUM DICATAT
+
 ## Status root
 
 - Magisk: **tidak ada**
@@ -48,7 +56,7 @@ Diperbarui: 2026-09-23
 - timezone perangkat: **GMT+07:00 / Jakarta; automatic time ON; automatic timezone ON**;
 - sinkronisasi jam perangkat vs workstation;
 - status root: **tidak ada Magisk/SuperSU/KernelSU; verifikasi ADB belum dilakukan**;
-- status jaringan;
+- status jaringan: **Wi-Fi ON; mobile data ON; Bluetooth ON; airplane mode OFF**;
 - USB debugging;
 - battery/power state awal;
 - kapasitas penyimpanan yang akan dikosongkan sebelum simulasi final.
