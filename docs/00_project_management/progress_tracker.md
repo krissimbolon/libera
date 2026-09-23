@@ -6,7 +6,7 @@ Diperbarui: 2026-09-23
 |---|---|---|---|---:|
 | P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
 | P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 60% |
-| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 12% |
+| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 25% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
 | P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
 | P5 | Baseline forensik tradisional | kata kunci, timeline, entitas, analisis relasi | BELUM MULAI | 0% |
@@ -49,7 +49,7 @@ Diperbarui: 2026-09-23
 - aturan anti-duplikasi, provenance, ground-truth leakage, dan QA batch telah didokumentasikan.
 
 ## Tindakan P2 berikutnya
-- produksi Batch A: 500 anchor Bahasa Indonesia;
+- Worker A selesai menghasilkan 239 anchor untuk source line 1–271;\n- Worker B sedang mengerjakan source line 272–543; branch saat pemeriksaan berisi 89 anchor sampai line 360;\n- selesaikan dan audit Batch B sebelum merge 500 anchor;
 - validasi source_original_line dan transformation_id;
 - setelah anchor lolos QA, lanjutkan bridge/context/distractor secara bertahap.
 
