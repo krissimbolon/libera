@@ -1,0 +1,36 @@
+{
+  "status": "DRAFT_INCOMPLETE",
+  "total": 572,
+  "target": 10000,
+  "provenance_counts": {
+    "ADAPTED_FROM_GALLOWAY": 500,
+    "SYNTHETIC_BRIDGE": 72,
+    "SYNTHETIC_CONTEXT": 0,
+    "SYNTHETIC_DISTRACTOR": 0
+  },
+  "provenance_targets": {
+    "ADAPTED_FROM_GALLOWAY": 500,
+    "SYNTHETIC_BRIDGE": 1500,
+    "SYNTHETIC_CONTEXT": 6500,
+    "SYNTHETIC_DISTRACTOR": 1500
+  },
+  "conversation_count": 101,
+  "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
+  "manifest_anchor_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
+  "manifest_hash_matches_committed_anchor": false,
+  "working_sha256": "fbd971e9088bd040c47ca0861c5e438fa59711b94e3ea65a508c417fc9c834a3",
+  "anchor_row_exact_match": true,
+  "duplicate_message_ids": 0,
+  "duplicate_synthetic_text": 0,
+  "same_conversation_timestamp_collisions": [],
+  "baseline_mixed_anchor_conversations": {
+    "KONV-GAL-P22-C": 2,
+    "KONV-GAL-R013": 2,
+    "KONV-GAL-R080": 2,
+    "KONV-GAL-R088": 2
+  },
+  "new_mixed_conversations": 0,
+  "source_identity_leak_in_new_messages": 0,
+  "near_duplicate_long_text_candidates": [],
+  "manual_continuity_review": "Draft 001 replayed with adjacent anchors; later drafts and full actor-state audit pending."
+}
