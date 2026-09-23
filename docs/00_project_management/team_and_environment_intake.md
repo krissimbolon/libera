@@ -5,10 +5,10 @@ Fill this before P0 is closed.
 ## Team
 | Placeholder | Name | Primary role | Reviewer role |
 |---|---|---|---|
-| Member A |  | Digital Forensics Lead | Baseline / validation review |
-| Member B |  | Case & Data Lead | RAG/data review |
-| Member C |  | AI/RAG Lead | Experiment review |
-| Member D |  | Validation & Documentation Lead | Forensic/report review |
+| Member A | Chris | Digital Forensics Lead | Baseline / validation review |
+| Member B | Bela | Case & Data Lead | RAG/data review |
+| Member C | Meldiro | AI/RAG Lead | Experiment review |
+| Member D | Daffa | Validation & Documentation Lead | Forensic/report review |
 
 ## Test device
 - Device type: Android phone / emulator
