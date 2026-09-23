@@ -1,6 +1,6 @@
 # Audit draf 001 — corpus WhatsApp LIBERA
 
-Status: **belum final**. Branch: `p2-10k-work`.
+Status: **belum final**. Branch: `p2-10k-work`. Audit ini mencatat draf 001; kelanjutan draf 002 dicatat pada log progres dan `qa_corpus_working.json`.
 
 ## Cakupan
 

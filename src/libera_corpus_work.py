@@ -12,14 +12,16 @@ import json
 import re
 from difflib import SequenceMatcher
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "adaptasi_indonesia"
 ANCHOR = DATA / "anchor_indonesia_500.csv"
-DRAFT = DATA / "bridge_draft_001.tsv"
+DRAFTS = [DATA / "bridge_draft_001.tsv", DATA / "bridge_draft_002.tsv"]
+CONTEXT_DRAFTS = [DATA / "context_draft_001.tsv"]
+DISTRACTOR_DRAFTS = [DATA / "distractor_draft_001.tsv"]
 WORK = DATA / "corpus_whatsapp_working.csv"
 QA = DATA / "qa_corpus_working.json"
 # SHA of the actual committed anchor bytes on p2-10k-work. The older manifest
@@ -50,12 +52,14 @@ def digest(path: Path) -> str:
 def main() -> None:
     assert digest(ANCHOR) == EXPECTED_ANCHOR_SHA, "Anchor byte hash changed"
     anchors = read(ANCHOR)
+    known_actor_ids = {r["sender_id"] for r in anchors} | {r["recipient_id"] for r in anchors}
+    known_actor_ids |= {r["actor_id"] for r in read(DATA / "registri_aktor_indonesia.csv")}
     coverage = {
         row["baris_exhibit1a"]: row["status_doc547"]
         for row in read(ROOT / "data" / "rekonstruksi" / "cakupan_baris_document_547_aman.csv")
     }
     assert all(coverage.get(row["source_original_line"], "").startswith("TERPETAKAN_") for row in anchors)
-    draft = read(DRAFT, "\t")
+    draft = [row for path in DRAFTS for row in read(path, "\t")]
     assert len(anchors) == 500 and len(draft) > 0
     fields = list(anchors[0])
     pairs: dict[str, set[frozenset[str]]] = defaultdict(set)
@@ -74,7 +78,8 @@ def main() -> None:
         assert sender in pair, (number, "sender outside conversation")
         recipient = next(x for x in pair if x != sender)
         assert len(item["message_text"].strip()) > 2, number
-        datetime.fromisoformat(item["timestamp"])
+        stamp = datetime.fromisoformat(item["timestamp"])
+        assert stamp.utcoffset() == timedelta(hours=7) and (2026, 7, 1) <= (stamp.year, stamp.month, stamp.day) <= (2026, 7, 21)
         messages.append(dict.fromkeys(fields, "") | {
             "message_id": f"ID-BRG-{number:04d}",
             "conversation_id": conversation,
@@ -85,6 +90,39 @@ def main() -> None:
             "message_type": "text",
             "source_provenance": "SYNTHETIC_BRIDGE",
         })
+
+    context = [row for path in CONTEXT_DRAFTS for row in read(path, "\t")]
+    distractors = [row for path in DISTRACTOR_DRAFTS for row in read(path, "\t")]
+    new_pairs: dict[str, set[frozenset[str]]] = defaultdict(set)
+    for provenance, rows, id_prefix, conversation_prefix in (
+        ("SYNTHETIC_CONTEXT", context, "ID-CTX-A", "KONV-CTX-"),
+        ("SYNTHETIC_DISTRACTOR", distractors, "ID-DST", "KONV-DST-"),
+    ):
+        for number, item in enumerate(rows, 1):
+            conversation = item["conversation_id"]
+            sender, recipient = item["sender_id"], item["recipient_id"]
+            pair = frozenset((sender, recipient))
+            assert len(pair) == 2 and "AKT-RAKA" in pair, number
+            assert sender in known_actor_ids and recipient in known_actor_ids, number
+            assert len(item["message_text"].strip()) > 2, number
+            stamp = datetime.fromisoformat(item["timestamp"])
+            assert stamp.utcoffset() == timedelta(hours=7) and (2026, 7, 1) <= (stamp.year, stamp.month, stamp.day) <= (2026, 7, 21)
+            if conversation in pairs:
+                assert len(pairs[conversation]) == 1 and pair in pairs[conversation], number
+            else:
+                assert conversation.startswith(conversation_prefix), number
+                new_pairs[conversation].add(pair)
+            messages.append(dict.fromkeys(fields, "") | {
+                "message_id": f"{id_prefix}-{number:04d}",
+                "conversation_id": conversation,
+                "timestamp": item["timestamp"],
+                "sender_id": sender,
+                "recipient_id": recipient,
+                "message_text": item["message_text"].strip(),
+                "message_type": "text",
+                "source_provenance": provenance,
+            })
+    assert all(len(v) == 1 for v in new_pairs.values()), "new conversation mixes actor pairs"
 
     messages.sort(key=lambda x: (x["timestamp"], x["message_id"]))
     ids = Counter(x["message_id"] for x in messages)
@@ -107,21 +145,34 @@ def main() -> None:
     assert {r["message_id"]: r for r in messages if r["message_id"] in anchor_by_id} == anchor_by_id
     assert all(set(row) == set(fields) for row in messages)
     near_pairs = []
+    shingle_index: dict[str, set[int]] = defaultdict(set)
     for i, left in enumerate(synthetic):
-        if len(left["message_text"]) < 35:
+        content = left["message_text"].lower()
+        if len(content) < 35:
             continue
-        for right in synthetic[i + 1:]:
-            if len(right["message_text"]) < 35:
+        words = re.findall(r"\w+", content)
+        shingles = {" ".join(words[j:j+3]) for j in range(len(words)-2)}
+        candidates = set().union(*(shingle_index[s] for s in shingles)) if shingles else set()
+        for j in candidates:
+            right = synthetic[j]
+            other = right["message_text"].lower()
+            if len(other) < 35 or min(len(content), len(other)) / max(len(content), len(other)) < 0.75:
                 continue
-            score = SequenceMatcher(None, left["message_text"].lower(), right["message_text"].lower()).ratio()
+            score = SequenceMatcher(None, content, other).ratio()
             if score >= 0.86:
                 near_pairs.append((left["message_id"], right["message_id"], round(score, 3)))
+        for shingle in shingles:
+            shingle_index[shingle].add(i)
 
     with WORK.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         writer.writerows(messages)
     counts = Counter(r["source_provenance"] for r in messages)
+    assert counts["SYNTHETIC_BRIDGE"] <= 1500
+    assert counts["SYNTHETIC_CONTEXT"] <= 3250  # First context namespace is Worker A.
+    assert counts["SYNTHETIC_DISTRACTOR"] <= 1500
+    day_counts = Counter(r["timestamp"][:10] for r in messages)
     qa = {
         "status": "DRAFT_INCOMPLETE",
         "total": len(messages),
@@ -129,6 +180,7 @@ def main() -> None:
         "provenance_counts": {k: counts[k] for k in PROVENANCE_TARGET},
         "provenance_targets": PROVENANCE_TARGET,
         "conversation_count": len({r["conversation_id"] for r in messages}),
+        "message_counts_by_day": dict(sorted(day_counts.items())),
         "anchor_sha256": digest(ANCHOR),
         "manifest_anchor_sha256": MANIFEST_ANCHOR_SHA,
         "manifest_hash_matches_committed_anchor": digest(ANCHOR) == MANIFEST_ANCHOR_SHA,
@@ -138,10 +190,10 @@ def main() -> None:
         "duplicate_synthetic_text": duplicate_texts,
         "same_conversation_timestamp_collisions": time_collisions,
         "baseline_mixed_anchor_conversations": mixed_baseline,
-        "new_mixed_conversations": 0,
+        "new_mixed_conversations": sum(len(v) != 1 for v in new_pairs.values()),
         "source_identity_leak_in_new_messages": 0,
         "near_duplicate_long_text_candidates": near_pairs,
-        "manual_continuity_review": "Draft 001 replayed with adjacent anchors; later drafts and full actor-state audit pending.",
+        "manual_continuity_review": "Bridge drafts 001–002 replayed with adjacent anchors; context/distractor threads spot-checked; full actor-state audit pending.",
     }
     QA.write_text(json.dumps(qa, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(qa, indent=2, ensure_ascii=False))

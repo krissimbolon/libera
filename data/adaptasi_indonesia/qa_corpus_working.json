@@ -1,12 +1,12 @@
 {
   "status": "DRAFT_INCOMPLETE",
-  "total": 572,
+  "total": 768,
   "target": 10000,
   "provenance_counts": {
     "ADAPTED_FROM_GALLOWAY": 500,
-    "SYNTHETIC_BRIDGE": 72,
-    "SYNTHETIC_CONTEXT": 0,
-    "SYNTHETIC_DISTRACTOR": 0
+    "SYNTHETIC_BRIDGE": 168,
+    "SYNTHETIC_CONTEXT": 70,
+    "SYNTHETIC_DISTRACTOR": 30
   },
   "provenance_targets": {
     "ADAPTED_FROM_GALLOWAY": 500,
@@ -14,11 +14,34 @@
     "SYNTHETIC_CONTEXT": 6500,
     "SYNTHETIC_DISTRACTOR": 1500
   },
-  "conversation_count": 101,
+  "conversation_count": 111,
+  "message_counts_by_day": {
+    "2026-07-01": 68,
+    "2026-07-02": 49,
+    "2026-07-03": 56,
+    "2026-07-04": 23,
+    "2026-07-05": 20,
+    "2026-07-06": 50,
+    "2026-07-07": 51,
+    "2026-07-08": 13,
+    "2026-07-09": 13,
+    "2026-07-10": 47,
+    "2026-07-11": 32,
+    "2026-07-12": 44,
+    "2026-07-13": 20,
+    "2026-07-14": 3,
+    "2026-07-15": 37,
+    "2026-07-16": 66,
+    "2026-07-17": 52,
+    "2026-07-18": 32,
+    "2026-07-19": 43,
+    "2026-07-20": 40,
+    "2026-07-21": 9
+  },
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
   "manifest_anchor_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
   "manifest_hash_matches_committed_anchor": false,
-  "working_sha256": "fbd971e9088bd040c47ca0861c5e438fa59711b94e3ea65a508c417fc9c834a3",
+  "working_sha256": "a11067fa3bbd18db4f203b0c3ec886812a599bb7060ba505ff243def2945e858",
   "anchor_row_exact_match": true,
   "duplicate_message_ids": 0,
   "duplicate_synthetic_text": 0,
@@ -32,5 +55,5 @@
   "new_mixed_conversations": 0,
   "source_identity_leak_in_new_messages": 0,
   "near_duplicate_long_text_candidates": [],
-  "manual_continuity_review": "Draft 001 replayed with adjacent anchors; later drafts and full actor-state audit pending."
+  "manual_continuity_review": "Bridge drafts 001–002 replayed with adjacent anchors; context/distractor threads spot-checked; full actor-state audit pending."
 }
