@@ -6,7 +6,7 @@ Diperbarui: 2026-09-23
 |---|---|---|---|---:|
 | P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
 | P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 60% |
-| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 40% |
+| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 42% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
 | P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
 | P5 | Baseline forensik tradisional | kata kunci, timeline, entitas, analisis relasi | BELUM MULAI | 0% |
@@ -80,3 +80,12 @@ Prioritaskan pencarian Doc. 382, Doc. 427, Doc. 512, exhibit list, atau Exhibit 
 - Bela — Anggota B — Lead Kasus & Data
 - Meldiro — Anggota C — Lead AI/RAG
 - Daffa — Anggota D — Lead Validasi & Dokumentasi
+
+
+## Perubahan strategi P2 — single GPT via Work
+- Strategi generasi paralel dihentikan sementara untuk corpus 10.000 agar kontinuitas percakapan lebih terjaga.
+- Branch eksekusi utama generasi: `p2-10k-work`.
+- Satu sesi ChatGPT Work akan menghasilkan 9.500 pesan tambahan dengan 500 anchor sebagai reference set immutable.
+- Checkpoint: 500, 2.000, 4.000, 6.000, 8.000, 10.000, lalu QA final.
+- Bahasa Indonesia diwajibkan natural dan percakapan, tidak terlalu formal.
+- Branch `p2-jembatan` dan `p2-konteks-distraktor` tidak digunakan dulu; jangan merge hasil dari keduanya selama strategi single-Work aktif.
