@@ -13,6 +13,11 @@ Diperbarui: 2026-09-23
 - Storage terpakai: **115 GB**
 - Storage tersedia: **±13 GB**
 
+## Versi WhatsApp
+
+- Aplikasi: WhatsApp Messenger
+- Versi: **2.26.36.74**
+
 ## Status akun WhatsApp
 
 - Pengguna memiliki 2 akun WhatsApp aktif.
@@ -23,7 +28,7 @@ Diperbarui: 2026-09-23
 
 ## Item yang masih harus diverifikasi
 
-- versi WhatsApp;
+- versi WhatsApp: **WhatsApp Messenger 2.26.36.74**;
 - akun/SIM uji final;
 - timezone perangkat;
 - sinkronisasi jam perangkat vs workstation;
