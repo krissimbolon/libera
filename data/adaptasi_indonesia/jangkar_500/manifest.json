@@ -1,0 +1,12 @@
+{
+  "file_gabungan": "anchor_indonesia_500.csv",
+  "sha256_file_gabungan": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
+  "jumlah_baris_data": 500,
+  "bagian": [
+    {"file":"bagian_01.csv","baris":100,"sha256":"3aac6fc7b0789963ab1c08e4eb8ded38c8ab908864c07bb84a7c10ba6d7a4b27"},
+    {"file":"bagian_02.csv","baris":100,"sha256":"7a3974d1ba6dcb7b7bbdd1a51c63e04ff031d2b410c2eceb3c1614cdd64bd2bc"},
+    {"file":"bagian_03.csv","baris":100,"sha256":"28c903d29e785c2bfe9b7273ea52d3f8a07ffa2dc087f1868c65b7c7f3fe4165"},
+    {"file":"bagian_04.csv","baris":100,"sha256":"7a50e37fb6adf9bd9d7da44fc56b00f5346fe77f231416eac25487856b002392"},
+    {"file":"bagian_05.csv","baris":100,"sha256":"b165e742b36b6be85f9b4e1421dedeb76b47031f44d96d22a4b6b9a6750d8229"}
+  ]
+}
