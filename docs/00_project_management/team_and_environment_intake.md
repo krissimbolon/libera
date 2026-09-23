@@ -50,15 +50,23 @@ Dokumen ini digunakan untuk mengunci informasi tim, perangkat uji, workstation, 
 Device ID dan Product ID sengaja tidak dicatat pada dokumen repositori karena tidak diperlukan untuk reproduksibilitas eksperimen dan dapat mengidentifikasi instalasi/perangkat secara lebih spesifik.
 
 ## Penyimpanan bukti privat
-- Lokasi/perangkat: BELUM DIKONFIRMASI
-- Enkripsi/cadangan: BELUM DIKONFIRMASI
+- Lokasi utama: `D:\KSI\Libera Private Evidence`
+- Pemilik/host: workstation Chris
+- Status: DIKONFIRMASI
+- Enkripsi/cadangan: AKAN DITETAPKAN SEBELUM AKUISISI
 
-## Kriteria selesai P0
-P0 dapat ditutup ketika:
-1. nama dan peran empat anggota telah ditetapkan;
-2. perangkat uji telah dipilih;
-3. workstation telah diidentifikasi;
-4. repositori/branch aktif telah ditetapkan;
-5. lokasi penyimpanan bukti privat telah dikonfirmasi.
+### Struktur lokal yang disarankan
+```text
+D:\KSI\Libera Private Evidence\
+├── 01_sumber_asli\
+├── 02_master_evidence\
+├── 03_working_copy\
+├── 04_ground_truth\
+├── 05_log_akuisisi\
+└── 06_rekonstruksi_terbatas\
+```
 
-Metadata seperti versi WhatsApp, zona waktu, status root, dan versi alat dapat dikunci tepat sebelum tahap akuisisi.
+Aturan: file master tidak diedit; analisis dilakukan pada working copy; hash dan metadata aman dapat dicatat di GitHub publik.
+
+## Status P0
+P0 SELESAI pada 2026-09-23. Metadata operasional perangkat dan versi alat yang belum ada akan dikunci tepat sebelum tahap akuisisi P3 dan tidak menghambat penutupan desain proyek.
