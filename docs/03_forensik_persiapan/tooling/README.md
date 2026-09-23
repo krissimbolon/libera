@@ -49,3 +49,20 @@ Kesimpulan:
 - Sumber: Android SDK Platform Tools resmi
 - Status: **terpasang dan berhasil dijalankan**
 - Verifikasi: `.\adb.exe version` berhasil tanpa error
+
+
+## Verifikasi koneksi ADB ke perangkat
+
+Percobaan awal `.\adb.exe devices`:
+- daemon ADB berhasil berjalan pada tcp:5037;
+- perangkat terdeteksi;
+- status koneksi: **unauthorized**.
+
+Interpretasi:
+- koneksi USB dan deteksi ADB sudah berfungsi;
+- workstation belum diotorisasi oleh perangkat Android untuk sesi debugging;
+- identitas/serial perangkat tidak dicatat di repositori publik.
+
+Tindakan berikut:
+- otorisasi RSA debugging dari layar perangkat;
+- ulangi `.\adb.exe devices` hingga status menjadi `device`.
