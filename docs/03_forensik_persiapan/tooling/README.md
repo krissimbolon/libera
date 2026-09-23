@@ -72,3 +72,11 @@ Tindakan berikut:
 - Status setelah otorisasi RSA pada perangkat: **device**
 - Koneksi ADB workstation ↔ perangkat: **berhasil**
 - Serial/identifier perangkat: **tidak dicatat di repositori publik**
+
+
+### Pemeriksaan privilege ADB
+- Command: `.\adb.exe shell id`
+- Hasil utama: `uid=2000(shell) gid=2000(shell)`
+- SELinux context: `u:r:shell:s0`
+- Interpretasi: shell ADB tidak berjalan sebagai root.
+- Pemeriksaan `su` tetap diperlukan untuk memastikan tidak ada binary/root manager tersembunyi yang dapat memberi privilege root.
