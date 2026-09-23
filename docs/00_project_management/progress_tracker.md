@@ -6,7 +6,7 @@ Diperbarui: 2026-09-23
 |---|---|---|---|---:|
 | P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
 | P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 60% |
-| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 25% |
+| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 38% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
 | P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
 | P5 | Baseline forensik tradisional | kata kunci, timeline, entitas, analisis relasi | BELUM MULAI | 0% |
@@ -48,10 +48,28 @@ Diperbarui: 2026-09-23
 - peta aktor sumber → aktor Indonesia telah ditetapkan;
 - aturan anti-duplikasi, provenance, ground-truth leakage, dan QA batch telah didokumentasikan.
 
+## P2 — status integrasi anchor
+- Worker A: **239 anchor** untuk source line 1–271 yang terpetakan; QA struktural lulus.
+- Worker B: **261 anchor** untuk source line 272–543 yang terpetakan; branch `p2-paralel-b` telah lengkap sampai `ID-GAL-0543`.
+- Gabungan: **500/500 source line terpetakan**, tanpa overlap dan tanpa unresolved line.
+- Hasil integrasi kanonik lokal: `anchor_indonesia_500.csv`.
+- SHA-256 hasil integrasi: `63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24`.
+- Actor ID, conversation ID, timestamp skenario, nominal rupiah, dan lokalisasi nama telah dinormalisasi lintas-worker.
+- Exact duplicate row: 0.
+- Tahap anchor dinyatakan **LOCKED** untuk ekspansi P2.
+
+## Temuan audit Git
+- `main` bukan branch kanonik eksperimen.
+- PR #3 ke `main` tidak membawa file CSV Worker A; hanya dokumen perencanaan.
+- PR #4 ke `main` di-merge saat Worker B baru 179 baris (272–450).
+- Branch `p2-paralel-b` terbaru memiliki 261 baris lengkap.
+- Semua integrasi berikutnya wajib mengacu ke `proyek-uas-df`, bukan `main`.
+
 ## Tindakan P2 berikutnya
-- Worker A selesai menghasilkan 239 anchor untuk source line 1–271;\n- Worker B sedang mengerjakan source line 272–543; branch saat pemeriksaan berisi 89 anchor sampai line 360;\n- selesaikan dan audit Batch B sebelum merge 500 anchor;
-- validasi source_original_line dan transformation_id;
-- setelah anchor lolos QA, lanjutkan bridge/context/distractor secara bertahap.
+- mulai produksi 1.500 `SYNTHETIC_BRIDGE`;
+- mulai produksi 6.500 `SYNTHETIC_CONTEXT` + 1.500 `SYNTHETIC_DISTRACTOR` secara paralel;
+- pertahankan 500 anchor sebagai immutable reference set;
+- jalankan QA duplicate, chronology, actor-state consistency, dan leakage setelah tiap batch.
 
 ## Tugas paralel tim
 Prioritaskan pencarian Doc. 382, Doc. 427, Doc. 512, exhibit list, atau Exhibit 1A. Sumber domain perdagangan orang Indonesia dapat terus dikumpulkan untuk P2/P6.
