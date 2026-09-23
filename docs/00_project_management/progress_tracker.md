@@ -4,8 +4,8 @@ Updated: 2026-09-23
 
 | ID | Milestone | Primary output | Status | Progress |
 |---|---|---|---|---:|
-| P0 | Project setup & scope | research design, branch, folder structure, source/provenance rules | IN PROGRESS | 90% |
-| P1 | Source reconstruction & case design | 1–543 skeleton, verbatim recoveries, gaps, source registry | IN PROGRESS | 15% |
+| P0 | Project setup & scope | research design, branch, folder structure, source/provenance rules | IN PROGRESS | 95% |
+| P1 | Source reconstruction & case design | 1–543 skeleton, verbatim recoveries, gaps, source registry | IN PROGRESS | 25% |
 | P2 | Indonesian synthetic adaptation | adapted actors, events, messages, distractors, ground truth | NOT STARTED | 0% |
 | P3 | Seizure & acquisition | seizure record, device documentation, acquisition, hashes | NOT STARTED | 0% |
 | P4 | Evidence extraction | structured WhatsApp artifacts, attachments, timestamps, evidence IDs | NOT STARTED | 0% |
@@ -18,13 +18,15 @@ Updated: 2026-09-23
 | P11 | Presentation/demo | reproducible demo and defense materials | NOT STARTED | 0% |
 
 ## P0 completed items
-- research branch created and renamed for active work: `proyek-uas-df`
+- active research branch: `proyek-uas-df`
 - v2 README created
 - research questions and evidence flow documented
 - provenance rules documented
 - public/private evidence boundaries documented
 - forensic-safe .gitignore hardened
 - resource collection checklist created
+- team/environment intake template created
+- evidence/artifact ID convention created
 
 Remaining P0 item:
 - replace Member A–D placeholders with real team names and confirm test-device/workstation details
@@ -33,11 +35,20 @@ Remaining P0 item:
 - initialized exact 1–543 reconstruction skeleton
 - initialized reconstruction coverage table
 - initialized QA review log
+- initialized resource intake and source-extraction logs
 - source registry created
+- provenance validator added
+- reconstruction schema test added
 - explicit rule: no LLM gap filling during source reconstruction
 
 Next P1 action:
-- ingest public court records supplied by the team and populate only source-supported rows with page/document provenance
+- ingest public court records supplied by the team;
+- populate only source-supported rows with document/page provenance;
+- run reconstruction validator;
+- calculate actual public-record coverage.
+
+## Parallel team task
+Collect public court records, human-trafficking domain sources, and test-environment metadata using `docs/00_project_management/resource_collection_checklist.md`.
 
 ## Team roles
 - Member A — Digital Forensics Lead
