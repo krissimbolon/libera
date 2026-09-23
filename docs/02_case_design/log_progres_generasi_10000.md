@@ -8,7 +8,7 @@ Branch: `p2-10k-work`
 | 2.000 | LULUS QA CHECKPOINT | 2.000 | 500 | 500 | 800 | 200 | Batch 005 +432 pesan; audit otomatis dan spot-check continuity selesai |
 | 4.000 | LULUS QA CHECKPOINT | 4.000 | 500 | 900 | 2.100 | 500 | Batch 010 +400 pesan; QA checkpoint dan spot-check selesai |
 | 6.000 | DALAM PROSES | 4.000 | 500 | 900 | 2.100 | 500 | Lanjut batch berikut tanpa menunggu konfirmasi |
-| 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
+| 8.000 | LULUS QA CHECKPOINT | 8.000 | 500 | 1.400 | 4.900 | 1.200 | Batches 015–017; structural/style checkpoint lulus |
 | 10.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | QA final | BELUM | 500 | 500 | 0 | 0 | 0 | |
 
@@ -147,3 +147,10 @@ Pada setiap checkpoint catat:
 - Namespace diperbaiki sesuai kontrak: CTX-A berakhir tepat di 3.250 dan context berikutnya dimulai CTX-B (saat checkpoint: CTX-B-0150).
 - Profil gaya: <=3 kata — bridge 225/1.200, context 862/3.400, distractor 261/900. Conversation tepat 10 pesan turun menjadi context 3 dan distractor 0, dari 77/44 pada state 4.650.
 - Perbaikan dilakukan melalui callback organik pada thread lama, variasi panjang 5–17 pesan, fragmen/double-text, dan thread baru yang tidak semuanya ditutup rapi; bukan pemotongan otomatis massal.
+
+## Checkpoint 8.000 — Batches 015–017
+
+- Tepat **8.000** pesan: 500 anchor, 1.400 bridge, 4.900 context, 1.200 distractor; 668 conversation.
+- QA: message_id unik 8.000/8.000; exact duplicate row 0; duplicate synthetic text 0; collision timestamp 0; near-duplicate panjang 0; source leakage 0; timestamp di luar skenario 0; anchor exact-match 500/500; mixed conversation baru 0.
+- Profil gaya <=3 kata: bridge 354/1.400, context 1.441/4.900, distractor 427/1.200. Thread tepat 10 pesan: context 0, distractor 1.
+- Namespace context: CTX-A tetap terkunci di 3.250; CTX-B mencapai 1.650. Tidak ada modifikasi anchor.
