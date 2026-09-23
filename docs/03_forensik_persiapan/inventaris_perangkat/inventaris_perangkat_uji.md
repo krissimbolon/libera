@@ -25,6 +25,14 @@ Diperbarui: 2026-09-23
 - Set time zone automatically: **ON**
 - Sinkronisasi jam perangkat vs workstation: **selisih 1 detik (LULUS verifikasi awal)**
 
+## Status root
+
+- Magisk: **tidak ada**
+- SuperSU: **tidak ada**
+- KernelSU: **tidak ada**
+- Kesimpulan sementara: **tidak ada indikasi root manager yang terlihat dari daftar aplikasi**.
+- Verifikasi teknis via ADB: **BELUM DILAKUKAN**.
+
 ## Status akun WhatsApp
 
 - Pengguna memiliki 2 akun WhatsApp aktif.
@@ -39,7 +47,7 @@ Diperbarui: 2026-09-23
 - akun/SIM uji final;
 - timezone perangkat: **GMT+07:00 / Jakarta; automatic time ON; automatic timezone ON**;
 - sinkronisasi jam perangkat vs workstation;
-- status root;
+- status root: **tidak ada Magisk/SuperSU/KernelSU; verifikasi ADB belum dilakukan**;
 - status jaringan;
 - USB debugging;
 - battery/power state awal;
