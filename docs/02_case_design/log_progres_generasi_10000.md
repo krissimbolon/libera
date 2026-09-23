@@ -132,3 +132,9 @@ Pada setiap checkpoint catat:
 - Continuity/actor-state spot-check: tambahan context/distractor tetap dyadic dengan Raka, tidak menambah outcome utama atau lokasi spesifik baru; Caca tidak diperpanjang setelah baseline blokir 19 Juli; Jihan tetap netral dan tersanitasi.
 - Profil gaya: <=3 kata — anchor 163/500, bridge 180/1.200, context 874/3.400, distractor 339/900. Distribusi pesan pendek membaik nyata dibanding 4k. Masalah tersisa: 80 context conversation dan 59 distractor conversation masih tepat 10 pesan; batch menuju 8k harus terutama memperpanjang thread ini secara organik dan menghindari thread baru berukuran seragam.
 - Discrepancy hash manifest anchor tetap isu provenance saja; 500 anchor tidak diubah.
+
+## Revert kualitas setelah Batch 011
+
+- Commit `78891ad939925247fca0b8046b6f7e8d9e78b747` menghapus delta corpus Batch 012–013 yang dinilai terlalu mekanis. Source of truth kembali ke **4.650** pesan: 500 anchor, 1.000 bridge, 2.530 context, 620 distractor.
+- Klaim checkpoint 6.000 yang sempat ditulis sebelum revert tidak lagi berlaku terhadap corpus kerja dan dinyatakan superseded.
+- Generasi berikutnya wajib dimulai dari Batch 011, mempertahankan perbaikan gaya melalui thread yang benar-benar beragam, callback organik, dan panjang percakapan tidak seragam.
