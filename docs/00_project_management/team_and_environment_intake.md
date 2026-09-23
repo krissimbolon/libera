@@ -1,53 +1,64 @@
-# Team & Test Environment Intake
+# Pendataan Tim dan Lingkungan Uji
 
-Fill this before P0 is closed.
+Dokumen ini digunakan untuk mengunci informasi tim, perangkat uji, workstation, dan penyimpanan bukti sebelum P0 ditutup.
 
-## Team
-| Placeholder | Name | Primary role | Reviewer role |
+## Tim
+| Kode | Nama | Peran utama | Peran penelaah |
 |---|---|---|---|
-| Member A | Chris | Digital Forensics Lead | Baseline / validation review |
-| Member B | Bela | Case & Data Lead | RAG/data review |
-| Member C | Meldiro | AI/RAG Lead | Experiment review |
-| Member D | Daffa | Validation & Documentation Lead | Forensic/report review |
+| Anggota A | Chris | Lead Forensik Digital | Telaah baseline / validasi |
+| Anggota B | Bela | Lead Kasus & Data | Telaah RAG / data |
+| Anggota C | Meldiro | Lead AI / RAG | Telaah eksperimen |
+| Anggota D | Daffa | Lead Validasi & Dokumentasi | Telaah forensik / laporan |
 
-## Test device
-- Device type: Android phone
-- Manufacturer/model: OPPO / CPH2819
+## Perangkat uji
+- Jenis perangkat: ponsel Android
+- Produsen/model: OPPO / CPH2819
 - SoC: Qualcomm Snapdragon 685 Octa-core
-- Android version: Android 16
-- Software version: CPH2819_16.0.5.1201 (EX01B110P02)
-- Kernel version: 5.15.197
+- Versi Android: Android 16
+- Versi perangkat lunak: CPH2819_16.0.5.1201 (EX01B110P02)
+- Versi kernel: 5.15.197
 - RAM: 6 GB
-- Battery: 6500 mAh
-- Storage: TO BE CONFIRMED
-- WhatsApp version: TO BE CONFIRMED
-- Test SIM/account: TO BE CONFIRMED
-- Timezone: TO BE CONFIRMED
-- Device clock synchronized?: TO BE CONFIRMED
-- Rooted/unrooted: TO BE CONFIRMED
-- Network state during acquisition: TO BE CONFIRMED
-- Notes: Candidate test device supplied by Chris on 2026-09-23. Do not alter/root/reset before acquisition protocol is finalized.
+- Baterai: 6500 mAh
+- Kapasitas penyimpanan: BELUM DIKONFIRMASI
+- Versi WhatsApp: BELUM DIKONFIRMASI
+- Akun/SIM uji: BELUM DIKONFIRMASI
+- Zona waktu: BELUM DIKONFIRMASI
+- Sinkronisasi jam perangkat: BELUM DIKONFIRMASI
+- Status root: BELUM DIKONFIRMASI
+- Status jaringan saat akuisisi: BELUM DIKONFIRMASI
+- Catatan: perangkat kandidat diberikan oleh Chris pada 2026-09-23. Jangan melakukan root, reset, atau perubahan sistem sebelum protokol akuisisi dikunci.
 
-## Acquisition workstation
-- OS:
-- CPU:
-- RAM:
-- GPU:
-- Storage free space:
-- Python version:
-- Ollama version:
-- Candidate model(s):
-- Can be isolated offline?:
-- Hashing tool:
-- Acquisition/extraction tools:
+## Workstation akuisisi dan Ollama
+- Nama perangkat: DESKTOP-SKF40M7
+- Sistem operasi: 64-bit, arsitektur x64; edisi/versi Windows belum dicatat
+- Prosesor: 12th Gen Intel(R) Core(TM) i7-1255U @ 1.70 GHz
+- RAM: 16.0 GB (15.7 GB usable)
+- GPU: Intel(R) Iris(R) Xe Graphics
+- Memori grafis yang dilaporkan: 128 MB
+- Penyimpanan total: 477 GB
+- Penyimpanan terpakai: 150 GB
+- Perkiraan ruang kosong: 327 GB
+- Dukungan pen/touch: tidak tersedia
+- Versi Python: BELUM DIKONFIRMASI
+- Versi Ollama: BELUM DIKONFIRMASI
+- Model kandidat: BELUM DITETAPKAN
+- Dapat diisolasi offline?: BELUM DIKONFIRMASI
+- Alat hashing: BELUM DITETAPKAN
+- Alat akuisisi/ekstraksi: BELUM DITETAPKAN
 
-## Private evidence storage
-- Location/device: TO BE CONFIRMED
-- Encryption/back-up approach: TO BE CONFIRMED
+## Identitas sistem yang tidak disimpan di repositori publik
+Device ID dan Product ID sengaja tidak dicatat pada dokumen repositori karena tidak diperlukan untuk reproduksibilitas eksperimen dan dapat mengidentifikasi instalasi/perangkat secara lebih spesifik.
 
-## P0 exit criteria
-P0 may be marked complete when:
-1. all four team names are assigned;
-2. test device is selected;
-3. workstation is identified;
-4. repository/branch and private evidence-storage location are confirmed.
+## Penyimpanan bukti privat
+- Lokasi/perangkat: BELUM DIKONFIRMASI
+- Enkripsi/cadangan: BELUM DIKONFIRMASI
+
+## Kriteria selesai P0
+P0 dapat ditutup ketika:
+1. nama dan peran empat anggota telah ditetapkan;
+2. perangkat uji telah dipilih;
+3. workstation telah diidentifikasi;
+4. repositori/branch aktif telah ditetapkan;
+5. lokasi penyimpanan bukti privat telah dikonfirmasi.
+
+Metadata seperti versi WhatsApp, zona waktu, status root, dan versi alat dapat dikunci tepat sebelum tahap akuisisi.
