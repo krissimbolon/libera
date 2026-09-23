@@ -21,7 +21,8 @@ Catatan:
 - Python command `python --version`: **TIDAK TERSEDIA**
 - Output Windows: `Python was not found; run without arguments to install from the Microsoft Store...`
 - Python launcher `py --version`: **TIDAK TERSEDIA** (`CommandNotFoundException`).
-- Kesimpulan: **Python belum terpasang / belum tersedia sebagai runtime yang dapat digunakan pada workstation ini**.
+- Python launcher `py --version`: **Python 3.14.7** setelah pemasangan Python Install Manager.
+- Kesimpulan: **Python runtime tersedia dan dapat dipanggil melalui launcher `py`**.
 - Hashing tool: **BELUM DIKUNCI**.
 - Acquisition tool: **BELUM DIKUNCI**.
 - Extraction tool: **BELUM DIKUNCI**.
