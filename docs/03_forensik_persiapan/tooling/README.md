@@ -97,3 +97,28 @@ Tindakan berikut:
 - Planned algorithm: **SHA-256**
 - Status: **tersedia dan siap diuji**
 - Peran: hashing baseline untuk evidence, working copy, dan dry-run dummy.
+
+
+## Kandidat acquisition tool untuk Android/WhatsApp
+
+### Rekomendasi utama (belum dikunci)
+**Oxygen Forensic® Detective — Device Extractor / Android Agent**
+
+Alasan:
+- perangkat uji LIBERA adalah Android 16 non-root;
+- kebutuhan P3 adalah logical acquisition yang terdokumentasi dan reproducible;
+- Android Agent saat ini mendukung Android OS 5–16;
+- dokumentasi vendor menyatakan dukungan app extraction untuk WhatsApp/WhatsApp Business via USB/Wi-Fi;
+- workflow acquisition terstruktur dan cocok untuk perangkat unlocked.
+
+Status:
+- **RECOMMENDED CANDIDATE — belum dipasang/dikunci**
+- versi exact dan lisensi/trial harus dicatat saat instalasi.
+
+### Mengapa tool dari paper tidak langsung dipilih
+Paper Suvarna et al. (2024) menyebut FTK Imager, Autopsy, The Sleuth Kit, dd, CAINE, Memoryze, LiME, dan EnCase. LiME secara eksplisit disebut untuk Full Android Memory acquisition, tetapi untuk perangkat LIBERA saat ini tidak dipilih karena baseline harus non-root/non-invasive dan Android 16 modern tidak cocok untuk workflow LiME tanpa perubahan low-level pada perangkat.
+
+FTK Imager / Autopsy / The Sleuth Kit akan diperlakukan terutama sebagai tool imaging/analysis atas artefak hasil acquisition, bukan sebagai primary direct acquisition tool untuk WhatsApp internal pada Android 16.
+
+### Fallback bila Oxygen tidak tersedia
+Gunakan ADB untuk logical collection yang memang dapat diakses, ditambah artefak ekspor WhatsApp sebagai validation artefact, dengan limitation yang dinyatakan eksplisit. Jangan mengklaim full-file-system atau protected WhatsApp database acquisition dari ADB biasa.
