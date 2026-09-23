@@ -1,12 +1,12 @@
 {
-  "status": "DRAFT_INCOMPLETE_AFTER_STYLE_REVERT",
-  "total": 4650,
+  "status": "CHECKPOINT_6000_PASSED_AFTER_REGENERATION",
+  "total": 6000,
   "target": 10000,
   "provenance_counts": {
     "ADAPTED_FROM_GALLOWAY": 500,
-    "SYNTHETIC_BRIDGE": 1000,
-    "SYNTHETIC_CONTEXT": 2530,
-    "SYNTHETIC_DISTRACTOR": 620
+    "SYNTHETIC_BRIDGE": 1200,
+    "SYNTHETIC_CONTEXT": 3400,
+    "SYNTHETIC_DISTRACTOR": 900
   },
   "provenance_targets": {
     "ADAPTED_FROM_GALLOWAY": 500,
@@ -14,34 +14,52 @@
     "SYNTHETIC_CONTEXT": 6500,
     "SYNTHETIC_DISTRACTOR": 1500
   },
-  "conversation_count": 393,
-  "structural_state_from_batch_011": {
-    "unique_message_ids": 4650,
-    "duplicate_message_ids": 0,
-    "exact_duplicate_rows": 0,
-    "duplicate_synthetic_text": 0,
-    "timestamp_collisions": 0,
-    "source_identity_leak_in_new_messages": 0,
-    "anchor_exact_match_count": 500
+  "conversation_count": 497,
+  "unique_message_ids": 6000,
+  "duplicate_message_ids": 0,
+  "exact_duplicate_rows": 0,
+  "duplicate_synthetic_text": 0,
+  "same_conversation_timestamp_collisions": 0,
+  "anchor_exact_match_count": 500,
+  "source_identity_leak_in_new_messages": 0,
+  "near_duplicate_long_text_candidates": 0,
+  "outside_scenario_timestamps": 0,
+  "new_mixed_conversations": 0,
+  "namespace": {
+    "bridge_max": 1200,
+    "ctx_a_max": 3250,
+    "ctx_b_max": 150,
+    "distractor_max": 900
   },
-  "style_profile_from_batch_011": {
+  "style_profile": {
     "ADAPTED_FROM_GALLOWAY": {
       "messages": 500,
-      "messages_at_most_three_words": 163
+      "messages_at_most_three_words": 163,
+      "messages_with_question_mark": 146
     },
     "SYNTHETIC_BRIDGE": {
-      "messages": 1000,
-      "messages_at_most_three_words": 112
+      "messages": 1200,
+      "messages_at_most_three_words": 225,
+      "messages_with_question_mark": 87
     },
     "SYNTHETIC_CONTEXT": {
-      "messages": 2530,
-      "messages_at_most_three_words": 425
+      "messages": 3400,
+      "messages_at_most_three_words": 862,
+      "messages_with_question_mark": 447
     },
     "SYNTHETIC_DISTRACTOR": {
-      "messages": 620,
-      "messages_at_most_three_words": 124
+      "messages": 900,
+      "messages_at_most_three_words": 261,
+      "messages_with_question_mark": 116
     }
   },
-  "revert_note": "Commit 78891ad939925247fca0b8046b6f7e8d9e78b747 intentionally removed the QA-failed mechanical corpus delta after Batch 011. The corpus source of truth is therefore 4,650 rows again. Earlier 6k QA/log claims were stale after that corpus-only revert and are superseded by this file.",
-  "provenance_note": "Legacy manifest anchor hash discrepancy remains provenance-only. Do not modify the 500 anchors."
+  "exact_10_message_conversations": {
+    "context": 3,
+    "distractor": 0
+  },
+  "chronology_review": "All timestamps remain within 1–21 July 2026 +07:00; new bridge messages were inserted only inside existing GAL conversation gaps and the four mixed baseline conversations were not touched.",
+  "actor_state_review": "New context/distractor additions are dyadic with Raka, location-neutral, and do not create new case outcomes. Jihan additions remain non-sexual and neutral; Caca was not used in new post-blocking conversations.",
+  "style_review": "Regenerated Batches 012–014 replaced the reverted mechanical delta. Exact-10 context threads dropped from 77 at Batch 011 to 3; distractor exact-10 threads dropped from 44 to 0. Short-message share rose through organic callbacks, fragments, and irregular thread lengths rather than mass truncation.",
+  "provenance_note": "Legacy manifest anchor hash discrepancy remains provenance-only; anchor rows are 500/500 exact-match and unchanged.",
+  "supersedes": "Any earlier 6k QA written before commit 78891ad is superseded."
 }
