@@ -86,3 +86,14 @@ Tindakan berikut:
 - Command: `.\adb.exe shell su -c id`
 - Hasil: `/system/bin/sh: su: inaccessible or not found`
 - Kesimpulan operasional: tidak ditemukan akses `su` dari ADB shell; bersama hasil `uid=2000(shell)` dan ketiadaan Magisk/SuperSU/KernelSU, baseline perangkat dicatat sebagai **tidak ada indikasi root**.
+
+
+## PowerShell Get-FileHash
+
+- Tool: `Get-FileHash`
+- Module: `Microsoft.PowerShell.Utility`
+- Module version: **3.1.0.0**
+- Command type: **Function**
+- Planned algorithm: **SHA-256**
+- Status: **tersedia dan siap diuji**
+- Peran: hashing baseline untuk evidence, working copy, dan dry-run dummy.
