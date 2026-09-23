@@ -39,13 +39,20 @@ Diperbarui: 2026-09-23
 - Airplane mode: **OFF**
 - Status koneksi Wi-Fi aktif/terhubung: BELUM DICATAT
 
+## Koneksi ADB
+
+- Perangkat terdeteksi oleh ADB: **YA**
+- Otorisasi RSA debugging: **BERHASIL**
+- Status `adb devices`: **device**
+- Serial/identifier perangkat tidak disimpan di repositori publik.
+
 ## Status root
 
 - Magisk: **tidak ada**
 - SuperSU: **tidak ada**
 - KernelSU: **tidak ada**
 - Kesimpulan sementara: **tidak ada indikasi root manager yang terlihat dari daftar aplikasi**.
-- Verifikasi teknis via ADB: **BELUM DILAKUKAN**.
+- Verifikasi teknis via ADB: **koneksi berhasil dan perangkat berstatus `device`; pemeriksaan privilege/root masih berjalan**.
 
 ## Status akun WhatsApp
 
