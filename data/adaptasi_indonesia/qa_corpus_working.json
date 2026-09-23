@@ -1,12 +1,12 @@
 {
   "status": "DRAFT_INCOMPLETE",
-  "total": 2000,
+  "total": 2400,
   "target": 10000,
   "provenance_counts": {
     "ADAPTED_FROM_GALLOWAY": 500,
-    "SYNTHETIC_BRIDGE": 500,
-    "SYNTHETIC_CONTEXT": 800,
-    "SYNTHETIC_DISTRACTOR": 200
+    "SYNTHETIC_BRIDGE": 580,
+    "SYNTHETIC_CONTEXT": 1060,
+    "SYNTHETIC_DISTRACTOR": 260
   },
   "provenance_targets": {
     "ADAPTED_FROM_GALLOWAY": 500,
@@ -14,7 +14,7 @@
     "SYNTHETIC_CONTEXT": 6500,
     "SYNTHETIC_DISTRACTOR": 1500
   },
-  "conversation_count": 194,
+  "conversation_count": 225,
   "message_counts_by_day": {
     "2026-07-01": 130,
     "2026-07-02": 127,
@@ -27,21 +27,21 @@
     "2026-07-09": 72,
     "2026-07-10": 146,
     "2026-07-11": 102,
-    "2026-07-12": 120,
-    "2026-07-13": 45,
-    "2026-07-14": 65,
-    "2026-07-15": 94,
-    "2026-07-16": 124,
-    "2026-07-17": 81,
-    "2026-07-18": 79,
-    "2026-07-19": 58,
-    "2026-07-20": 65,
-    "2026-07-21": 40
+    "2026-07-12": 140,
+    "2026-07-13": 88,
+    "2026-07-14": 114,
+    "2026-07-15": 137,
+    "2026-07-16": 171,
+    "2026-07-17": 161,
+    "2026-07-18": 122,
+    "2026-07-19": 99,
+    "2026-07-20": 76,
+    "2026-07-21": 63
   },
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
   "manifest_anchor_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
   "manifest_hash_matches_committed_anchor": false,
-  "working_sha256": "36c290d88df7b50c08cfbdc12010a3d6affd8e09ccd827a75593d958c5f1d603",
+  "working_sha256": "784eb5432b7e8d970e021365530c5d9de582e8c478e2c6d8c7258ad7e9c88fb8",
   "anchor_row_exact_match": true,
   "duplicate_message_ids": 0,
   "exact_duplicate_rows": 0,
@@ -56,5 +56,5 @@
   "new_mixed_conversations": 0,
   "source_identity_leak_in_new_messages": 0,
   "near_duplicate_long_text_candidates": [],
-  "manual_continuity_review": "Bridge drafts 001–006 replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending."
+  "manual_continuity_review": "Bridge drafts 001–007 replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending."
 }

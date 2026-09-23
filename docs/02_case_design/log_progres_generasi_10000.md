@@ -6,7 +6,7 @@ Branch: `p2-10k-work`
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
 | 2.000 | LULUS QA CHECKPOINT | 2.000 | 500 | 500 | 800 | 200 | Batch 005 +432 pesan; audit otomatis dan spot-check continuity selesai |
-| 4.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
+| 4.000 | DALAM PROSES | 2.400 | 500 | 580 | 1.060 | 260 | Batch 006 +400 pesan lolos QA draf; lanjut |
 | 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 10.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -68,3 +68,11 @@ Pada setiap checkpoint catat:
 - ID ganda, exact duplicate row, teks sintetis identik, benturan timestamp dalam conversation, near-duplicate panjang, kebocoran identitas sumber pada tambahan, dan conversation pasangan baru bercampur: semuanya 0. Seluruh 500 anchor cocok persis dengan file anchor pada branch.
 - Spot-check bridge diputar dengan anchor pada 25 conversation yang baru diisi; koreksi pada urutan menunggu penjemputan Rena, jawaban setelah instruksi turun, pengulangan alarm, serta level baterai Kirana. Kandidat near-duplicate tentang menyiram tanaman direvisi. Context Reza dan Rena yang bertabrakan menit pada dua chat dipisahkan waktunya.
 - Hash manifest lama (`63eeaac8…`) masih tidak sama dengan file anchor ter-commit (`12859745…`); belum direkonsiliasi dan tidak diubah. Audit actor-state atas corpus final 10.000 belum selesai; checkpoint ini hanya QA draf 2.000. Lanjut batch berikut tanpa menjadikan berkas kerja sebagai output final.
+
+## Batch 006 — 2.400/10.000 (menuju checkpoint 4.000)
+
+- Tambahan 400 pesan: 80 bridge, 260 context, 60 distractor. Kumulatif 500/580/1.060/260 dan 225 conversation.
+- Validator: ID ganda, duplikat baris/teks sintetis, tabrakan timestamp conversation, kandidat near-duplicate panjang, leakage sumber, dan mixed pair baru: 0. Anchor exact-match 500/500.
+- Bridge pada percakapan Tania/Nara/Caca/Dini ditinjau berurutan dengan anchor. Detail jam tutup kantor Dini yang tidak didukung anchor dihapus; kalimat pembelian charger diselaraskan dengan posisi Raka yang belum berangkat.
+- Context dipindah waktunya setelah ditemukan chat Rena yang bertumpuk dengan thread lain. Dialog sarapan Dini ditulis ulang karena proses memasak di kamar setelah pindah penginapan tidak terdukung. Distractor mempertahankan callback stiker ikan, kucing, dan payung tanpa outcome perkara baru.
+- QA final dan hash manifest jangkar masih terbuka. Perlu 320 bridge, 1.040 context, 240 distractor lagi untuk checkpoint 4.000.
