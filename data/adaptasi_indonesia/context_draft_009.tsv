@@ -1,0 +1,51 @@
+conversation_id	timestamp	sender_id	message_text
+KONV-CTX-KIRANA-0702	2026-07-02T16:07:11+07:00	AKT-KIRANA	Tenggorokanku mulai nggak enak sejak bangun tadi.
+KONV-CTX-KIRANA-0702	2026-07-02T16:10:48+07:00	AKT-RAKA	Kamu sudah minum yang hangat?
+KONV-CTX-KIRANA-0702	2026-07-02T16:14:26+07:00	AKT-KIRANA	Cuma air biasa. Tehnya habis.
+KONV-CTX-KIRANA-0702	2026-07-02T16:18:07+07:00	AKT-RAKA	Kalau ada air panas, itu juga lumayan.
+KONV-CTX-KIRANA-0702	2026-07-02T16:22:43+07:00	AKT-KIRANA	Aku mau cari gelas yang bersih dulu.
+KONV-CTX-KIRANA-0702	2026-07-02T16:27:19+07:00	AKT-KIRANA	Ketemu, tapi termosnya kosong.
+KONV-CTX-KIRANA-0702	2026-07-02T16:31:54+07:00	AKT-RAKA	Jangan repot kalau lagi pusing, duduk dulu.
+KONV-CTX-KIRANA-0702	2026-07-02T16:38:32+07:00	AKT-KIRANA	Aku cuma serak, belum pusing. Tadi kebanyakan ngomong.
+KONV-CTX-KIRANA-0702	2026-07-02T16:43:18+07:00	AKT-RAKA	Oke. Kalau nanti tambah nggak enak, bilang.
+KONV-CTX-KIRANA-0702	2026-07-02T16:49:07+07:00	AKT-KIRANA	Aku mau diam sebentar. HP tetap nyala.
+KONV-CTX-KIRANA-0702	2026-07-02T17:22:46+07:00	AKT-KIRANA	Suara mulai mendingan, cuma badan capek.
+KONV-CTX-KIRANA-0702	2026-07-02T17:27:13+07:00	AKT-RAKA	Istirahat sebentar kalau ada kesempatan.
+KONV-CTX-KIRANA-0702	2026-07-02T17:31:58+07:00	AKT-KIRANA	Iya, aku rebahan dulu. Nanti kubaca lagi.
+KONV-CTX-TANIA-0705	2026-07-05T11:08:13+07:00	AKT-TANIA	Aku belum dapat sarapan, warung tadi tutup.
+KONV-CTX-TANIA-0705	2026-07-05T11:11:49+07:00	AKT-RAKA	Di sebelah sana ada tempat lain, tapi aku nggak tahu buka.
+KONV-CTX-TANIA-0705	2026-07-05T11:15:27+07:00	AKT-TANIA	Aku lihat dari jauh, pintunya setengah terbuka.
+KONV-CTX-TANIA-0705	2026-07-05T11:19:06+07:00	AKT-RAKA	Kalau tutup, jangan keliling terlalu jauh.
+KONV-CTX-TANIA-0705	2026-07-05T11:22:43+07:00	AKT-TANIA	Aku cuma butuh roti sama air. Bukan cari makan besar.
+KONV-CTX-TANIA-0705	2026-07-05T11:26:19+07:00	AKT-TANIA	Oh, ternyata ada orang jaga di dalam.
+KONV-CTX-TANIA-0705	2026-07-05T11:30:54+07:00	AKT-RAKA	Oke, tanya yang siap diambil sekarang.
+KONV-CTX-TANIA-0705	2026-07-05T11:35:37+07:00	AKT-TANIA	Ada roti isi telur. Aku ambil satu.
+KONV-CTX-TANIA-0705	2026-07-05T11:40:08+07:00	AKT-RAKA	Airnya jangan lupa.
+KONV-CTX-TANIA-0705	2026-07-05T11:44:52+07:00	AKT-TANIA	Sudah beli. Aku duduk dulu sambil makan.
+KONV-CTX-TANIA-0705	2026-07-05T11:49:23+07:00	AKT-TANIA	Rotinya dingin, tapi masih enak.
+KONV-CTX-TANIA-0705	2026-07-05T11:53:41+07:00	AKT-RAKA	Setidaknya kamu nggak jalan dengan perut kosong.
+KONV-CTX-TANIA-0705	2026-07-05T11:58:18+07:00	AKT-TANIA	Aku nanti kabari lagi. Masih mikir yang tadi pagi.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:03:18+07:00	AKT-RENA	Aku baru sadar jendela kamar ini bisa dibuka sedikit.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:06:52+07:00	AKT-RAKA	Jangan lebar-lebar, anginnya malam kencang.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:10:27+07:00	AKT-RENA	Cuma sejari. Aku mau udara yang nggak bau pewangi.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:14:01+07:00	AKT-RAKA	Pewanginya terlalu kuat?
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:17:36+07:00	AKT-RENA	Iya, tadi mereka semprot dekat bantal.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:21:12+07:00	AKT-RAKA	Pindahkan bantalnya sampai baunya berkurang.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:25:47+07:00	AKT-RENA	Sudah kuganti sisi, yang satunya lebih netral.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:29:18+07:00	AKT-RENA	Aku jadi bersin terus kalau dekat yang tadi.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:34:53+07:00	AKT-RAKA	Kalau makin nggak nyaman, minta diganti sarungnya.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:39:26+07:00	AKT-RENA	Sekarang agak reda. Aku belum mau telepon siapa-siapa.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:44:08+07:00	AKT-RAKA	Oke. Kalau perlu apa-apa, tulis saja.
+KONV-CTX-RENA-0711-MALAM	2026-07-11T22:49:41+07:00	AKT-RENA	Aku coba tidur dulu, layar HP bikin mataku capek.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:03:21+07:00	AKT-NARA	Selimut yang ini tipis banget kalau AC nyala.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:06:49+07:00	AKT-RAKA	Di lemari ada satu cadangan, coba lihat rak atas.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:10:14+07:00	AKT-NARA	Rak atas kosong, cuma plastik laundry.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:13:47+07:00	AKT-RAKA	Mungkin dipindah. Kamu bisa kecilkan AC dulu?
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:17:22+07:00	AKT-NARA	Remotenya ada, tapi anginnya tetap dingin.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:20:58+07:00	AKT-RAKA	Naikkan angkanya sedikit, bukan turunkan.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:24:36+07:00	AKT-NARA	Oh iya, aku kebalik. Sudah lebih pelan.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:28:11+07:00	AKT-NARA	Selimutnya nanti kucari lagi kalau pindah kamar.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:32:43+07:00	AKT-RAKA	Jangan pindah cuma gara-gara selimut, kabari kalau perlu.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:37:17+07:00	AKT-NARA	Aku cuma bilang kalau nanti memang pindah. Sekarang di sini.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:41:52+07:00	AKT-RAKA	Oke, aku salah tangkap. Istirahat dulu.
+KONV-CTX-NARA-0716-SORE	2026-07-16T18:46:29+07:00	AKT-NARA	Aku matikan lampu utama, sisakan yang dekat pintu.

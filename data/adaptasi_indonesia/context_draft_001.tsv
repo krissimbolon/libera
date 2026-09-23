@@ -1,0 +1,71 @@
+conversation_id	timestamp	sender_id	recipient_id	message_text
+KONV-CTX-DINI-0702	2026-07-02T12:12:07+07:00	AKT-DINI	AKT-RAKA	Kunci cadangannya kamu taruh di mana? Aku cek laci kosong.
+KONV-CTX-DINI-0702	2026-07-02T12:15:38+07:00	AKT-RAKA	AKT-DINI	Coba kantong kecil tas hitam yang dekat pintu.
+KONV-CTX-DINI-0702	2026-07-02T12:18:26+07:00	AKT-DINI	AKT-RAKA	Ada kabel sama struk, kuncinya nggak kelihatan.
+KONV-CTX-DINI-0702	2026-07-02T12:21:09+07:00	AKT-RAKA	AKT-DINI	Buka resleting dalamnya. Kecil banget kantongnya.
+KONV-CTX-DINI-0702	2026-07-02T12:24:47+07:00	AKT-DINI	AKT-RAKA	Nah, ketemu. Nyangkut di bawah struk.
+KONV-CTX-DINI-0702	2026-07-02T12:27:14+07:00	AKT-RAKA	AKT-DINI	Bagus. Struknya jangan dibuang dulu.
+KONV-CTX-DINI-0702	2026-07-02T12:30:53+07:00	AKT-DINI	AKT-RAKA	Kumasukin amplop biar nggak lecek.
+KONV-CTX-DINI-0702	2026-07-02T12:34:20+07:00	AKT-RAKA	AKT-DINI	Sip, aku makan dulu. Dari pagi cuma kopi.
+KONV-CTX-DINI-0702	2026-07-02T12:38:46+07:00	AKT-DINI	AKT-RAKA	Ada roti di meja, kalau belum diambil orang.
+KONV-CTX-DINI-0702	2026-07-02T12:42:31+07:00	AKT-RAKA	AKT-DINI	Ketemu rotinya. Makasih.
+KONV-CTX-REZA-0705	2026-07-05T12:06:14+07:00	AKT-REZA	AKT-RAKA	Ban belakang kayaknya kurang angin lagi.
+KONV-CTX-REZA-0705	2026-07-05T12:09:02+07:00	AKT-RAKA	AKT-REZA	Yang sebelah kiri? Kemarin sudah diisi.
+KONV-CTX-REZA-0705	2026-07-05T12:12:19+07:00	AKT-REZA	AKT-RAKA	Iya, sisi itu. Aku mampir tukang tambal dulu.
+KONV-CTX-REZA-0705	2026-07-05T12:15:47+07:00	AKT-RAKA	AKT-REZA	Kalau bocor halus mending dicek sekalian, jangan cuma tambah angin.
+KONV-CTX-REZA-0705	2026-07-05T12:19:30+07:00	AKT-REZA	AKT-RAKA	Aku masih antre satu motor. Nanti kukasih kabar.
+KONV-CTX-REZA-0705	2026-07-05T12:34:11+07:00	AKT-REZA	AKT-RAKA	Ternyata pentilnya longgar, bukan ban bocor.
+KONV-CTX-REZA-0705	2026-07-05T12:36:54+07:00	AKT-RAKA	AKT-REZA	Oh, pantes cepat kempes lagi.
+KONV-CTX-REZA-0705	2026-07-05T12:40:23+07:00	AKT-REZA	AKT-RAKA	Sekarang sudah kencang. Aku mau isi bensin juga.
+KONV-CTX-REZA-0705	2026-07-05T12:43:37+07:00	AKT-RAKA	AKT-REZA	Oke. Kalau lagi nyetir jangan balas dulu.
+KONV-CTX-REZA-0705	2026-07-05T12:47:05+07:00	AKT-REZA	AKT-RAKA	Siap, aku jalan habis ini.
+KONV-CTX-CACA-0708	2026-07-08T16:12:07+07:00	AKT-CACA	AKT-RAKA	Kamu jadi mampir warung? Aku butuh tisu dapur.
+KONV-CTX-CACA-0708	2026-07-08T16:15:39+07:00	AKT-RAKA	AKT-CACA	Baru mau lewat. Tisu yang gulung atau kotak?
+KONV-CTX-CACA-0708	2026-07-08T16:18:16+07:00	AKT-CACA	AKT-RAKA	Yang gulung. Kalau ada ukuran besar, ambil satu.
+KONV-CTX-CACA-0708	2026-07-08T16:21:44+07:00	AKT-RAKA	AKT-CACA	Di rak depan cuma yang kecil, aku lihat belakang.
+KONV-CTX-CACA-0708	2026-07-08T16:24:28+07:00	AKT-CACA	AKT-RAKA	Nggak usah muter toko cuma buat tisu wkwk.
+KONV-CTX-CACA-0708	2026-07-08T16:28:52+07:00	AKT-RAKA	AKT-CACA	Ternyata ada dua gulung besar di dekat sabun.
+KONV-CTX-CACA-0708	2026-07-08T16:31:15+07:00	AKT-CACA	AKT-RAKA	Nah itu. Aku titip satu ya.
+KONV-CTX-CACA-0708	2026-07-08T16:34:09+07:00	AKT-RAKA	AKT-CACA	Sudah di keranjang. Ada lagi?
+KONV-CTX-CACA-0708	2026-07-08T16:37:43+07:00	AKT-CACA	AKT-RAKA	Nggak, yang lain masih ada. Jangan lupa simpan struknya.
+KONV-CTX-CACA-0708	2026-07-08T16:40:22+07:00	AKT-RAKA	AKT-CACA	Iya. Aku bayar dulu.
+KONV-CTX-RENA-0709	2026-07-09T12:08:18+07:00	AKT-RENA	AKT-RAKA	Sendoknya nggak ada di bungkus makanan ini.
+KONV-CTX-RENA-0709	2026-07-09T12:10:43+07:00	AKT-RAKA	AKT-RENA	Di kantong kertas sebelahnya coba cek.
+KONV-CTX-RENA-0709	2026-07-09T12:13:12+07:00	AKT-RENA	AKT-RAKA	Cuma ada sambal dua, sama tisu.
+KONV-CTX-RENA-0709	2026-07-09T12:15:49+07:00	AKT-RAKA	AKT-RENA	Aku tanyakan di bawah, tunggu sebentar.
+KONV-CTX-RENA-0709	2026-07-09T12:19:24+07:00	AKT-RENA	AKT-RAKA	Jangan repot kalau antre. Aku bisa pakai sendok di kamar.
+KONV-CTX-RENA-0709	2026-07-09T12:22:56+07:00	AKT-RAKA	AKT-RENA	Sudah dapat plastik isi sendok sama garpu.
+KONV-CTX-RENA-0709	2026-07-09T12:25:08+07:00	AKT-RENA	AKT-RAKA	Oke, taruh di depan aja kalau kamu lewat.
+KONV-CTX-RENA-0709	2026-07-09T12:28:41+07:00	AKT-RAKA	AKT-RENA	Kutempelkan di gagang pintu, ya.
+KONV-CTX-RENA-0709	2026-07-09T12:31:13+07:00	AKT-RENA	AKT-RAKA	Sudah kuambil. Nasiku keburu dingin haha.
+KONV-CTX-RENA-0709	2026-07-09T12:33:55+07:00	AKT-RAKA	AKT-RENA	Makan dulu, nanti lanjut chat.
+KONV-CTX-DINI-0713	2026-07-13T12:17:04+07:00	AKT-DINI	AKT-RAKA	Aku lagi pisahin bon makan sama bon parkir.
+KONV-CTX-DINI-0713	2026-07-13T12:20:26+07:00	AKT-RAKA	AKT-DINI	Yang kemarin kuselipkan di map biru.
+KONV-CTX-DINI-0713	2026-07-13T12:23:51+07:00	AKT-DINI	AKT-RAKA	Mapnya ada, tapi bon parkir terakhir nggak masuk.
+KONV-CTX-DINI-0713	2026-07-13T12:27:12+07:00	AKT-RAKA	AKT-DINI	Mungkin masih di saku jaketku. Cek nanti saja.
+KONV-CTX-DINI-0713	2026-07-13T12:30:39+07:00	AKT-DINI	AKT-RAKA	Nggak mendesak kok, aku cuma takut tercampur.
+KONV-CTX-DINI-0713	2026-07-13T12:35:18+07:00	AKT-RAKA	AKT-DINI	Jaketnya kugantung dekat rak sepatu.
+KONV-CTX-DINI-0713	2026-07-13T12:38:07+07:00	AKT-DINI	AKT-RAKA	Ada kertas kecil di saku kanan. Kayaknya ini.
+KONV-CTX-DINI-0713	2026-07-13T12:41:44+07:00	AKT-RAKA	AKT-DINI	Kalau tanggalnya kemarin, iya itu bonnya.
+KONV-CTX-DINI-0713	2026-07-13T12:45:25+07:00	AKT-DINI	AKT-RAKA	Cocok. Kupisah pakai klip biar gampang dicari.
+KONV-CTX-DINI-0713	2026-07-13T12:49:13+07:00	AKT-RAKA	AKT-DINI	Oke, nanti map birunya kutaruh lagi di lemari.
+KONV-CTX-BAGAS-0716	2026-07-16T11:03:08+07:00	AKT-BAGAS	AKT-RAKA	Payung hitam yang panjang punya siapa?
+KONV-CTX-BAGAS-0716	2026-07-16T11:05:42+07:00	AKT-RAKA	AKT-BAGAS	Kayaknya punyaku. Gagangnya agak retak?
+KONV-CTX-BAGAS-0716	2026-07-16T11:08:31+07:00	AKT-BAGAS	AKT-RAKA	Iya, ada lakban di dekat ujung.
+KONV-CTX-BAGAS-0716	2026-07-16T11:12:19+07:00	AKT-RAKA	AKT-BAGAS	Itu. Tadi kupikir ketinggalan di mobil.
+KONV-CTX-BAGAS-0716	2026-07-16T11:15:49+07:00	AKT-BAGAS	AKT-RAKA	Aku simpan di pojok, nggak kubawa pergi.
+KONV-CTX-BAGAS-0716	2026-07-16T11:18:36+07:00	AKT-RAKA	AKT-BAGAS	Kalau hujan pakai aja dulu, nanti balikinnya belakangan.
+KONV-CTX-BAGAS-0716	2026-07-16T11:22:14+07:00	AKT-BAGAS	AKT-RAKA	Di sini baru mendung, belum turun.
+KONV-CTX-BAGAS-0716	2026-07-16T11:26:02+07:00	AKT-RAKA	AKT-BAGAS	Oke. Aku nggak jadi ambil sekarang.
+KONV-CTX-BAGAS-0716	2026-07-16T11:29:41+07:00	AKT-BAGAS	AKT-RAKA	Kalau sore cari di rak bawah, ya.
+KONV-CTX-BAGAS-0716	2026-07-16T11:33:17+07:00	AKT-RAKA	AKT-BAGAS	Siap, jangan taruh dekat pintu yang bocor.
+KONV-CTX-CACA-0719	2026-07-19T10:03:15+07:00	AKT-CACA	AKT-RAKA	Dua soda yang tadi satu sudah habis.
+KONV-CTX-CACA-0719	2026-07-19T10:05:48+07:00	AKT-RAKA	AKT-CACA	Cepat banget. Tadi kan ukurannya besar.
+KONV-CTX-CACA-0719	2026-07-19T10:08:37+07:00	AKT-CACA	AKT-RAKA	Dipakai beberapa orang, esnya juga habis.
+KONV-CTX-CACA-0719	2026-07-19T10:12:19+07:00	AKT-RAKA	AKT-CACA	Masih ada air botol kecil di tas belanja.
+KONV-CTX-CACA-0719	2026-07-19T10:16:07+07:00	AKT-CACA	AKT-RAKA	Kutemukan tiga. Kutaruh di kulkas.
+KONV-CTX-CACA-0719	2026-07-19T10:19:54+07:00	AKT-RAKA	AKT-CACA	Sisakan satu di meja buat yang belum minum.
+KONV-CTX-CACA-0719	2026-07-19T10:23:31+07:00	AKT-CACA	AKT-RAKA	Oke, yang tutup biru kutaruh luar.
+KONV-CTX-CACA-0719	2026-07-19T10:27:05+07:00	AKT-RAKA	AKT-CACA	Sikat gigi yang tiga sudah kebagi juga?
+KONV-CTX-CACA-0719	2026-07-19T10:30:18+07:00	AKT-CACA	AKT-RAKA	Masih di plastik. Aku nggak tahu yang mana punya siapa.
+KONV-CTX-CACA-0719	2026-07-19T10:33:42+07:00	AKT-RAKA	AKT-CACA	Biar mereka pilih sendiri nanti. Jangan dibuka dulu.
