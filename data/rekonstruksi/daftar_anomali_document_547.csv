@@ -1,0 +1,7 @@
+id_anomali,rentang,status,temuan,keputusan
+A-001,85-96,DISELESAIKAN_INTERNAL_QA_PENDING,"Penanda 382-389 muncul di awal blok tetapi 12 pesan keseluruhan dan narasi eksplisit line 94 konsisten dengan 85-96","Petakan 12 pesan berurutan ke 85-96; pertahankan catatan koreksi"
+A-002,382-392,DISELESAIKAN_DARI_REFERENSI_LANGSUNG,"Halaman 34-35 memberi referensi 382-386; 387; 388; 389-392 secara koheren","Gunakan blok halaman 34-35 untuk 382-392"
+A-003,511-521,DISELESAIKAN_TYPO_QA_PENDING,"Sumber mencetak 511-5521; blok berisi 11 pesan dan blok berikut dimulai 522","Working resolution 511-521; typo sumber tetap dicatat"
+A-004,116-117,BELUM_DIRESOLUSI,"Sumber mencetak 117-117 setelah dua pesan; rentang sekitar adalah 114-115 lalu 118-125","Jangan petakan sampai ada sumber pembanding"
+A-005,16-26|168-175|208-217|531-541,BELUM_DIRESOLUSI,"Jumlah pesan; penanda skip; atau jumlah line tidak cocok","Jangan menggeser/mengisi line tanpa corroboration"
+A-006,27,TIDAK_DISEBUT,"Tidak ada dukungan line-level cukup di Document 547","Biarkan kosong"
