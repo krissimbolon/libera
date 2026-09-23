@@ -66,3 +66,9 @@ Interpretasi:
 Tindakan berikut:
 - otorisasi RSA debugging dari layar perangkat;
 - ulangi `.\adb.exe devices` hingga status menjadi `device`.
+
+
+### Otorisasi ADB
+- Status setelah otorisasi RSA pada perangkat: **device**
+- Koneksi ADB workstation ↔ perangkat: **berhasil**
+- Serial/identifier perangkat: **tidak dicatat di repositori publik**
