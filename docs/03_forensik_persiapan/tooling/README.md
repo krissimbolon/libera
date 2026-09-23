@@ -37,3 +37,15 @@ Pencarian `adb.exe` pada drive C: tidak menghasilkan temuan.
 Kesimpulan:
 - Android SDK Platform Tools belum tersedia pada workstation ini.
 - Tahap berikut adalah memasang paket resmi Android SDK Platform Tools untuk Windows dan mencatat versi `adb` setelah instalasi.
+
+
+## Android Debug Bridge (ADB)
+
+- Tool: Android Debug Bridge
+- Version protocol: **1.0.41**
+- Platform Tools build: **37.0.1-15733141**
+- Executable: `C:\platform-tools\platform-tools\adb.exe`
+- Runtime OS string: **Windows 10.0.26200**
+- Sumber: Android SDK Platform Tools resmi
+- Status: **terpasang dan berhasil dijalankan**
+- Verifikasi: `.\adb.exe version` berhasil tanpa error
