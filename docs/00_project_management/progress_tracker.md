@@ -6,7 +6,7 @@ Diperbarui: 2026-09-23
 |---|---|---|---|---:|
 | P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
 | P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 60% |
-| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 38% |
+| P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BERJALAN | 40% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
 | P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
 | P5 | Baseline forensik tradisional | kata kunci, timeline, entitas, analisis relasi | BELUM MULAI | 0% |
@@ -52,7 +52,7 @@ Diperbarui: 2026-09-23
 - Worker A: **239 anchor** untuk source line 1–271 yang terpetakan; QA struktural lulus.
 - Worker B: **261 anchor** untuk source line 272–543 yang terpetakan; branch `p2-paralel-b` telah lengkap sampai `ID-GAL-0543`.
 - Gabungan: **500/500 source line terpetakan**, tanpa overlap dan tanpa unresolved line.
-- Hasil integrasi kanonik lokal: `anchor_indonesia_500.csv`.
+- Hasil integrasi kanonik: `data/adaptasi_indonesia/anchor_indonesia_500.csv` sudah committed di `proyek-uas-df`.
 - SHA-256 hasil integrasi: `63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24`.
 - Actor ID, conversation ID, timestamp skenario, nominal rupiah, dan lokalisasi nama telah dinormalisasi lintas-worker.
 - Exact duplicate row: 0.
@@ -66,10 +66,11 @@ Diperbarui: 2026-09-23
 - Semua integrasi berikutnya wajib mengacu ke `proyek-uas-df`, bukan `main`.
 
 ## Tindakan P2 berikutnya
-- mulai produksi 1.500 `SYNTHETIC_BRIDGE`;
-- mulai produksi 6.500 `SYNTHETIC_CONTEXT` + 1.500 `SYNTHETIC_DISTRACTOR` secara paralel;
-- pertahankan 500 anchor sebagai immutable reference set;
-- jalankan QA duplicate, chronology, actor-state consistency, dan leakage setelah tiap batch.
+- branch `p2-jembatan`: produksi 1.500 `SYNTHETIC_BRIDGE`;
+- branch `p2-konteks-distraktor`: produksi 6.500 `SYNTHETIC_CONTEXT` + 1.500 `SYNTHETIC_DISTRACTOR`;
+- kontrak ID, provenance, anti-pengulangan, timestamp, dan merge policy sudah dikunci;
+- 500 anchor tetap immutable reference set;
+- lakukan QA skema, duplicate, chronology, actor-state consistency, near-duplicate, dan leakage sebelum integrasi ke `proyek-uas-df`.
 
 ## Tugas paralel tim
 Prioritaskan pencarian Doc. 382, Doc. 427, Doc. 512, exhibit list, atau Exhibit 1A. Sumber domain perdagangan orang Indonesia dapat terus dikumpulkan untuk P2/P6.
