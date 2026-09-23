@@ -5,7 +5,7 @@ Branch: `p2-10k-work`
 | Checkpoint | Status | Pesan | Anchor | Bridge | Context | Distractor | Catatan |
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
-| 2.000 | DALAM PROSES | 1.568 | 500 | 312 | 566 | 190 | Batch 004 +397 pesan lolos QA draf; belum mencapai checkpoint 2.000 |
+| 2.000 | LULUS QA CHECKPOINT | 2.000 | 500 | 500 | 800 | 200 | Batch 005 +432 pesan; audit otomatis dan spot-check continuity selesai |
 | 4.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -61,3 +61,10 @@ Pada setiap checkpoint catat:
 - ID ganda, exact duplicate row, teks sintetis identik, tabrakan timestamp conversation, near-duplicate panjang, dan kebocoran identitas sumber pada tambahan: 0. Jangkar 500/500 exact-match.
 - Review menghapus lima bridge yang membingungkan urutan pertanyaan akun, menggandakan permintaan daftar belanja, atau tidak menyambung setelah peringatan. Context menambah percakapan Kirana saat kondisi badan mulai kurang nyaman dan dialog Tania yang masih menyisakan soal kepulangan; tidak menutup konflik anchor. Distractor sosial tetap pada aktor yang telah dikenal.
 - Komposisi menuju checkpoint 2.000 masih memerlukan 188 bridge, 234 context, dan 10 distractor. Audit state penuh dan mismatch hash manifest tetap terbuka.
+
+## Checkpoint 2.000 — Batch 005
+
+- Tambahan 432 pesan: 188 bridge, 234 context, 10 distractor. Kumulatif tepat 500/500/800/200; 194 conversation.
+- ID ganda, exact duplicate row, teks sintetis identik, benturan timestamp dalam conversation, near-duplicate panjang, kebocoran identitas sumber pada tambahan, dan conversation pasangan baru bercampur: semuanya 0. Seluruh 500 anchor cocok persis dengan file anchor pada branch.
+- Spot-check bridge diputar dengan anchor pada 25 conversation yang baru diisi; koreksi pada urutan menunggu penjemputan Rena, jawaban setelah instruksi turun, pengulangan alarm, serta level baterai Kirana. Kandidat near-duplicate tentang menyiram tanaman direvisi. Context Reza dan Rena yang bertabrakan menit pada dua chat dipisahkan waktunya.
+- Hash manifest lama (`63eeaac8…`) masih tidak sama dengan file anchor ter-commit (`12859745…`); belum direkonsiliasi dan tidak diubah. Audit actor-state atas corpus final 10.000 belum selesai; checkpoint ini hanya QA draf 2.000. Lanjut batch berikut tanpa menjadikan berkas kerja sebagai output final.
