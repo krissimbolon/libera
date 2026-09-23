@@ -34,3 +34,33 @@ PR #6 dari `p2-10k-work` sempat di-merge ke `main` pada 2026-09-23. PR tersebut 
 
 ## Status penilaian
 **ON TRACK, tetapi belum ada progres generasi setelah 500 anchor pada pemeriksaan ini.**
+
+
+## Pemeriksaan langsung 2026-09-23 19:48 WIB
+
+### Progres
+- Branch Work head: `9013a89007fb69f847d289a5904965eee640fd74`.
+- Corpus kerja: **572/10.000**.
+- Komposisi: **500 anchor + 72 bridge + 0 context + 0 distractor**.
+- Bridge baru tersebar pada 12 conversation.
+- Checkpoint 2.000 belum tercapai.
+
+### QA terukur
+- duplicate `message_id`: 0
+- duplicate teks sintetis: 0
+- benturan timestamp dalam conversation: 0
+- near-duplicate panjang kandidat: 0
+- kebocoran identitas sumber pada pesan baru: 0
+- anchor row exact match terhadap reference set: 500/500
+- conversation campuran baru: 0
+
+### Review kontinuitas dan gaya
+Spot-check bridge menunjukkan percakapan sudah mengikuti pesan sebelum/sesudahnya dan menggunakan Bahasa Indonesia percakapan seperti “bentar”, “nggak”, “udah”, dan pesan pendek. Ada beberapa frasa yang masih sedikit formal (mis. “beri tahu”) dan perlu dijaga supaya batch berikutnya lebih konsisten memakai gaya WhatsApp natural seperti “kasih tahu” bila cocok dengan aktor.
+
+### Isu yang belum memblokir generasi
+1. Hash manifest anchor `63eeaac8…` berbeda dengan byte hash file anchor committed `12859745…`, tetapi QA membuktikan **500/500 row anchor tetap identik**. Jangan ubah isi anchor; rekonsiliasi hash dilakukan sebagai pekerjaan provenance sebelum QA final.
+2. Empat conversation anchor baseline memiliki lebih dari satu pasangan aktor: `KONV-GAL-P22-C`, `KONV-GAL-R013`, `KONV-GAL-R080`, `KONV-GAL-R088`. Work sudah benar dengan tidak menambahkan bridge ke thread ini sebelum keputusan eksplisit.
+3. `corpus_whatsapp_working.csv` tetap artefak kerja, bukan dataset final investigator.
+
+### Penilaian
+**ON TRACK.** Generasi nyata sudah dimulai dan guardrail QA bekerja. Prioritas selanjutnya adalah memperluas bridge secara bertahap menuju 1.500 sambil mempertahankan replay terhadap anchor, lalu mulai context/distractor setelah state aktor stabil.
