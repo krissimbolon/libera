@@ -52,7 +52,7 @@ Diperbarui: 2026-09-23
 - SuperSU: **tidak ada**
 - KernelSU: **tidak ada**
 - Kesimpulan sementara: **tidak ada indikasi root manager yang terlihat dari daftar aplikasi**.
-- Verifikasi teknis via ADB: **`adb shell id` berjalan sebagai `uid=2000(shell)` dengan SELinux context `u:r:shell:s0`; belum ada indikasi shell ADB berjalan sebagai root. Pemeriksaan `su` masih perlu dilakukan untuk konfirmasi tambahan**.
+- Verifikasi teknis via ADB: **SELESAI — `adb shell id` = `uid=2000(shell)` dan `su -c id` menghasilkan `su: inaccessible or not found`; tidak ditemukan indikasi akses root melalui ADB pada pemeriksaan ini.**
 
 ## Status akun WhatsApp
 
@@ -77,3 +77,11 @@ Diperbarui: 2026-09-23
 ## Catatan risiko storage
 
 Sisa ±13 GB cukup untuk tahap persiapan dan corpus teks, tetapi dinilai terlalu sempit untuk workflow forensik yang mungkin melibatkan media, cache, backup, log, dan akuisisi. Sebelum simulasi final, targetkan ruang kosong yang lebih longgar dan dokumentasikan perubahan storage.
+
+
+### Kesimpulan root baseline
+- Pemeriksaan aplikasi root manager: Magisk/SuperSU/KernelSU tidak ditemukan.
+- `adb shell id`: `uid=2000(shell)`.
+- `adb shell su -c id`: `su: inaccessible or not found`.
+- Kesimpulan operasional: **tidak ada indikasi perangkat rooted pada baseline pemeriksaan saat ini**.
+- Catatan metodologis: ini adalah kesimpulan berbasis pemeriksaan aplikasi dan ADB, bukan pembuktian absolut terhadap seluruh kemungkinan modifikasi sistem.
