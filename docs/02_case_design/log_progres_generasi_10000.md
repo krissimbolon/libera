@@ -138,3 +138,12 @@ Pada setiap checkpoint catat:
 - Commit `78891ad939925247fca0b8046b6f7e8d9e78b747` menghapus delta corpus Batch 012–013 yang dinilai terlalu mekanis. Source of truth kembali ke **4.650** pesan: 500 anchor, 1.000 bridge, 2.530 context, 620 distractor.
 - Klaim checkpoint 6.000 yang sempat ditulis sebelum revert tidak lagi berlaku terhadap corpus kerja dan dinyatakan superseded.
 - Generasi berikutnya wajib dimulai dari Batch 011, mempertahankan perbaikan gaya melalui thread yang benar-benar beragam, callback organik, dan panjang percakapan tidak seragam.
+
+## Checkpoint 6.000 — regenerated Batches 012–014
+
+- Setelah delta mekanis lama direvert, corpus dibangun ulang dari 4.650 melalui commit `5e3af8d`, `835f14e`, dan `33e9430` hingga tepat **6.000** pesan.
+- Komposisi: 500 anchor, 1.200 bridge, 3.400 context, 900 distractor; 497 conversation.
+- QA: 6.000 message_id unik; exact duplicate row 0; duplicate synthetic text 0; timestamp collision 0; near-duplicate panjang 0; source leakage 0; timestamp di luar skenario 0; anchor exact-match 500/500; mixed conversation baru 0.
+- Namespace diperbaiki sesuai kontrak: CTX-A berakhir tepat di 3.250 dan context berikutnya dimulai CTX-B (saat checkpoint: CTX-B-0150).
+- Profil gaya: <=3 kata — bridge 225/1.200, context 862/3.400, distractor 261/900. Conversation tepat 10 pesan turun menjadi context 3 dan distractor 0, dari 77/44 pada state 4.650.
+- Perbaikan dilakukan melalui callback organik pada thread lama, variasi panjang 5–17 pesan, fragmen/double-text, dan thread baru yang tidak semuanya ditutup rapi; bukan pemotongan otomatis massal.
