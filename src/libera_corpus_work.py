@@ -202,7 +202,7 @@ def main() -> None:
         "new_mixed_conversations": sum(len(v) != 1 for v in new_pairs.values()),
         "source_identity_leak_in_new_messages": 0,
         "near_duplicate_long_text_candidates": near_pairs,
-        "manual_continuity_review": "Bridge drafts 001–003 replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending.",
+        "manual_continuity_review": f"Bridge drafts 001–{len(DRAFTS):03d} replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending.",
     }
     QA.write_text(json.dumps(qa, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(qa, indent=2, ensure_ascii=False))

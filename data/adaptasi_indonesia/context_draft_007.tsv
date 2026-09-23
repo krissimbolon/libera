@@ -1,0 +1,72 @@
+conversation_id	timestamp	sender_id	message_text
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:03:17+07:00	AKT-CACA	Aku lihat awan gelap, padahal tadi cuci seprai.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:06:42+07:00	AKT-RAKA	Masih di luar? Angkat kalau anginnya mulai kuat.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:10:08+07:00	AKT-CACA	Aku cuma jemur satu. Yang lain belum dibilas.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:14:39+07:00	AKT-CACA	Ujungnya keburu kena percik air dari atap.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:18:13+07:00	AKT-RAKA	Pindah ke dalam sebelum seluruhnya basah lagi.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:22:54+07:00	AKT-CACA	Sudah. Aku pakai dua kursi, jangan diduduki dulu.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:27:26+07:00	AKT-RAKA	Yang dekat pintu juga kamu pakai?
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:30:48+07:00	AKT-CACA	Iya. Ada tulisan kecil di sandarannya biar ingat.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:35:16+07:00	AKT-RAKA	Aku belum ke sana, tapi nanti kuingat.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:41:03+07:00	AKT-CACA	Hujannya cuma sebentar. Aku telanjur angkat semuanya.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:46:28+07:00	AKT-RAKA	Biarkan kering di kursi dulu, jangan bolak-balik.
+KONV-CTX-CACA-0714-SIANG	2026-07-14T11:51:37+07:00	AKT-CACA	Oke. Aku lanjut bilas yang belum selesai.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:07:12+07:00	AKT-REZA	Aku lupa naruh karcis parkir, tadi diselipkan di mana ya?
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:10:49+07:00	AKT-RAKA	Terakhir kamu pegang di dekat mesin bayar.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:14:26+07:00	AKT-REZA	Kantong celana kosong. Aku cek dashboard dulu.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:18:07+07:00	AKT-RAKA	Ada sela kecil di dekat tuas, sering jatuh ke situ.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:22:31+07:00	AKT-REZA	Di sana cuma pulpen dan koin lama.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:26:14+07:00	AKT-REZA	Tunggu, ada kertas nyelip di balik penutup.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:30:48+07:00	AKT-RAKA	Warnanya putih dengan cetak biru, kan?
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:34:17+07:00	AKT-REZA	Iya, itu karcisnya. Sudah kusimpan di dompet.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:37:59+07:00	AKT-RAKA	Bagus. Kalau keluar nanti nggak ribet.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:42:27+07:00	AKT-REZA	Aku jadi ingat harus bayar sebelum gerbang.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:46:14+07:00	AKT-RAKA	Mesinnya dekat lift, bukan di gerbang.
+KONV-CTX-REZA-0715-SIANG	2026-07-15T11:49:43+07:00	AKT-REZA	Nah itu yang kulupa. Makasih.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:07:18+07:00	AKT-DINI	Aku baru dengar suara hujan dari kamar, ternyata AC bocor.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:10:52+07:00	AKT-RAKA	Airnya menetes ke lantai atau cuma ke nampan?
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:14:36+07:00	AKT-DINI	Setetes dua tetes ke lantai, dekat kaki meja.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:18:09+07:00	AKT-RAKA	Jauhkan kabel dari sana dulu.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:21:44+07:00	AKT-DINI	Kabelnya sudah kugulung. Aku letakkan handuk tua.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:26:17+07:00	AKT-RAKA	Kalau makin deras, kabari petugas. Jangan utak-atik AC.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:30:51+07:00	AKT-DINI	Aku matikan sementara. Udah nggak netes lagi.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:35:28+07:00	AKT-DINI	Tapi kamarnya langsung pengap.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:39:13+07:00	AKT-RAKA	Buka jendela sedikit kalau aman.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:43:47+07:00	AKT-DINI	Bisa, ada celah kecil. Anginnya masuk.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:50:06+07:00	AKT-RAKA	Besok kita laporkan. Jangan pakai stopkontak dekat air.
+KONV-CTX-DINI-0716-MALAM	2026-07-16T20:54:39+07:00	AKT-DINI	Iya, sudah kering di sana. Aku ingat.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T11:58:18+07:00	AKT-RENA	Kamu pernah lihat tas kainku yang ada gambar birunya?
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:01:53+07:00	AKT-RAKA	Terakhir dekat bantal, bukan di lemari.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:05:28+07:00	AKT-RENA	Di situ sekarang ada jaket. Tasnya nggak kelihatan.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:09:07+07:00	AKT-RAKA	Lihat sisi tempat tidur yang dekat dinding.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:12:41+07:00	AKT-RENA	Aku nggak mau geser kasur sendirian.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:17:18+07:00	AKT-RAKA	Jangan. Cukup sorot pakai lampu HP.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:20:54+07:00	AKT-RENA	Ada tali biru nyembul. Sepertinya masuk celah.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:24:37+07:00	AKT-RENA	Dapat! Nggak perlu geser apa-apa.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:28:11+07:00	AKT-RAKA	Isinya masih lengkap? Tadi kamu khawatir dompet ikut.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:32:49+07:00	AKT-RENA	Dompetnya ada. Aku taruh tas di kursi sekarang.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:36:28+07:00	AKT-RAKA	Kalau di kursi jangan lupa pas keluar.
+KONV-CTX-RENA-0717-SIANG	2026-07-17T12:40:07+07:00	AKT-RENA	Kutaruh dekat sepatuku biar kelihatan.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:05:12+07:00	AKT-CACA	Aku lihat toko kecil dekat sini jual kue warna ungu.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:09:48+07:00	AKT-RAKA	Ungu apa, ubi atau cuma pewarna?
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:13:26+07:00	AKT-CACA	Katanya dari ubi. Bentuknya seperti bolu mini.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:17:01+07:00	AKT-RAKA	Kalau masih ada nanti coba satu, jangan beli banyak.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:20:44+07:00	AKT-CACA	Aku sudah beli satu. Wangi kelapanya terasa.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:24:19+07:00	AKT-RAKA	Bagian tengahnya lembut atau kering?
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:28:53+07:00	AKT-CACA	Lembut, tapi manisnya lumayan. Kamu mungkin suka.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:32:27+07:00	AKT-RAKA	Aku nggak terlalu suka manis sore-sore.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:36:11+07:00	AKT-CACA	Ya sudah, sisanya buat aku. Tadinya mau kubagi.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:40:49+07:00	AKT-RAKA	Kalau cuma satu, habiskan aja. Nanti cari yang asin.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:45:17+07:00	AKT-CACA	Aku simpan bungkusnya biar ingat nama tokonya.
+KONV-CTX-CACA-0718-SORE	2026-07-18T16:49:58+07:00	AKT-RAKA	Oke, besok baru kasih penilaian lengkap wkwk.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:11:27+07:00	AKT-DINI	Punggungku kaku gara-gara duduk lama semalam.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:15:02+07:00	AKT-RAKA	Coba berdiri dan jalan sedikit. Jangan nunduk terus.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:18:43+07:00	AKT-DINI	Aku baru keliling kamar dua kali.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:22:19+07:00	AKT-RAKA	Ada perubahan atau tetap sama?
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:26:37+07:00	AKT-DINI	Sedikit enak, terutama setelah bahunya kugerakkan.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:30:11+07:00	AKT-RAKA	Jangan dipaksa kalau nyeri.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:34:54+07:00	AKT-DINI	Nggak nyeri, cuma pegal. Aku minum air dulu.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:39:28+07:00	AKT-RAKA	Bagus. Nanti duduk pakai sandaran.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:43:02+07:00	AKT-DINI	Kursi yang itu sandarannya miring. Aku pakai bantal.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:47:46+07:00	AKT-RAKA	Yang tidak terlalu tebal, biar tetap nyaman.
+KONV-CTX-DINI-0721-SIANG	2026-07-21T12:52:13+07:00	AKT-DINI	Iya. Sekarang aku bisa duduk tanpa membungkuk.

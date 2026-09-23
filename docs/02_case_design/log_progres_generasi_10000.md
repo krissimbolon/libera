@@ -5,7 +5,7 @@ Branch: `p2-10k-work`
 | Checkpoint | Status | Pesan | Anchor | Bridge | Context | Distractor | Catatan |
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
-| 2.000 | DALAM PROSES | 1.171 | 500 | 243 | 308 | 120 | Batch 003 +403 pesan lolos QA draf; belum mencapai checkpoint 2.000 |
+| 2.000 | DALAM PROSES | 1.568 | 500 | 312 | 566 | 190 | Batch 004 +397 pesan lolos QA draf; belum mencapai checkpoint 2.000 |
 | 4.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -54,3 +54,10 @@ Pada setiap checkpoint catat:
 - Review bridge bersama anchor membuang tujuh baris yang mendahului jawaban, mengulang penutup, atau menciptakan posisi tidak konsisten. Lima penutup context yang terlalu seragam dihapus untuk memperbaiki ritme. Distractor membuat callback sosial pada stiker, kucing, dan percakapan kecil sebelumnya; tidak menambah event utama.
 - Anchor 500/500 exact-match. Empat conversation anchor yang bercampur pasangan tetap dihindari. Hash manifest jangkar masih berbeda dari file ter-commit dan tetap dicatat tanpa mengubah anchor.
 - Target checkpoint 2.000 belum tercapai; batch berikutnya perlu menjaga variasi bentuk dialog dan memperbanyak context yang berhubungan dengan state, bukan hanya masalah benda kecil.
+
+## Batch 004 — 1.568/10.000 (belum checkpoint)
+
+- Bertambah 397 pesan: 69 bridge, 258 context, 70 distractor. Kumulatif 500/312/566/190, 169 conversation.
+- ID ganda, exact duplicate row, teks sintetis identik, tabrakan timestamp conversation, near-duplicate panjang, dan kebocoran identitas sumber pada tambahan: 0. Jangkar 500/500 exact-match.
+- Review menghapus lima bridge yang membingungkan urutan pertanyaan akun, menggandakan permintaan daftar belanja, atau tidak menyambung setelah peringatan. Context menambah percakapan Kirana saat kondisi badan mulai kurang nyaman dan dialog Tania yang masih menyisakan soal kepulangan; tidak menutup konflik anchor. Distractor sosial tetap pada aktor yang telah dikenal.
+- Komposisi menuju checkpoint 2.000 masih memerlukan 188 bridge, 234 context, dan 10 distractor. Audit state penuh dan mismatch hash manifest tetap terbuka.
