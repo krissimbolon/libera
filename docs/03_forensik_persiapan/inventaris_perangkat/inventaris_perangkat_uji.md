@@ -52,7 +52,7 @@ Diperbarui: 2026-09-23
 - SuperSU: **tidak ada**
 - KernelSU: **tidak ada**
 - Kesimpulan sementara: **tidak ada indikasi root manager yang terlihat dari daftar aplikasi**.
-- Verifikasi teknis via ADB: **koneksi berhasil dan perangkat berstatus `device`; pemeriksaan privilege/root masih berjalan**.
+- Verifikasi teknis via ADB: **`adb shell id` berjalan sebagai `uid=2000(shell)` dengan SELinux context `u:r:shell:s0`; belum ada indikasi shell ADB berjalan sebagai root. Pemeriksaan `su` masih perlu dilakukan untuk konfirmasi tambahan**.
 
 ## Status akun WhatsApp
 
