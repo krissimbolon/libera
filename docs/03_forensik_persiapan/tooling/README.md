@@ -80,3 +80,9 @@ Tindakan berikut:
 - SELinux context: `u:r:shell:s0`
 - Interpretasi: shell ADB tidak berjalan sebagai root.
 - Pemeriksaan `su` tetap diperlukan untuk memastikan tidak ada binary/root manager tersembunyi yang dapat memberi privilege root.
+
+
+### Verifikasi `su`
+- Command: `.\adb.exe shell su -c id`
+- Hasil: `/system/bin/sh: su: inaccessible or not found`
+- Kesimpulan operasional: tidak ditemukan akses `su` dari ADB shell; bersama hasil `uid=2000(shell)` dan ketiadaan Magisk/SuperSU/KernelSU, baseline perangkat dicatat sebagai **tidak ada indikasi root**.
