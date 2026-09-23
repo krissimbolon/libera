@@ -95,3 +95,25 @@ Status dataset kanonik tetap harus mengacu ke `p2-10k-work` untuk generasi dan `
 
 ### Penilaian
 **ON TRACK secara substansi pada 4.000/10.000, dengan satu isu proses Git yang nyata dan satu isu kualitas gaya yang masih terbuka.** QA struktural sangat baik; continuity telah direview secara bertahap. Fokus saat Work dapat berjalan lagi adalah memperbaiki distribusi gaya sambil menuju checkpoint 6.000, bukan sekadar menambah volume.
+
+
+## Pemeriksaan langsung 2026-09-23 21:58 WIB
+
+### State terbaru GPT pengganti
+- Head `p2-10k-work`: `c03ab96d337b3f97af1313afd1f657400e87bfd3`.
+- Commit terbaru: `fix: repair +07:00 bridge timestamps before 6k QA`.
+- Corpus: **4.650/10.000**.
+- Komposisi: 500 anchor, 1.000 bridge, 2.530 context, 620 distractor.
+- Conversation: 393.
+- QA struktural: message_id unik 4.650/4.650, exact duplicate row 0, duplicate synthetic text 0, timestamp collision 0, near-duplicate panjang 0, source leakage 0, anchor exact-match 500/500.
+
+### Perkembangan gaya
+Dibanding checkpoint 4.000:
+- bridge <=3 kata naik dari 20/900 menjadi 112/1.000;
+- context <=3 kata naik dari 89/2.100 menjadi 425/2.530;
+- distractor <=3 kata naik dari 35/500 menjadi 124/620;
+- context thread tepat 10 pesan turun dari 107 menjadi 77.
+Perbaikan arah gaya terlihat nyata. Distractor thread tepat 10 pesan masih 44, jadi variasi panjang distractor tetap perlu diperbaiki.
+
+### Penilaian
+**ON TRACK.** GPT pengganti telah melanjutkan dari state yang benar, menambah 650 pesan, mempertahankan QA struktural, memperbaiki distribusi gaya secara signifikan, dan sedang memperbaiki timestamp +07:00 sebelum QA checkpoint 6.000.
