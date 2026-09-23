@@ -26,3 +26,11 @@ Catatan:
 - Hashing tool: **BELUM DIKUNCI**.
 - Acquisition tool: **BELUM DIKUNCI**.
 - Extraction tool: **BELUM DIKUNCI**.
+
+
+### pip
+- Command: `py -m pip --version`
+- Version: **pip 26.2.1**
+- Python runtime: **3.14**
+- Install path: `C:\Users\Lenovo\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pip`
+- Status: **tersedia**
