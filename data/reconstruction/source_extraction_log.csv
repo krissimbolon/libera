@@ -1,0 +1,2 @@
+extraction_id,resource_id,source_document,source_page,original_line_start,original_line_end,extraction_type,verbatim_text_present,metadata_present,reviewer,status,notes
+EXT-001,SRC-001,Document 547 Galloway.md,16-43,1,543,LINE_LEVEL_RECONSTRUCTION,YES,YES,Bela/QA-Daffa,IN_PROGRESS,"v2: 500/543 line terpetakan; 43 unresolved; isi verbatim disimpan privat; public repo hanya menyimpan status/hash"
