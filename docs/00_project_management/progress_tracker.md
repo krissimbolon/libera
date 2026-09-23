@@ -4,7 +4,7 @@ Diperbarui: 2026-09-23
 
 | ID | Tahap | Luaran utama | Status | Progres |
 |---|---|---|---|---:|
-| P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | BERJALAN | 99% |
+| P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
 | P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 35% |
 | P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BELUM MULAI | 0% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
@@ -17,7 +17,7 @@ Diperbarui: 2026-09-23
 | P10 | Laporan akhir | temuan terverifikasi, keterbatasan, chain of custody, lampiran | BELUM MULAI | 0% |
 | P11 | Presentasi/demo | demo yang dapat direproduksi dan materi pertahanan | BELUM MULAI | 0% |
 
-## P0 yang sudah selesai
+## P0 — SELESAI
 - branch aktif: `proyek-uas-df`
 - README v2 tersedia
 - pertanyaan penelitian dan alur bukti terdokumentasi
@@ -29,11 +29,9 @@ Diperbarui: 2026-09-23
 - peran tim: Chris, Bela, Meldiro, Daffa
 - perangkat uji: OPPO CPH2819 / Android 16 / Snapdragon 685 / RAM 6 GB
 - workstation: Intel Core i7-1255U / RAM 16 GB / Intel Iris Xe / ruang kosong sekitar 327 GB
+- penyimpanan bukti privat: `D:\KSI\Libera Private Evidence`
 
-## Sisa P0
-- konfirmasi lokasi penyimpanan bukti privat.
-
-Metadata operasional perangkat dan versi alat yang belum ada akan dikunci sebelum P3, bukan menghambat penutupan desain proyek.
+Metadata operasional perangkat dan versi alat yang belum ada akan dikunci sebelum P3.
 
 ## P1 yang sudah selesai
 - skeleton rekonstruksi 1–543 dibuat
