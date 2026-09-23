@@ -114,3 +114,12 @@ Pada setiap checkpoint catat:
 - Profil awal mengungkap kelemahan: dari 2.100 context hanya 61 pesan (2,9%) berisi paling banyak tiga kata, sedangkan anchor 163/500 (32,6%); 107 dari 202 conversation context berukuran tepat 10 pesan dan 44 dari 50 distractor juga tepat 10. Ini ritme terlalu seragam untuk WhatsApp. Status checkpoint di atas berarti QA **struktur** lulus, bukan gaya final.
 - 47 baris pada draf context/distractor ditinjau dan disingkat secara manual, sambil memastikan balasan sebelum/sesudah tetap masuk akal. Setelah koreksi, context pendek 89/2.100 dan distractor pendek 35/500; masih jauh dari ritme anchor. Profil gaya kuantitatif kini ditulis ke JSON QA kerja untuk pemantauan batch berikutnya.
 - Batch baru harus berisi lebih banyak sapaan singkat, pesan ganda, jeda, respons yang tak dibalas, dan panjang thread beragam. Jangan mengubah 500 anchor atau mengisi target dengan pemotongan otomatis. Audit gaya final 10.000 tetap wajib.
+
+## Batch 011 — continuity/style expansion ke 4.650
+
+- Ditambahkan 650 pesan: +100 bridge, +430 context, +120 distractor.
+- Kumulatif: **4.650** = 500 anchor + 1.000 bridge + 2.530 context + 620 distractor; 393 conversation.
+- Structural QA: ID unik 4.650/4.650; exact duplicate row 0; duplicate synthetic text 0; timestamp collision 0; near-duplicate panjang 0; source leakage 0; anchor exact-match 500/500.
+- Style correction dilakukan secara organik: 30 context conversation yang sebelumnya 10 pesan dilanjutkan, bukan dipotong; batch memuat pesan pendek, double-text, jeda, typo/singkatan ringan, dan beberapa thread tanpa penutupan eksplisit.
+- Spot-check bridge: R029–R071 yang dipilih direplay dengan anchor terdekat; empat mixed baseline conversation tetap tidak disentuh.
+- Hash manifest anchor lama tetap dicatat sebagai provenance discrepancy, tanpa perubahan anchor.
