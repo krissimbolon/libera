@@ -1,15 +1,15 @@
 conversation_id	timestamp	sender_id	message_text
-KONV-DST-BAGAS-0702-MESIN	2026-07-02T17:47:08+07:00	AKT-BAGAS	Mesin penjual minum menampilkan 'silakan pilih', tapi semua tombol mati.
+KONV-DST-BAGAS-0702-MESIN	2026-07-02T17:47:08+07:00	AKT-BAGAS	Tombolnya mati semua.
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T17:49:25+07:00	AKT-RAKA	Listriknya nyala?
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T17:53:42+07:00	AKT-BAGAS	Lampu layar nyala. Dia cuma menolak pilihan hidupku.
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T17:56:09+07:00	AKT-RAKA	Mungkin uangmu belum masuk.
-KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:02:26+07:00	AKT-BAGAS	Aku bahkan belum memasukkan uang. Mau lihat harganya dulu.
+KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:02:26+07:00	AKT-BAGAS	Belum masukin uang.
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:03:43+07:00	AKT-RAKA	Berarti dia yang menunggu kamu, bukan sebaliknya.
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:08:10+07:00	AKT-BAGAS	Aku berdiri di depannya satu menit seperti negosiasi.
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:10:27+07:00	AKT-RAKA	Siapa menang?
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:17:44+07:00	AKT-BAGAS	Aku pergi beli di warung. Mesin itu tetap menyala sombong.
 KONV-DST-BAGAS-0702-MESIN	2026-07-02T18:20:11+07:00	AKT-RAKA	Skor satu untuk warung.
-KONV-DST-DINI-0705-KERTAS	2026-07-05T23:18:08+07:00	AKT-DINI	Aku menulis 'beli sabun' di kertas lalu menempelnya di sabun.
+KONV-DST-DINI-0705-KERTAS	2026-07-05T23:18:08+07:00	AKT-DINI	Catatannya kutempel di sabun.
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:20:25+07:00	AKT-RAKA	Supaya ingat beli sabun lagi?
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:24:42+07:00	AKT-DINI	Iya. Begitu sabunnya habis, catatan ikut hilang.
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:27:09+07:00	AKT-RAKA	Strategi yang punya kelemahan jelas.
@@ -17,25 +17,25 @@ KONV-DST-DINI-0705-KERTAS	2026-07-05T23:33:26+07:00	AKT-DINI	Aku baru sadar sete
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:34:43+07:00	AKT-RAKA	Tempel di pintu saja.
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:39:10+07:00	AKT-DINI	Kalau pintu dibuka, kertasnya bisa terbang.
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:41:27+07:00	AKT-RAKA	Kalau di dompet, kamu lihat pas mau bayar.
-KONV-DST-DINI-0705-KERTAS	2026-07-05T23:48:44+07:00	AKT-DINI	Itu masuk akal. Aku pindahkan sekarang.
+KONV-DST-DINI-0705-KERTAS	2026-07-05T23:48:44+07:00	AKT-DINI	Pindah ke dompet.
 KONV-DST-DINI-0705-KERTAS	2026-07-05T23:51:11+07:00	AKT-RAKA	Kita selamatkan kertas sebelum hilang bersama sabun.
-KONV-DST-RENA-0709-CERMIN	2026-07-09T19:04:08+07:00	AKT-RENA	Aku bilang 'terima kasih' ke cermin karena mengira ada orang lewat.
+KONV-DST-RENA-0709-CERMIN	2026-07-09T19:04:08+07:00	AKT-RENA	Aku nyapa cermin.
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:06:25+07:00	AKT-RAKA	Pantulannya mirip siapa?
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:10:42+07:00	AKT-RENA	Aku sendiri, tapi dari sudut mata seperti Dini.
-KONV-DST-RENA-0709-CERMIN	2026-07-09T19:13:09+07:00	AKT-RAKA	Kamu capek. Minum dulu.
+KONV-DST-RENA-0709-CERMIN	2026-07-09T19:13:09+07:00	AKT-RAKA	Minum dulu deh.
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:19:26+07:00	AKT-RENA	Aku sadar pas cerminnya tidak menjawab.
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:20:43+07:00	AKT-RAKA	Dia pendengar yang baik, cuma nggak membalas.
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:25:10+07:00	AKT-RENA	Kamu jangan cerita ke Dini.
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:27:27+07:00	AKT-RAKA	Kalau dia tanya kenapa cerminmu sopan?
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:34:44+07:00	AKT-RENA	Aku pura-pura nggak mengerti.
 KONV-DST-RENA-0709-CERMIN	2026-07-09T19:37:11+07:00	AKT-RAKA	Rahasiamu aman sejauh ini.
-KONV-DST-REZA-0712-BUAH	2026-07-12T23:07:08+07:00	AKT-REZA	Aku beli buah yang penjualnya sebut 'manis banget'.
-KONV-DST-REZA-0712-BUAH	2026-07-12T23:09:25+07:00	AKT-RAKA	Terus rasanya?
+KONV-DST-REZA-0712-BUAH	2026-07-12T23:07:08+07:00	AKT-REZA	Katanya manis banget.
+KONV-DST-REZA-0712-BUAH	2026-07-12T23:09:25+07:00	AKT-RAKA	Rasanya gimana?
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:13:42+07:00	AKT-REZA	Asam sampai mataku menutup sendiri.
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:16:09+07:00	AKT-RAKA	Mungkin 'manis' untuk orang lain.
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:22:26+07:00	AKT-REZA	Aku kasih sepotong ke Bagas, dia bilang enak.
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:23:43+07:00	AKT-RAKA	Berarti lidah kalian beda.
-KONV-DST-REZA-0712-BUAH	2026-07-12T23:28:10+07:00	AKT-REZA	Dia juga mengambil sisanya, aku nggak protes.
+KONV-DST-REZA-0712-BUAH	2026-07-12T23:28:10+07:00	AKT-REZA	Diambil Bagas semua.
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:30:27+07:00	AKT-RAKA	Transaksi yang saling menguntungkan.
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:37:44+07:00	AKT-REZA	Penjualnya tetap menang paling banyak.
 KONV-DST-REZA-0712-BUAH	2026-07-12T23:40:11+07:00	AKT-RAKA	Setidaknya buah itu nggak terbuang.

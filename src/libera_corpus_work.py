@@ -181,6 +181,20 @@ def main() -> None:
     assert counts["SYNTHETIC_CONTEXT"] <= 3250  # First context namespace is Worker A.
     assert counts["SYNTHETIC_DISTRACTOR"] <= 1500
     day_counts = Counter(r["timestamp"][:10] for r in messages)
+    synthetic_by_kind = {
+        kind: [r for r in messages if r["source_provenance"] == kind]
+        for kind in PROVENANCE_TARGET
+    }
+    style_profile = {}
+    for kind, rows in synthetic_by_kind.items():
+        sizes = Counter(r["conversation_id"] for r in rows)
+        style_profile[kind] = {
+            "messages_at_most_three_words": sum(
+                len(r["message_text"].split()) <= 3 for r in rows
+            ),
+            "messages_with_question_mark": sum("?" in r["message_text"] for r in rows),
+            "conversation_length_distribution": dict(sorted(Counter(sizes.values()).items())),
+        }
     qa = {
         "status": "DRAFT_INCOMPLETE",
         "total": len(messages),
@@ -202,6 +216,7 @@ def main() -> None:
         "new_mixed_conversations": sum(len(v) != 1 for v in new_pairs.values()),
         "source_identity_leak_in_new_messages": 0,
         "near_duplicate_long_text_candidates": near_pairs,
+        "style_profile": style_profile,
         "manual_continuity_review": f"Bridge drafts 001–{len(DRAFTS):03d} replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending.",
     }
     QA.write_text(json.dumps(qa, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

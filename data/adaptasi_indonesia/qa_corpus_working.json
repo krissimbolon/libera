@@ -41,7 +41,7 @@
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
   "manifest_anchor_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
   "manifest_hash_matches_committed_anchor": false,
-  "working_sha256": "646753d918d80949c08656c16416c45f13b7b1ad59755268793ffef4cbd49da0",
+  "working_sha256": "ad329a3746acf0515654d4f0d8c889fc1b271d61d683ca7b27855fce35621770",
   "anchor_row_exact_match": true,
   "duplicate_message_ids": 0,
   "exact_duplicate_rows": 0,
@@ -56,5 +56,83 @@
   "new_mixed_conversations": 0,
   "source_identity_leak_in_new_messages": 0,
   "near_duplicate_long_text_candidates": [],
+  "style_profile": {
+    "ADAPTED_FROM_GALLOWAY": {
+      "messages_at_most_three_words": 163,
+      "messages_with_question_mark": 146,
+      "conversation_length_distribution": {
+        "1": 22,
+        "2": 19,
+        "3": 11,
+        "4": 12,
+        "5": 7,
+        "6": 5,
+        "7": 2,
+        "8": 6,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 1,
+        "14": 1,
+        "15": 2,
+        "18": 1,
+        "23": 1,
+        "24": 1
+      }
+    },
+    "SYNTHETIC_BRIDGE": {
+      "messages_at_most_three_words": 20,
+      "messages_with_question_mark": 76,
+      "conversation_length_distribution": {
+        "3": 1,
+        "4": 3,
+        "5": 8,
+        "6": 2,
+        "7": 3,
+        "8": 14,
+        "10": 1,
+        "11": 5,
+        "12": 8,
+        "13": 6,
+        "14": 7,
+        "15": 2,
+        "16": 5,
+        "17": 2,
+        "18": 1,
+        "19": 3,
+        "20": 3,
+        "21": 4
+      }
+    },
+    "SYNTHETIC_CONTEXT": {
+      "messages_at_most_three_words": 89,
+      "messages_with_question_mark": 277,
+      "conversation_length_distribution": {
+        "9": 42,
+        "10": 107,
+        "11": 27,
+        "12": 16,
+        "13": 2,
+        "14": 1,
+        "15": 2,
+        "16": 1,
+        "17": 2,
+        "20": 1,
+        "23": 1
+      }
+    },
+    "SYNTHETIC_DISTRACTOR": {
+      "messages_at_most_three_words": 35,
+      "messages_with_question_mark": 65,
+      "conversation_length_distribution": {
+        "6": 1,
+        "9": 1,
+        "10": 44,
+        "11": 3,
+        "12": 1
+      }
+    }
+  },
   "manual_continuity_review": "Bridge drafts 001–011 replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending."
 }
