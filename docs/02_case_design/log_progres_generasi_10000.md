@@ -5,7 +5,7 @@ Branch: `p2-10k-work`
 | Checkpoint | Status | Pesan | Anchor | Bridge | Context | Distractor | Catatan |
 |---|---|---:|---:|---:|---:|---:|---|
 | Anchor locked | SELESAI | 500 | 500 | 0 | 0 | 0 | 500 anchor Indonesia telah QA dan dikunci |
-| 2.000 | DALAM PROSES | 768 | 500 | 168 | 70 | 30 | Draf 002, context 001, distractor 001; belum mencapai checkpoint 2.000 |
+| 2.000 | DALAM PROSES | 1.171 | 500 | 243 | 308 | 120 | Batch 003 +403 pesan lolos QA draf; belum mencapai checkpoint 2.000 |
 | 4.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 6.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
 | 8.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
@@ -46,3 +46,11 @@ Pada setiap checkpoint catat:
 - Bridge ditambah pada fase 2 sampai 5. Review berurutan membuang pesan yang mendahului instruksi turun, menjawab pertanyaan sebelum anchor, atau mengulangi pertanyaan Nara/Jihan. 70 context berupa tujuh dialog netral berlanjut; 30 distractor berupa tiga dialog sosial dengan aktor existing. Semua thread baru melibatkan Raka, sesuai batas telepon akuisisi.
 - Ledger lintas percakapan dibuat pada `ledger_kontinuitas_aktor_10k.md`; empat conversation campuran dari anchor tetap dihindari. Hash manifest yang berbeda dari file jangkar masih terbuka.
 - Audit semantik manual terhadap seluruh 768 pesan, jumlah target, dan QA final **belum selesai**. Berkas `corpus_whatsapp_working.csv` tetap draf.
+
+## Batch 003 — 1.171/10.000 (belum checkpoint)
+
+- Bertambah 403 pesan: 75 bridge, 238 context, 90 distractor. Kumulatif 500/243/308/120, 142 conversation.
+- ID ganda, exact duplicate row, teks sintetis identik, benturan timestamp dalam conversation, kandidat near-duplicate panjang, dan kebocoran identitas sumber pada pesan baru: 0.
+- Review bridge bersama anchor membuang tujuh baris yang mendahului jawaban, mengulang penutup, atau menciptakan posisi tidak konsisten. Lima penutup context yang terlalu seragam dihapus untuk memperbaiki ritme. Distractor membuat callback sosial pada stiker, kucing, dan percakapan kecil sebelumnya; tidak menambah event utama.
+- Anchor 500/500 exact-match. Empat conversation anchor yang bercampur pasangan tetap dihindari. Hash manifest jangkar masih berbeda dari file ter-commit dan tetap dicatat tanpa mengubah anchor.
+- Target checkpoint 2.000 belum tercapai; batch berikutnya perlu menjaga variasi bentuk dialog dan memperbanyak context yang berhubungan dengan state, bukan hanya masalah benda kecil.

@@ -19,9 +19,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "adaptasi_indonesia"
 ANCHOR = DATA / "anchor_indonesia_500.csv"
-DRAFTS = [DATA / "bridge_draft_001.tsv", DATA / "bridge_draft_002.tsv"]
-CONTEXT_DRAFTS = [DATA / "context_draft_001.tsv"]
-DISTRACTOR_DRAFTS = [DATA / "distractor_draft_001.tsv"]
+DRAFTS = sorted(DATA.glob("bridge_draft_*.tsv"))
+CONTEXT_DRAFTS = sorted(DATA.glob("context_draft_*.tsv"))
+DISTRACTOR_DRAFTS = sorted(DATA.glob("distractor_draft_*.tsv"))
 WORK = DATA / "corpus_whatsapp_working.csv"
 QA = DATA / "qa_corpus_working.json"
 # SHA of the actual committed anchor bytes on p2-10k-work. The older manifest
@@ -100,7 +100,13 @@ def main() -> None:
     ):
         for number, item in enumerate(rows, 1):
             conversation = item["conversation_id"]
-            sender, recipient = item["sender_id"], item["recipient_id"]
+            sender = item["sender_id"]
+            if "recipient_id" in item:
+                recipient = item["recipient_id"]
+            else:
+                other_actor = "AKT-" + conversation.split("-")[2]
+                assert sender in ("AKT-RAKA", other_actor), number
+                recipient = other_actor if sender == "AKT-RAKA" else "AKT-RAKA"
             pair = frozenset((sender, recipient))
             assert len(pair) == 2 and "AKT-RAKA" in pair, number
             assert sender in known_actor_ids and recipient in known_actor_ids, number
@@ -127,6 +133,8 @@ def main() -> None:
     messages.sort(key=lambda x: (x["timestamp"], x["message_id"]))
     ids = Counter(x["message_id"] for x in messages)
     duplicate_ids = sum(n - 1 for n in ids.values() if n > 1)
+    exact_rows = Counter(tuple(row[field] for field in fields) for row in messages)
+    duplicate_rows = sum(n - 1 for n in exact_rows.values() if n > 1)
     synthetic = [x for x in messages if x["source_provenance"] != "ADAPTED_FROM_GALLOWAY"]
     texts = Counter(x["message_text"] for x in synthetic)
     duplicate_texts = sum(n - 1 for n in texts.values() if n > 1)
@@ -137,7 +145,7 @@ def main() -> None:
         if row["timestamp"] in conversation_times[key]:
             time_collisions.append((key, row["timestamp"]))
         conversation_times[key].add(row["timestamp"])
-    assert not duplicate_ids and not duplicate_texts and not time_collisions
+    assert not duplicate_ids and not duplicate_rows and not duplicate_texts and not time_collisions
     assert not any(LEAK.search(r["message_text"]) for r in synthetic)
     assert all(not r["source_original_line"] and not r["transformation_id"] for r in synthetic)
     # Compare each full anchor row; sorted working order may differ from source order.
@@ -187,13 +195,14 @@ def main() -> None:
         "working_sha256": digest(WORK),
         "anchor_row_exact_match": True,
         "duplicate_message_ids": duplicate_ids,
+        "exact_duplicate_rows": duplicate_rows,
         "duplicate_synthetic_text": duplicate_texts,
         "same_conversation_timestamp_collisions": time_collisions,
         "baseline_mixed_anchor_conversations": mixed_baseline,
         "new_mixed_conversations": sum(len(v) != 1 for v in new_pairs.values()),
         "source_identity_leak_in_new_messages": 0,
         "near_duplicate_long_text_candidates": near_pairs,
-        "manual_continuity_review": "Bridge drafts 001–002 replayed with adjacent anchors; context/distractor threads spot-checked; full actor-state audit pending.",
+        "manual_continuity_review": "Bridge drafts 001–003 replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending.",
     }
     QA.write_text(json.dumps(qa, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(qa, indent=2, ensure_ascii=False))

@@ -1,12 +1,12 @@
 {
   "status": "DRAFT_INCOMPLETE",
-  "total": 768,
+  "total": 1171,
   "target": 10000,
   "provenance_counts": {
     "ADAPTED_FROM_GALLOWAY": 500,
-    "SYNTHETIC_BRIDGE": 168,
-    "SYNTHETIC_CONTEXT": 70,
-    "SYNTHETIC_DISTRACTOR": 30
+    "SYNTHETIC_BRIDGE": 243,
+    "SYNTHETIC_CONTEXT": 308,
+    "SYNTHETIC_DISTRACTOR": 120
   },
   "provenance_targets": {
     "ADAPTED_FROM_GALLOWAY": 500,
@@ -14,36 +14,37 @@
     "SYNTHETIC_CONTEXT": 6500,
     "SYNTHETIC_DISTRACTOR": 1500
   },
-  "conversation_count": 111,
+  "conversation_count": 142,
   "message_counts_by_day": {
-    "2026-07-01": 68,
-    "2026-07-02": 49,
-    "2026-07-03": 56,
-    "2026-07-04": 23,
+    "2026-07-01": 107,
+    "2026-07-02": 58,
+    "2026-07-03": 65,
+    "2026-07-04": 49,
     "2026-07-05": 20,
-    "2026-07-06": 50,
-    "2026-07-07": 51,
-    "2026-07-08": 13,
-    "2026-07-09": 13,
-    "2026-07-10": 47,
-    "2026-07-11": 32,
-    "2026-07-12": 44,
-    "2026-07-13": 20,
-    "2026-07-14": 3,
-    "2026-07-15": 37,
-    "2026-07-16": 66,
-    "2026-07-17": 52,
-    "2026-07-18": 32,
-    "2026-07-19": 43,
-    "2026-07-20": 40,
-    "2026-07-21": 9
+    "2026-07-06": 70,
+    "2026-07-07": 60,
+    "2026-07-08": 55,
+    "2026-07-09": 23,
+    "2026-07-10": 63,
+    "2026-07-11": 57,
+    "2026-07-12": 59,
+    "2026-07-13": 45,
+    "2026-07-14": 38,
+    "2026-07-15": 53,
+    "2026-07-16": 90,
+    "2026-07-17": 65,
+    "2026-07-18": 57,
+    "2026-07-19": 53,
+    "2026-07-20": 65,
+    "2026-07-21": 19
   },
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
   "manifest_anchor_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
   "manifest_hash_matches_committed_anchor": false,
-  "working_sha256": "a11067fa3bbd18db4f203b0c3ec886812a599bb7060ba505ff243def2945e858",
+  "working_sha256": "c2a46cab1794252796abf2628d5b373d02867d2aa70ba15ffb9c1dc350e2de51",
   "anchor_row_exact_match": true,
   "duplicate_message_ids": 0,
+  "exact_duplicate_rows": 0,
   "duplicate_synthetic_text": 0,
   "same_conversation_timestamp_collisions": [],
   "baseline_mixed_anchor_conversations": {
@@ -55,5 +56,5 @@
   "new_mixed_conversations": 0,
   "source_identity_leak_in_new_messages": 0,
   "near_duplicate_long_text_candidates": [],
-  "manual_continuity_review": "Bridge drafts 001–002 replayed with adjacent anchors; context/distractor threads spot-checked; full actor-state audit pending."
+  "manual_continuity_review": "Bridge drafts 001–003 replayed with adjacent anchors; context/distractor threads sampled; full actor-state audit pending."
 }
