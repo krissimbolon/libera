@@ -123,3 +123,12 @@ Pada setiap checkpoint catat:
 - Style correction dilakukan secara organik: 30 context conversation yang sebelumnya 10 pesan dilanjutkan, bukan dipotong; batch memuat pesan pendek, double-text, jeda, typo/singkatan ringan, dan beberapa thread tanpa penutupan eksplisit.
 - Spot-check bridge: R029–R071 yang dipilih direplay dengan anchor terdekat; empat mixed baseline conversation tetap tidak disentuh.
 - Hash manifest anchor lama tetap dicatat sebagai provenance discrepancy, tanpa perubahan anchor.
+
+## Checkpoint 6.000 — Batch 013
+
+- Kumulatif tepat **6.000**: 500 anchor, 1.200 bridge, 3.400 context, 900 distractor; 492 conversation.
+- QA struktural: message_id unik 6.000/6.000; exact duplicate row 0; duplicate synthetic text 0; timestamp collision dalam conversation 0; near-duplicate panjang 0; source identity leakage 0; anchor exact-match 500/500; timestamp di luar 1–21 Juli 0.
+- Koreksi sebelum lulus: bug timezone pada bridge Batch 012–013 terdeteksi karena midpoint sempat bergeser ke 30 Juni; 200 bridge direlokasi ke gap lokal +07:00 dalam conversation GAL masing-masing, tanpa menyentuh anchor.
+- Continuity/actor-state spot-check: tambahan context/distractor tetap dyadic dengan Raka, tidak menambah outcome utama atau lokasi spesifik baru; Caca tidak diperpanjang setelah baseline blokir 19 Juli; Jihan tetap netral dan tersanitasi.
+- Profil gaya: <=3 kata — anchor 163/500, bridge 180/1.200, context 874/3.400, distractor 339/900. Distribusi pesan pendek membaik nyata dibanding 4k. Masalah tersisa: 80 context conversation dan 59 distractor conversation masih tepat 10 pesan; batch menuju 8k harus terutama memperpanjang thread ini secara organik dan menghindari thread baru berukuran seragam.
+- Discrepancy hash manifest anchor tetap isu provenance saja; 500 anchor tidak diubah.
