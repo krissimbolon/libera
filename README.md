@@ -15,7 +15,7 @@ The project uses a synthetic Indonesian human-trafficking scenario that is struc
 7. Keep raw/restricted evidence out of the public repository.
 
 ## Working branch
-`uas-forensic-research-v2`
+`proyek-uas-df`
 
 The legacy prototype on `main` is retained for comparison and migration; it is not the methodological baseline for the v2 study.
 
