@@ -5,7 +5,7 @@ Diperbarui: 2026-09-23
 | ID | Tahap | Luaran utama | Status | Progres |
 |---|---|---|---|---:|
 | P0 | Penyiapan proyek & ruang lingkup | desain riset, branch, struktur folder, aturan sumber/provenance | SELESAI | 100% |
-| P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 38% |
+| P1 | Rekonstruksi sumber & desain kasus | skeleton 1–543, pesan terpulihkan, gap, registri sumber | BERJALAN | 60% |
 | P2 | Adaptasi sintetis Indonesia | aktor, peristiwa, pesan, distractor, ground truth | BELUM MULAI | 0% |
 | P3 | Penyitaan & akuisisi | catatan penyitaan, dokumentasi perangkat, akuisisi, hash | BELUM MULAI | 0% |
 | P4 | Ekstraksi bukti | artefak WhatsApp terstruktur, lampiran, timestamp, evidence ID | BELUM MULAI | 0% |
@@ -19,42 +19,29 @@ Diperbarui: 2026-09-23
 
 ## P0 — SELESAI
 - branch aktif: `proyek-uas-df`
-- README v2 tersedia
-- pertanyaan penelitian dan alur bukti terdokumentasi
-- aturan provenance terdokumentasi
-- batas data publik/privat terdokumentasi
-- `.gitignore` diperkeras untuk kebutuhan forensik
-- checklist pengumpulan sumber tersedia
-- konvensi ID bukti/artefak tersedia
-- peran tim: Chris, Bela, Meldiro, Daffa
-- perangkat uji: OPPO CPH2819 / Android 16 / Snapdragon 685 / RAM 6 GB
-- workstation: Intel Core i7-1255U / RAM 16 GB / Intel Iris Xe / ruang kosong sekitar 327 GB
-- penyimpanan bukti privat: `D:\KSI\Libera Private Evidence`
+- desain riset, provenance, pemisahan publik/privat, tim, perangkat uji, workstation, dan penyimpanan bukti privat telah dikunci.
 
-## P1 yang sudah selesai
-- skeleton rekonstruksi 1–543 dibuat
-- tabel coverage rekonstruksi dibuat
-- log QA rekonstruksi dibuat
-- log intake sumber dan ekstraksi dibuat
-- registri sumber dibuat
-- validator provenance rekonstruksi dibuat
-- pengujian skema rekonstruksi dibuat
-- Document 547 diingest sebagai SRC-001
-- sumber kerja kanonik Document 547 dialihkan ke `Document 547 Galloway.md`
-- SHA-256 sumber kerja kanonik dicatat
-- audit awal referensi line Exhibit 1A selesai
-- anomali internal referensi sumber didokumentasikan
-- aturan eksplisit: tidak ada pengisian gap dengan LLM pada rekonstruksi sumber
+## P1 — status saat ini
+- sumber kerja kanonik: `Document 547 Galloway.md`
+- SHA-256 sumber: `195a880e87f59d882e70c16b4c42a9df23a0eaec547b928f1ad1a9afae4ae889`
+- 543 line Exhibit 1A dipertahankan sebagai universe rekonstruksi
+- **500/543 line (92,08%)** telah memiliki mapping kerja yang dapat dipertahankan
+- **43/543 line (7,92%)** tetap unresolved
+- konflik 85–96 vs 382–389 diselesaikan melalui konsistensi internal dan narasi line 94
+- 382–392 dipetakan dari referensi langsung yang koheren pada halaman 34–35
+- typo 511–5521 disimpan sebagai source typo dengan working resolution 511–521
+- artefak parsing dari konversi PDF lama dibersihkan terhadap sumber Markdown kanonik
+- paket rekonstruksi verbatim v2 tetap berada di penyimpanan privat, bukan GitHub publik
+- tidak ada gap yang diisi menggunakan LLM
 
-## Tindakan P1 berikutnya
-- ekstrak klaster pesan dari sumber Markdown kanonik;
-- petakan hanya pesan dengan line yang tidak ambigu;
-- biarkan referensi konflik/ambigu tetap unresolved;
-- cari corroboration dari Doc. 382, 427, 512, daftar exhibit, atau Exhibit 1A;
-- hitung coverage publik yang benar-benar terverifikasi.
+## Sisa P1
+- corroboration untuk rentang 16–27, 116–117, 168–175, 208–217, dan 531–541;
+- QA manual silang oleh anggota kedua;
+- bentuk actor/event/timeline ground truth yang tidak membocorkan evidence ke examiner;
+- kunci versi final rekonstruksi sebelum P2.
 
 ## Tugas paralel tim
-Kumpulkan court record tambahan, sumber domain perdagangan orang yang otoritatif, dan sumber metodologis tambahan yang relevan.
+Prioritaskan pencarian Doc. 382, Doc. 427, Doc. 512, exhibit list, atau Exhibit 1A. Sumber domain perdagangan orang Indonesia dapat terus dikumpulkan untuk P2/P6.
 
 ## Pembagian tim
 - Chris — Anggota A — Lead Forensik Digital
