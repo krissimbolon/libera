@@ -1,5 +1,13 @@
 # LIBERA — Final Report Draft (P10)
 
+## Hasil rekonstruksi terbaru
+
+P9/P10 untuk **post-hoc provenance proxy** telah selesai. Lihat [metode, metrik actual, dan batasan](../05_validasi/GT_RECONSTRUCTION_P9_P10_20260925.md). Ground truth semantik evaluator yang hilang tidak berhasil dipulihkan; jangan mengklaim metrik proxy sebagai akurasi bukti kunci.
+
+## Checkpoint lokal sebelum rekonstruksi
+
+Hasil actual dan batasannya tersedia dalam [RESULTS_LOCAL_20260925.md](RESULTS_LOCAL_20260925.md): P8 30/30 selesai, 12 citation C dikarantina, evaluasi GT final masih menunggu label independen. Parameter v2 di rancangan awal berikut bersifat historis; run actual memakai v6 yang terdokumentasi.
+
 ## Working title
 **Local LLM-Assisted Digital Forensic Investigation of Synthetic WhatsApp Evidence Using Retrieval-Augmented Generation and Structured Forensic Reasoning**
 

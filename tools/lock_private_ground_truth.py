@@ -32,6 +32,18 @@ def main() -> None:
     path = Path(args.ground_truth)
     if not path.exists():
         raise SystemExit(f"Ground truth not found: {path}")
+    out = Path(args.output) if args.output else path.with_suffix(path.suffix + ".lock.json")
+    if out.resolve() == path.resolve():
+        raise SystemExit("Ground-truth lock must not overwrite its source CSV.")
+    if out.exists():
+        existing = json.loads(out.read_text(encoding="utf-8"))
+        if (existing.get("status") != "PRIVATE_GROUND_TRUTH_LOCKED" or
+                existing.get("ground_truth_sha256") != sha256(path)):
+            raise SystemExit("Existing GT lock mismatch; refusing to re-lock changed labels.")
+        if args.require_complete and not existing.get("complete_binary_labels"):
+            raise SystemExit("Existing GT lock contains incomplete labels.")
+        print("[GT-LOCK] Existing lock VERIFY PASS (unchanged)")
+        return
 
     with path.open("r", encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
@@ -40,12 +52,18 @@ def main() -> None:
     required = {"message_id", "is_key_evidence"}
     if not required.issubset(rows[0]):
         raise SystemExit("Ground truth requires message_id and is_key_evidence columns.")
+    origins = {r.get("label_origin", "independent_evaluator_labels") for r in rows}
+    targets = {r.get("reference_target", "message_level_key_evidence") for r in rows}
+    if len(origins) != 1 or len(targets) != 1:
+        raise SystemExit("Mixed reference origins/targets cannot share one ground-truth lock.")
 
     seen = set()
     duplicates = []
     positive = negative = unlabeled = 0
     for row in rows:
         msg = row["message_id"].strip()
+        if not msg:
+            raise SystemExit("Ground truth has an empty message_id.")
         if msg in seen:
             duplicates.append(msg)
         seen.add(msg)
@@ -73,6 +91,8 @@ def main() -> None:
         "negative_rows": negative,
         "unlabeled_rows": unlabeled,
         "complete_binary_labels": unlabeled == 0,
+        "label_origin": next(iter(origins)),
+        "reference_target": next(iter(targets)),
         "privacy": "Keep this CSV and lock manifest outside the public repository.",
     }
     out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -1,5 +1,45 @@
 # LIBERA Post-P2 Progress Tracker
 
+## Streamlit ChatSim selesai — 25 September 2026
+
+- Sumber percakapan langsung SQLite ChatSim melalui ADB; tanpa impor CSV.
+- Akuisisi lewat browser teruji: 9.997 pesan, 25 chat, hash cocok dengan sumber P8.
+- Tujuh tab mencakup percakapan, pencarian, timeline, trace, A/B/C, evaluasi dan laporan.
+- 12 referensi C dikarantina; status proxy rekonstruksi ditampilkan eksplisit.
+- 38 tes lulus; browser dan Streamlit AppTest terverifikasi.
+- Panduan: [STREAMLIT_CHATSIM.md](../06_report/STREAMLIT_CHATSIM.md).
+
+## Latest reconstructed-reference evaluation ? 25 September 2026
+
+- Pengguna mengonfirmasi GT asli di Chris hilang. Corpus beku digunakan untuk membuat referensi **provenance proxy**, bukan memulihkan label bukti kunci manusia.
+- Referensi privat: 10.000 rows; 500 anchor-positive, 1.500 distractor-negative, 8.000 unlabeled.
+- P9/P10 jalur proxy **SUDAH DIEKSEKUSI DAN SELESAI**: 1.997 acquired labeled messages; 3 anchor unacquired; 12 citation C tetap dikarantina.
+- Status `P9_RECONSTRUCTED_PROXY_EVALUATION_COMPLETE_WITH_CITATION_ERRORS`; tidak diklaim sebagai final blind semantic evaluation.
+- Paket anotasi ulang manusia juga dibuat, 9.997 rows dengan label kosong.
+- [Dokumentasi lengkap, metrik, dan batasan](../05_validasi/GT_RECONSTRUCTION_P9_P10_20260925.md). Hasil: `runtime/working/P9_reconstructed_20260925/`.
+- Checkpoint di bawah bersifat historis.
+
+## Latest P9 review ? 25 September 2026
+
+- P8 v6 tetap locked dan tidak diubah; 14/14 hashes terverifikasi.
+- Penanganan referensi selesai: C 24 referensi, 12 valid dan 12 dikarantina (50% identifier validity). Tidak ada ID yang diperbaiki atau dipetakan otomatis.
+- Scoring hanya memakai exact P4 IDs yang diberikan ke kondisi; seluruh universe GT tetap dipertahankan sehingga FN tidak disembunyikan.
+- Paket evaluasi dan laporan tersedia di `runtime/working/P9_review_20260925/`.
+- 31 tes lulus, termasuk bukti invalid reference tidak diberi kredit dan FN tetap dihitung.
+- **P9 final belum selesai: path GT independen belum diberikan.** Script final sudah mengambil eksperimen dari lock v6 dan memverifikasi seluruh file sebelum GT dibuka.
+- [Kebijakan dan perintah P9](../05_validasi/P9_CITATION_POLICY_20260925.md) | [Hasil lokal untuk laporan](../06_report/RESULTS_LOCAL_20260925.md).
+
+## Latest local execution ? 25 September 2026
+
+- P3/P4 ChatSim: actual ACQ-SIM-001 tersedia; 9.997 ART, 25 chat.
+- P5 lock v2 verified; P6 real BGE-M3 index 645 entries.
+- P8 final v6: **T01?T10 selesai, A/B/C 30/30 respons nyata**, 0 transport error/retry, 30 normal stop, 10/10 schema C valid.
+- P8 output locked: **14/14 file hashes PASS**. Folder: `runtime/working/P8_final_v6_20260925/`.
+- P9 precheck: **FAIL_INVALID_EVIDENCE_REFERENCE**; 12 invalid reference strings pada 6 output C. Private GT belum dibuka; final metrics belum dikerjakan.
+- P10 runtime report tersedia, actual ChatSim acquisition sudah tercatat.
+- Dokumentasi, perintah, hash, batasan, dan riwayat percobaan: [P8 real run](../04_ai_methodology/P8_REAL_RUN_20260925.md).
+- Ringkasan/checkpoint di bawah adalah status historis sebelum eksekusi lokal ini.
+
 Baseline immutable: `p2-10k-work@07a33cc4c2a1fceecabe09f4bfcc01331796b46b`.
 Integration branch: `p3-p10-final-integration`.
 Frozen corpus SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6`.

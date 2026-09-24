@@ -54,13 +54,8 @@ if ($UseLockedP5) { $runnerArgs += "-UseLockedP5" }
 if ($LASTEXITCODE -ne 0) { throw "P5-P10 pipeline failed." }
 
 if ($LaunchWorkbench) {
-    $env:LIBERA_ARTIFACT_DIR = $artifactDir
-    if (-not (Get-Command streamlit -ErrorAction SilentlyContinue)) {
-        Write-Warning "Streamlit not found; run: py -3 -m pip install -r requirements-demo.txt"
-    } else {
-        Write-Host "Launching LIBERA Forensic Workbench..." -ForegroundColor Green
-        & streamlit run workbench/libera_workbench.py
-    }
+    Write-Host "Launching SQLite ChatSim Workbench..." -ForegroundColor Green
+    & powershell -ExecutionPolicy Bypass -File scripts/run_workbench.ps1
 }
 
 Write-Host ""

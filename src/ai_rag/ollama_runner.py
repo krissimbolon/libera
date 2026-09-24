@@ -15,6 +15,9 @@ DEFAULT_MODEL = "qwen2.5:1.5b"
 DEFAULT_TEMPERATURE = 0.1
 DEFAULT_SEED = 42
 DEFAULT_NUM_CTX = 8192
+DEFAULT_NUM_PREDICT = 2048
+DEFAULT_REPEAT_PENALTY = 1.2
+DEFAULT_REPEAT_LAST_N = 256
 DEFAULT_TIMEOUT_SECONDS = 180
 
 FORENSIC_INSTRUCTIONS = """You are assisting a digital-forensic examination.
@@ -36,8 +39,46 @@ STRUCTURED_REASONING_INSTRUCTIONS = """Return ONLY valid JSON with these fields:
   "confidence_uncertainty": "<tinggi/sedang/rendah + short reason>",
   "finding": "<one or two sentence finding>"
 }
+
+OUTPUT CONSTRAINTS:
+- relevant_evidence must contain at most 8 ART evidence IDs.
+- Select only the strongest evidence needed for the finding.
+- Do not list every retrieved message.
+- Keep observed_facts concise.
+- Keep possible_interpretation concise.
+- Keep contradicting_evidence concise.
+- Keep confidence_uncertainty concise.
+- finding must be at most two sentences.
+- Each text field must be at most 240 characters; confidence_uncertainty at most 120.
+- Use concise Indonesian text.
 """
 
+STRUCTURED_OUTPUT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "question": {"type": "string", "maxLength": 240},
+        "relevant_evidence": {
+            "type": "array",
+            "items": {"type": "string", "maxLength": 240},
+            "maxItems": 8,
+        },
+        "observed_facts": {"type": "string", "maxLength": 240},
+        "possible_interpretation": {"type": "string", "maxLength": 240},
+        "contradicting_evidence": {"type": "string", "maxLength": 240},
+        "confidence_uncertainty": {"type": "string", "maxLength": 120},
+        "finding": {"type": "string", "maxLength": 240},
+    },
+    "required": [
+        "question",
+        "relevant_evidence",
+        "observed_facts",
+        "possible_interpretation",
+        "contradicting_evidence",
+        "confidence_uncertainty",
+        "finding",
+    ],
+    "additionalProperties": False,
+}
 
 class OllamaError(Exception):
     pass
@@ -51,7 +92,7 @@ def _post(url: str, payload: Dict[str, Any], timeout: int) -> Dict[str, Any]:
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.URLError as exc:
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
         raise OllamaError(f"Ollama tidak dapat dihubungi di {url}: {exc}") from exc
 
 
@@ -59,7 +100,7 @@ def _get(url: str, timeout: int) -> Dict[str, Any]:
     try:
         with urllib.request.urlopen(url, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.URLError as exc:
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
         raise OllamaError(f"Ollama tidak dapat dihubungi di {url}: {exc}") from exc
 
 
@@ -92,34 +133,57 @@ def build_prompt(query: str, retrieved_texts: List[str], structured: bool) -> st
         "\n\nNO CASE EVIDENCE WAS SUPPLIED FOR THIS CONDITION.\n"
     )
     format_instruction = STRUCTURED_REASONING_INSTRUCTIONS if structured else (
-        "Answer concisely. Cite ART evidence IDs for every case-specific factual claim."
+        "Answer in Indonesian in at most 120 words and at most three short sentences. "
+        "Answer only the question; do not reproduce or enumerate the chat messages, "
+        "do not write a timeline or transcript. Cite ART evidence IDs for case-specific "
+        "factual claims. If the supplied evidence is insufficient, say so briefly and stop."
     )
     return (
         FORENSIC_INSTRUCTIONS + "\n" + format_instruction +
-        evidence + f"\nQuestion: {query}\n"
+        evidence + f"\nQuestion: {query}\n" +
+        "\nFINAL OUTPUT INSTRUCTIONS:\n" + format_instruction + "\nAnswer:\n"
     )
 
 
 def call_generate(
-    host: str, model: str, prompt: str, temperature: float, seed: int,
-    num_ctx: int, timeout: int,
+    host: str,
+    model: str,
+    prompt: str,
+    temperature: float,
+    seed: int,
+    num_ctx: int,
+    num_predict: int,
+    timeout: int,
+    structured: bool = False,
+    response_metadata: Optional[Dict[str, Any]] = None,
 ) -> str:
+    payload = {
+        "model": model,
+        "prompt": prompt,
+        "stream": False,
+        "options": {
+            "temperature": temperature,
+            "seed": seed,
+            "num_ctx": num_ctx,
+            "num_predict": num_predict,
+            "repeat_penalty": DEFAULT_REPEAT_PENALTY,
+            "repeat_last_n": DEFAULT_REPEAT_LAST_N,
+        },
+    }
+
+    if structured:
+        payload["format"] = STRUCTURED_OUTPUT_SCHEMA
+
     data = _post(
         f"{host.rstrip('/')}/api/generate",
-        {
-            "model": model,
-            "prompt": prompt,
-            "stream": False,
-            "options": {
-                "temperature": temperature,
-                "seed": seed,
-                "num_ctx": num_ctx,
-            },
-        },
+        payload,
         timeout,
     )
+    if response_metadata is not None:
+        for key in ("done", "done_reason", "total_duration", "load_duration",
+                    "prompt_eval_count", "prompt_eval_duration", "eval_count", "eval_duration"):
+            response_metadata[key] = data.get(key)
     return data.get("response", "")
-
 
 def run_once(
     query: str,
@@ -136,6 +200,7 @@ def run_once(
     run_log_path: Optional[Path] = None,
     timeout: int = DEFAULT_TIMEOUT_SECONDS,
     num_ctx: int = DEFAULT_NUM_CTX,
+    num_predict: int = DEFAULT_NUM_PREDICT,
 ) -> Dict[str, Any]:
     retrieved_chunk_ids = retrieved_chunk_ids or []
     retrieved_evidence_ids = retrieved_evidence_ids or []
@@ -143,13 +208,14 @@ def run_once(
     run_id = new_run_id()
     prompt = build_prompt(query, retrieved_texts, structured)
     error = None
+    response_metadata: Dict[str, Any] = {}
     version = None
     digest = None
     if dry_run:
         output = (
             json.dumps({
                 "question": query,
-                "relevant_evidence": retrieved_evidence_ids,
+                "relevant_evidence": retrieved_evidence_ids[:8],
                 "observed_facts": "[DRY-RUN] no model call",
                 "possible_interpretation": "[DRY-RUN]",
                 "contradicting_evidence": "tidak dievaluasi",
@@ -164,7 +230,8 @@ def run_once(
         digest = get_model_digest(host, model)
         try:
             output = call_generate(
-                host, model, prompt, temperature, seed, num_ctx, timeout
+                host, model, prompt, temperature, seed, num_ctx,
+                num_predict, timeout, structured, response_metadata,
             )
         except OllamaError as exc:
             output = ""
@@ -181,6 +248,10 @@ def run_once(
         "temperature": temperature,
         "seed": seed,
         "num_ctx": num_ctx,
+        "num_predict": num_predict,
+        "request_timeout_seconds": timeout,
+        "repeat_penalty": DEFAULT_REPEAT_PENALTY,
+        "repeat_last_n": DEFAULT_REPEAT_LAST_N,
         "dry_run": dry_run,
         "structured": structured,
         "query": query,
@@ -188,6 +259,7 @@ def run_once(
         "retrieved_evidence_ids": retrieved_evidence_ids,
         "output": output,
         "error": error,
+        "generation_metadata": response_metadata,
     }
     if run_log_path:
         append_jsonl(Path(run_log_path), record)

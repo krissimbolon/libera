@@ -2,7 +2,20 @@
 
 End-to-end, reproducible digital-forensics research project using a frozen synthetic WhatsApp case, traditional forensic baseline, local Ollama LLM, retrieval-augmented generation (RAG), structured forensic output, and blinded evaluation.
 
-## Canonical state
+## Dashboard ChatSim langsung (25 September 2026)
+
+Dashboard membaca SQLite langsung dari ChatSim melalui ADB, tanpa impor CSV percakapan:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/run_workbench.ps1
+```
+
+Buka <http://127.0.0.1:8501>, lalu klik **Ambil data terbaru dari ChatSim**.
+Lihat [panduan Streamlit ChatSim](docs/06_report/STREAMLIT_CHATSIM.md) untuk setup,
+alur data, hasil pengujian, dan batas evaluasi proxy P9. Launcher ini membuka hasil
+P8–P10 lokal tanpa menjalankan ulang eksperimen.
+
+## Corpus canonical
 
 - P1: complete.
 - P2: **complete and frozen** at commit `07a33cc4c2a1fceecabe09f4bfcc01331796b46b`.

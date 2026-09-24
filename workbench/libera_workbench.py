@@ -1,273 +1,161 @@
-from __future__ import annotations
-
-import hashlib
-import html
-import json
-import os
+"""Read-only ChatSim SQLite workbench and locked research results."""
 from pathlib import Path
+import sys
+import html
+import math
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import pandas as pd
 import streamlit as st
+from workbench.chatsim_data import available_snapshots, capture_snapshot, devices, find_adb, load_research, load_snapshot
 
-st.set_page_config(page_title="LIBERA Forensic Workbench", layout="wide")
-
-st.title("LIBERA Forensic Workbench")
-st.caption("DEV-SIM-001 • ChatSim synthetic evidence carrier • examiner view")
-
-with st.expander("Investigative brief", expanded=False):
-    st.markdown(
-        """
-**Case LIBERA-001 — suspected human-trafficking investigation**
-
-Examine DEV-001 for messaging artifacts relevant to recruitment, movement,
-lodging, appointment coordination, money/pricing, coercion/control, attempts
-to leave or seek help, and coordination among actors.
-
-This examiner view intentionally does **not** expose construction provenance or
-evaluator ground truth. Findings must be traceable to acquired artifacts.
-"""
-    )
-
-
-def sha256(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-
-def load_artifacts(folder: Path):
-    messages_path = folder / "ART-00001_messages.csv"
-    chats_path = folder / "ART-00002_chats.csv"
-    art_manifest_path = folder / "artifact_manifest.json"
-    if not messages_path.exists() or not chats_path.exists() or not art_manifest_path.exists():
-        raise FileNotFoundError(
-            "Artifact folder harus berisi ART-00001_messages.csv, "
-            "ART-00002_chats.csv, dan artifact_manifest.json"
-        )
-
-    messages = pd.read_csv(messages_path, dtype=str).fillna("")
-    chats = pd.read_csv(chats_path, dtype=str).fillna("")
-    art_manifest = json.loads(art_manifest_path.read_text(encoding="utf-8-sig"))
-
-    acq_manifest = None
-    acq_manifest_path = folder.parent / "acquisition_manifest.json"
-    if acq_manifest_path.exists():
-        acq_manifest = json.loads(acq_manifest_path.read_text(encoding="utf-8-sig"))
-
-    return messages, chats, art_manifest, acq_manifest
-
-
-default_dir = os.environ.get("LIBERA_ARTIFACT_DIR", "")
-artifact_dir_text = st.sidebar.text_input(
-    "Artifact directory",
-    value=default_dir,
-    placeholder=r"demo_evidence\ACQ-001_...\artifacts",
-)
-st.sidebar.caption("Workbench hanya membaca hasil extraction ART, bukan P2 design corpus.")
-
-if not artifact_dir_text:
-    st.info("Masukkan folder artifact hasil tools/extract_acquired_chatsim.py di sidebar.")
-    st.stop()
-
-artifact_dir = Path(artifact_dir_text).expanduser()
-
-try:
-    messages, chats, art_manifest, acq_manifest = load_artifacts(artifact_dir)
-except Exception as exc:
-    st.error(str(exc))
-    st.stop()
-
-messages["timestamp_dt"] = pd.to_datetime(messages["timestamp"], errors="coerce")
-messages = messages.sort_values(["timestamp_dt", "message_id"]).reset_index(drop=True)
-
-source_sha = art_manifest.get("source_database_sha256", "")
-expected_count = len(messages)
-chat_count = len(chats)
-first_ts = messages["timestamp"].min() if expected_count else ""
-last_ts = messages["timestamp"].max() if expected_count else ""
-
-st.sidebar.success("Evidence loaded")
-st.sidebar.metric("Messages", f"{expected_count:,}")
-st.sidebar.metric("Chats", f"{chat_count:,}")
-st.sidebar.text_input("Working DB SHA-256", source_sha, disabled=True)
-
-if acq_manifest:
-    master_hash = acq_manifest.get("master_sha256", "")
-    working_hash = acq_manifest.get("working_sha256", "")
-    if master_hash and master_hash == working_hash == source_sha:
-        st.sidebar.success("Integrity chain verified: MASTER = WORKING = ART source")
-    elif master_hash and master_hash == working_hash:
-        st.sidebar.warning("MASTER = WORKING, tetapi ART source hash perlu diperiksa.")
+st.set_page_config(page_title="LIBERA | ChatSim Workbench", layout="wide")
+st.title("LIBERA · ChatSim Workbench")
+st.caption("Data percakapan langsung dari SQLite ChatSim melalui ADB · Pemeriksaan read-only")
+with st.sidebar:
+    st.header("Koneksi ChatSim")
+    adb = find_adb()
+    try:
+        connected = devices(adb)
+    except Exception as exc:
+        connected = []
+        st.error(str(exc))
+    ready = [d["serial"] for d in connected if d["state"] == "device"]
+    serial = st.selectbox("Perangkat", ready) if ready else None
+    if serial:
+        st.success("Perangkat terhubung")
     else:
-        st.sidebar.warning("Acquisition integrity manifest tidak lengkap/cocok.")
-
-overview, chat_tab, search_tab, timeline_tab, trace_tab = st.tabs(
-    ["Overview", "Chats", "Search", "Timeline", "Evidence Trace"]
-)
-
-with overview:
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Acquired messages", f"{expected_count:,}")
-    c2.metric("Chat pairs", f"{chat_count:,}")
-    c3.metric("First timestamp", first_ts[0:16] if first_ts else "-")
-    c4.metric("Last timestamp", last_ts[0:16] if last_ts else "-")
-
-    st.subheader("Evidence integrity")
-    st.code(
-        "\n".join(
-            [
-                f"ART source DB SHA-256 : {source_sha}",
-                f"SQLite integrity      : {art_manifest.get('sqlite_integrity_check', '-')}",
-                f"Foreign-key errors    : {art_manifest.get('foreign_key_error_count', '-')}",
-                f"Acquisition ID        : {(acq_manifest or {}).get('acquisition_id', 'ACQ-001')}",
-                f"Device ID             : {(acq_manifest or {}).get('device_id', 'DEV-001')}",
-                f"Acquisition type      : {(acq_manifest or {}).get('acquisition_type', '-')}",
-            ]
-        )
-    )
-
-    st.subheader("Communication volume")
-    volume = (
-        messages.assign(day=messages["timestamp"].str.slice(0, 10))
-        .groupby("day", as_index=False)
-        .size()
-        .rename(columns={"size": "messages"})
-    )
-    st.bar_chart(volume.set_index("day"))
-
-with chat_tab:
-    chat_options = chats.sort_values("peer_name")["peer_name"].tolist()
-    selected_peer = st.selectbox("Open chat", chat_options)
-
-    selected_chat_row = chats.loc[chats["peer_name"] == selected_peer].iloc[0]
-    selected_chat_id = selected_chat_row["chat_id"]
-    thread = messages.loc[messages["chat_id"] == selected_chat_id].copy()
-
-    st.caption(
-        f"{selected_chat_id} • {len(thread):,} messages • "
-        f"{thread['timestamp'].min()[0:10]} to {thread['timestamp'].max()[0:10]}"
-    )
-
-    limit = st.slider("Messages shown", 20, min(500, max(20, len(thread))), min(100, max(20, len(thread))))
-    thread_show = thread.tail(limit)
-
-    for _, row in thread_show.iterrows():
-        mine = row["sender_id"] == "AKT-RAKA"
-        align = "flex-end" if mine else "flex-start"
-        bg = "#DCF8C6" if mine else "#FFFFFF"
-        sender = html.escape("Raka" if mine else str(row["sender_name"]))
-        safe_text = html.escape(str(row["message_text"]))
-        safe_time = html.escape(str(row["timestamp"])[0:16])
-        safe_id = html.escape(str(row["message_id"]))
-        st.markdown(
-            f"""
-<div style="display:flex;justify-content:{align};margin:4px 0;">
-  <div style="max-width:72%;background:{bg};padding:8px 10px;border-radius:10px;
-              box-shadow:0 1px 2px rgba(0,0,0,.12);">
-    <div style="font-size:11px;color:#64748b;">{sender}</div>
-    <div style="font-size:15px;color:#111827;">{safe_text}</div>
-    <div style="font-size:10px;color:#6b7280;text-align:right;">
-      {safe_time} • {safe_id}
-    </div>
-  </div>
-</div>
-""",
-            unsafe_allow_html=True,
-        )
-
-with search_tab:
-    st.subheader("Examiner search")
-    query = st.text_input("Keyword / phrase")
-    actor_choices = ["ALL"] + sorted(
-        set(messages["sender_name"].tolist() + messages["recipient_name"].tolist())
-    )
-    actor = st.selectbox("Actor filter", actor_choices)
-
-    result = messages
-    if query.strip():
-        result = result.loc[
-            result["message_text"].str.contains(query.strip(), case=False, regex=False, na=False)
-        ]
-    if actor != "ALL":
-        result = result.loc[
-            (result["sender_name"] == actor) | (result["recipient_name"] == actor)
-        ]
-
-    st.write(f"{len(result):,} matching messages")
-    st.dataframe(
-        result[
-            [
-                "message_id",
-                "timestamp",
-                "sender_name",
-                "recipient_name",
-                "message_text",
-                "chat_id",
-                "segment_id",
-            ]
-        ].head(1000),
-        use_container_width=True,
-        hide_index=True,
-    )
-
-with timeline_tab:
-    st.subheader("Global Raka-centric timeline")
-    day = st.selectbox(
-        "Date",
-        sorted(messages["timestamp"].str.slice(0, 10).unique().tolist()),
-    )
-    day_rows = messages.loc[messages["timestamp"].str.startswith(day)]
-    st.caption(f"{len(day_rows):,} messages on {day}")
-    st.dataframe(
-        day_rows[
-            [
-                "timestamp",
-                "sender_name",
-                "recipient_name",
-                "message_text",
-                "chat_id",
-                "segment_id",
-                "message_id",
-            ]
-        ],
-        use_container_width=True,
-        hide_index=True,
-    )
-
-with trace_tab:
-    st.subheader("FND → ART → ACQ → DEV trace")
-    message_id = st.selectbox("Message locator", messages["message_id"].tolist())
-    row = messages.loc[messages["message_id"] == message_id].iloc[0]
-
-    st.markdown("#### Selected digital artifact")
-    st.json(
-        {
-            "message_id": row["message_id"],
-            "timestamp": row["timestamp"],
-            "sender": row["sender_name"],
-            "recipient": row["recipient_name"],
-            "text": row["message_text"],
-            "chat_id": row["chat_id"],
-            "segment_id": row["segment_id"],
-        }
-    )
-
-    acquisition_id = (acq_manifest or {}).get("acquisition_id", "ACQ-001")
-    device_id = (acq_manifest or {}).get("device_id", "DEV-001")
-
-    st.code(
-        f"MSG {message_id}\n"
-        f"  ↓\n"
-        f"ART-00001 messages\n"
-        f"  ↓\n"
-        f"{acquisition_id}  SHA-256 {source_sha[:16]}...\n"
-        f"  ↓\n"
-        f"{device_id}  LIBERA ChatSim"
-    )
-
-    st.caption(
-        "Finding IDs (FND-*) are assigned only after investigator review. "
-        "The workbench does not expose evaluator ground truth."
-    )
+        st.info("Jalankan emulator ChatSim atau hubungkan perangkat dengan USB debugging.")
+    st.caption("Akuisisi menghentikan ChatSim agar SQLite konsisten. Buka kembali ChatSim di emulator setelah akuisisi.")
+    if st.button("Ambil data terbaru dari ChatSim", disabled=not serial, type="primary"):
+        try:
+            with st.spinner("Mengambil dan memverifikasi SQLite…"):
+                folder = capture_snapshot(adb, serial)
+            st.session_state["snapshot_selection"] = str(folder)
+            st.session_state["capture_notice"] = "Snapshot baru berhasil diambil langsung dari ChatSim."
+            st.rerun()
+        except Exception as exc:
+            st.error(str(exc))
+    options = [str(p) for p in available_snapshots()]
+    if not options:
+        st.info("Belum ada snapshot. Ambil data dari ChatSim untuk mulai.")
+        st.stop()
+    if st.session_state.get("snapshot_selection") not in options:
+        st.session_state["snapshot_selection"] = options[0]
+    selection = st.selectbox("Snapshot SQLite", options, format_func=lambda p: Path(p).name, key="snapshot_selection")
+    st.caption("Snapshot adalah salinan pada waktu akuisisi. Tekan tombol di atas untuk mengambil perubahan terbaru.")
+try:
+    data = load_snapshot(selection)
+except Exception as exc:
+    st.error(f"Snapshot ditolak: {exc}")
+    st.stop()
+if notice := st.session_state.pop("capture_notice", None):
+    st.success(notice)
+messages = pd.DataFrame(data["messages"])
+if messages.empty:
+    st.info("ChatSim belum memiliki pesan.")
+    st.stop()
+try:
+    research = load_research(data["sha256"])
+except Exception as exc:
+    research = None
+    st.warning(f"Hasil eksperimen tidak ditampilkan: {exc}")
+columns = ["evidence_id", "timestamp", "sender_name", "recipient_name", "message_text", "message_id"]
+tabs = st.tabs(["Ringkasan", "Percakapan", "Pencarian", "Timeline", "Jejak bukti", "Hasil A/B/C", "Evaluasi & Laporan"])
+with tabs[0]:
+    for col, label, value in zip(st.columns(4), ["Pesan", "Percakapan", "Integritas SQLite", "Sumber data"], [len(messages), len(data["chats"]), "OK", "SQLite"]):
+        col.metric(label, value)
+    st.info("ChatSim adalah aplikasi pembawa bukti simulasi penelitian.")
+    st.markdown("**Alur:** ChatSim → ADB → snapshot SQLite → percakapan, pencarian, dan jejak bukti.")
+    st.write("Akuisisi:", data["manifest"]["acquisition_id"])
+    st.write("Database:", data["database"])
+    st.caption("SHA-256 master dan working terverifikasi identik")
+    st.code(data["sha256"])
+    if research:
+        if research["matches_snapshot"]:
+            st.success("Snapshot cocok dengan sumber eksperimen P8–P10. Tautan bukti dapat digunakan.")
+        else:
+            st.warning("Snapshot berbeda dari sumber eksperimen P8–P10. Hasil historis tetap ditampilkan, tetapi tautan bukti dinonaktifkan.")
+    daily = messages["timestamp"].str[:10].value_counts().sort_index()
+    st.bar_chart(daily.rename("Pesan per hari"))
+with tabs[1]:
+    chat_names = {c["chat_id"]: c["peer_name"] for c in data["chats"]}
+    chat = st.selectbox("Pilih percakapan", list(chat_names), format_func=lambda c: f"{chat_names[c]} · {c}")
+    subset = messages[messages.chat_id == chat]
+    limit = st.selectbox("Pesan per halaman", [25, 50, 100])
+    page = st.number_input("Halaman", min_value=1, max_value=max(1, math.ceil(len(subset) / limit)), value=1, key=f"page_{chat}_{limit}")
+    st.caption(f"{len(subset)} pesan · urutan waktu terlama ke terbaru")
+    for row in subset.iloc[(page - 1) * limit:page * limit].to_dict("records"):
+        with st.container(border=True):
+            st.markdown(f"**{html.escape(row['sender_name'])}** → {html.escape(row['recipient_name'])}")
+            st.text(row["message_text"])
+            st.caption(f"{row['timestamp']} · {row['evidence_id']} · {row['message_id']}")
+with tabs[2]:
+    query = st.text_input("Kata atau frasa")
+    actor = st.selectbox("Pengirim", ["Semua"] + sorted(messages.sender_name.dropna().unique().tolist()))
+    found = messages
+    if query:
+        found = found[found.message_text.str.contains(query, case=False, regex=False, na=False)]
+    if actor != "Semua":
+        found = found[found.sender_name == actor]
+    st.caption(f"{len(found)} hasil · menampilkan maksimal 1.000 baris")
+    st.dataframe(found[columns].head(1000), hide_index=True)
+with tabs[3]:
+    day = st.selectbox("Tanggal", sorted(messages.timestamp.str[:10].unique()))
+    st.dataframe(messages.loc[messages.timestamp.str.startswith(day), columns], hide_index=True)
+with tabs[4]:
+    evidence = st.text_input("Evidence ID atau message ID", "ART-000001").strip()
+    match = messages[(messages.evidence_id == evidence) | (messages.message_id == evidence)]
+    if match.empty:
+        st.warning("ID tidak ditemukan dalam snapshot ini.")
+    else:
+        st.json(match.iloc[0].to_dict())
+        st.caption(f"Akuisisi: {data['manifest']['acquisition_id']} · SHA-256: {data['sha256']}")
+    st.caption("Evidence ID mengikuti urutan timestamp dan message_id; ID ini berlaku dalam snapshot yang dipilih.")
+with tabs[5]:
+    if not research:
+        st.info("Hasil eksperimen terkunci belum tersedia.")
+    else:
+        tasks = {t["task_id"]: t for t in research["experiment"]}
+        task_id = st.selectbox("Pertanyaan eksperimen", list(tasks))
+        task = tasks[task_id]
+        st.write(task["question"])
+        st.caption("Hasil historis P8 terkunci; memilih snapshot tidak menjalankan ulang model.")
+        for col, key, label in zip(st.columns(3), ["A_llm_only", "B_llm_rag", "C_llm_rag_structured"], ["A · LLM", "B · LLM + RAG", "C · RAG terstruktur"]):
+            with col:
+                st.subheader(label)
+                output = task[key]["output"]
+                if isinstance(output, (dict, list)):
+                    st.json(output)
+                else:
+                    st.text(output)
+        evaluation = research["evaluation"]
+        if evaluation:
+            st.warning("12 referensi tidak valid pada kondisi C dikarantina dan tidak dikreditkan sebagai bukti. Output asli tetap ditampilkan untuk audit.")
+            records = evaluation["citation_validation"].get("records", [])
+            records = [r for r in records if r.get("task_id") == task_id]
+            if records:
+                st.dataframe(pd.DataFrame(records), hide_index=True)
+        if research["matches_snapshot"]:
+            ids = task.get("retrieval_trace", {}).get("retrieved_evidence_ids", [])
+            if ids:
+                selected_id = st.selectbox("Telusuri bukti retrieval di SQLite", ids)
+                st.dataframe(messages.loc[messages.evidence_id == selected_id, columns], hide_index=True)
+        else:
+            st.warning("Penelusuran bukti dinonaktifkan: hash snapshot berbeda dari sumber eksperimen.")
+with tabs[6]:
+    if not research or not research["evaluation"]:
+        st.info("Evaluasi terkunci belum tersedia.")
+    else:
+        evaluation = research["evaluation"]
+        gt = evaluation["ground_truth_evaluation"]
+        st.warning("Ground truth rekonstruksi adalah proxy provenance, bukan ground truth semantik independen. Metrik ini belum membuktikan akurasi penemuan bukti kunci.")
+        st.code(evaluation["status"])
+        for col, label, value in zip(st.columns(3), ["Pesan berlabel proxy", "Pesan tanpa label", "Referensi C dikarantina"], [gt["labeled_rows"], gt["ground_truth_rows_unlabeled"], evaluation["integrity"]["conditions"]["C_llm_rag_structured"]["invalid_citation_count"]]):
+            col.metric(label, value)
+        metric_columns = ["TP", "FP", "FN", "TN", "precision", "recall", "f1", "predictions_outside_labeled_universe"]
+        st.dataframe(pd.DataFrame(gt["metrics"]).T[metric_columns])
+        st.caption("Referensi tidak valid tidak menjadi TP. Pesan tanpa label tidak dianggap negatif. Berkas label privat tidak dibaca oleh dashboard.")
+        st.download_button("Unduh laporan P10", research["report"], file_name="LIBERA_P10_report.md", mime="text/markdown")
+        with st.expander("Baca laporan lengkap"):
+            st.markdown(research["report"])
