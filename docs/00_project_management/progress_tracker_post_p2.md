@@ -51,3 +51,33 @@ Frozen corpus SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c
 - master acquisition hash + read-only preservation.
 - working copy hash verified.
 - P4 rerun from real ACQ-001.
+
+## Verified integration checkpoint — 24 September 2026
+
+GitHub Actions `Post-P2 Integration Audit` run **36019711196** completed with **success** on commit `5286fb372cc1b54c80d869491a911bd56b99e7b2`.
+
+Verified results:
+
+- 12/12 automated tests passed.
+- Frozen P2 SHA-256 gate passed.
+- P3 controlled dry-run: 10,000 rows -> `ACQ-DRY-001` PASS.
+- P4: 10,000 unique ART artifacts, 26 merged participant chats, 846 retained source segments.
+- P5: 10,000 messages, 10 investigation tasks, 26 actors.
+- P6: 648 evidence-aware chunks; leakage guard PASS; 648-entry deterministic CI index.
+- P8: all 10 T01–T10 tasks completed in A/B/C dry-run harness.
+- P9: `P9_PRECHECK_PASS`; no invalid evidence-reference blocker.
+- P10: runtime report generated and all expected runtime outputs non-empty.
+
+### Interpretation of this checkpoint
+
+This closes the **software/integration implementation** of P3–P10 and proves the full pipeline is executable from the frozen P2 corpus.
+
+It does **not** claim the following machine-bound work has already occurred:
+
+1. real WhatsApp/device staging on DEV-001;
+2. real mobile acquisition ACQ-001 with Oxygen/selected tool;
+3. real BGE-M3 embeddings through local Ollama;
+4. real LLaMA-3.1-8B inference;
+5. final P9 ground-truth metrics.
+
+Those five items are local execution gates and must remain distinguishable from the controlled dry-run.
