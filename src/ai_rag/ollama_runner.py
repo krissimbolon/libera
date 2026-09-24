@@ -11,7 +11,7 @@ from typing import Any, Dict, List, Optional
 from .run_log import append_jsonl, new_run_id, utc_now_iso
 
 DEFAULT_HOST = "http://localhost:11434"
-DEFAULT_MODEL = "qwen2.5:7b"
+DEFAULT_MODEL = "qwen2.5:1.5b"
 DEFAULT_TEMPERATURE = 0.1
 DEFAULT_SEED = 42
 DEFAULT_NUM_CTX = 8192
