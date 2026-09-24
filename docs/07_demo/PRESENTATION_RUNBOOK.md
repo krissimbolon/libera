@@ -18,17 +18,29 @@ Download the `libera-chatsim-final-debug` artifact from the latest successful `B
 
 This resets the app state, launches ChatSim, and verifies the app-private SQLite database exists.
 
-### 3. Acquire -> extract -> P5–P10
+### 3. Acquire -> extract -> examiner-reviewed P5 -> P6–P10
 
-Fast rehearsal without model calls:
+For the presentation-grade forensic path, stop after P4 first:
+
+    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -StopAfterP4
+
+Then run the deterministic P5 baseline plus time-boxed human QC:
+
+    powershell -ExecutionPolicy Bypass -File scripts\run_p5_examiner_review.ps1 -ArtifactsPath "<ACQ-SIM folder>\artifacts\artifacts.csv"
+
+The examiner packet contains at most 12 unique evidence items, covers T01–T10 where candidates exist, records SUPPORTED / NOT_SUPPORTED / UNCERTAIN decisions, measures actual review time, and cryptographically locks P5 before AI.
+
+Continue from the reviewed/locked P5 without rerunning it:
+
+    powershell -ExecutionPolicy Bypass -File scripts\run_libera_local.ps1 -ArtifactsPath "<ACQ-SIM folder>\artifacts\artifacts.csv" -UseLockedP5 -DryRun
+
+Remove `-DryRun` for the real local embedding/LLM experiment.
+
+For a fast rehearsal that skips the human P5 gate, the original one-command path remains:
 
     powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -DryRun
 
-Real local RAG + LLM:
-
-    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1
-
-The demo acquisition uses `DEV-SIM-001` and `ACQ-SIM-001`, preserves a hashed MASTER and verified WORKING copy, then emits normalized message-level `ART-*` evidence for the same P5–P10 pipeline.
+The demo acquisition uses `DEV-SIM-001` and `ACQ-SIM-001`, preserves a hashed MASTER and verified WORKING copy, then emits normalized message-level `ART-*` evidence for the same downstream pipeline.
 
 ## Software-only fallback
 
