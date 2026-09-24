@@ -1,0 +1,16 @@
+message_id,evidence_id,conversation_id,sender,receiver,timestamp_original,timestamp_normalized,message_text,attachment_type,attachment_hash,source_reference
+TOY-MSG-001,TOY-EVD-001,TOY-CONV-A,Rani,Doni,2026-01-05T09:00:00,2026-01-05T09:00:00+07:00,"Halo Doni, tas kamera kantor masih di ruang C3 atau sudah dipindah?",,,TOY
+TOY-MSG-002,TOY-EVD-002,TOY-CONV-A,Doni,Rani,2026-01-05T09:03:00,2026-01-05T09:03:00+07:00,"Setahu aku masih di C3, terakhir aku lihat hari Jumat sore.",,,TOY
+TOY-MSG-003,TOY-EVD-003,TOY-CONV-A,Rani,Doni,2026-01-05T09:05:00,2026-01-05T09:05:00+07:00,"Sekarang sudah tidak ada di sana. Kamu ingat siapa saja yang masuk ruangan itu Jumat sore?",,,TOY
+TOY-MSG-004,TOY-EVD-004,TOY-CONV-A,Doni,Rani,2026-01-05T09:08:00,2026-01-05T09:08:00+07:00,"Ada Sinta yang ambil proyektor sekitar jam 16.00, dan tim kebersihan biasa masuk jam 17.00.",,,TOY
+TOY-MSG-005,TOY-EVD-005,TOY-CONV-A,Rani,Doni,2026-01-05T09:10:00,2026-01-05T09:10:00+07:00,"Oke, nanti aku cek CCTV lobi buat waktu itu.",,,TOY
+TOY-MSG-006,TOY-EVD-006,TOY-CONV-A,Doni,Rani,2026-01-05T09:11:00,2026-01-05T09:11:00+07:00,"Bagus, kabari aku kalau sudah ketemu rekamannya.",,,TOY
+TOY-MSG-007,TOY-EVD-007,TOY-CONV-B,Sinta,Rani,2026-01-05T10:30:00,2026-01-05T10:30:00+07:00,"Rani, aku dengar tas kamera hilang. Aku cuma pinjam proyektor kok, kamera nggak aku sentuh.",,,TOY
+TOY-MSG-008,TOY-EVD-008,TOY-CONV-B,Rani,Sinta,2026-01-05T10:33:00,2026-01-05T10:33:00+07:00,"Oke Sinta, ini cuma pengecekan rutin. Jam berapa kamu keluar dari C3?",,,TOY
+TOY-MSG-009,TOY-EVD-009,TOY-CONV-B,Sinta,Rani,2026-01-05T10:35:00,2026-01-05T10:35:00+07:00,"Sekitar jam 16.10, aku langsung ke ruang meeting lantai 2.",,,TOY
+TOY-MSG-010,TOY-EVD-010,TOY-CONV-B,Rani,Sinta,2026-01-05T10:36:00,2026-01-05T10:36:00+07:00,"Ok, terima kasih infonya.",,,TOY
+TOY-MSG-011,TOY-EVD-011,TOY-CONV-A,Rani,Doni,2026-01-05T14:00:00,2026-01-05T14:00:00+07:00,"CCTV lobi jam 17.05 nunjukin tim kebersihan bawa dua tas keluar dari arah C3, tapi resolusinya buram.",,,TOY
+TOY-MSG-012,TOY-EVD-012,TOY-CONV-A,Doni,Rani,2026-01-05T14:05:00,2026-01-05T14:05:00+07:00,"Coba minta daftar nama tim kebersihan shift itu ke bagian umum.",,,TOY
+TOY-MSG-013,TOY-EVD-013,TOY-CONV-A,Rani,Doni,2026-01-05T14:20:00,2026-01-05T14:20:00+07:00,"Sudah aku minta, katanya baru bisa dikirim besok pagi.",,,TOY
+TOY-MSG-014,TOY-EVD-014,TOY-CONV-A,Doni,Rani,2026-01-05T14:22:00,2026-01-05T14:22:00+07:00,"Oke, sementara ini catat dulu semua yang kita tahu di laporan ruangan.",,,TOY
+TOY-MSG-015,TOY-EVD-015,TOY-CONV-A,Rani,Doni,2026-01-05T14:25:00,2026-01-05T14:25:00+07:00,"Siap, aku susun kronologinya malam ini.",,,TOY

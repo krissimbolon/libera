@@ -1,0 +1,78 @@
+{
+  "_comment": "Konfigurasi prototype P6/P7/P8 LIBERA. Tidak berisi secret/credential. Jangan simpan API key/token di sini.",
+  "config_version": "0.1.0",
+
+  "chunking": {
+    "min_messages_per_chunk": 30,
+    "max_messages_per_chunk": 60,
+    "group_by": "conversation_id",
+    "time_window_minutes": 120,
+    "note": "Untuk toy dataset yang lebih kecil dari min_messages_per_chunk, chunker akan tetap membuat satu chunk per conversation dan mencatat catatan 'below_target_size' pada chunk tersebut."
+  },
+
+  "embedding": {
+    "method": "placeholder_hashing_vector",
+    "dimensions": 256,
+    "normalize": true,
+    "note": "PLACEHOLDER stdlib-only untuk prototype. Ganti dengan model embedding sungguhan setelah dipilih (PDF Bab 6.1 poin 3). Catat nama model, dimensi, normalisasi, perangkat, dan versi di sini saat diganti."
+  },
+
+  "vector_store": {
+    "type": "local_json",
+    "namespaces": ["domain_knowledge", "case_evidence"],
+    "note": "Index JSON lokal untuk prototype. Rebuild procedure: hapus file index, jalankan ulang `retriever build`."
+  },
+
+  "retrieval": {
+    "default_top_k": 5,
+    "similarity_metric": "cosine"
+  },
+
+  "ollama": {
+    "host": "http://localhost:11434",
+    "default_model": "llama3.1",
+    "default_temperature": 0.2,
+    "default_seed": 42,
+    "request_timeout_seconds": 120
+  },
+
+  "prompt": {
+    "prompt_version": "v1",
+    "structured_finding_fields": [
+      "question",
+      "relevant_evidence",
+      "observed_facts",
+      "possible_interpretation",
+      "contradicting_evidence",
+      "confidence_uncertainty",
+      "finding"
+    ]
+  },
+
+  "experiment": {
+    "conditions": ["A_llm_only", "B_llm_rag", "C_llm_rag_structured"]
+  },
+
+  "leakage_check": {
+    "banned_terms": [
+      "Document 547",
+      "Document 547 Galloway",
+      "ground_truth",
+      "skema_ground_truth_privat",
+      "expected_entity_ids",
+      "expected_relation_ids",
+      "is_key_evidence",
+      "court transcript",
+      "narasi pengadilan"
+    ],
+    "note": "Daftar minimal berbasis penanda yang disebut PDF/snapshot. Ini bukan jaminan mutlak, hanya guard tambahan sebelum review manusia."
+  },
+
+  "paths": {
+    "_note": "Semua path bersifat relatif terhadap root repo dan bisa dioverride lewat argumen CLI. Tidak ada path absolut/hard-coded di sini.",
+    "toy_evidence_csv": "data/toy/toy_case_evidence.csv",
+    "chunks_output": "configs/toy_chunks.jsonl",
+    "index_output": "configs/toy_index.json",
+    "run_log": "configs/run_log.jsonl"
+  }
+}

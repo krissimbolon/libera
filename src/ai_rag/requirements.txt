@@ -1,0 +1,14 @@
+# Prototype P6/P7/P8 sengaja hanya memakai Python standard library
+# (csv, json, hashlib, urllib, argparse, dataclasses-free, pathlib, uuid,
+# datetime, math, re) supaya setup minimal dan mudah dijalankan siapa
+# saja di tim, termasuk di Windows tanpa toolchain kompilasi.
+#
+# pytest dibutuhkan HANYA untuk menjalankan tests/test_p6_p7_pipeline.py.
+pytest>=7.4
+
+# --- Opsional, untuk pengembangan lanjutan (TIDAK dibutuhkan prototype ini) ---
+# Aktifkan salah satu di bawah ini nanti jika tim memutuskan mengganti
+# embedding placeholder di retriever.py dengan model sungguhan:
+#
+# sentence-transformers>=2.2   # untuk embedding model lokal
+# numpy>=1.24                  # jika perhitungan vektor dipindah dari stdlib
