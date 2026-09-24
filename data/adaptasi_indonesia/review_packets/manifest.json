@@ -1,0 +1,15 @@
+{
+  "corpus": "/workspace/scratch/d852856e8923/libera/data/adaptasi_indonesia/corpus_whatsapp_working.csv",
+  "counts": {
+    "language_candidates": 228,
+    "merged_overlap_candidates": 49,
+    "anchor_neighborhoods": 500,
+    "actor_concurrency_candidates": 1511
+  },
+  "review_contract": {
+    "language": "Review candidate in merged-chat context; repair only if formulaic or incoherent.",
+    "overlap": "Read merged context as one WhatsApp chat; PASS, REPAIR, or SOURCE_ANOMALY.",
+    "anchor": "Preserve anchor exactly; repair only synthetic neighbors if cause/state/knowledge/order is wrong.",
+    "actor": "Simultaneous texting is allowed; flag only incompatible physical state/location/knowledge."
+  }
+}
