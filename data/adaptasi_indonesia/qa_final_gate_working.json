@@ -391,7 +391,7 @@
       "messages": 3250,
       "comma_phrase_ya_ending": 20,
       "barusan_ending": 15,
-      "short_1_to_3_words": 774
+      "short_1_to_3_words": 772
     },
     "context_B": {
       "messages": 3250,
@@ -407,15 +407,15 @@
     },
     "distractor": {
       "messages": 1500,
-      "comma_phrase_ya_ending": 56,
+      "comma_phrase_ya_ending": 55,
       "barusan_ending": 32,
-      "short_1_to_3_words": 573
+      "short_1_to_3_words": 558
     }
   },
   "near_duplicate_long_candidates_count": 0,
   "near_duplicate_long_candidates": [],
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "83c66fa7b14cf37bba888950004bf642888d05c4e630f2e5b2297419243d0b17",
+  "working_sha256": "6f646de5440fb112f5b98e6cba2c364ef6888dd4e9070482e1edfd61cfbfc302",
   "manual_semantic_checks_required": [
     "review near-duplicate candidates in context",
     "full chronology/causality audit across anchor and synthetic messages",
