@@ -1,19 +1,9 @@
-"""
-chunker.py - Evidence-aware chunking untuk pipeline P6.
+"""Evidence-aware chunking for LIBERA P6.
 
-Mengelompokkan pesan berdasarkan conversation_id + time window (BUKAN
-fixed row count), sesuai PDF Bab 6.1 poin 5: "Chunk berdasarkan
-conversation + time window, bukan fixed 500 row. Target awal 30-60
-pesan/chunk."
-
-Setiap chunk menyimpan message_ids, evidence_ids, time_range,
-participants, dan content_hash (SHA-256) untuk provenance - lihat PDF
-Bab 6.3 (traceability CHK -> ART/ID-MSG).
-
-CLI:
-    python -m src.ai_rag.chunker --input data/toy/toy_case_evidence.csv \
-        --output configs/toy_chunks.jsonl \
-        [--min-size 30] [--max-size 60] [--time-window-minutes 120]
+Chunks are built per merged participant chat + time window and preserve
+traceability to ART evidence IDs. The text sent to retrieval/LLM includes
+explicit evidence IDs, timestamps and sender/receiver labels so downstream
+claims can cite acquired evidence instead of hidden source identifiers.
 """
 from __future__ import annotations
 
@@ -29,12 +19,8 @@ from typing import Any, Dict, List
 from .run_log import new_chunk_id, utc_now_iso
 
 REQUIRED_FIELDS = [
-    "message_id",
-    "conversation_id",
-    "sender",
-    "receiver",
-    "timestamp_normalized",
-    "message_text",
+    "message_id", "conversation_id", "sender", "receiver",
+    "timestamp_normalized", "message_text",
 ]
 
 
@@ -43,25 +29,21 @@ class ChunkingError(Exception):
 
 
 def load_messages(csv_path: Path) -> List[Dict[str, str]]:
-    """Baca CSV evidence dan validasi field wajib (error handling dasar)."""
     csv_path = Path(csv_path)
     if not csv_path.exists():
         raise ChunkingError(f"File input tidak ditemukan: {csv_path}")
-
     with csv_path.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
-
+        fieldnames = reader.fieldnames or []
     if not rows:
         raise ChunkingError(f"File input kosong: {csv_path}")
-
-    missing = [c for c in REQUIRED_FIELDS if c not in reader.fieldnames]
+    missing = [c for c in REQUIRED_FIELDS if c not in fieldnames]
     if missing:
         raise ChunkingError(
             f"Kolom wajib hilang di {csv_path}: {missing}. "
-            f"Kolom yang ditemukan: {reader.fieldnames}"
+            f"Kolom yang ditemukan: {fieldnames}"
         )
-
     return rows
 
 
@@ -78,52 +60,50 @@ def group_by_conversation_and_window(
     max_size: int,
     time_window_minutes: int,
 ) -> List[List[Dict[str, str]]]:
-    """Kelompokkan pesan per conversation_id, lalu pecah lagi per time
-    window dan batas max_size. Jika grup lebih kecil dari min_size (mis.
-    pada toy dataset), tetap dijadikan satu chunk dan ditandai
-    'below_target_size' oleh caller.
-    """
     by_conv: Dict[str, List[Dict[str, str]]] = defaultdict(list)
     for m in messages:
         by_conv[m["conversation_id"]].append(m)
 
     groups: List[List[Dict[str, str]]] = []
-    for conv_id, conv_messages in by_conv.items():
-        conv_messages.sort(key=lambda m: _parse_ts(m["timestamp_normalized"]))
-
-        current_group: List[Dict[str, str]] = []
+    for _, conv_messages in sorted(by_conv.items()):
+        conv_messages.sort(
+            key=lambda m: (_parse_ts(m["timestamp_normalized"]), m["message_id"])
+        )
+        current: List[Dict[str, str]] = []
         window_start = None
-
         for msg in conv_messages:
             ts = _parse_ts(msg["timestamp_normalized"])
-            if not current_group:
-                current_group = [msg]
+            if not current:
+                current = [msg]
                 window_start = ts
                 continue
-
-            elapsed_minutes = (ts - window_start).total_seconds() / 60.0
-            if len(current_group) >= max_size or elapsed_minutes > time_window_minutes:
-                groups.append(current_group)
-                current_group = [msg]
+            elapsed = (ts - window_start).total_seconds() / 60.0
+            if len(current) >= max_size or elapsed > time_window_minutes:
+                groups.append(current)
+                current = [msg]
                 window_start = ts
             else:
-                current_group.append(msg)
-
-        if current_group:
-            groups.append(current_group)
-
+                current.append(msg)
+        if current:
+            groups.append(current)
     return groups
+
+
+def _render_evidence_line(m: Dict[str, str]) -> str:
+    evidence_id = m.get("evidence_id") or m["message_id"]
+    return (
+        f"[{evidence_id}] {m['timestamp_normalized']} "
+        f"{m['sender']} -> {m['receiver']}: {m['message_text']}"
+    )
 
 
 def build_chunk_record(group: List[Dict[str, str]], min_size: int) -> Dict[str, Any]:
     message_ids = [m["message_id"] for m in group]
-    evidence_ids = [m.get("evidence_id", "") for m in group]
+    evidence_ids = [m.get("evidence_id", "") for m in group if m.get("evidence_id")]
     participants = sorted({m["sender"] for m in group} | {m["receiver"] for m in group})
     timestamps = [_parse_ts(m["timestamp_normalized"]) for m in group]
-
-    concat_text = "\n".join(m["message_text"] for m in group)
+    concat_text = "\n".join(_render_evidence_line(m) for m in group)
     content_hash = hashlib.sha256(concat_text.encode("utf-8")).hexdigest()
-
     return {
         "chunk_id": new_chunk_id(),
         "conversation_id": group[0]["conversation_id"],
@@ -149,49 +129,38 @@ def run(
     max_size: int = 60,
     time_window_minutes: int = 120,
 ) -> List[Dict[str, Any]]:
+    if min_size < 1 or max_size < min_size:
+        raise ChunkingError("Ukuran chunk tidak valid.")
     messages = load_messages(input_csv)
     groups = group_by_conversation_and_window(
-        messages, min_size=min_size, max_size=max_size, time_window_minutes=time_window_minutes
+        messages, min_size, max_size, time_window_minutes
     )
-    chunks = [build_chunk_record(g, min_size=min_size) for g in groups]
-
+    chunks = [build_chunk_record(g, min_size) for g in groups]
     output_jsonl = Path(output_jsonl)
     output_jsonl.parent.mkdir(parents=True, exist_ok=True)
     with output_jsonl.open("w", encoding="utf-8") as f:
         for c in chunks:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
-
     return chunks
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Evidence-aware chunker (P6).")
-    parser.add_argument("--input", required=True, help="Path CSV evidence (mis. data/toy/toy_case_evidence.csv)")
-    parser.add_argument("--output", required=True, help="Path output JSONL chunk")
-    parser.add_argument("--min-size", type=int, default=30)
-    parser.add_argument("--max-size", type=int, default=60)
-    parser.add_argument("--time-window-minutes", type=int, default=120)
-    args = parser.parse_args()
-
+    p = argparse.ArgumentParser(description="Evidence-aware P6 chunker.")
+    p.add_argument("--input", required=True)
+    p.add_argument("--output", required=True)
+    p.add_argument("--min-size", type=int, default=30)
+    p.add_argument("--max-size", type=int, default=60)
+    p.add_argument("--time-window-minutes", type=int, default=120)
+    args = p.parse_args()
     try:
         chunks = run(
-            input_csv=Path(args.input),
-            output_jsonl=Path(args.output),
-            min_size=args.min_size,
-            max_size=args.max_size,
-            time_window_minutes=args.time_window_minutes,
+            Path(args.input), Path(args.output),
+            args.min_size, args.max_size, args.time_window_minutes,
         )
     except ChunkingError as exc:
         print(f"[chunker] ERROR: {exc}")
         raise SystemExit(1)
-
-    below_target = sum(1 for c in chunks if c["below_target_size"])
-    print(f"[chunker] {len(chunks)} chunk dibuat -> {args.output}")
-    if below_target:
-        print(
-            f"[chunker] Catatan: {below_target} chunk di bawah target "
-            f"min_size={args.min_size} (wajar untuk toy dataset kecil)."
-        )
+    print(f"[chunker] PASS chunks={len(chunks)} output={args.output}")
 
 
 if __name__ == "__main__":
