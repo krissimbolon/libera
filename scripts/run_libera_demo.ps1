@@ -31,6 +31,7 @@ $runtimeP3 = "runtime\private\ACQ-SIM-001"
 $runtimeP4 = "runtime\working\P4"
 New-Item -ItemType Directory -Force -Path $runtimeP3, $runtimeP4 | Out-Null
 Copy-Item (Join-Path $latest.FullName "acquisition_manifest.json") (Join-Path $runtimeP3 "acquisition_manifest.json") -Force
+Copy-Item (Join-Path $latest.FullName "acquisition_manifest.json") "runtime\working\current_acquisition_manifest.json" -Force
 Copy-Item (Join-Path $artifactDir "artifact_manifest.json") (Join-Path $runtimeP4 "artifact_manifest.json") -Force
 
 Write-Host ""
