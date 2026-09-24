@@ -45,7 +45,7 @@ Local Ollama run:
 
 Final blind evaluation after output lock:
 
-    powershell -ExecutionPolicy Bypass -File scripts/run_libera_local.ps1 -ArtifactsPath runtime/working/P4/artifacts.csv -GroundTruthPath D:\PRIVATE\ground_truth_final.csv
+    powershell -ExecutionPolicy Bypass -File scripts/run_p9_final.ps1 -GroundTruthPath D:\PRIVATE\ground_truth_final.csv
 
 ## Locked AI configuration
 
@@ -65,6 +65,10 @@ Final blind evaluation after output lock:
 - `docs/06_report/final_report_draft.md`
 - `docs/07_demo/PRESENTATION_RUNBOOK.md`
 - `docs/07_demo/PRESENTATION_OUTLINE.md`
+
+## Blind-evaluation lock
+
+Final P9 never reruns P8 after the evaluator ground truth is opened. `tools/lock_p8_outputs.py` hashes P4/P5/config/tasks/P8 outputs, and `scripts/run_p9_final.ps1` verifies that lock before scoring.
 
 ## Important disclosure
 
