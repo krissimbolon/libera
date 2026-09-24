@@ -3,7 +3,7 @@ name: Build Final ChatSim
 on:
   push:
     branches:
-      - p3-p10-final-integration
+      - main
     paths:
       - 'apps/libera-chatsim/**'
       - 'tools/build_demo_seed.py'
