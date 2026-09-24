@@ -59,6 +59,7 @@ Final blind evaluation after output lock:
 
 ## Key docs
 
+- **LIVE NOW:** `docs/00_project_management/LIVE_CHECKLIST_PRESENTASI_20260925.md` — shared checklist for the 25 Sep 2026 PPT deadline and 10-minute presentation.
 - `docs/00_project_management/progress_tracker_post_p2.md`
 - `docs/01_research_design/methodology_references.md`
 - `docs/03_forensik_persiapan/FINAL_ACQUISITION_CHECKLIST.md`
