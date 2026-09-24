@@ -9,8 +9,8 @@ Branch: `p2-10k-work`
 | 4.000 | LULUS QA CHECKPOINT | 4.000 | 500 | 900 | 2.100 | 500 | Batch 010 +400 pesan; QA checkpoint dan spot-check selesai |
 | 6.000 | DALAM PROSES | 4.000 | 500 | 900 | 2.100 | 500 | Lanjut batch berikut tanpa menunggu konfirmasi |
 | 8.000 | LULUS QA CHECKPOINT | 8.000 | 500 | 1.400 | 4.900 | 1.200 | Batches 015–017; structural/style checkpoint lulus |
-| 10.000 | BELUM | 500 | 500 | 0 | 0 | 0 | |
-| QA final | BELUM | 500 | 500 | 0 | 0 | 0 | |
+| 10.000 | SELESAI | 10.000 | 500 | 1.500 | 6.500 | 1.500 | Corpus canonical dibuat dan dibekukan untuk simulasi forensik |
+| QA final | LULUS | 10.000 | 500 | 1.500 | 6.500 | 1.500 | Automated gate + human semantic sign-off lulus; unresolved 0 |
 
 ## Target akhir
 - Anchor: 500
@@ -210,3 +210,20 @@ Pada setiap checkpoint catat:
 - Empat thread Context B dengan empat kandidat bahasa masing-masing ditinjau lagi secara utuh dan diubah melalui `_037.tsv`: sandal Maya, nota Nara, koin Kirana, serta spidol Dini. Nota tetap di tangan Nara dan belum dianggap terbaca pasti; tidak ada state anchor yang diubah. Packet bahasa kini **43/228** berdisposisi `REPAIR`, **185/228** belum ditinjau penuh; revisi unik kumulatif **2.242 pesan pada 195 segment**. Sinyal Context B **152** koma/`ya`, **29** `barusan`. Automated structural PASS, human semantic FAIL.
 - Keenam belas jendela auditor actor-timeline (Raka 14; Jihan 2) dibaca dalam konteks chat ±4–6 menit dan semuanya diberi disposisi `PASS_CHAT_MULTITASKING` dengan alasan spesifik di `review_packets/actor_window_dispositions_001.jsonl`: pesan pendek lintas chat, tanpa klaim tindakan fisik simultan. Ini **bukan** pengganti audit state global 9.997 pesan Raka, yang masih pending. Delapan anchor neighborhood pertama dibaca per chat di `review_packets/anchor_neighborhood_dispositions_001.jsonl`; tujuh ditandai `REPAIR` karena berbagi tiga bridge synthetic yang diklarifikasi dalam `_038.tsv`, satu `PASS`. **492 neighborhood anchor belum ditinjau**, 500 anchor tetap immutable. Revisi teks unik kumulatif **2.245 pesan pada 197 segment**; structural PASS, semantic FAIL.
 - Sebelas neighborhood anchor berikutnya ditinjau: formulir akun TD-1506 dan ajakan bertemu dari kontak lain mendapat klarifikasi empat bridge synthetic lewat `_039.tsv`. `ID-GAL-0028` dicatat `SOURCE_RECONSTRUCTION_ANOMALY` karena sender KONTAK-5855 menyapa "Indah" sementara recipient rekonstruksi adalah Raka; anchor tidak diubah atau dipaksa cocok. Review neighborhood kini **19/500** (1 PASS, 17 REPAIR yang banyak berbagi bridge, 1 source anomaly; 481 belum), revisi unik **2.249 pesan pada 198 segment**. Tidak ada outcome anchor yang ditambah; structural gate tetap PASS, human sign-off tetap FAIL.
+
+## Freeze final P2 — 24 September 2026
+
+- Status: **FROZEN_FOR_FORENSIC_SIMULATION**.
+- Corpus canonical: `data/adaptasi_indonesia/corpus_whatsapp_10000.csv`.
+- SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6`.
+- Komposisi final: 500 anchor + 1.500 bridge + 6.500 context + 1.500 distractor = 10.000.
+- Automated final gate: PASS; duplicate synthetic 0; repeated suffix 0; long near-duplicate 0; anchor exact 500/500.
+- Language packet: 228/228 disposition, unresolved 0.
+- Merged-chat overlap: 49/49 disposition, unresolved 0.
+- Anchor neighborhood: 500/500 disposition, unresolved 0.
+- Dense actor concurrency: 16/16 PASS_CHAT_MULTITASKING; global physical-state candidate conflict = 0.
+- Cadence Context B remainder 7: 93,33% → 12,97%; exact 247: 718 → 105.
+- Laporan final: `docs/02_case_design/laporan_qa_corpus_10000.md`.
+- Manifest freeze: `data/adaptasi_indonesia/corpus_freeze_manifest.json`.
+
+**P2 selesai. Corpus tidak boleh diedit lagi tanpa versioned reopening dan QA ulang. Tahap berikutnya: digital forensics.**
