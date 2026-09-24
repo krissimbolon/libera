@@ -72,3 +72,25 @@ Say: the research case is a **synthetic WhatsApp-style conversation corpus**, wh
 Show the trace:
 
 `P2 frozen design -> DEV-SIM-001 -> ACQ-SIM-001 -> ART-* -> CHK-* -> RUN-* -> finding -> P9 validation`.
+
+## Private ground-truth completion workflow
+
+The final key-evidence labels are **not** stored in the public repo. After the ChatSim P4 acquisition/extraction and after P8 output is produced:
+
+    py -3 tools\build_private_gt_annotation_packet.py --artifacts "<ACQ-SIM folder>\artifacts\artifacts.csv"
+
+This creates a private annotation packet with blank evaluator labels and reviewer hints. It does **not** auto-label evidence.
+
+Bela/evaluator then completes at least:
+- `is_key_evidence` explicitly as positive/negative for the chosen evaluation set;
+- `event_id`;
+- expected entities/relations where established;
+- annotation/review status.
+
+Lock the private GT:
+
+    py -3 tools\lock_private_ground_truth.py runtime\private\P9\ground_truth_annotation_packet.csv
+
+P8 is independently hash-locked by `tools/lock_p8_outputs.py`. P9 with ground truth refuses to run if the current P4/P5/P8 files no longer match that lock.
+
+Partial annotation is permitted for an explicitly declared evaluation subset: unlabeled and unacquired messages are reported separately and excluded from the confusion-matrix denominator. Do not describe a partial labeled subset as full-corpus evaluation.
