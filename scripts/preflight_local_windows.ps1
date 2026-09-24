@@ -13,7 +13,22 @@ if (-not (Test-Path "data\adaptasi_indonesia\corpus_whatsapp_10000.csv")) {
 }
 $expected = "A014A02EBAD298A33267DA8631F3A2D1906A537AE558C1849622904C225467E6"
 $actual = (Get-FileHash "data\adaptasi_indonesia\corpus_whatsapp_10000.csv" -Algorithm SHA256).Hash.ToUpper()
-if ($actual -ne $expected) { Fail "Frozen P2 hash mismatch. Expected $expected, got $actual" }
+if ($actual -ne $expected) {
+    $bytes = [System.IO.File]::ReadAllBytes("data\adaptasi_indonesia\corpus_whatsapp_10000.csv")
+    $text = [System.Text.Encoding]::UTF8.GetString($bytes)
+    $lfText = $text.Replace([System.Environment]::NewLine, "`n")
+    $lfBytes = [System.Text.Encoding]::UTF8.GetBytes($lfText)
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $lfHash = ([System.BitConverter]::ToString($sha.ComputeHash($lfBytes))).Replace("-", "")
+    } finally {
+        $sha.Dispose()
+    }
+    if ($lfHash -eq $expected) {
+        Fail "Frozen P2 working-tree bytes differ only by CRLF conversion. Pull main, restore the corpus from HEAD, and rerun preflight. Do not edit the corpus."
+    }
+    Fail "Frozen P2 hash mismatch. Expected $expected, got $actual. This is not a line-ending-only mismatch; stop and inspect before continuing."
+}
 Write-Host "[PASS] Frozen P2 hash matches."
 
 # Python
