@@ -11,7 +11,6 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
-import math
 import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone, timedelta
@@ -88,8 +87,9 @@ def hamming(a: int, b: int) -> int:
 
 
 def near_duplicate_candidates(rows: list[dict[str, str]], limit: int = 100) -> list[dict[str, object]]:
-    candidates: list[tuple[int, dict[str, str], int, int]] = []
-    buckets: dict[tuple[int, int], list[tuple[dict[str, str], int, int]]] = defaultdict(list)
+    candidates: list[tuple[int, str, str, int, int]] = []
+    buckets: dict[tuple[int, int], list[tuple[str, int, int]]] = defaultdict(list)
+    emitted_pairs: set[tuple[str, str]] = set()
 
     for row in rows:
         norm = normalize_text(row["message_text"])
@@ -97,39 +97,30 @@ def near_duplicate_candidates(rows: list[dict[str, str]], limit: int = 100) -> l
         if token_count < 8:
             continue
         sig = simhash64(norm)
-        # Four independent 16-bit bands keep candidate generation tractable.
         for band in range(4):
             key = (band, (sig >> (band * 16)) & 0xFFFF)
-            for other, other_sig, other_len in buckets[key]:
+            for other_id, other_sig, other_len in buckets[key]:
                 if abs(token_count - other_len) > 3:
                     continue
+                pair = tuple(sorted((row["message_id"], other_id)))
+                if pair in emitted_pairs:
+                    continue
                 dist = hamming(sig, other_sig)
-                if dist <= 5 and row["message_text"] != other["message_text"]:
-                    candidates.append((dist, row, token_count, other_len))
-                    # Store the counterpart ID in a temporary field for output.
-                    candidates[-1][1].setdefault("_near_other", other["message_id"])
-            buckets[key].append((row, sig, token_count))
+                if dist <= 5:
+                    emitted_pairs.add(pair)
+                    candidates.append((dist, pair[0], pair[1], token_count, other_len))
+            buckets[key].append((row["message_id"], sig, token_count))
 
-    seen: set[tuple[str, str]] = set()
-    out: list[dict[str, object]] = []
-    for dist, row, token_count, _ in sorted(candidates, key=lambda x: x[0]):
-        other_id = row.pop("_near_other", None)
-        if not other_id:
-            continue
-        pair = tuple(sorted((row["message_id"], str(other_id))))
-        if pair in seen:
-            continue
-        seen.add(pair)
-        out.append({
-            "message_id_a": pair[0],
-            "message_id_b": pair[1],
+    return [
+        {
+            "message_id_a": a,
+            "message_id_b": b,
             "hamming_distance": dist,
-            "token_count_a": token_count,
-        })
-        if len(out) >= limit:
-            break
-    return out
-
+            "token_count_a": len_a,
+            "token_count_b": len_b,
+        }
+        for dist, a, b, len_a, len_b in sorted(candidates, key=lambda x: (x[0], x[1], x[2]))[:limit]
+    ]
 
 def main() -> None:
     messages = read_rows(WORK)
