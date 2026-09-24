@@ -1,24 +1,4 @@
-"""
-ollama_runner.py - Pemanggil Ollama lokal (P7) dengan logging RUN-ID.
-
-Memakai HTTP API Ollama (http://localhost:11434) lewat urllib standard
-library saja - tidak menambah dependency `requests` atau `ollama` pip
-package, sesuai arahan "dependency seminimal mungkin".
-
-Setiap run (dry-run maupun sungguhan) dicatat ke run_log dengan field
-sesuai PDF Bab 6.1 poin 9 & Bab F:
-    run_id, model, ollama_version, model_digest (best-effort),
-    prompt_version, temperature, seed, query, retrieved_evidence_ids,
-    retrieved_chunk_ids, output, timestamp, error (jika ada)
-
-Mode --dry-run mengembalikan output stub TANPA melakukan koneksi
-jaringan apa pun - dipakai untuk praktikum individu / test tanpa Ollama
-terpasang.
-
-CLI:
-    python -m src.ai_rag.ollama_runner --dry-run --query "..." --prompt-version v1
-    python -m src.ai_rag.ollama_runner --model llama3.1 --query "..." --prompt-version v1
-"""
+"""P7 local Ollama runner with reproducibility and forensic guardrails."""
 from __future__ import annotations
 
 import argparse
@@ -31,23 +11,31 @@ from typing import Any, Dict, List, Optional
 from .run_log import append_jsonl, new_run_id, utc_now_iso
 
 DEFAULT_HOST = "http://localhost:11434"
-DEFAULT_MODEL = "llama3.1"
-DEFAULT_TEMPERATURE = 0.2
+DEFAULT_MODEL = "llama3.1:8b"
+DEFAULT_TEMPERATURE = 0.1
 DEFAULT_SEED = 42
-DEFAULT_TIMEOUT_SECONDS = 120
+DEFAULT_NUM_CTX = 8192
+DEFAULT_TIMEOUT_SECONDS = 180
 
-STRUCTURED_REASONING_INSTRUCTIONS = """\
-Jawab HANYA dalam format JSON dengan field berikut, tanpa teks lain di luar JSON:
+FORENSIC_INSTRUCTIONS = """You are assisting a digital-forensic examination.
+Use ONLY the case evidence explicitly supplied in this prompt.
+Never use hidden source reconstruction, evaluator ground truth, or outside facts.
+For case-specific factual claims, cite examiner evidence IDs such as [ART-000001].
+If evidence is absent or insufficient, say so. Distinguish observation from
+interpretation. Do not invent actors, events, dates, locations, payments, or
+relationships. Return only the requested answer, not private chain-of-thought.
+"""
+
+STRUCTURED_REASONING_INSTRUCTIONS = """Return ONLY valid JSON with these fields:
 {
-  "question": "<pertanyaan asli>",
-  "relevant_evidence": ["<evidence_id atau chunk_id yang relevan>", ...],
-  "observed_facts": "<fakta yang secara eksplisit didukung evidence>",
-  "possible_interpretation": "<interpretasi yang wajar dari fakta di atas>",
-  "contradicting_evidence": "<evidence yang bertentangan, atau 'tidak ada'>",
-  "confidence_uncertainty": "<tinggi/sedang/rendah beserta alasan singkat>",
-  "finding": "<ringkasan temuan, satu-dua kalimat>"
+  "question": "<original question>",
+  "relevant_evidence": ["ART-...", "..."],
+  "observed_facts": "<facts explicitly supported by supplied evidence>",
+  "possible_interpretation": "<bounded interpretation>",
+  "contradicting_evidence": "<contradiction or 'tidak ada yang ditemukan'>",
+  "confidence_uncertainty": "<tinggi/sedang/rendah + short reason>",
+  "finding": "<one or two sentence finding>"
 }
-Jangan menyertakan chain-of-thought atau proses berpikir internal - hanya JSON akhir di atas.
 """
 
 
@@ -55,64 +43,88 @@ class OllamaError(Exception):
     pass
 
 
-def _http_post_json(url: str, payload: Dict[str, Any], timeout: int) -> Dict[str, Any]:
-    data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
+def _post(url: str, payload: Dict[str, Any], timeout: int) -> Dict[str, Any]:
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+    )
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.URLError as exc:
-        raise OllamaError(f"Tidak dapat menghubungi Ollama di {url}: {exc}") from exc
+        raise OllamaError(f"Ollama tidak dapat dihubungi di {url}: {exc}") from exc
 
 
-def _http_get_json(url: str, timeout: int) -> Dict[str, Any]:
+def _get(url: str, timeout: int) -> Dict[str, Any]:
     try:
         with urllib.request.urlopen(url, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.URLError as exc:
-        raise OllamaError(f"Tidak dapat menghubungi Ollama di {url}: {exc}") from exc
+        raise OllamaError(f"Ollama tidak dapat dihubungi di {url}: {exc}") from exc
 
 
-def get_ollama_version(host: str, timeout: int = 10) -> Optional[str]:
+def get_ollama_version(host: str) -> Optional[str]:
     try:
-        data = _http_get_json(f"{host}/api/version", timeout=timeout)
-        return data.get("version")
+        return _get(f"{host.rstrip('/')}/api/version", 10).get("version")
     except OllamaError:
         return None
 
 
+def get_model_digest(host: str, model: str) -> Optional[str]:
+    try:
+        data = _get(f"{host.rstrip('/')}/api/tags", 15)
+    except OllamaError:
+        return None
+    wanted = model.casefold()
+    for item in data.get("models", []):
+        name = str(item.get("name", "")).casefold()
+        if name == wanted or name.split(":")[0] == wanted.split(":")[0]:
+            return item.get("digest")
+    return None
+
+
 def build_prompt(query: str, retrieved_texts: List[str], structured: bool) -> str:
-    context_block = ""
-    if retrieved_texts:
-        joined = "\n---\n".join(retrieved_texts)
-        context_block = f"Konteks bukti yang diambil:\n{joined}\n\n"
+    evidence = (
+        "\n\n--- RETRIEVED EVIDENCE ---\n"
+        + "\n---\n".join(retrieved_texts)
+        + "\n--- END EVIDENCE ---\n"
+        if retrieved_texts else
+        "\n\nNO CASE EVIDENCE WAS SUPPLIED FOR THIS CONDITION.\n"
+    )
+    format_instruction = STRUCTURED_REASONING_INSTRUCTIONS if structured else (
+        "Answer concisely. Cite ART evidence IDs for every case-specific factual claim."
+    )
+    return (
+        FORENSIC_INSTRUCTIONS + "\n" + format_instruction +
+        evidence + f"\nQuestion: {query}\n"
+    )
 
-    instructions = STRUCTURED_REASONING_INSTRUCTIONS if structured else ""
-    return f"{instructions}\n{context_block}Pertanyaan: {query}\n"
 
-
-def call_ollama_generate(
-    host: str,
-    model: str,
-    prompt: str,
-    temperature: float,
-    seed: int,
-    timeout: int,
+def call_generate(
+    host: str, model: str, prompt: str, temperature: float, seed: int,
+    num_ctx: int, timeout: int,
 ) -> str:
-    payload = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False,
-        "options": {"temperature": temperature, "seed": seed},
-    }
-    data = _http_post_json(f"{host}/api/generate", payload, timeout=timeout)
+    data = _post(
+        f"{host.rstrip('/')}/api/generate",
+        {
+            "model": model,
+            "prompt": prompt,
+            "stream": False,
+            "options": {
+                "temperature": temperature,
+                "seed": seed,
+                "num_ctx": num_ctx,
+            },
+        },
+        timeout,
+    )
     return data.get("response", "")
 
 
 def run_once(
     query: str,
     model: str = DEFAULT_MODEL,
-    prompt_version: str = "v1",
+    prompt_version: str = "v2-forensic-grounded",
     temperature: float = DEFAULT_TEMPERATURE,
     seed: int = DEFAULT_SEED,
     host: str = DEFAULT_HOST,
@@ -123,96 +135,89 @@ def run_once(
     dry_run: bool = False,
     run_log_path: Optional[Path] = None,
     timeout: int = DEFAULT_TIMEOUT_SECONDS,
+    num_ctx: int = DEFAULT_NUM_CTX,
 ) -> Dict[str, Any]:
-    """Jalankan satu kali pemanggilan LLM (dry-run atau sungguhan) dan
-    catat ke run_log. Mengembalikan record lengkap yang juga ditulis ke log.
-    """
     retrieved_chunk_ids = retrieved_chunk_ids or []
     retrieved_evidence_ids = retrieved_evidence_ids or []
     retrieved_texts = retrieved_texts or []
-
     run_id = new_run_id()
-    prompt = build_prompt(query, retrieved_texts, structured=structured)
-
-    error_message = None
+    prompt = build_prompt(query, retrieved_texts, structured)
+    error = None
+    version = None
+    digest = None
     if dry_run:
-        output = json.dumps(
-            {
+        output = (
+            json.dumps({
                 "question": query,
                 "relevant_evidence": retrieved_evidence_ids,
-                "observed_facts": "[DRY-RUN] Tidak ada panggilan model sungguhan.",
-                "possible_interpretation": "[DRY-RUN] Stub output untuk testing pipeline.",
-                "contradicting_evidence": "tidak ada",
-                "confidence_uncertainty": "rendah - ini adalah dry-run, bukan hasil model",
-                "finding": "[DRY-RUN] Placeholder finding.",
-            },
-            ensure_ascii=False,
-        ) if structured else "[DRY-RUN] Tidak ada panggilan model sungguhan."
-        ollama_version = None
+                "observed_facts": "[DRY-RUN] no model call",
+                "possible_interpretation": "[DRY-RUN]",
+                "contradicting_evidence": "tidak dievaluasi",
+                "confidence_uncertainty": "rendah - dry-run",
+                "finding": "[DRY-RUN] pipeline-only output",
+            }, ensure_ascii=False)
+            if structured else
+            "[DRY-RUN] pipeline-only output; no model call."
+        )
     else:
-        ollama_version = get_ollama_version(host, timeout=min(timeout, 10))
+        version = get_ollama_version(host)
+        digest = get_model_digest(host, model)
         try:
-            output = call_ollama_generate(
-                host=host, model=model, prompt=prompt, temperature=temperature, seed=seed, timeout=timeout
+            output = call_generate(
+                host, model, prompt, temperature, seed, num_ctx, timeout
             )
         except OllamaError as exc:
             output = ""
-            error_message = str(exc)
+            error = str(exc)
 
     record = {
         "run_id": run_id,
         "stage": "llm_call",
         "timestamp": utc_now_iso(),
         "model": model,
-        "ollama_version": ollama_version,
-        "model_digest": None,  # best-effort, diisi jika/ketika tersedia dari /api/show
+        "ollama_version": version,
+        "model_digest": digest,
         "prompt_version": prompt_version,
         "temperature": temperature,
         "seed": seed,
+        "num_ctx": num_ctx,
         "dry_run": dry_run,
         "structured": structured,
         "query": query,
         "retrieved_chunk_ids": retrieved_chunk_ids,
         "retrieved_evidence_ids": retrieved_evidence_ids,
         "output": output,
-        "error": error_message,
+        "error": error,
     }
-
-    if run_log_path is not None:
+    if run_log_path:
         append_jsonl(Path(run_log_path), record)
-
     return record
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Ollama runner dengan RUN-ID logging (P7).")
-    parser.add_argument("--query", required=True)
-    parser.add_argument("--model", default=DEFAULT_MODEL)
-    parser.add_argument("--prompt-version", default="v1")
-    parser.add_argument("--temperature", type=float, default=DEFAULT_TEMPERATURE)
-    parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
-    parser.add_argument("--host", default=DEFAULT_HOST)
-    parser.add_argument("--structured", action="store_true", help="Minta output format structured finding")
-    parser.add_argument("--dry-run", action="store_true", help="Jalankan tanpa memanggil Ollama sungguhan")
-    parser.add_argument("--run-log", default="configs/run_log.jsonl")
-    args = parser.parse_args()
-
-    record = run_once(
-        query=args.query,
-        model=args.model,
-        prompt_version=args.prompt_version,
-        temperature=args.temperature,
-        seed=args.seed,
-        host=args.host,
-        structured=args.structured,
-        dry_run=args.dry_run,
-        run_log_path=Path(args.run_log),
+    p = argparse.ArgumentParser(description="P7 local Ollama runner.")
+    p.add_argument("--query", required=True)
+    p.add_argument("--model", default=DEFAULT_MODEL)
+    p.add_argument("--prompt-version", default="v2-forensic-grounded")
+    p.add_argument("--temperature", type=float, default=DEFAULT_TEMPERATURE)
+    p.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    p.add_argument("--num-ctx", type=int, default=DEFAULT_NUM_CTX)
+    p.add_argument("--host", default=DEFAULT_HOST)
+    p.add_argument("--structured", action="store_true")
+    p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--run-log", default="runtime/working/P8/run_log.jsonl")
+    args = p.parse_args()
+    rec = run_once(
+        args.query, args.model, args.prompt_version, args.temperature,
+        args.seed, args.host, structured=args.structured,
+        dry_run=args.dry_run, run_log_path=Path(args.run_log),
+        num_ctx=args.num_ctx,
     )
-
-    print(f"[ollama_runner] run_id={record['run_id']} dry_run={record['dry_run']}")
-    if record["error"]:
-        print(f"[ollama_runner] ERROR: {record['error']}")
-    print(f"[ollama_runner] output:\n{record['output']}")
+    print(f"[P7] run_id={rec['run_id']} model={rec['model']} digest={rec['model_digest']}")
+    if rec["error"]:
+        print(f"[P7] ERROR: {rec['error']}")
+        raise SystemExit(1)
+    print(rec["output"])
 
 
 if __name__ == "__main__":
