@@ -1,4 +1,4 @@
-# LIBERA — UAS Digital Forensics Research v2
+# LIBERA
 
 End-to-end, reproducible digital-forensics research project using a frozen synthetic WhatsApp case, traditional forensic baseline, local Ollama LLM, retrieval-augmented generation (RAG), structured forensic output, and blinded evaluation.
 
