@@ -21,12 +21,14 @@ Dokumen ini memetakan keputusan metode LIBERA ke rujukan teknis/ilmiah yang digu
 ## LLM-assisted digital forensics
 
 6. *ForensicLLM: A local large language model for digital forensics*. Forensic Science International: Digital Investigation, 52(Supplement), 2025, 301872. DOI: 10.1016/j.fsidi.2025.301872.
-   - Mendukung local LLM, LLaMA-3.1-8B baseline, source attribution, dan perhatian terhadap hallucination.
-7. *Towards a standardized methodology and dataset for evaluating LLM-based digital forensic timeline analysis*. Forensic Science International: Digital Investigation, 54(Supplement), 2025, 301982. DOI: 10.1016/j.fsidi.2025.301982.
+   - Mendukung pendekatan local LLM, source attribution, dan perhatian terhadap hallucination; digunakan sebagai rujukan metodologis, bukan alasan untuk memaksakan model yang sama pada corpus Indonesia.
+7. Yang, A. et al. (2024). *Qwen2 Technical Report*. arXiv:2407.10671; Qwen Team (2024), *Qwen2.5 Technical Report*, arXiv:2412.15115.
+   - Qwen2 mendokumentasikan dukungan multilingual termasuk Indonesian/Malay; Qwen2.5 meningkatkan instruction following, structured-data understanding, dan structured output. Ini menjadi dasar pemilihan `qwen2.5:7b` untuk corpus chat Indonesia.
+8. *Towards a standardized methodology and dataset for evaluating LLM-based digital forensic timeline analysis*. Forensic Science International: Digital Investigation, 54(Supplement), 2025, 301982. DOI: 10.1016/j.fsidi.2025.301982.
    - Mendukung locked experimental protocol, ground truth, dan evaluasi kuantitatif.
-8. *Digital forensics in law enforcement: A case study of LLM-driven evidence analysis*. Forensic Science International: Digital Investigation, 54, 2025, 301939.
+9. *Digital forensics in law enforcement: A case study of LLM-driven evidence analysis*. Forensic Science International: Digital Investigation, 54, 2025, 301939.
    - Mendukung penggunaan precision, recall, F1, dan hallucination-oriented evaluation pada data messenger.
-9. *Large language models in digital forensics: capabilities, challenges and future directions*. Forensic Science International: Digital Investigation, 56, 2026, 302043.
+10. *Large language models in digital forensics: capabilities, challenges and future directions*. Forensic Science International: Digital Investigation, 56, 2026, 302043.
    - Mendukung human-AI collaboration, reproducibility, explainability, dan perlunya validation framework.
 
 ## LIBERA operational mapping
