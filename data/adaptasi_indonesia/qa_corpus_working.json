@@ -17,7 +17,7 @@
   "context_gaps_exactly_247_seconds": 105,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "b7f5d5c8e1cc5bd81fe43a2db26d7507a3dc277e7c35f91ef2dea0126616b507",
+  "working_sha256": "83c66fa7b14cf37bba888950004bf642888d05c4e630f2e5b2297419243d0b17",
   "repeated_four_message_suffix_windows": 0,
   "affected_conversations": 0,
   "examples": [],
@@ -29,7 +29,7 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 169,
+      "comma_phrase_ya_ending": 167,
       "barusan_ending": 42
     },
     "bridge": {
