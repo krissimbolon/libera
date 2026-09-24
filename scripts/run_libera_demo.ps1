@@ -1,6 +1,8 @@
 param(
     [string]$OutputRoot = ".\demo_evidence",
     [switch]$DryRun,
+    [switch]$StopAfterP4,
+    [switch]$UseLockedP5,
     [switch]$LaunchWorkbench
 )
 
@@ -34,10 +36,20 @@ Copy-Item (Join-Path $latest.FullName "acquisition_manifest.json") (Join-Path $r
 Copy-Item (Join-Path $latest.FullName "acquisition_manifest.json") "runtime\working\current_acquisition_manifest.json" -Force
 Copy-Item (Join-Path $artifactDir "artifact_manifest.json") (Join-Path $runtimeP4 "artifact_manifest.json") -Force
 
+if ($StopAfterP4) {
+    Write-Host ""
+    Write-Host "P4 COMPLETE — STOPPING BEFORE P5 HUMAN QC" -ForegroundColor Yellow
+    Write-Host "ChatSim evidence root: $($latest.FullName)"
+    Write-Host "Normalized ART evidence: $artifactCsv"
+    Write-Host ("Next: powershell -ExecutionPolicy Bypass -File scripts\\run_p5_examiner_review.ps1 -ArtifactsPath `"{0}`"" -f $artifactCsv)
+    return
+}
+
 Write-Host ""
 Write-Host "Continuing P5-P10 from acquired ChatSim ART evidence..." -ForegroundColor Green
 $runnerArgs = @("-ExecutionPolicy","Bypass","-File","scripts/run_libera_local.ps1","-ArtifactsPath",$artifactCsv)
 if ($DryRun) { $runnerArgs += "-DryRun" }
+if ($UseLockedP5) { $runnerArgs += "-UseLockedP5" }
 & powershell @runnerArgs
 if ($LASTEXITCODE -ne 0) { throw "P5-P10 pipeline failed." }
 
