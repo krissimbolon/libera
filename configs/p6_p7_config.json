@@ -29,7 +29,7 @@
   },
   "ollama": {
     "host": "http://localhost:11434",
-    "model": "llama3.1:8b",
+    "model": "qwen2.5:7b",
     "temperature": 0.1,
     "seed": 42,
     "num_ctx": 8192,
