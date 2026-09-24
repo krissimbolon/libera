@@ -24,7 +24,7 @@
 
 ## Slide 6 — P6/P7 local RAG
 - BGE-M3 local multilingual embeddings.
-- Qwen2.5-7B through Ollama.
+- Qwen2.5-1.5B through Ollama.
 - ART evidence IDs included in chunk context and model citations.
 
 ## Slide 7 — P8 A/B/C experiment
