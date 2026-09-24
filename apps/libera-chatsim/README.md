@@ -1,95 +1,56 @@
-# LIBERA ChatSim — DEV-001
+# LIBERA ChatSim — controlled Android evidence carrier
 
-LIBERA ChatSim is a researcher-controlled Android messaging simulator for the LIBERA digital-forensics demonstration.
+LIBERA ChatSim is a researcher-controlled Android messaging simulator for the LIBERA forensic demonstration. **It is not WhatsApp and must never be presented as a WhatsApp acquisition tool.** It exists so the team can demonstrate actual Android app-private logical acquisition, hashing, working-copy examination, extraction, provenance, and downstream P5–P10 analysis without touching personal WhatsApp accounts or mass-sending 10,000 messages.
 
-It is not WhatsApp and is not presented as a WhatsApp forensic acquisition tool. It simulates the messaging evidence environment so the team can demonstrate preservation, logical acquisition, extraction, analysis, and evidence attribution without touching personal WhatsApp data.
+## Evidence identity
 
-## Evidence model
+- Simulation device: `DEV-SIM-001`.
+- Simulation acquisition: `ACQ-SIM-001`.
+- App package: `id.libera.chatsim`.
+- Private SQLite: `databases/libera_messages.db`.
+- Source: immutable frozen P2 corpus SHA-256 `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6`.
+- Device seed: 9,997 Raka-participating messages.
+- Three non-Raka source anomalies remain separately documented and are not silently inserted onto Raka's simulated device.
+- Source-construction provenance and evaluator ground truth are excluded from the app database.
 
-- Host: Android Emulator.
-- Simulated device ID: DEV-001.
-- Simulated owner: Raka Pradana.
-- App package: id.libera.chatsim.
-- Local evidence store: databases/libera_messages.db.
-- One chat_id per Raka-counterparty pair.
-- Existing corpus conversation_id is retained as segment_id.
-- Evaluator-only provenance and ground-truth fields are excluded from the device.
-
-Three non-Raka anchor rows currently present in the master reconstruction are not silently inserted as direct messages on Raka's device. The seed builder writes them to source_anomalies.jsonl pending provenance resolution.
-
-## Build the seed
+## Build seed and APK
 
 From repository root:
 
-    python tools/build_demo_seed.py
+    py -3 tools/build_demo_seed.py
 
-This creates:
+The seed builder refuses a corpus whose SHA-256 differs from frozen P2.
 
-    apps/libera-chatsim/app/src/main/assets/messages_seed.jsonl
-    apps/libera-chatsim/app/src/main/assets/source_anomalies.jsonl
-    apps/libera-chatsim/app/src/main/assets/seed_manifest.json
+Build in Android Studio, or use the GitHub Actions artifact from `Build Final ChatSim`.
 
-After P2 final QA, regenerate the seed from corpus_whatsapp_10000.csv and record the final seed hash.
+## Emulator acquisition
 
-## Build and install
+Install the debug APK on an Android emulator, open ChatSim once so the seed is imported, then run:
 
-Open apps/libera-chatsim in Android Studio and use an Android Virtual Device. API 35 is the current project target.
+    powershell -ExecutionPolicy Bypass -File scripts\acquire_chatsim.ps1
 
-Run the debug build. Debug is intentional because the research demo uses Android run-as for a controlled logical acquisition of the app-private SQLite database.
+The acquisition uses `adb exec-out` + `run-as` against this researcher-controlled debuggable app. It force-stops the app, copies the private SQLite database into a MASTER location, calculates SHA-256, creates a WORKING copy, re-hashes it, and refuses a mismatch.
 
-Launch LIBERA ChatSim once. First launch imports the seed into SQLite.
-
-## Live acquisition on Windows
-
-With the emulator running:
-
-    powershell -ExecutionPolicy Bypass -File scripts/acquire_chatsim.ps1
-
-The script:
-
-1. records emulator/device metadata;
-2. force-stops ChatSim;
-3. copies libera_messages.db using adb exec-out + run-as;
-4. stores a MASTER copy;
-5. creates a WORKING copy;
-6. SHA-256 hashes both;
-7. verifies master == working;
-8. writes acquisition_manifest.json and sha256_manifest.csv.
-
-This acquisition is explicitly labelled:
+Acquisition type:
 
     LOGICAL_APP_PRIVATE_FILE_COPY
 
-It is not physical acquisition or full-filesystem acquisition.
+This is not a physical/full-filesystem acquisition.
 
-## Extraction
+## End-to-end presentation run
 
-The acquisition script prints the next command. Equivalent example:
+For acquisition + extraction + P5–P10 dry-run:
 
-    python tools/extract_acquired_chatsim.py "demo_evidence\ACQ-001_<time>\working\libera_messages.db" --out "demo_evidence\ACQ-001_<time>\artifacts"
+    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -DryRun
 
-Outputs:
+For real local BGE-M3 + LLaMA-3.1-8B:
 
-- ART-00001_messages.csv
-- ART-00002_chats.csv
-- ART-00003_device_metadata.csv
-- artifact_manifest.json
+    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1
 
-These extracted ART files, not the P2 design corpus, are the intended inputs to the examiner and LLM workflow.
+Optional workbench:
 
-## Demo rule
+    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -DryRun -LaunchWorkbench
 
-Pre-stage Android Studio/emulator and the APK before the 20-minute presentation.
+## Presentation disclosure
 
-Perform live:
-
-    open DEV-001 ChatSim
-    -> inspect one chat
-    -> run acquisition
-    -> display SHA-256
-    -> run extraction
-    -> open LIBERA Workbench
-    -> search/analyze evidence
-    -> show FND -> ART -> ACQ -> DEV trace
-
-Do not spend presentation time compiling Android or generating embeddings.
+Describe the original 10,000-message dataset as a **synthetic WhatsApp-style case corpus**. Describe ChatSim as the **controlled Android evidence carrier used for the reproducible forensic demonstration**. Do not say that ChatSim proves extraction behavior of WhatsApp itself.
