@@ -1,0 +1,72 @@
+message_id	old_timestamp	new_timestamp	reason
+ID-CTX-B-0007	2026-07-04T22:50:45+07:00	2026-07-04T22:46:02+07:00	Double text Tania explaining missing receipt
+ID-CTX-B-0008	2026-07-04T22:55:54+07:00	2026-07-04T22:53:16+07:00	Raka responds after another active conversation
+ID-CTX-B-0009	2026-07-04T23:00:03+07:00	2026-07-04T22:54:05+07:00	Tania answers from memory
+ID-CTX-B-0010	2026-07-04T23:05:12+07:00	2026-07-04T23:04:38+07:00	Raka checks after separate anchor-free exchange
+ID-CTX-B-0011	2026-07-04T23:11:21+07:00	2026-07-04T23:05:23+07:00	Initial search of book
+ID-CTX-B-0012	2026-07-04T23:16:30+07:00	2026-07-04T23:06:04+07:00	Tania double texts while searching
+ID-CTX-B-0013	2026-07-04T23:21:39+07:00	2026-07-04T23:11:41+07:00	Search takes several minutes
+ID-CTX-B-0014	2026-07-04T23:26:48+07:00	2026-07-04T23:12:03+07:00	Raka quickly reacts to folded paper
+ID-CTX-B-0015	2026-07-04T23:31:57+07:00	2026-07-04T23:12:47+07:00	Tania unfolds receipt
+ID-CTX-B-0016	2026-07-04T23:37:06+07:00	2026-07-04T23:16:14+07:00	Raka asks where it was found
+ID-CTX-B-0017	2026-07-04T23:42:15+07:00	2026-07-04T23:16:45+07:00	Tania clarifies location
+ID-CTX-B-0018	2026-07-04T23:47:24+07:00	2026-07-04T23:17:06+07:00	Immediate embarrassed follow-up
+ID-CTX-B-0652	2026-07-12T07:07:32+07:00	2026-07-12T07:06:18+07:00	Brief reply about spare cover
+ID-CTX-B-0653	2026-07-12T07:09:39+07:00	2026-07-12T07:06:42+07:00	Maya says she will check shelf
+ID-CTX-B-0654	2026-07-12T07:11:46+07:00	2026-07-12T07:09:51+07:00	Physical check of shelf takes time
+ID-CTX-B-0655	2026-07-12T07:13:53+07:00	2026-07-12T07:10:12+07:00	Quick follow-up about replacement
+ID-CTX-B-0656	2026-07-12T07:15:00+07:00	2026-07-12T07:12:37+07:00	Raka cautions about wet fabric
+ID-CTX-B-0657	2026-07-12T07:18:07+07:00	2026-07-12T07:13:23+07:00	Maya puts cover in basket
+ID-CTX-B-0658	2026-07-12T07:20:14+07:00	2026-07-12T07:15:29+07:00	Maya reports new cover installed
+ID-CTX-B-0659	2026-07-12T07:22:21+07:00	2026-07-12T07:18:11+07:00	Raka responds before later anchor
+ID-CTX-B-2719	2026-07-18T17:32:40+07:00	2026-07-18T17:31:09+07:00	Brief reassurance before next anchor at 17:33
+ID-CTX-B-2720	2026-07-18T17:34:47+07:00	2026-07-18T17:31:46+07:00	Bagas explains worn lid
+ID-CTX-B-2721	2026-07-18T17:36:54+07:00	2026-07-18T17:36:12+07:00	Raka answers after other chat at 17:35
+ID-CTX-B-2722	2026-07-18T17:38:01+07:00	2026-07-18T17:37:07+07:00	Bagas gives reason for keeping bottle
+ID-CTX-B-2723	2026-07-18T17:41:08+07:00	2026-07-18T17:37:31+07:00	Bagas immediate follow-up
+ID-CTX-B-2724	2026-07-18T17:43:15+07:00	2026-07-18T17:40:52+07:00	Bagas interrupted by incoming message
+ID-CTX-B-2725	2026-07-18T17:45:22+07:00	2026-07-18T17:41:15+07:00	Bagas immediate interruption note
+ID-CTX-B-2726	2026-07-18T17:47:29+07:00	2026-07-18T17:44:51+07:00	Raka answers after other anchor chat at 17:43
+ID-CTX-B-2727	2026-07-18T17:49:36+07:00	2026-07-18T17:45:44+07:00	Bagas reports stalled send
+ID-CTX-B-2728	2026-07-18T17:52:43+07:00	2026-07-18T17:50:36+07:00	Signal returns after several minutes
+ID-CTX-B-2729	2026-07-18T17:54:50+07:00	2026-07-18T17:51:21+07:00	Bagas sees water in bottle
+ID-CTX-B-2730	2026-07-18T17:56:57+07:00	2026-07-18T17:57:33+07:00	Raka replies after other anchor chat at 17:56
+ID-CTX-B-2731	2026-07-18T17:58:04+07:00	2026-07-18T17:59:22+07:00	Bagas rinses bottle
+ID-CTX-B-0446	2026-07-03T07:59:57+07:00	2026-07-03T07:56:42+07:00	Raka responds briefly about room card
+ID-CTX-B-0447	2026-07-03T08:03:04+07:00	2026-07-03T07:57:18+07:00	Reza is packing before handing over card
+ID-CTX-B-0448	2026-07-03T08:07:11+07:00	2026-07-03T07:57:39+07:00	Short follow-up from Reza
+ID-CTX-B-0449	2026-07-03T08:11:18+07:00	2026-07-03T08:02:10+07:00	Raka returns after other chats
+ID-CTX-B-0450	2026-07-03T08:15:25+07:00	2026-07-03T08:02:44+07:00	Reza clarifies instruction
+ID-CTX-B-0451	2026-07-03T08:20:32+07:00	2026-07-03T08:03:19+07:00	Raka acknowledges
+ID-CTX-B-0452	2026-07-03T08:24:39+07:00	2026-07-03T08:14:35+07:00	Reza searches second card after pause
+ID-CTX-B-0453	2026-07-03T08:28:46+07:00	2026-07-03T08:15:09+07:00	Reza first search result
+ID-CTX-B-0454	2026-07-03T08:32:53+07:00	2026-07-03T08:18:40+07:00	Reza continues searching
+ID-CTX-B-0455	2026-07-03T08:36:00+07:00	2026-07-03T08:19:21+07:00	Reza finds second card
+ID-CTX-B-0456	2026-07-03T08:40:07+07:00	2026-07-03T08:23:17+07:00	Raka returns after other chats
+ID-CTX-B-0457	2026-07-03T08:45:14+07:00	2026-07-03T08:23:53+07:00	Reza promises future handover
+ID-CTX-B-0458	2026-07-03T08:49:21+07:00	2026-07-03T08:24:19+07:00	Reza concludes before separate coffee conversation
+ID-CTX-B-0702	2026-07-05T11:18:37+07:00	2026-07-05T11:15:49+07:00	Rena double texts about missing pen
+ID-CTX-B-0703	2026-07-05T11:21:44+07:00	2026-07-05T11:20:11+07:00	Raka asks after other chats
+ID-CTX-B-0704	2026-07-05T11:24:51+07:00	2026-07-05T11:20:48+07:00	Rena recalls where she used it
+ID-CTX-B-0705	2026-07-05T11:27:58+07:00	2026-07-05T11:21:02+07:00	Rena says she will search
+ID-CTX-B-0706	2026-07-05T11:30:05+07:00	2026-07-05T11:24:19+07:00	Raka suggests checking beneath notebook
+ID-CTX-B-0707	2026-07-05T11:34:12+07:00	2026-07-05T11:24:45+07:00	Rena checks beneath notebook
+ID-CTX-B-0708	2026-07-05T11:37:19+07:00	2026-07-05T11:27:57+07:00	Rena finds pen after search
+ID-CTX-B-0709	2026-07-05T11:40:26+07:00	2026-07-05T11:28:16+07:00	Rena explains where it was
+ID-CTX-B-0710	2026-07-05T11:43:33+07:00	2026-07-05T11:31:24+07:00	Raka reacts after another chat
+ID-CTX-B-0711	2026-07-05T11:46:40+07:00	2026-07-05T11:32:08+07:00	Rena replies
+ID-CTX-B-0712	2026-07-05T11:49:47+07:00	2026-07-05T11:32:39+07:00	Rena puts pen down
+ID-CTX-B-0713	2026-07-05T11:53:54+07:00	2026-07-05T11:35:11+07:00	Rena discovers ink problem
+ID-CTX-B-0714	2026-07-05T11:56:01+07:00	2026-07-05T11:35:36+07:00	Rena tries pen on paper
+ID-CTX-B-0715	2026-07-05T11:59:08+07:00	2026-07-05T11:36:18+07:00	Raka suggests spare pen
+ID-CTX-B-2348	2026-07-14T09:20:54+07:00	2026-07-14T09:21:12+07:00	Raka replies after another chat
+ID-CTX-B-2349	2026-07-14T09:25:01+07:00	2026-07-14T09:21:45+07:00	Maya explains condition of shoes
+ID-CTX-B-2350	2026-07-14T09:30:08+07:00	2026-07-14T09:22:19+07:00	Raka confirms shoes kept
+ID-CTX-B-2351	2026-07-14T09:35:15+07:00	2026-07-14T09:23:07+07:00	Maya will need them later
+ID-CTX-B-2352	2026-07-14T09:41:22+07:00	2026-07-14T09:23:31+07:00	Maya searches for socks
+ID-CTX-B-2353	2026-07-14T09:46:29+07:00	2026-07-14T09:28:49+07:00	Maya interrupted by chat
+ID-CTX-B-2354	2026-07-14T09:51:36+07:00	2026-07-14T09:29:04+07:00	Maya sends immediate follow-up
+ID-CTX-B-2355	2026-07-14T09:56:43+07:00	2026-07-14T09:30:12+07:00	Raka acknowledges
+ID-CTX-B-2356	2026-07-14T10:01:50+07:00	2026-07-14T09:48:28+07:00	Maya returns after interruption
+ID-CTX-B-2357	2026-07-14T10:07:57+07:00	2026-07-14T09:49:13+07:00	Maya leaves sock search for later
+ID-CTX-B-2358	2026-07-14T10:12:04+07:00	2026-07-14T09:50:21+07:00	Maya closes with shoe reminder
