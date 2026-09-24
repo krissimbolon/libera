@@ -1,11 +1,11 @@
 param(
     [switch]$DryRun,
     [switch]$UseLockedP5,
+    [string]$P5LockManifestPath = "runtime/working/P5/p5_lock_manifest.json",
     [string]$AcquisitionPath = "",
     [string]$ArtifactsPath = "",
     [string]$GroundTruthPath = ""
 )
-
 $ErrorActionPreference = "Stop"
 $UsedDryAcquisition = $false
 
@@ -38,12 +38,11 @@ if (-not $ArtifactsPath) {
 
 if ($UseLockedP5) {
     Write-Host "[P5] Verifying previously reviewed/locked traditional baseline..."
-    Run-Python -m src.baseline.p5_lock --verify --manifest runtime/working/P5/p5_lock_manifest.json
+    Run-Python -m src.baseline.p5_lock --verify --manifest $P5LockManifestPath
 } else {
     Write-Host "[P5] Running deterministic traditional baseline..."
     Run-Python -m src.baseline.traditional_baseline --artifacts $ArtifactsPath
 }
-
 Write-Host "[P6] Building evidence-aware chunks..."
 Run-Python -m src.ai_rag.chunker --input $ArtifactsPath --output runtime/working/P6/chunks.jsonl --min-size 30 --max-size 60 --time-window-minutes 120
 Run-Python -m src.ai_rag.leakage_check --input runtime/working/P6/chunks.jsonl
