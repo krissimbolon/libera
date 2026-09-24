@@ -1,0 +1,2 @@
+evidence_id,acquisition_id,relative_path,size_bytes,sha256,hash_time,tool,tool_version,is_master,is_working_copy,verified_against,verification_status,notes
+,,,,,,,,,,,,
