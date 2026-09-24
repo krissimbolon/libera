@@ -29,13 +29,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onConfigure(SQLiteDatabase db) {
-        super.onConfigure(db);
-        db.disableWriteAheadLogging();
-        db.execSQL("PRAGMA journal_mode=DELETE");
-        db.execSQL("PRAGMA synchronous=FULL");
-        db.execSQL("PRAGMA foreign_keys=ON");
-    }
+public void onConfigure(SQLiteDatabase db) {
+    super.onConfigure(db);
+    db.disableWriteAheadLogging();
+    db.execSQL("PRAGMA synchronous=FULL");
+    db.setForeignKeyConstraintsEnabled(true);
+}
 
     @Override
     public void onCreate(SQLiteDatabase db) {
