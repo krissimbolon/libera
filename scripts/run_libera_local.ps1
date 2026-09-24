@@ -59,14 +59,14 @@ if ($DryRun) {
     Write-Host "[P6] Ensuring locked local models are available..."
     & ollama pull bge-m3
     if ($LASTEXITCODE -ne 0) { throw "ollama pull bge-m3 failed" }
-    & ollama pull qwen2.5:7b
-    if ($LASTEXITCODE -ne 0) { throw "ollama pull qwen2.5:7b failed" }
+    & ollama pull qwen2.5:1.5b
+    if ($LASTEXITCODE -ne 0) { throw "ollama pull qwen2.5:1.5b failed" }
 
     Write-Host "[P6] Building BGE-M3 local index..."
     Run-Python -m src.ai_rag.retriever build --chunks runtime/working/P6/chunks.jsonl --namespace case_evidence --index runtime/working/P6/index.json --embedding-method ollama --embedding-model bge-m3
 
     Write-Host "[P7-P8] Running locked A/B/C local experiment..."
-    Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model qwen2.5:7b --prompt-version v2-forensic-grounded --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8
+    Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model qwen2.5:1.5b --prompt-version v2-forensic-grounded --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8
 }
 
 Write-Host "[P8] Locking experiment outputs before any ground truth is opened..."
