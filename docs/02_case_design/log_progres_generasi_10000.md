@@ -160,4 +160,4 @@ Pada setiap checkpoint catat:
 - Branch mencapai hitungan 10.000 dan komposisi target, tetapi audit pada snapshot `0ab74a3` menemukan 188 jendela empat pesan beruntun yang mengulang dua kata akhir identik di 66 conversation; ada 890 context B berakhir pola koma/frasa/`ya`.
 - QA kerja 8.000 yang sebelumnya tersimpan sudah tidak sesuai jumlah saat ini. Auditor baru menghasilkan status `FAILED_LANGUAGE_CONTINUITY_QA` dan laporan `audit_kualitas_10000_belum_lulus.md`.
 - **Progres konten terverifikasi tetap 4.000/10.000**, sedangkan 10.000 adalah jumlah baris yang memerlukan revisi isi. Final artifact dan QA final belum boleh diterbitkan sampai dialog repetitif diperbaiki dan audit actor-state menyeluruh lulus. Anchor 500/500 tetap identik.
-
+- Koreksi manual putaran pertama menulis ulang 80 pesan pada lima thread utuh tanpa mengubah ID/waktu/anchor; indikator pengulangan turun dari 188 jendela di 66 conversation menjadi 152 jendela di 61 conversation. QA final masih gagal.

@@ -15,9 +15,9 @@
   "conversation_count": 846,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "944d2faba257371b2941d529ac59ba1e04c0fbdf9002b12d734460d0a5151c90",
-  "repeated_four_message_suffix_windows": 188,
-  "affected_conversations": 66,
+  "working_sha256": "8485e0366bd602cbe94f0fe08b0faa02abfff6d9b50c2e81f8caf859035a0d90",
+  "repeated_four_message_suffix_windows": 152,
+  "affected_conversations": 61,
   "examples": [
     {
       "conversation_id": "KONV-DST-NARA-B12-009",
@@ -80,18 +80,6 @@
       "repeated_suffix": "meja ya"
     },
     {
-      "conversation_id": "KONV-CTX-NARA-B20-047",
-      "first_message_id": "ID-CTX-B-3229",
-      "last_message_id": "ID-CTX-B-3232",
-      "repeated_suffix": "toples ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-NARA-B20-047",
-      "first_message_id": "ID-CTX-B-3238",
-      "last_message_id": "ID-CTX-B-3241",
-      "repeated_suffix": "toples nih"
-    },
-    {
       "conversation_id": "KONV-CTX-KIRANA-B20-026",
       "first_message_id": "ID-CTX-B-2999",
       "last_message_id": "ID-CTX-B-3002",
@@ -138,6 +126,18 @@
       "first_message_id": "ID-CTX-B-1543",
       "last_message_id": "ID-CTX-B-1546",
       "repeated_suffix": "plester ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-KIRANA-B17-036",
+      "first_message_id": "ID-CTX-B-1544",
+      "last_message_id": "ID-CTX-B-1547",
+      "repeated_suffix": "plester ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-KIRANA-B17-036",
+      "first_message_id": "ID-CTX-B-1545",
+      "last_message_id": "ID-CTX-B-1548",
+      "repeated_suffix": "plester ya"
     }
   ],
   "namespace_style_signals": {
@@ -148,7 +148,7 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 890,
+      "comma_phrase_ya_ending": 843,
       "barusan_ending": 95
     },
     "bridge": {

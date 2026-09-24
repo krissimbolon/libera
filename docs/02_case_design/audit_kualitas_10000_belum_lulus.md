@@ -7,3 +7,7 @@ Audit reproduktif `python src/audit_repetisi_corpus.py` menemukan **188 jendela 
 QA kerja sebelumnya masih mencatat checkpoint 8.000 meskipun corpus bergerak ke 10.000. Berkas itu diperbarui oleh auditor ini dengan status `FAILED_LANGUAGE_CONTINUITY_QA`, hitungan terbaru, contoh pengulangan, serta pemeriksaan yang tersisa. **Jangan menyalin snapshot ke `corpus_whatsapp_10000.csv` atau menyatakan QA final selesai.** Perlu revisi dialog berulang sebagai satuan thread, bukan pemilihan kata per baris; sesudahnya audit kronologi, state aktor, gaya, duplikasi panjang, serta selisih SHA manifest anchor lama dengan file anchor branch.
 
 Batch manual 4.400 yang ditulis secara terpisah saat branch bergerak disimpan pada ref lokal `p2-10k-manual-4400` (commit `7f30525`) agar tidak menimpa commit lain. Ref utama mempertahankan seluruh riwayat sampai 10.000 sebagai bahan koreksi. Koreksi konten selanjutnya harus diintegrasikan setelah membaca state terbaru dan tidak menggunakan jumlah baris sebagai satu-satunya kriteria kelulusan.
+
+## Koreksi manual pertama
+
+Sebanyak 80 pesan pada lima thread (`MAYA-B17-035`, `NARA-B20-047`, `BAGAS-B17-043`, `RENA-B17-031`, `REZA-B17-041`) ditulis ulang sebagai dialog berurutan; pemetaan ID dan teks baru tersimpan di `koreksi_dialog_manual_001.tsv`. Waktu, ID, pasangan aktor, provenance, dan anchor tidak diubah. Sesudah koreksi, jendela pengulangan turun dari 188 menjadi **152**, dan conversation terdampak dari 66 menjadi **61**. Status tetap gagal; lima thread yang membaik belum cukup untuk QA final.
