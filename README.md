@@ -31,7 +31,7 @@ Then run acquisition -> extraction -> P5–P10:
 
     powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -DryRun
 
-Remove `-DryRun` for the real local BGE-M3 + Qwen2.5-7B run.
+Remove `-DryRun` for the real local BGE-M3 + Qwen2.5-1.5B run.
 
 ## Local software-only fallback
 
@@ -50,7 +50,7 @@ Final blind evaluation after output lock:
 ## Locked AI configuration
 
 - Embedding: `bge-m3` via Ollama.
-- LLM: `qwen2.5:7b`.
+- LLM: `qwen2.5:1.5b`.
 - Temperature: 0.1.
 - Seed: 42.
 - Context setting: 8192.
