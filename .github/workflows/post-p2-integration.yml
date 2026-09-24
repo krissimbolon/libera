@@ -3,7 +3,7 @@ name: Post-P2 Integration Audit
 on:
   push:
     branches:
-      - p3-p10-final-integration
+      - main
   pull_request:
   workflow_dispatch:
 
