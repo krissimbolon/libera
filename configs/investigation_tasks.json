@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "purpose": "Investigator-facing questions only; no evaluator ground truth.",
+  "tasks": [
+    {"task_id":"T01","question":"Siapa aktor yang paling relevan dan bagaimana peran komunikasinya?","keywords":["raka","orang","anak","cewek","cowok","teman","bos","klien"]},
+    {"task_id":"T02","question":"Apa urutan kejadian penting yang dapat direkonstruksi dari percakapan?","keywords":["jadi","nanti","besok","malam","pagi","sore","sampai","berangkat","ketemu"]},
+    {"task_id":"T03","question":"Lokasi apa yang muncul dan bagaimana perpindahan aktor dapat ditelusuri?","keywords":["hotel","kamar","apartemen","kos","rumah","bandung","stasiun","terminal","lokasi"]},
+    {"task_id":"T04","question":"Adakah indikasi pembayaran atau transaksi yang relevan?","keywords":["bayar","transfer","uang","cash","rekening","juta","ribu","harga","dp"]},
+    {"task_id":"T05","question":"Adakah koordinasi transportasi atau akomodasi yang relevan?","keywords":["mobil","motor","grab","gojek","taksi","jemput","antar","hotel","kamar"]},
+    {"task_id":"T06","question":"Percakapan mana yang menunjukkan koordinasi antaraktor?","keywords":["atur","koordinasi","hubungi","telepon","chat","bilang","kasih kabar","siap"]},
+    {"task_id":"T07","question":"Adakah indikator perekrutan, penawaran, atau pengendalian seseorang?","keywords":["kerja","job","tawaran","cari orang","bawa","jaga","suruh","ikut","jangan keluar"]},
+    {"task_id":"T08","question":"Adakah pernyataan yang saling bertentangan atau memerlukan verifikasi lanjut?","keywords":["tapi","bukan","belum","nggak","tidak","salah","beda","katanya"]},
+    {"task_id":"T09","question":"Pesan mana yang paling kuat sebagai kandidat bukti dan mengapa?","keywords":["transfer","hotel","kamar","jemput","bayar","bawa","ketemu","lokasi"]},
+    {"task_id":"T10","question":"Apa ringkasan kasus yang hanya didukung oleh bukti yang dapat ditelusuri?","keywords":["raka","hotel","bayar","jemput","ketemu","kerja","orang"]}
+  ]
+}
