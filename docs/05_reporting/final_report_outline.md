@@ -30,16 +30,27 @@ Referensi inti:
 - NIST SP 800-101 Rev.1 — SRC-004;
 - NIST SP 800-86 — SRC-005.
 
-## 3. Research Questions
+## 3. Case Initiation and Investigative Basis
+Tetapkan sebelum examiner melihat evidence:
+- alasan Raka menjadi subjek pemeriksaan berdasarkan informasi pre-device;
+- investigative hypotheses;
+- examination request/scope;
+- simulated search authority;
+- penjelasan bahwa DEV-001 adalah researcher-owned test device yang merepresentasikan handset Raka;
+- pemisahan pre-device suspicion, device evidence, dan evaluator-only ground truth.
+
+Jangan memakai temuan dari WhatsApp sebagai alasan retroaktif untuk menjelaskan mengapa HP diperiksa.
+
+## 4. Research Questions
 RQ1–RQ5 harus sama dengan `research_design.md`.
 
-## 4. Research Design dan Separation
+## 5. Research Design dan Separation
 Jelaskan layer:
 public source -> source reconstruction -> adapted synthetic scenario -> test-device staging -> acquisition -> extraction -> baseline/RAG/LLM -> human verification -> reporting.
 
 Tegaskan ground truth tidak tersedia ke examiner/AI sebelum P9.
 
-## 5. Source Reconstruction dan Synthetic Scenario
+## 6. Source Reconstruction dan Synthetic Scenario
 Laporkan:
 - 543-line universe;
 - mapped/unresolved count;
@@ -50,7 +61,7 @@ Laporkan:
 - generator-artifact mitigation;
 - keterbatasan bahwa skenario adalah synthetic adaptation, bukan komunikasi asli.
 
-## 6. P2 Final QA
+## 7. P2 Final QA
 Masukkan tabel final:
 - total;
 - provenance;
@@ -64,7 +75,7 @@ Masukkan tabel final:
 - hash/provenance note;
 - human spot-check.
 
-## 7. Forensic Preservation dan Acquisition
+## 8. Forensic Preservation dan Acquisition
 Laporkan:
 - DEV-001;
 - device metadata;
@@ -78,7 +89,7 @@ Laporkan:
 
 Jangan menggunakan istilah physical/full-file-system jika acquisition hanya logical.
 
-## 8. Extraction
+## 9. Extraction
 Laporkan:
 - ART inventory;
 - parser/tool;
@@ -88,7 +99,7 @@ Laporkan:
 - output hashes;
 - extraction QA.
 
-## 9. Traditional Forensic Baseline
+## 10. Traditional Forensic Baseline
 Metode:
 - keyword/search;
 - actor/entity;
@@ -98,7 +109,7 @@ Metode:
 
 Laporkan baseline sebelum AI results.
 
-## 10. Local LLM / RAG Methodology
+## 11. Local LLM / RAG Methodology
 Catat:
 - hardware;
 - Ollama version;
@@ -110,7 +121,7 @@ Catat:
 - prompt versions;
 - run parameters.
 
-## 11. Experimental Conditions
+## 12. Experimental Conditions
 - BASE traditional;
 - A LLM-only;
 - B RAG;
@@ -118,7 +129,7 @@ Catat:
 
 Task set sama untuk A/B/C.
 
-## 12. Metrics
+## 13. Metrics
 Finding-level:
 - TP/FP/FN;
 - precision;
@@ -140,7 +151,7 @@ Operational:
 - retrieval depth;
 - human verification effort.
 
-## 13. Results
+## 14. Results
 Isi setelah runs selesai.
 
 ### Table A — Overall
@@ -158,7 +169,7 @@ Isi setelah runs selesai.
 | B | | | | |
 | C | | | | |
 
-## 14. Error Analysis
+## 15. Error Analysis
 Gunakan ERR register.
 
 Kelompokkan:
@@ -175,12 +186,12 @@ Kelompokkan:
 
 Untuk tiap kategori: failure -> impact -> mitigation -> residual risk.
 
-## 15. Discussion per RQ
+## 16. Discussion per RQ
 Jawab RQ dengan hasil, bukan opini.
 
 RQ2 tidak otomatis berasumsi RAG lebih baik; laporkan jika lebih detail tetapi precision/attribution berbeda.
 
-## 16. Limitations
+## 17. Limitations
 Minimal:
 - synthetic scenario;
 - single test-device/environment;
@@ -191,7 +202,7 @@ Minimal:
 - unresolved historical provenance issue bila masih ada;
 - generalizability.
 
-## 17. Ethics dan Data Handling
+## 18. Ethics dan Data Handling
 - restricted source materials;
 - minor-related content sanitization;
 - no real victim data in synthetic corpus;
@@ -199,7 +210,7 @@ Minimal:
 - raw evidence private;
 - public repo hanya metadata/safe artifacts.
 
-## 18. Reproducibility
+## 19. Reproducibility
 Sertakan:
 - repository commit;
 - final corpus SHA-256;
@@ -212,7 +223,14 @@ Sertakan:
 - run logs;
 - environment versions.
 
-## 19. Conclusion
+## 20. Forensic Conclusion and Ground-Truth Concordance
+Pisahkan dua lapis:
+- blinded forensic conclusion: apa yang didukung acquired evidence;
+- evaluator comparison: apakah temuan tersebut concordant dengan intended Raka case resolution yang diadaptasi dari adjudicated Galloway outcome.
+
+Hindari kalimat bahwa HP sendiri 'membuktikan Raka bersalah'. Gunakan bahasa evidentiary support dan concordance.
+
+## 21. Conclusion
 Ringkas temuan terhadap RQ1–RQ5 tanpa memperluas klaim melampaui eksperimen.
 
 ## Appendices
