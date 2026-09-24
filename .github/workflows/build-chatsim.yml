@@ -23,7 +23,7 @@ jobs:
           python-version: '3.12'
 
       - name: Build examiner-safe ChatSim seed
-        run: python tools/build_demo_seed.py
+        run: python tools/build_demo_seed.py --allow-working
 
       - uses: actions/setup-java@v4
         with:
@@ -40,7 +40,7 @@ jobs:
       - name: Upload APK and seed manifest
         uses: actions/upload-artifact@v4
         with:
-          name: libera-chatsim-debug
+          name: libera-chatsim-dev-debug
           path: |
             apps/libera-chatsim/app/build/outputs/apk/debug/app-debug.apk
             apps/libera-chatsim/app/src/main/assets/seed_manifest.json
