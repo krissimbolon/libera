@@ -1,0 +1,2 @@
+run_id,condition,task_id,model_name,model_version_or_digest,quantization,ollama_version,prompt_version,prompt_sha256,temperature,seed,context_window,index_version,start_time,end_time,elapsed_seconds,retrieved_chunk_ids,input_artifact_ids,raw_output_path_private,review_status,notes
+RUN-00001,,,,,,,,,,,,,,,,,,,,,
