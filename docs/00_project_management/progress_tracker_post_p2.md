@@ -1,8 +1,10 @@
 # LIBERA Post-P2 Progress Tracker
 
 Baseline immutable: `p2-10k-work@07a33cc4c2a1fceecabe09f4bfcc01331796b46b`.
-Integration branch: `p3-p10-final-integration`.
+Canonical execution branch: `main`.
 Frozen corpus SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6`.
+> **LIVE TRACKER 25 Sep 2026:** use [LIVE_CHECKLIST_PRESENTASI_20260925.md](./LIVE_CHECKLIST_PRESENTASI_20260925.md) as the operational single source of truth until the 10.00 WIB PPT submission and 13.00 WIB presentation. The checklist separates repository readiness from actual local P3–P10 execution.
+
 
 | Phase | Repository implementation | Final execution status | Blocker / next action |
 |---|---|---|---|
