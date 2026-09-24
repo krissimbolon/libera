@@ -1,0 +1,2 @@
+finding_id,source_type,run_id,task_id,claim,artifact_ids,chunk_ids,evidence_locator,confidence_or_uncertainty,human_status,ground_truth_status,notes
+FND-00001,,,,,,,,,,,
