@@ -117,3 +117,12 @@ The remaining actions are execution on the team's local machine/emulator:
 4. optionally run final P9 with the evaluator-only private ground truth after P8 output lock.
 
 A separate physical-WhatsApp-device acquisition remains an optional/extended validation track and must not be conflated with ChatSim.
+
+
+## Branch consolidation checkpoint — 24 September 2026
+
+- Canonical branch: `main`.
+- All former project branch histories were consolidated into merge commit `7453c192aa156fdb43223fc660028c29d7427d71`.
+- Each former branch was verified with `ahead_by = 0` against `main` before cleanup.
+- Post-P2 Integration Audit is configured to run on `main`.
+- Final ChatSim build is configured to run on `main`.
