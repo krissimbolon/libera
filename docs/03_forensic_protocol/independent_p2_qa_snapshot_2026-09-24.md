@@ -96,3 +96,25 @@ P2 belum boleh ditandai final bila salah satu kondisi berikut masih terbuka:
 - human spot-check belum lulus.
 
 Final artifact hanya boleh diterbitkan setelah working corpus yang sama lulus structural, language, chronology, actor-state, provenance, dan manual review.
+
+## Update Work checkpoint 47dac82
+
+Remote `p2-10k-work` telah bergerak ke `47dac82d82fdbb87735d7aeef9722e1416d44548`.
+
+State yang diverifikasi dari QA/log remote:
+- corpus tetap 10.000;
+- provenance tetap 500/1.500/6.500/1.500;
+- anchor exact-match 500/500;
+- duplicate synthetic text 0;
+- repeated-four-message suffix windows 0;
+- revisi manual kumulatif 1.765 pesan pada 141 thread;
+- context-B comma/phrase/`ya` tersisa 190;
+- context-B `barusan` ending 74;
+- cadence generator masih 2.818/2.954 gap `seconds % 60 == 7`, termasuk 731 gap tepat 247 detik;
+- QA tetap `FAILED_LANGUAGE_CONTINUITY_QA`.
+
+Near-duplicate long-message audit independen di snapshot ini masih menemukan dua pasangan bridge yang sama seperti audit sebelumnya: `ID-BRG-1053` vs `ID-BRG-1002`, dan `ID-BRG-1065` vs `ID-BRG-1014` (Jaccard trigram 0,857). Keduanya masih perlu review manual sebelum final sign-off.
+
+### Catatan provenance yang belum ditutup
+
+Dokumen Work masih memuat klaim bahwa lima hash bagian manifest dapat direproduksi dengan mengubah LF menjadi CRLF. Audit byte-level independen belum mereproduksi klaim itu untuk bagian 02–05 dengan varian LF/CRLF, BOM/non-BOM, dan final-newline sederhana. Sampai original integration artifact tersedia atau serialization procedure historis dapat dibuktikan, klaim tersebut harus diperlakukan sebagai **belum terkonfirmasi**, bukan fakta final.
