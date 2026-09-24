@@ -37,6 +37,7 @@ jobs:
           python -m src.ai_rag.leakage_check --input runtime/working/P6/chunks.jsonl
           python -m src.ai_rag.retriever build --chunks runtime/working/P6/chunks.jsonl --namespace case_evidence --index runtime/working/P6/index.json --embedding-method hashing
           python -m src.ai_rag.run_experiment --dry-run --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --top-k 8
+          python tools/lock_p8_outputs.py --artifacts runtime/working/P4/artifacts.csv --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json
           python -m src.evaluation.evaluate_experiment --artifacts runtime/working/P4/artifacts.csv --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json
           python -m src.report.build_report
       - name: Verify expected outputs
@@ -45,5 +46,6 @@ jobs:
           test -s runtime/working/P4/artifacts.csv
           test -s runtime/working/P5/baseline_findings.json
           test -s runtime/working/P8/experiment_output.json
+          test -s runtime/working/P8/p8_lock_manifest.json
           test -s runtime/working/P9/evaluation.json
           test -s runtime/working/P10/run_report.md
