@@ -1,8 +1,7 @@
 param(
     [string]$OutputRoot = ".\demo_evidence",
     [switch]$DryRun,
-    [switch]$LaunchWorkbench,
-    [string]$GroundTruthPath = ""
+    [switch]$LaunchWorkbench
 )
 
 $ErrorActionPreference = "Stop"
@@ -27,11 +26,17 @@ if ($LASTEXITCODE -ne 0) { throw "ChatSim P4 extraction failed." }
 $artifactCsv = Join-Path $artifactDir "artifacts.csv"
 if (-not (Test-Path $artifactCsv)) { throw "Normalized artifacts.csv not found." }
 
+# Copy safe manifests into runtime so P10 reports the actual acquisition mode.
+$runtimeP3 = "runtime\private\ACQ-SIM-001"
+$runtimeP4 = "runtime\working\P4"
+New-Item -ItemType Directory -Force -Path $runtimeP3, $runtimeP4 | Out-Null
+Copy-Item (Join-Path $latest.FullName "acquisition_manifest.json") (Join-Path $runtimeP3 "acquisition_manifest.json") -Force
+Copy-Item (Join-Path $artifactDir "artifact_manifest.json") (Join-Path $runtimeP4 "artifact_manifest.json") -Force
+
 Write-Host ""
 Write-Host "Continuing P5-P10 from acquired ChatSim ART evidence..." -ForegroundColor Green
 $runnerArgs = @("-ExecutionPolicy","Bypass","-File","scripts/run_libera_local.ps1","-ArtifactsPath",$artifactCsv)
 if ($DryRun) { $runnerArgs += "-DryRun" }
-if ($GroundTruthPath) { $runnerArgs += @("-GroundTruthPath",$GroundTruthPath) }
 & powershell @runnerArgs
 if ($LASTEXITCODE -ne 0) { throw "P5-P10 pipeline failed." }
 
@@ -48,4 +53,6 @@ if ($LaunchWorkbench) {
 Write-Host ""
 Write-Host "ChatSim evidence root: $($latest.FullName)"
 Write-Host "Normalized ART evidence: $artifactCsv"
+Write-Host "P8 is now hash-locked. Do NOT rerun P8 after opening evaluator ground truth."
+Write-Host "For final P9, use scripts\run_p9_final.ps1 on the existing locked outputs."
 Write-Host "Remember: DEV-SIM-001 / ACQ-SIM-001 is a controlled simulation track."
