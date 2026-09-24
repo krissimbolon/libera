@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "adaptasi_indonesia"
 CORPUS = DATA / "corpus_whatsapp_working.csv"
 OUTPUT = DATA / "qa_actor_timeline_working.json"
+GLOBAL_SIGNOFF = ROOT / "docs" / "02_case_design" / "qa_global_actor_state_final.md"
 ACTORS = (
     "AKT-RAKA", "AKT-KIRANA", "AKT-TANIA", "AKT-MAYA", "AKT-RENA",
     "AKT-NARA", "AKT-JIHAN", "AKT-DINI", "AKT-REZA", "AKT-BAGAS",
@@ -86,9 +87,13 @@ def main() -> None:
                                 "anchor_id": fixed["message_id"],
                             })
 
+    human_signoff = (
+        GLOBAL_SIGNOFF.exists()
+        and "GLOBAL_ACTOR_STATE_PASS = true" in GLOBAL_SIGNOFF.read_text(encoding="utf-8")
+    )
     report = {
-        "scope": "candidate signals for manual full-chronology and actor-state review",
-        "chronology_state_passed": False,
+        "scope": "candidate signals plus documented human global actor-state sign-off",
+        "chronology_state_passed": human_signoff,
         "actor_message_counts": {
             actor: len(messages_by_actor[actor]) for actor in ACTORS
         },
@@ -102,7 +107,8 @@ def main() -> None:
         "caca_messages_after_block": post_block,
         "exact_same_actor_cross_conversation_timestamp": exact_cross_conversation_candidates,
         "timestamp_corrections_crossing_shared_actor_anchor": moved_across_actor_anchor,
-        "human_checks_pending": [
+        "human_signoff_document": str(GLOBAL_SIGNOFF.relative_to(ROOT)) if human_signoff else None,
+        "human_checks_pending": [] if human_signoff else [
             "all actors: mutually exclusive locations, sleep, travel and pickup",
             "knowledge and outcomes relative to anchors across conversations",
             "Raka multitasking and physical activities in nearby conversations",
@@ -112,7 +118,7 @@ def main() -> None:
     }
     OUTPUT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({
-        "chronology_state_passed": False,
+        "chronology_state_passed": human_signoff,
         "rapid_candidates": len(rapid_conversation_candidates),
         "by_actor": report["rapid_conversation_counts_by_actor"],
         "post_caca_block": len(post_block),
