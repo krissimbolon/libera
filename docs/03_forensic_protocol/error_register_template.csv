@@ -1,0 +1,2 @@
+error_id,stage,technique_or_objective,related_run_or_artifact,observed_failure,evidence_of_failure,cause_hypothesis,impact,mitigation,rerun_required,residual_risk,status,reviewer,notes
+ERR-00001,,,,,,,,,,,,,
