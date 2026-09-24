@@ -1,0 +1,5 @@
+condition,task_id,tp,fp,fn,precision,recall,f1,evidence_attribution_correct,evidence_attribution_total,evidence_attribution_accuracy,unsupported_claims,total_claims,unsupported_claim_rate,human_correctness,human_relevance,human_understandability,human_verifiability,runtime_seconds,notes
+BASE,T01,,,,,,,,,,,,,,,,,,
+A_LLM_ONLY,T01,,,,,,,,,,,,,,,,,,
+B_RAG,T01,,,,,,,,,,,,,,,,,,
+C_RAG_STRUCTURED,T01,,,,,,,,,,,,,,,,,,
