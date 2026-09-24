@@ -1,0 +1,2 @@
+run_id,rank,chunk_id,artifact_id,acquisition_id,source_message_or_range,source_locator,retrieval_score,embedding_model,embedding_version,index_version,chunking_config,notes
+RUN-00001,1,CHK-00001,ART-00001,ACQ-001,,,,,,,,
