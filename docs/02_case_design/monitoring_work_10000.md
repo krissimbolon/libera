@@ -64,3 +64,56 @@ Spot-check bridge menunjukkan percakapan sudah mengikuti pesan sebelum/sesudahny
 
 ### Penilaian
 **ON TRACK.** Generasi nyata sudah dimulai dan guardrail QA bekerja. Prioritas selanjutnya adalah memperluas bridge secara bertahap menuju 1.500 sambil mempertahankan replay terhadap anchor, lalu mulai context/distractor setelah state aktor stabil.
+
+
+## Pemeriksaan langsung 2026-09-23 21:17 WIB
+
+### Progres Work
+- Head `p2-10k-work`: `da66ca09a693e333954edac75b88301b901a58a2`.
+- Checkpoint 2.000: **LULUS QA CHECKPOINT**.
+- Checkpoint 4.000: **LULUS QA CHECKPOINT**.
+- Komposisi 4.000: 500 anchor, 900 bridge, 2.100 context, 500 distractor.
+- 353 conversation.
+- QA struktural: 4.000/4.000 message_id unik, exact duplicate row 0, duplicate synthetic text 0, timestamp collision 0, near-duplicate panjang 0, source identity leakage 0, anchor exact-match 500/500.
+- Checkpoint 6.000 tercatat **DALAM PROSES**, tetapi Work sedang berhenti karena limit sesi pengguna.
+
+### Temuan gaya
+Audit gaya pada commit `da66ca0` benar-benar menemukan ritme yang terlalu seragam:
+- anchor ≤3 kata: 163/500 (32,6%);
+- bridge ≤3 kata: 20/900 (2,2%);
+- context ≤3 kata setelah koreksi: 89/2.100 (4,2%);
+- distractor ≤3 kata setelah koreksi: 35/500 (7,0%).
+- 107 conversation context masih tepat 10 pesan;
+- 44 conversation distractor masih tepat 10 pesan.
+
+Koreksi manual 47 baris sudah dilakukan tanpa mengubah jumlah pesan atau anchor. Ini memperbaiki arah, tetapi gaya **belum final-lulus**. Batch 4.000–10.000 harus sengaja meningkatkan fragmen pendek, double text, unanswered message, jeda, dan variasi panjang thread.
+
+### Temuan Git penting
+PR #11 (`p2-10k-work` → `main`) ternyata **telah di-merge** pada commit `f9423970...` ketika head Work masih `5480fdc...`. PR ini membawa 38 file termasuk `corpus_whatsapp_working.csv`, draft bridge/context/distractor, QA working, log, ledger, dan script. Ini melanggar aturan bahwa Work tidak boleh di-merge ke `main` sebelum final QA.
+
+Status dataset kanonik tetap harus mengacu ke `p2-10k-work` untuk generasi dan `proyek-uas-df` untuk integrasi final. Jangan gunakan snapshot di `main` sebagai source of truth dan jangan merge Work lagi ke `main`.
+
+### Penilaian
+**ON TRACK secara substansi pada 4.000/10.000, dengan satu isu proses Git yang nyata dan satu isu kualitas gaya yang masih terbuka.** QA struktural sangat baik; continuity telah direview secara bertahap. Fokus saat Work dapat berjalan lagi adalah memperbaiki distribusi gaya sambil menuju checkpoint 6.000, bukan sekadar menambah volume.
+
+
+## Pemeriksaan langsung 2026-09-23 21:58 WIB
+
+### State terbaru GPT pengganti
+- Head `p2-10k-work`: `c03ab96d337b3f97af1313afd1f657400e87bfd3`.
+- Commit terbaru: `fix: repair +07:00 bridge timestamps before 6k QA`.
+- Corpus: **4.650/10.000**.
+- Komposisi: 500 anchor, 1.000 bridge, 2.530 context, 620 distractor.
+- Conversation: 393.
+- QA struktural: message_id unik 4.650/4.650, exact duplicate row 0, duplicate synthetic text 0, timestamp collision 0, near-duplicate panjang 0, source leakage 0, anchor exact-match 500/500.
+
+### Perkembangan gaya
+Dibanding checkpoint 4.000:
+- bridge <=3 kata naik dari 20/900 menjadi 112/1.000;
+- context <=3 kata naik dari 89/2.100 menjadi 425/2.530;
+- distractor <=3 kata naik dari 35/500 menjadi 124/620;
+- context thread tepat 10 pesan turun dari 107 menjadi 77.
+Perbaikan arah gaya terlihat nyata. Distractor thread tepat 10 pesan masih 44, jadi variasi panjang distractor tetap perlu diperbaiki.
+
+### Penilaian
+**ON TRACK.** GPT pengganti telah melanjutkan dari state yang benar, menambah 650 pesan, mempertahankan QA struktural, memperbaiki distribusi gaya secara signifikan, dan sedang memperbaiki timestamp +07:00 sebelum QA checkpoint 6.000.
