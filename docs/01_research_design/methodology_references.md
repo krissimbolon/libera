@@ -23,7 +23,7 @@ Dokumen ini memetakan keputusan metode LIBERA ke rujukan teknis/ilmiah yang digu
 6. *ForensicLLM: A local large language model for digital forensics*. Forensic Science International: Digital Investigation, 52(Supplement), 2025, 301872. DOI: 10.1016/j.fsidi.2025.301872.
    - Mendukung pendekatan local LLM, source attribution, dan perhatian terhadap hallucination; digunakan sebagai rujukan metodologis, bukan alasan untuk memaksakan model yang sama pada corpus Indonesia.
 7. Yang, A. et al. (2024). *Qwen2 Technical Report*. arXiv:2407.10671; Qwen Team (2024), *Qwen2.5 Technical Report*, arXiv:2412.15115.
-   - Qwen2 mendokumentasikan dukungan multilingual termasuk Indonesian/Malay; Qwen2.5 meningkatkan instruction following, structured-data understanding, dan structured output. Ini menjadi dasar pemilihan `qwen2.5:7b` untuk corpus chat Indonesia.
+   - Qwen2 mendokumentasikan dukungan multilingual termasuk Indonesian/Malay; Qwen2.5 meningkatkan instruction following, structured-data understanding, dan structured output. Ini mendukung pemilihan keluarga Qwen2.5 untuk corpus chat Indonesia; profil final menggunakan `qwen2.5:1.5b` agar eksperimen lokal tetap reproducible dan dapat dijalankan pada workstation praktikum yang terbatas.
 8. *Towards a standardized methodology and dataset for evaluating LLM-based digital forensic timeline analysis*. Forensic Science International: Digital Investigation, 54(Supplement), 2025, 301982. DOI: 10.1016/j.fsidi.2025.301982.
    - Mendukung locked experimental protocol, ground truth, dan evaluasi kuantitatif.
 9. *Digital forensics in law enforcement: A case study of LLM-driven evidence analysis*. Forensic Science International: Digital Investigation, 54, 2025, 301939.
@@ -37,7 +37,7 @@ Dokumen ini memetakan keputusan metode LIBERA ke rujukan teknis/ilmiah yang digu
 - P4: normalized ART schema; no evaluator-only ground truth enters examiner evidence.
 - P5: deterministic keyword/timeline/entity/relationship baseline locked before P9.
 - P6: examiner-visible ART only -> evidence-aware chunks -> BGE-M3 -> cosine retrieval.
-- P7: local `qwen2.5:7b`, seed 42, temperature 0.1, model digest logged when available.
+- P7: local `qwen2.5:1.5b`, seed 42, temperature 0.1, model digest logged when available.
 - P8: A/B/C use the same task list; B and C share the exact same retrieval trace.
 - P9: P8 outputs locked before private ground truth is opened.
 - P10: report distinguishes observation, interpretation, limitation, and dry-run vs real acquisition.
