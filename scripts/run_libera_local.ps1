@@ -59,10 +59,13 @@ if ($DryRun) {
     Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model llama3.1:8b --prompt-version v2-forensic-grounded --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8
 }
 
+Write-Host "[P8] Locking experiment outputs before any ground truth is opened..."
+Run-Python tools/lock_p8_outputs.py --artifacts $ArtifactsPath --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json
+
 Write-Host "[P9] Running integrity/groundedness evaluation..."
 if ($GroundTruthPath) {
-    Write-Host "[P9] Ground truth supplied: outputs are now treated as LOCKED."
-    Run-Python -m src.evaluation.evaluate_experiment --artifacts $ArtifactsPath --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json --ground-truth $GroundTruthPath --outputs-locked
+    Write-Host "[P9] Ground truth supplied: verifying cryptographic P8 lock before evaluation."
+    Run-Python -m src.evaluation.evaluate_experiment --artifacts $ArtifactsPath --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json --ground-truth $GroundTruthPath --outputs-locked --lock-manifest runtime/working/P8/p8_lock_manifest.json
 } else {
     Run-Python -m src.evaluation.evaluate_experiment --artifacts $ArtifactsPath --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json
 }
