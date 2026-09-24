@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from src.forensics import acquisition_simulator, extract_artifacts
-from src.baseline import traditional_baseline
+from src.baseline import traditional_baseline, examiner_packet, p5_lock
 from src.ai_rag import chunker, retriever, run_experiment, ollama_runner
 from src.evaluation import evaluate_experiment
 
@@ -53,6 +53,37 @@ def test_end_to_end_post_p2_dry_run(tmp_path):
     )
     assert p5["status"] == "P5_BASELINE_PASS"
     assert p5["task_count"] == 10
+
+    packet_csv = p5_dir / "p5_examiner_packet.csv"
+    packet_manifest = p5_dir / "p5_examiner_packet_manifest.json"
+    packet = examiner_packet.build_packet(
+        p5_dir / "baseline_findings.json",
+        packet_csv,
+        packet_manifest,
+        max_items=12,
+    )
+    assert packet["selected_unique_evidence"] <= 12
+    assert len(packet["covered_task_ids"]) == 10
+
+    with packet_csv.open("r", encoding="utf-8", newline="") as f:
+        packet_rows = list(csv.DictReader(f))
+    for row in packet_rows:
+        row["examiner_decision"] = "SUPPORTED"
+    with packet_csv.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=examiner_packet.FIELDS)
+        writer.writeheader()
+        writer.writerows(packet_rows)
+
+    p5_lock_path = p5_dir / "p5_lock_manifest.json"
+    locked = p5_lock.lock(
+        artifacts,
+        ROOT / "configs/investigation_tasks.json",
+        p5_dir,
+        packet_csv,
+        p5_lock_path,
+    )
+    assert locked["status"] == "P5_BASELINE_AND_EXAMINER_REVIEW_LOCKED_BEFORE_AI"
+    p5_lock.verify(p5_lock_path)
 
     chunks_path = tmp_path / "chunks.jsonl"
     chunks = chunker.run(
