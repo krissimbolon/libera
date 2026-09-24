@@ -167,3 +167,8 @@ Pada setiap checkpoint catat:
 - Checkpoint koreksi 400 pesan: putaran keempat menambah 122 pesan pada sepuluh thread; total 400 pesan/30 thread diperbaiki. Pola akhir berulang kini 46 jendela pada 36 conversation; cadence 247 detik 731 kejadian. Hitungan corpus tetap 10.000, tetapi QA final belum lulus.
 - Koreksi kelima: 127 pesan di sepuluh thread, total revisi 527 pesan. Pola empat akhiran identik masih 26 jendela/26 thread; cadence dan review semantik penuh belum selesai. QA final tetap gagal.
 - Koreksi keenam dan ketujuh: 288 pesan tambahan, total revisi manual 815 pesan di 66 thread. Detektor empat akhiran identik kini 0, namun context B masih 484 pola koma/frasa/`ya` dan 731 jeda 247 detik. Corpus tetap 10.000/10.000 secara jumlah; status QA final `FAILED_LANGUAGE_CONTINUITY_QA`, belum ada artefak final.
+
+## Lanjutan setelah pemulihan state 815
+
+- State lokal 815 ditemukan di commit `8a337c2`; enam commit sebelumnya memiliki tree sama persis dengan remote `1f453f9` meskipun hash commit berbeda. Perubahan terakhir dipasang sebagai fast-forward di atas remote dan diverifikasi pada commit GitHub `59d8297`. Tidak ada regenerasi corpus atau perubahan anchor saat recovery.
+- Koreksi kedelapan dan kesembilan menulis ulang 142 pesan lagi pada sepuluh thread netral sebagai dialog berurutan (`koreksi_dialog_manual_008.tsv` dan `_009.tsv`). Total kumulatif **957 pesan di 76 thread**. Context B berpola koma/frasa/`ya` turun dari 484 ke **428**; 731 jeda 247 detik belum disentuh. Detektor empat akhiran tetap 0, 10.000 ID unik, 500 anchor exact. QA final masih **FAILED_LANGUAGE_CONTINUITY_QA**; isi dan ritme thread lain belum dinyatakan lulus.
