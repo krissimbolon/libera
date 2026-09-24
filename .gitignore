@@ -48,3 +48,9 @@ vector_store/
 # Temporary outputs
 tmp/
 temp/
+
+# Post-P2 local runtime outputs
+runtime/
+configs/run_log.jsonl
+configs/*_index.json
+!configs/toy_index.json
