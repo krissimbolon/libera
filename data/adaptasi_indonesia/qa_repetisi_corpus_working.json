@@ -17,9 +17,9 @@
   "context_gaps_exactly_247_seconds": 731,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "0613b3d324f2e26e62113a7568af0025dad792fec456262ee1bcac9124a86235",
-  "repeated_four_message_suffix_windows": 152,
-  "affected_conversations": 61,
+  "working_sha256": "7f5e4ae401c6bb9d3ca2f7bc3adfc5d9bc481733aae5f62340345781f06f706a",
+  "repeated_four_message_suffix_windows": 93,
+  "affected_conversations": 51,
   "examples": [
     {
       "conversation_id": "KONV-DST-NARA-B12-009",
@@ -118,28 +118,28 @@
       "repeated_suffix": "putih ya"
     },
     {
-      "conversation_id": "KONV-CTX-KIRANA-B17-036",
-      "first_message_id": "ID-CTX-B-1542",
-      "last_message_id": "ID-CTX-B-1545",
-      "repeated_suffix": "plester ya"
+      "conversation_id": "KONV-CTX-DINI-B17-039",
+      "first_message_id": "ID-CTX-B-1571",
+      "last_message_id": "ID-CTX-B-1574",
+      "repeated_suffix": "panas ya"
     },
     {
-      "conversation_id": "KONV-CTX-KIRANA-B17-036",
-      "first_message_id": "ID-CTX-B-1543",
-      "last_message_id": "ID-CTX-B-1546",
-      "repeated_suffix": "plester ya"
+      "conversation_id": "KONV-CTX-DINI-B17-039",
+      "first_message_id": "ID-CTX-B-1576",
+      "last_message_id": "ID-CTX-B-1579",
+      "repeated_suffix": "panas ya"
     },
     {
-      "conversation_id": "KONV-CTX-KIRANA-B17-036",
-      "first_message_id": "ID-CTX-B-1544",
-      "last_message_id": "ID-CTX-B-1547",
-      "repeated_suffix": "plester ya"
+      "conversation_id": "KONV-CTX-KIRANA-B17-045",
+      "first_message_id": "ID-CTX-B-1640",
+      "last_message_id": "ID-CTX-B-1643",
+      "repeated_suffix": "earphone ya"
     },
     {
-      "conversation_id": "KONV-CTX-KIRANA-B17-036",
-      "first_message_id": "ID-CTX-B-1545",
-      "last_message_id": "ID-CTX-B-1548",
-      "repeated_suffix": "plester ya"
+      "conversation_id": "KONV-CTX-KIRANA-B17-045",
+      "first_message_id": "ID-CTX-B-1645",
+      "last_message_id": "ID-CTX-B-1648",
+      "repeated_suffix": "earphone ya"
     }
   ],
   "namespace_style_signals": {
@@ -150,7 +150,7 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 843,
+      "comma_phrase_ya_ending": 758,
       "barusan_ending": 95
     },
     "bridge": {
