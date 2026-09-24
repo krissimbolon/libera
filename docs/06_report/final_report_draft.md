@@ -48,7 +48,7 @@ The locked baseline uses deterministic keyword search, chronological timeline re
 - case index input: P4 ART evidence only.
 
 ### P7 local model
-- model: `llama3.1:8b`;
+- model: `qwen2.5:7b`;
 - temperature: 0.1;
 - seed: 42;
 - context setting: 8192;
