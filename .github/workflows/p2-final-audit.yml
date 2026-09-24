@@ -1,0 +1,75 @@
+name: P2 Final Audit
+
+on:
+  push:
+    branches:
+      - p2-10k-work
+    paths:
+      - 'data/adaptasi_indonesia/**'
+      - 'src/audit_*.py'
+      - '.github/workflows/p2-final-audit.yml'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Repetition audit
+        run: python src/audit_repetisi_corpus.py
+
+      - name: Comprehensive final gate
+        run: python src/audit_final_corpus.py
+
+      - name: Chat-level coherence
+        run: python src/audit_chat_level_coherence.py
+
+      - name: Actor timeline candidates
+        run: python src/audit_actor_timeline.py
+
+      - name: Anchor provenance
+        run: python src/audit_anchor_provenance.py
+
+      - name: Show audit summaries
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in [
+              "qa_repetisi_corpus_working.json",
+              "qa_final_gate_working.json",
+              "qa_chat_level_coherence.json",
+          ]:
+              p = Path("data/adaptasi_indonesia") / name
+              if p.exists():
+                  d = json.loads(p.read_text(encoding="utf-8"))
+                  print("\n==", name, "==")
+                  for k in [
+                      "automated_gate_passed",
+                      "total",
+                      "duplicate_synthetic_text",
+                      "repeated_four_message_suffix_windows",
+                      "near_duplicate_long_candidates_count",
+                      "context_gaps_exactly_247_seconds",
+                      "same_chat_segment_overlap_count",
+                  ]:
+                      if k in d:
+                          print(k, d[k])
+          PY
+
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: p2-final-audit-reports
+          path: |
+            data/adaptasi_indonesia/qa_repetisi_corpus_working.json
+            data/adaptasi_indonesia/qa_final_gate_working.json
+            data/adaptasi_indonesia/qa_chat_level_coherence.json
+            data/adaptasi_indonesia/qa_actor_timeline.json
+            data/adaptasi_indonesia/qa_anchor_provenance.json
+          if-no-files-found: warn
