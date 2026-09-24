@@ -1,0 +1,130 @@
+{
+  "status": "FROZEN_FOR_FORENSIC_SIMULATION",
+  "final_qa_passed": true,
+  "canonical_corpus": "data/adaptasi_indonesia/corpus_whatsapp_10000.csv",
+  "canonical_corpus_sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6",
+  "canonical_git_blob_sha": "de6d2d20ac9b35938edaef9df0f88a7d82796366",
+  "canonical_size_bytes": 1410686,
+  "audited_source_commit": "f248f41f12e53b9c2785e2dc0d7a514de521f766",
+  "canonical_creation_commit": "716216f71a3cf6d7306ab6a6f6c64291827dc201",
+  "freeze_timestamp_utc": "2026-09-24T14:53:01Z",
+  "freeze_timestamp_local": "2026-09-24T21:53:01+07:00",
+  "corpus": {
+    "total_messages": 10000,
+    "provenance_counts": {
+      "ADAPTED_FROM_GALLOWAY": 500,
+      "SYNTHETIC_BRIDGE": 1500,
+      "SYNTHETIC_CONTEXT": 6500,
+      "SYNTHETIC_DISTRACTOR": 1500
+    },
+    "first_timestamp": "2026-07-01T06:11:11+07:00",
+    "last_timestamp": "2026-07-21T23:41:51+07:00",
+    "unique_participant_pairs": 26,
+    "messages_involving_raka": 9997,
+    "messages_not_involving_raka": 3
+  },
+  "automated_gate": {
+    "github_actions_run_id": 36015548551,
+    "github_actions_conclusion": "success",
+    "audit_final_corpus_automated_gate_passed": true,
+    "total_is_10000": true,
+    "provenance_matches_target": true,
+    "message_ids_unique": true,
+    "exact_duplicate_rows_zero": true,
+    "duplicate_synthetic_text_zero": true,
+    "repeated_four_message_suffix_windows_zero": true,
+    "long_near_duplicate_candidates_zero": true,
+    "synthetic_source_original_line_blank": true,
+    "anchor_exact_500": true,
+    "timestamps_parse": true,
+    "timezone_plus_07": true,
+    "timestamps_in_scenario_window": true,
+    "same_conversation_timestamp_collisions_zero": true,
+    "reply_targets_exist": true,
+    "reply_not_future": true,
+    "reply_same_conversation": true,
+    "no_new_mixed_participant_conversations": true,
+    "source_identity_leakage_zero": true,
+    "synthetic_only_raka_pairs_zero": true,
+    "bridge_without_anchor_segment_zero": true
+  },
+  "cadence": {
+    "context_b_adjacent_gaps": 2954,
+    "baseline_remainder_7": 2757,
+    "final_remainder_7": 383,
+    "baseline_remainder_7_pct": 93.33,
+    "final_remainder_7_pct": 12.97,
+    "baseline_exact_247": 718,
+    "final_exact_247": 105,
+    "note": "The former 60n+7 generator fingerprint no longer dominates the Context-B remainder distribution. Timestamp changes were restricted to synthetic rows and preserved ordering, anchors, reply integrity, and scenario bounds."
+  },
+  "human_semantic_gate": {
+    "language_review": {
+      "candidates_disposed": 228,
+      "repaired": 222,
+      "retained_natural": 6,
+      "unresolved": 0,
+      "context_b_comma_phrase_ya_detector_final": 6,
+      "context_b_barusan_ending_final": 0,
+      "note": "All six remaining detector hits were manually retained as natural in merged-chat context."
+    },
+    "merged_chat_overlap_review": {
+      "overlap_pairs_reviewed": 49,
+      "pass": 17,
+      "repaired": 32,
+      "unresolved": 0
+    },
+    "actor_state_review": {
+      "dense_concurrency_windows_reviewed": 16,
+      "dense_concurrency_windows_pass_chat_multitasking": 16,
+      "strong_physical_location_assertions_reviewed": 59,
+      "actors_with_strong_physical_location_assertions": 10,
+      "cross_conversation_physical_conflict_windows_within_30_minutes": 0,
+      "raka_strong_physical_location_assertions": 37,
+      "raka_cross_conversation_physical_conflict_windows_within_30_minutes": 0,
+      "unresolved": 0,
+      "signoff_document": "docs/02_case_design/qa_global_actor_state_final.md"
+    },
+    "anchor_neighborhood_review": {
+      "anchors_reviewed": 500,
+      "unresolved": 0,
+      "remaining_481_reviewed_via_event_segments": 98,
+      "event_segments_repaired_then_passed": 3,
+      "synthetic_rows_repaired_in_final_anchor_review": 7,
+      "source_reconstruction_anomaly_event_segments": 7,
+      "disposition_file": "data/adaptasi_indonesia/review_packets/anchor_neighborhood_dispositions_001.jsonl",
+      "event_review_file": "data/adaptasi_indonesia/review_packets/anchor_event_review_002.jsonl"
+    }
+  },
+  "source_reconstruction_anomalies": {
+    "non_raka_anchor_message_ids": [
+      "ID-GAL-0258",
+      "ID-GAL-0263",
+      "ID-GAL-0268"
+    ],
+    "multi_identity_anchor_segments": [
+      "KONV-GAL-P22-C",
+      "KONV-GAL-R013",
+      "KONV-GAL-R080",
+      "KONV-GAL-R088"
+    ],
+    "disposition": "PRESERVED_AND_DOCUMENTED",
+    "note": "These properties originate in the immutable source reconstruction and were not rewritten to make the simulator cleaner."
+  },
+  "anchor_provenance": {
+    "anchor_exact_match_count": 500,
+    "current_anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
+    "historical_combined_manifest_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
+    "rows_equal_in_order": true,
+    "historical_byte_provenance_resolved": false,
+    "note": "Logical row identity is verified for all 500 anchors. The historical combined byte serialization has not been reproduced; anchors were not modified to force the legacy byte hash."
+  },
+  "interpretation_notes": [
+    "conversation_id is a scenario/event segment identifier, not a physical WhatsApp chat ID.",
+    "The downstream forensic-demo layer should derive one stable chat_id per participant pair while retaining conversation_id as segment_id.",
+    "Three immutable non-Raka anchor rows and four multi-identity anchor segments must remain documented as source-reconstruction anomalies.",
+    "No further corpus editing is permitted after freeze without an explicit versioned reopening and new QA cycle."
+  ],
+  "final_decision": "PASS",
+  "next_phase": "DIGITAL_FORENSICS"
+}
