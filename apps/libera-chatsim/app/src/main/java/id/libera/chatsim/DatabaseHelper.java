@@ -67,7 +67,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        throw new IllegalStateException("Evidence DB schema upgrade is intentionally unsupported. Re-seed DEV-001.");
+        throw new IllegalStateException("Evidence DB schema upgrade is intentionally unsupported. Re-seed DEV-SIM-001.");
     }
 
     public boolean isSeeded() {
@@ -139,7 +139,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 db.insertOrThrow("chats", null, v);
             }
 
-            putMetadata(db, "device_id", "DEV-001");
+            putMetadata(db, "device_id", "DEV-SIM-001");
             putMetadata(db, "simulated_owner", "Raka Pradana");
             putMetadata(db, "seed_format", "LIBERA_CHAT_SIM_V1");
             putMetadata(db, "message_count", String.valueOf(messageCount));
