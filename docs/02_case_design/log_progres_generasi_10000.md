@@ -154,3 +154,10 @@ Pada setiap checkpoint catat:
 - QA: message_id unik 8.000/8.000; exact duplicate row 0; duplicate synthetic text 0; collision timestamp 0; near-duplicate panjang 0; source leakage 0; timestamp di luar skenario 0; anchor exact-match 500/500; mixed conversation baru 0.
 - Profil gaya <=3 kata: bridge 354/1.400, context 1.441/4.900, distractor 427/1.200. Thread tepat 10 pesan: context 0, distractor 1.
 - Namespace context: CTX-A tetap terkunci di 3.250; CTX-B mencapai 1.650. Tidak ada modifikasi anchor.
+
+## Audit snapshot 10.000 baris — QA final gagal
+
+- Branch mencapai hitungan 10.000 dan komposisi target, tetapi audit pada snapshot `0ab74a3` menemukan 188 jendela empat pesan beruntun yang mengulang dua kata akhir identik di 66 conversation; ada 890 context B berakhir pola koma/frasa/`ya`.
+- QA kerja 8.000 yang sebelumnya tersimpan sudah tidak sesuai jumlah saat ini. Auditor baru menghasilkan status `FAILED_LANGUAGE_CONTINUITY_QA` dan laporan `audit_kualitas_10000_belum_lulus.md`.
+- **Progres konten terverifikasi tetap 4.000/10.000**, sedangkan 10.000 adalah jumlah baris yang memerlukan revisi isi. Final artifact dan QA final belum boleh diterbitkan sampai dialog repetitif diperbaiki dan audit actor-state menyeluruh lulus. Anchor 500/500 tetap identik.
+

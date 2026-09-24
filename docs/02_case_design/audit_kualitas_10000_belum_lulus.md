@@ -1,0 +1,9 @@
+# Audit kualitas pada snapshot 10.000 baris — belum lulus
+
+Snapshot branch `p2-10k-work` pada commit `0ab74a3` sudah memiliki 10.000 baris dengan komposisi 500/1.500/6.500/1.500. ID seluruh baris unik, teks sintetis tidak identik persis, dan 500 anchor cocok persis dengan file jangkar branch. Ini belum memenuhi syarat selesai karena isi percakapan masih bermasalah.
+
+Audit reproduktif `python src/audit_repetisi_corpus.py` menemukan **188 jendela empat pesan beruntun** dengan dua kata akhir yang sama di **66 conversation**. Snapshot 4.000 baris pada `da66ca0` memiliki nol jendela dengan pola ini. Pada namespace context B, **890 dari 3.250 pesan** berakhir dengan pola koma + frasa pendek + `ya`, berbanding **22 dari 3.250** pada context A. Salah satu thread akhir, `KONV-CTX-MAYA-B20-*`, mengulang “biskuit ya” dalam balasan berurutan. Ini bukan variasi natural WhatsApp; ada juga bentuk seperti “dekat banget ternyata, biskuit ya” yang tidak mengikuti pertanyaan sebelumnya.
+
+QA kerja sebelumnya masih mencatat checkpoint 8.000 meskipun corpus bergerak ke 10.000. Berkas itu diperbarui oleh auditor ini dengan status `FAILED_LANGUAGE_CONTINUITY_QA`, hitungan terbaru, contoh pengulangan, serta pemeriksaan yang tersisa. **Jangan menyalin snapshot ke `corpus_whatsapp_10000.csv` atau menyatakan QA final selesai.** Perlu revisi dialog berulang sebagai satuan thread, bukan pemilihan kata per baris; sesudahnya audit kronologi, state aktor, gaya, duplikasi panjang, serta selisih SHA manifest anchor lama dengan file anchor branch.
+
+Batch manual 4.400 yang ditulis secara terpisah saat branch bergerak disimpan pada ref lokal `p2-10k-manual-4400` (commit `7f30525`) agar tidak menimpa commit lain. Ref utama mempertahankan seluruh riwayat sampai 10.000 sebagai bahan koreksi. Koreksi konten selanjutnya harus diintegrasikan setelah membaca state terbaru dan tidak menggunakan jumlah baris sebagai satu-satunya kriteria kelulusan.
