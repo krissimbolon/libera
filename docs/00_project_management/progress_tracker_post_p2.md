@@ -12,7 +12,7 @@ Frozen corpus SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c
 | P4 | Normalized SQLite extractor + ART manifest | READY | run on real ACQ-001 working copy for final evidence |
 | P5 | Deterministic baseline implementation | READY | lock outputs after P4 final |
 | P6 | Chunking + leakage guard + BGE-M3/Ollama retrieval | READY | local BGE-M3 index run |
-| P7 | Local LLM runner + model/version/digest logging | READY | local Ollama `llama3.1:8b` run |
+| P7 | Local LLM runner + model/version/digest logging | READY | local Ollama `qwen2.5:7b` run |
 | P8 | Locked T01–T10 A/B/C harness | READY | execute after P6/P7 local setup |
 | P9 | Citation precheck + blind TP/FP/TN/FN evaluator | READY | open private GT only after P8 output lock |
 | P10 | Runtime report builder + methodology refs | READY | populate with actual P9 results |
@@ -33,7 +33,7 @@ Frozen corpus SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c
 ### Gate B — real local AI run
 - Ollama available.
 - `bge-m3` pulled.
-- `llama3.1:8b` pulled.
+- `qwen2.5:7b` pulled.
 - model/version/digest logged.
 - P8 real outputs generated and then locked.
 
@@ -77,7 +77,7 @@ It does **not** claim the following machine-bound work has already occurred:
 1. real WhatsApp/device staging on DEV-001;
 2. real mobile acquisition ACQ-001 with Oxygen/selected tool;
 3. real BGE-M3 embeddings through local Ollama;
-4. real LLaMA-3.1-8B inference;
+4. real Qwen2.5-7B inference;
 5. final P9 ground-truth metrics.
 
 Those five items are local execution gates and must remain distinguishable from the controlled dry-run.
@@ -113,7 +113,7 @@ The remaining actions are execution on the team's local machine/emulator:
 
 1. install the already-built APK;
 2. run the ChatSim acquisition command;
-3. run real Ollama BGE-M3/LLaMA-3.1-8B instead of dry-run;
+3. run real Ollama BGE-M3/Qwen2.5-7B instead of dry-run;
 4. optionally run final P9 with the evaluator-only private ground truth after P8 output lock.
 
 A separate physical-WhatsApp-device acquisition remains an optional/extended validation track and must not be conflated with ChatSim.
