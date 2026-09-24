@@ -17,20 +17,20 @@
   "context_gaps_exactly_247_seconds": 718,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "6a0c8f791e6d114a3c162c2d2a3936f817b699d21e21227d45c651fbbde12528",
+  "working_sha256": "16e54bebb7036436d95be177fa7548ef6bdc720c80ecf0ca33d7096c5efe6e5d",
   "repeated_four_message_suffix_windows": 0,
   "affected_conversations": 0,
   "examples": [],
   "namespace_style_signals": {
     "context_A": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 21,
+      "comma_phrase_ya_ending": 20,
       "barusan_ending": 16
     },
     "context_B": {
       "messages": 3250,
       "comma_phrase_ya_ending": 182,
-      "barusan_ending": 48
+      "barusan_ending": 47
     },
     "bridge": {
       "messages": 1500,

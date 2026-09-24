@@ -1,0 +1,582 @@
+{
+  "interpretation": "Model the corpus as one Raka-centric WhatsApp acquisition containing multiple dyadic chats. Existing conversation_id values are scenario/event segmentation IDs, not physical WhatsApp chat IDs.",
+  "total_messages": 10000,
+  "time_span": {
+    "first": "2026-07-01T06:11:11+07:00",
+    "last": "2026-07-21T23:57:45+07:00",
+    "days_with_messages": 21
+  },
+  "segment_count": 846,
+  "dyadic_segment_count": 842,
+  "multi_participant_segment_count": 4,
+  "multi_participant_segments": [
+    {
+      "conversation_id": "KONV-GAL-P22-C",
+      "participants": [
+        "AKT-KONTAK-1196",
+        "AKT-RAKA",
+        "AKT-TANIA"
+      ],
+      "messages": 12,
+      "provenance": [
+        "ADAPTED_FROM_GALLOWAY"
+      ]
+    },
+    {
+      "conversation_id": "KONV-GAL-R013",
+      "participants": [
+        "AKT-KONTAK-1557",
+        "AKT-KONTAK-1635",
+        "AKT-RAKA"
+      ],
+      "messages": 6,
+      "provenance": [
+        "ADAPTED_FROM_GALLOWAY"
+      ]
+    },
+    {
+      "conversation_id": "KONV-GAL-R080",
+      "participants": [
+        "AKT-MAYA",
+        "AKT-NARA",
+        "AKT-RAKA"
+      ],
+      "messages": 13,
+      "provenance": [
+        "ADAPTED_FROM_GALLOWAY"
+      ]
+    },
+    {
+      "conversation_id": "KONV-GAL-R088",
+      "participants": [
+        "AKT-JIHAN",
+        "AKT-NARA",
+        "AKT-RAKA"
+      ],
+      "messages": 23,
+      "provenance": [
+        "ADAPTED_FROM_GALLOWAY"
+      ]
+    }
+  ],
+  "unique_participant_pairs": 26,
+  "raka_participant_pairs": 25,
+  "messages_involving_raka": 9997,
+  "messages_not_involving_raka": 3,
+  "non_raka_messages": [
+    {
+      "message_id": "ID-GAL-0258",
+      "conversation_id": "KONV-GAL-R053",
+      "sender_id": "AKT-RENA",
+      "recipient_id": "AKT-TIDAK-DIKETAHUI",
+      "source_provenance": "ADAPTED_FROM_GALLOWAY"
+    },
+    {
+      "message_id": "ID-GAL-0263",
+      "conversation_id": "KONV-GAL-R055",
+      "sender_id": "AKT-RENA",
+      "recipient_id": "AKT-TIDAK-DIKETAHUI",
+      "source_provenance": "ADAPTED_FROM_GALLOWAY"
+    },
+    {
+      "message_id": "ID-GAL-0268",
+      "conversation_id": "KONV-GAL-R057",
+      "sender_id": "AKT-RENA",
+      "recipient_id": "AKT-TIDAK-DIKETAHUI",
+      "source_provenance": "ADAPTED_FROM_GALLOWAY"
+    }
+  ],
+  "synthetic_only_raka_pairs": [],
+  "bridge_messages_without_anchor_segment": [],
+  "bridge_nearest_anchor_seconds": {
+    "median": 372.0,
+    "p75": 1048.0,
+    "p90": 1603.0,
+    "p95": 2202.0,
+    "max": 3393.0,
+    "within_5_minutes": 683,
+    "within_30_minutes": 1388,
+    "within_1_hour": 1500,
+    "total_bridge_messages": 1500
+  },
+  "same_chat_segment_overlap_count": 49,
+  "same_chat_segment_overlaps": [
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-CTX-DINI-B19-048",
+      "segment_b": "KONV-CTX-DINI-B17-039",
+      "start_a": "2026-07-07T08:30:19+07:00",
+      "end_a": "2026-07-07T09:53:11+07:00",
+      "start_b": "2026-07-07T09:35:04+07:00",
+      "end_b": "2026-07-07T10:25:28+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-CTX-DINI-B17-039",
+      "segment_b": "KONV-CTX-DINI-0707-PENA",
+      "start_a": "2026-07-07T09:35:04+07:00",
+      "end_a": "2026-07-07T10:25:28+07:00",
+      "start_b": "2026-07-07T10:09:13+07:00",
+      "end_b": "2026-07-07T10:35:43+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-CTX-DINI-B17-003",
+      "segment_b": "KONV-CTX-DINI-B14-002",
+      "start_a": "2026-07-07T12:55:28+07:00",
+      "end_a": "2026-07-07T13:45:52+07:00",
+      "start_b": "2026-07-07T13:35:26+07:00",
+      "end_b": "2026-07-07T14:19:32+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-CTX-DINI-B18-046",
+      "segment_b": "KONV-DST-DINI-B13-002",
+      "start_a": "2026-07-10T22:30:16+07:00",
+      "end_a": "2026-07-10T22:46:51+07:00",
+      "start_b": "2026-07-10T22:45:06+07:00",
+      "end_b": "2026-07-10T23:25:56+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-CTX-DINI-0712-SIANG",
+      "segment_b": "KONV-CTX-DINI-0712-GELAS",
+      "start_a": "2026-07-12T15:02:18+07:00",
+      "end_a": "2026-07-12T16:05:44+07:00",
+      "start_b": "2026-07-12T15:06:07+07:00",
+      "end_b": "2026-07-12T16:06:19+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-DST-DINI-0714-IKAN",
+      "segment_b": "KONV-CTX-DINI-0714-BANTAL",
+      "start_a": "2026-07-14T21:06:03+07:00",
+      "end_a": "2026-07-14T21:43:45+07:00",
+      "start_b": "2026-07-14T21:25:04+07:00",
+      "end_b": "2026-07-14T22:21:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-CTX-DINI-0716-DAFTAR",
+      "segment_b": "KONV-CTX-DINI-0716-TULISAN",
+      "start_a": "2026-07-16T11:03:04+07:00",
+      "end_a": "2026-07-16T11:59:52+07:00",
+      "start_b": "2026-07-16T11:51:09+07:00",
+      "end_b": "2026-07-16T12:37:18+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-DST-DINI-0716",
+      "segment_b": "KONV-DST-DINI-0716-STIKER",
+      "start_a": "2026-07-16T15:06:14+07:00",
+      "end_a": "2026-07-16T15:53:42+07:00",
+      "start_b": "2026-07-16T15:44:08+07:00",
+      "end_b": "2026-07-16T16:34:41+07:00"
+    },
+    {
+      "chat_pair": "AKT-DINI|AKT-RAKA",
+      "segment_a": "KONV-DST-DINI-0718",
+      "segment_b": "KONV-CTX-DINI-0718-KAMERA",
+      "start_a": "2026-07-18T19:02:21+07:00",
+      "end_a": "2026-07-18T19:52:54+07:00",
+      "start_b": "2026-07-18T19:32:04+07:00",
+      "end_b": "2026-07-18T20:28:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-DST-REZA-B16-004",
+      "segment_b": "KONV-DST-REZA-0701-TEKA",
+      "start_a": "2026-07-01T09:35:26+07:00",
+      "end_a": "2026-07-01T10:19:27+07:00",
+      "start_b": "2026-07-01T10:14:07+07:00",
+      "end_b": "2026-07-01T11:07:26+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-CTX-REZA-0705",
+      "segment_b": "KONV-CTX-REZA-0705-LEMBAR",
+      "start_a": "2026-07-05T12:06:14+07:00",
+      "end_a": "2026-07-05T12:59:43+07:00",
+      "start_b": "2026-07-05T12:46:03+07:00",
+      "end_b": "2026-07-05T13:33:38+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-CTX-REZA-0708-MALAM",
+      "segment_b": "KONV-CTX-REZA-0708-WIPER",
+      "start_a": "2026-07-08T20:01:27+07:00",
+      "end_a": "2026-07-08T20:49:16+07:00",
+      "start_b": "2026-07-08T20:24:00+07:00",
+      "end_b": "2026-07-08T21:41:44+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-DST-REZA-0709-KAOSBOLA",
+      "segment_b": "KONV-CTX-REZA-0709-MI",
+      "start_a": "2026-07-09T17:03:00+07:00",
+      "end_a": "2026-07-09T17:52:20+07:00",
+      "start_b": "2026-07-09T17:27:11+07:00",
+      "end_b": "2026-07-09T18:16:10+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-CTX-REZA-B16-016",
+      "segment_b": "KONV-DST-REZA-0712-TEBAK",
+      "start_a": "2026-07-12T20:25:40+07:00",
+      "end_a": "2026-07-12T21:27:04+07:00",
+      "start_b": "2026-07-12T21:14:00+07:00",
+      "end_b": "2026-07-12T22:06:12+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-DST-REZA-B14-002",
+      "segment_b": "KONV-DST-REZA-0712-BUAH",
+      "start_a": "2026-07-12T22:45:06+07:00",
+      "end_a": "2026-07-12T23:33:18+07:00",
+      "start_b": "2026-07-12T23:07:08+07:00",
+      "end_b": "2026-07-12T23:54:11+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-CTX-REZA-0719",
+      "segment_b": "KONV-CTX-REZA-0719-BUKU",
+      "start_a": "2026-07-19T12:28:13+07:00",
+      "end_a": "2026-07-19T13:23:17+07:00",
+      "start_b": "2026-07-19T12:34:04+07:00",
+      "end_b": "2026-07-19T13:30:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-REZA",
+      "segment_a": "KONV-CTX-REZA-B17-005",
+      "segment_b": "KONV-DST-REZA-0721",
+      "start_a": "2026-07-21T14:35:30+07:00",
+      "end_a": "2026-07-21T15:05:08+07:00",
+      "start_b": "2026-07-21T15:04:17+07:00",
+      "end_b": "2026-07-21T15:50:19+07:00"
+    },
+    {
+      "chat_pair": "AKT-KIRANA|AKT-RAKA",
+      "segment_a": "KONV-CTX-KIRANA-B19-024",
+      "segment_b": "KONV-CTX-KIRANA-B14-023",
+      "start_a": "2026-07-07T16:00:55+07:00",
+      "end_a": "2026-07-07T17:12:33+07:00",
+      "start_b": "2026-07-07T16:20:47+07:00",
+      "end_b": "2026-07-07T16:41:32+07:00"
+    },
+    {
+      "chat_pair": "AKT-KIRANA|AKT-RAKA",
+      "segment_a": "KONV-CTX-KIRANA-B19-024",
+      "segment_b": "KONV-CTX-KIRANA-B17-027",
+      "start_a": "2026-07-07T16:00:55+07:00",
+      "end_a": "2026-07-07T17:12:33+07:00",
+      "start_b": "2026-07-07T17:05:52+07:00",
+      "end_b": "2026-07-07T17:55:16+07:00"
+    },
+    {
+      "chat_pair": "AKT-KIRANA|AKT-RAKA",
+      "segment_a": "KONV-CTX-KIRANA-B15-031",
+      "segment_b": "KONV-CTX-KIRANA-B13-003",
+      "start_a": "2026-07-10T11:15:54+07:00",
+      "end_a": "2026-07-10T12:13:32+07:00",
+      "start_b": "2026-07-10T11:45:26+07:00",
+      "end_b": "2026-07-10T12:43:32+07:00"
+    },
+    {
+      "chat_pair": "AKT-KIRANA|AKT-RAKA",
+      "segment_a": "KONV-CTX-KIRANA-0713-GELAS",
+      "segment_b": "KONV-CTX-KIRANA-0713-RAHASIA",
+      "start_a": "2026-07-13T11:22:00+07:00",
+      "end_a": "2026-07-13T11:57:34+07:00",
+      "start_b": "2026-07-13T11:42:00+07:00",
+      "end_b": "2026-07-13T12:09:05+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-TANIA",
+      "segment_a": "KONV-CTX-TANIA-B20-015",
+      "segment_b": "KONV-CTX-TANIA-0711-BATAS",
+      "start_a": "2026-07-11T11:30:47+07:00",
+      "end_a": "2026-07-11T12:16:04+07:00",
+      "start_b": "2026-07-11T11:49:07+07:00",
+      "end_b": "2026-07-11T12:19:00+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-TANIA",
+      "segment_a": "KONV-CTX-TANIA-B16-004",
+      "segment_b": "KONV-GAL-R066",
+      "start_a": "2026-07-12T09:35:28+07:00",
+      "end_a": "2026-07-12T10:37:52+07:00",
+      "start_b": "2026-07-12T10:10:16+07:00",
+      "end_b": "2026-07-12T11:10:26+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-TANIA",
+      "segment_a": "KONV-CTX-TANIA-B19-022",
+      "segment_b": "KONV-DST-TANIA-B18-009",
+      "start_a": "2026-07-14T13:45:53+07:00",
+      "end_a": "2026-07-14T14:36:45+07:00",
+      "start_b": "2026-07-14T14:30:29+07:00",
+      "end_b": "2026-07-14T15:03:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-TANIA",
+      "segment_a": "KONV-CTX-TANIA-B18-047",
+      "segment_b": "KONV-CTX-TANIA-B12-003-HANDUK",
+      "start_a": "2026-07-17T13:00:17+07:00",
+      "end_a": "2026-07-17T14:07:09+07:00",
+      "start_b": "2026-07-17T13:45:15+07:00",
+      "end_b": "2026-07-17T14:19:43+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-RENA",
+      "segment_a": "KONV-CTX-RENA-0709",
+      "segment_b": "KONV-CTX-RENA-0709-SENDOK",
+      "start_a": "2026-07-09T12:08:18+07:00",
+      "end_a": "2026-07-09T13:00:55+07:00",
+      "start_b": "2026-07-09T12:29:11+07:00",
+      "end_b": "2026-07-09T13:03:21+07:00"
+    },
+    {
+      "chat_pair": "AKT-RAKA|AKT-RENA",
+      "segment_a": "KONV-CTX-RENA-B19-020",
+      "segment_b": "KONV-CTX-RENA-0721-JADWAL",
+      "start_a": "2026-07-21T12:15:51+07:00",
+      "end_a": "2026-07-21T13:17:15+07:00",
+      "start_b": "2026-07-21T13:07:05+07:00",
+      "end_b": "2026-07-21T14:00:22+07:00"
+    },
+    {
+      "chat_pair": "AKT-BAGAS|AKT-RAKA",
+      "segment_a": "KONV-CTX-BAGAS-B17-007",
+      "segment_b": "KONV-DST-BAGAS-0714-KOPI",
+      "start_a": "2026-07-14T16:15:32+07:00",
+      "end_a": "2026-07-14T17:21:24+07:00",
+      "start_b": "2026-07-14T16:54:07+07:00",
+      "end_b": "2026-07-14T17:48:26+07:00"
+    },
+    {
+      "chat_pair": "AKT-BAGAS|AKT-RAKA",
+      "segment_a": "KONV-CTX-BAGAS-B15-020",
+      "segment_b": "KONV-DST-BAGAS-0717-KATA",
+      "start_a": "2026-07-17T18:45:43+07:00",
+      "end_a": "2026-07-17T19:36:53+07:00",
+      "start_b": "2026-07-17T19:26:03+07:00",
+      "end_b": "2026-07-17T20:03:45+07:00"
+    },
+    {
+      "chat_pair": "AKT-BAGAS|AKT-RAKA",
+      "segment_a": "KONV-CTX-BAGAS-B20-010",
+      "segment_b": "KONV-CTX-BAGAS-0718-BAN",
+      "start_a": "2026-07-18T07:45:42+07:00",
+      "end_a": "2026-07-18T08:17:52+07:00",
+      "start_b": "2026-07-18T08:07:09+07:00",
+      "end_b": "2026-07-18T09:02:18+07:00"
+    },
+    {
+      "chat_pair": "AKT-CACA|AKT-RAKA",
+      "segment_a": "KONV-CTX-CACA-0714",
+      "segment_b": "KONV-CTX-CACA-0714-BUNYI",
+      "start_a": "2026-07-14T18:02:11+07:00",
+      "end_a": "2026-07-14T18:49:56+07:00",
+      "start_b": "2026-07-14T18:04:05+07:00",
+      "end_b": "2026-07-14T18:56:32+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B18-021",
+      "segment_b": "KONV-DST-JIHAN-B13-009",
+      "start_a": "2026-07-18T12:15:51+07:00",
+      "end_a": "2026-07-18T12:41:15+07:00",
+      "start_b": "2026-07-18T12:40:13+07:00",
+      "end_b": "2026-07-18T12:58:19+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-007",
+      "segment_b": "KONV-GAL-R090",
+      "start_a": "2026-07-18T16:45:39+07:00",
+      "end_a": "2026-07-18T17:35:03+07:00",
+      "start_b": "2026-07-18T17:08:02+07:00",
+      "end_b": "2026-07-18T18:02:26+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-016",
+      "segment_b": "KONV-GAL-R092",
+      "start_a": "2026-07-18T19:45:48+07:00",
+      "end_a": "2026-07-18T21:03:33+07:00",
+      "start_b": "2026-07-18T20:34:24+07:00",
+      "end_b": "2026-07-18T21:16:26+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B15-041",
+      "segment_b": "KONV-CTX-JIHAN-B20-034",
+      "start_a": "2026-07-18T22:05:04+07:00",
+      "end_a": "2026-07-18T22:31:28+07:00",
+      "start_b": "2026-07-18T22:30:06+07:00",
+      "end_b": "2026-07-18T23:02:16+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B15-041",
+      "segment_b": "KONV-CTX-JIHAN-B20-043",
+      "start_a": "2026-07-18T22:05:04+07:00",
+      "end_a": "2026-07-18T22:31:28+07:00",
+      "start_b": "2026-07-18T22:30:15+07:00",
+      "end_b": "2026-07-18T23:20:39+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B15-041",
+      "segment_b": "KONV-CTX-JIHAN-B20-025",
+      "start_a": "2026-07-18T22:05:04+07:00",
+      "end_a": "2026-07-18T22:31:28+07:00",
+      "start_b": "2026-07-18T22:30:57+07:00",
+      "end_b": "2026-07-18T22:58:28+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-034",
+      "segment_b": "KONV-CTX-JIHAN-B20-043",
+      "start_a": "2026-07-18T22:30:06+07:00",
+      "end_a": "2026-07-18T23:02:16+07:00",
+      "start_b": "2026-07-18T22:30:15+07:00",
+      "end_b": "2026-07-18T23:20:39+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-034",
+      "segment_b": "KONV-CTX-JIHAN-B20-025",
+      "start_a": "2026-07-18T22:30:06+07:00",
+      "end_a": "2026-07-18T23:02:16+07:00",
+      "start_b": "2026-07-18T22:30:57+07:00",
+      "end_b": "2026-07-18T22:58:28+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-034",
+      "segment_b": "KONV-CTX-JIHAN-B15-005",
+      "start_a": "2026-07-18T22:30:06+07:00",
+      "end_a": "2026-07-18T23:02:16+07:00",
+      "start_b": "2026-07-18T22:55:28+07:00",
+      "end_b": "2026-07-18T23:21:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-043",
+      "segment_b": "KONV-CTX-JIHAN-B20-025",
+      "start_a": "2026-07-18T22:30:15+07:00",
+      "end_a": "2026-07-18T23:20:39+07:00",
+      "start_b": "2026-07-18T22:30:57+07:00",
+      "end_b": "2026-07-18T22:58:28+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-043",
+      "segment_b": "KONV-CTX-JIHAN-B15-005",
+      "start_a": "2026-07-18T22:30:15+07:00",
+      "end_a": "2026-07-18T23:20:39+07:00",
+      "start_b": "2026-07-18T22:55:28+07:00",
+      "end_b": "2026-07-18T23:21:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B20-025",
+      "segment_b": "KONV-CTX-JIHAN-B15-005",
+      "start_a": "2026-07-18T22:30:57+07:00",
+      "end_a": "2026-07-18T22:58:28+07:00",
+      "start_b": "2026-07-18T22:55:28+07:00",
+      "end_b": "2026-07-18T23:21:52+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B18-030",
+      "segment_b": "KONV-CTX-JIHAN-B14-022",
+      "start_a": "2026-07-19T16:45:00+07:00",
+      "end_a": "2026-07-19T17:33:45+07:00",
+      "start_b": "2026-07-19T17:15:46+07:00",
+      "end_b": "2026-07-19T18:06:10+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B13-011",
+      "segment_b": "KONV-GAL-R100",
+      "start_a": "2026-07-20T19:05:34+07:00",
+      "end_a": "2026-07-20T20:12:58+07:00",
+      "start_b": "2026-07-20T19:44:11+07:00",
+      "end_b": "2026-07-20T20:33:33+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B18-048",
+      "segment_b": "KONV-CTX-JIHAN-B12-020-GELAS",
+      "start_a": "2026-07-21T15:15:18+07:00",
+      "end_a": "2026-07-21T16:12:35+07:00",
+      "start_b": "2026-07-21T15:55:32+07:00",
+      "end_b": "2026-07-21T16:30:33+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B19-041",
+      "segment_b": "KONV-DST-JIHAN-B20-004",
+      "start_a": "2026-07-21T22:30:12+07:00",
+      "end_a": "2026-07-21T23:03:57+07:00",
+      "start_b": "2026-07-21T22:30:26+07:00",
+      "end_b": "2026-07-21T23:02:10+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-CTX-JIHAN-B19-041",
+      "segment_b": "KONV-CTX-JIHAN-B19-005",
+      "start_a": "2026-07-21T22:30:12+07:00",
+      "end_a": "2026-07-21T23:03:57+07:00",
+      "start_b": "2026-07-21T22:45:36+07:00",
+      "end_b": "2026-07-21T23:18:21+07:00"
+    },
+    {
+      "chat_pair": "AKT-JIHAN|AKT-RAKA",
+      "segment_a": "KONV-DST-JIHAN-B20-004",
+      "segment_b": "KONV-CTX-JIHAN-B19-005",
+      "start_a": "2026-07-21T22:30:26+07:00",
+      "end_a": "2026-07-21T23:02:10+07:00",
+      "start_b": "2026-07-21T22:45:36+07:00",
+      "end_b": "2026-07-21T23:18:21+07:00"
+    }
+  ],
+  "segments_per_chat_pair": {
+    "AKT-DINI|AKT-RAKA": 134,
+    "AKT-RAKA|AKT-REZA": 121,
+    "AKT-RAKA|AKT-RENA": 101,
+    "AKT-BAGAS|AKT-RAKA": 87,
+    "AKT-RAKA|AKT-TANIA": 84,
+    "AKT-KIRANA|AKT-RAKA": 73,
+    "AKT-NARA|AKT-RAKA": 67,
+    "AKT-JIHAN|AKT-RAKA": 66,
+    "AKT-MAYA|AKT-RAKA": 56,
+    "AKT-CACA|AKT-RAKA": 30,
+    "AKT-KONTAK-3211|AKT-RAKA": 6,
+    "AKT-RAKA|AKT-TIDAK-DIKETAHUI": 6,
+    "AKT-KONTAK-1557|AKT-RAKA": 3,
+    "AKT-RENA|AKT-TIDAK-DIKETAHUI": 3,
+    "AKT-KORBAN-TD-2767|AKT-RAKA": 2,
+    "AKT-KONTAK-1196|AKT-RAKA": 1,
+    "AKT-KONTAK-1635|AKT-RAKA": 1,
+    "AKT-KONTAK-2323|AKT-RAKA": 1,
+    "AKT-KONTAK-5855|AKT-RAKA": 1,
+    "AKT-KONTAK-7332|AKT-RAKA": 1,
+    "AKT-KONTAK-8721|AKT-RAKA": 1,
+    "AKT-KONTAK-8794|AKT-RAKA": 1,
+    "AKT-KONTAK-9858|AKT-RAKA": 1,
+    "AKT-KONTAK-TD-001|AKT-RAKA": 1,
+    "AKT-RAKA|AKT-TD-1506": 1,
+    "AKT-RAKA|AKT-TD-KIRANA-PHONE": 1
+  },
+  "manual_review_required": [
+    "Read merged timelines per participant pair, not only individual conversation_id segments.",
+    "Review all same-chat overlapping segments for topic interleaving and continuity.",
+    "Review Raka global chronology for impossible location/action overlap.",
+    "Preserve immutable anchor content and ordering.",
+    "Derive a stable chat_id per participant pair for forensic-demo/export layer while retaining conversation_id as segment_id."
+  ],
+  "final_chat_level_signoff": false
+}

@@ -54,12 +54,12 @@
           "count": 97
         },
         {
-          "seconds": 189,
+          "seconds": 129,
           "count": 97
         },
         {
-          "seconds": 129,
-          "count": 97
+          "seconds": 189,
+          "count": 96
         },
         {
           "seconds": 197,
@@ -105,7 +105,7 @@
         },
         {
           "remainder": 9,
-          "count": 371
+          "count": 369
         },
         {
           "remainder": 19,
@@ -155,8 +155,8 @@
       "conversations": 296,
       "total_adjacent_gaps": 2954,
       "exact_247": 718,
-      "remainder_7_seconds": 2759,
-      "remainder_7_pct": 93.4,
+      "remainder_7_seconds": 2757,
+      "remainder_7_pct": 93.33,
       "top_exact_gaps": [
         {
           "seconds": 247,
@@ -164,11 +164,11 @@
         },
         {
           "seconds": 187,
-          "count": 645
+          "count": 644
         },
         {
           "seconds": 127,
-          "count": 643
+          "count": 642
         },
         {
           "seconds": 307,
@@ -210,7 +210,7 @@
       "top_second_remainders": [
         {
           "remainder": 7,
-          "count": 2759
+          "count": 2757
         },
         {
           "remainder": 9,
@@ -389,15 +389,15 @@
   "namespace_style_signals": {
     "context_A": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 21,
+      "comma_phrase_ya_ending": 20,
       "barusan_ending": 16,
-      "short_1_to_3_words": 792
+      "short_1_to_3_words": 783
     },
     "context_B": {
       "messages": 3250,
       "comma_phrase_ya_ending": 182,
-      "barusan_ending": 48,
-      "short_1_to_3_words": 839
+      "barusan_ending": 47,
+      "short_1_to_3_words": 828
     },
     "bridge": {
       "messages": 1500,
@@ -415,7 +415,7 @@
   "near_duplicate_long_candidates_count": 0,
   "near_duplicate_long_candidates": [],
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "6a0c8f791e6d114a3c162c2d2a3936f817b699d21e21227d45c651fbbde12528",
+  "working_sha256": "16e54bebb7036436d95be177fa7548ef6bdc720c80ecf0ca33d7096c5efe6e5d",
   "manual_semantic_checks_required": [
     "review near-duplicate candidates in context",
     "full chronology/causality audit across anchor and synthetic messages",

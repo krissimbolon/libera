@@ -1,0 +1,260 @@
+{
+  "scope": "candidate signals for manual full-chronology and actor-state review",
+  "chronology_state_passed": false,
+  "actor_message_counts": {
+    "AKT-RAKA": 3601,
+    "AKT-KIRANA": 593,
+    "AKT-TANIA": 707,
+    "AKT-MAYA": 405,
+    "AKT-RENA": 918,
+    "AKT-NARA": 455,
+    "AKT-JIHAN": 590,
+    "AKT-DINI": 880,
+    "AKT-REZA": 797,
+    "AKT-BAGAS": 625,
+    "AKT-CACA": 193
+  },
+  "rapid_three_plus_conversations_same_minute": [
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-03T08:22",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-A-1089",
+        "ID-CTX-A-2670",
+        "ID-CTX-A-2812"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B12-013-SPIDOL",
+        "KONV-CTX-KIRANA-B12-028-MASKER",
+        "KONV-CTX-TANIA-0703-HANDUK"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-03T08:29",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-A-1091",
+        "ID-CTX-A-2673",
+        "ID-CTX-A-2815"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B12-013-SPIDOL",
+        "KONV-CTX-KIRANA-B12-028-MASKER",
+        "KONV-CTX-TANIA-0703-HANDUK"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-03T08:35",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-A-2123",
+        "ID-CTX-A-2676",
+        "ID-CTX-A-2818"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B12-013-SPIDOL",
+        "KONV-CTX-KIRANA-B12-028-MASKER",
+        "KONV-CTX-TANIA-0703-HANDUK"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-03T16:12",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-1712",
+        "ID-DST-1295",
+        "ID-CTX-A-2135"
+      ],
+      "conversations": [
+        "KONV-CTX-BAGAS-B18-006",
+        "KONV-CTX-DINI-0703-DUDUK",
+        "KONV-DST-RENA-B18-011"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-03T18:20",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-A-2622",
+        "ID-CTX-B-0584",
+        "ID-CTX-A-2761"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B12-022-SABUN",
+        "KONV-CTX-MAYA-B15-039",
+        "KONV-CTX-NARA-B12-007-KABEL"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-07T17:38",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-2473",
+        "ID-CTX-B-2405",
+        "ID-CTX-B-1445"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B19-021",
+        "KONV-CTX-KIRANA-B17-027",
+        "KONV-CTX-NARA-B19-027"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-10T14:27",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-BRG-0366",
+        "ID-DST-0018",
+        "ID-CTX-B-0099"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B14-020",
+        "KONV-DST-CACA-0710",
+        "KONV-GAL-R022"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-10T16:00",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-BRG-0199",
+        "ID-CTX-A-1186",
+        "ID-BRG-0855"
+      ],
+      "conversations": [
+        "KONV-CTX-BAGAS-0710-PESAN",
+        "KONV-GAL-R058",
+        "KONV-GAL-R059"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-10T20:28",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-BRG-0103",
+        "ID-CTX-B-0397",
+        "ID-CTX-A-2949"
+      ],
+      "conversations": [
+        "KONV-CTX-KIRANA-B15-022",
+        "KONV-CTX-TANIA-B13-010",
+        "KONV-GAL-R060"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-10T21:23",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-1788",
+        "ID-CTX-B-0621",
+        "ID-BRG-0486"
+      ],
+      "conversations": [
+        "KONV-CTX-DINI-B15-043",
+        "KONV-CTX-KIRANA-B18-013",
+        "KONV-GAL-R060"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-17T13:49",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-BRG-0557",
+        "ID-CTX-A-2576",
+        "ID-CTX-A-2722"
+      ],
+      "conversations": [
+        "KONV-CTX-MAYA-B12-018-SISIR",
+        "KONV-CTX-TANIA-B12-003-HANDUK",
+        "KONV-GAL-R089"
+      ]
+    },
+    {
+      "actor": "AKT-JIHAN",
+      "minute": "2026-07-18T22:30",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-3084",
+        "ID-CTX-B-3181",
+        "ID-CTX-B-2984"
+      ],
+      "conversations": [
+        "KONV-CTX-JIHAN-B20-025",
+        "KONV-CTX-JIHAN-B20-034",
+        "KONV-CTX-JIHAN-B20-043"
+      ]
+    },
+    {
+      "actor": "AKT-JIHAN",
+      "minute": "2026-07-18T22:55",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-3092",
+        "ID-CTX-B-0199",
+        "ID-CTX-B-3187"
+      ],
+      "conversations": [
+        "KONV-CTX-JIHAN-B15-005",
+        "KONV-CTX-JIHAN-B20-034",
+        "KONV-CTX-JIHAN-B20-043"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-19T12:43",
+      "conversation_count": 4,
+      "message_ids": [
+        "ID-CTX-A-1802",
+        "ID-DST-0893",
+        "ID-CTX-A-2564",
+        "ID-CTX-A-3074"
+      ],
+      "conversations": [
+        "KONV-CTX-JIHAN-B12-002-PAYUNG",
+        "KONV-CTX-MAYA-B13-022",
+        "KONV-CTX-REZA-0719-BUKU",
+        "KONV-DST-DINI-B14-009"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-21T19:55",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-1264",
+        "ID-CTX-B-1454",
+        "ID-DST-0496"
+      ],
+      "conversations": [
+        "KONV-CTX-JIHAN-B17-028",
+        "KONV-CTX-TANIA-B17-011",
+        "KONV-DST-BAGAS-0721-SANDAL"
+      ]
+    }
+  ],
+  "rapid_conversation_counts_by_actor": {
+    "AKT-RAKA": 13,
+    "AKT-JIHAN": 2
+  },
+  "caca_messages_after_block": [],
+  "exact_same_actor_cross_conversation_timestamp": [],
+  "timestamp_corrections_crossing_shared_actor_anchor": [],
+  "human_checks_pending": [
+    "all actors: mutually exclusive locations, sleep, travel and pickup",
+    "knowledge and outcomes relative to anchors across conversations",
+    "Raka multitasking and physical activities in nearby conversations",
+    "Jihan language sanitation and scene chronology",
+    "synthetic bridge causal ordering and representative thread spot-check"
+  ]
+}
