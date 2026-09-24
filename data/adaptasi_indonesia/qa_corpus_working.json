@@ -13,9 +13,11 @@
   "duplicate_synthetic_text": 0,
   "same_conversation_timestamp_collisions": 0,
   "conversation_count": 846,
+  "invalid_timestamp_ids": [],
+  "context_gaps_exactly_247_seconds": 731,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "8485e0366bd602cbe94f0fe08b0faa02abfff6d9b50c2e81f8caf859035a0d90",
+  "working_sha256": "0613b3d324f2e26e62113a7568af0025dad792fec456262ee1bcac9124a86235",
   "repeated_four_message_suffix_windows": 152,
   "affected_conversations": 61,
   "examples": [

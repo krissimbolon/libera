@@ -11,3 +11,5 @@ Batch manual 4.400 yang ditulis secara terpisah saat branch bergerak disimpan pa
 ## Koreksi manual pertama
 
 Sebanyak 80 pesan pada lima thread (`MAYA-B17-035`, `NARA-B20-047`, `BAGAS-B17-043`, `RENA-B17-031`, `REZA-B17-041`) ditulis ulang sebagai dialog berurutan; pemetaan ID dan teks baru tersimpan di `koreksi_dialog_manual_001.tsv`. Waktu, ID, pasangan aktor, provenance, dan anchor tidak diubah. Sesudah koreksi, jendela pengulangan turun dari 188 menjadi **152**, dan conversation terdampak dari 66 menjadi **61**. Status tetap gagal; lima thread yang membaik belum cukup untuk QA final.
+
+Audit tanggal tambahan menemukan empat timestamp `2026-07-19T24:xx` pada `ID-CTX-B-0873` hingga `0876`. Semuanya dikoreksi menjadi `2026-07-20T00:xx`, tanpa mengubah teks atau urutan thread. Auditor sekarang mengurai timestamp secara nyata sehingga format tak valid tidak lagi lolos hanya karena bentuknya mirip ISO. Ada **731 jeda context tepat 247 detik** sesudah koreksi, pola produksi yang sangat berulang dan masih memerlukan peninjauan ritme.

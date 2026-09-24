@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 from collections import Counter, defaultdict
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -63,6 +64,22 @@ def main() -> None:
     counts = Counter(row["source_provenance"] for row in messages)
     full_rows = Counter(tuple(row.items()) for row in messages)
     stamps = Counter((row["conversation_id"], row["timestamp"]) for row in messages)
+    invalid_timestamps = []
+    for row in messages:
+        try:
+            datetime.fromisoformat(row["timestamp"])
+        except ValueError:
+            invalid_timestamps.append(row["message_id"])
+    cadence_247 = 0
+    for conversation, thread in by_conversation.items():
+        if not conversation.startswith("KONV-CTX-"):
+            continue
+        for first, second in zip(thread, thread[1:]):
+            try:
+                delta = datetime.fromisoformat(second["timestamp"]) - datetime.fromisoformat(first["timestamp"])
+            except ValueError:
+                continue
+            cadence_247 += delta.total_seconds() == 247
     report = {
         "status": "FAILED_LANGUAGE_CONTINUITY_QA",
         "total": len(messages),
@@ -73,6 +90,8 @@ def main() -> None:
         "duplicate_synthetic_text": sum(n - 1 for n in texts.values() if n > 1),
         "same_conversation_timestamp_collisions": sum(n - 1 for n in stamps.values() if n > 1),
         "conversation_count": len({row["conversation_id"] for row in messages}),
+        "invalid_timestamp_ids": invalid_timestamps,
+        "context_gaps_exactly_247_seconds": cadence_247,
         "anchor_exact_match_count": sum(row == anchor.get(row["message_id"]) for row in messages if row["message_id"] in anchor),
         "anchor_sha256": hashlib.sha256(ANCHOR.read_bytes()).hexdigest(),
         "working_sha256": hashlib.sha256(WORK.read_bytes()).hexdigest(),

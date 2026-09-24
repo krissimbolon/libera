@@ -161,3 +161,4 @@ Pada setiap checkpoint catat:
 - QA kerja 8.000 yang sebelumnya tersimpan sudah tidak sesuai jumlah saat ini. Auditor baru menghasilkan status `FAILED_LANGUAGE_CONTINUITY_QA` dan laporan `audit_kualitas_10000_belum_lulus.md`.
 - **Progres konten terverifikasi tetap 4.000/10.000**, sedangkan 10.000 adalah jumlah baris yang memerlukan revisi isi. Final artifact dan QA final belum boleh diterbitkan sampai dialog repetitif diperbaiki dan audit actor-state menyeluruh lulus. Anchor 500/500 tetap identik.
 - Koreksi manual putaran pertama menulis ulang 80 pesan pada lima thread utuh tanpa mengubah ID/waktu/anchor; indikator pengulangan turun dari 188 jendela di 66 conversation menjadi 152 jendela di 61 conversation. QA final masih gagal.
+- Empat timestamp `24:xx` di thread Kirana dikoreksi ke dini hari 20 Juli; auditor kini memeriksa parse timestamp dan menghitung 731 jeda context yang tepat 247 detik. Ritme ini tetap menjadi alasan QA gaya belum lulus.
