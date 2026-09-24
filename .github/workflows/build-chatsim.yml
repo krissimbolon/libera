@@ -1,0 +1,46 @@
+name: Build LIBERA ChatSim
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - demo-chatsim
+    paths:
+      - 'apps/libera-chatsim/**'
+      - 'tools/build_demo_seed.py'
+      - 'data/adaptasi_indonesia/**'
+      - '.github/workflows/build-chatsim.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build examiner-safe ChatSim seed
+        run: python tools/build_demo_seed.py
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Build debug APK
+        run: gradle -p apps/libera-chatsim assembleDebug
+
+      - name: Upload APK and seed manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: libera-chatsim-debug
+          path: |
+            apps/libera-chatsim/app/build/outputs/apk/debug/app-debug.apk
+            apps/libera-chatsim/app/src/main/assets/seed_manifest.json
