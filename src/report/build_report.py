@@ -34,6 +34,7 @@ def first_value(obj, *keys, default="NOT_RUN"):
 
 def load_acquisition_manifest():
     candidates = [
+        Path("runtime/working/current_acquisition_manifest.json"),
         Path("runtime/private/ACQ-SIM-001/acquisition_manifest.json"),
         Path("runtime/private/ACQ-001/acquisition_manifest.json"),
         Path("runtime/private/ACQ-DRY-001/acquisition_manifest.json"),
