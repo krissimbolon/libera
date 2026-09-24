@@ -50,6 +50,9 @@ def _parse_structured_output(text: str):
     if candidate.startswith("~~~"):
         candidate = re.sub(r"^~~~(?:json)?\s*", "", candidate)
         candidate = re.sub(r"\s*~~~$", "", candidate)
+    if candidate.startswith("```"):
+        candidate = re.sub(r"^```(?:json)?\s*", "", candidate)
+        candidate = re.sub(r"\s*```$", "", candidate)
     try:
         obj = json.loads(candidate)
     except json.JSONDecodeError:
@@ -137,11 +140,11 @@ def load_ground_truth(path: Path, msg_to_art: dict[str, str]):
         labeled.add(art)
         if _truthy(r["is_key_evidence"]):
             positive.add(art)
-    if unknown:
-        raise EvaluationError(
-            f"{len(unknown)} GT message_id tidak ada di P4; contoh={unknown[:5]}"
-        )
-    return labeled, positive
+    # Ground truth may describe the complete 10,000-message designed case while a
+    # single acquired device contains only its own evidence universe. Messages not
+    # present in P4 are reported as unacquired and excluded from the denominator;
+    # they are never silently treated as true negatives.
+    return labeled, positive, unknown
 
 
 def _confusion(predicted: set[str], labeled: set[str], positive: set[str]) -> dict:
@@ -225,7 +228,7 @@ def run(
             raise EvaluationError(
                 "Refuse: ground truth hanya boleh dibuka setelah outputs_locked."
             )
-        labeled, positive = load_ground_truth(ground_truth, msg_to_art)
+        labeled, positive, unacquired = load_ground_truth(ground_truth, msg_to_art)
         predictions = _experiment_sets(experiment)
         if baseline is not None:
             predictions["P5_baseline"] = _baseline_set(baseline)
@@ -238,6 +241,13 @@ def run(
             "ground_truth_path_redacted": True,
             "labeled_rows": len(labeled),
             "key_evidence_rows": len(positive),
+            "ground_truth_rows_unacquired": len(unacquired),
+            "ground_truth_unacquired_examples": unacquired[:10],
+            "evaluation_universe_note": (
+                "Metrics are computed only on ground-truth messages present in "
+                "the acquired P4 evidence universe; unacquired rows are reported "
+                "separately and are not counted as TN/FN."
+            ),
             "metrics": metrics,
         }
         result["status"] = "P9_FINAL_EVALUATION_COMPLETE"
