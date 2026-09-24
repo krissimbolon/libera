@@ -1,0 +1,396 @@
+{
+  "automated_gate_passed": true,
+  "automated_checks": {
+    "total_is_10000": true,
+    "provenance_matches_target": true,
+    "message_ids_unique": true,
+    "exact_duplicate_rows_zero": true,
+    "synthetic_exact_duplicate_text_zero": true,
+    "synthetic_source_original_line_blank": true,
+    "anchor_exact_500": true,
+    "timestamps_parse": true,
+    "timezone_plus_07": true,
+    "timestamps_in_scenario_window": true,
+    "conversation_timestamp_collisions_zero": true,
+    "reply_targets_exist": true,
+    "reply_not_future": true,
+    "reply_same_conversation": true,
+    "no_new_mixed_participant_conversations": true,
+    "source_identity_leakage_zero": true
+  },
+  "total": 10000,
+  "provenance_counts": {
+    "SYNTHETIC_CONTEXT": 6500,
+    "SYNTHETIC_BRIDGE": 1500,
+    "ADAPTED_FROM_GALLOWAY": 500,
+    "SYNTHETIC_DISTRACTOR": 1500
+  },
+  "conversation_count": 846,
+  "synthetic_source_original_line_nonempty_count": 0,
+  "synthetic_source_original_line_nonempty_examples": [],
+  "anchor_exact_match_count": 500,
+  "missing_anchor_ids": [],
+  "unexpected_adapted_ids": [],
+  "invalid_timestamp_ids": [],
+  "wrong_timezone_ids": [],
+  "outside_window_ids": [],
+  "reply_missing_target_ids": [],
+  "reply_future_ids": [],
+  "reply_cross_conversation_ids": [],
+  "mixed_conversation_flags": [],
+  "source_identity_leakage_hits": [],
+  "context_gaps_exactly_247_seconds": 731,
+  "cadence_profiles": {
+    "context_A": {
+      "messages": 3250,
+      "conversations": 293,
+      "total_adjacent_gaps": 2957,
+      "exact_247": 0,
+      "remainder_7_seconds": 75,
+      "remainder_7_pct": 2.54,
+      "top_exact_gaps": [
+        {
+          "seconds": 249,
+          "count": 97
+        },
+        {
+          "seconds": 189,
+          "count": 97
+        },
+        {
+          "seconds": 129,
+          "count": 97
+        },
+        {
+          "seconds": 197,
+          "count": 88
+        },
+        {
+          "seconds": 151,
+          "count": 83
+        },
+        {
+          "seconds": 191,
+          "count": 82
+        },
+        {
+          "seconds": 137,
+          "count": 78
+        },
+        {
+          "seconds": 131,
+          "count": 77
+        },
+        {
+          "seconds": 251,
+          "count": 60
+        },
+        {
+          "seconds": 367,
+          "count": 58
+        },
+        {
+          "seconds": 309,
+          "count": 54
+        },
+        {
+          "seconds": 139,
+          "count": 54
+        }
+      ],
+      "top_second_remainders": [
+        {
+          "remainder": 17,
+          "count": 388
+        },
+        {
+          "remainder": 9,
+          "count": 371
+        },
+        {
+          "remainder": 19,
+          "count": 253
+        },
+        {
+          "remainder": 11,
+          "count": 237
+        },
+        {
+          "remainder": 31,
+          "count": 224
+        },
+        {
+          "remainder": 23,
+          "count": 156
+        },
+        {
+          "remainder": 0,
+          "count": 106
+        },
+        {
+          "remainder": 24,
+          "count": 105
+        },
+        {
+          "remainder": 13,
+          "count": 94
+        },
+        {
+          "remainder": 26,
+          "count": 84
+        },
+        {
+          "remainder": 30,
+          "count": 80
+        },
+        {
+          "remainder": 7,
+          "count": 75
+        }
+      ],
+      "examples_247": []
+    },
+    "context_B": {
+      "messages": 3250,
+      "conversations": 296,
+      "total_adjacent_gaps": 2954,
+      "exact_247": 731,
+      "remainder_7_seconds": 2818,
+      "remainder_7_pct": 95.4,
+      "top_exact_gaps": [
+        {
+          "seconds": 247,
+          "count": 731
+        },
+        {
+          "seconds": 187,
+          "count": 660
+        },
+        {
+          "seconds": 127,
+          "count": 660
+        },
+        {
+          "seconds": 307,
+          "count": 593
+        },
+        {
+          "seconds": 367,
+          "count": 91
+        },
+        {
+          "seconds": 67,
+          "count": 83
+        },
+        {
+          "seconds": 189,
+          "count": 40
+        },
+        {
+          "seconds": 309,
+          "count": 34
+        },
+        {
+          "seconds": 249,
+          "count": 27
+        },
+        {
+          "seconds": 129,
+          "count": 24
+        },
+        {
+          "seconds": 369,
+          "count": 7
+        },
+        {
+          "seconds": 69,
+          "count": 4
+        }
+      ],
+      "top_second_remainders": [
+        {
+          "remainder": 7,
+          "count": 2818
+        },
+        {
+          "remainder": 9,
+          "count": 136
+        }
+      ],
+      "examples_247": [
+        {
+          "conversation_id": "KONV-CTX-TANIA-B15-006",
+          "first_message_id": "ID-CTX-B-0217",
+          "second_message_id": "ID-CTX-B-0218"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-018",
+          "first_message_id": "ID-CTX-B-1845",
+          "second_message_id": "ID-CTX-B-1846"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-018",
+          "first_message_id": "ID-CTX-B-1850",
+          "second_message_id": "ID-CTX-B-1851"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-018",
+          "first_message_id": "ID-CTX-B-1855",
+          "second_message_id": "ID-CTX-B-1856"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0445",
+          "second_message_id": "ID-CTX-B-0446"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0447",
+          "second_message_id": "ID-CTX-B-0448"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0448",
+          "second_message_id": "ID-CTX-B-0449"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0449",
+          "second_message_id": "ID-CTX-B-0450"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0451",
+          "second_message_id": "ID-CTX-B-0452"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0452",
+          "second_message_id": "ID-CTX-B-0453"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0453",
+          "second_message_id": "ID-CTX-B-0454"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0455",
+          "second_message_id": "ID-CTX-B-0456"
+        },
+        {
+          "conversation_id": "KONV-CTX-REZA-B15-027",
+          "first_message_id": "ID-CTX-B-0457",
+          "second_message_id": "ID-CTX-B-0458"
+        },
+        {
+          "conversation_id": "KONV-CTX-BAGAS-B18-042",
+          "first_message_id": "ID-CTX-B-2111",
+          "second_message_id": "ID-CTX-B-2112"
+        },
+        {
+          "conversation_id": "KONV-CTX-BAGAS-B18-042",
+          "first_message_id": "ID-CTX-B-2116",
+          "second_message_id": "ID-CTX-B-2117"
+        },
+        {
+          "conversation_id": "KONV-CTX-BAGAS-B18-042",
+          "first_message_id": "ID-CTX-B-2121",
+          "second_message_id": "ID-CTX-B-2122"
+        },
+        {
+          "conversation_id": "KONV-CTX-TANIA-B15-024",
+          "first_message_id": "ID-CTX-B-0414",
+          "second_message_id": "ID-CTX-B-0415"
+        },
+        {
+          "conversation_id": "KONV-CTX-MAYA-B15-030",
+          "first_message_id": "ID-CTX-B-0483",
+          "second_message_id": "ID-CTX-B-0484"
+        },
+        {
+          "conversation_id": "KONV-CTX-MAYA-B15-012",
+          "first_message_id": "ID-CTX-B-0283",
+          "second_message_id": "ID-CTX-B-0284"
+        },
+        {
+          "conversation_id": "KONV-CTX-BAGAS-B18-024",
+          "first_message_id": "ID-CTX-B-1906",
+          "second_message_id": "ID-CTX-B-1907"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-027",
+          "first_message_id": "ID-CTX-B-1940",
+          "second_message_id": "ID-CTX-B-1941"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-027",
+          "first_message_id": "ID-CTX-B-1941",
+          "second_message_id": "ID-CTX-B-1942"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-027",
+          "first_message_id": "ID-CTX-B-1942",
+          "second_message_id": "ID-CTX-B-1943"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-027",
+          "first_message_id": "ID-CTX-B-1944",
+          "second_message_id": "ID-CTX-B-1945"
+        },
+        {
+          "conversation_id": "KONV-CTX-RENA-B18-027",
+          "first_message_id": "ID-CTX-B-1945",
+          "second_message_id": "ID-CTX-B-1946"
+        }
+      ]
+    }
+  },
+  "namespace_style_signals": {
+    "context_A": {
+      "messages": 3250,
+      "comma_phrase_ya_ending": 21,
+      "barusan_ending": 16,
+      "short_1_to_3_words": 792
+    },
+    "context_B": {
+      "messages": 3250,
+      "comma_phrase_ya_ending": 285,
+      "barusan_ending": 83,
+      "short_1_to_3_words": 957
+    },
+    "bridge": {
+      "messages": 1500,
+      "comma_phrase_ya_ending": 30,
+      "barusan_ending": 25,
+      "short_1_to_3_words": 423
+    },
+    "distractor": {
+      "messages": 1500,
+      "comma_phrase_ya_ending": 56,
+      "barusan_ending": 32,
+      "short_1_to_3_words": 580
+    }
+  },
+  "near_duplicate_long_candidates_count": 1,
+  "near_duplicate_long_candidates": [
+    {
+      "message_id_a": "ID-BRG-1014",
+      "message_id_b": "ID-BRG-1065",
+      "hamming_distance": 3,
+      "token_count_a": 8,
+      "token_count_b": 9
+    }
+  ],
+  "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
+  "working_sha256": "cd501bc1ac38d96d77f01a00eb71ae2a741eaf2f7902da2e311ae19de9639516",
+  "manual_semantic_checks_required": [
+    "review near-duplicate candidates in context",
+    "full chronology/causality audit across anchor and synthetic messages",
+    "full actor-state/location/knowledge audit across conversations",
+    "language-naturalness review after context-B template repair",
+    "reconcile historical combined-anchor manifest hash without modifying anchors"
+  ],
+  "final_signoff_allowed": false,
+  "note": "Automated PASS is necessary but not sufficient. Final signoff requires manual semantic QA and explicit final artifact generation."
+}
