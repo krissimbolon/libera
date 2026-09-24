@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -21,6 +22,39 @@ ART_RE = re.compile(r"ART-\d{6}")
 
 class EvaluationError(RuntimeError):
     pass
+
+
+def _sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with Path(path).open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def verify_p8_lock(lock_manifest: Path, artifacts: Path, baseline: Path | None, experiment: Path) -> dict:
+    data = json.loads(Path(lock_manifest).read_text(encoding="utf-8"))
+    if data.get("status") != "P8_OUTPUTS_LOCKED_BEFORE_GROUND_TRUTH":
+        raise EvaluationError("P8 lock manifest status is invalid.")
+    files = data.get("files", {})
+    checks = [
+        ("p4_artifacts", artifacts),
+        ("p8_experiment_output", experiment),
+    ]
+    if baseline is not None:
+        checks.append(("p5_baseline", baseline))
+    for key, path in checks:
+        recorded = (files.get(key) or {}).get("sha256")
+        actual = _sha256(path)
+        if not recorded or recorded != actual:
+            raise EvaluationError(
+                f"P8 lock mismatch for {key}: recorded={recorded} actual={actual}"
+            )
+    return {
+        "lock_status": data["status"],
+        "locked_at_utc": data.get("locked_at_utc"),
+        "lock_manifest": str(lock_manifest),
+    }
 
 
 def load_artifacts(path: Path):
@@ -218,6 +252,7 @@ def run(
     baseline: Path | None = None,
     ground_truth: Path | None = None,
     outputs_locked: bool = False,
+    lock_manifest: Path | None = None,
 ) -> dict:
     rows, art_to_msg, msg_to_art = load_artifacts(artifacts)
     artifact_ids = set(art_to_msg)
@@ -227,6 +262,7 @@ def run(
         "outputs_locked": outputs_locked,
         "integrity": integrity_precheck(experiment, artifact_ids),
         "ground_truth_evaluation": None,
+        "p8_lock_verification": None,
     }
     if result["integrity"]["retrieval_invalid_evidence_ids"]:
         result["status"] = "P9_PRECHECK_FAIL_INVALID_EVIDENCE_REFERENCE"
@@ -236,6 +272,13 @@ def run(
             raise EvaluationError(
                 "Refuse: ground truth hanya boleh dibuka setelah outputs_locked."
             )
+        if lock_manifest is None:
+            raise EvaluationError(
+                "Refuse: private ground truth requires a cryptographic P8 lock manifest."
+            )
+        result["p8_lock_verification"] = verify_p8_lock(
+            lock_manifest, artifacts, baseline, experiment
+        )
         labeled, positive, unacquired, unlabeled = load_ground_truth(ground_truth, msg_to_art)
         predictions = _experiment_sets(experiment)
         if baseline is not None:
@@ -278,6 +321,7 @@ def main() -> None:
     p.add_argument("--baseline", default="runtime/working/P5/baseline_findings.json")
     p.add_argument("--ground-truth", default=None)
     p.add_argument("--outputs-locked", action="store_true")
+    p.add_argument("--lock-manifest", default=None)
     p.add_argument("--output", default="runtime/working/P9/evaluation.json")
     args = p.parse_args()
     try:
@@ -288,6 +332,7 @@ def main() -> None:
             Path(args.baseline) if args.baseline else None,
             Path(args.ground_truth) if args.ground_truth else None,
             args.outputs_locked,
+            Path(args.lock_manifest) if args.lock_manifest else None,
         )
     except (EvaluationError, FileNotFoundError, json.JSONDecodeError) as exc:
         print(f"[P9] ERROR: {exc}")
