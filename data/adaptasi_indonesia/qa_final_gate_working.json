@@ -39,7 +39,7 @@
   "reply_cross_conversation_ids": [],
   "mixed_conversation_flags": [],
   "source_identity_leakage_hits": [],
-  "context_gaps_exactly_247_seconds": 718,
+  "context_gaps_exactly_247_seconds": 105,
   "cadence_profiles": {
     "context_A": {
       "messages": 3250,
@@ -154,234 +154,234 @@
       "messages": 3250,
       "conversations": 296,
       "total_adjacent_gaps": 2954,
-      "exact_247": 718,
-      "remainder_7_seconds": 2757,
-      "remainder_7_pct": 93.33,
+      "exact_247": 105,
+      "remainder_7_seconds": 383,
+      "remainder_7_pct": 12.97,
       "top_exact_gaps": [
         {
           "seconds": 247,
-          "count": 718
-        },
-        {
-          "seconds": 187,
-          "count": 644
-        },
-        {
-          "seconds": 127,
-          "count": 642
+          "count": 105
         },
         {
           "seconds": 307,
-          "count": 584
+          "count": 84
         },
         {
-          "seconds": 367,
-          "count": 89
+          "seconds": 127,
+          "count": 81
+        },
+        {
+          "seconds": 187,
+          "count": 76
+        },
+        {
+          "seconds": 92,
+          "count": 19
         },
         {
           "seconds": 67,
-          "count": 80
+          "count": 19
         },
         {
-          "seconds": 189,
-          "count": 41
+          "seconds": 53,
+          "count": 17
         },
         {
-          "seconds": 249,
-          "count": 26
+          "seconds": 100,
+          "count": 17
         },
         {
-          "seconds": 309,
-          "count": 24
+          "seconds": 46,
+          "count": 16
         },
         {
-          "seconds": 129,
-          "count": 24
+          "seconds": 48,
+          "count": 16
         },
         {
-          "seconds": 369,
-          "count": 6
+          "seconds": 181,
+          "count": 15
         },
         {
-          "seconds": 69,
-          "count": 4
+          "seconds": 36,
+          "count": 15
         }
       ],
       "top_second_remainders": [
         {
           "remainder": 7,
-          "count": 2757
+          "count": 383
         },
         {
           "remainder": 9,
-          "count": 125
-        },
-        {
-          "remainder": 36,
-          "count": 4
+          "count": 60
         },
         {
           "remainder": 21,
-          "count": 4
-        },
-        {
-          "remainder": 31,
-          "count": 4
-        },
-        {
-          "remainder": 26,
-          "count": 4
-        },
-        {
-          "remainder": 34,
-          "count": 3
+          "count": 58
         },
         {
           "remainder": 45,
-          "count": 3
+          "count": 58
         },
         {
-          "remainder": 37,
-          "count": 3
+          "remainder": 46,
+          "count": 56
         },
         {
-          "remainder": 8,
-          "count": 3
+          "remainder": 36,
+          "count": 56
+        },
+        {
+          "remainder": 56,
+          "count": 54
+        },
+        {
+          "remainder": 52,
+          "count": 52
+        },
+        {
+          "remainder": 32,
+          "count": 52
+        },
+        {
+          "remainder": 41,
+          "count": 51
         },
         {
           "remainder": 25,
-          "count": 3
+          "count": 49
         },
         {
-          "remainder": 24,
-          "count": 3
+          "remainder": 27,
+          "count": 49
         }
       ],
       "examples_247": [
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-006",
-          "first_message_id": "ID-CTX-B-0217",
-          "second_message_id": "ID-CTX-B-0218"
+          "conversation_id": "KONV-CTX-BAGAS-B18-006",
+          "first_message_id": "ID-CTX-B-1722",
+          "second_message_id": "ID-CTX-B-1723"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-018",
-          "first_message_id": "ID-CTX-B-1845",
-          "second_message_id": "ID-CTX-B-1846"
+          "conversation_id": "KONV-CTX-MAYA-B15-039",
+          "first_message_id": "ID-CTX-B-0581",
+          "second_message_id": "ID-CTX-B-0582"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-018",
-          "first_message_id": "ID-CTX-B-1850",
-          "second_message_id": "ID-CTX-B-1851"
+          "conversation_id": "KONV-CTX-MAYA-B15-039",
+          "first_message_id": "ID-CTX-B-0582",
+          "second_message_id": "ID-CTX-B-0583"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-018",
-          "first_message_id": "ID-CTX-B-1855",
-          "second_message_id": "ID-CTX-B-1856"
+          "conversation_id": "KONV-CTX-MAYA-B15-039",
+          "first_message_id": "ID-CTX-B-0584",
+          "second_message_id": "ID-CTX-B-0585"
         },
         {
-          "conversation_id": "KONV-CTX-BAGAS-B18-042",
-          "first_message_id": "ID-CTX-B-2111",
-          "second_message_id": "ID-CTX-B-2112"
+          "conversation_id": "KONV-CTX-MAYA-B15-039",
+          "first_message_id": "ID-CTX-B-0585",
+          "second_message_id": "ID-CTX-B-0586"
         },
         {
-          "conversation_id": "KONV-CTX-BAGAS-B18-042",
-          "first_message_id": "ID-CTX-B-2116",
-          "second_message_id": "ID-CTX-B-2117"
+          "conversation_id": "KONV-CTX-MAYA-B15-039",
+          "first_message_id": "ID-CTX-B-0587",
+          "second_message_id": "ID-CTX-B-0588"
         },
         {
-          "conversation_id": "KONV-CTX-BAGAS-B18-042",
-          "first_message_id": "ID-CTX-B-2121",
-          "second_message_id": "ID-CTX-B-2122"
+          "conversation_id": "KONV-CTX-MAYA-B15-039",
+          "first_message_id": "ID-CTX-B-0588",
+          "second_message_id": "ID-CTX-B-0589"
         },
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-024",
-          "first_message_id": "ID-CTX-B-0414",
-          "second_message_id": "ID-CTX-B-0415"
+          "conversation_id": "KONV-CTX-BAGAS-B18-015",
+          "first_message_id": "ID-CTX-B-1812",
+          "second_message_id": "ID-CTX-B-1813"
         },
         {
-          "conversation_id": "KONV-CTX-MAYA-B15-030",
-          "first_message_id": "ID-CTX-B-0483",
-          "second_message_id": "ID-CTX-B-0484"
+          "conversation_id": "KONV-CTX-BAGAS-B18-015",
+          "first_message_id": "ID-CTX-B-1813",
+          "second_message_id": "ID-CTX-B-1814"
         },
         {
-          "conversation_id": "KONV-CTX-MAYA-B15-012",
-          "first_message_id": "ID-CTX-B-0283",
-          "second_message_id": "ID-CTX-B-0284"
+          "conversation_id": "KONV-CTX-BAGAS-B18-015",
+          "first_message_id": "ID-CTX-B-1814",
+          "second_message_id": "ID-CTX-B-1815"
         },
         {
-          "conversation_id": "KONV-CTX-BAGAS-B18-024",
-          "first_message_id": "ID-CTX-B-1906",
-          "second_message_id": "ID-CTX-B-1907"
+          "conversation_id": "KONV-CTX-BAGAS-B18-015",
+          "first_message_id": "ID-CTX-B-1817",
+          "second_message_id": "ID-CTX-B-1818"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1940",
-          "second_message_id": "ID-CTX-B-1941"
+          "conversation_id": "KONV-CTX-BAGAS-B18-015",
+          "first_message_id": "ID-CTX-B-1818",
+          "second_message_id": "ID-CTX-B-1819"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1941",
-          "second_message_id": "ID-CTX-B-1942"
+          "conversation_id": "KONV-CTX-DINI-B19-012",
+          "first_message_id": "ID-CTX-B-2304",
+          "second_message_id": "ID-CTX-B-2305"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1942",
-          "second_message_id": "ID-CTX-B-1943"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1570",
+          "second_message_id": "ID-CTX-B-1571"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1944",
-          "second_message_id": "ID-CTX-B-1945"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1571",
+          "second_message_id": "ID-CTX-B-1572"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1945",
-          "second_message_id": "ID-CTX-B-1946"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1572",
+          "second_message_id": "ID-CTX-B-1573"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1946",
-          "second_message_id": "ID-CTX-B-1947"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1573",
+          "second_message_id": "ID-CTX-B-1574"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1949",
-          "second_message_id": "ID-CTX-B-1950"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1574",
+          "second_message_id": "ID-CTX-B-1575"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1950",
-          "second_message_id": "ID-CTX-B-1951"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1578",
+          "second_message_id": "ID-CTX-B-1579"
         },
         {
-          "conversation_id": "KONV-CTX-RENA-B18-027",
-          "first_message_id": "ID-CTX-B-1951",
-          "second_message_id": "ID-CTX-B-1952"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1579",
+          "second_message_id": "ID-CTX-B-1580"
         },
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-015",
-          "first_message_id": "ID-CTX-B-0312",
-          "second_message_id": "ID-CTX-B-0313"
+          "conversation_id": "KONV-CTX-DINI-B17-039",
+          "first_message_id": "ID-CTX-B-1580",
+          "second_message_id": "ID-CTX-B-1581"
         },
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-015",
-          "first_message_id": "ID-CTX-B-0313",
-          "second_message_id": "ID-CTX-B-0314"
+          "conversation_id": "KONV-CTX-DINI-B17-003",
+          "first_message_id": "ID-CTX-B-1173",
+          "second_message_id": "ID-CTX-B-1174"
         },
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-015",
-          "first_message_id": "ID-CTX-B-0314",
-          "second_message_id": "ID-CTX-B-0315"
+          "conversation_id": "KONV-CTX-DINI-B17-003",
+          "first_message_id": "ID-CTX-B-1174",
+          "second_message_id": "ID-CTX-B-1175"
         },
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-015",
-          "first_message_id": "ID-CTX-B-0316",
-          "second_message_id": "ID-CTX-B-0317"
+          "conversation_id": "KONV-CTX-DINI-B17-003",
+          "first_message_id": "ID-CTX-B-1177",
+          "second_message_id": "ID-CTX-B-1178"
         },
         {
-          "conversation_id": "KONV-CTX-TANIA-B15-015",
-          "first_message_id": "ID-CTX-B-0318",
-          "second_message_id": "ID-CTX-B-0319"
+          "conversation_id": "KONV-CTX-DINI-B17-003",
+          "first_message_id": "ID-CTX-B-1178",
+          "second_message_id": "ID-CTX-B-1179"
         }
       ]
     }
@@ -390,20 +390,20 @@
     "context_A": {
       "messages": 3250,
       "comma_phrase_ya_ending": 20,
-      "barusan_ending": 16,
-      "short_1_to_3_words": 783
+      "barusan_ending": 15,
+      "short_1_to_3_words": 776
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 182,
+      "comma_phrase_ya_ending": 177,
       "barusan_ending": 47,
-      "short_1_to_3_words": 828
+      "short_1_to_3_words": 813
     },
     "bridge": {
       "messages": 1500,
-      "comma_phrase_ya_ending": 28,
+      "comma_phrase_ya_ending": 27,
       "barusan_ending": 25,
-      "short_1_to_3_words": 423
+      "short_1_to_3_words": 421
     },
     "distractor": {
       "messages": 1500,
@@ -415,7 +415,7 @@
   "near_duplicate_long_candidates_count": 0,
   "near_duplicate_long_candidates": [],
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "16e54bebb7036436d95be177fa7548ef6bdc720c80ecf0ca33d7096c5efe6e5d",
+  "working_sha256": "7dfb8945565d0977e4e8127b31611e39ddc2cc8e5e882f65bca3c88a6f540507",
   "manual_semantic_checks_required": [
     "review near-duplicate candidates in context",
     "full chronology/causality audit across anchor and synthetic messages",

@@ -14,10 +14,10 @@
   "same_conversation_timestamp_collisions": 0,
   "conversation_count": 846,
   "invalid_timestamp_ids": [],
-  "context_gaps_exactly_247_seconds": 718,
+  "context_gaps_exactly_247_seconds": 105,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "16e54bebb7036436d95be177fa7548ef6bdc720c80ecf0ca33d7096c5efe6e5d",
+  "working_sha256": "7dfb8945565d0977e4e8127b31611e39ddc2cc8e5e882f65bca3c88a6f540507",
   "repeated_four_message_suffix_windows": 0,
   "affected_conversations": 0,
   "examples": [],
@@ -25,16 +25,16 @@
     "context_A": {
       "messages": 3250,
       "comma_phrase_ya_ending": 20,
-      "barusan_ending": 16
+      "barusan_ending": 15
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 182,
+      "comma_phrase_ya_ending": 177,
       "barusan_ending": 47
     },
     "bridge": {
       "messages": 1500,
-      "comma_phrase_ya_ending": 28,
+      "comma_phrase_ya_ending": 27,
       "barusan_ending": 25
     },
     "distractor": {

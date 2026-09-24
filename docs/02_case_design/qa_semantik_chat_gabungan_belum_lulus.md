@@ -35,3 +35,11 @@ Anomali sumber yang harus tetap immutable diberi label `SOURCE_RECONSTRUCTION_AN
 - Row identity 500 anchor tervalidasi; current byte SHA `12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50`. Hash gabungan historis `63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24` belum dapat direproduksi; hanya hash bagian 01 cocok pada CRLF. Anchor tidak diubah.
 
 **QA akhir: FAILED_LANGUAGE_CONTINUITY_QA / human semantic sign-off belum sah. Corpus belum di-freeze.**
+
+## Lanjutan dari packet reviewer independen
+
+`build_final_semantic_review_packets.py` dari commit independen `20aca6a` disalin dan dijalankan pada corpus terbaru. Manifest packet sesudah repair: 228 kandidat bahasa (regex packet berbeda dari auditor), 49 overlap, 500 anchor, dan 1.511 jendela actor concurrency 15 menit. Paket tersebut **belum** diberi disposisi PASS secara massal.
+
+Perbaikan baru pada merged chat: Dini dan Kirana 7 Juli, Tania 12 Juli menjelang anchor halte `R066`, Jihan 20 Juli di sekitar anchor `R100`, dan multi-topik Jihan 18 Juli malam. Ini memperbaiki kandidat spesifik tetapi bukan klaim bahwa semua overlap chat tersebut maupun 500 anchor neighborhood sudah dibaca lengkap. Kandidat bahasa awal yang masih memerlukan full disposition = **175/190** (13 diperbaiki, 2 natural); auditor Context B kini 177 pola koma/`ya` dan 47 `barusan`.
+
+Model cadence `thread-weights-v1` mengurangi fingerprint dari 2.757 menjadi 383 gap remainder tujuh; 247 detik dari 718 ke 105. Tiga collision lintas chat akibat retiming langsung diperbaiki di synthetic rows, tanpa perubahan anchor. Pemeriksaan struktur lulus, tetapi validasi aktor global, 49 overlap, dan semua neighborhood anchor belum memiliki human sign-off. **Status tetap FAILED_LANGUAGE_CONTINUITY_QA; tidak boleh ada manifest freeze.**

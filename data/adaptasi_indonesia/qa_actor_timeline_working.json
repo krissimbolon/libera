@@ -33,8 +33,9 @@
     {
       "actor": "AKT-RAKA",
       "minute": "2026-07-03T08:29",
-      "conversation_count": 3,
+      "conversation_count": 4,
       "message_ids": [
+        "ID-CTX-B-1854",
         "ID-CTX-A-1091",
         "ID-CTX-A-2673",
         "ID-CTX-A-2815"
@@ -42,6 +43,7 @@
       "conversations": [
         "KONV-CTX-DINI-B12-013-SPIDOL",
         "KONV-CTX-KIRANA-B12-028-MASKER",
+        "KONV-CTX-RENA-B18-018",
         "KONV-CTX-TANIA-0703-HANDUK"
       ]
     },
@@ -62,17 +64,17 @@
     },
     {
       "actor": "AKT-RAKA",
-      "minute": "2026-07-03T16:12",
+      "minute": "2026-07-03T11:37",
       "conversation_count": 3,
       "message_ids": [
-        "ID-CTX-B-1712",
-        "ID-DST-1295",
-        "ID-CTX-A-2135"
+        "ID-CTX-B-2139",
+        "ID-CTX-A-2557",
+        "ID-CTX-A-2701"
       ],
       "conversations": [
-        "KONV-CTX-BAGAS-B18-006",
-        "KONV-CTX-DINI-0703-DUDUK",
-        "KONV-DST-RENA-B18-011"
+        "KONV-CTX-KIRANA-B12-001-CHARGER",
+        "KONV-CTX-NARA-B12-016-KIPAS",
+        "KONV-CTX-RENA-B18-045"
       ]
     },
     {
@@ -88,21 +90,6 @@
         "KONV-CTX-DINI-B12-022-SABUN",
         "KONV-CTX-MAYA-B15-039",
         "KONV-CTX-NARA-B12-007-KABEL"
-      ]
-    },
-    {
-      "actor": "AKT-RAKA",
-      "minute": "2026-07-07T17:38",
-      "conversation_count": 3,
-      "message_ids": [
-        "ID-CTX-B-2473",
-        "ID-CTX-B-2405",
-        "ID-CTX-B-1445"
-      ],
-      "conversations": [
-        "KONV-CTX-DINI-B19-021",
-        "KONV-CTX-KIRANA-B17-027",
-        "KONV-CTX-NARA-B19-027"
       ]
     },
     {
@@ -152,17 +139,32 @@
     },
     {
       "actor": "AKT-RAKA",
-      "minute": "2026-07-10T21:23",
+      "minute": "2026-07-12T20:42",
       "conversation_count": 3,
       "message_ids": [
-        "ID-CTX-B-1788",
-        "ID-CTX-B-0621",
-        "ID-BRG-0486"
+        "ID-BRG-0618",
+        "ID-CTX-B-1058",
+        "ID-CTX-B-0817"
       ],
       "conversations": [
-        "KONV-CTX-DINI-B15-043",
-        "KONV-CTX-KIRANA-B18-013",
-        "KONV-GAL-R060"
+        "KONV-CTX-MAYA-B16-037",
+        "KONV-CTX-REZA-B16-016",
+        "KONV-GAL-R069"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-14T17:13",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-2679",
+        "ID-CTX-B-1232",
+        "ID-CTX-B-2220"
+      ],
+      "conversations": [
+        "KONV-CTX-BAGAS-B17-007",
+        "KONV-CTX-REZA-B19-046",
+        "KONV-CTX-TANIA-B19-004"
       ]
     },
     {
@@ -178,6 +180,21 @@
         "KONV-CTX-MAYA-B12-018-SISIR",
         "KONV-CTX-TANIA-B12-003-HANDUK",
         "KONV-GAL-R089"
+      ]
+    },
+    {
+      "actor": "AKT-RAKA",
+      "minute": "2026-07-17T17:29",
+      "conversation_count": 3,
+      "message_ids": [
+        "ID-CTX-B-0343",
+        "ID-CTX-A-2611",
+        "ID-CTX-A-2752"
+      ],
+      "conversations": [
+        "KONV-CTX-RENA-B15-017",
+        "KONV-CTX-REZA-B12-006-AIRMINUM",
+        "KONV-CTX-TANIA-B12-021-BUKU"
       ]
     },
     {
@@ -229,22 +246,24 @@
     },
     {
       "actor": "AKT-RAKA",
-      "minute": "2026-07-21T19:55",
-      "conversation_count": 3,
+      "minute": "2026-07-21T15:21",
+      "conversation_count": 4,
       "message_ids": [
-        "ID-CTX-B-1264",
-        "ID-CTX-B-1454",
-        "ID-DST-0496"
+        "ID-CTX-B-2173",
+        "ID-DST-0253",
+        "ID-DST-0186",
+        "ID-CTX-B-2194"
       ],
       "conversations": [
-        "KONV-CTX-JIHAN-B17-028",
-        "KONV-CTX-TANIA-B17-011",
-        "KONV-DST-BAGAS-0721-SANDAL"
+        "KONV-CTX-JIHAN-B18-048",
+        "KONV-CTX-RENA-B19-002",
+        "KONV-DST-DINI-0721-PAYUNG",
+        "KONV-DST-REZA-0721"
       ]
     }
   ],
   "rapid_conversation_counts_by_actor": {
-    "AKT-RAKA": 13,
+    "AKT-RAKA": 14,
     "AKT-JIHAN": 2
   },
   "caca_messages_after_block": [],
