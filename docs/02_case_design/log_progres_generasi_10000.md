@@ -165,3 +165,4 @@ Pada setiap checkpoint catat:
 - Koreksi manual kedua: 131 pesan pada sepuluh thread ditulis ulang, total revisi manual 211 pesan. Jendela pengulangan tersisa 93 pada 51 conversation; validasi teks sintetis identik tetap 0. QA final masih gagal dan perbaikan dilanjutkan.
 - Koreksi manual ketiga: 67 pesan pada lima thread ditulis ulang; total 278 pesan. Indikator tersisa 73 jendela pada 46 conversation. QA final tetap gagal, termasuk audit ritme waktu.
 - Checkpoint koreksi 400 pesan: putaran keempat menambah 122 pesan pada sepuluh thread; total 400 pesan/30 thread diperbaiki. Pola akhir berulang kini 46 jendela pada 36 conversation; cadence 247 detik 731 kejadian. Hitungan corpus tetap 10.000, tetapi QA final belum lulus.
+- Koreksi kelima: 127 pesan di sepuluh thread, total revisi 527 pesan. Pola empat akhiran identik masih 26 jendela/26 thread; cadence dan review semantik penuh belum selesai. QA final tetap gagal.

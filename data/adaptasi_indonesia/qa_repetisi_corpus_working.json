@@ -17,9 +17,9 @@
   "context_gaps_exactly_247_seconds": 731,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "c00e908e822b695bf0737e3516a0f4fb156a3e818178187b7c4f56439ab0f398",
-  "repeated_four_message_suffix_windows": 46,
-  "affected_conversations": 36,
+  "working_sha256": "0f8bbb645e4d225cd79a143d2594eaf9b073aa0765e926e74aaccb94c16e7af9",
+  "repeated_four_message_suffix_windows": 26,
+  "affected_conversations": 26,
   "examples": [
     {
       "conversation_id": "KONV-CTX-DINI-B20-032",
@@ -32,18 +32,6 @@
       "first_message_id": "ID-CTX-B-2866",
       "last_message_id": "ID-CTX-B-2869",
       "repeated_suffix": "mini ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-KIRANA-B20-026",
-      "first_message_id": "ID-CTX-B-2999",
-      "last_message_id": "ID-CTX-B-3002",
-      "repeated_suffix": "catatan ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-KIRANA-B20-026",
-      "first_message_id": "ID-CTX-B-3000",
-      "last_message_id": "ID-CTX-B-3003",
-      "repeated_suffix": "catatan ya"
     },
     {
       "conversation_id": "KONV-CTX-KIRANA-B20-044",
@@ -62,30 +50,6 @@
       "first_message_id": "ID-CTX-B-1101",
       "last_message_id": "ID-CTX-B-1104",
       "repeated_suffix": "serbet ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-DINI-B17-039",
-      "first_message_id": "ID-CTX-B-1571",
-      "last_message_id": "ID-CTX-B-1574",
-      "repeated_suffix": "panas ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-DINI-B17-039",
-      "first_message_id": "ID-CTX-B-1576",
-      "last_message_id": "ID-CTX-B-1579",
-      "repeated_suffix": "panas ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-KIRANA-B17-045",
-      "first_message_id": "ID-CTX-B-1640",
-      "last_message_id": "ID-CTX-B-1643",
-      "repeated_suffix": "earphone ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-KIRANA-B17-045",
-      "first_message_id": "ID-CTX-B-1645",
-      "last_message_id": "ID-CTX-B-1648",
-      "repeated_suffix": "earphone ya"
     },
     {
       "conversation_id": "KONV-CTX-KIRANA-B17-027",
@@ -130,16 +94,52 @@
       "repeated_suffix": "catatan ya"
     },
     {
-      "conversation_id": "KONV-CTX-MAYA-B20-045",
-      "first_message_id": "ID-CTX-B-3202",
-      "last_message_id": "ID-CTX-B-3205",
-      "repeated_suffix": "kacamata ya"
+      "conversation_id": "KONV-CTX-TANIA-B20-024",
+      "first_message_id": "ID-CTX-B-2979",
+      "last_message_id": "ID-CTX-B-2982",
+      "repeated_suffix": "tipis ya"
     },
     {
-      "conversation_id": "KONV-CTX-MAYA-B20-045",
-      "first_message_id": "ID-CTX-B-3210",
-      "last_message_id": "ID-CTX-B-3213",
-      "repeated_suffix": "kacamata nih"
+      "conversation_id": "KONV-CTX-REZA-B20-003",
+      "first_message_id": "ID-CTX-B-2741",
+      "last_message_id": "ID-CTX-B-2744",
+      "repeated_suffix": "kecil ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-REZA-B20-030",
+      "first_message_id": "ID-CTX-B-3041",
+      "last_message_id": "ID-CTX-B-3044",
+      "repeated_suffix": "bening ya"
+    },
+    {
+      "conversation_id": "KONV-DST-MAYA-B12-007",
+      "first_message_id": "ID-DST-0683",
+      "last_message_id": "ID-DST-0686",
+      "repeated_suffix": "lama tadi"
+    },
+    {
+      "conversation_id": "KONV-CTX-BAGAS-B20-010",
+      "first_message_id": "ID-CTX-B-2818",
+      "last_message_id": "ID-CTX-B-2821",
+      "repeated_suffix": "botol ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-BAGAS-B20-046",
+      "first_message_id": "ID-CTX-B-3218",
+      "last_message_id": "ID-CTX-B-3221",
+      "repeated_suffix": "meja ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-JIHAN-B20-016",
+      "first_message_id": "ID-CTX-B-2887",
+      "last_message_id": "ID-CTX-B-2890",
+      "repeated_suffix": "kecil ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-MAYA-B17-017",
+      "first_message_id": "ID-CTX-B-1326",
+      "last_message_id": "ID-CTX-B-1329",
+      "repeated_suffix": "biru ya"
     }
   ],
   "namespace_style_signals": {
@@ -150,7 +150,7 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 659,
+      "comma_phrase_ya_ending": 604,
       "barusan_ending": 94
     },
     "bridge": {
