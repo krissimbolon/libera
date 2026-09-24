@@ -37,7 +37,7 @@ Dokumen ini memetakan keputusan metode LIBERA ke rujukan teknis/ilmiah yang digu
 - P4: normalized ART schema; no evaluator-only ground truth enters examiner evidence.
 - P5: deterministic keyword/timeline/entity/relationship baseline locked before P9.
 - P6: examiner-visible ART only -> evidence-aware chunks -> BGE-M3 -> cosine retrieval.
-- P7: local `llama3.1:8b`, seed 42, temperature 0.1, model digest logged when available.
+- P7: local `qwen2.5:7b`, seed 42, temperature 0.1, model digest logged when available.
 - P8: A/B/C use the same task list; B and C share the exact same retrieval trace.
 - P9: P8 outputs locked before private ground truth is opened.
 - P10: report distinguishes observation, interpretation, limitation, and dry-run vs real acquisition.
