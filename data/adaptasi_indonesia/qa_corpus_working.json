@@ -17,7 +17,7 @@
   "context_gaps_exactly_247_seconds": 105,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "56213446eaf5d7437e9602c1d2e7faf0447d19b79cf682629f2228307ecb5012",
+  "working_sha256": "5c56fc0f3de7c78054f4f3a88d4c6451e971b8c11a2d57f55c17ac886aa155f4",
   "repeated_four_message_suffix_windows": 0,
   "affected_conversations": 0,
   "examples": [],

@@ -403,7 +403,7 @@
       "messages": 1500,
       "comma_phrase_ya_ending": 27,
       "barusan_ending": 24,
-      "short_1_to_3_words": 419
+      "short_1_to_3_words": 416
     },
     "distractor": {
       "messages": 1500,
@@ -415,7 +415,7 @@
   "near_duplicate_long_candidates_count": 0,
   "near_duplicate_long_candidates": [],
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "56213446eaf5d7437e9602c1d2e7faf0447d19b79cf682629f2228307ecb5012",
+  "working_sha256": "5c56fc0f3de7c78054f4f3a88d4c6451e971b8c11a2d57f55c17ac886aa155f4",
   "manual_semantic_checks_required": [
     "review near-duplicate candidates in context",
     "full chronology/causality audit across anchor and synthetic messages",
