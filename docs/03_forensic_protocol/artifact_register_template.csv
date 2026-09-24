@@ -1,0 +1,2 @@
+artifact_id,acquisition_id,artifact_type,source_path_or_object,source_sha256,extraction_tool,tool_version_or_commit,extraction_time,output_path_private,output_sha256,row_or_object_count,raw_timezone,normalization_notes,qa_status,reviewer,limitations
+ART-00001,ACQ-001,,,,,,,,,,,,,,
