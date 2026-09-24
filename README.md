@@ -5,10 +5,10 @@ End-to-end, reproducible digital-forensics research project using a frozen synth
 ## Canonical state
 
 - P1: complete.
-- P2: **complete and frozen** on `p2-10k-work@07a33cc4c2a1fceecabe09f4bfcc01331796b46b`.
+- P2: **complete and frozen** at commit `07a33cc4c2a1fceecabe09f4bfcc01331796b46b`.
 - Canonical corpus: `data/adaptasi_indonesia/corpus_whatsapp_10000.csv`.
 - Corpus SHA-256: `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6`.
-- P3–P10 integration branch: `p3-p10-final-integration`.
+- Canonical release branch: `main`.
 
 ## Non-negotiable evidence separation
 
