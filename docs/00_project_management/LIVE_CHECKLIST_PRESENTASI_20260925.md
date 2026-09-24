@@ -5,7 +5,8 @@
 **Presentasi:** **13.00 WIB**  
 **Durasi presentasi:** **10 menit**  
 **Canonical branch:** `main`  
-**Canonical HEAD saat checklist dibuat:** `acb52e4509ab493b849341903daa9d034bc990d2`
+**Implementation baseline setelah merge P5:** `acb52e4509ab493b849341903daa9d034bc990d2`  
+**Catatan:** `main` dapat bergerak setelah baseline ini karena update dokumentasi/tracker. Untuk sinkronisasi laptop, yang wajib adalah HEAD lokal = `origin/main`, bukan harus selalu sama dengan SHA baseline di atas.
 
 > Dokumen ini adalah **single source of truth operasional** untuk seluruh anggota tim sampai PPT terkumpul dan presentasi selesai.  
 > Semua anggota boleh melihat status di sini. Update status hanya berdasarkan output nyata dari laptop; jangan menandai PASS kalau belum benar-benar dijalankan.
@@ -104,11 +105,14 @@ git rev-parse HEAD
 git status --short
 ```
 
-Expected HEAD:
+Cek bahwa HEAD lokal sama dengan remote:
 
-```text
-acb52e4509ab493b849341903daa9d034bc990d2
+```powershell
+git rev-parse HEAD
+git rev-parse origin/main
 ```
+
+Dua SHA di laptop yang sama harus identik. Implementation baseline P5 yang sudah terverifikasi adalah `acb52e4509ab493b849341903daa9d034bc990d2`; commit setelahnya boleh berupa update dokumentasi/tracker.
 
 Isi hasil aktual:
 
@@ -727,10 +731,11 @@ ERROR/BLOCKER:
 Agar tracking tidak kacau:
 
 1. Selalu `git pull --ff-only origin main` sebelum mengedit tracker.
-2. **Satu orang saja** yang mengedit tracker pada satu waktu.
-3. Jangan push runtime evidence, private GT, credentials, atau file sensitif ke repo publik.
-4. Tracker hanya menyimpan **status, angka ringkas, path relatif, dan hasil PASS/FAIL**.
-5. Gunakan commit message sederhana, misalnya:
+2. Untuk cek progres tanpa mengubah apa pun, jalankan `powershell -ExecutionPolicy Bypass -File scripts\check_presentation_progress.ps1`.
+3. **Satu orang saja** yang mengedit tracker pada satu waktu.
+4. Jangan push runtime evidence, private GT, credentials, atau file sensitif ke repo publik.
+5. Tracker hanya menyimpan **status, angka ringkas, path relatif, dan hasil PASS/FAIL**.
+6. Gunakan commit message sederhana, misalnya:
 
 ```text
 progress: update P6 final run
@@ -738,8 +743,8 @@ progress: record P8 lock
 progress: finalize presentation checklist
 ```
 
-6. Kalau ada conflict pada tracker, jangan overwrite hasil anggota lain; pull dan gabungkan status terbaru.
-7. Status `PASS` hanya boleh ditulis kalau ada output nyata yang mendukungnya.
+7. Kalau ada conflict pada tracker, jangan overwrite hasil anggota lain; pull dan gabungkan status terbaru.
+8. Status `PASS` hanya boleh ditulis kalau ada output nyata yang mendukungnya.
 
 ---
 
