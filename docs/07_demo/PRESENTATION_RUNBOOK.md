@@ -50,9 +50,9 @@ This produces `ACQ-DRY-001`; explicitly disclose that it is not an Android/Whats
 
 ## Final blind evaluation
 
-Only after the real P8 outputs have been saved/locked:
+Only after the real P8 outputs have been saved and cryptographically locked. **Do not rerun P8 after opening ground truth:**
 
-    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -GroundTruthPath D:\PRIVATE\ground_truth_final.csv
+    powershell -ExecutionPolicy Bypass -File scripts\run_p9_final.ps1 -GroundTruthPath D:\PRIVATE\ground_truth_final.csv
 
 Ground-truth messages not present on the acquired device are reported as `unacquired` and excluded from the metric denominator rather than silently treated as negatives.
 
@@ -91,6 +91,6 @@ Lock the private GT:
 
     py -3 tools\lock_private_ground_truth.py runtime\private\P9\ground_truth_annotation_packet.csv
 
-P8 is independently hash-locked by `tools/lock_p8_outputs.py`. P9 with ground truth refuses to run if the current P4/P5/P8 files no longer match that lock.
+P8 is independently hash-locked by `tools/lock_p8_outputs.py`. Final evaluation uses `scripts/run_p9_final.ps1`, which does not rerun retrieval/model inference. P9 refuses to run if the current P4/P5/P8 files no longer match that lock.
 
 Partial annotation is permitted for an explicitly declared evaluation subset: unlabeled and unacquired messages are reported separately and excluded from the confusion-matrix denominator. Do not describe a partial labeled subset as full-corpus evaluation.
