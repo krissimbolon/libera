@@ -28,6 +28,8 @@ if (-not $ArtifactsPath) {
         Write-Warning "This is NOT physical-device acquisition and must not be presented as ACQ-001."
         $UsedDryAcquisition = $true
         Run-Python -m src.forensics.acquisition_simulator
+        New-Item -ItemType Directory -Force -Path "runtime\working" | Out-Null
+        Copy-Item "runtime\private\ACQ-DRY-001\acquisition_manifest.json" "runtime\working\current_acquisition_manifest.json" -Force
         Run-Python -m src.forensics.extract_artifacts
     }
     $ArtifactsPath = "runtime/working/P4/artifacts.csv"
