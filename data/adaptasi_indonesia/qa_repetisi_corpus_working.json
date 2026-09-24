@@ -17,9 +17,9 @@
   "context_gaps_exactly_247_seconds": 731,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "7f5e4ae401c6bb9d3ca2f7bc3adfc5d9bc481733aae5f62340345781f06f706a",
-  "repeated_four_message_suffix_windows": 93,
-  "affected_conversations": 51,
+  "working_sha256": "3021979943bf83de3f6066459edf5b8722395796483a3b08310605c7f5c6845d",
+  "repeated_four_message_suffix_windows": 73,
+  "affected_conversations": 46,
   "examples": [
     {
       "conversation_id": "KONV-DST-NARA-B12-009",
@@ -56,30 +56,6 @@
       "first_message_id": "ID-CTX-B-2866",
       "last_message_id": "ID-CTX-B-2869",
       "repeated_suffix": "mini ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-NARA-B20-038",
-      "first_message_id": "ID-CTX-B-3133",
-      "last_message_id": "ID-CTX-B-3136",
-      "repeated_suffix": "meja ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-NARA-B20-038",
-      "first_message_id": "ID-CTX-B-3134",
-      "last_message_id": "ID-CTX-B-3137",
-      "repeated_suffix": "meja ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-NARA-B20-038",
-      "first_message_id": "ID-CTX-B-3135",
-      "last_message_id": "ID-CTX-B-3138",
-      "repeated_suffix": "meja ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-NARA-B20-038",
-      "first_message_id": "ID-CTX-B-3136",
-      "last_message_id": "ID-CTX-B-3139",
-      "repeated_suffix": "meja ya"
     },
     {
       "conversation_id": "KONV-CTX-KIRANA-B20-026",
@@ -140,6 +116,30 @@
       "first_message_id": "ID-CTX-B-1645",
       "last_message_id": "ID-CTX-B-1648",
       "repeated_suffix": "earphone ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-KIRANA-B17-027",
+      "first_message_id": "ID-CTX-B-1442",
+      "last_message_id": "ID-CTX-B-1445",
+      "repeated_suffix": "sisir ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-KIRANA-B17-009",
+      "first_message_id": "ID-CTX-B-1245",
+      "last_message_id": "ID-CTX-B-1248",
+      "repeated_suffix": "kecil ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-REZA-B14-009",
+      "first_message_id": "ID-CTX-A-3218",
+      "last_message_id": "ID-CTX-A-3221",
+      "repeated_suffix": "yang tadi"
+    },
+    {
+      "conversation_id": "KONV-CTX-NARA-B17-015",
+      "first_message_id": "ID-CTX-B-1309",
+      "last_message_id": "ID-CTX-B-1312",
+      "repeated_suffix": "biskuit ya"
     }
   ],
   "namespace_style_signals": {
@@ -150,7 +150,7 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 758,
+      "comma_phrase_ya_ending": 722,
       "barusan_ending": 95
     },
     "bridge": {
