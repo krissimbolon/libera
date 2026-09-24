@@ -355,13 +355,13 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 190,
-      "barusan_ending": 74,
-      "short_1_to_3_words": 863
+      "comma_phrase_ya_ending": 186,
+      "barusan_ending": 57,
+      "short_1_to_3_words": 849
     },
     "bridge": {
       "messages": 1500,
-      "comma_phrase_ya_ending": 30,
+      "comma_phrase_ya_ending": 28,
       "barusan_ending": 25,
       "short_1_to_3_words": 423
     },
@@ -372,18 +372,10 @@
       "short_1_to_3_words": 580
     }
   },
-  "near_duplicate_long_candidates_count": 1,
-  "near_duplicate_long_candidates": [
-    {
-      "message_id_a": "ID-BRG-1014",
-      "message_id_b": "ID-BRG-1065",
-      "hamming_distance": 3,
-      "token_count_a": 8,
-      "token_count_b": 9
-    }
-  ],
+  "near_duplicate_long_candidates_count": 0,
+  "near_duplicate_long_candidates": [],
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "7a313d1472cf572cb5ba1d1d754e22e4d3dfa440c9f3e20d12e16b12cdd51009",
+  "working_sha256": "5cdf90fe9098ef67f9920cb032608d4094e5c54357d20c7b1c93fd36bb75cf4f",
   "manual_semantic_checks_required": [
     "review near-duplicate candidates in context",
     "full chronology/causality audit across anchor and synthetic messages",
