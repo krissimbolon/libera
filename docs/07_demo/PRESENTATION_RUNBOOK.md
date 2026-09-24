@@ -53,7 +53,7 @@ This produces `ACQ-DRY-001`; explicitly disclose that it is not an Android/Whats
 ## Locked local AI configuration
 
 - embedding: `bge-m3` via local Ollama;
-- LLM: `qwen2.5:7b`;
+- LLM: `qwen2.5:1.5b`;
 - seed: 42;
 - temperature: 0.1;
 - context: 8192;
