@@ -1,0 +1,2 @@
+finding_id,run_id,chunk_id,artifact_id,acquisition_id,device_id,evidence_locator,claim_supported,reviewer,notes
+FND-00001,RUN-00001,CHK-00001,ART-00001,ACQ-001,DEV-001,,,,
