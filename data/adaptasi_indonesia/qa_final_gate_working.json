@@ -395,9 +395,9 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 158,
-      "barusan_ending": 39,
-      "short_1_to_3_words": 755
+      "comma_phrase_ya_ending": 152,
+      "barusan_ending": 29,
+      "short_1_to_3_words": 741
     },
     "bridge": {
       "messages": 1500,
@@ -415,7 +415,7 @@
   "near_duplicate_long_candidates_count": 0,
   "near_duplicate_long_candidates": [],
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "67053b9b6dfd0aedabfcb161068ce8fc7c93858d1e92d7cac51aed3a04748dc8",
+  "working_sha256": "f1d0ec958d2cfb968115cdca3193d9561f0d024c09f6b522de8b0890c6620077",
   "manual_semantic_checks_required": [
     "review near-duplicate candidates in context",
     "full chronology/causality audit across anchor and synthetic messages",
