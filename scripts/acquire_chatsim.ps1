@@ -1,7 +1,7 @@
 param(
     [string]$OutputRoot = ".\\demo_evidence",
     [string]$Package = "id.libera.chatsim",
-    [string]$AcquisitionId = "ACQ-001"
+    [string]$AcquisitionId = "ACQ-SIM-001"
 )
 
 $ErrorActionPreference = "Stop"
@@ -20,7 +20,7 @@ $masterDir = Join-Path $acqDir "master"
 $workingDir = Join-Path $acqDir "working"
 New-Item -ItemType Directory -Force -Path $masterDir, $workingDir | Out-Null
 
-Write-Host "=== LIBERA DEV-001 Logical Acquisition ===" -ForegroundColor Cyan
+Write-Host "=== LIBERA DEV-SIM-001 Logical Acquisition ===" -ForegroundColor Cyan
 adb wait-for-device | Out-Null
 
 $serial = (adb get-serialno).Trim()
@@ -68,9 +68,11 @@ if ($packageDump -match "versionName=([^\\s]+)") {
 
 $manifest = [ordered]@{
     acquisition_id = $AcquisitionId
-    device_id = "DEV-001"
+    device_id = "DEV-SIM-001"
     acquisition_type = "LOGICAL_APP_PRIVATE_FILE_COPY"
     research_simulation = $true
+    evidence_carrier = "LIBERA ChatSim Android emulator"
+    whatsapp_acquisition = $false
     package = $Package
     app_version = $versionName
     completed_at = (Get-Date).ToString("o")
