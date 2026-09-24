@@ -138,6 +138,8 @@ def build_index(
             "conversation_id": c.get("conversation_id"),
             "message_ids": c.get("message_ids", []),
             "evidence_ids": c.get("evidence_ids", []),
+            "time_range": c.get("time_range"),
+            "participants": c.get("participants", []),
             "content_hash_sha256": c.get("content_hash_sha256"),
             "vector": vector,
             "text": c["text"],
