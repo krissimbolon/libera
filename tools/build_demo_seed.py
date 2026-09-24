@@ -22,29 +22,38 @@ def read_actor_names(path: Path) -> dict[str, str]:
     with path.open(encoding="utf-8", newline="") as f:
         return {r["actor_id"]: r["nama_adaptasi"] for r in csv.DictReader(f)}
 
-def choose_corpus(root: Path, explicit: str | None) -> Path:
+def choose_corpus(root: Path, explicit: str | None, allow_working: bool) -> tuple[Path, bool]:
     if explicit:
         p = Path(explicit)
         if not p.is_absolute():
             p = root / p
-        return p
-    candidates = [
-        root / "data/adaptasi_indonesia/corpus_whatsapp_10000.csv",
-        root / "data/adaptasi_indonesia/corpus_whatsapp_working.csv",
-    ]
-    for p in candidates:
-        if p.exists():
-            return p
-    raise FileNotFoundError("No final/working LIBERA corpus found.")
+        is_final = p.name == "corpus_whatsapp_10000.csv"
+        if not is_final and not allow_working:
+            raise RuntimeError("Refusing non-final corpus. Use --allow-working only for development.")
+        return p, is_final
+
+    final_path = root / "data/adaptasi_indonesia/corpus_whatsapp_10000.csv"
+    if final_path.exists():
+        return final_path, True
+
+    working_path = root / "data/adaptasi_indonesia/corpus_whatsapp_working.csv"
+    if allow_working and working_path.exists():
+        return working_path, False
+
+    raise FileNotFoundError(
+        "Final corpus_whatsapp_10000.csv not found. "
+        "Use --allow-working only for development builds."
+    )
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--corpus", default=None)
+    parser.add_argument("--allow-working", action="store_true")
     parser.add_argument("--out-dir", default="apps/libera-chatsim/app/src/main/assets")
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
-    corpus = choose_corpus(root, args.corpus)
+    corpus, is_final = choose_corpus(root, args.corpus, args.allow_working)
     actors = read_actor_names(root / "data/adaptasi_indonesia/registri_aktor_indonesia.csv")
 
     out_dir = root / args.out_dir
@@ -106,6 +115,7 @@ def main() -> None:
     manifest = {
         "source_corpus": str(corpus.relative_to(root)).replace("\\", "/"),
         "source_corpus_sha256": sha256(corpus),
+        "source_is_final": is_final,
         "seed_sha256": sha256(seed_path),
         "anomaly_sha256": sha256(anomaly_path),
         "device_id": "DEV-001",
