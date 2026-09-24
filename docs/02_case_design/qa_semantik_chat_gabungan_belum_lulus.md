@@ -1,3 +1,5 @@
+> **SUPERSEDED — 24 September 2026.** Dokumen ini adalah snapshot kegagalan QA sebelum repair final. Jangan gunakan status FAIL di bawah sebagai status P2 saat ini. Status canonical sekarang **FROZEN_FOR_FORENSIC_SIMULATION**; lihat `docs/02_case_design/laporan_qa_corpus_10000.md` dan `data/adaptasi_indonesia/qa_corpus_10000.json`.
+
 # QA chat gabungan P2 — belum lulus
 
 Snapshot kerja sesudah repair Kirana 10 Juli. Dokumen ini sengaja tidak memberi sign-off atau membuat artefak final.
