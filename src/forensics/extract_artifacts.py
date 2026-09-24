@@ -54,7 +54,7 @@ def _load_metadata(conn: sqlite3.Connection) -> dict[str, str]:
 def extract_sqlite(input_db: Path) -> tuple[list[dict[str, str]], dict[str, str]]:
     if not Path(input_db).exists():
         raise ExtractionError(f"Input acquisition tidak ditemukan: {input_db}")
-    conn = sqlite3.connect(f"file:{Path(input_db).resolve()}?mode=ro", uri=True)
+    conn = sqlite3.connect(Path(input_db).resolve().as_uri() + "?mode=ro", uri=True)
     conn.row_factory = sqlite3.Row
     try:
         integrity = conn.execute("PRAGMA integrity_check").fetchone()[0]
