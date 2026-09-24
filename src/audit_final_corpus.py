@@ -122,6 +122,56 @@ def near_duplicate_candidates(rows: list[dict[str, str]], limit: int = 100) -> l
         for dist, a, b, len_a, len_b in sorted(candidates, key=lambda x: (x[0], x[1], x[2]))[:limit]
     ]
 
+def cadence_profile(rows: list[dict[str, str]], prefix: str) -> dict[str, object]:
+    subset = [r for r in rows if r["message_id"].startswith(prefix)]
+    by_conversation: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in subset:
+        by_conversation[row["conversation_id"]].append(row)
+
+    exact = Counter()
+    remainder = Counter()
+    total_gaps = 0
+    examples_247: list[dict[str, str]] = []
+
+    for conv, thread in by_conversation.items():
+        thread.sort(key=lambda r: (parse_ts(r["timestamp"]) or datetime.max.replace(tzinfo=timezone.utc), r["message_id"]))
+        for first, second in zip(thread, thread[1:]):
+            a = parse_ts(first["timestamp"])
+            b = parse_ts(second["timestamp"])
+            if a is None or b is None:
+                continue
+            seconds = int((b - a).total_seconds())
+            if seconds < 0:
+                continue
+            total_gaps += 1
+            exact[seconds] += 1
+            remainder[seconds % 60] += 1
+            if seconds == 247 and len(examples_247) < 25:
+                examples_247.append({
+                    "conversation_id": conv,
+                    "first_message_id": first["message_id"],
+                    "second_message_id": second["message_id"],
+                })
+
+    return {
+        "messages": len(subset),
+        "conversations": len(by_conversation),
+        "total_adjacent_gaps": total_gaps,
+        "exact_247": exact[247],
+        "remainder_7_seconds": remainder[7],
+        "remainder_7_pct": round((100 * remainder[7] / total_gaps), 2) if total_gaps else 0.0,
+        "top_exact_gaps": [
+            {"seconds": sec, "count": count}
+            for sec, count in exact.most_common(12)
+        ],
+        "top_second_remainders": [
+            {"remainder": sec, "count": count}
+            for sec, count in remainder.most_common(12)
+        ],
+        "examples_247": examples_247,
+    }
+
+
 def main() -> None:
     messages = read_rows(WORK)
     anchors = read_rows(ANCHOR)
@@ -198,28 +248,14 @@ def main() -> None:
         if hits:
             leakage_hits.append({"message_id": row["message_id"], "terms": hits})
 
-    by_context_conversation: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for row in synthetic:
-        if row["conversation_id"].startswith("KONV-CTX-"):
-            by_context_conversation[row["conversation_id"]].append(row)
-
-    cadence_247 = 0
-    cadence_examples = []
-    for conv, thread in by_context_conversation.items():
-        thread.sort(key=lambda r: ((parsed[r["message_id"]] or datetime.max.replace(tzinfo=timezone.utc)), r["message_id"]))
-        for first, second in zip(thread, thread[1:]):
-            a = parsed[first["message_id"]]
-            b = parsed[second["message_id"]]
-            if a is None or b is None:
-                continue
-            if (b - a).total_seconds() == 247:
-                cadence_247 += 1
-                if len(cadence_examples) < 25:
-                    cadence_examples.append({
-                        "conversation_id": conv,
-                        "first_message_id": first["message_id"],
-                        "second_message_id": second["message_id"],
-                    })
+    cadence_profiles = {
+        "context_A": cadence_profile(synthetic, "ID-CTX-A-"),
+        "context_B": cadence_profile(synthetic, "ID-CTX-B-"),
+    }
+    cadence_247 = (
+        int(cadence_profiles["context_A"]["exact_247"])
+        + int(cadence_profiles["context_B"]["exact_247"])
+    )
 
     style = {}
     for label, prefix in (
@@ -283,7 +319,7 @@ def main() -> None:
         "mixed_conversation_flags": mixed_conversation_flags[:25],
         "source_identity_leakage_hits": leakage_hits[:25],
         "context_gaps_exactly_247_seconds": cadence_247,
-        "context_gap_247_examples": cadence_examples,
+        "cadence_profiles": cadence_profiles,
         "namespace_style_signals": style,
         "near_duplicate_long_candidates_count": len(near_dups),
         "near_duplicate_long_candidates": near_dups,
