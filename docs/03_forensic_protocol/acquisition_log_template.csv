@@ -1,0 +1,2 @@
+acquisition_id,device_id,start_time,end_time,timezone,method_type,tool_name,tool_version,operator,device_state_start,network_state,source_or_interface,output_path_private,output_count,status,errors_or_warnings,notes
+ACQ-001,DEV-001,,,,,,,,,,,,,,,
