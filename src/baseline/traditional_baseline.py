@@ -13,6 +13,7 @@ import json
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+import re
 
 
 class BaselineError(RuntimeError):
@@ -47,9 +48,15 @@ def load_tasks(path: Path) -> list[dict]:
 
 def keyword_score(text: str, keywords: list[str]) -> tuple[int, list[str]]:
     low = text.casefold()
-    hits = sorted({k for k in keywords if k.casefold() in low})
-    return len(hits), hits
+    hits = []
 
+    for keyword in keywords:
+        pattern = rf"(?<!\w){re.escape(keyword.casefold())}(?!\w)"
+        if re.search(pattern, low):
+            hits.append(keyword)
+
+    hits = sorted(set(hits))
+    return len(hits), hits
 
 def run(artifact_csv: Path, tasks_json: Path, output_dir: Path, top_n: int = 20) -> dict:
     rows = load_artifacts(artifact_csv)
