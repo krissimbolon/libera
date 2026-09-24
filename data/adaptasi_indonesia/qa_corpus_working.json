@@ -17,20 +17,20 @@
   "context_gaps_exactly_247_seconds": 105,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "6f646de5440fb112f5b98e6cba2c364ef6888dd4e9070482e1edfd61cfbfc302",
+  "working_sha256": "67053b9b6dfd0aedabfcb161068ce8fc7c93858d1e92d7cac51aed3a04748dc8",
   "repeated_four_message_suffix_windows": 0,
   "affected_conversations": 0,
   "examples": [],
   "namespace_style_signals": {
     "context_A": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 20,
-      "barusan_ending": 15
+      "comma_phrase_ya_ending": 19,
+      "barusan_ending": 13
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 167,
-      "barusan_ending": 42
+      "comma_phrase_ya_ending": 158,
+      "barusan_ending": 39
     },
     "bridge": {
       "messages": 1500,
@@ -39,8 +39,8 @@
     },
     "distractor": {
       "messages": 1500,
-      "comma_phrase_ya_ending": 55,
-      "barusan_ending": 32
+      "comma_phrase_ya_ending": 53,
+      "barusan_ending": 31
     }
   },
   "manual_decision": "Corpus berjumlah tepat 10.000 tetapi pengulangan dalam satu thread merusak dialog natural. Jangan terbitkan sebagai final sebelum diperbaiki dan diaudit ulang.",
