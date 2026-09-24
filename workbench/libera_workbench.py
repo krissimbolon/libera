@@ -12,7 +12,7 @@ import streamlit as st
 st.set_page_config(page_title="LIBERA Forensic Workbench", layout="wide")
 
 st.title("LIBERA Forensic Workbench")
-st.caption("DEV-001 • WhatsApp-like synthetic evidence • examiner view")
+st.caption("DEV-SIM-001 • ChatSim synthetic evidence carrier • examiner view")
 
 with st.expander("Investigative brief", expanded=False):
     st.markdown(
