@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import os
 from pathlib import Path
@@ -156,16 +157,19 @@ with chat_tab:
         mine = row["sender_id"] == "AKT-RAKA"
         align = "flex-end" if mine else "flex-start"
         bg = "#DCF8C6" if mine else "#FFFFFF"
-        sender = "Raka" if mine else row["sender_name"]
+        sender = html.escape("Raka" if mine else str(row["sender_name"]))
+        safe_text = html.escape(str(row["message_text"]))
+        safe_time = html.escape(str(row["timestamp"])[0:16])
+        safe_id = html.escape(str(row["message_id"]))
         st.markdown(
             f"""
 <div style="display:flex;justify-content:{align};margin:4px 0;">
   <div style="max-width:72%;background:{bg};padding:8px 10px;border-radius:10px;
               box-shadow:0 1px 2px rgba(0,0,0,.12);">
     <div style="font-size:11px;color:#64748b;">{sender}</div>
-    <div style="font-size:15px;color:#111827;">{row['message_text']}</div>
+    <div style="font-size:15px;color:#111827;">{safe_text}</div>
     <div style="font-size:10px;color:#6b7280;text-align:right;">
-      {row['timestamp'][0:16]} • {row['message_id']}
+      {safe_time} • {safe_id}
     </div>
   </div>
 </div>
