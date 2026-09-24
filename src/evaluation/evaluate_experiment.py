@@ -112,10 +112,13 @@ def integrity_precheck(experiment_path: Path, artifact_ids: set[str]) -> dict:
     return summary
 
 
-def _truthy(value: str) -> bool:
-    return str(value).strip().casefold() in {
-        "1", "true", "yes", "y", "ya", "key", "relevant"
-    }
+def _binary_label(value: str):
+    token = str(value).strip().casefold()
+    if token in {"1", "true", "yes", "y", "ya", "key", "relevant", "positive"}:
+        return True
+    if token in {"0", "false", "no", "n", "tidak", "non-key", "irrelevant", "negative"}:
+        return False
+    return None
 
 
 def load_ground_truth(path: Path, msg_to_art: dict[str, str]):
@@ -131,20 +134,25 @@ def load_ground_truth(path: Path, msg_to_art: dict[str, str]):
     labeled = set()
     positive = set()
     unknown = []
+    unlabeled = []
     for r in rows:
         msg = r["message_id"]
+        label = _binary_label(r["is_key_evidence"])
+        if label is None:
+            unlabeled.append(msg)
+            continue
         if msg not in msg_to_art:
             unknown.append(msg)
             continue
         art = msg_to_art[msg]
         labeled.add(art)
-        if _truthy(r["is_key_evidence"]):
+        if label:
             positive.add(art)
-    # Ground truth may describe the complete 10,000-message designed case while a
-    # single acquired device contains only its own evidence universe. Messages not
-    # present in P4 are reported as unacquired and excluded from the denominator;
-    # they are never silently treated as true negatives.
-    return labeled, positive, unknown
+    # Ground truth may be partially annotated and may describe the complete
+    # designed case while one acquired device contains only its own evidence
+    # universe. Unlabeled and unacquired rows are reported separately and never
+    # silently treated as negatives.
+    return labeled, positive, unknown, unlabeled
 
 
 def _confusion(predicted: set[str], labeled: set[str], positive: set[str]) -> dict:
@@ -228,7 +236,7 @@ def run(
             raise EvaluationError(
                 "Refuse: ground truth hanya boleh dibuka setelah outputs_locked."
             )
-        labeled, positive, unacquired = load_ground_truth(ground_truth, msg_to_art)
+        labeled, positive, unacquired, unlabeled = load_ground_truth(ground_truth, msg_to_art)
         predictions = _experiment_sets(experiment)
         if baseline is not None:
             predictions["P5_baseline"] = _baseline_set(baseline)
@@ -243,6 +251,8 @@ def run(
             "key_evidence_rows": len(positive),
             "ground_truth_rows_unacquired": len(unacquired),
             "ground_truth_unacquired_examples": unacquired[:10],
+            "ground_truth_rows_unlabeled": len(unlabeled),
+            "ground_truth_unlabeled_examples": unlabeled[:10],
             "evaluation_universe_note": (
                 "Metrics are computed only on ground-truth messages present in "
                 "the acquired P4 evidence universe; unacquired rows are reported "
