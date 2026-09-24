@@ -128,7 +128,7 @@ def main() -> None:
         "## P6–P8 AI/RAG",
         "",
         "- Final embedding: bge-m3 via local Ollama",
-        "- Local LLM: qwen2.5:7b",
+        "- Local LLM: qwen2.5:1.5b",
         "- Seed: 42; temperature: 0.1; prompt: v2-forensic-grounded",
         "- Conditions: A LLM-only; B LLM+RAG; C LLM+RAG+structured forensic output",
         "- AI case input: P4 ART evidence only; source reconstruction and ground truth prohibited",
