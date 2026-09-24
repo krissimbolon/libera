@@ -6,7 +6,7 @@ Use this track to demonstrate a real Android logical acquisition without touchin
 
 ### 1. Preflight
 
-    git switch p3-p10-final-integration
+    git switch main
     git pull
     powershell -ExecutionPolicy Bypass -File scripts\preflight_local_windows.ps1
 
