@@ -6,6 +6,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$UsedDryAcquisition = $false
 
 function Run-Python {
     param([Parameter(ValueFromRemainingArguments=$true)][string[]]$PyArgs)
@@ -25,6 +26,7 @@ if (-not $ArtifactsPath) {
     } else {
         Write-Host "[P3] No real acquisition supplied: building CONTROLLED DRY-RUN ACQ-DRY-001."
         Write-Warning "This is NOT physical-device acquisition and must not be presented as ACQ-001."
+        $UsedDryAcquisition = $true
         Run-Python -m src.forensics.acquisition_simulator
         Run-Python -m src.forensics.extract_artifacts
     }
@@ -78,6 +80,6 @@ Write-Host "=== COMPLETE ==="
 Write-Host "P10 report: runtime/working/P10/run_report.md"
 Write-Host "P8 output: runtime/working/P8/experiment_output.json"
 Write-Host "P9 metrics: runtime/working/P9/evaluation.json"
-if (-not $AcquisitionPath) {
-    Write-Warning "P3 used ACQ-DRY-001. Real DEV-001 -> ACQ-001 remains a physical local-device step."
+if ($UsedDryAcquisition) {
+    Write-Warning "P3 used ACQ-DRY-001 software dry-run. Do not present it as an Android/WhatsApp acquisition."
 }
