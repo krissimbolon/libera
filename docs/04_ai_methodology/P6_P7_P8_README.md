@@ -60,10 +60,10 @@ python -m src.ai_rag.ollama_runner --dry-run --query "Ringkas insiden yang terja
 ```
 
 Dengan Ollama (pastikan `ollama serve` sudah jalan dan model sudah di-pull,
-mis. `ollama pull llama3.1`):
+mis. `ollama pull qwen2.5`):
 
 ```bash
-python -m src.ai_rag.ollama_runner --model llama3.1 --query "Ringkas insiden yang terjadi" --prompt-version v1
+python -m src.ai_rag.ollama_runner --model qwen2.5 --query "Ringkas insiden yang terjadi" --prompt-version v1
 ```
 
 Semua run (dry-run maupun asli) dicatat ke `configs/run_log.jsonl`.
