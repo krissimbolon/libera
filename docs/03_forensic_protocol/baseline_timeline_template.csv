@@ -1,0 +1,2 @@
+event_id,start_time,end_time,actor_ids,event_statement,evidence_artifact_ids,evidence_message_ids,confidence_or_uncertainty,alternative_explanation,investigator,review_status,notes
+EVT-0001,,,,,,,,,,,
