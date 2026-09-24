@@ -9,7 +9,7 @@ function Fail($msg) { Write-Error $msg; exit 1 }
 
 # Repository / frozen corpus
 if (-not (Test-Path "data\adaptasi_indonesia\corpus_whatsapp_10000.csv")) {
-    Fail "Run this script from the repository root on branch p3-p10-final-integration."
+    Fail "Run this script from the repository root on canonical branch main."
 }
 $expected = "A014A02EBAD298A33267DA8631F3A2D1906A537AE558C1849622904C225467E6"
 $actual = (Get-FileHash "data\adaptasi_indonesia\corpus_whatsapp_10000.csv" -Algorithm SHA256).Hash.ToUpper()
