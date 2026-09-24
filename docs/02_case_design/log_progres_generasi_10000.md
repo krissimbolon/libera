@@ -164,3 +164,4 @@ Pada setiap checkpoint catat:
 - Empat timestamp `24:xx` di thread Kirana dikoreksi ke dini hari 20 Juli; auditor kini memeriksa parse timestamp dan menghitung 731 jeda context yang tepat 247 detik. Ritme ini tetap menjadi alasan QA gaya belum lulus.
 - Koreksi manual kedua: 131 pesan pada sepuluh thread ditulis ulang, total revisi manual 211 pesan. Jendela pengulangan tersisa 93 pada 51 conversation; validasi teks sintetis identik tetap 0. QA final masih gagal dan perbaikan dilanjutkan.
 - Koreksi manual ketiga: 67 pesan pada lima thread ditulis ulang; total 278 pesan. Indikator tersisa 73 jendela pada 46 conversation. QA final tetap gagal, termasuk audit ritme waktu.
+- Checkpoint koreksi 400 pesan: putaran keempat menambah 122 pesan pada sepuluh thread; total 400 pesan/30 thread diperbaiki. Pola akhir berulang kini 46 jendela pada 36 conversation; cadence 247 detik 731 kejadian. Hitungan corpus tetap 10.000, tetapi QA final belum lulus.

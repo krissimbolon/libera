@@ -17,39 +17,15 @@
   "context_gaps_exactly_247_seconds": 731,
   "anchor_exact_match_count": 500,
   "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
-  "working_sha256": "3021979943bf83de3f6066459edf5b8722395796483a3b08310605c7f5c6845d",
-  "repeated_four_message_suffix_windows": 73,
-  "affected_conversations": 46,
+  "working_sha256": "c00e908e822b695bf0737e3516a0f4fb156a3e818178187b7c4f56439ab0f398",
+  "repeated_four_message_suffix_windows": 46,
+  "affected_conversations": 36,
   "examples": [
-    {
-      "conversation_id": "KONV-DST-NARA-B12-009",
-      "first_message_id": "ID-DST-0702",
-      "last_message_id": "ID-DST-0705",
-      "repeated_suffix": "neon tadi"
-    },
-    {
-      "conversation_id": "KONV-DST-NARA-B12-009",
-      "first_message_id": "ID-DST-0703",
-      "last_message_id": "ID-DST-0706",
-      "repeated_suffix": "neon tadi"
-    },
     {
       "conversation_id": "KONV-CTX-DINI-B20-032",
       "first_message_id": "ID-CTX-B-3062",
       "last_message_id": "ID-CTX-B-3065",
       "repeated_suffix": "kacamata ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-KIRANA-B20-035",
-      "first_message_id": "ID-CTX-B-3096",
-      "last_message_id": "ID-CTX-B-3099",
-      "repeated_suffix": "cadangan ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-KIRANA-B20-035",
-      "first_message_id": "ID-CTX-B-3097",
-      "last_message_id": "ID-CTX-B-3100",
-      "repeated_suffix": "cadangan ya"
     },
     {
       "conversation_id": "KONV-CTX-DINI-B20-014",
@@ -86,12 +62,6 @@
       "first_message_id": "ID-CTX-B-1101",
       "last_message_id": "ID-CTX-B-1104",
       "repeated_suffix": "serbet ya"
-    },
-    {
-      "conversation_id": "KONV-CTX-BAGAS-B16-036",
-      "first_message_id": "ID-CTX-B-1035",
-      "last_message_id": "ID-CTX-B-1038",
-      "repeated_suffix": "putih ya"
     },
     {
       "conversation_id": "KONV-CTX-DINI-B17-039",
@@ -140,6 +110,36 @@
       "first_message_id": "ID-CTX-B-1309",
       "last_message_id": "ID-CTX-B-1312",
       "repeated_suffix": "biskuit ya"
+    },
+    {
+      "conversation_id": "KONV-DST-REZA-B12-010",
+      "first_message_id": "ID-DST-0710",
+      "last_message_id": "ID-DST-0713",
+      "repeated_suffix": "fi tadi"
+    },
+    {
+      "conversation_id": "KONV-CTX-DINI-B14-020",
+      "first_message_id": "ID-CTX-B-0092",
+      "last_message_id": "ID-CTX-B-0095",
+      "repeated_suffix": "yang tadi"
+    },
+    {
+      "conversation_id": "KONV-CTX-REZA-B20-039",
+      "first_message_id": "ID-CTX-B-3141",
+      "last_message_id": "ID-CTX-B-3144",
+      "repeated_suffix": "catatan ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-MAYA-B20-045",
+      "first_message_id": "ID-CTX-B-3202",
+      "last_message_id": "ID-CTX-B-3205",
+      "repeated_suffix": "kacamata ya"
+    },
+    {
+      "conversation_id": "KONV-CTX-MAYA-B20-045",
+      "first_message_id": "ID-CTX-B-3210",
+      "last_message_id": "ID-CTX-B-3213",
+      "repeated_suffix": "kacamata nih"
     }
   ],
   "namespace_style_signals": {
@@ -150,8 +150,8 @@
     },
     "context_B": {
       "messages": 3250,
-      "comma_phrase_ya_ending": 722,
-      "barusan_ending": 95
+      "comma_phrase_ya_ending": 659,
+      "barusan_ending": 94
     },
     "bridge": {
       "messages": 1500,
