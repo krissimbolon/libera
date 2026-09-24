@@ -1,0 +1,102 @@
+{
+  "status": "FROZEN_FOR_FORENSIC_SIMULATION",
+  "corpus_file": "data/adaptasi_indonesia/corpus_whatsapp_10000.csv",
+  "corpus_sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6",
+  "corpus_git_blob_sha": "de6d2d20ac9b35938edaef9df0f88a7d82796366",
+  "corpus_size_bytes": 1410686,
+  "final_row_count": 10000,
+  "provenance_counts": {
+    "ADAPTED_FROM_GALLOWAY": 500,
+    "SYNTHETIC_BRIDGE": 1500,
+    "SYNTHETIC_CONTEXT": 6500,
+    "SYNTHETIC_DISTRACTOR": 1500
+  },
+  "anchor_file": "data/adaptasi_indonesia/anchor_indonesia_500.csv",
+  "anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
+  "anchor_exact_match_count": 500,
+  "audited_source_commit": "f248f41f12e53b9c2785e2dc0d7a514de521f766",
+  "canonical_creation_commit": "716216f71a3cf6d7306ab6a6f6c64291827dc201",
+  "freeze_timestamp_utc": "2026-09-24T14:53:01Z",
+  "freeze_timestamp_local": "2026-09-24T21:53:01+07:00",
+  "time_span": {
+    "first": "2026-07-01T06:11:11+07:00",
+    "last": "2026-07-21T23:41:51+07:00"
+  },
+  "participant_pair_count": 26,
+  "structural_integrity": {
+    "duplicate_message_ids": 0,
+    "exact_duplicate_rows": 0,
+    "duplicate_synthetic_text": 0,
+    "repeated_four_message_suffix_windows": 0,
+    "same_conversation_timestamp_collisions": 0,
+    "invalid_timestamps": 0,
+    "long_near_duplicate_candidates": 0,
+    "synthetic_source_original_line_nonempty": 0,
+    "source_identity_leakage_hits": 0,
+    "synthetic_only_raka_pairs": 0,
+    "bridge_messages_without_anchor_segment": 0
+  },
+  "cadence_context_b": {
+    "adjacent_gaps": 2954,
+    "remainder_7_count": 383,
+    "remainder_7_pct": 12.97,
+    "exact_247_seconds": 105,
+    "baseline_remainder_7_count": 2757,
+    "baseline_remainder_7_pct": 93.33,
+    "baseline_exact_247_seconds": 718
+  },
+  "manual_qa": {
+    "language_candidates_disposed": 228,
+    "language_unresolved": 0,
+    "merged_chat_overlaps_reviewed": 49,
+    "merged_chat_overlap_unresolved": 0,
+    "dense_actor_concurrency_windows_reviewed": 16,
+    "dense_actor_concurrency_unresolved": 0,
+    "global_actor_state_pass": true,
+    "global_physical_conflict_windows_within_30_minutes": 0,
+    "anchor_neighborhoods_reviewed": 500,
+    "anchor_neighborhood_unresolved": 0
+  },
+  "source_reconstruction_anomalies": {
+    "non_raka_anchor_message_ids": [
+      "ID-GAL-0258",
+      "ID-GAL-0263",
+      "ID-GAL-0268"
+    ],
+    "multi_identity_anchor_segments": [
+      "KONV-GAL-P22-C",
+      "KONV-GAL-R013",
+      "KONV-GAL-R080",
+      "KONV-GAL-R088"
+    ],
+    "count_by_documented_item": 7
+  },
+  "historical_anchor_hash_discrepancy": {
+    "legacy_combined_sha256": "63eeaac83bfd3b9145bbc1d99f3b7bfcce447face3f9cf7e20aa5231d55b0d24",
+    "current_anchor_sha256": "12859745a88aecca306b9f149661361ec2b8da8cd1f7c41c70ead1329b3e5e50",
+    "row_identity_verified": true,
+    "historical_byte_serialization_resolved": false,
+    "blocker": false
+  },
+  "qa_evidence": {
+    "github_actions_workflow": "P2 Final Audit",
+    "github_actions_run_id": 36015548551,
+    "github_actions_conclusion": "success",
+    "scripts": [
+      "src/audit_repetisi_corpus.py",
+      "src/audit_final_corpus.py",
+      "src/audit_chat_level_coherence.py",
+      "src/audit_actor_timeline.py",
+      "src/audit_anchor_provenance.py"
+    ],
+    "final_qa_file": "data/adaptasi_indonesia/qa_corpus_10000.json",
+    "actor_state_signoff": "docs/02_case_design/qa_global_actor_state_final.md"
+  },
+  "downstream_contract": {
+    "immutable_after_freeze": true,
+    "examiner_evidence_must_not_include_evaluator_ground_truth": true,
+    "derive_chat_id_per_participant_pair": true,
+    "retain_conversation_id_as_segment_id": true,
+    "next_phase": "DEV-001 -> ACQ-001 -> ART -> traditional baseline -> RAG/local LLM -> findings -> ground-truth evaluation"
+  }
+}
