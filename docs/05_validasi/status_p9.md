@@ -11,7 +11,7 @@ Implementasi evaluator P9, rubrik, protokol blind, lock verification, dan preche
 
 GitHub Actions `Post-P2 Integration Audit` pada HEAD `5b5cc63c56b49ebd32f76e64fe62870360909b0d` (run `36022542952`) selesai dengan **success** pada Python 3.12 dan 3.14. Jalur CI membuktikan P4 -> P5 -> P6 -> P8 dry-run -> P8 lock -> P9 integrity precheck -> P10 report dapat dieksekusi end-to-end.
 
-P9 **final** belum boleh diklaim selesai karena hasil real local P8 (BGE-M3 + Qwen2.5-7B) dan ground truth privat evaluator belum tersedia di repo publik dan memang tidak boleh disimpan di sana.
+P9 **final** belum boleh diklaim selesai karena hasil real local P8 (BGE-M3 + Qwen2.5-1.5B) dan ground truth privat evaluator belum tersedia di repo publik dan memang tidak boleh disimpan di sana.
 
 ## Yang sudah selesai
 
@@ -40,7 +40,7 @@ Artinya:
 
 - jalankan acquisition/extraction track yang dipilih dan stabilkan P4 ART;
 - jalankan P5 pada P4 final;
-- jalankan BGE-M3 + Qwen2.5-7B lokal untuk P6/P7/P8;
+- jalankan BGE-M3 + Qwen2.5-1.5B lokal untuk P6/P7/P8;
 - pastikan run log, model tag/version/digest, prompt version, retrieval trace, dan evidence citation tersedia;
 - jalankan `tools/lock_p8_outputs.py`;
 - siapkan/selesaikan private ground-truth annotation packet;
