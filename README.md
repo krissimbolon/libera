@@ -19,7 +19,21 @@ End-to-end, reproducible digital-forensics research project using a frozen synth
 5. P8 outputs are locked before P9 opens private ground truth.
 6. Raw acquisition masters, credentials, phone identifiers, and private ground truth stay outside the public repository.
 
-## Local run
+## Recommended controlled Android demo
+
+The presentation-ready acquisition carrier is **LIBERA ChatSim** on an Android emulator. It is not WhatsApp and is explicitly separated as `DEV-SIM-001 / ACQ-SIM-001`.
+
+Install the CI-built APK:
+
+    powershell -ExecutionPolicy Bypass -File scripts\install_chatsim.ps1 -ApkPath .\LIBERA-ChatSim-final-debug.apk
+
+Then run acquisition -> extraction -> P5–P10:
+
+    powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -DryRun
+
+Remove `-DryRun` for the real local BGE-M3 + LLaMA-3.1-8B run.
+
+## Local software-only fallback
 
 Windows PowerShell dry-run:
 
