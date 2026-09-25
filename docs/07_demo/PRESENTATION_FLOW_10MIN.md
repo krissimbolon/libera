@@ -8,15 +8,25 @@ Tujuan presentasi: membuat audiens memahami LIBERA sebagai **workflow pemeriksaa
 
 **Jawaban LIBERA:** acquisition dan examination tetap forensic-first; AI baru dipakai setelah evidence diperoleh dan tetap harus menunjuk kembali ke artifact yang dapat diverifikasi.
 
-## 0:00–1:00 — Hook
+## 0:00–1:00 — Hook + perkenalan kasus
 
 Pembuka:
 
-> Dari hampir 10.000 pesan di sebuah perangkat, bagaimana examiner menemukan percakapan yang penting—dan bagaimana memastikan bahwa bantuan AI tidak mengarang bukti?
+> Dalam simulasi kasus perdagangan manusia dengan hampir 10.000 pesan, bagaimana examiner menemukan percakapan yang relevan—dan memastikan bantuan AI tidak mengarang bukti?
 
-Perkenalkan Raka sebagai tokoh utama pada skenario sintetis LIBERA. Jangan menyatakan bersalah secara hukum.
+Jangan langsung bertanya “mengapa Raka diperiksa?” sebelum audiens mengenal Raka. Setelah hook, perkenalkan **Raka Pradana sebagai tokoh sentral dalam skenario sintetis LIBERA**, bukan sebagai orang nyata yang sudah dinyatakan bersalah.
 
-## 1:00–2:00 — Kasus dan sumber data
+Urutan slide awal:
+
+1. **Slide 1 — LIBERA:** masalah dan pendekatan penelitian.
+2. **Slide 2 — Kasus yang Kami Simulasikan:** siapa Raka, mengapa perangkat simulasinya menjadi evidence carrier, tema apa yang dicari examiner, dan apa yang sebenarnya diuji.
+3. **Slide 3 — Bagaimana Skenario Raka Dibangun?:** baru jelaskan provenance struktur kasus publik → adaptasi Indonesia → corpus sintetis 10.000 pesan → frozen/hashed.
+
+Kalimat untuk memperkenalkan Raka:
+
+> Raka Pradana adalah tokoh sentral dalam skenario sintetis yang kami bangun. Perangkat simulasinya memuat 9.997 pesan dalam 25 chat dan digunakan sebagai controlled evidence carrier. Fokus kami bukan menetapkan Raka bersalah, tetapi menguji apakah bukti digital dapat diperoleh, ditelusuri, dianalisis, dan divalidasi.
+
+## 1:00–2:00 — Sumber dan konstruksi skenario
 
 - Struktur kasus berasal dari rekonstruksi sumber publik, lalu diadaptasi menjadi skenario sintetis Indonesia.
 - Corpus final berisi 10.000 pesan dan kemudian dibekukan.
