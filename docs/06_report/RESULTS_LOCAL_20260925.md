@@ -4,7 +4,7 @@
 
 P8 selesai untuk seluruh T01–T10: 30 respons nyata A/B/C, tanpa error transport/retry, dan semua generation berhenti normal. Sepuluh output C memenuhi schema JSON. Output beserta input dan konfigurasi telah dikunci; 14/14 hash terverifikasi.
 
-P9 telah menyelesaikan validasi identifier dan penanganan referensi rusak. **Evaluasi blind precision/recall/F1 belum selesai karena path ground truth privat belum diberikan.**
+P9 telah menyelesaikan validasi identifier dan penanganan referensi rusak. **Independent human semantic ground truth tidak tersedia pada studi ini; karena itu precision/recall/F1 semantik final tidak diklaim.**
 
 ## Data dan metode actual
 
@@ -40,7 +40,7 @@ Kebijakan [karantina P9](../05_validasi/P9_CITATION_POLICY_20260925.md) ditambah
 
 ## Kesimpulan sementara
 
-Pipeline berhasil menuntaskan eksperimen lokal yang dapat diaudit. Schema JSON meningkatkan keteraturan format, tetapi pada run ini belum menjamin referensi evidence yang valid. Penanganan referensi mencegah identifier rusak dipakai sebagai evidence sah; temuan kesalahan tetap membatasi kesimpulan tentang kualitas model. Belum ada dasar untuk menyatakan RAG/C lebih akurat sampai evaluasi blind dan review semantik selesai.
+Pipeline berhasil menuntaskan eksperimen lokal yang dapat diaudit. Schema JSON meningkatkan keteraturan format, tetapi pada run ini belum menjamin referensi evidence yang valid. Penanganan referensi mencegah identifier rusak dipakai sebagai evidence sah; temuan kesalahan tetap membatasi kesimpulan tentang kualitas model. Belum ada dasar untuk menyatakan RAG/C lebih akurat secara semantik. Hasil yang dapat dipertanggungjawabkan adalah integritas acquisition, kelengkapan eksekusi, traceability, schema validity, output locking, dan citation validation.
 
 ## Artefak lanjutan
 
