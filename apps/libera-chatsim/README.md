@@ -43,7 +43,7 @@ For acquisition + extraction + P5–P10 dry-run:
 
     powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -DryRun
 
-For real local BGE-M3 + Qwen2.5-7B:
+For real local BGE-M3 + Qwen2.5-1.5B:
 
     powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1
 
