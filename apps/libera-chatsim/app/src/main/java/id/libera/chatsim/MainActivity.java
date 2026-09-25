@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
                 ViewGroup.LayoutParams.MATCH_PARENT, dp(48)));
 
         subtitle = new TextView(this);
-        subtitle.setText("DEV-001 • simulated Raka handset");
+        subtitle.setText("DEV-SIM-001 • simulated Raka handset");
         subtitle.setTextSize(12);
         subtitle.setTextColor(Color.rgb(225, 245, 242));
         subtitle.setPadding(dp(18), 0, dp(18), dp(10));
@@ -72,12 +72,12 @@ public class MainActivity extends Activity {
 
         try {
             DatabaseHelper.SeedResult seeded = db.ensureSeeded();
-            subtitle.setText("DEV-001 • Raka Pradana • " + seeded.chats +
+            subtitle.setText("DEV-SIM-001 • Raka Pradana • " + seeded.chats +
                     " chats • " + seeded.messages + " messages");
             adapter = new ChatAdapter(db.listChats());
             list.setAdapter(adapter);
         } catch (Exception e) {
-            subtitle.setText("DEV-001 • seed unavailable");
+            subtitle.setText("DEV-SIM-001 • seed unavailable");
             Toast.makeText(this,
                     "Seed gagal dimuat. Jalankan tools/build_demo_seed.py sebelum build.\n" + e.getMessage(),
                     Toast.LENGTH_LONG).show();
