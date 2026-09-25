@@ -1,108 +1,96 @@
-# Streamlit terintegrasi langsung dengan ChatSim
+# Streamlit Workbench terintegrasi langsung dengan ChatSim
 
-Status: demo lokal selesai dan diverifikasi pada 25 September 2026.
+Status: demo lokal selesai dan diverifikasi pada 25 September 2026. Workbench kini disusun **forensic-first**: AI berada setelah acquisition, integrity check, dan pemeriksaan tradisional.
 
 ## Menjalankan
 
-Jalankan emulator yang telah terpasang ChatSim dan buka aplikasinya. Dari root repo:
+Jalankan emulator yang sudah terpasang ChatSim, lalu dari root repo:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/run_workbench.ps1
 ```
 
-Buka <http://127.0.0.1:8501>, pilih perangkat, lalu klik **Ambil data terbaru dari ChatSim**.
-Port lain dapat dipilih dengan `-Port 8502`.
-
-Setup pertama pada komputer lain:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-demo.txt
-```
-
-ADB dicari dari `LIBERA_ADB`, PATH, `ANDROID_HOME`, `ANDROID_SDK_ROOT`, atau Android SDK
-standar di LOCALAPPDATA. Perangkat harus berstatus `device`; gunakan debug APK ChatSim
-penelitian yang mendukung `run-as`. Jika perlu atur lokasi manual:
-
-```powershell
-$env:LIBERA_ADB = 'C:\lokasi\platform-tools\adb.exe'
-```
-
-`streamlit run app.py` juga mengarah ke dashboard yang sama. Untuk membuka hasil yang
-sudah selesai, gunakan `run_workbench.ps1`. `run_libera_demo.ps1` menjalankan pipeline
-eksperimen penuh; jangan menjalankannya ulang untuk sekadar membuka UI setelah GT dibuka.
+Buka `http://127.0.0.1:8501`. Workbench berjalan lokal. Setelah seluruh dependency tersedia, pemeriksaan evidence dan tampilan hasil historis tidak memerlukan pengiriman case data ke layanan cloud.
 
 ## Alur data
 
 ```text
-ChatSim Android (id.libera.chatsim)
-  → ADB force-stop + run-as cat databases/libera_messages.db
-  → verifikasi hash perangkat dan salinan lokal
-  → runtime/chatsim_snapshots/ACQ-SIM-LIVE_.../{master,working}/libera_messages.db
-  → query SQLite read-only
-  → Streamlit
+ChatSim Android (DEV-SIM-001)
+  → ADB force-stop + run-as
+  → logical SQLite acquisition
+  → master copy + working copy
+  → SHA-256 verification
+  → read-only SQLite examination
+  → traditional examiner view
+  → optional local AI assistance
+  → citation validation
+  → report
 ```
 
-Dashboard tidak membaca atau mengunggah CSV sebagai sumber percakapan. Corpus CSV P2
-tetap merupakan bahan pembuatan simulasi dan CSV P4 tetap input historis eksperimen;
-integrasi ini tidak mengubah asal-usul penelitian. Dashboard hanya menghitung hash
-input historis untuk memeriksa lock, tanpa memuat isi pesan CSV.
+ChatSim adalah controlled Android evidence carrier untuk simulasi penelitian. Ia bukan WhatsApp dan bukan perangkat sitaan nyata.
 
-Setiap akuisisi membuat folder baru. Master sebelumnya tidak ditimpa. ChatSim dihentikan
-agar SQLite konsisten; buka kembali aplikasinya di emulator setelah akuisisi. WAL tidak
-kosong ditolak. SQLite diperiksa melalui `integrity_check` dan `foreign_key_check`,
-serta hash master, working, dan manifest harus cocok.
+Dashboard tidak membaca CSV sebagai sumber percakapan. Pesan yang diperiksa berasal dari SQLite hasil acquisition ChatSim. Historical P8/P9/P10 hanya ditampilkan jika lock dan hash yang diperlukan lolos verifikasi.
 
-Ini adalah **snapshot yang diperbarui lewat tombol**, bukan streaming otomatis.
-Perubahan di ChatSim muncul setelah akuisisi berikutnya. Saat emulator offline,
-snapshot SQLite lokal yang sudah tersedia tetap dapat diperiksa.
-
-## Tab dashboard
+## Delapan tab Workbench
 
 | Tab | Fungsi |
 | --- | --- |
-| Ringkasan | Jumlah pesan/chat, akuisisi, hash, aktivitas harian |
-| Percakapan | Chat kronologis dengan pagination |
-| Pencarian | Frasa literal dan filter pengirim |
-| Timeline | Pesan per tanggal |
-| Jejak bukti | Lookup evidence ID/message ID beserta identitas snapshot |
-| Hasil A/B/C | Output asli T01–T10, validasi referensi, bukti retrieval |
-| Evaluasi & Laporan | Metrik proxy, karantina, unduh laporan P10 |
+| **Kasus & Integritas** | Menunjukkan acquisition ID, device ID, jumlah artifact/chat, SHA-256, dan status master/working copy. |
+| **Percakapan** | Membaca chat kronologis dari working copy. |
+| **Pencarian** | Literal search dan filter pengirim tanpa AI. |
+| **Timeline** | Meninjau artifact berdasarkan tanggal. |
+| **Jejak Bukti** | Menelusuri `ART-*` atau `message_id` kembali ke acquisition snapshot. |
+| **Pemeriksaan Tradisional** | Menampilkan actor/pair activity serta P5 human examiner QC bila packet tersedia. |
+| **Asisten AI** | Menampilkan locked A/B/C experiment sebagai copilot setelah evidence tersedia. |
+| **Validasi & Laporan** | Memprioritaskan citation integrity dan quarantined references; provenance proxy ditempatkan sebagai analisis tambahan. |
 
-`ART-xxxxxx` mengikuti urutan `timestamp,message_id`, sama dengan extractor P4. ID berlaku
-dalam satu snapshot. Jika hash SQLite berbeda dari sumber P8, tautan hasil historis ke
-pesan snapshot baru dinonaktifkan.
+## Makna A/B/C
 
-## Integritas dan batas interpretasi
+A/B/C bukan tiga tahap forensic workflow.
 
-Hasil historis berasal dari `runtime/working/P8_final_v6_20260925` dan
-`runtime/working/P9_reconstructed_20260925`. Dashboard memverifikasi seluruh lock P8
-serta hash evaluasi/laporan terhadap completion manifest. Folder runtime bersifat lokal
-dan diabaikan Git. Checkout baru dapat mengakuisisi ChatSim, tetapi hasil historis
-memerlukan artefak run yang sah di lokasi tersebut. Dashboard tidak menjalankan Ollama.
+- **A — tanpa case evidence:** negative control.
+- **B — + retrieved evidence:** BGE-M3 mengambil artifact lokal untuk menjawab investigation question.
+- **C — + structured output:** retrieval sama dengan B, tetapi jawaban dipaksa ke schema terstruktur agar lebih mudah diaudit.
 
-12 referensi C tidak valid tetap tampil pada output asli untuk audit, tetapi dikarantina
-dan tidak dikreditkan sebagai bukti benar. Kesalahan model tetap dilaporkan; validitas
-referensi C adalah 12/24 (50%). Karantina tidak membuat performa model menjadi sempurna.
+Final run menyelesaikan 30/30 respons. Semua 10 output C valid secara schema, tetapi hanya 12 dari 24 evidence references C yang valid. Dua belas reference lainnya dikarantina dan tetap dipertahankan sebagai error model.
 
-Ground truth rekonstruksi adalah **proxy provenance**, bukan anotasi semantik independen.
-Ada 1.997 pesan berlabel proxy terakuisisi dan 8.000 tanpa label. Pesan tanpa label tidak
-dianggap negatif. Dashboard tidak membaca berkas label privat. Lihat
-[metodologi rekonstruksi](../05_validasi/GT_RECONSTRUCTION_P9_P10_20260925.md).
+## Integritas snapshot
 
-## Verifikasi lokal
+Setiap acquisition membuat folder baru. Master sebelumnya tidak ditimpa. ChatSim dihentikan sementara agar SQLite konsisten. Workbench menolak snapshot jika:
 
-- Akuisisi nyata emulator-5554: **9.997 pesan, 25 chat**, SQLite valid.
-- Akuisisi lewat tombol browser: `ACQ-SIM-LIVE_20260924T225719_714954Z`.
-- Hash sumber P8 dan snapshot identik:
-  `6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc`.
-- **38 tes pytest lulus**, termasuk baca SQLite tanpa CSV, manipulasi hash, akuisisi ADB,
-  perangkat unauthorized, dan penolakan WAL aktif.
-- Streamlit AppTest: tujuh tab tanpa exception, pencarian `parkir` menghasilkan 28 pesan,
-  T10 terbuka, ID tidak dikenal ditolak, tautan hilang saat hash berbeda, dan `app.py` berjalan.
-- Browser agent-browser: halaman tampil, akuisisi lewat tombol, pencarian, navigasi hasil
-  A/B/C dan evaluasi; tidak ada browser error tercatat.
-- Screenshot lokal: `runtime/workbench_overview.png`, `runtime/workbench_evaluation.png`.
+- hash perangkat dan file hasil capture berbeda;
+- hash master/working/manifest tidak cocok;
+- SQLite `integrity_check` gagal;
+- `foreign_key_check` menemukan masalah;
+- WAL aktif dan tidak kosong.
 
-Implementasi demo selesai. Anotasi semantik independen tetap pekerjaan validasi penelitian
-terpisah; hasil proxy tidak boleh dinyatakan sebagai akurasi bukti kunci independen.
+`ART-xxxxxx` mengikuti urutan deterministik `timestamp,message_id` pada satu snapshot. Jika hash snapshot berbeda dari sumber eksperimen P8, evidence link historis dinonaktifkan agar hasil lama tidak dipetakan ke snapshot baru secara keliru.
+
+## Actual local results
+
+- Acquisition ChatSim: **9.997 pesan, 25 chat**.
+- P5 examiner review: **6 SUPPORTED, 4 NOT_SUPPORTED, 2 UNCERTAIN** dari 12 candidate artifacts.
+- P6: **645 BGE-M3 index entries**, dimensi 1.024, leakage check PASS.
+- P8: **30/30 real responses**, 10/10 C schema valid, **14/14 P8 lock hashes PASS**.
+- Citation validation: B tidak menghasilkan invalid reference pada final run; C menghasilkan **12 invalid references dari 24 submitted references**.
+
+## Batas interpretasi
+
+Provenance reconstruction yang tersedia bukan independent semantic ground truth. Proxy metrics hanya mengukur subset anchor-versus-distractor dan tidak boleh disebut semantic accuracy key evidence.
+
+Independent human semantic annotation belum tersedia. Karena itu LIBERA tidak membuat klaim final precision/recall/F1 terhadap key forensic evidence.
+
+## Peran Workbench dalam presentasi
+
+Untuk demo 10 menit, urutan yang disarankan:
+
+1. buka ChatSim;
+2. tunjukkan acquisition snapshot dan SHA-256;
+3. buka conversation/search/timeline;
+4. telusuri satu `ART-*`;
+5. buka pemeriksaan tradisional/P5;
+6. baru buka satu investigation question pada tab Asisten AI;
+7. tunjukkan bahwa structured output dapat tetap memiliki citation error;
+8. tutup dengan tab Validasi & Laporan.
+
+Jangan menjalankan full embedding atau 30 inference call saat presentasi. Gunakan hasil P8 yang sudah dikunci.
