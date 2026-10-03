@@ -71,7 +71,7 @@ Studi literatur dan kontrak mendahului pemeriksaan fondasi W1, uji keamanan W2, 
 
 ## 3.2 Arsitektur/Desain Sistem
 
-Fondasi canonical W1 menggunakan sumber corpus sintetis P2 yang dipertahankan, paket acquisition P3, artefak pemeriksa P4, dan baseline deterministic P5. Ini merupakan acquisition simulasi; tidak dilakukan klaim ekstraksi telepon fisik. Corpus/acquisition sumber dibedakan dari working outputs; ground truth evaluator berada di luar Git dan tidak digunakan oleh examiner. Local LLM hanya dijalankan setelah evidence P4 disetujui, sedangkan evaluasi P9 berada di sisi evaluator setelah LOCK. Detail boundary isolasi host/network dan diagram final mengikuti evidence W4; eksekusi lokal saja belum membuktikan sandbox jaringan.
+Fondasi canonical W1 menggunakan sumber corpus sintetis P2 yang dipertahankan, paket acquisition P3, artefak pemeriksa P4, dan baseline deterministic P5. Ini merupakan acquisition simulasi; tidak dilakukan klaim ekstraksi telepon fisik. Corpus/acquisition sumber dibedakan dari working outputs; ground truth evaluator dirancang berada di luar Git dan tidak digunakan oleh examiner dalam run sesi ini. Pemisahan akses run tidak membuktikan strict blindness terhadap konteks konstruksi kasus publik; paparan historis/schema masih perlu diaudit. Local LLM hanya dijalankan setelah evidence P4 disetujui, sedangkan evaluasi P9 berada di sisi evaluator setelah LOCK. Detail boundary isolasi host/network dan diagram final mengikuti evidence W4; eksekusi lokal saja belum membuktikan sandbox jaringan.
 
 Tabel 3.1. Interface fondasi canonical. Sumber: kontrak 1.0 dan W1 runtime_summary.json (claim W1-001–W1-003).
 
