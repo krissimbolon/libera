@@ -1,0 +1,48 @@
+{
+  "is_physical_acquisition": false,
+  "gt_accessed": false,
+  "corpus_sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6",
+  "corpus_preserved": true,
+  "acquisition_sha256": "30c39e40ce3227afe17216d29ddf0124c2f16789680a680f7172d1772a84f62c",
+  "acquisition_preserved": true,
+  "artifact_count": 10000,
+  "unique_artifact_ids": 10000,
+  "chat_count": 26,
+  "task_count": 10,
+  "actor_count": 26,
+  "relationship_count": 26,
+  "artifacts_sha256": "d5e6fb73fce3694585aa74b2c51de6440efe911060318e1993675148e2024cfd",
+  "baseline_findings_sha256": "a993e362f8906afef0ca8d7bc3b302691edd504cd6c0373750e8b2af1469164b",
+  "deterministic_findings": true,
+  "integrity_verification": "TRUSTED_EXPECTED_SHA256",
+  "output_fields": [
+    "evidence_id",
+    "artifact_id",
+    "acquisition_id",
+    "device_id",
+    "message_id",
+    "conversation_id",
+    "segment_id",
+    "sender",
+    "receiver",
+    "timestamp_normalized",
+    "message_text",
+    "message_type",
+    "reply_to_message_id",
+    "attachment_id"
+  ],
+  "p5_output_files": [
+    "baseline_findings.json",
+    "baseline_manifest.json",
+    "entities.csv",
+    "relationships.csv",
+    "timeline.csv"
+  ],
+  "p4_aliases_rejected": [
+    "same",
+    "symlink",
+    "hardlink"
+  ],
+  "p3_corpus_alias_rejected": true,
+  "workbench_current_names": true
+}
