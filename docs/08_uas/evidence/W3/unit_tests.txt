@@ -1,0 +1,12 @@
+test_digest_does_not_match_wrong_tag (test_uas_w3_lock_integrity.LockTests.test_digest_does_not_match_wrong_tag) ... ok
+test_error_refused (test_uas_w3_lock_integrity.LockTests.test_error_refused) ... ok
+test_missing_provenance_refused (test_uas_w3_lock_integrity.LockTests.test_missing_provenance_refused) ... ok
+test_structured_scalar_does_not_crash (test_uas_w3_lock_integrity.LockTests.test_structured_scalar_does_not_crash) ... ok
+test_structured_wrong_evidence_type_refused (test_uas_w3_lock_integrity.LockTests.test_structured_wrong_evidence_type_refused) ... ok
+test_stub_refused (test_uas_w3_lock_integrity.LockTests.test_stub_refused) ... ok
+test_synthetic_valid_record_schema (test_uas_w3_lock_integrity.LockTests.test_synthetic_valid_record_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK

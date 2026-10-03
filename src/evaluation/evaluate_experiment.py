@@ -50,6 +50,17 @@ def verify_p8_lock(lock_manifest: Path, artifacts: Path, baseline: Path | None, 
             raise EvaluationError(
                 f"P8 lock mismatch for {key}: recorded={recorded} actual={actual}"
             )
+    # Config, questions and run log are part of the frozen study too.
+    for key in ("p6_p7_config", "investigation_tasks", "p8_run_log"):
+        entry = files.get(key) or {}
+        path = Path(entry.get("path", ""))
+        if not path.is_file() or _sha256(path) != entry.get("sha256"):
+            raise EvaluationError(f"P8 lock mismatch for {key}")
+    from tools.lock_p8_outputs import validate_real_experiment
+    try:
+        validate_real_experiment(experiment, Path(files["investigation_tasks"]["path"]), Path(files["p6_p7_config"]["path"]))
+    except (ValueError, TypeError) as exc:
+        raise EvaluationError(f"P8 execution invalid: {exc}") from exc
     return {
         "lock_status": data["status"],
         "locked_at_utc": data.get("locked_at_utc"),
@@ -96,6 +107,13 @@ def _parse_structured_output(text: str):
         "possible_interpretation", "contradicting_evidence",
         "confidence_uncertainty", "finding",
     }
+    if not isinstance(obj, dict):
+        return None, False
+    from src.ai_rag.validate_output import validate_structured_finding, ValidationError
+    try:
+        validate_structured_finding(obj)
+    except ValidationError:
+        return obj, False
     return obj, required.issubset(obj)
 
 
@@ -262,6 +280,10 @@ def run(
         "outputs_locked": outputs_locked,
         "integrity": integrity_precheck(experiment, artifact_ids),
         "ground_truth_evaluation": None,
+        "supportedness": {
+            "status": "NOT_EVALUATED",
+            "limitation": "Citation existence and schema checks do not establish semantic claim support; independent claim-level review required.",
+        },
         "p8_lock_verification": None,
     }
     if result["integrity"]["retrieval_invalid_evidence_ids"]:
@@ -279,6 +301,11 @@ def run(
         result["p8_lock_verification"] = verify_p8_lock(
             lock_manifest, artifacts, baseline, experiment
         )
+        if result["integrity"]["retrieval_invalid_evidence_ids"] or any(
+            c["errors"] or c["invalid_citation_count"]
+            for c in result["integrity"]["conditions"].values()
+        ):
+            raise EvaluationError("Refuse private GT access: integrity precheck failed")
         labeled, positive, unacquired, unlabeled = load_ground_truth(ground_truth, msg_to_art)
         predictions = _experiment_sets(experiment)
         if baseline is not None:
