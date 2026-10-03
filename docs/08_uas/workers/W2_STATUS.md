@@ -11,3 +11,5 @@ Next: owner adoption then integrated retest; do not claim all security findings 
 P2 unchanged; no private GT opened; no external security probing.
 
 Checkpoint correction: independent blocked flags reset before every probe; assertions fail audit if guard does not reject. Baseline loaded from verified Git SHA 62f8088c9f4833fa6ddf0149c6509a7162eaa9cf. Harmless synthetic tampered SQLite retained for static inspection; digest matches recorded after SHA. Evidence commit ae96920f7a9d8cfc7c4eaf552548f53459f4d0d3. W1/W3 adoption approved and requested; integrated retest still pending.
+
+Canonical owner API retest VERIFIED_BY_WORKER: W1 a9df81f082ef4528ae7f0e7c1fd2d6aa511a67e6 and W3 64819a36c93cbc58a4654210c70a1f7e1f27f59c; tamper rejected without output, remote endpoint/redirect/nested GT rejected. Evidence 1c7b60683c0a21035fbf8501616027a3a2b71bbd. Final merged integration retest remains Coordinator responsibility.

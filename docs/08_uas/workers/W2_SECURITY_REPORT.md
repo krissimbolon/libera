@@ -18,3 +18,6 @@ Benign sample changes one synthetic SQLite message. SHA-256 values are recorded 
 ## Scan and retest
 Reproduce: `PYTHONPATH=. python tools/security_uas_audit.py`.
 Four unittest cases pass, including positive intact/valid input and negative tamper/nested-key/remote-endpoint tests. Tracked sensitive filename scan finds none of .env/id_rsa/id_ed25519/*.pem/*.key at this checkpoint; this limited screen does not establish absence of secrets or leaked labels in history. Full dependency advisory scan not completed by W2. P2 SHA stays canonical. Exact outputs and limitations are in security_results.json and retest.txt.
+
+## Owner adoption retest
+Canonical owner APIs executed at W1 a9df81f082ef4528ae7f0e7c1fd2d6aa511a67e6 and W3 64819a36c93cbc58a4654210c70a1f7e1f27f59c. P4 trusted expected hash rejects modified SQLite and produces no tampered output. Local transport rejects remote host and redirects, rewrites localhost to literal loopback. Canonical structured validator rejects nested forbidden GT key. See owner_retest.json. P4 legacy optional hash path remains; final integrated retest has not yet run. The prior pending-adoption description refers to the initial checkpoint only.

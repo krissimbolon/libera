@@ -1,0 +1,13 @@
+{
+  "sample_type": "benign SQLite synthetic evidence; no executable payload",
+  "sha256": "ca1f7c60d680ec6141d6a31cf7dfd8afce59dca4cdc47128391ff32fe8bc3c4c",
+  "size_bytes": 8192,
+  "integrity_check": "ok",
+  "tables": [
+    [
+      "messages"
+    ]
+  ],
+  "row_count": 1,
+  "message_text": "synthetic tampered"
+}
