@@ -1,0 +1,23 @@
+COMMAND: python -m unittest discover -s tests -p test_uas_w3_lock_integrity.py -v
+INTEGRATION_SHA: 89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d
+EXIT: 0
+test_digest_does_not_match_wrong_tag (test_uas_w3_lock_integrity.LockTests.test_digest_does_not_match_wrong_tag) ... ok
+test_error_refused (test_uas_w3_lock_integrity.LockTests.test_error_refused) ... ok
+test_incomplete_registered_tasks_refused (test_uas_w3_lock_integrity.LockTests.test_incomplete_registered_tasks_refused) ... ok
+test_invalid_c_refused (test_uas_w3_lock_integrity.LockTests.test_invalid_c_refused) ... ok
+test_invalid_task_row_refused (test_uas_w3_lock_integrity.LockTests.test_invalid_task_row_refused) ... ok
+test_localhost_pinned (test_uas_w3_lock_integrity.LockTests.test_localhost_pinned) ... ok
+test_missing_provenance_refused (test_uas_w3_lock_integrity.LockTests.test_missing_provenance_refused) ... ok
+test_nested_gt_refused (test_uas_w3_lock_integrity.LockTests.test_nested_gt_refused) ... ok
+test_redirect_refused (test_uas_w3_lock_integrity.LockTests.test_redirect_refused) ... ok
+test_registered_model_mismatch_refused (test_uas_w3_lock_integrity.LockTests.test_registered_model_mismatch_refused) ... ok
+test_remote_host_refused (test_uas_w3_lock_integrity.LockTests.test_remote_host_refused) ... ok
+test_structured_scalar_does_not_crash (test_uas_w3_lock_integrity.LockTests.test_structured_scalar_does_not_crash) ... ok
+test_structured_wrong_evidence_type_refused (test_uas_w3_lock_integrity.LockTests.test_structured_wrong_evidence_type_refused) ... ok
+test_stub_refused (test_uas_w3_lock_integrity.LockTests.test_stub_refused) ... ok
+test_synthetic_valid_record_schema (test_uas_w3_lock_integrity.LockTests.test_synthetic_valid_record_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.004s
+
+OK

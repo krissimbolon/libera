@@ -1,0 +1,30 @@
+{
+  "url": "https://webstore.ansi.org/preview-pages/BSI/preview_30465419.pdf",
+  "publisher": "BSI; official ANSI Webstore distribution",
+  "retrieved_at": "2026-10-03",
+  "tool_source_id": "turn12view1",
+  "method": "Read table of contents, PDF page indices 6\u20138, match identifier/theme",
+  "verified_identifiers": [
+    "5.9",
+    "5.12",
+    "5.15",
+    "5.18",
+    "5.24",
+    "5.25",
+    "5.26",
+    "5.27",
+    "5.28",
+    "5.31",
+    "5.34",
+    "8.9",
+    "8.10",
+    "8.11",
+    "8.12",
+    "8.13",
+    "8.15",
+    "8.24",
+    "8.32"
+  ],
+  "count": 19,
+  "limits": "Preview only; no full normative conformity/certification opinion"
+}

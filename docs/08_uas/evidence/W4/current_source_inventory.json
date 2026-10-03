@@ -1,0 +1,40 @@
+{
+  "integration_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+  "sources": [
+    {
+      "path": "src/ai_rag/local_transport.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "273537a9161ac9f648517418e12bef8e6a840e7d6be00a0e76087cd889fe9f5a"
+    },
+    {
+      "path": "src/ai_rag/ollama_runner.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "8209065da5d8bd459b50afd9addb8d41806b6f4e073bc7619b925176527aebf2"
+    },
+    {
+      "path": "src/ai_rag/retriever.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "9620242818601d952da0ce2176dd8921ad6e7dfd1604653a624db10b40a8eeb2"
+    },
+    {
+      "path": "src/ai_rag/run_log.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "df65d0ed3dfbd5f5dd1abaaf40988e1f9b87298ca41c3ccf42c836917a044527"
+    },
+    {
+      "path": "src/ai_rag/run_experiment.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "e4723d6da94cdf8e04a1b14da02b7b5b10c5288026825d5a78b7c8b667507b44"
+    },
+    {
+      "path": "src/forensics/extract_artifacts.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "6e7ce0d3a74a6638cf35c1da3477659f358574b0f575897872365a4cdf8b9403"
+    },
+    {
+      "path": "tests/test_uas_w3_lock_integrity.py",
+      "source_commit": "89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d",
+      "sha256": "8b88345f960fbef31ccaef5feb6b0138fcdd06cae04c8210f78e6d119913c6ba"
+    }
+  ]
+}
