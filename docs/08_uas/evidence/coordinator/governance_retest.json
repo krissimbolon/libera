@@ -1,0 +1,59 @@
+{
+  "exercise_type": "AUTOMATED_SYNTHETIC_TABLETOP_NOT_TEAM_DRILL",
+  "executed_at": "2026-10-03T11:28:03.983835+00:00",
+  "real_personal_data": false,
+  "real_network_or_notifications": false,
+  "privacy": {
+    "fixture_records": 1,
+    "direct_identifier_fields_before": 3,
+    "direct_identifier_fields_after": 0,
+    "retained_fields": [
+      "age",
+      "district"
+    ],
+    "vault_mode": "0o700",
+    "master_mode": "0o600",
+    "anonymity_proven": false,
+    "encryption_tested": false
+  },
+  "integrity": {
+    "tamper_detected": true,
+    "backup_restored_exact_hash": true,
+    "expected_sha256": "2bc5bbc0d659e7647a3ac697ffb5fb99e79d6808331896d14a1a1faa77659b7d"
+  },
+  "tabletop": {
+    "scenario": "Synthetic working-copy alteration and hypothetical confidentiality disclosure",
+    "simulated_events": [
+      {
+        "t_hours": 0,
+        "decision": "Stop analysis; preserve master and isolate working copy"
+      },
+      {
+        "t_hours": 0.25,
+        "decision": "Declare integrity incident; preserve hashes and timeline"
+      },
+      {
+        "t_hours": 1,
+        "decision": "Assess hypothetical personal-data breach and authorization; prepare notification draft"
+      },
+      {
+        "t_hours": 2,
+        "decision": "Simulated controller approves draft to subject and institution; send nothing"
+      },
+      {
+        "t_hours": 4,
+        "decision": "Restore verified backup, rerun extraction, keep experiment lock invalidated pending separate study"
+      }
+    ],
+    "simulated_notification_decision_hours": 2.0,
+    "statutory_window_hours": 72,
+    "within_window": true,
+    "notification_sent": false,
+    "legal_clock_rule": "Conservative internal clock starts at first detection; statutory text says paling lambat 3 x 24 jam, confirm legal trigger for actual case."
+  },
+  "limitations": [
+    "One synthetic fixture; no live ACL bypass test, key management, real recovery SLA, real breach notification or human participants.",
+    "Field suppression retains quasi-identifiers and is not proof of anonymization.",
+    "Demonstration does not harden canonical pipeline."
+  ]
+}

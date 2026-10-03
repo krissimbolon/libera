@@ -1,0 +1,152 @@
+[
+  {
+    "claim_id": "W1-001",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-002",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-003",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-004",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_path": "docs/08_uas/evidence/W1/full_tests.txt",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-005",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-006",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_path": "docs/08_uas/evidence/W1/hygiene_inventory.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-007",
+    "source_commit": "60ddffcdc68c7917cd9d948f5e9cea1453ef3969",
+    "source_path": "docs/08_uas/evidence/W1/trusted_hash_tests.txt",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-008",
+    "source_commit": "60ddffcdc68c7917cd9d948f5e9cea1453ef3969",
+    "source_path": "docs/08_uas/evidence/W1/trusted_runtime_summary.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-SEC-001",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "source_path": "docs/08_uas/evidence/W2/security_results.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-SEC-002",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "source_path": "docs/08_uas/evidence/W2/security_results.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-SEC-003",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "source_path": "docs/08_uas/evidence/W2/security_results.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-RETEST",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "source_path": "docs/08_uas/evidence/W2/retest.txt",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-CANONICAL-OWNER-RETEST",
+    "source_commit": "1c7b60683c0a21035fbf8501616027a3a2b71bbd",
+    "source_path": "docs/08_uas/evidence/W2/owner_retest.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-ENV",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "source_path": "docs/08_uas/evidence/W3/environment.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-TESTS",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "source_path": "docs/08_uas/evidence/W3/pytest.txt",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-TRANSPORT",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "source_path": "src/ai_rag/local_transport.py",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-LOCK",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "source_path": "tools/lock_p8_outputs.py",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-NESTED-GT",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "source_path": "src/ai_rag/validate_output.py",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-PRIVACY-DEMO",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-ACL-DEMO",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-RESTORE-DEMO",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-TABLETOP",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-AUDIT-5-GAPS",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/evidence/W4/audit_observations.json",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-GOVERNANCE-PACKAGE",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/workers/W4_GOVERNANCE.md",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-REFERENCES",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "source_path": "docs/08_uas/workers/W4_REFERENCES.md",
+    "sha256_match": true
+  }
+]

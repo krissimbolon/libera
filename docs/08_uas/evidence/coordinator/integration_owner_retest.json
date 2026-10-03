@@ -1,0 +1,22 @@
+{
+  "W1": {
+    "source_commit": "d4777a13cb1b324605f20ced25617dc78354a0b5",
+    "observed": {
+      "intact_accepted": true,
+      "tamper_rejected": true,
+      "tampered_output_absent": true
+    },
+    "exit_code": 0
+  },
+  "W3": {
+    "source_commit": "d4777a13cb1b324605f20ced25617dc78354a0b5",
+    "observed": {
+      "remote_rejected": true,
+      "localhost_literal_rewrite": true,
+      "redirect_rejected": true,
+      "nested_gt_rejected": true,
+      "network_calls": 0
+    },
+    "exit_code": 0
+  }
+}

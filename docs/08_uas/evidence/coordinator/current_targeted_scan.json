@@ -1,0 +1,14 @@
+{
+  "tracked_file_count": 529,
+  "targeted_secret_signature_paths": [],
+  "possible_evaluator_label_header_paths": [
+    "data/adaptasi_indonesia/skema_ground_truth_privat.csv"
+  ],
+  "ground_truth_named_paths": [
+    "data/adaptasi_indonesia/skema_ground_truth_privat.csv",
+    "tools/build_private_gt_annotation_packet.py",
+    "tools/lock_private_ground_truth.py"
+  ],
+  "p2_sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6",
+  "scope": "Current tracked files only; specific signatures; no secret values or evaluator labels printed or opened. Does not prove all secrets absent from history; public case-design context means blinded study needs independent evaluator and exposure disclosure."
+}
