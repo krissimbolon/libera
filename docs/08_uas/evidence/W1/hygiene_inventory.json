@@ -1,0 +1,19 @@
+{
+  "tracked_file_count": 500,
+  "tracked_runtime_paths": [],
+  "tracked_cache_paths": [],
+  "dependency_environment": {
+    "pytest": true,
+    "pandas": true,
+    "streamlit": false
+  },
+  "requirements_demo": [
+    "streamlit>=1.38",
+    "pandas>=2.2"
+  ],
+  "limitations": [
+    "Requirement lower bounds do not provide exact reproducible environment lock.",
+    "No destructive deletion of historical documents or source reconstruction performed.",
+    "Only forensic owned paths audited; full repository leak/security inventory belongs to W2."
+  ]
+}

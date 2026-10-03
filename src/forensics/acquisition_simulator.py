@@ -142,6 +142,12 @@ def create_sqlite(rows: Iterable[dict[str, str]], output_db: Path) -> None:
 
 
 def run(input_csv: Path, output_db: Path, manifest_path: Path) -> dict:
+    paths = [Path(input_csv).resolve(), Path(output_db).resolve(), Path(manifest_path).resolve()]
+    if len(set(paths)) != len(paths) or any(
+        a.exists() and b.exists() and a.samefile(b)
+        for i, a in enumerate(paths) for b in paths[i + 1:]
+    ):
+        raise AcquisitionSimulationError("Input and output paths must refer to distinct files.")
     rows = read_and_validate_corpus(input_csv)
     create_sqlite(rows, output_db)
     db_hash = sha256_file(output_db)

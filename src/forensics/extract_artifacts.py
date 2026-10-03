@@ -114,6 +114,12 @@ def validate(rows: list[dict[str, str]]) -> None:
 
 
 def run(input_db: Path, output_csv: Path, manifest_path: Path) -> dict:
+    paths = [Path(input_db).resolve(), Path(output_csv).resolve(), Path(manifest_path).resolve()]
+    if len(set(paths)) != len(paths) or any(
+        a.exists() and b.exists() and a.samefile(b)
+        for i, a in enumerate(paths) for b in paths[i + 1:]
+    ):
+        raise ExtractionError("Input and output paths must refer to distinct files.")
     rows, metadata = extract_sqlite(input_db)
     validate(rows)
 

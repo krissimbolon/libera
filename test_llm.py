@@ -1,6 +1,7 @@
-import ollama
+"""Manual optional Ollama connectivity smoke check; not a CI test."""
 
-def test_local_llm():
+def check_local_llm():
+    import ollama  # Optional dependency, loaded only for the explicit CLI check.
     print("Menghubungi Local LLM (Gemma:2b)...")
     
     # Prompt sederhana untuk memastikan model bisa merespons
@@ -29,4 +30,4 @@ def test_local_llm():
         print("3. Pastikan library python sudah diinstall: 'pip install ollama'")
 
 if __name__ == "__main__":
-    test_local_llm()
+    check_local_llm()
