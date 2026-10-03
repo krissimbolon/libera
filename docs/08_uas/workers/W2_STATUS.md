@@ -9,3 +9,5 @@ Blockers: application adoption pending W1/W3/Coordinator; full dependency adviso
 Request: requests/W2_PREFLIGHT_ADOPTION.md. W3 informed.
 Next: owner adoption then integrated retest; do not claim all security findings remediated.
 P2 unchanged; no private GT opened; no external security probing.
+
+Checkpoint correction: independent blocked flags reset before every probe; assertions fail audit if guard does not reject. Baseline loaded from verified Git SHA 62f8088c9f4833fa6ddf0149c6509a7162eaa9cf. Harmless synthetic tampered SQLite retained for static inspection; digest matches recorded after SHA. Evidence commit ae96920f7a9d8cfc7c4eaf552548f53459f4d0d3. W1/W3 adoption approved and requested; integrated retest still pending.
