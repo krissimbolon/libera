@@ -1,0 +1,9 @@
+test_local_host_restriction (test_uas_w2_security.SecurityTests.test_local_host_restriction) ... ok
+test_nested_gt_rejection (test_uas_w2_security.SecurityTests.test_nested_gt_rejection) ... ok
+test_tamper_structurally_valid_but_hash_rejected (test_uas_w2_security.SecurityTests.test_tamper_structurally_valid_but_hash_rejected) ... ok
+test_valid_finding (test_uas_w2_security.SecurityTests.test_valid_finding) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.010s
+
+OK

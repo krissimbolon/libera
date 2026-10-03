@@ -1,0 +1,33 @@
+{
+  "baseline_sha": "62f8088c9f4833fa6ddf0149c6509a7162eaa9cf",
+  "scope": "isolated synthetic local regression; no physical device or live LLM",
+  "findings": [
+    {
+      "id": "SEC-001",
+      "technique": "T1565.001",
+      "before_sha256": "b2453c55b784a388726b10ffcdec8136d2ca1299b85a0842180e49cf6c30bc29",
+      "after_sha256": "ca1f7c60d680ec6141d6a31cf7dfd8afce59dca4cdc47128391ff32fe8bc3c4c",
+      "baseline_accepts_tamper": true,
+      "guard_blocks_tamper": true,
+      "static_ioc": "distinct SHA-256 of benign synthetic changed SQLite; sample-specific only",
+      "dynamic_ioc": "SQLite UPDATE messages followed by trusted-hash mismatch; SQL not malicious by itself"
+    },
+    {
+      "id": "SEC-002",
+      "baseline_accepts_remote_endpoint": "https://example.invalid/api/generate",
+      "guard_blocks_remote_endpoint": true,
+      "network_calls": 0,
+      "limitation": "mocked sink demonstrates missing restriction; not observed exfiltration"
+    },
+    {
+      "id": "SEC-003",
+      "baseline_accepts_nested_gt_field": true,
+      "guard_blocks_nested_gt_field": true,
+      "limitation": "schema canary only; no private GT accessed; text semantic leaks not detected"
+    }
+  ],
+  "test_exit_code": 0,
+  "tracked_sensitive_filename_scan": [],
+  "scan_limitation": "filename screening only; no claim of exhaustive secret/dependency scan or absence of historical GT leakage",
+  "p2_sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6"
+}
