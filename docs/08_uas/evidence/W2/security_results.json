@@ -1,4 +1,5 @@
 {
+  "baseline_sha": "62f8088c9f4833fa6ddf0149c6509a7162eaa9cf",
   "scope": "isolated synthetic local regression; no physical device or live LLM",
   "findings": [
     {
