@@ -19,6 +19,17 @@ class LockTests(unittest.TestCase):
     def finding(self):
         return {k:[] if k=='relevant_evidence' else 'synthetic' for k in ('question','relevant_evidence','observed_facts','possible_interpretation','contradicting_evidence','confidence_uncertainty','finding')}
 
+    def test_manifest_mismatch_stops_before_private_gt(self):
+        from tools.verify_p8_lock import verify_manifest
+        from src.evaluation.evaluate_experiment import EvaluationError
+        with tempfile.TemporaryDirectory() as d:
+            d=Path(d);artifact=d/'public.csv';artifact.write_text('public canary')
+            lock=d/'lock.json';lock.write_text(json.dumps({'status':'P8_OUTPUTS_LOCKED_BEFORE_GROUND_TRUTH','files':{'p4_artifacts':{'path':str(artifact),'sha256':'0'*64},'p5_baseline':{'path':str(d/'baseline.json')},'p8_experiment_output':{'path':str(d/'out.json')}}}))
+            # A missing private file cannot be read: public verification has no GT parameter.
+            with patch('src.evaluation.evaluate_experiment.load_ground_truth',side_effect=AssertionError('GT read')) as gt:
+                with self.assertRaises(EvaluationError): verify_manifest(lock)
+                gt.assert_not_called()
+
     def test_nested_gt_refused(self):
         from src.ai_rag.validate_output import validate_structured_finding, ValidationError
         finding=self.finding();finding['relevant_evidence']=[{'nested':{'annotation_notes':'canary'}}]
