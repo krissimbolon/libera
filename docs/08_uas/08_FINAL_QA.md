@@ -25,7 +25,7 @@ Verified integrated code checkpoint: be3ba2661f9eadb81ea712b1af36f789cb34af3a. M
 |Signed ethics/RoE|BLOCKED|Actual human signatures/approved schedule not supplied; no invented signatures|
 |PowerShell/mobile/workbench execution|BLOCKED|pwsh/Streamlit unavailable; wrapper changes statically checked only; physical/mobile acquisition not demonstrated|
 |Ownership and merge control|PASS|Separate W1-W5 worktrees; only Coordinator edited five shared docs; code merges one by one with relevant tests; documented approved path requests|
-|Remote publication and main unchanged|PASS at last verified baseline|Authenticated API published integration+five worker branches; source SHA map retained. Final remote ref check required immediately after metadata publication|
+|Remote publication and main unchanged|PASS|Fresh fetched remote 2c0817c117baafd6fd0af0f5f88f5a16a8144607: 42 tests passed, 30 handoff source hashes verified, main baseline and P2 unchanged. See evidence/coordinator/remote_verification.json; this final metadata-only commit records that check|
 
 ## Do not close
 

@@ -2,7 +2,7 @@
 
 PROJECT: krissimbolon/libera
 UAS_BASELINE_SHA: 62f8088c9f4833fa6ddf0149c6509a7162eaa9cf
-INTEGRATION_SHA: be3ba2661f9eadb81ea712b1af36f789cb34af3a (last verified code checkpoint; current metadata tip resolves refs/heads/uas-ksi-final)
+INTEGRATION_SHA: 2c0817c117baafd6fd0af0f5f88f5a16a8144607 (fresh remote checkout verified: 42 tests and 30 handoff hashes; current metadata tip resolves refs/heads/uas-ksi-final)
 CANONICAL_P2_SHA256: a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6
 CONTRACT_VERSION: 1.0
 
