@@ -71,11 +71,32 @@ Studi literatur dan kontrak mendahului pemeriksaan fondasi W1, uji keamanan W2, 
 
 ## 3.2 Arsitektur/Desain Sistem
 
-BLOCKED untuk diagram final sampai inventory W1 dan diagram W4 diterima. Diagram wajib membedakan boundary examiner/evaluator, penyimpanan bukti asli/working, runtime lokal, dan keluaran publik. Klaim lab terisolasi memerlukan konfigurasi dan evidence eksekusi, bukan hanya gambar.
+Fondasi canonical W1 menggunakan sumber corpus sintetis P2 yang dipertahankan, paket acquisition P3, artefak pemeriksa P4, dan baseline deterministic P5. Ini merupakan acquisition simulasi; tidak dilakukan klaim ekstraksi telepon fisik. Corpus/acquisition sumber dibedakan dari working outputs; ground truth evaluator berada di luar Git dan tidak digunakan oleh examiner. Local LLM hanya dijalankan setelah evidence P4 disetujui, sedangkan evaluasi P9 berada di sisi evaluator setelah LOCK. Detail boundary isolasi host/network dan diagram final mengikuti evidence W4; eksekusi lokal saja belum membuktikan sandbox jaringan.
+
+Tabel 3.1. Interface fondasi canonical. Sumber: kontrak 1.0 dan W1 runtime_summary.json (claim W1-001–W1-003).
+
+|Tahap|Input/output canonical|Prinsip pemeriksaan|
+|---|---|---|
+|P2|data/adaptasi_indonesia/corpus_whatsapp_10000.csv|Sumber sintetis immutable; pembanding hash dari Coordinator|
+|P3|Paket ACQ-* dari sumber sintetis, device simulasi DEV-*|Sumber asli tidak ditimpa; acquisition bukan ground truth|
+|P4|runtime/working/P4/artifacts.csv|ART-* mempunyai acquisition_id, device_id, message_id, conversation_id dan timestamp_normalized|
+|P5|baseline_findings.json, baseline_manifest.json, entities.csv, relationships.csv, timeline.csv|Deterministic rules, terpisah dari inference LLM|
+
+Schema P4 memuat evidence_id, artifact_id, acquisition_id, device_id, message_id, conversation_id, segment_id, sender, receiver, timestamp_normalized, message_text, message_type, reply_to_message_id dan attachment_id. FND-* menyatakan interpretasi dengan referensi ART; identifier yang ditemukan tidak otomatis merupakan klaim semantik yang benar.
 
 ## 3.3 Skenario Pengujian
 
-BLOCKED untuk tabel skenario final sampai protokol W1/W2/W3 diterima. Setiap skenario harus berisi ID, target, prasyarat, langkah aman, hasil diharapkan, ukuran keberhasilan, evidence dan batasan. Metrik AI wajib menyebut unit analisis, denominator dan aturan jawaban kosong. Waktu eksekusi memerlukan mesin dan konfigurasi; jangan membandingkan dry-run dengan inference.
+Skenario fondasi yang telah diterima Coordinator memeriksa preservasi sumber, penolakan alias path, dan determinisme baseline. Rancangan uji tersebut tidak menggunakan label evaluator. Tabel ini menyatakan metode, bukan metrik akhir Bab IV.
+
+Tabel 3.2. Skenario fondasi. Sumber: claim canonical W1-001–W1-003.
+
+|ID|Target dan langkah|Kriteria|Batas|
+|---|---|---|---|
+|F-01|Jalankan P3/P4/P5 pada sumber sintetis dengan output working terpisah; bandingkan hash sumber sebelum/sesudah|Corpus dan paket acquisition tetap identik|Preservasi byte bukan kebenaran isi|
+|F-02|Coba path output sama dengan sumber, termasuk symlink/hardlink pada extraction|Konfigurasi ditolak sebelum penulisan yang merusak|Tidak menguji hostile concurrent filesystem|
+|F-03|Jalankan baseline dua kali dengan ART/task tidak berubah; bandingkan baseline_findings.json|Finding JSON identik byte|Manifest bertimestamp dapat berbeda; bukan accuracy test|
+
+Protokol W2 menambahkan reproduksi kelemahan, perbaikan dan retest sesuai RoE; protokol W3 menambahkan benchmark P5/A/B/C. Metrik AI wajib menyebut unit analisis, denominator dan aturan jawaban kosong. Waktu eksekusi memerlukan mesin dan konfigurasi; dry-run tidak dibandingkan sebagai inference. Benchmark final dan evaluasi hasil tetap BLOCKED sebelum gate yang relevan terbuka.
 
 ## 3.4 Etika Pengujian dan Rules of Engagement
 
@@ -133,7 +154,9 @@ Ownership Worker dalam kontrak adalah pembagian workstream AI, bukan kontribusi 
 
 # BAB VII – Kesimpulan dan Saran
 
-Belum tersedia dasar untuk menyatakan seluruh tujuan tercapai. Kesimpulan final BLOCKED hingga gate hasil dibuka. Kerangka jawaban yang wajib diisi berbukti:
+Kesimpulan parsial: RQ1 mempunyai fondasi pemeriksaan simulasi yang diterima Coordinator. Preservasi corpus/acquisition, kontrol alias output dan determinisme finding P5 memiliki evidence W1-001–W1-003. Cakupannya tidak membuktikan acquisition telepon, akurasi inferensi atau chain of custody perangkat fisik. RQ2–RQ4 menunggu integrasi evidence khusus yang disetujui. RQ3 belum dapat dijawab sebagai perbandingan performa: real Ollama execution dan lock P8 belum ditetapkan, GT tetap tertutup, dan gate hasil masih CLOSED. Menyebut dry-run sebagai keberhasilan local LLM akan melampaui bukti.
+
+Tidak tersedia dasar untuk menyatakan seluruh tujuan tercapai. Kesimpulan final BLOCKED hingga gate hasil dibuka. Kerangka jawaban yang wajib diselesaikan berbukti:
 
 |RQ|Evidence yang diperlukan|Kondisi kesimpulan|
 |---|---|---|
