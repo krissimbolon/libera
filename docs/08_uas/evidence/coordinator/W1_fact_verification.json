@@ -1,0 +1,38 @@
+[
+  {
+    "claim_id": "W1-001",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "verified_hash": true
+  },
+  {
+    "claim_id": "W1-002",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "verified_hash": true
+  },
+  {
+    "claim_id": "W1-003",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "verified_hash": true
+  },
+  {
+    "claim_id": "W1-004",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_sha256": "1c0e137610704d0f22d5d8a4eba5bb84eca528ab49187e515036a55192ed0ef5",
+    "verified_hash": true
+  },
+  {
+    "claim_id": "W1-005",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "verified_hash": true
+  },
+  {
+    "claim_id": "W1-006",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "source_sha256": "c809fd3000d04b30d62a65b3a1bc0af4fbc65496ff2d23d9e55e8adfd608a28a",
+    "verified_hash": true
+  }
+]

@@ -2,14 +2,14 @@
 
 PROJECT: krissimbolon/libera
 UAS_BASELINE_SHA: 62f8088c9f4833fa6ddf0149c6509a7162eaa9cf
-INTEGRATION_SHA: resolve origin/uas-ksi-final; this commit cannot contain its own SHA
+INTEGRATION_SHA: 7295eac2824de219f6ab419dfa8cd13770e098bf0e7 (reviewed W1 remote checkpoint; current tip via branch ref)
 CANONICAL_P2_SHA256: a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6
 CONTRACT_VERSION: 1.0
 
 ## GATES
 GATE_BOOTSTRAP: PASS
 GATE_REPO_STABLE: CLOSED
-GATE_P4_EVIDENCE_STABLE: CLOSED
+GATE_P4_EVIDENCE_STABLE: PASS
 GATE_SECURITY_BASELINE_STABLE: CLOSED
 GATE_BENCHMARK_FROZEN: CLOSED
 GATE_P8_LOCKED: CLOSED
@@ -19,7 +19,7 @@ GATE_REPORT_RESULTS_OPEN: CLOSED
 GATE_FINAL_QA: CLOSED
 
 ## WORKER STATUS
-W1: CANDIDATE; see workers/W1_STATUS.md
+W1: CANONICAL_VERIFIED for reviewed simulated P3-P5 foundation; trusted-hash adoption pending
 W2: CANDIDATE; see workers/W2_STATUS.md
 W3: CANDIDATE; see workers/W3_STATUS.md
 W4: CANDIDATE; see workers/W4_STATUS.md
@@ -36,6 +36,6 @@ Real Ollama execution, private evaluator GT, member identities, supplied report 
 - Workers use isolated git worktrees; no worker merges integration or pushes main.
 
 ## NEXT INTEGRATION ACTION
-Review W1 checkpoint first; verify ownership, raw evidence, tests, and facts before integration.
+Review W2 corrected guards next, then W3 lock/transport hardening; integration tests after each merge.
 
 LAST UPDATED COMMIT: resolve commit containing this file; parent baseline 62f8088c9f4833fa6ddf0149c6509a7162eaa9cf
