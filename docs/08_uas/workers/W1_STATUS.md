@@ -12,3 +12,5 @@ Requests: no worker-domain changes; Coordinator authorized legacy root test_llm.
 Next action: Coordinator rerun reproduction/tests and independently promote only scoped claims. Branch committed locally; Coordinator handles publication because CLI authentication unavailable.
 
 Additional checkpoint: W2_PREFLIGHT_ADOPTION approved by Coordinator and coordinated directly with W2. P4 optional trusted expected digest API/CLI implemented; UAS reproduction requires supplying it. Tampered intact-schema SQLite rejection and malformed-digest tests executed. Full suite now 21 passed. Evidence: trusted_hash_tests.txt, trusted_runtime_summary.json. Legacy callers explicitly unverified; custody digest authority remains external.
+
+Windows wrapper checkpoint (Coordinator-approved ownership expansion): local/demo script gate order and trusted digest wiring corrected; DryRun skips final lock; GT main pipeline rejected before stage execution; existing final lock refuses complete rerun. Nine W1 tests pass with static wrapper checks. Actual Windows execution BLOCKED (pwsh unavailable). No downloads executed.
