@@ -58,7 +58,7 @@ def verify_p8_lock(lock_manifest: Path, artifacts: Path, baseline: Path | None, 
             raise EvaluationError(f"P8 lock mismatch for {key}")
     from tools.lock_p8_outputs import validate_real_experiment
     try:
-        validate_real_experiment(experiment)
+        validate_real_experiment(experiment, Path(files["investigation_tasks"]["path"]), Path(files["p6_p7_config"]["path"]))
     except (ValueError, TypeError) as exc:
         raise EvaluationError(f"P8 execution invalid: {exc}") from exc
     return {

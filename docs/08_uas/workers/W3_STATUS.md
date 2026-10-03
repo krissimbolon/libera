@@ -7,11 +7,11 @@ GT access: CLOSED, no GT files read. Benchmark protocol CANDIDATE until W1 evide
 
 Owned paths: src/ai_rag/ollama_runner.py, src/evaluation/evaluate_experiment.py, tools/lock_p8_outputs.py, tests/test_uas_w3_lock_integrity.py and docs/08_uas W3 files.
 
-Checks: `python -m pytest tests/test_p6_p7_pipeline.py tests/test_uas_w3_lock_integrity.py -q` — 19 passed; synthetic harness only. Unit discovery 7 passed. Legacy unittest discovery 0 because historical suite is pytest; do not count that as a passed suite.
+Checks: `python -m pytest tests/test_p6_p7_pipeline.py tests/test_uas_w3_lock_integrity.py -q` — 27 passed (including 3 post-P2 tests); synthetic harness only. Unit discovery 7 passed. Legacy unittest discovery 0 because historical suite is pytest; do not count that as a passed suite.
 
 Exact blocker: no ollama binary; HTTP localhost:11434/api/tags refused connection. No model downloads attempted. No actual LLM calls, final performance metrics, private GT evaluation or valid real P8 lock produced.
 
-Fixes: prevent stub/error/incomplete/provenance-free P8 lock and overwrite; verify all manifest inputs before GT; reject integrity failure before GT read; exact model tag digest lookup; structured scalar JSON no longer crashes; clearly disclose semantic supportedness NOT_EVALUATED.
+Fixes: prevent stub/error/incomplete/provenance-free P8 lock and overwrite; verify registered tasks/questions/model settings/embedding/top-k and valid C JSON; recursively reject nested GT fields; verify all manifest inputs before GT; reject integrity failure before GT read; exact model tag digest lookup; structured scalar JSON no longer crashes; clearly disclose semantic supportedness NOT_EVALUATED.
 
 Cross-worker request: Coordinator approved W2 loopback Ollama guard for W3-owned sources; adopted local dependency-neutral transport with literal loopback only, localhost pinned to 127.0.0.1, proxies disabled and redirects denied. No other worker source edits.
 

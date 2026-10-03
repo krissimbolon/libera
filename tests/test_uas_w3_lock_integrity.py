@@ -16,6 +16,41 @@ class LockTests(unittest.TestCase):
             p.write_text(json.dumps([{'task_id':'T01', **{k:rec for k in ('A_llm_only','B_llm_rag','C_llm_rag_structured')}}]))
             validate_real_experiment(p)
 
+    def finding(self):
+        return {k:[] if k=='relevant_evidence' else 'synthetic' for k in ('question','relevant_evidence','observed_facts','possible_interpretation','contradicting_evidence','confidence_uncertainty','finding')}
+
+    def test_nested_gt_refused(self):
+        from src.ai_rag.validate_output import validate_structured_finding, ValidationError
+        finding=self.finding();finding['relevant_evidence']=[{'nested':{'annotation_notes':'canary'}}]
+        with self.assertRaises(ValidationError): validate_structured_finding(finding)
+
+    def test_incomplete_registered_tasks_refused(self):
+        with tempfile.TemporaryDirectory() as d:
+            d=Path(d);p=d/'out.json';t=d/'tasks.json'
+            rec={'dry_run':False,'output':json.dumps(self.finding()),'model_digest':'synthetic','ollama_version':'synthetic'}
+            p.write_text(json.dumps([{'task_id':'T01','question':'q',**{c:rec for c in ('A_llm_only','B_llm_rag','C_llm_rag_structured')}}]))
+            t.write_text(json.dumps({'tasks':[{'task_id':'T01','question':'q'},{'task_id':'T02','question':'q2'}]}))
+            with self.assertRaisesRegex(ValueError,'incomplete'): validate_real_experiment(p,t)
+
+    def test_registered_model_mismatch_refused(self):
+        with tempfile.TemporaryDirectory() as d:
+            d=Path(d);p=d/'out.json';c=d/'config.json'
+            config=json.loads(Path('configs/p6_p7_config.json').read_text());c.write_text(json.dumps(config))
+            rec={**config['ollama'],'dry_run':False,'output':json.dumps(self.finding()),'model_digest':'synthetic','ollama_version':'synthetic','prompt_version':config['prompt']['prompt_version'],'query':'q'}
+            rec['model']='wrong:tag'
+            row={'task_id':'T01','question':'q','retrieval_trace':{'k':8,'embedding_method':'ollama','embedding_model':'bge-m3'},**{k:rec for k in ('A_llm_only','B_llm_rag','C_llm_rag_structured')}}
+            p.write_text(json.dumps([row]))
+            with self.assertRaisesRegex(ValueError,'model'): validate_real_experiment(p,config_path=c)
+
+    def test_invalid_c_refused(self):
+        with self.assertRaisesRegex(ValueError,'JSON'):
+            self.validate({'dry_run':False,'output':'42','model_digest':'synthetic','ollama_version':'synthetic'})
+
+    def test_invalid_task_row_refused(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'out.json';p.write_text('[42]')
+            with self.assertRaisesRegex(ValueError,'object'): validate_real_experiment(p)
+
     def test_remote_host_refused(self):
         for url in ('https://example.org/api/generate', 'http://127.0.0.1@evil.invalid', 'http://127.0.0.1.evil.invalid'):
             with self.assertRaises(LocalTransportError): validate_local_url(url)
@@ -36,7 +71,7 @@ class LockTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.validate({'dry_run':False,'output':'x'})
 
     def test_synthetic_valid_record_schema(self):
-        self.validate({'dry_run':False,'output':'x','error':None,'model_digest':'synthetic-digest','ollama_version':'synthetic-version'})
+        self.validate({'dry_run':False,'output':json.dumps(self.finding()),'error':None,'model_digest':'synthetic-digest','ollama_version':'synthetic-version'})
 
     def test_digest_does_not_match_wrong_tag(self):
         with patch('src.ai_rag.ollama_runner._get',return_value={'models':[{'name':'qwen2.5:7b','digest':'wrong'}]}):

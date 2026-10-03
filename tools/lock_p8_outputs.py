@@ -25,25 +25,62 @@ def item(path: Path, required: bool = True):
     return {"path": str(path), "size_bytes": path.stat().st_size, "sha256": sha256(path)}
 
 
-def validate_real_experiment(path: Path) -> None:
+def validate_real_experiment(path: Path, tasks_path: Path | None = None, config_path: Path | None = None) -> None:
     """Refuse smoke/error/incomplete runs before a real-evaluation lock."""
     rows = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(rows, list) or not rows:
         raise ValueError("P8 experiment must contain tasks")
+    expected = None
+    config = None
+    if tasks_path is not None:
+        tasks = json.loads(tasks_path.read_text(encoding="utf-8"))["tasks"]
+        expected = {t["task_id"]: t["question"] for t in tasks}
+        if len(expected) != len(tasks):
+            raise ValueError("Duplicate registered task IDs")
+    if config_path is not None:
+        config = json.loads(config_path.read_text(encoding="utf-8"))
     seen = set()
+    provenance = set()
     for row in rows:
+        if not isinstance(row, dict):
+            raise ValueError("Task row must be an object")
         task = row.get("task_id")
         if not task or task in seen:
             raise ValueError("Missing or duplicate task_id")
         seen.add(task)
+        if expected is not None and (task not in expected or row.get("question") != expected[task]):
+            raise ValueError("Task question differs from registration")
+        if config is not None:
+            trace = row.get("retrieval_trace") or {}
+            if trace.get("k") != config["retrieval"]["top_k"]:
+                raise ValueError("Retrieval top-k differs from registered config")
+            if trace.get("embedding_method") != config["embedding"]["final_method"] or trace.get("embedding_model") != config["embedding"]["final_model"]:
+                raise ValueError("Embedding differs from registered config")
         for condition in ("A_llm_only", "B_llm_rag", "C_llm_rag_structured"):
             rec = row.get(condition)
             if not isinstance(rec, dict) or rec.get("dry_run") is not False:
                 raise ValueError(f"{task}/{condition}: real execution required")
             if rec.get("error") or not str(rec.get("output", "")).strip():
                 raise ValueError(f"{task}/{condition}: failed or empty execution")
-            if not rec.get("model_digest") or not rec.get("ollama_version"):
+            if config is not None:
+                for field in ("model", "temperature", "seed", "num_ctx"):
+                    if rec.get(field) != config["ollama"][field]:
+                        raise ValueError(f"Model parameter {field} differs from config")
+                if rec.get("prompt_version") != config["prompt"]["prompt_version"] or rec.get("query") != row["question"]:
+                    raise ValueError("Prompt/query differs from registration")
+            provenance.add((rec.get("model"), rec.get("model_digest"), rec.get("ollama_version")))
+            if condition == "C_llm_rag_structured":
+                from src.evaluation.evaluate_experiment import _parse_structured_output
+                _, valid = _parse_structured_output(rec["output"])
+                if not valid:
+                    raise ValueError("C structured JSON invalid")
+            if not rec.get("model_digest") or not rec.get("ollama_version") :
                 raise ValueError(f"{task}/{condition}: model/runtime provenance required")
+
+    if expected is not None and seen != set(expected):
+        raise ValueError("Experiment task set incomplete")
+    if len(provenance) != 1:
+        raise ValueError("Model/runtime provenance differs across conditions")
 
 
 def main() -> None:
@@ -61,7 +98,7 @@ def main() -> None:
     if out.exists():
         raise SystemExit("Refuse to overwrite an existing P8 lock; register a separate study.")
     try:
-        validate_real_experiment(Path(args.experiment))
+        validate_real_experiment(Path(args.experiment), Path(args.tasks), Path(args.config))
     except (ValueError, TypeError) as exc:
         raise SystemExit(f"Refuse P8 lock: {exc}") from exc
     files = {
