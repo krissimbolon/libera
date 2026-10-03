@@ -1,0 +1,88 @@
+{
+  "method": "bounded static code inspection, no live exploit",
+  "baseline_commit": "5b13f4bd2c0d017f3a015a7b7b47657bb411590a",
+  "observations": {
+    ".gitignore": [
+      {
+        "line": 18,
+        "text": "libera_ground_truth/"
+      },
+      {
+        "line": 53,
+        "text": "runtime/"
+      }
+    ],
+    "src/ai_rag/run_log.py": [
+      {
+        "line": 41,
+        "text": "def append_jsonl(path: Path, record: Dict[str, Any]) -> None:"
+      },
+      {
+        "line": 45,
+        "text": "    dari proses berbeda (tidak melakukan locking khusus - cukup untuk"
+      },
+      {
+        "line": 50,
+        "text": "    with path.open(\"a\", encoding=\"utf-8\") as f:"
+      },
+      {
+        "line": 61,
+        "text": "    with path.open(\"r\", encoding=\"utf-8\") as f:"
+      }
+    ],
+    "src/ai_rag/ollama_runner.py": [
+      {
+        "line": 13,
+        "text": "DEFAULT_HOST = \"http://localhost:11434\""
+      },
+      {
+        "line": 46,
+        "text": "def _post(url: str, payload: Dict[str, Any], timeout: int) -> Dict[str, Any]:"
+      },
+      {
+        "line": 52,
+        "text": "        with urllib.request.urlopen(req, timeout=timeout) as resp:"
+      },
+      {
+        "line": 60,
+        "text": "        with urllib.request.urlopen(url, timeout=timeout) as resp:"
+      },
+      {
+        "line": 130,
+        "text": "    host: str = DEFAULT_HOST,"
+      },
+      {
+        "line": 205,
+        "text": "    p.add_argument(\"--host\", default=DEFAULT_HOST)"
+      }
+    ],
+    "src/ai_rag/run_experiment.py": [
+      {
+        "line": 109,
+        "text": "    p.add_argument(\"--host\", default=ollama_runner.DEFAULT_HOST)"
+      },
+      {
+        "line": 123,
+        "text": "    out.write_text(json.dumps(results, ensure_ascii=False, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "src/forensics/extract_artifacts.py": [
+      {
+        "line": 24,
+        "text": "    \"timestamp_normalized\", \"message_text\", \"message_type\","
+      },
+      {
+        "line": 66,
+        "text": "                   message_text,message_type,reply_to_message_id,attachment_id"
+      },
+      {
+        "line": 90,
+        "text": "            \"message_text\": r[\"message_text\"],"
+      },
+      {
+        "line": 123,
+        "text": "        w = csv.DictWriter(f, fieldnames=OUTPUT_FIELDS)"
+      }
+    ]
+  }
+}

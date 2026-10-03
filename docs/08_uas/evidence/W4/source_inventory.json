@@ -1,0 +1,66 @@
+{
+  "baseline_commit": "5b13f4bd2c0d017f3a015a7b7b47657bb411590a",
+  "scope": "Read-only bounded static inspection; absence only within stated modules",
+  "sources": [
+    {
+      "path": ".gitignore",
+      "sha256": "4eab1ac826e20f3b4584532e371e0ca543ec44ac9d813f8e8cf67481af48aebd",
+      "lines": 56
+    },
+    {
+      "path": "src/ai_rag/run_log.py",
+      "sha256": "df65d0ed3dfbd5f5dd1abaaf40988e1f9b87298ca41c3ccf42c836917a044527",
+      "lines": 66
+    },
+    {
+      "path": "src/ai_rag/ollama_runner.py",
+      "sha256": "d8b7fff7d6ee5edd9c7b4416a59c5a95756c9fd832d7cab12f8d49a44ae4edae",
+      "lines": 224
+    },
+    {
+      "path": "src/ai_rag/run_experiment.py",
+      "sha256": "e4723d6da94cdf8e04a1b14da02b7b5b10c5288026825d5a78b7c8b667507b44",
+      "lines": 131
+    },
+    {
+      "path": "src/forensics/extract_artifacts.py",
+      "sha256": "17373b7e553d7a0134718f043e1c40fc0bd03b33e2c563744bf9371fe8d7e12f",
+      "lines": 179
+    },
+    {
+      "path": "src/forensics/acquisition_simulator.py",
+      "sha256": "6b9498b0f2348ef4d81b4d2ad4af4ba6bb6b30bd9daf682fb890f0717b48d95d",
+      "lines": 200
+    },
+    {
+      "path": "src/ai_rag/chunker.py",
+      "sha256": "1f59603189b1b854aff5d234b0265035681f5d6996c12e62ad7ad9671c49badb",
+      "lines": 167
+    },
+    {
+      "path": "src/ai_rag/retriever.py",
+      "sha256": "ccec846ee021a96240729fd15ee4ceed0ed41d6116eb409b0ab88a061a8ce5b2",
+      "lines": 261
+    },
+    {
+      "path": "tools/lock_p8_outputs.py",
+      "sha256": "2242eae64013ffbb1c668fbfb86d68156d60f450c7901901bafb09000fc2d609",
+      "lines": 63
+    },
+    {
+      "path": "src/baseline/traditional_baseline.py",
+      "sha256": "9cdc3cfdc9cb6abc4f18efb04445a26044b03bb1aef2b9653cf8ca2c09364828",
+      "lines": 167
+    },
+    {
+      "path": "src/evaluation/evaluate_experiment.py",
+      "sha256": "b61154a48a6bc119e68b37f56f5240e33740c4c53e56fe70dddcc65a8521c55b",
+      "lines": 344
+    },
+    {
+      "path": "workbench/libera_workbench.py",
+      "sha256": "2c9ee87fba3fd93ea55084be2f4e9698360cfa7599720fa7a75abe1caf72c5d7",
+      "lines": 273
+    }
+  ]
+}
