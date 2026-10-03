@@ -1,0 +1,6 @@
+{
+  "ollama_binary": null,
+  "endpoint": "http://localhost:11434/api/tags",
+  "error": "<urlopen error [Errno 111] Connection refused>",
+  "real_p8_status": "BLOCKED"
+}

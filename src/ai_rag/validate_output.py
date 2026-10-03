@@ -51,6 +51,18 @@ def validate_structured_finding(finding: Dict[str, Any]) -> None:
     Tidak mengembalikan apa pun jika valid.
     """
     errors: List[str] = []
+    if not isinstance(finding, dict):
+        raise ValidationError(["Structured finding must be an object"])
+    def inspect(value, path="$ "):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in FORBIDDEN_GT_FIELDS:
+                    errors.append(f"Forbidden GT field at {path}.{key}")
+                inspect(child, f"{path}.{key}")
+        elif isinstance(value, list):
+            for i, child in enumerate(value):
+                inspect(child, f"{path}[{i}]")
+    inspect(finding)
 
     missing = [f for f in REQUIRED_FIELDS if f not in finding]
     if missing:
