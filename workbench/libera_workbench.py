@@ -38,13 +38,13 @@ def sha256(path: Path) -> str:
 
 
 def load_artifacts(folder: Path):
-    messages_path = folder / "ART-00001_messages.csv"
-    chats_path = folder / "ART-00002_chats.csv"
+    messages_path = folder / "ARTFILE-00001_messages.csv"
+    chats_path = folder / "ARTFILE-00002_chats.csv"
     art_manifest_path = folder / "artifact_manifest.json"
     if not messages_path.exists() or not chats_path.exists() or not art_manifest_path.exists():
         raise FileNotFoundError(
-            "Artifact folder harus berisi ART-00001_messages.csv, "
-            "ART-00002_chats.csv, dan artifact_manifest.json"
+            "Artifact folder harus berisi ARTFILE-00001_messages.csv, "
+            "ARTFILE-00002_chats.csv, dan artifact_manifest.json"
         )
 
     messages = pd.read_csv(messages_path, dtype=str).fillna("")
@@ -260,7 +260,7 @@ with trace_tab:
     st.code(
         f"MSG {message_id}\n"
         f"  ↓\n"
-        f"ART-00001 messages\n"
+        f"ARTFILE-00001 messages\n"
         f"  ↓\n"
         f"{acquisition_id}  SHA-256 {source_sha[:16]}...\n"
         f"  ↓\n"
