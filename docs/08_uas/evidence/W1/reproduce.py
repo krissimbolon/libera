@@ -18,12 +18,12 @@ with tempfile.TemporaryDirectory() as d:
     p3 = acq.run(corpus, db, d / 'acq.json')
     db_hash = acq.sha256_file(db)
     arts = d / 'artifacts.csv'
-    p4 = ext.run(db, arts, d / 'p4.json')
+    p4 = ext.run(db, arts, d / 'p4.json', expected_sha256=p3['acquisition_sha256'])
     p5 = base.run(arts, root / 'configs/investigation_tasks.json', d / 'P5')
     with arts.open() as f: rows = list(csv.DictReader(f))
     first = (d / 'P5/baseline_findings.json').read_bytes()
     base.run(arts, root / 'configs/investigation_tasks.json', d / 'P5')
-    results.update(corpus_sha256=before, corpus_preserved=before==acq.sha256_file(corpus), acquisition_sha256=db_hash, acquisition_preserved=db_hash==acq.sha256_file(db), artifact_count=len(rows), unique_artifact_ids=len({r['artifact_id'] for r in rows}), chat_count=p4['chat_count'], task_count=p5['task_count'], actor_count=p5['actor_count'], relationship_count=p5['relationship_count'], artifacts_sha256=p4['output_sha256'], baseline_findings_sha256=hashlib.sha256(first).hexdigest(), deterministic_findings=first==(d/'P5/baseline_findings.json').read_bytes(), output_fields=list(rows[0]), p5_output_files=sorted(p.name for p in (d/'P5').iterdir()))
+    results.update(corpus_sha256=before, corpus_preserved=before==acq.sha256_file(corpus), acquisition_sha256=db_hash, acquisition_preserved=db_hash==acq.sha256_file(db), artifact_count=len(rows), unique_artifact_ids=len({r['artifact_id'] for r in rows}), chat_count=p4['chat_count'], task_count=p5['task_count'], actor_count=p5['actor_count'], relationship_count=p5['relationship_count'], artifacts_sha256=p4['output_sha256'], baseline_findings_sha256=hashlib.sha256(first).hexdigest(), deterministic_findings=first==(d/'P5/baseline_findings.json').read_bytes(), integrity_verification=p4['integrity_verification'], output_fields=list(rows[0]), p5_output_files=sorted(p.name for p in (d/'P5').iterdir()))
     rejected=[]
     for alias in ['same','symlink','hardlink']:
         target=db

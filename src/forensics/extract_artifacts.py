@@ -113,15 +113,25 @@ def validate(rows: list[dict[str, str]]) -> None:
             ) from exc
 
 
-def run(input_db: Path, output_csv: Path, manifest_path: Path) -> dict:
+def run(input_db: Path, output_csv: Path, manifest_path: Path, expected_sha256: str | None = None) -> dict:
     paths = [Path(input_db).resolve(), Path(output_csv).resolve(), Path(manifest_path).resolve()]
     if len(set(paths)) != len(paths) or any(
         a.exists() and b.exists() and a.samefile(b)
         for i, a in enumerate(paths) for b in paths[i + 1:]
     ):
         raise ExtractionError("Input and output paths must refer to distinct files.")
+    # The expected digest must come from a trusted acquisition record, not be
+    # recomputed by the examiner from an untrusted working copy.
+    input_hash = sha256_file(input_db)
+    if expected_sha256 is not None:
+        if len(expected_sha256) != 64 or any(c not in "0123456789abcdefABCDEF" for c in expected_sha256):
+            raise ExtractionError("Expected acquisition SHA-256 must be 64 hex characters.")
+        if input_hash != expected_sha256.lower():
+            raise ExtractionError("Acquisition SHA-256 differs from trusted expected digest.")
     rows, metadata = extract_sqlite(input_db)
     validate(rows)
+    if sha256_file(input_db) != input_hash:
+        raise ExtractionError("Acquisition changed during extraction; refusing outputs.")
 
     output_csv = Path(output_csv)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
@@ -133,7 +143,9 @@ def run(input_db: Path, output_csv: Path, manifest_path: Path) -> dict:
     manifest = {
         "status": "P4_EXTRACTION_PASS",
         "input_acquisition": str(input_db),
-        "input_sha256": sha256_file(input_db),
+        "input_sha256": input_hash,
+        "expected_sha256": expected_sha256.lower() if expected_sha256 is not None else None,
+        "integrity_verification": "TRUSTED_EXPECTED_SHA256" if expected_sha256 is not None else "LEGACY_NO_TRUSTED_DIGEST",
         "output_artifact_csv": str(output_csv),
         "output_sha256": sha256_file(output_csv),
         "artifact_count": len(rows),
@@ -170,9 +182,10 @@ def main() -> None:
         "--manifest",
         default="runtime/working/P4/artifact_manifest.json",
     )
+    p.add_argument("--expected-sha256", help="Trusted acquisition digest; REQUIRED for UAS execution. Omitting selects legacy unverified mode.")
     args = p.parse_args()
     try:
-        m = run(Path(args.input), Path(args.output), Path(args.manifest))
+        m = run(Path(args.input), Path(args.output), Path(args.manifest), args.expected_sha256)
     except ExtractionError as exc:
         print(f"[P4] ERROR: {exc}")
         raise SystemExit(1)

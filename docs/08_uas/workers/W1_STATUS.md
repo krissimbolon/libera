@@ -10,3 +10,5 @@ Evidence: docs/08_uas/evidence/W1/runtime_summary.json, tests.txt, full_tests.tx
 Blockers: graphical workbench run missing Streamlit; physical acquisition not supplied; human P5 review not supplied. Public synthetic-history exposure prevents claims of retrospective blind evaluation. No GT read.
 Requests: no worker-domain changes; Coordinator authorized legacy root test_llm.py.
 Next action: Coordinator rerun reproduction/tests and independently promote only scoped claims. Branch committed locally; Coordinator handles publication because CLI authentication unavailable.
+
+Additional checkpoint: W2_PREFLIGHT_ADOPTION approved by Coordinator and coordinated directly with W2. P4 optional trusted expected digest API/CLI implemented; UAS reproduction requires supplying it. Tampered intact-schema SQLite rejection and malformed-digest tests executed. Full suite now 21 passed. Evidence: trusted_hash_tests.txt, trusted_runtime_summary.json. Legacy callers explicitly unverified; custody digest authority remains external.

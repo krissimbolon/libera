@@ -14,7 +14,7 @@ def test_p3_p4_p5_foundation(tmp_path):
     p3 = acq.run(CORPUS, db, tmp_path / 'acq.json')
     source_hash = acq.sha256_file(db)
     artifacts = tmp_path / 'artifacts.csv'
-    p4 = ext.run(db, artifacts, tmp_path / 'p4.json')
+    p4 = ext.run(db, artifacts, tmp_path / 'p4.json', expected_sha256=p3['acquisition_sha256'])
     p5 = baseline.run(artifacts, ROOT / 'configs/investigation_tasks.json', tmp_path / 'P5')
     assert before == acq.CANONICAL_SHA256 == acq.sha256_file(CORPUS)
     assert source_hash == acq.sha256_file(db)
@@ -54,3 +54,22 @@ def test_workbench_uses_current_container_names():
     extractor = (ROOT / 'tools/extract_acquired_chatsim.py').read_text()
     for filename in ['ARTFILE-00001_messages.csv','ARTFILE-00002_chats.csv']:
         assert filename in source and filename in extractor
+
+
+def test_p4_trusted_digest_rejects_structurally_valid_tampering(tmp_path):
+    import sqlite3
+    db = tmp_path / 'source.sqlite'
+    p3 = acq.run(CORPUS, db, tmp_path / 'acq.json')
+    with sqlite3.connect(db) as conn:
+        conn.execute("UPDATE messages SET message_text='synthetic tamper test' WHERE message_id=(SELECT message_id FROM messages LIMIT 1)")
+    with pytest.raises(ext.ExtractionError, match='trusted expected digest'):
+        ext.run(db, tmp_path / 'artifacts.csv', tmp_path / 'p4.json', expected_sha256=p3['acquisition_sha256'])
+    assert not (tmp_path / 'artifacts.csv').exists()
+    assert not (tmp_path / 'p4.json').exists()
+
+
+def test_p4_rejects_malformed_trusted_digest(tmp_path):
+    db = tmp_path / 'source.sqlite'
+    db.write_bytes(b'synthetic')
+    with pytest.raises(ext.ExtractionError, match='64 hex'):
+        ext.run(db, tmp_path / 'artifacts.csv', tmp_path / 'p4.json', expected_sha256='invalid')
