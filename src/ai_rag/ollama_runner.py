@@ -78,7 +78,7 @@ def get_model_digest(host: str, model: str) -> Optional[str]:
     wanted = model.casefold()
     for item in data.get("models", []):
         name = str(item.get("name", "")).casefold()
-        if name == wanted or name.split(":")[0] == wanted.split(":")[0]:
+        if name == (wanted if ":" in wanted else wanted + ":latest"):
             return item.get("digest")
     return None
 
