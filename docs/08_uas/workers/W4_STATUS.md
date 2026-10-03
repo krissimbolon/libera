@@ -12,7 +12,7 @@ Inspected baseline: `5b13f4bd2c0d017f3a015a7b7b47657bb411590a`; contains origina
 - evidence/W4/source_inventory.json, audit_observations.json: source hashes and exact line observations.
 - evidence/W4/governance_demo.json: actual synthetic-only output.
 - tools/governance_uas_demo.py: independent fixture demo; does not ingest corpus, private GT, or canonical runtime.
-- handoffs/W4_FACTS.jsonl: seven bounded facts, source commit then handoff commit.
+- handoffs/W4_FACTS.jsonl: nine bounded facts, source commit then handoff commit.
 - requests/W4_GOVERNANCE_GAPS.md: proposed cross-owner remediation only.
 
 ## Exact commands and observed outcomes
@@ -27,9 +27,12 @@ Official web retrieval: JDIH Komdigi UU27/2022 text (Pasal34,46,50); official BP
 - BLOCKED for real-data use: legal mandate, named controller/processors, institutional approval/signoff not supplied.
 - BLOCKED for production protection claims: institutional encryption, keys, account separation, egress, retention and recovery SLA not observed.
 - BLOCKED for human tabletop requirement: automated fixture exercise performed; no invented participants, signatures or historical team drill.
-- BLOCKED for full normative ISO audit: licensed full text not available. Academic 19-control readiness mapping completed; not certification/conformity statement.
+- Academic 19-control checklist completed; identifiers/themes verified in official BSI preview via ANSI Webstore (source turn12view1, PDF indices6–8). Full normative conformity/certification opinion not provided; this does not block academic checklist.
 - Post-W2/W3 state requires Coordinator retest of five baseline gaps; resolved issues must preserve baseline evidence and note actual retest.
 - No private GT accessed; no corpus changed; no five shared docs touched; no final metrics written.
 
 ## Next integration action
-Coordinator inspect/verify seven facts and ownership diff; promote only bounded facts. Incorporate governance text into report with blockers explicit. Review requests/W4_GOVERNANCE_GAPS.md with W2/W3; do not claim deployed controls from fixture results.
+Coordinator inspect/verify nine facts and ownership diff; promote only bounded facts. Incorporate governance text into report with blockers explicit. Review requests/W4_GOVERNANCE_GAPS.md with W2/W3; do not claim deployed controls from fixture results.
+
+## Reviewed correction checkpoint
+Evidence commit `655486363b637adac18c25a012b7a9a73f2b33f6`: audit table now explicitly separates condition, criteria, cause, effect, recommendation. Read-only current inventory at integration `89e11d7d7aabdcb43766210ab93de6e0cfbe8a8d`. W4 reran integrated W3 unittest suite, 15 passed exit0; GOV02 mitigated within inspected canonical APIs (loopback/no proxies/no redirects). OS egress and legacy apps remain unassessed; baseline findings preserved. Official BSI preview on ANSI Webstore verifies 19 checklist identifier/themes. Two new facts and refreshed document/reference source hashes; nine facts total. No shared source/interface files changed.
