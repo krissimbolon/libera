@@ -17,6 +17,7 @@ import re
 import time
 import urllib.error
 import urllib.request
+from .local_transport import local_urlopen, LocalTransportError
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -51,9 +52,9 @@ def _post_json(url: str, payload: dict, timeout: int = 120) -> dict:
         headers={"Content-Type": "application/json"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with local_urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.URLError as exc:
+    except (urllib.error.URLError, LocalTransportError) as exc:
         raise RetrieverError(f"Ollama embed endpoint gagal {url}: {exc}") from exc
 
 

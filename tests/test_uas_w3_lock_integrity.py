@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from src.ai_rag.local_transport import validate_local_url, LocalTransportError, NoRedirect
 from tools.lock_p8_outputs import validate_real_experiment
 from src.ai_rag.ollama_runner import get_model_digest
 from src.evaluation.evaluate_experiment import _parse_structured_output
@@ -14,6 +15,16 @@ class LockTests(unittest.TestCase):
             p=Path(d)/'experiment.json'
             p.write_text(json.dumps([{'task_id':'T01', **{k:rec for k in ('A_llm_only','B_llm_rag','C_llm_rag_structured')}}]))
             validate_real_experiment(p)
+
+    def test_remote_host_refused(self):
+        for url in ('https://example.org/api/generate', 'http://127.0.0.1@evil.invalid', 'http://127.0.0.1.evil.invalid'):
+            with self.assertRaises(LocalTransportError): validate_local_url(url)
+
+    def test_localhost_pinned(self):
+        self.assertEqual(validate_local_url('http://localhost:11434/api/tags'),'http://127.0.0.1:11434/api/tags')
+
+    def test_redirect_refused(self):
+        with self.assertRaises(LocalTransportError): NoRedirect().redirect_request(None,None,302,'',{},'http://evil.invalid')
 
     def test_stub_refused(self):
         with self.assertRaises(ValueError): self.validate({'dry_run':True,'output':'stub'})

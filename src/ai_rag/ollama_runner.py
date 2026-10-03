@@ -5,6 +5,7 @@ import argparse
 import json
 import urllib.error
 import urllib.request
+from .local_transport import local_urlopen, LocalTransportError
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -49,17 +50,17 @@ def _post(url: str, payload: Dict[str, Any], timeout: int) -> Dict[str, Any]:
         headers={"Content-Type": "application/json"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with local_urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.URLError as exc:
+    except (urllib.error.URLError, LocalTransportError) as exc:
         raise OllamaError(f"Ollama tidak dapat dihubungi di {url}: {exc}") from exc
 
 
 def _get(url: str, timeout: int) -> Dict[str, Any]:
     try:
-        with urllib.request.urlopen(url, timeout=timeout) as resp:
+        with local_urlopen(url, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.URLError as exc:
+    except (urllib.error.URLError, LocalTransportError) as exc:
         raise OllamaError(f"Ollama tidak dapat dihubungi di {url}: {exc}") from exc
 
 
