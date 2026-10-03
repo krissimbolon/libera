@@ -3,11 +3,29 @@ param(
     [switch]$UseLockedP5,
     [string]$P5LockManifestPath = "runtime/working/P5/p5_lock_manifest.json",
     [string]$AcquisitionPath = "",
+    [string]$AcquisitionSha256 = "",
     [string]$ArtifactsPath = "",
     [string]$GroundTruthPath = ""
 )
 $ErrorActionPreference = "Stop"
 $UsedDryAcquisition = $false
+
+# Fail before any stage can overwrite evidence or an already locked experiment.
+if ($GroundTruthPath) {
+    throw "GroundTruthPath is forbidden in this pipeline (including DryRun). Use scripts/run_p9_final.ps1 on existing locked outputs."
+}
+if (Test-Path "runtime/working/P8/p8_lock_manifest.json") {
+    throw "Final P8 lock exists: pipeline rerun refused before any outputs are overwritten. Use scripts/run_p9_final.ps1 for evaluation."
+}
+if ($AcquisitionPath -and (-not $AcquisitionSha256 -or $AcquisitionSha256 -notmatch '^[0-9a-fA-F]{64}$')) {
+    throw "AcquisitionPath requires AcquisitionSha256 from a trusted separate custody record."
+}
+if ($AcquisitionPath -and $ArtifactsPath) {
+    throw "Supply AcquisitionPath or ArtifactsPath, not both."
+}
+if ($ArtifactsPath) {
+    Write-Warning "Supplied ArtifactsPath bypasses acquisition verification. Its source provenance and integrity must be independently verified by the operator."
+}
 
 function Run-Python {
     param([Parameter(ValueFromRemainingArguments=$true)][string[]]$PyArgs)
@@ -23,7 +41,7 @@ Write-Host "Frozen P2 is read-only and SHA-256 pinned."
 if (-not $ArtifactsPath) {
     if ($AcquisitionPath) {
         Write-Host "[P4] Extracting supplied acquisition working copy..."
-        Run-Python -m src.forensics.extract_artifacts --input $AcquisitionPath
+        Run-Python -m src.forensics.extract_artifacts --input $AcquisitionPath --expected-sha256 $AcquisitionSha256
     } else {
         Write-Host "[P3] No real acquisition supplied: building CONTROLLED DRY-RUN ACQ-DRY-001."
         Write-Warning "This is NOT physical-device acquisition and must not be presented as ACQ-001."
@@ -31,7 +49,9 @@ if (-not $ArtifactsPath) {
         Run-Python -m src.forensics.acquisition_simulator
         New-Item -ItemType Directory -Force -Path "runtime\working" | Out-Null
         Copy-Item "runtime\private\ACQ-DRY-001\acquisition_manifest.json" "runtime\working\current_acquisition_manifest.json" -Force
-        Run-Python -m src.forensics.extract_artifacts
+        $freshAcquisition = Get-Content "runtime/private/ACQ-DRY-001/acquisition_manifest.json" -Raw | ConvertFrom-Json
+        if (-not $freshAcquisition.acquisition_sha256) { throw "Fresh P3 acquisition record has no SHA-256." }
+        Run-Python -m src.forensics.extract_artifacts --expected-sha256 $freshAcquisition.acquisition_sha256
     }
     $ArtifactsPath = "runtime/working/P4/artifacts.csv"
 }
@@ -68,16 +88,15 @@ if ($DryRun) {
     Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model qwen2.5:1.5b --prompt-version v2-forensic-grounded --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8
 }
 
-Write-Host "[P8] Locking experiment outputs before any ground truth is opened..."
-Run-Python tools/lock_p8_outputs.py --artifacts $ArtifactsPath --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json
-
-Write-Host "[P9] Running integrity/groundedness evaluation..."
-if ($GroundTruthPath) {
-    Write-Host "[P9] Ground truth supplied: verifying cryptographic P8 lock before evaluation."
-    Run-Python -m src.evaluation.evaluate_experiment --artifacts $ArtifactsPath --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json --ground-truth $GroundTruthPath --outputs-locked --lock-manifest runtime/working/P8/p8_lock_manifest.json
+if ($DryRun) {
+    Write-Warning "DryRun uses stub responses: no final P8 lock is created and GT access remains closed."
 } else {
-    Run-Python -m src.evaluation.evaluate_experiment --artifacts $ArtifactsPath --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json
+    Write-Host "[P8] Locking real experiment outputs before separate ground-truth evaluation..."
+    Run-Python tools/lock_p8_outputs.py --artifacts $ArtifactsPath --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json
 }
+
+Write-Host "[P9] Running no-ground-truth integrity precheck only..."
+Run-Python -m src.evaluation.evaluate_experiment --artifacts $ArtifactsPath --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json
 
 Write-Host "[P10] Building runtime report..."
 Run-Python -m src.report.build_report

@@ -8,6 +8,11 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Stop before acquisition/extraction or manifest copies can invalidate a lock.
+if (Test-Path "runtime/working/P8/p8_lock_manifest.json") {
+    throw "Final P8 lock exists: demo rerun refused before outputs are overwritten. Use scripts/run_p9_final.ps1."
+}
+
 Write-Host "=== LIBERA CHATSIM FORENSIC DEMO ===" -ForegroundColor Cyan
 Write-Warning "ChatSim is a researcher-controlled Android messaging simulator, NOT WhatsApp."
 
@@ -22,6 +27,11 @@ if (-not $latest) { throw "No ACQ-SIM-001 folder found." }
 
 $workingDb = Join-Path $latest.FullName "working\libera_messages.db"
 $artifactDir = Join-Path $latest.FullName "artifacts"
+$freshCustody = Get-Content (Join-Path $latest.FullName "acquisition_manifest.json") -Raw | ConvertFrom-Json
+$workingSha256 = (Get-FileHash -Algorithm SHA256 $workingDb).Hash.ToLower()
+if (-not $freshCustody.master_sha256 -or $workingSha256 -ne $freshCustody.master_sha256 -or $workingSha256 -ne $freshCustody.working_sha256) {
+    throw "ChatSim working-copy SHA-256 differs from fresh acquisition custody record."
+}
 & py -3 tools/extract_acquired_chatsim.py $workingDb --out $artifactDir
 if ($LASTEXITCODE -ne 0) { throw "ChatSim P4 extraction failed." }
 
@@ -66,6 +76,10 @@ if ($LaunchWorkbench) {
 Write-Host ""
 Write-Host "ChatSim evidence root: $($latest.FullName)"
 Write-Host "Normalized ART evidence: $artifactCsv"
-Write-Host "P8 is now hash-locked. Do NOT rerun P8 after opening evaluator ground truth."
+if ($DryRun) {
+    Write-Warning "DryRun created no final P8 lock. GT access remains closed; results are pipeline prechecks only."
+} elseif (-not $StopAfterP4) {
+    Write-Host "P8 is now hash-locked. Do NOT rerun P8 after opening evaluator ground truth."
+}
 Write-Host "For final P9, use scripts\run_p9_final.ps1 on the existing locked outputs."
 Write-Host "Remember: DEV-SIM-001 / ACQ-SIM-001 is a controlled simulation track."

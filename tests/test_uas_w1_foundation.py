@@ -73,3 +73,18 @@ def test_p4_rejects_malformed_trusted_digest(tmp_path):
     db.write_bytes(b'synthetic')
     with pytest.raises(ext.ExtractionError, match='64 hex'):
         ext.run(db, tmp_path / 'artifacts.csv', tmp_path / 'p4.json', expected_sha256='invalid')
+
+
+def test_windows_wrapper_static_gate_order_and_hash_wiring():
+    local = (ROOT / 'scripts/run_libera_local.ps1').read_text()
+    demo = (ROOT / 'scripts/run_libera_demo.ps1').read_text()
+    first_stage = local.index('Write-Host "=== LIBERA')
+    assert local.index('if ($GroundTruthPath)') < first_stage
+    assert local.index('if (Test-Path "runtime/working/P8/p8_lock_manifest.json")') < first_stage
+    assert '--expected-sha256 $AcquisitionSha256' in local
+    assert '--expected-sha256 $freshAcquisition.acquisition_sha256' in local
+    lock = local.index('Run-Python tools/lock_p8_outputs.py')
+    assert local.rfind('} else {', 0, lock) > local.index('if ($DryRun)', local.index('Write-Host "[P6]'))
+    assert '--ground-truth' not in local
+    assert demo.index('if (Test-Path "runtime/working/P8/p8_lock_manifest.json")') < demo.index('& powershell -ExecutionPolicy')
+    assert demo.index('$workingSha256 -ne $freshCustody.master_sha256') < demo.index('& py -3 tools/extract_acquired_chatsim.py')
