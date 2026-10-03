@@ -1,0 +1,242 @@
+[
+  {
+    "claim_id": "W1-001",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "remote_source_commit": "bada6178abeece2d3e47b6ebc83c911e78814345",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-002",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "remote_source_commit": "bada6178abeece2d3e47b6ebc83c911e78814345",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-003",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "remote_source_commit": "bada6178abeece2d3e47b6ebc83c911e78814345",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-004",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "remote_source_commit": "bada6178abeece2d3e47b6ebc83c911e78814345",
+    "source_path": "docs/08_uas/evidence/W1/full_tests.txt",
+    "source_sha256": "1c0e137610704d0f22d5d8a4eba5bb84eca528ab49187e515036a55192ed0ef5",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-005",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "remote_source_commit": "bada6178abeece2d3e47b6ebc83c911e78814345",
+    "source_path": "docs/08_uas/evidence/W1/runtime_summary.json",
+    "source_sha256": "2b3313b01565a646306c76ea777630109b3f9268b87ff5437dc6c900d8f567d0",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-006",
+    "source_commit": "d1365eb96e60721276a10549ddc1f1998130f232",
+    "remote_source_commit": "bada6178abeece2d3e47b6ebc83c911e78814345",
+    "source_path": "docs/08_uas/evidence/W1/hygiene_inventory.json",
+    "source_sha256": "c809fd3000d04b30d62a65b3a1bc0af4fbc65496ff2d23d9e55e8adfd608a28a",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-007",
+    "source_commit": "60ddffcdc68c7917cd9d948f5e9cea1453ef3969",
+    "remote_source_commit": "ab606a794b319780b156ce2cb45a15ae453da322",
+    "source_path": "docs/08_uas/evidence/W1/trusted_hash_tests.txt",
+    "source_sha256": "05e299a1a5019331a9d388243a3bb53c0f7839de6fe226e806597e01f2f735e9",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-008",
+    "source_commit": "60ddffcdc68c7917cd9d948f5e9cea1453ef3969",
+    "remote_source_commit": "ab606a794b319780b156ce2cb45a15ae453da322",
+    "source_path": "docs/08_uas/evidence/W1/trusted_runtime_summary.json",
+    "source_sha256": "e07276e8bc6c19fd62a54a2208b17881e081a09b34e2ebb9850848c64d76b501",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W1-009",
+    "source_commit": "dc5fea630146cfb0d6c06c14cddf90d3d4c5a00c",
+    "remote_source_commit": "dfe906c4a09c39e723a3beb1bf81485728f40a6a",
+    "source_path": "docs/08_uas/evidence/W1/wrapper_static_tests.txt",
+    "source_sha256": "273da0627180e012542554ca83e8ea112125d16af877e86285d18557f3a80dd0",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-SEC-001",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "remote_source_commit": "26f7500e31c61f36726cce8a68ca5bdbad816b67",
+    "source_path": "docs/08_uas/evidence/W2/security_results.json",
+    "source_sha256": "63d5c124f6ddc33770d3b6f6a7fceeb9125d777f56b907c57ae935e21f200b49",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-SEC-002",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "remote_source_commit": "26f7500e31c61f36726cce8a68ca5bdbad816b67",
+    "source_path": "docs/08_uas/evidence/W2/security_results.json",
+    "source_sha256": "63d5c124f6ddc33770d3b6f6a7fceeb9125d777f56b907c57ae935e21f200b49",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-SEC-003",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "remote_source_commit": "26f7500e31c61f36726cce8a68ca5bdbad816b67",
+    "source_path": "docs/08_uas/evidence/W2/security_results.json",
+    "source_sha256": "63d5c124f6ddc33770d3b6f6a7fceeb9125d777f56b907c57ae935e21f200b49",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-RETEST",
+    "source_commit": "e8b7153ca928e81d15737e9521bb07481a60f0dc",
+    "remote_source_commit": "26f7500e31c61f36726cce8a68ca5bdbad816b67",
+    "source_path": "docs/08_uas/evidence/W2/retest.txt",
+    "source_sha256": "a329c90cd8257191e572a810014453d117267b45717e21e5f1e726aca13337dc",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W2-CANONICAL-OWNER-RETEST",
+    "source_commit": "1c7b60683c0a21035fbf8501616027a3a2b71bbd",
+    "remote_source_commit": "79f5e98e6161a84a84218120f56d31d301bb0ee0",
+    "source_path": "docs/08_uas/evidence/W2/owner_retest.json",
+    "source_sha256": "29b907df6833fa59818b7ae36c3cbdb8d421c2e2826d489a854362c79c8d7f33",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-ENV",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "remote_source_commit": "863c6e868deeb87f44650dea232efe6c6f7ceefd",
+    "source_path": "docs/08_uas/evidence/W3/environment.json",
+    "source_sha256": "00eaac3894ead000c5c6beaf6d02b2aedd8a6ccc362bbd19fe239082782c9003",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-TESTS",
+    "source_commit": "0251031789fe21adc7e89b9ffc485d0d699a4a9b",
+    "remote_source_commit": "306d9d337d50ead8de45f203ebcca60360fbb862",
+    "source_path": "docs/08_uas/evidence/W3/pytest.txt",
+    "source_sha256": "ad970dc13ee4f0cc4e1eb344f8b8a060dff766eb49519cb03171094303646fdf",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-TRANSPORT",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "remote_source_commit": "863c6e868deeb87f44650dea232efe6c6f7ceefd",
+    "source_path": "src/ai_rag/local_transport.py",
+    "source_sha256": "273537a9161ac9f648517418e12bef8e6a840e7d6be00a0e76087cd889fe9f5a",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-LOCK",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "remote_source_commit": "863c6e868deeb87f44650dea232efe6c6f7ceefd",
+    "source_path": "tools/lock_p8_outputs.py",
+    "source_sha256": "bbba2836f5ff0b0b739c0f06f090c9efdadc15b47a3d436c4a185ee5dab4f04e",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-NESTED-GT",
+    "source_commit": "64819a36c93cbc58a4654210c70a1f7e1f27f59c",
+    "remote_source_commit": "863c6e868deeb87f44650dea232efe6c6f7ceefd",
+    "source_path": "src/ai_rag/validate_output.py",
+    "source_sha256": "6f6aa80cf46f35cc4dd7c786d633991cfb41c04dbfc987ca155f34dfb69cd0e8",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W3-PRE-GT-VERIFY",
+    "source_commit": "0251031789fe21adc7e89b9ffc485d0d699a4a9b",
+    "remote_source_commit": "306d9d337d50ead8de45f203ebcca60360fbb862",
+    "source_path": "scripts/run_p9_final.ps1",
+    "source_sha256": "37cdf7552b458d0f719cb4ba25e87244612a7cd0c7cbf3ca5f9ce93eebf5ee59",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-PRIVACY-DEMO",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "remote_source_commit": "63875f2046f26d93dcd60d9068cb04048fb6cf84",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "source_sha256": "68e969d14b0b2e46d287533b329388fb1ebf8f6a21824e86da98ab1073832233",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-ACL-DEMO",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "remote_source_commit": "63875f2046f26d93dcd60d9068cb04048fb6cf84",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "source_sha256": "68e969d14b0b2e46d287533b329388fb1ebf8f6a21824e86da98ab1073832233",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-RESTORE-DEMO",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "remote_source_commit": "63875f2046f26d93dcd60d9068cb04048fb6cf84",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "source_sha256": "68e969d14b0b2e46d287533b329388fb1ebf8f6a21824e86da98ab1073832233",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-TABLETOP",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "remote_source_commit": "63875f2046f26d93dcd60d9068cb04048fb6cf84",
+    "source_path": "docs/08_uas/evidence/W4/governance_demo.json",
+    "source_sha256": "68e969d14b0b2e46d287533b329388fb1ebf8f6a21824e86da98ab1073832233",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-AUDIT-5-GAPS",
+    "source_commit": "4ae65d2cc624633dc755d97f9d2de3c7c5c4dce0",
+    "remote_source_commit": "63875f2046f26d93dcd60d9068cb04048fb6cf84",
+    "source_path": "docs/08_uas/evidence/W4/audit_observations.json",
+    "source_sha256": "f51da8ac2500d2411267c0e705900475ba8d076c8af382f152294742d8d2f86a",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-GOVERNANCE-PACKAGE",
+    "source_commit": "655486363b637adac18c25a012b7a9a73f2b33f6",
+    "remote_source_commit": "f3af3674cd45733dee9853f08ff0bd91d606b745",
+    "source_path": "docs/08_uas/workers/W4_GOVERNANCE.md",
+    "source_sha256": "afbfbdb87fe51b4e8d30b6b02e8c52a7a34355944f59acd1bf266551336ef758",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-REFERENCES",
+    "source_commit": "655486363b637adac18c25a012b7a9a73f2b33f6",
+    "remote_source_commit": "f3af3674cd45733dee9853f08ff0bd91d606b745",
+    "source_path": "docs/08_uas/workers/W4_REFERENCES.md",
+    "source_sha256": "0755f19d9a11f410111880cd9a3b43659270a014faf48b85330c44544ed52dbf",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-GOV02-CURRENT-AFTER",
+    "source_commit": "655486363b637adac18c25a012b7a9a73f2b33f6",
+    "remote_source_commit": "f3af3674cd45733dee9853f08ff0bd91d606b745",
+    "source_path": "docs/08_uas/evidence/W4/current_transport_retest.txt",
+    "source_sha256": "7940755a816e44b5e7b4b418ca066e50deff9ac14e30bd949c6e908ad70941cc",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W4-ISO-PREVIEW-19",
+    "source_commit": "655486363b637adac18c25a012b7a9a73f2b33f6",
+    "remote_source_commit": "f3af3674cd45733dee9853f08ff0bd91d606b745",
+    "source_path": "docs/08_uas/evidence/W4/iso_preview_verification.json",
+    "source_sha256": "d54f25c9b5acf40b0b9de08923eabf4695ab055a5c2c15133c85d24dc2b9fadb",
+    "sha256_match": true
+  },
+  {
+    "claim_id": "W5-REPORT-002",
+    "source_commit": "1d1119c47b7d60561dfbb64632245c0adc5d4922",
+    "remote_source_commit": "eeea53ae664560c1c9680e376f6fb18fdd12d404",
+    "source_path": "docs/08_uas/workers/W5_report.md",
+    "source_sha256": "674ba7ed58423e25ceefe9f77b179edb422a096e96c05260aaa80f530417160b",
+    "sha256_match": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "verified_remote_integration_sha": "2c0817c117baafd6fd0af0f5f88f5a16a8144607",
+  "origin_main_sha": "62f8088c9f4833fa6ddf0149c6509a7162eaa9cf",
+  "remote_checkout_pytest_passed": 42,
+  "remote_source_fact_hashes_verified": 30,
+  "canonical_p2_sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6",
+  "main_unchanged": true,
+  "method": "Fresh fetched detached remote checkout; pytest -q; all handoff source_commit blobs SHA256 verified from fetched Git objects; no private GT supplied. This later metadata-only commit records the completed verification."
+}
