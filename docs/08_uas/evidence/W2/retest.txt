@@ -4,6 +4,6 @@ test_tamper_structurally_valid_but_hash_rejected (test_uas_w2_security.SecurityT
 test_valid_finding (test_uas_w2_security.SecurityTests.test_valid_finding) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.002s
+Ran 4 tests in 0.010s
 
 OK
