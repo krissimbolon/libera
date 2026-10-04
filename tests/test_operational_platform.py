@@ -1,6 +1,7 @@
 import hashlib
 import json
 import sqlite3
+import zipfile
 from pathlib import Path
 
 from libera_platform.case import archive, baseline, create_case, extract, import_sqlite, status, verify
@@ -58,6 +59,11 @@ def test_operational_case_lifecycle_without_models(tmp_path):
 
     out = archive("CASE-001", root=str(root))
     assert out.is_file()
+    with zipfile.ZipFile(out) as zf:
+        names = set(zf.namelist())
+    assert "case.json" in names
+    assert "runtime/working/P4/artifacts.csv" not in names
+    assert "evidence/master/messages.sqlite" not in names
     assert verify("CASE-001", str(root))["status"] == "PASS"
 
 
