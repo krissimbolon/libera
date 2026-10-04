@@ -68,13 +68,13 @@ jobs:
         shell: bash
         run: |
           set -uo pipefail
-          if python tools/lock_p8_outputs.py --artifacts runtime/working/P4/artifacts.csv --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json > lock.log 2>&1; then
-            cat lock.log
+          if python tools/lock_p8_outputs.py --artifacts runtime/working/P4/artifacts.csv --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json > runtime/working/P8/lock_attempt.log 2>&1; then
+            cat runtime/working/P8/lock_attempt.log
             echo "::error::P8 lock accepted a dry-run/hashing-fallback output"
             exit 1
           fi
-          cat lock.log
-          grep -q "Refuse P8 lock" lock.log
+          cat runtime/working/P8/lock_attempt.log
+          grep -q "Refuse P8 lock" runtime/working/P8/lock_attempt.log
           test ! -e runtime/working/P8/p8_lock_manifest.json
           echo "PASS: smoke output was refused as a study lock"
 
