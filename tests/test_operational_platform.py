@@ -87,3 +87,14 @@ def test_operational_verify_detects_derived_artifact_tampering(tmp_path):
     result = verify("CASE-TAMPER", str(root))
     assert result["status"] == "FAIL"
     assert "P4 artifact hash mismatch" in result["problems"]
+
+
+def test_operational_verify_detects_audit_chain_tampering(tmp_path):
+    root = tmp_path / "cases"
+    case = create_case("CASE-AUDIT", root=str(root))
+    audit = case / "logs/audit.jsonl"
+    text = audit.read_text(encoding="utf-8")
+    audit.write_text(text.replace("CASE_CREATED", "CASE_EDITED", 1), encoding="utf-8")
+    result = verify("CASE-AUDIT", str(root))
+    assert result["status"] == "FAIL"
+    assert any("audit record_hash mismatch" in problem for problem in result["problems"])
