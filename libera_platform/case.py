@@ -30,7 +30,7 @@ from src.baseline import examiner_packet, p5_lock, traditional_baseline
 from src.forensics.extract_artifacts import run as extract_artifacts
 
 CASE_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$")
-VERSION = "1.1.0"
+VERSION = "1.0.0"
 
 
 class PlatformError(RuntimeError):
@@ -336,7 +336,6 @@ def assist(case_id: str, root: str | None = None, top_k: int | None = None) -> d
     output_path = ai / "assistance.json"
     output_path.write_text(json.dumps(outputs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     lock_files = {
-        "case_manifest": case / "case.json",
         "artifacts": p4,
         "p5_lock": case / "runtime/working/P5/p5_lock_manifest.json",
         "tasks": case / "configs/investigation_tasks.json",
