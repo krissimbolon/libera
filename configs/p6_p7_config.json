@@ -1,5 +1,5 @@
 {
-  "config_version": "1.0.0-locked-for-local-run",
+  "config_version": "1.1.0-final-v6-local-run",
   "frozen_p2": {
     "corpus": "data/adaptasi_indonesia/corpus_whatsapp_10000.csv",
     "sha256": "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6",
@@ -33,12 +33,17 @@
     "temperature": 0.1,
     "seed": 42,
     "num_ctx": 8192,
-    "request_timeout_seconds": 180
+    "request_timeout_seconds": 600,
+    "num_predict": 2048,
+    "repeat_penalty": 1.2,
+    "repeat_last_n": 256,
+    "transport_retries": 2
   },
   "prompt": {
-    "prompt_version": "v2-forensic-grounded",
+    "prompt_version": "v6-forensic-grounded-repeat-control",
     "requires_art_citations": true,
-    "abstain_when_evidence_missing": true
+    "abstain_when_evidence_missing": true,
+    "structured_output": "Ollama JSON schema (src/ai_rag/ollama_runner.py STRUCTURED_OUTPUT_SCHEMA)"
   },
   "experiment": {
     "conditions": [
@@ -57,5 +62,13 @@
     "expected_entity_ids",
     "expected_relation_ids",
     "is_key_evidence"
-  ]
+  ],
+  "history": {
+    "superseded_baseline": {
+      "config_version": "1.0.0-locked-for-local-run",
+      "prompt_version": "v2-forensic-grounded",
+      "request_timeout_seconds": 180
+    },
+    "note": "Aligned on 2026-10-05 (archival) with the method actually executed in the reported P8 v6 run of 2026-09-25 (docs/04_ai_methodology/P8_REAL_RUN_20260925.md). The prompt text in src/ai_rag/ollama_runner.py is the v6 text; the v2 label is kept here for history only. The v6 run itself was locked against its own run-specific run_config.json (private runtime)."
+  }
 }

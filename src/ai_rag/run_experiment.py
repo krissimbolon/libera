@@ -151,7 +151,7 @@ def main() -> None:
     p.add_argument("--questions", default="configs/investigation_tasks.json")
     p.add_argument("--output", default="runtime/working/P8/experiment_output.json")
     p.add_argument("--model", default=ollama_runner.DEFAULT_MODEL)
-    p.add_argument("--prompt-version", default="v2-forensic-grounded")
+    p.add_argument("--prompt-version", default="v6-forensic-grounded-repeat-control")
     p.add_argument("--temperature", type=float, default=ollama_runner.DEFAULT_TEMPERATURE)
     p.add_argument("--seed", type=int, default=ollama_runner.DEFAULT_SEED)
     p.add_argument("--num-ctx", type=int, default=ollama_runner.DEFAULT_NUM_CTX)

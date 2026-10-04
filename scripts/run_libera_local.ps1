@@ -85,7 +85,7 @@ if ($DryRun) {
     Run-Python -m src.ai_rag.retriever build --chunks runtime/working/P6/chunks.jsonl --namespace case_evidence --index runtime/working/P6/index.json --embedding-method ollama --embedding-model bge-m3
 
     Write-Host "[P7-P8] Running locked A/B/C local experiment..."
-    Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model qwen2.5:1.5b --prompt-version v2-forensic-grounded --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8
+    Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model qwen2.5:1.5b --prompt-version v6-forensic-grounded-repeat-control --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8 --num-predict 2048 --timeout 600 --retries 2
 }
 
 if ($DryRun) {

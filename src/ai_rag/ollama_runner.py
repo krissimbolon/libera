@@ -189,7 +189,7 @@ def call_generate(
 def run_once(
     query: str,
     model: str = DEFAULT_MODEL,
-    prompt_version: str = "v2-forensic-grounded",
+    prompt_version: str = "v6-forensic-grounded-repeat-control",
     temperature: float = DEFAULT_TEMPERATURE,
     seed: int = DEFAULT_SEED,
     host: str = DEFAULT_HOST,
@@ -271,7 +271,7 @@ def main() -> None:
     p = argparse.ArgumentParser(description="P7 local Ollama runner.")
     p.add_argument("--query", required=True)
     p.add_argument("--model", default=DEFAULT_MODEL)
-    p.add_argument("--prompt-version", default="v2-forensic-grounded")
+    p.add_argument("--prompt-version", default="v6-forensic-grounded-repeat-control")
     p.add_argument("--temperature", type=float, default=DEFAULT_TEMPERATURE)
     p.add_argument("--seed", type=int, default=DEFAULT_SEED)
     p.add_argument("--num-ctx", type=int, default=DEFAULT_NUM_CTX)
