@@ -52,6 +52,8 @@ By default cases live under `~/.libera/cases/<CASE-ID>/`. Set `LIBERA_HOME` or p
 
 ## Case isolation
 
+Each case also maintains a hash-chained `logs/audit.jsonl` event trail; the verifier rejects a broken chain.
+
 Each case has its own:
 
 ```text
