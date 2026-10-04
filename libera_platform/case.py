@@ -202,6 +202,22 @@ def extract(case_id: str, root: str | None = None) -> dict:
     out = case / "runtime/working/P4/artifacts.csv"
     manifest_path = case / "runtime/working/P4/artifact_manifest.json"
     result = extract_artifacts(working, out, manifest_path, acq["trusted_sha256"])
+    # Generic normalized exports may not carry Libera's optional acquisition_metadata
+    # table. Preserve evidence bytes and attach case custody identity only to the
+    # derived P4 artifact layer.
+    if result.get("acquisition_id") == "ACQ-UNKNOWN" or result.get("device_id") == "DEV-UNKNOWN":
+        with out.open("r", encoding="utf-8", newline="") as f:
+            rows = list(csv.DictReader(f)); fields = f.fieldnames or []
+        for row in rows:
+            row["acquisition_id"] = acq["acquisition_id"]
+            row["device_id"] = acq["device_id"]
+        with out.open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
+        result["acquisition_id"] = acq["acquisition_id"]
+        result["device_id"] = acq["device_id"]
+        result["output_sha256"] = sha256(out)
+        result["custody_identity_source"] = "case acquisition sidecar; evidence bytes unchanged"
+        _write_json(manifest_path, result)
     _stage(case, "P4", result["status"])
     return result
 
