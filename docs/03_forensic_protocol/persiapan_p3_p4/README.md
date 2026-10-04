@@ -1,3 +1,5 @@
+> **Archival note (2026-10-05):** preparation records from 2026-09-23/24 for a physical test-device track. The final study acquired evidence from the ChatSim app on an Android **emulator** (`ACQ-SIM-001`); items marked `BELUM DICATAT` / `BELUM DIKUNCI` describe the preparation state at that time and were not completed for a physical device. No physical-device acquisition result is claimed. Moved from docs/03_forensik_persiapan/ on 2026-10-05.
+
 # Persiapan P3–P4 Forensik Digital
 
 Folder ini berisi artefak publik/aman untuk persiapan penyitaan, akuisisi, hashing, chain of custody, dry-run, dan tooling sebelum corpus 10.000 pesan LIBERA dikunci.

@@ -1,4 +1,6 @@
-﻿# Validasi P9
+> **Archival note (2026-10-05):** P9 as executed is documented in [P9_CITATION_POLICY_20260925.md](P9_CITATION_POLICY_20260925.md) and [GT_RECONSTRUCTION_P9_P10_20260925.md](GT_RECONSTRUCTION_P9_P10_20260925.md). The blind-evaluation instruments listed below were prepared but not executed; the pre-run gate checklist and status page are in [../archive/superseded/](../archive/superseded/).
+
+# Validasi P9
 
 Folder ini digunakan untuk artefak validasi independen tahap P9.
 

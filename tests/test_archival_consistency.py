@@ -18,7 +18,7 @@ def test_frozen_corpus_matches_all_declarations():
     assert manifest["corpus_sha256"] == config["frozen_p2"]["sha256"] == CORPUS_SHA
     with corpus.open(encoding="utf-8", newline="") as handle:
         assert sum(1 for _ in csv.DictReader(handle)) == manifest["final_row_count"] == 10000
-    for doc in ("README.md",):
+    for doc in ("README.md", "docs/final_state.md", "docs/reproducibility.md"):
         assert CORPUS_SHA in (ROOT / doc).read_text(encoding="utf-8"), doc
 
 

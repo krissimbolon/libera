@@ -1,6 +1,6 @@
 # AI Methodology Notes
 
-Planned comparison:
+Planned comparison (executed as conditions A/B/C in the 2026-09-25 v6 run — see [P8_REAL_RUN_20260925.md](P8_REAL_RUN_20260925.md); "reviewer status" fields below were planned, the claim-level human review was not executed):
 1. Local LLM only
 2. Local LLM + RAG
 3. Local LLM + RAG + structured forensic reasoning

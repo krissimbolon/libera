@@ -1,4 +1,6 @@
-﻿# Register Error SOLVE-IT P9
+> **Archival note (2026-10-05):** planned evaluation instrument. The independent blind human evaluation it describes was **not executed** (original private ground truth reported lost); see [final_state.md](../final_state.md) §3.2 and §4. Kept as the documented protocol design.
+
+# Register Error SOLVE-IT P9
 
 Versi: 0.1-DRAFT  
 Status: PERSIAPAN  

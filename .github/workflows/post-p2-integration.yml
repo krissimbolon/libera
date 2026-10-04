@@ -52,6 +52,9 @@ jobs:
       - name: Automated test suite
         run: python -m pytest -v
 
+      - name: Documentation references (links, paths, commands)
+        run: python tools/check_doc_links.py --paths --include-archive
+
       - name: CLI smoke (dry-run, hashing fallback, no model calls)
         shell: bash
         run: |
