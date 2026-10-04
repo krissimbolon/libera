@@ -51,7 +51,8 @@ def parser() -> argparse.ArgumentParser:
 
     a = cs.add_parser("archive")
     a.add_argument("case_id"); a.add_argument("--output", type=Path); a.add_argument("--root")
-    a.add_argument("--include-evidence", action="store_true")
+    a.add_argument("--include-derived", action="store_true", help="Include derived artifacts/chunks/AI outputs (sensitive).")
+    a.add_argument("--include-evidence", action="store_true", help="Also include raw master/working evidence; requires --include-derived.")
 
     return p
 
@@ -84,7 +85,7 @@ def main() -> None:
             elif cmd == "set-tasks":
                 _emit(str(set_tasks(args.case_id,args.source,args.root)))
             elif cmd == "archive":
-                _emit(str(archive(args.case_id,args.output,args.root,args.include_evidence)))
+                _emit(str(archive(args.case_id,args.output,args.root,args.include_derived,args.include_evidence)))
     except (PlatformError, FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
         raise SystemExit(f"[Libera] ERROR: {exc}") from exc
 
