@@ -469,20 +469,39 @@ def status(case_id: str, root: str | None = None) -> dict:
     return {"case_id":case_id, "path":str(case), "stages":{k:v.exists() for k,v in checks.items()}, "verification":verify(case_id, root)}
 
 
-def archive(case_id: str, output: Path | None = None, root: str | None = None, include_evidence: bool = False) -> Path:
+def archive(
+    case_id: str,
+    output: Path | None = None,
+    root: str | None = None,
+    include_derived: bool = False,
+    include_evidence: bool = False,
+) -> Path:
     case = require_case(case_id, root)
     result = verify(case_id, root)
     if result["status"] != "PASS":
         raise PlatformError(f"Refuse archive: case verification failed: {result['problems']}")
-    output = Path(output) if output else case / "exports" / f"{case_id}-archive.zip"
+    if include_evidence and not include_derived:
+        raise PlatformError("--include-evidence requires --include-derived.")
+    suffix = "full" if include_evidence else "derived" if include_derived else "report"
+    output = Path(output) if output else case / "exports" / f"{case_id}-{suffix}-archive.zip"
     output.parent.mkdir(parents=True, exist_ok=True)
-    exclude_prefixes = () if include_evidence else ("evidence/master/", "evidence/working/")
+
+    report_only = {
+        "case.json",
+        "evidence/acquisition_manifest.json",
+        "runtime/working/P4/artifact_manifest.json",
+        "runtime/working/P5/p5_lock_manifest.json",
+        "runtime/working/AI/assistance_lock.json",
+        "exports/operational_report.md",
+    }
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as zf:
         for p in case.rglob("*"):
             if not p.is_file() or p.resolve() == output.resolve():
                 continue
             rel = p.relative_to(case).as_posix()
-            if any(rel.startswith(prefix) for prefix in exclude_prefixes):
+            if not include_derived and rel not in report_only:
+                continue
+            if include_derived and not include_evidence and rel.startswith(("evidence/master/", "evidence/working/")):
                 continue
             zf.write(p, rel)
     return output
