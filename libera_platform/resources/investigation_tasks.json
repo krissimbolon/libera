@@ -1,0 +1,16 @@
+{
+  "version": "1.0-operational",
+  "purpose": "Generic investigator-facing task template. Examiners should customize keywords/questions per case before analysis.",
+  "tasks": [
+    {"task_id":"T01","question":"Siapa aktor yang paling relevan dan bagaimana pola komunikasinya?","keywords":["nama","orang","akun","kontak","admin","operator","user"]},
+    {"task_id":"T02","question":"Apa urutan kejadian penting yang dapat direkonstruksi?","keywords":["sebelum","sesudah","kemudian","nanti","besok","malam","pagi","sore","jam"]},
+    {"task_id":"T03","question":"Lokasi apa yang muncul dan bagaimana perpindahan dapat ditelusuri?","keywords":["lokasi","alamat","rumah","kantor","hotel","stasiun","terminal","jalan"]},
+    {"task_id":"T04","question":"Adakah pembayaran atau transaksi yang relevan?","keywords":["bayar","transfer","uang","cash","rekening","harga","invoice","dp"]},
+    {"task_id":"T05","question":"Adakah koordinasi transportasi, perangkat, atau sumber daya?","keywords":["mobil","motor","taksi","jemput","antar","server","device","akun"]},
+    {"task_id":"T06","question":"Percakapan mana yang menunjukkan koordinasi antaraktor?","keywords":["atur","koordinasi","hubungi","telepon","chat","bilang","kabar","siap"]},
+    {"task_id":"T07","question":"Adakah instruksi, penawaran, perekrutan, atau pengendalian yang relevan?","keywords":["kerja","job","tawaran","suruh","ikut","jaga","akses","instruksi"]},
+    {"task_id":"T08","question":"Adakah pernyataan yang saling bertentangan atau perlu diverifikasi?","keywords":["tapi","bukan","belum","tidak","salah","beda","katanya","klarifikasi"]},
+    {"task_id":"T09","question":"Artifact mana yang paling kuat sebagai kandidat bukti dan mengapa?","keywords":["bukti","transfer","lokasi","akses","password","bayar","ketemu","file"]},
+    {"task_id":"T10","question":"Apa ringkasan kasus yang hanya didukung artifact yang dapat ditelusuri?","keywords":["orang","lokasi","waktu","bayar","akses","koordinasi","file","akun"]}
+  ]
+}
