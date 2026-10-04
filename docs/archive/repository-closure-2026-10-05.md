@@ -64,3 +64,10 @@ deleting the branch pointers loses no commit. Pull-request heads remain availabl
 - `python tools/check_doc_links.py --paths --include-archive`: 0 broken references.
 - Secret-signature screen of all 1,088 blobs reachable from every branch: 0 hits.
 - No reachable blob of the reconstruction CSV ever contained verbatim source messages.
+
+## Post-cleanup project decisions
+
+- **Project styling:** new/current material uses **Libera** as the canonical project name (treated as one word, not `LIBERA`). Historical/raw records may retain the older spelling for archival fidelity.
+- **Datasets:** legacy v0 CTDC/WAPI-derived files are intentionally retained as historical prototype provenance. They are not used as evidence or evaluation data in the final method.
+- **Canonical source case:** the final P1/P2 synthetic case was independently reconstructed, fictionalized and localized from the publicly accessible U.S. federal court record *United States v. Matthew Woods*, No. 17-CR-1235-WJ, Document 547 (GovInfo). The public corpus contains no verbatim source messages.
+- **Official corroboration:** the U.S. Attorney’s Office, District of New Mexico press release on Cornelius Galloway is recorded as a secondary public case-context source.

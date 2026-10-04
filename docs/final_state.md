@@ -1,13 +1,13 @@
-# LIBERA — final state (v1.0.0, 2026-10-05)
+# Libera — final state (v1.0.0, 2026-10-05)
 
 **Status: development closed · archived research snapshot · canonical.** This page is the single
-English summary of what LIBERA did, what it found, and what it did not establish. Where it cites a
+English summary of what Libera did, what it found, and what it did not establish. Where it cites a
 number, the "Source" column names the document that records it. Detailed records remain in Indonesian.
 
 ## 1. What the project is
 
-LIBERA is a controlled digital-forensics study. A synthetic Indonesian WhatsApp-style case (P1–P2) is
-loaded onto a researcher-controlled Android carrier (LIBERA ChatSim, `DEV-SIM-001`), logically
+Libera is a controlled digital-forensics study. A synthetic Indonesian WhatsApp-style case (P1–P2) is
+loaded onto a researcher-controlled Android carrier (Libera ChatSim, `DEV-SIM-001`), logically
 acquired with SHA-256 preservation (P3), extracted into `ART-*` artifacts (P4) and examined with a
 traditional baseline plus human QC (P5). Only after that, local AI assistance is tested (P6–P8) and
 its output is locked and validated against the acquired evidence (P9) before reporting (P10).

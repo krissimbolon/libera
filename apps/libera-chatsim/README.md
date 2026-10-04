@@ -1,6 +1,6 @@
-# LIBERA ChatSim — controlled Android evidence carrier
+# Libera ChatSim — controlled Android evidence carrier
 
-LIBERA ChatSim is a researcher-controlled Android messaging simulator for the LIBERA forensic demonstration. **It is not WhatsApp and must never be presented as a WhatsApp acquisition tool.** It exists so the team can demonstrate actual Android app-private logical acquisition, hashing, working-copy examination, extraction, provenance, and downstream P5–P10 analysis without touching personal WhatsApp accounts or mass-sending 10,000 messages.
+Libera ChatSim is a researcher-controlled Android messaging simulator for the Libera forensic demonstration. **It is not WhatsApp and must never be presented as a WhatsApp acquisition tool.** It exists so the team can demonstrate actual Android app-private logical acquisition, hashing, working-copy examination, extraction, provenance, and downstream P5–P10 analysis without touching personal WhatsApp accounts or mass-sending 10,000 messages.
 
 ## Evidence identity
 

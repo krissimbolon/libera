@@ -35,7 +35,7 @@ function Run-Python {
     }
 }
 
-Write-Host "=== LIBERA P3-P10 LOCAL RUN ==="
+Write-Host "=== Libera P3-P10 LOCAL RUN ==="
 Write-Host "Frozen P2 is read-only and SHA-256 pinned."
 
 if (-not $ArtifactsPath) {

@@ -14,7 +14,7 @@ function Need-Command($name) {
 Need-Command adb
 if (-not (Test-Path $ApkPath)) { throw "APK tidak ditemukan: $ApkPath" }
 
-Write-Host "=== INSTALL LIBERA CHATSIM ===" -ForegroundColor Cyan
+Write-Host "=== INSTALL Libera CHATSIM ===" -ForegroundColor Cyan
 Write-Warning "Target ini DEV-SIM-001 controlled emulator, bukan WhatsApp/DEV-001 fisik."
 
 adb wait-for-device | Out-Null

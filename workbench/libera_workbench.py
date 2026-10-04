@@ -1,4 +1,4 @@
-"""Offline-first forensic examination workbench for LIBERA ChatSim."""
+"""Offline-first forensic examination workbench for Libera ChatSim."""
 from pathlib import Path
 import sys
 import html
@@ -11,8 +11,8 @@ from workbench.chatsim_data import available_snapshots, capture_snapshot, device
 
 ROOT = Path(__file__).resolve().parents[1]
 
-st.set_page_config(page_title="LIBERA | Forensic Workbench", layout="wide")
-st.title("LIBERA · Forensic Workbench")
+st.set_page_config(page_title="Libera | Forensic Workbench", layout="wide")
+st.title("Libera · Forensic Workbench")
 st.caption("Pemeriksaan evidence percakapan secara lokal · ChatSim → akuisisi → integritas → artifact → examiner → AI assistance → validasi")
 
 with st.sidebar:

@@ -134,7 +134,7 @@ def main() -> None:
         "seed_sha256": sha256(seed_path),
         "anomaly_sha256": sha256(anomaly_path),
         "device_id": "DEV-SIM-001",
-        "environment": "LIBERA ChatSim Android emulator",
+        "environment": "Libera ChatSim Android emulator",
         "simulated_owner": "Raka Pradana",
         "device_message_count": device_rows,
         "source_anomaly_count": anomaly_rows,

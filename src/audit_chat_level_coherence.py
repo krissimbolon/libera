@@ -1,4 +1,4 @@
-"""Read-only chat-level coherence audit for LIBERA 10k corpus.
+"""Read-only chat-level coherence audit for Libera 10k corpus.
 
 This audit treats the forensic acquisition as one Raka-centric WhatsApp device.
 Existing conversation_id values are preserved as scenario/event segments. A

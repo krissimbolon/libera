@@ -10,7 +10,7 @@ Dry-run menggunakan data dummy/non-case untuk menguji:
 - acquisition log;
 - deteksi controlled mismatch.
 
-Jangan gunakan corpus LIBERA final pada dry-run.
+Jangan gunakan corpus Libera final pada dry-run.
 
 
 ## Dry-run 001 — hash awal dummy.txt
@@ -19,7 +19,7 @@ File dummy dibuat pada private evidence storage:
 `D:\KSI\Libera Private Evidence\07_P3_forensik\07_dry_run\dummy.txt`
 
 Isi yang ditulis:
-`LIBERA forensic dry run`
+`Libera forensic dry run`
 
 Hash baseline:
 - Algorithm: **SHA-256**

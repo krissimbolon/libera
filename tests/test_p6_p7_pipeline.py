@@ -1,5 +1,5 @@
 """
-test_p6_p7_pipeline.py - Test dasar pipeline P6/P7 (LIBERA).
+test_p6_p7_pipeline.py - Test dasar pipeline P6/P7 (Libera).
 
 Semua test berjalan TANPA Ollama (memakai mode dry-run / data toy) agar
 bisa dijalankan siapa saja di tim tanpa setup tambahan.

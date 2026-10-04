@@ -1,6 +1,6 @@
 # Reproducibility manifest
 
-Canonical reproduction guide for the archived LIBERA snapshot. It separates what anyone can reproduce
+Canonical reproduction guide for the archived Libera snapshot. It separates what anyone can reproduce
 from a clone, what needs local tools and models, and what is intentionally not published.
 
 ## 1. Snapshot identity
@@ -60,7 +60,7 @@ artifacts / 26 chats / 846 segments, `artifacts.csv` SHA-256 `d5e6fb73…24cfd`;
 `hashing:sha256_hashing_v1`. These are **smoke values for the dry-run carrier**, not study results (the study
 used the ChatSim acquisition: 9,997 artifacts, 25 chats, 645 chunks).
 
-CI (`.github/workflows/post-p2-integration.yml`, "LIBERA CI") runs exactly these checks on Python 3.12 and
+CI (`.github/workflows/post-p2-integration.yml`, "Libera CI") runs exactly these checks on Python 3.12 and
 3.14, including the assertion that the lock refuses the smoke output.
 
 Also reproducible publicly: the P2 corpus audits (`python src/audit_final_corpus.py` etc., manual workflow
@@ -78,7 +78,7 @@ The APK is built by CI (`build-chatsim-final.yml`: Java 17, Gradle 8.9). Other p
 
 ```powershell
 # 1. Android carrier: install the CI-built APK on the emulator (ChatSim, NOT WhatsApp)
-powershell -ExecutionPolicy Bypass -File scripts\install_chatsim.ps1 -ApkPath .\LIBERA-ChatSim-final-debug.apk
+powershell -ExecutionPolicy Bypass -File scripts\install_chatsim.ps1 -ApkPath .\Libera-ChatSim-final-debug.apk
 
 # 2. P3 logical acquisition + hash check + P4 extraction, then stop for examiner QC
 powershell -ExecutionPolicy Bypass -File scripts\run_libera_demo.ps1 -StopAfterP4

@@ -3,7 +3,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-Write-Host "=== LIBERA LOCAL PREFLIGHT ==="
+Write-Host "=== Libera LOCAL PREFLIGHT ==="
 
 function Fail($msg) { Write-Error $msg; exit 1 }
 

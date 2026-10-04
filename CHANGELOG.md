@@ -1,6 +1,6 @@
 # Changelog
 
-Milestones of the LIBERA research project. Dates are commit dates (UTC+7).
+Milestones of the Libera research project. Dates are commit dates (UTC+7).
 
 ## v1.0.0 — 2026-10-05 · Final archived research snapshot
 

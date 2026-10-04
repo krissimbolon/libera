@@ -1,4 +1,4 @@
-# Laporan QA Final Corpus LIBERA 10.000 Pesan
+# Laporan QA Final Corpus Libera 10.000 Pesan
 
 **Status akhir: LULUS — FROZEN_FOR_FORENSIC_SIMULATION**
 

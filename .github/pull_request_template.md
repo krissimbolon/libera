@@ -1,4 +1,4 @@
-<!-- LIBERA is archived. Only corrections, reproducibility fixes and provenance clarifications are accepted. -->
+<!-- Libera is archived. Only corrections, reproducibility fixes and provenance clarifications are accepted. -->
 
 ## What and why
 

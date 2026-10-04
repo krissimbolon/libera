@@ -1,4 +1,4 @@
-"""Evidence-aware chunking for LIBERA P6.
+"""Evidence-aware chunking for Libera P6.
 
 Chunks are built per merged participant chat + time window and preserve
 traceability to ART evidence IDs. The text sent to retrieval/LLM includes

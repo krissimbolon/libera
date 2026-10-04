@@ -1,6 +1,6 @@
 # Documentation map
 
-LIBERA is archived (v1.0.0). Start with the two English summaries; detailed records are mostly in
+Libera is archived (v1.0.0). Start with the two English summaries; detailed records are mostly in
 Indonesian. Anything under **Historical archive** describes an intermediate state and is not instructions.
 
 ## Current documentation

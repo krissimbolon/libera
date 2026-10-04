@@ -58,7 +58,7 @@ def classify_acquisition(p3):
         p3.get("acquisition_id", "")
     ).startswith("ACQ-SIM"):
         return "CONTROLLED ANDROID EMULATOR", (
-            "Researcher-controlled LIBERA ChatSim logical app-private acquisition. "
+            "Researcher-controlled Libera ChatSim logical app-private acquisition. "
             "ChatSim is not WhatsApp and this does not validate WhatsApp extraction."
         )
     return "CONTROLLED SOFTWARE DRY-RUN", (
@@ -117,7 +117,7 @@ def main() -> None:
     segment_count = first_value(p4, "segment_count", default="N/A")
 
     lines = [
-        "# LIBERA — P3–P10 Runtime Report",
+        "# Libera — P3–P10 Runtime Report",
         "",
         "Generated from local runtime artifacts. Frozen P2 is never modified.",
         "",

@@ -1,6 +1,6 @@
 # Security policy
 
-LIBERA is an **archived research project** (final snapshot `v1.0.0`). It is not a forensic product, is not
+Libera is an **archived research project** (final snapshot `v1.0.0`). It is not a forensic product, is not
 maintained for production use, and receives no security updates.
 
 ## Reporting

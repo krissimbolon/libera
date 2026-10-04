@@ -1,6 +1,6 @@
 """
 ai_rag - Prototype pipeline P6 (RAG) / P7 (Local LLM via Ollama) / P8 (Eksperimen)
-untuk proyek LIBERA.
+untuk proyek Libera.
 
 Modul dalam package ini dirancang berjalan hanya dengan Python standard
 library (lihat requirements.txt) dan dapat dijalankan di Windows/macOS/Linux.

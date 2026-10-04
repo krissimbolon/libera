@@ -1,4 +1,4 @@
-"""Local retrieval harness for LIBERA P6.
+"""Local retrieval harness for Libera P6.
 
 Two embedding modes are supported:
 - hashing: deterministic stdlib-only fallback for CI/dry-run;

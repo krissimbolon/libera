@@ -58,7 +58,7 @@ Diperbarui: 2026-09-23
 
 - Pengguna memiliki 2 akun WhatsApp aktif.
 - Kedua akun masih digunakan untuk kebutuhan nyata/personal.
-- Keputusan sementara: **jangan gunakan kedua akun aktif tersebut untuk simulasi LIBERA**.
+- Keputusan sementara: **jangan gunakan kedua akun aktif tersebut untuk simulasi Libera**.
 - Preferensi metodologis: gunakan nomor/akun WhatsApp khusus penelitian pada perangkat uji atau perangkat khusus terpisah.
 - Keputusan final akun uji: BELUM DIKUNCI.
 

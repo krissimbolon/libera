@@ -20,7 +20,7 @@ $masterDir = Join-Path $acqDir "master"
 $workingDir = Join-Path $acqDir "working"
 New-Item -ItemType Directory -Force -Path $masterDir, $workingDir | Out-Null
 
-Write-Host "=== LIBERA DEV-SIM-001 Logical Acquisition ===" -ForegroundColor Cyan
+Write-Host "=== Libera DEV-SIM-001 Logical Acquisition ===" -ForegroundColor Cyan
 adb wait-for-device | Out-Null
 
 $serial = (adb get-serialno).Trim()
@@ -74,7 +74,7 @@ $manifest = [ordered]@{
     is_real_device_acquisition = $false
     is_android_emulator_acquisition = $true
     acquisition_class = "CONTROLLED_ANDROID_EMULATOR_LOGICAL"
-    evidence_carrier = "LIBERA ChatSim Android emulator"
+    evidence_carrier = "Libera ChatSim Android emulator"
     whatsapp_acquisition = $false
     package = $Package
     app_version = $versionName
@@ -91,7 +91,7 @@ $manifest = [ordered]@{
     working_relative_path = "working/libera_messages.db"
     working_sha256 = $workingHash
     working_matches_master = ($masterHash -eq $workingHash)
-    method_note = "Debug/research logical acquisition using adb exec-out + run-as against researcher-controlled LIBERA ChatSim. This is not physical or full-filesystem acquisition."
+    method_note = "Debug/research logical acquisition using adb exec-out + run-as against researcher-controlled Libera ChatSim. This is not physical or full-filesystem acquisition."
 }
 
 $manifestPath = Join-Path $acqDir "acquisition_manifest.json"

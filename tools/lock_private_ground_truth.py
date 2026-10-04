@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and hash-lock a private LIBERA ground-truth annotation CSV."""
+"""Validate and hash-lock a private Libera ground-truth annotation CSV."""
 from __future__ import annotations
 
 import argparse

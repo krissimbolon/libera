@@ -1,4 +1,4 @@
-"""Build and check the in-progress Indonesian LIBERA chat corpus.
+"""Build and check the in-progress Indonesian Libera chat corpus.
 
 The draft is hand-authored; this program does not generate message prose.
 It refuses to overwrite the locked anchor or publish an incomplete final corpus.

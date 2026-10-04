@@ -1,4 +1,4 @@
-# LIBERA is run from a repository checkout (`python -m src.<module>` from the
+# Libera is run from a repository checkout (`python -m src.<module>` from the
 # repo root). This file declares metadata, optional dependency groups and test
 # configuration; it intentionally installs no importable package.
 [build-system]
@@ -8,10 +8,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "libera-forensics-research"
 version = "1.0.0"
-description = "Archived research software: forensic-first local AI assistance over controlled synthetic conversational evidence (LIBERA)."
+description = "Archived research software: forensic-first local AI assistance over controlled synthetic conversational evidence (Libera)."
 readme = "README.md"
 requires-python = ">=3.12"
-authors = [{ name = "Christian Simbolon" }, { name = "LIBERA project contributors" }]
+authors = [{ name = "Christian Simbolon" }, { name = "Libera project contributors" }]
 keywords = ["digital forensics", "mobile forensics", "RAG", "local LLM", "provenance", "research software"]
 classifiers = [
     "Development Status :: 7 - Inactive",

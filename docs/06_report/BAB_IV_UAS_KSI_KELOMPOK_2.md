@@ -1,6 +1,6 @@
 # BAB IV — HASIL IMPLEMENTASI DAN PENGUJIAN
 
-Bab ini melaporkan pengamanan dan pengujian pada lingkungan penelitian LIBERA. Corpus percakapan bergaya WhatsApp adalah sintetis; bukti yang benar-benar diakuisisi berasal dari aplikasi **LIBERA ChatSim** pada **emulator Android**, melalui penyalinan logis basis data milik aplikasi dengan ADB dan `run-as`. Perangkat diberi ID `DEV-SIM-001` dan akuisisi `ACQ-SIM-001`. Pengujian keamanan tambahan pada bab ini hanya menyentuh **salinan sementara** dari berkas kerja. Karena itu, hasilnya tidak boleh ditafsirkan sebagai forensik WhatsApp, akuisisi sistem berkas penuh, atau insiden pada sistem statistik yang beroperasi [1].
+Bab ini melaporkan pengamanan dan pengujian pada lingkungan penelitian Libera. Corpus percakapan bergaya WhatsApp adalah sintetis; bukti yang benar-benar diakuisisi berasal dari aplikasi **Libera ChatSim** pada **emulator Android**, melalui penyalinan logis basis data milik aplikasi dengan ADB dan `run-as`. Perangkat diberi ID `DEV-SIM-001` dan akuisisi `ACQ-SIM-001`. Pengujian keamanan tambahan pada bab ini hanya menyentuh **salinan sementara** dari berkas kerja. Karena itu, hasilnya tidak boleh ditafsirkan sebagai forensik WhatsApp, akuisisi sistem berkas penuh, atau insiden pada sistem statistik yang beroperasi [1].
 
 ## 4.1 Implementasi Pengamanan
 

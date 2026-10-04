@@ -17,3 +17,7 @@ When a new source arrives:
 5. flag sensitive/minor content;
 6. do not edit the source file;
 7. use a working copy for extraction.
+
+## Public source case
+
+The canonical Libera synthetic case was independently reconstructed and fictionalized from the publicly accessible U.S. federal court record **United States v. Matthew Woods, No. 17-CR-1235-WJ, Document 547**. The official GovInfo URL and the corroborating U.S. Attorney’s Office release are recorded in `source_registry.csv`. Raw/verbatim court-record text is not redistributed in the public corpus.

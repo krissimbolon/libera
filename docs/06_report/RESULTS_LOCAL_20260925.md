@@ -1,4 +1,4 @@
-# Hasil lokal LIBERA — 25 September 2026
+# Hasil lokal Libera — 25 September 2026
 
 ## Status yang dapat dipertanggungjawabkan
 

@@ -35,7 +35,7 @@ if (-not (Test-Path $ArtifactsPath)) {
     throw "Locked P4 artifacts not found at: $ArtifactsPath"
 }
 
-Write-Host "=== LIBERA LOCKED-OUTPUT P9 EVALUATION ===" -ForegroundColor Cyan
+Write-Host "=== Libera LOCKED-OUTPUT P9 EVALUATION ===" -ForegroundColor Cyan
 Write-Host "This script does NOT rerun P6/P7/P8."
 Write-Host "It evaluates the already-locked experiment output only."
 

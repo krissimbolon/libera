@@ -1,6 +1,6 @@
-# Methodology References — LIBERA P3–P10
+# Methodology References — Libera P3–P10
 
-Dokumen ini memetakan keputusan metode LIBERA ke rujukan teknis/ilmiah yang digunakan.
+Dokumen ini memetakan keputusan metode Libera ke rujukan teknis/ilmiah yang digunakan.
 
 ## Mobile forensics and evidence integrity
 
@@ -31,7 +31,7 @@ Dokumen ini memetakan keputusan metode LIBERA ke rujukan teknis/ilmiah yang digu
 10. *Large language models in digital forensics: capabilities, challenges and future directions*. Forensic Science International: Digital Investigation, 56, 2026, 302043.
    - Mendukung human-AI collaboration, reproducibility, explainability, dan perlunya validation framework.
 
-## LIBERA operational mapping
+## Libera operational mapping
 
 - P3: preserve device state, log examiner interaction, chain of custody, hash master/working copy.
 - P4: normalized ART schema; no evaluator-only ground truth enters examiner evidence.

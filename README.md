@@ -1,24 +1,24 @@
-# LIBERA
+# Libera
 
 **A forensic-first study of local AI assistance over controlled synthetic conversational evidence.**
 
-LIBERA acquires a synthetic Indonesian WhatsApp-style case from a researcher-controlled Android app,
+Libera acquires a synthetic Indonesian WhatsApp-style case from a researcher-controlled Android app,
 preserves it with SHA-256, extracts traceable artifacts and examines them with a traditional baseline.
 Only then does it test a local retrieval-augmented LLM, whose outputs are hash-locked and checked
 against the acquired evidence. The project is complete; this repository is its archived final snapshot.
 
-[![LIBERA CI](https://github.com/krissimbolon/libera/actions/workflows/post-p2-integration.yml/badge.svg?branch=main)](https://github.com/krissimbolon/libera/actions/workflows/post-p2-integration.yml)
+[![Libera CI](https://github.com/krissimbolon/libera/actions/workflows/post-p2-integration.yml/badge.svg?branch=main)](https://github.com/krissimbolon/libera/actions/workflows/post-p2-integration.yml)
 ![Python](https://img.shields.io/badge/python-3.12%20%7C%203.14-blue)
 ![Status](https://img.shields.io/badge/status-archived%20research%20software-lightgrey)
 
 > [!NOTE]
-> LIBERA is a controlled research simulation. The evidence carrier (**ChatSim**) is **not WhatsApp**, the
+> Libera is a controlled research simulation. The evidence carrier (**ChatSim**) is **not WhatsApp**, the
 > acquisition is **logical, on an Android emulator**, and nothing here is validated for casework or court use.
 
 ## Overview
 
 Digital examiners increasingly look to language models for help with large chat extractions, but model
-output is probabilistic and can cite evidence that does not exist. LIBERA asks what it takes to add such
+output is probabilistic and can cite evidence that does not exist. Libera asks what it takes to add such
 assistance *without* weakening the forensic chain:
 
 - **Controlled evidence.** A 10,000-message synthetic case, structurally adapted from a public court record
@@ -123,8 +123,7 @@ Git by design; the published results can be traced to their recorded hashes but 
 | SHA-256 | `a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6` |
 | Status | `FROZEN_FOR_FORENSIC_SIMULATION` since 2026-09-24 (`716216f`); byte-protected by `.gitattributes` |
 
-All identities are fictional. The 500 anchors adapt the structure of messages in a public U.S. court record
-(Document 547); no verbatim source text is stored in this repository.
+All identities are fictional. The 500 anchors were independently reconstructed, fictionalized and localized from the structure of messages described in the public U.S. federal court record [*United States v. Matthew Woods*, No. 17-CR-1235-WJ, Document 547](https://www.govinfo.gov/content/pkg/USCOURTS-nmd-1_17-cr-01235/pdf/USCOURTS-nmd-1_17-cr-01235-9.pdf); no verbatim source text is stored in the public corpus.
 
 ## Environment
 

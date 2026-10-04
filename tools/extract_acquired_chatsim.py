@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only extraction of a LIBERA ChatSim working-copy SQLite.
+"""Read-only extraction of a Libera ChatSim working-copy SQLite.
 
 Produces both container-level forensic artifacts and a normalized message-level
 ART CSV compatible with the P5-P10 pipeline.
@@ -148,7 +148,7 @@ def main() -> None:
         "source_database_sha256": sha256(db_path),
         "acquisition_id": acq.get("acquisition_id"),
         "device_id": acq.get("device_id"),
-        "evidence_carrier": "LIBERA ChatSim Android emulator",
+        "evidence_carrier": "Libera ChatSim Android emulator",
         "whatsapp_acquisition": False,
         "sqlite_integrity_check": "ok",
         "foreign_key_error_count": len(fk_errors),

@@ -1,6 +1,6 @@
-name: LIBERA CI
+name: Libera CI
 
-# Repository gate for the archived LIBERA research implementation.
+# Repository gate for the archived Libera research implementation.
 # CI exercises the public, reproducible part of the pipeline with a deterministic
 # hashing-embedding fallback and NO model calls. A CI run is never a study
 # result: the P8 lock step is expected to REFUSE these smoke outputs, which is

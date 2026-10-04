@@ -1,4 +1,4 @@
-# Indeks gambar UAS LIBERA
+# Indeks gambar UAS Libera
 
 Dibuat otomatis dengan `python scripts/generate_uas_figures.py`.
 Gambar berukuran 1800×1050 px, 200 DPI. Semua berkas PNG dapat disisipkan ke laporan.

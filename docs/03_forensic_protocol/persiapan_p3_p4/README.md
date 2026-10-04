@@ -2,7 +2,7 @@
 
 # Persiapan P3–P4 Forensik Digital
 
-Folder ini berisi artefak publik/aman untuk persiapan penyitaan, akuisisi, hashing, chain of custody, dry-run, dan tooling sebelum corpus 10.000 pesan LIBERA dikunci.
+Folder ini berisi artefak publik/aman untuk persiapan penyitaan, akuisisi, hashing, chain of custody, dry-run, dan tooling sebelum corpus 10.000 pesan Libera dikunci.
 
 ## Struktur
 

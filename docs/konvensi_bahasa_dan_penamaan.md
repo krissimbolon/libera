@@ -1,6 +1,12 @@
 # Konvensi Bahasa dan Penamaan Proyek
 
-Mulai 2026-09-23, proyek LIBERA UAS Digital Forensics mengutamakan Bahasa Indonesia untuk artefak baru.
+Mulai 2026-09-23, proyek Libera UAS Digital Forensics mengutamakan Bahasa Indonesia untuk artefak baru.
+
+
+## Penulisan nama proyek
+- Bentuk kanonik nama proyek adalah **Libera**. Walaupun berasal dari akronim/nama proyek, ia diperlakukan sebagai satu kata dan **bukan** ditulis `LIBERA`.
+- Bentuk turunan mengikuti gaya yang sama, misalnya **Libera ChatSim**, **Libera CI**, dan **proyek Libera**.
+- Rekaman historis/raw yang sudah dibekukan boleh mempertahankan ejaan lama demi fidelity arsip; dokumen aktif, README, antarmuka, dan laporan baru wajib memakai **Libera**.
 
 ## Aturan
 1. Nama folder baru diutamakan Bahasa Indonesia.

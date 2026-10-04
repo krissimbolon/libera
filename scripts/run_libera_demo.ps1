@@ -13,7 +13,7 @@ if (Test-Path "runtime/working/P8/p8_lock_manifest.json") {
     throw "Final P8 lock exists: demo rerun refused before outputs are overwritten. Use scripts/run_p9_final.ps1."
 }
 
-Write-Host "=== LIBERA CHATSIM FORENSIC DEMO ===" -ForegroundColor Cyan
+Write-Host "=== Libera CHATSIM FORENSIC DEMO ===" -ForegroundColor Cyan
 Write-Warning "ChatSim is a researcher-controlled Android messaging simulator, NOT WhatsApp."
 
 & powershell -ExecutionPolicy Bypass -File scripts/acquire_chatsim.ps1 -OutputRoot $OutputRoot -AcquisitionId "ACQ-SIM-001"

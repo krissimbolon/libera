@@ -78,7 +78,7 @@ Setiap acquisition membuat folder baru. Master sebelumnya tidak ditimpa. ChatSim
 
 Provenance reconstruction yang tersedia bukan independent semantic ground truth. Proxy metrics hanya mengukur subset anchor-versus-distractor dan tidak boleh disebut semantic accuracy key evidence.
 
-Independent human semantic annotation belum tersedia. Karena itu LIBERA tidak membuat klaim final precision/recall/F1 terhadap key forensic evidence.
+Independent human semantic annotation belum tersedia. Karena itu Libera tidak membuat klaim final precision/recall/F1 terhadap key forensic evidence.
 
 ## Peran Workbench dalam presentasi
 

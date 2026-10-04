@@ -1,6 +1,6 @@
 # Contributing
 
-LIBERA's development phase is **closed**. The repository is kept as an archived, reproducible research snapshot,
+Libera's development phase is **closed**. The repository is kept as an archived, reproducible research snapshot,
 so new features and methodology changes are not accepted.
 
 Changes that are still welcome:
@@ -19,7 +19,7 @@ Rules that every change must respect (CI enforces the first and fourth):
 5. Historical records under `docs/archive/`, `docs/08_uas/` and `archive/` are not edited except for
    archive banners or link repairs.
 
-Workflow: open a pull request against `main`; the `LIBERA CI` checks must pass. Run locally with:
+Workflow: open a pull request against `main`; the `Libera CI` checks must pass. Run locally with:
 
 ```bash
 python -m pip install -e ".[test]"

@@ -4,7 +4,7 @@
 Offline-First Digital Forensic Examination of Synthetic Conversational Evidence with Local AI Assistance, RAG, and Evidence Validation
 
 ## Research objective
-LIBERA studies how local AI assistance can be inserted **after** acquisition and traditional forensic examination while keeping analytical claims traceable to acquired artifacts. The project is forensic-first: AI is an optional examiner aid, not the evidence source and not a replacement for examiner judgment.
+Libera studies how local AI assistance can be inserted **after** acquisition and traditional forensic examination while keeping analytical claims traceable to acquired artifacts. The project is forensic-first: AI is an optional examiner aid, not the evidence source and not a replacement for examiner judgment.
 
 ## Research questions
 - **RQ1 — Forensic workflow:** Can a controlled Android conversational evidence source be acquired, preserved, extracted, and examined in a reproducible local workflow with traceable artifact identifiers?

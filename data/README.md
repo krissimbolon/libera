@@ -17,3 +17,11 @@ runtime outputs live outside Git (`demo_evidence/`, `runtime/`), and no private 
 | `rekonstruksi/` | P1 metadata | Indonesian-language coverage map and anomaly list for the same reconstruction (kept under its original name to preserve references) |
 | `evaluasi/` | Templates | Empty P9 evaluation and SOLVE-IT error-register templates; no results were stored here |
 | `toy/` | Test fixture | 15-message toy case for the P6–P8 walkthrough |
+
+## Canonical case-source provenance
+
+The **canonical Libera dataset is researcher-produced synthetic data**. It was independently reconstructed, fictionalized, and localized to Indonesia from the structure and publicly described communications in **United States v. Matthew Woods, No. 17-CR-1235-WJ, Document 547** (U.S. District Court for the District of New Mexico), publicly available through GovInfo. The court record states that Government Exhibit 1A catalogued incoming and outgoing text messages found on Cornelius Galloway’s phone and describes communications among alleged co-conspirators, victims, and prospective buyers. Libera does **not** redistribute the raw court record or copy its messages verbatim into the public corpus.
+
+Official source: <https://www.govinfo.gov/content/pkg/USCOURTS-nmd-1_17-cr-01235/pdf/USCOURTS-nmd-1_17-cr-01235-9.pdf>. A U.S. Department of Justice case summary is recorded in `references/source_registry.csv` as a corroborating public source.
+
+The files under `archive/legacy-v0-synthesizer/` are retained as **historical prototype inputs/outputs**. CTDC/WAPI-derived material predates the canonical Galloway-based P1/P2 design and is not used to support the final experimental results; it is not relabelled as researcher-created data.

@@ -1,4 +1,4 @@
-"""Comprehensive read-only QA gate for the 10k LIBERA working corpus.
+"""Comprehensive read-only QA gate for the 10k Libera working corpus.
 
 This script does not edit the corpus and does not declare semantic QA passed.
 It complements audit_repetisi_corpus.py with provenance/source-line checks,

@@ -1,6 +1,6 @@
-# Struktur laporan UAS KSI — LIBERA (Digital Forensic)
+# Struktur laporan UAS KSI — Libera (Digital Forensic)
 
-Dokumen ini adalah **kerangka kerja laporan**, disusun dari `Soal_UAS_Keamanan_Sistem_Informasi_Take_Home.pdf` (5 halaman) dan artefak LIBERA yang tersedia per 3 Oktober 2026. Isi faktual, gambar, dan sitasi akan diisi pada tahap penulisan laporan. Jangan mengubah rencana pengujian menjadi klaim hasil sebelum ada log dan bukti uji.
+Dokumen ini adalah **kerangka kerja laporan**, disusun dari `Soal_UAS_Keamanan_Sistem_Informasi_Take_Home.pdf` (5 halaman) dan artefak Libera yang tersedia per 3 Oktober 2026. Isi faktual, gambar, dan sitasi akan diisi pada tahap penulisan laporan. Jangan mengubah rencana pengujian menjadi klaim hasil sebelum ada log dan bukti uji.
 
 ## Ketentuan penyerahan
 
@@ -9,9 +9,9 @@ Dokumen ini adalah **kerangka kerja laporan**, disusun dari `Soal_UAS_Keamanan_S
 - Gunakan templat resmi apabila tersedia. Sampul memuat judul, nama dan NIM **lima anggota** sesuai soal, dosen Farid Ridho, Program Studi Komputasi Statistik, Politeknik Statistika STIS, dan tahun 2026. Data internal yang ditemukan baru menyebut empat nama; anggota kelima, NIM, nomor kelompok, dan templat resmi harus diverifikasi.
 - Rujukan minimal 10, format IEEE atau APA konsisten. Semua gambar/tabel/tangkapan layar bernomor, berjudul, berketerangan, dan dirujuk di teks. Lampirkan Pernyataan Etika bertanda tangan seluruh anggota dan pengungkapan AI (alat, tujuan, bagian yang dibantu).
 
-**Judul kerja:** *Investigasi Forensik Digital Bukti Percakapan pada Lingkungan Simulasi Android LIBERA dengan Akuisisi Logis, Rantai Penguasaan Bukti, dan Analisis Berbantuan AI Lokal*.
+**Judul kerja:** *Investigasi Forensik Digital Bukti Percakapan pada Lingkungan Simulasi Android Libera dengan Akuisisi Logis, Rantai Penguasaan Bukti, dan Analisis Berbantuan AI Lokal*.
 
-**Posisi kasus:** corpus percakapan bergaya WhatsApp adalah **data sintetis**. Bukti akuisisi aktual yang tersedia berasal dari aplikasi **LIBERA ChatSim pada emulator Android** (`DEV-SIM-001`, `ACQ-SIM-001`), bukan akuisisi WhatsApp, ponsel fisik, disk penuh, memori volatil, atau lalu lintas jaringan. Cakupan Tabel 1 pada soal adalah contoh; laporan harus menjelaskan alasan pemilihan bukti aplikasi mobile serta batasnya. Sistem informasi statistik dipakai sebagai **konteks rancangan tata kelola dan skenario ancaman**, bukan klaim bahwa corpus memuat data responden sungguhan.
+**Posisi kasus:** corpus percakapan bergaya WhatsApp adalah **data sintetis**. Bukti akuisisi aktual yang tersedia berasal dari aplikasi **Libera ChatSim pada emulator Android** (`DEV-SIM-001`, `ACQ-SIM-001`), bukan akuisisi WhatsApp, ponsel fisik, disk penuh, memori volatil, atau lalu lintas jaringan. Cakupan Tabel 1 pada soal adalah contoh; laporan harus menjelaskan alasan pemilihan bukti aplikasi mobile serta batasnya. Sistem informasi statistik dipakai sebagai **konteks rancangan tata kelola dan skenario ancaman**, bukan klaim bahwa corpus memuat data responden sungguhan.
 
 ## Urutan laporan dan alokasi halaman
 
@@ -33,7 +33,7 @@ Target total isi: **24–29 halaman**. Bab IV dan V mendapat ruang terbesar kare
 
 ### BAB I — Pendahuluan
 
-1. **Latar belakang:** peran sistem informasi statistik, risiko kebocoran dan manipulasi bukti, kebutuhan integritas dan ketertelusuran. Jelaskan LIBERA sebagai laboratorium simulasi pesan, bukan investigasi insiden nyata.
+1. **Latar belakang:** peran sistem informasi statistik, risiko kebocoran dan manipulasi bukti, kebutuhan integritas dan ketertelusuran. Jelaskan Libera sebagai laboratorium simulasi pesan, bukan investigasi insiden nyata.
 2. **Rumusan masalah:** (a) bagaimana akuisisi dan ekstraksi menjaga integritas bukti; (b) bagaimana linimasa dan temuan dapat ditelusuri ke `ART-*`; (c) bagaimana pengamanan dan pengujian kelemahan bekerja setelah perbaikan; (d) bagaimana ancaman manipulasi/eksfiltrasi bukti dideteksi; (e) bagaimana rancangan tata kelola data statistik merespons risikonya.
 3. **Tujuan terukur:** hash master–working cocok; validasi SQLite/artefak; hasil baseline dan AI lokal terukur; tiga kelemahan terverifikasi dan diuji ulang; satu ancaman disimulasikan; DPIA, tabletop, 15 kontrol dan 5 temuan audit terdokumentasi.
 4. **Manfaat:** pembelajaran forensik yang dapat direproduksi dan rancangan kontrol untuk sistem statistik.
@@ -41,7 +41,7 @@ Target total isi: **24–29 halaman**. Bab IV dan V mendapat ruang terbesar kare
 
 ### BAB II — Tinjauan Pustaka
 
-- Tabel pembanding 3–5 karya: fokus, sumber bukti, metode akuisisi/analisis, evaluasi, perbedaan LIBERA. Pilih dari daftar rujukan proyek setelah memverifikasi bibliografinya.
+- Tabel pembanding 3–5 karya: fokus, sumber bukti, metode akuisisi/analisis, evaluasi, perbedaan Libera. Pilih dari daftar rujukan proyek setelah memverifikasi bibliografinya.
 - Tabel tools aktual: Android Emulator/ADB, ChatSim, SQLite dan SHA-256, Python, Ollama, BGE-M3, Qwen2.5 1.5B, dashboard Streamlit; versi hanya diisi bila tercatat.
 - Jelaskan bahwa AI adalah alat bantu analisis; sitasi artefak harus valid dan keputusan akhir ditinjau pemeriksa.
 

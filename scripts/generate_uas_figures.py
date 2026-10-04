@@ -1,4 +1,4 @@
-"""Generate report figures from LIBERA's recorded artifacts.
+"""Generate report figures from Libera's recorded artifacts.
 
 The script reads evidence but never edits acquisition masters or runtime results.
 Figures depicting future exercises are explicitly labelled as plans.
@@ -109,9 +109,9 @@ def main():
     assert sha(artifact) == e["normalized_artifacts_sha256"]
     files = []
 
-    im, d = canvas("G-01", "Arsitektur laboratorium LIBERA", "Komponen yang dijalankan dan batas data penelitian", "README.md; acquisition_manifest.json", "DIAGRAM REKONSTRUKSI")
+    im, d = canvas("G-01", "Arsitektur laboratorium Libera", "Komponen yang dijalankan dan batas data penelitian", "README.md; acquisition_manifest.json", "DIAGRAM REKONSTRUKSI")
     box(d, (84, 300, 420, 530), "Corpus sintetis", ["P2: 10.000 pesan", "SHA-256 dibekukan"])
-    box(d, (530, 300, 900, 530), "Emulator Android", ["LIBERA ChatSim", "DEV-SIM-001"])
+    box(d, (530, 300, 900, 530), "Emulator Android", ["Libera ChatSim", "DEV-SIM-001"])
     box(d, (1010, 300, 1390, 530), "Akuisisi logis", ["ADB + run-as", "ACQ-SIM-001"])
     box(d, (1420, 300, 1715, 530), "Artefak", ["SQLite → ART-*", "9.997 pesan"])
     for x1, x2 in [(420, 530), (900, 1010), (1390, 1420)]: arrow(d, (x1, 415), (x2, 415))
@@ -257,7 +257,7 @@ def main():
     arrow(d, (890, 520), (890, 655)); arrow(d, (825, 755), (980, 755))
     files.append(save(im, "G-12_arsitektur_keamanan_target"))
 
-    lines = ["# Indeks gambar UAS LIBERA", "", "Dibuat otomatis dengan `python scripts/generate_uas_figures.py`.",
+    lines = ["# Indeks gambar UAS Libera", "", "Dibuat otomatis dengan `python scripts/generate_uas_figures.py`.",
              "Gambar berukuran 1800×1050 px, 200 DPI. Semua berkas PNG dapat disisipkan ke laporan.", "",
              "**Keterangan status:** G-03 adalah screenshot arsip asli dari ACQ-SIM-LIVE; G-07, G-08, G-11 adalah rencana, bukan hasil pengujian. G-10 dan G-12 adalah rancangan target. G-01/G-02 merekonstruksi alur dari berkas proyek. G-04/G-05/G-06/G-09 berasal dari artefak hasil aktual.", ""]
     for f in files:

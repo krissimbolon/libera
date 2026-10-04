@@ -86,7 +86,7 @@ def test_p4_rejects_malformed_trusted_digest(tmp_path):
 def test_windows_wrapper_static_gate_order_and_hash_wiring():
     local = (ROOT / 'scripts/run_libera_local.ps1').read_text()
     demo = (ROOT / 'scripts/run_libera_demo.ps1').read_text()
-    first_stage = local.index('Write-Host "=== LIBERA')
+    first_stage = local.index('Write-Host "=== Libera')
     assert local.index('if ($GroundTruthPath)') < first_stage
     assert local.index('if (Test-Path "runtime/working/P8/p8_lock_manifest.json")') < first_stage
     assert '--expected-sha256 $AcquisitionSha256' in local

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
         android:allowBackup="false"
-        android:label="LIBERA ChatSim"
+        android:label="Libera ChatSim"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="false">
         <activity android:name=".ChatActivity" android:exported="false" />

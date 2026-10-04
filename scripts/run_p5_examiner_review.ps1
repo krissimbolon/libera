@@ -18,7 +18,7 @@ if (-not (Test-Path $ArtifactsPath)) {
     throw "P4 artifacts not found: $ArtifactsPath"
 }
 
-Write-Host "=== LIBERA P5 TRADITIONAL BASELINE + <=5 MIN EXAMINER QC ===" -ForegroundColor Cyan
+Write-Host "=== Libera P5 TRADITIONAL BASELINE + <=5 MIN EXAMINER QC ===" -ForegroundColor Cyan
 Write-Host "[P5] Running deterministic baseline..."
 Run-Python -m src.baseline.traditional_baseline --artifacts $ArtifactsPath --tasks configs/investigation_tasks.json --output-dir runtime/working/P5 --top-n $TopN
 

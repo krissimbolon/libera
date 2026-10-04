@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         root.setBackgroundColor(Color.rgb(245, 247, 248));
 
         TextView title = new TextView(this);
-        title.setText("LIBERA ChatSim");
+        title.setText("Libera ChatSim");
         title.setTextSize(22);
         title.setTextColor(Color.WHITE);
         title.setGravity(Gravity.CENTER_VERTICAL);
