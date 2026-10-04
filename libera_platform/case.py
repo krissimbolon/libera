@@ -207,7 +207,8 @@ def extract(case_id: str, root: str | None = None) -> dict:
     # derived P4 artifact layer.
     if result.get("acquisition_id") == "ACQ-UNKNOWN" or result.get("device_id") == "DEV-UNKNOWN":
         with out.open("r", encoding="utf-8", newline="") as f:
-            rows = list(csv.DictReader(f)); fields = f.fieldnames or []
+            reader = csv.DictReader(f)
+            rows = list(reader); fields = reader.fieldnames or []
         for row in rows:
             row["acquisition_id"] = acq["acquisition_id"]
             row["device_id"] = acq["device_id"]
