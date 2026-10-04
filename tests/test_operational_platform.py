@@ -67,3 +67,17 @@ def test_case_manifest_separates_operational_platform_from_research(tmp_path):
     assert manifest["policy"]["case_isolated"] is True
     assert manifest["policy"]["ai_output_is_investigative_aid_not_evidence"] is True
     assert "frozen_p2" not in manifest
+
+
+def test_operational_verify_detects_derived_artifact_tampering(tmp_path):
+    root = tmp_path / "cases"
+    create_case("CASE-TAMPER", root=str(root))
+    source = tmp_path / "source.sqlite"
+    digest = _make_sqlite(source)
+    import_sqlite("CASE-TAMPER", source, digest, str(root), "DEV-TEST")
+    extract("CASE-TAMPER", str(root))
+    artifacts = root / "CASE-TAMPER/runtime/working/P4/artifacts.csv"
+    artifacts.write_text(artifacts.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+    result = verify("CASE-TAMPER", str(root))
+    assert result["status"] == "FAIL"
+    assert "P4 artifact hash mismatch" in result["problems"]
