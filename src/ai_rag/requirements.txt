@@ -1,3 +1,5 @@
+# Historical P6/P7 prototype note (kept because docs/04_ai_methodology/P6_P7_P8_README.md
+# references it). Canonical dependency declaration: pyproject.toml.
 # Prototype P6/P7/P8 sengaja hanya memakai Python standard library
 # (csv, json, hashlib, urllib, argparse, dataclasses-free, pathlib, uuid,
 # datetime, math, re) supaya setup minimal dan mudah dijalankan siapa

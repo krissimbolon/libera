@@ -54,3 +54,17 @@ runtime/
 configs/run_log.jsonl
 configs/*_index.json
 !configs/toy_index.json
+
+# Packaging / test caches
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Generated ChatSim seed (tools/build_demo_seed.py; built in CI, never committed)
+apps/libera-chatsim/app/src/main/assets/messages_seed.jsonl
+apps/libera-chatsim/app/src/main/assets/seed_manifest.json
+apps/libera-chatsim/app/src/main/assets/source_anomalies.jsonl
+apps/libera-chatsim/app/build/
+apps/libera-chatsim/.gradle/
+*.apk

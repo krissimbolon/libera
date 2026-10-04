@@ -1,2 +1,5 @@
+# Optional local Streamlit workbench dependencies.
+# Canonical declaration: pyproject.toml [project.optional-dependencies] workbench
+# (equivalent: python -m pip install -e ".[workbench]").
 streamlit>=1.38
 pandas>=2.2
