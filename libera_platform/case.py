@@ -435,6 +435,12 @@ def verify(case_id: str, root: str | None = None) -> dict:
             p = case / rel
             if not p.is_file() or sha256(p) != expected:
                 problems.append(rel)
+    p4_manifest = case / "runtime/working/P4/artifact_manifest.json"
+    if p4_manifest.exists():
+        p4 = _json(p4_manifest)
+        artifacts = case / "runtime/working/P4/artifacts.csv"
+        if not artifacts.is_file() or sha256(artifacts) != p4.get("output_sha256"):
+            problems.append("P4 artifact hash mismatch")
     p5 = case / "runtime/working/P5/p5_lock_manifest.json"
     if p5.exists():
         try: p5_lock.verify(p5)
