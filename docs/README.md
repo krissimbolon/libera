@@ -38,6 +38,7 @@ original path, what supersedes it). Content is unchanged apart from repaired rel
 | [archive/p2-development/](archive/p2-development/) | P2 batch audits, handoffs, intermediate QA ("belum lulus") and production plans before the 2026-09-24 freeze |
 | [archive/presentation-2026-09-25/](archive/presentation-2026-09-25/) | Live checklist, runbook, outline and 10-minute flow for the 25 Sep presentation |
 | [archive/superseded/](archive/superseded/) | Superseded report draft, P6–P8 plan, pre-run P9 status and gate checklist |
+| [archive/repository-closure-2026-10-05.md](archive/repository-closure-2026-10-05.md) | Record of the final cleanup: branch tip SHAs, PR/issue and file dispositions, verification |
 | [08_uas/](08_uas/README.md) | UAS integration record (2026-10-03): coordinator contract, worker reports, hashed facts and evidence. Kept in place, unchanged. |
 | [../archive/legacy-v0-synthesizer/](../archive/legacy-v0-synthesizer/README.md) | 2026-06-03 v0 prototype and its data; not part of the final method |
 
