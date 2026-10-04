@@ -1,0 +1,49 @@
+name: Libera Platform Smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  platform:
+    name: platform (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install Libera platform
+        run: python -m pip install -e ".[test]"
+      - name: Console entry point
+        run: libera --version
+      - name: Host doctor without model requirement
+        run: libera doctor --json --skip-models
+      - name: Operational lifecycle tests
+        run: python -m pytest tests/test_operational_platform.py -q
+
+  package:
+    name: build distributable
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install build
+      - run: python -m build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: libera-python-distribution
+          path: dist/*
+          retention-days: 7
