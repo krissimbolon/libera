@@ -83,6 +83,10 @@ def lock(
         "p5_baseline_manifest": file_item(p5_dir / "baseline_manifest.json"),
         "p5_examiner_packet": file_item(packet),
     }
+    timing = p5_dir / "p5_examiner_timing.json"
+    if timing.is_file():
+        files["p5_examiner_timing"] = file_item(timing)
+
     manifest = {
         "status": "P5_BASELINE_AND_EXAMINER_REVIEW_LOCKED_BEFORE_AI",
         "locked_at_utc": datetime.now(timezone.utc).isoformat(),
