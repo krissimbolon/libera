@@ -1,19 +1,47 @@
 # Libera
 
-**A forensic-first study of local AI assistance over controlled synthetic conversational evidence.**
+**A local-first forensic case platform with traceable AI assistance and a reproducible research benchmark.**
 
-Libera acquires a synthetic Indonesian WhatsApp-style case from a researcher-controlled Android app,
-preserves it with SHA-256, extracts traceable artifacts and examines them with a traditional baseline.
-Only then does it test a local retrieval-augmented LLM, whose outputs are hash-locked and checked
-against the acquired evidence. The project is complete; this repository is its archived final snapshot.
+Libera now separates an **operational investigator mode** from its controlled research benchmark.
+Investigators install the platform and local models once, then create isolated case workspaces whose
+evidence, derived artifacts, indexes, AI outputs, hashes and archives remain separate. The original
+P2/ChatSim workflow remains the scientific validation track and is not required for normal case use.
 
 [![Libera CI](https://github.com/krissimbolon/libera/actions/workflows/post-p2-integration.yml/badge.svg?branch=main)](https://github.com/krissimbolon/libera/actions/workflows/post-p2-integration.yml)
-![Python](https://img.shields.io/badge/python-3.12%20%7C%203.14-blue)
-![Status](https://img.shields.io/badge/status-archived%20research%20software-lightgrey)
+[![Platform Smoke](https://github.com/krissimbolon/libera/actions/workflows/platform-smoke.yml/badge.svg?branch=main)](https://github.com/krissimbolon/libera/actions/workflows/platform-smoke.yml)
+![Python](https://img.shields.io/badge/python-%3E%3D3.12-blue)
+![Status](https://img.shields.io/badge/platform-beta-orange)
 
-> [!NOTE]
-> Libera is a controlled research simulation. The evidence carrier (**ChatSim**) is **not WhatsApp**, the
-> acquisition is **logical, on an Android emulator**, and nothing here is validated for casework or court use.
+> [!IMPORTANT]
+> Operational Libera is a beta forensic-assistance platform, not a validated acquisition suite or an
+> admissibility engine. The first production adapter accepts normalized chat SQLite evidence with a
+> trusted SHA-256; upstream device/disk acquisition remains the responsibility of established forensic tools.
+
+## Operational platform — install once, isolate every case
+
+```bash
+python -m pip install .
+libera doctor --json --skip-models
+libera setup-models                        # once per machine, optional for AI
+libera case create CASE-2026-001
+libera case import-sqlite CASE-2026-001 evidence.sqlite --sha256 <trusted_sha256>
+libera case extract CASE-2026-001
+libera case baseline CASE-2026-001
+libera case review-p5 CASE-2026-001
+libera case assist CASE-2026-001
+libera case verify CASE-2026-001
+libera case archive CASE-2026-001
+```
+
+Software and Ollama model caches are persistent; only case data and case-derived outputs are created per
+investigation. See [docs/10_product_platform/README.md](docs/10_product_platform/README.md).
+
+## Research benchmark overview
+
+The controlled benchmark still acquires a synthetic Indonesian WhatsApp-style case from the
+researcher-controlled ChatSim Android app, preserves it with SHA-256, extracts traceable artifacts and
+compares traditional examination with local RAG/LLM conditions. ChatSim is **not WhatsApp** and the
+benchmark does not claim validation for seized-device casework.
 
 ## Overview
 

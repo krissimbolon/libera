@@ -1,13 +1,13 @@
 # Documentation map
 
-Libera is archived (v1.0.0). Start with the two English summaries; detailed records are mostly in
-Indonesian. Anything under **Historical archive** describes an intermediate state and is not instructions.
+Libera contains an operational beta platform plus a preserved research benchmark. Start with the operational platform guide for casework or the research summaries for reproducibility. Detailed historical records are mostly in Indonesian; anything under **Historical archive** describes an intermediate state and is not instructions.
 
 ## Current documentation
 
 | Topic | Document |
 |---|---|
-| **Final state, results and limitations** | [final_state.md](final_state.md) |
+| **Operational platform (install-once, case-isolated)** | [10_product_platform/README.md](10_product_platform/README.md) |
+| **Final research state, results and limitations** | [final_state.md](final_state.md) |
 | **How to reproduce (public / local / private tiers)** | [reproducibility.md](reproducibility.md) |
 | Research design and research questions | [01_research_design/research_design.md](01_research_design/research_design.md) |
 | Methodology references | [01_research_design/methodology_references.md](01_research_design/methodology_references.md) |

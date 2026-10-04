@@ -1,0 +1,21 @@
+{
+  "config_version": "1.0-operational",
+  "chunking": {"min_messages_per_chunk": 30, "max_messages_per_chunk": 60, "time_window_minutes": 120},
+  "embedding": {"method": "ollama", "model": "bge-m3"},
+  "retrieval": {"top_k": 8, "similarity_metric": "cosine"},
+  "ollama": {
+    "host": "http://127.0.0.1:11434",
+    "model": "qwen2.5:1.5b",
+    "temperature": 0.1,
+    "seed": 42,
+    "num_ctx": 8192,
+    "num_predict": 2048,
+    "request_timeout_seconds": 600
+  },
+  "policy": {
+    "local_only": true,
+    "human_review_required": true,
+    "ai_output_is_investigative_aid_not_evidence": true,
+    "require_artifact_citations": true
+  }
+}
