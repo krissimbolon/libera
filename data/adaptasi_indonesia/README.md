@@ -1,3 +1,5 @@
+> **Archival note (2026-10-05):** the dataset described below was completed and frozen on 2026-09-24 (`corpus_whatsapp_10000.csv`). See [../README.md](../README.md) for the status of each file.
+
 # Adaptasi Indonesia
 
 Folder ini menampung artefak publik/aman untuk P2.
