@@ -1,0 +1,62 @@
+{
+  "experiment": "UAS_CH4_CONTROLLED_WORKING_COPY_TEST",
+  "recorded_at_utc": "2026-10-03T12:11:56.728558+00:00",
+  "scope": "temporary copy of ACQ-SIM-001 working SQLite; no original file modified",
+  "legacy_extractor_sha256": "12213e93f67a53145fa585ca85d140da704c6523aab03fa72923f60e0add8304",
+  "remediated_extractor_sha256": "952c44e76d116845be211082873acc4eba48978e06db662f23951eb861164094",
+  "test_harness_sha256": "f779a33ce6a97a856d7f61cf73f21b19b90bb6dfb26aed7c5b8feacb62f5559a",
+  "source_working_sha256": "6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc",
+  "source_master_sha256": "6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc",
+  "clean": {
+    "legacy": {
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"P4_CHATSIM_EXTRACTION_PASS\",\n  \"source_sha256\": \"6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc\",\n  \"messages\": 9997,\n  \"chats\": 25,\n  \"normalized_artifacts\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\clean_old\\\\artifacts.csv\",\n  \"artifact_manifest\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\clean_old\\\\artifact_manifest.json\"\n}\n",
+      "stderr": ""
+    },
+    "remediated": {
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"P4_CHATSIM_EXTRACTION_PASS\",\n  \"source_sha256\": \"6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc\",\n  \"messages\": 9997,\n  \"chats\": 25,\n  \"normalized_artifacts\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\clean_new\\\\artifacts.csv\",\n  \"artifact_manifest\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\clean_new\\\\artifact_manifest.json\"\n}\n",
+      "stderr": ""
+    }
+  },
+  "tamper": {
+    "message_id": "ID-BRG-0001",
+    "marker": "[UAS_CONTROLLED_TAMPER_SAMPLE]",
+    "before_text_sha256": "63eec33bd966d88ce12e3c7b556896b8e9d90a6ce8decf8decff1cc8dafb2cd8",
+    "after_text_sha256": "a38897e1db032570046532ec43a81bc4164ecf681801b274adbfed7950e4c5f8",
+    "before_db_sha256": "6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc",
+    "after_db_sha256": "fa418d0cfea6d07221c077875fbeb1061b946806b30f85fa34a5cb816b451086",
+    "sqlite_integrity_check": "ok",
+    "message_count_after": 9997,
+    "legacy": {
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"P4_CHATSIM_EXTRACTION_PASS\",\n  \"source_sha256\": \"fa418d0cfea6d07221c077875fbeb1061b946806b30f85fa34a5cb816b451086\",\n  \"messages\": 9997,\n  \"chats\": 25,\n  \"normalized_artifacts\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\tamper_old\\\\artifacts.csv\",\n  \"artifact_manifest\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\tamper_old\\\\artifact_manifest.json\"\n}\n",
+      "stderr": ""
+    },
+    "remediated": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Working-copy SHA-256 mismatch: expected 6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc, actual fa418d0cfea6d07221c077875fbeb1061b946806b30f85fa34a5cb816b451086\n"
+    }
+  },
+  "missing_manifest": {
+    "legacy": {
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"P4_CHATSIM_EXTRACTION_PASS\",\n  \"source_sha256\": \"6101c21bf0604566afb1b5af7544eba1140b8ab0165f7a32f481f5c83b2be8cc\",\n  \"messages\": 9997,\n  \"chats\": 25,\n  \"normalized_artifacts\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\missing_old\\\\artifacts.csv\",\n  \"artifact_manifest\": \"C:\\\\Users\\\\daffa\\\\AppData\\\\Local\\\\Temp\\\\libera_uas_ch4_wymk9yx1\\\\missing_old\\\\artifact_manifest.json\"\n}\n",
+      "stderr": ""
+    },
+    "remediated": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Acquisition manifest not found: C:\\Users\\daffa\\AppData\\Local\\Temp\\libera_uas_ch4_wymk9yx1\\case\\acquisition_manifest.json\n"
+    }
+  },
+  "citation": {
+    "p8_experiment_sha256": "431bdae950a8df440a6f0d38c1ef0fd3a279ff1bff39cc34cef0a845c98399b9",
+    "reported_invalid_references": 12,
+    "attempted_occurrences": 24,
+    "accepted_occurrences": 12,
+    "quarantined_occurrences": 12,
+    "policy": "p9-strict-citation-quarantine-v1"
+  }
+}
