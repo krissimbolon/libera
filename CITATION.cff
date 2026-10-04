@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use or refer to this archived research software, please cite it as below."
+title: "LIBERA: forensic-first local AI assistance over controlled synthetic conversational evidence"
+type: software
+version: 1.0.0
+date-released: "2026-10-05"
+repository-code: "https://github.com/krissimbolon/libera"
+abstract: >-
+  Archived research implementation of a forensic-first workflow: a frozen synthetic
+  Indonesian WhatsApp-style case corpus, a researcher-controlled Android evidence carrier
+  (ChatSim), logical acquisition with SHA-256 preservation, artifact extraction,
+  a traditional examiner baseline, and local retrieval-augmented LLM assistance whose
+  outputs are locked and citation-validated against acquired evidence.
+authors:
+  - given-names: Christian
+    family-names: Simbolon
+  - name: "LIBERA project contributors"
+keywords:
+  - digital forensics
+  - mobile forensics
+  - evidence provenance
+  - retrieval-augmented generation
+  - local LLM
+  - citation validation
