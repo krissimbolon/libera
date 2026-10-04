@@ -97,8 +97,9 @@ def main() -> None:
     ap.add_argument("--experiment", default="runtime/working/P8/experiment_output.json")
     ap.add_argument("--run-log", default="runtime/working/P8/run_log.jsonl")
     ap.add_argument("--output", default="runtime/working/P8/p8_lock_manifest.json")
+    ap.add_argument("--extra-file", action="append", default=[],
+                    help="Additional run-specific code, index or validation file to lock")
     args = ap.parse_args()
-
     out = Path(args.output)
     if out.exists():
         raise SystemExit("Refuse to overwrite an existing P8 lock; register a separate study.")
@@ -114,6 +115,8 @@ def main() -> None:
         "p8_experiment_output": item(Path(args.experiment)),
         "p8_run_log": item(Path(args.run_log)),
     }
+    for number, path in enumerate(args.extra_file, 1):
+        files[f"extra_{number:02d}"] = item(Path(path))
     manifest = {
         "status": "P8_OUTPUTS_LOCKED_BEFORE_GROUND_TRUTH",
         "locked_at_utc": datetime.now(timezone.utc).isoformat(),

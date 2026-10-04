@@ -50,10 +50,18 @@ def test_p3_rejects_frozen_input_as_output(tmp_path):
     assert acq.sha256_file(CORPUS) == before
 
 def test_workbench_uses_current_container_names():
-    source = (ROOT / 'workbench/libera_workbench.py').read_text()
-    extractor = (ROOT / 'tools/extract_acquired_chatsim.py').read_text()
+    # The forensic-first workbench (merged from libera-presentasi) reads the
+    # acquired ChatSim SQLite snapshot read-only instead of artifact CSVs. The
+    # original W1 intent is preserved: no stale ART-0000x container names, and
+    # the extractor still writes the ARTFILE-* containers.
+    source = (ROOT / 'workbench/libera_workbench.py').read_text(encoding='utf-8')
+    source += (ROOT / 'workbench/chatsim_data.py').read_text(encoding='utf-8')
+    extractor = (ROOT / 'tools/extract_acquired_chatsim.py').read_text(encoding='utf-8')
+    for stale in ['ART-00001_messages.csv', 'ART-00002_chats.csv']:
+        assert stale not in source and stale not in extractor
     for filename in ['ARTFILE-00001_messages.csv','ARTFILE-00002_chats.csv']:
-        assert filename in source and filename in extractor
+        assert filename in extractor
+    assert 'mode=ro' in source  # acquired snapshot is opened read-only
 
 
 def test_p4_trusted_digest_rejects_structurally_valid_tampering(tmp_path):

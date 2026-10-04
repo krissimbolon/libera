@@ -53,7 +53,7 @@ public class ChatActivity extends Activity {
         name.setTypeface(null, android.graphics.Typeface.BOLD);
         names.addView(name);
         TextView hint = new TextView(this);
-        hint.setText("DEV-001 • tahan pesan untuk forensic IDs");
+        hint.setText("DEV-SIM-001 • tahan pesan untuk metadata pesan");
         hint.setTextColor(Color.rgb(210, 235, 232));
         hint.setTextSize(11);
         names.addView(hint);
@@ -80,7 +80,7 @@ public class ChatActivity extends Activity {
         list.setOnItemLongClickListener((parent, view, position, id) -> {
             DatabaseHelper.MessageRow m = adapter.getItem(position);
             new AlertDialog.Builder(this)
-                    .setTitle("Forensic message locator")
+                    .setTitle("Metadata pesan sumber")
                     .setMessage(
                             "message_id: " + m.messageId + "\n" +
                             "segment_id: " + m.segmentId + "\n" +

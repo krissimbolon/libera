@@ -69,13 +69,25 @@ def classify_acquisition(p3):
 def main() -> None:
     p = argparse.ArgumentParser(description="Build P10 runtime report.")
     p.add_argument("--output", default="runtime/working/P10/run_report.md")
+    p.add_argument("--acquisition-manifest")
+    p.add_argument("--artifact-manifest", default="runtime/working/P4/artifact_manifest.json")
+    p.add_argument("--evaluation", default="runtime/working/P9/evaluation.json")
+    p.add_argument("--p8-lock", default="runtime/working/P8/p8_lock_manifest.json")
+    p.add_argument("--config", default="configs/p6_p7_config.json")
     args = p.parse_args()
 
-    p3, p3_path = load_acquisition_manifest()
-    p4 = load_json(Path("runtime/working/P4/artifact_manifest.json"))
+    if args.acquisition_manifest:
+        p3_path = Path(args.acquisition_manifest)
+        p3 = load_json(p3_path)
+    else:
+        p3, p3_path = load_acquisition_manifest()
+    p4 = load_json(Path(args.artifact_manifest))
     p5 = load_json(Path("runtime/working/P5/baseline_manifest.json"))
-    p9 = load_json(Path("runtime/working/P9/evaluation.json"))
-    p8_lock = load_json(Path("runtime/working/P8/p8_lock_manifest.json"))
+    p9 = load_json(Path(args.evaluation))
+    p8_lock = load_json(Path(args.p8_lock))
+    config = load_json(Path(args.config)) or {}
+    ai = config.get("ollama", {})
+    prompt = config.get("prompt", {})
 
     acquisition_label, acquisition_disclosure = classify_acquisition(p3)
     acquisition_hash = first_value(
@@ -128,8 +140,10 @@ def main() -> None:
         "## P6–P8 AI/RAG",
         "",
         "- Final embedding: bge-m3 via local Ollama",
-        "- Local LLM: qwen2.5:1.5b",
-        "- Seed: 42; temperature: 0.1; prompt: v2-forensic-grounded",
+        f"- Local LLM: {ai.get('model', 'NOT_RUN')}",
+        f"- Seed: {ai.get('seed')}; temperature: {ai.get('temperature')}; prompt: {prompt.get('prompt_version')}",
+        f"- Context: {ai.get('num_ctx')}; max output tokens: {ai.get('num_predict', 'unspecified')}",
+        f"- Repeat penalty: {ai.get('repeat_penalty', 'default')}; repeat window: {ai.get('repeat_last_n', 'default')}",
         "- Conditions: A LLM-only; B LLM+RAG; C LLM+RAG+structured forensic output",
         "- AI case input: P4 ART evidence only; source reconstruction and ground truth prohibited",
         f"- P8 lock: {val(p8_lock, 'status')}",
@@ -139,11 +153,50 @@ def main() -> None:
         f"- Status: {val(p9, 'status')}",
     ]
 
+    if p9 and p9.get("integrity"):
+        lines += ["", "### Execution / citation precheck", "",
+                  "| Condition | Outputs | Errors | Invalid ART citations | Valid structured JSON |",
+                  "|---|---:|---:|---:|---:|"]
+        for condition, metrics in p9["integrity"]["conditions"].items():
+            lines.append(
+                f"| {condition} | {metrics['outputs']} | {metrics['errors']} | "
+                f"{metrics['invalid_citation_count']} | {metrics['structured_json_valid']} |"
+            )
+        lines += ["", "These checks do not establish factual correctness or final accuracy.", ""]
+
+    if p9 and p9.get("citation_validation"):
+        validation = p9["citation_validation"]
+        lines += ["", "### Citation quarantine (original answers preserved)", "",
+                  f"- Policy: {validation['policy_version']}",
+                  f"- Status: {validation['status']}",
+                  "- Only exact P4 IDs supplied to the condition can enter evidence scoring.",
+                  "- Invalid references remain errors; they are never repaired, padded, or treated as evidence.",
+                  "- Missing positive evidence remains eligible for FN; quarantine does not shrink the labeled universe.",
+                  "", "| Condition | Reference occurrences | Accepted | Quarantined | Identifier validity |",
+                  "|---|---:|---:|---:|---:|"]
+        for condition, summary in validation["conditions"].items():
+            rate = summary["reference_validity_rate"]
+            rate_text = f"{rate:.2%}" if rate is not None else "N/A (no citations)"
+            lines.append(f"| {condition} | {summary['attempted_reference_occurrences']} | "
+                         f"{summary['accepted_reference_occurrences']} | "
+                         f"{summary['quarantined_reference_occurrences']} | {rate_text} |")
+        lines += ["", "Identifier validity is not semantic citation accuracy. Report these errors alongside any ground-truth metrics.", ""]
+
     if p9 and p9.get("ground_truth_evaluation"):
         gt = p9["ground_truth_evaluation"]
+        lines += ["", "### Message-level metrics for the stated reference target", "",
+                  "| Set | TP | FP | FN | TN | Precision | Recall | F1 | Predictions outside labeled universe |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
+        for name, metric in gt["metrics"].items():
+            lines.append(f"| {name} | {metric['TP']} | {metric['FP']} | {metric['FN']} | {metric['TN']} | "
+                         f"{metric['precision']} | {metric['recall']} | {metric['f1']} | "
+                         f"{metric.get('predictions_outside_labeled_universe', 0)} |")
+        lines += ["", "Zero-denominator metrics use the documented 0.0 convention; absent predictions do not establish accuracy.", ""]
         lines += [
+            f"- Evaluation protocol: **{gt['protocol']}**",
+            f"- Reference target: {gt.get('reference_target', 'message_level_key_evidence')}",
             f"- Labeled acquired messages: **{gt['labeled_rows']}**",
-            f"- Key-evidence positives: **{gt['key_evidence_rows']}**",
+            f"- Reference positives: **{gt['key_evidence_rows']}**",
             f"- Unlabeled rows excluded: **{gt.get('ground_truth_rows_unlabeled', 0)}**",
             f"- Ground-truth rows not acquired: **{gt.get('ground_truth_rows_unacquired', 0)}**",
             "",
@@ -151,6 +204,9 @@ def main() -> None:
             "",
             json.dumps(gt["metrics"], indent=2),
         ]
+        if gt.get("independent_ground_truth") is False:
+            lines[2:2] = ["**POST-HOC PROVENANCE PROXY REPORT — original human ground truth was lost. This is not a restored blind evaluation or semantic key-evidence accuracy report.**", ""]
+            lines += ["", "**Reconstructed proxy evaluation only. Original human labels were lost. These metrics measure source-anchor versus designed-distractor discrimination on a partial universe, not forensic key-evidence accuracy. Independent semantic ground truth remains unavailable.**", ""]
     else:
         lines += [
             "- Final TP/FP/TN/FN requires evaluator-only private ground truth after P8 is cryptographically locked.",
