@@ -153,3 +153,30 @@ consistency and traced to their recorded hashes**, but cannot be recomputed from
 | `runtime/chatsim_snapshots/` | workbench acquisitions | no |
 | `demo_evidence/ACQ-SIM-001_*/` | `acquire_chatsim.ps1` | no |
 | `apps/libera-chatsim/app/src/main/assets/{messages_seed.jsonl,seed_manifest.json,source_anomalies.jsonl}` | `tools/build_demo_seed.py` | no (built in CI) |
+
+
+## 8. Final fresh-run evaluation hardening
+
+For the final report run, the real local path additionally captures and hash-locks
+`runtime/working/P8/run_environment.json`, `runtime/working/P8/runtime_metrics.json`,
+and the BGE-M3 retrieval index. The environment manifest records repository HEAD,
+registered-input hashes, Python/OS information, Android emulator metadata, Ollama
+version, and the exact generation/embedding model digests without recording a username,
+hostname, arbitrary environment variables, or private evidence contents.
+
+After the P8 lock exists, `src.evaluation.postlock_review` creates two evaluator packets:
+
+- `retrieval_relevance_review.csv`: 10 registered tasks × top-8 ranked chunks (80 judgments in the final design), graded 0/1/2. Completed packets can report Precision@8, MRR@8 and nDCG@8. Recall@8 remains explicitly unavailable unless a complete independently judged relevant set exists.
+- `claim_supportedness_review.csv`: B/C outputs, only citations that survived strict identifier/supplied-evidence validation, and the underlying cited ART text. Human review separates semantic support from identifier validity using SUPPORTED/PARTIAL/UNSUPPORTED/CONTRADICTED/ABSTAINED plus four 0–2 task-component dimensions.
+
+Complete the packets manually, then run:
+
+```powershell
+py -3 -m src.evaluation.score_postlock_review
+```
+
+The resulting `runtime/working/P9/human_review_metrics.json` is a post-lock human
+evaluation layer. It must not be conflated with private message-level ground truth.
+The design intentionally keeps four questions separate: whether retrieval was relevant,
+whether a citation identifier was valid, whether cited evidence semantically supported
+the generated claim, and whether the answer completed the registered investigative task.
