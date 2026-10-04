@@ -26,6 +26,7 @@ from typing import Any
 
 from src.ai_rag import chunker, retriever
 from src.ai_rag.ollama_runner import get_model_digest, get_ollama_version, run_once
+from src.ai_rag.validate_output import validate_structured_finding, ValidationError
 from src.baseline import examiner_packet, p5_lock, traditional_baseline
 from src.forensics.extract_artifacts import run as extract_artifacts
 
@@ -346,9 +347,27 @@ def assist(case_id: str, root: str | None = None, top_k: int | None = None) -> d
         )
         if rec.get("error") or not rec.get("output"):
             raise PlatformError(f"AI assistance failed for {task['task_id']}: {rec.get('error')}")
+        try:
+            structured = json.loads(rec["output"])
+            validate_structured_finding(structured)
+        except (json.JSONDecodeError, ValidationError) as exc:
+            raise PlatformError(f"Structured AI output invalid for {task['task_id']}: {exc}") from exc
+        supplied = set(rec.get("retrieved_evidence_ids") or [])
+        cited = structured.get("relevant_evidence") or []
+        invalid = [
+            ref for ref in cited
+            if not isinstance(ref, str)
+            or not re.fullmatch(r"ART-[0-9]{6}", ref)
+            or ref not in supplied
+        ]
+        if invalid:
+            raise PlatformError(
+                f"AI assistance cited evidence not supplied to {task['task_id']}: {invalid}"
+            )
         outputs.append({
             "task_id":task["task_id"], "question":task["question"],
             "retrieval_trace":retrieval["query_log"], "assistance":rec,
+            "verified_citations":cited,
         })
     output_path = ai / "assistance.json"
     output_path.write_text(json.dumps(outputs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
