@@ -454,7 +454,6 @@ def build_report(case_id: str, root: str | None = None) -> Path:
     case = require_case(case_id, root)
     manifest = _json(case / "case.json")
     p4_path = case / "runtime/working/P4/artifact_manifest.json"
-    problems.extend(verify_audit(case))
     ai_lock_path = case / "runtime/working/AI/assistance_lock.json"
     p4 = _json(p4_path) if p4_path.exists() else {}
     ai_lock = _json(ai_lock_path) if ai_lock_path.exists() else {}
@@ -501,6 +500,7 @@ def verify(case_id: str, root: str | None = None) -> dict:
     if p5.exists():
         try: p5_lock.verify(p5)
         except Exception as exc: problems.append(f"P5 lock: {exc}")
+    problems.extend(verify_audit(case))
     ai_lock_path = case / "runtime/working/AI/assistance_lock.json"
     if ai_lock_path.exists():
         lock = _json(ai_lock_path)
