@@ -53,7 +53,7 @@ def main() -> None:
     p5 = None
     p5_path = Path(args.p5_timing)
     if p5_path.is_file():
-        p5 = json.loads(p5_path.read_text(encoding="utf-8"))
+        p5 = json.loads(p5_path.read_text(encoding="utf-8-sig"))
 
     result = {
         "schema_version": "libera-runtime-metrics-v1",
