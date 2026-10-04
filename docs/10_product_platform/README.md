@@ -93,7 +93,7 @@ AI output is always an **investigative aid**, never evidence. Outputs, retrieval
 
 ## Archive
 
-`libera case archive` verifies custody/lock hashes before creating an archive. Raw master/working evidence is excluded by default. Use `--include-evidence` only when policy and storage rules permit it.
+`libera case archive` verifies custody/lock hashes before creating an archive. The default archive is **report-only** and excludes message-level artifacts, chunks, AI text, and raw evidence. Use `--include-derived` for a sensitive derived-evidence archive; use `--include-derived --include-evidence` only when policy and storage rules permit a full case package.
 
 ## Current production limitations
 
