@@ -3,7 +3,7 @@
 This directory contains metadata and safe-to-publish reference indexes, not restricted evidence.
 
 ## Files
-- `source_registry.csv`: canonical source catalog used in the research design.
+- `source_registry.csv`: canonical source catalog (research sources, standards, models and legacy datasets). Columns added at archival (2026-10-05): `author_or_publisher`, `version_or_date`, `license_or_redistribution`, `sha256`, `project_role`, `cited_in`. "not recorded" means the repository holds no access date; "NOT VERIFIED" means redistribution terms were not established and no reuse right is claimed.
 - `resource_intake_log.csv`: operational intake log for files collected by the team.
 
 ## Handling rule
