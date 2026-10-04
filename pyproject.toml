@@ -1,39 +1,44 @@
-# Libera is run from a repository checkout (`python -m src.<module>` from the
-# repo root). This file declares metadata, optional dependency groups and test
-# configuration; it intentionally installs no importable package.
 [build-system]
 requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "libera-forensics-research"
+name = "libera-forensics"
 version = "1.0.0"
-description = "Archived research software: forensic-first local AI assistance over controlled synthetic conversational evidence (Libera)."
+description = "Local-first forensic case platform with traceable AI assistance and a reproducible research benchmark."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [{ name = "Christian Simbolon" }, { name = "Libera project contributors" }]
-keywords = ["digital forensics", "mobile forensics", "RAG", "local LLM", "provenance", "research software"]
+keywords = ["digital forensics", "DFIR", "RAG", "local LLM", "provenance", "case management"]
 classifiers = [
-    "Development Status :: 7 - Inactive",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Security",
 ]
-# P3–P10 pipeline code uses only the Python standard library.
 dependencies = []
 
 [project.optional-dependencies]
 test = ["pytest>=7.4"]
-# Local Streamlit forensic workbench (mirrored in requirements-demo.txt).
 workbench = ["streamlit>=1.38", "pandas>=2.2"]
-# Regenerating UAS chapter IV figures / .docx (scripts/generate_uas_*.py, scripts/build_uas_ch4_docx.py).
 report = ["pillow>=10", "python-docx>=1.1"]
+
+[project.scripts]
+libera = "libera_platform.cli:main"
 
 [project.urls]
 Repository = "https://github.com/krissimbolon/libera"
 
-[tool.setuptools]
-packages = []
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["libera_platform*", "src*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"libera_platform.resources" = ["*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
