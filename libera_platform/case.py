@@ -77,6 +77,58 @@ def _write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def _audit_hash(record: dict) -> str:
+    payload = json.dumps(record, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def append_audit(case: Path, event: str, details: dict | None = None) -> dict:
+    path = case / "logs/audit.jsonl"
+    rows = []
+    if path.is_file():
+        rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    previous = rows[-1]["record_hash"] if rows else None
+    record = {
+        "sequence": len(rows) + 1,
+        "timestamp_utc": utc_now(),
+        "event": event,
+        "details": details or {},
+        "previous_hash": previous,
+    }
+    record["record_hash"] = _audit_hash(record)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
+    return record
+
+
+def verify_audit(case: Path) -> list[str]:
+    path = case / "logs/audit.jsonl"
+    if not path.is_file():
+        return ["audit log missing"]
+    problems = []
+    previous = None
+    for expected_sequence, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError:
+            problems.append(f"audit sequence {expected_sequence}: invalid JSON")
+            continue
+        observed_hash = record.get("record_hash")
+        unhashed = dict(record)
+        unhashed.pop("record_hash", None)
+        if record.get("sequence") != expected_sequence:
+            problems.append(f"audit sequence mismatch at {expected_sequence}")
+        if record.get("previous_hash") != previous:
+            problems.append(f"audit previous_hash mismatch at {expected_sequence}")
+        if observed_hash != _audit_hash(unhashed):
+            problems.append(f"audit record_hash mismatch at {expected_sequence}")
+        previous = observed_hash
+    return problems
+
+
 def create_case(case_id: str, title: str = "", root: str | None = None, tasks: Path | None = None) -> Path:
     case = case_path(case_id, root)
     if case.exists():
@@ -106,6 +158,7 @@ def create_case(case_id: str, title: str = "", root: str | None = None, tasks: P
         },
     }
     _write_json(case / "case.json", manifest)
+    append_audit(case, "CASE_CREATED", {"case_id": case_id, "libera_version": VERSION})
     return case
 
 
@@ -117,6 +170,7 @@ def set_tasks(case_id: str, source: Path, root: str | None = None) -> Path:
         raise PlatformError("Task file must contain a non-empty 'tasks' list.")
     target = case / "configs/investigation_tasks.json"
     target.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    append_audit(case, "TASKS_UPDATED", {"task_file_sha256": sha256(target)})
     return target
 
 
@@ -193,6 +247,7 @@ def import_sqlite(
     manifest["evidence"] = acquisition
     manifest["stages"]["import"] = {"status": "PASS", "at_utc": utc_now()}
     _write_json(case / "case.json", manifest)
+    append_audit(case, "EVIDENCE_IMPORTED", {"trusted_sha256": trusted_sha256, "adapter": acquisition["adapter"]})
     return acquisition
 
 
@@ -399,6 +454,7 @@ def build_report(case_id: str, root: str | None = None) -> Path:
     case = require_case(case_id, root)
     manifest = _json(case / "case.json")
     p4_path = case / "runtime/working/P4/artifact_manifest.json"
+    problems.extend(verify_audit(case))
     ai_lock_path = case / "runtime/working/AI/assistance_lock.json"
     p4 = _json(p4_path) if p4_path.exists() else {}
     ai_lock = _json(ai_lock_path) if ai_lock_path.exists() else {}
@@ -493,6 +549,7 @@ def archive(
         "runtime/working/P5/p5_lock_manifest.json",
         "runtime/working/AI/assistance_lock.json",
         "exports/operational_report.md",
+        "logs/audit.jsonl",
     }
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as zf:
         for p in case.rglob("*"):
@@ -537,3 +594,4 @@ def _stage(case: Path, name: str, status_value: str) -> None:
     manifest = _json(case / "case.json")
     manifest.setdefault("stages", {})[name] = {"status":status_value, "at_utc":utc_now()}
     _write_json(case / "case.json", manifest)
+    append_audit(case, "STAGE_UPDATED", {"stage": name, "status": status_value})
