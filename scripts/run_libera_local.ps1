@@ -81,18 +81,27 @@ if ($DryRun) {
     & ollama pull qwen2.5:1.5b
     if ($LASTEXITCODE -ne 0) { throw "ollama pull qwen2.5:1.5b failed" }
 
+    Write-Host "[RUN] Capturing report-safe local environment before AI execution..."
+    Run-Python tools/capture_run_environment.py --output runtime/working/P8/run_environment.json --overwrite
+
     Write-Host "[P6] Building BGE-M3 local index..."
     Run-Python -m src.ai_rag.retriever build --chunks runtime/working/P6/chunks.jsonl --namespace case_evidence --index runtime/working/P6/index.json --embedding-method ollama --embedding-model bge-m3
 
     Write-Host "[P7-P8] Running locked A/B/C local experiment..."
     Run-Python -m src.ai_rag.run_experiment --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --model qwen2.5:1.5b --prompt-version v6-forensic-grounded-repeat-control --temperature 0.1 --seed 42 --num-ctx 8192 --top-k 8 --num-predict 2048 --timeout 600 --retries 2
+
+    Write-Host "[RUN] Summarizing retrieval/LLM runtime metrics..."
+    Run-Python -m src.evaluation.runtime_metrics --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/runtime_metrics.json
 }
 
 if ($DryRun) {
     Write-Warning "DryRun uses stub responses: no final P8 lock is created and GT access remains closed."
 } else {
-    Write-Host "[P8] Locking real experiment outputs before separate ground-truth evaluation..."
-    Run-Python tools/lock_p8_outputs.py --artifacts $ArtifactsPath --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json
+    Write-Host "[P8] Locking real experiment outputs, retrieval index and runtime provenance before evaluation..."
+    Run-Python tools/lock_p8_outputs.py --artifacts $ArtifactsPath --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --extra-file runtime/working/P6/index.json --extra-file runtime/working/P8/run_environment.json --extra-file runtime/working/P8/runtime_metrics.json --output runtime/working/P8/p8_lock_manifest.json
+
+    Write-Host "[P9] Building post-lock human review packets (no ground truth)..."
+    Run-Python -m src.evaluation.postlock_review --artifacts $ArtifactsPath --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --index runtime/working/P6/index.json --lock-manifest runtime/working/P8/p8_lock_manifest.json --output-dir runtime/working/P9/human_review
 }
 
 Write-Host "[P9] Running no-ground-truth integrity precheck only..."
@@ -106,6 +115,10 @@ Write-Host "=== COMPLETE ==="
 Write-Host "P10 report: runtime/working/P10/run_report.md"
 Write-Host "P8 output: runtime/working/P8/experiment_output.json"
 Write-Host "P9 metrics: runtime/working/P9/evaluation.json"
+if (-not $DryRun) {
+    Write-Host "Human review packets: runtime/working/P9/human_review/"
+    Write-Host "After manual review: py -3 -m src.evaluation.score_postlock_review"
+}
 if ($UsedDryAcquisition) {
     Write-Warning "P3 used ACQ-DRY-001 software dry-run. Do not present it as an Android/WhatsApp acquisition."
 }
