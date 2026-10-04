@@ -18,8 +18,8 @@
 
 | Branch | Tip SHA | Unique commits vs original `main` | Disposition | Integrated |
 |---|---|---:|---|---|
-| `libera-presentasi` (PR #16) | `a9cfe3c44865c79b0d33eb47f230dcfae6f63604` | 12 | UNIQUE_AND_USEFUL — actual v6 run docs, citation quarantine, forensic-first workbench, tests, ChatSim UI ID strings | merge `7b45ac3` (semantic conflict resolution, see commit message) |
-| `Bab4` | `0e7a92d519b587887911ed6ddc61d61f026fbaef` | 2 (incl. shared `6eae65b`) | UNIQUE_AND_USEFUL — chapter IV results, sandbox evidence, fail-closed ChatSim extractor | merge `4e82520`; Word lock files then removed (`b113ec0`) |
+| `libera-presentasi` (PR #16) | `a9cfe3c44865c79b0d33eb47f230dcfae6f63604` | 12 | UNIQUE_AND_USEFUL — actual v6 run docs, citation quarantine, forensic-first workbench, tests, ChatSim UI ID strings | merge `0a7256d` (semantic conflict resolution, see commit message) |
+| `Bab4` | `0e7a92d519b587887911ed6ddc61d61f026fbaef` | 2 (incl. shared `6eae65b`) | UNIQUE_AND_USEFUL — chapter IV results, sandbox evidence, fail-closed ChatSim extractor | merge `01314ee`; Word lock files then removed (`8e7bff1`) |
 | `p5-finalize-daffa` | `3ccadd065a532a1ed0d8dff5b6190a95637bf699` | 0 | FULLY_CONTAINED (PR #15) | already in `main` |
 | `uas-ksi-final` | `c0d9a1c1b1d8f33776a9754a7fac705b77b98a83` | 0 | FULLY_CONTAINED (PR #22) | already in `main` |
 | `uas-ksi-w1-forensics` | `db3607f4f1e8f2c62b00ce4f3aa919abfe33d4f7` | 0 | FULLY_CONTAINED (PR #17) | already in `main` |
@@ -36,7 +36,7 @@ deleting the branch pointers loses no commit. Pull-request heads remain availabl
 | Item | State before | Final disposition |
 |---|---|---|
 | PR #1–#12, #14, #15, #17–#22 | merged (heads reachable from original `main`) | none needed |
-| PR #16 `libera-presentasi` (draft) | open | integrated by merge `7b45ac3`; GitHub marks it merged once `main` containing `a9cfe3c` is pushed, otherwise close with a link to that merge |
+| PR #16 `libera-presentasi` (draft) | open | integrated by merge `0a7256d`; GitHub marks it merged once `main` containing `a9cfe3c` is pushed, otherwise close with a link to that merge |
 | Issue #13 "final completion tracker" | open, gates unchecked | close with final disposition: gates 1–2 completed on 2026-09-25 with `qwen2.5:1.5b` (not the 7B listed); gates 3–4 not completed as planned (private GT lost; provenance-proxy P9 instead); gate 5 superseded by the archived README/final state |
 
 ## File dispositions (development residue)

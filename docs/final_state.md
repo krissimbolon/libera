@@ -110,7 +110,7 @@ Two lines of final work diverged from commit `acb52e4` (PR #15):
    Its `docs/08_uas/00_MASTER_STATE.md` records "real P8/P9 BLOCKED" because the coordinator environment
    had no Ollama and no access to the team's local runtime.
 
-Both are merged on the final `main` (merge commits `7b45ac3`, `4e82520`). Where they overlapped:
+Both are merged on the final `main` (merge commits `0a7256d`, `01314ee`). Where they overlapped:
 
 - **Results:** the 25 September local run (§2–3) is canonical. The UAS "BLOCKED" gates are historical
   statements about what that environment could verify; they are not contradicted findings.
