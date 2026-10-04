@@ -66,17 +66,19 @@ mis. `ollama pull qwen2.5`):
 python -m src.ai_rag.ollama_runner --model qwen2.5 --query "Ringkas insiden yang terjadi" --prompt-version v1
 ```
 
-Semua run (dry-run maupun asli) dicatat ke `configs/run_log.jsonl`.
+Semua run (dry-run maupun asli) dicatat ke file JSONL `--run-log` (default `runtime/working/P8/run_log.jsonl`; generated at runtime, tidak di-track Git).
 
 ## 6. Jalankan eksperimen A/B/C
 
 ```bash
-python -m src.ai_rag.run_experiment --dry-run --index configs/toy_index.json --questions configs/toy_questions.json
+python -m src.ai_rag.run_experiment --dry-run --index configs/toy_index.json --questions configs/investigation_tasks.json --output runtime/working/toy/experiment_output.json --run-log runtime/working/toy/run_log.jsonl
 ```
 
 Ganti `--dry-run` dengan `--model <nama_model>` untuk run sungguhan.
-Jika `configs/toy_questions.json` belum ada, `run_experiment.py` akan
-membuat contoh minimal secara otomatis (lihat kode).
+*Koreksi arsip (2026-10-05):* versi awal dokumen ini menyebut `configs/toy_questions.json`
+akan dibuat otomatis; `run_experiment.py` tidak melakukannya. Gunakan
+`configs/investigation_tasks.json` atau file JSON pertanyaan sendiri
+(`{"questions": ["..."]}`). `run_experiment.py` menolak menimpa output yang sudah ada.
 
 ## 7. Jalankan test
 
@@ -87,6 +89,8 @@ python -m pytest tests/test_p6_p7_pipeline.py -v
 Semua test berjalan tanpa Ollama (memakai mode dry-run / data toy).
 
 ## 8. Struktur output yang dihasilkan pipeline (runtime, JANGAN di-commit)
+
+File di bawah ini *generated at runtime* oleh langkah 2–6 dan sengaja tidak di-track Git.
 
 ```
 configs/toy_chunks.jsonl      # hasil chunking (boleh commit sebagai contoh)
