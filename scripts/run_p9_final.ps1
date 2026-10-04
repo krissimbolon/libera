@@ -84,7 +84,7 @@ if (-not $AcquisitionManifestPath) {
 }
 Write-Host "[4/4] Building P10 for the selected locked run..."
 Run-Python -m src.report.build_report --evaluation $EvaluationPath `
-    --p8-lock $LockManifest --config $ConfigPath --output $ReportPath `
+    --p8-lock $LockManifest --config $ConfigPath --experiment $ExperimentPath --output $ReportPath `
     --artifact-manifest $ArtifactManifestPath --acquisition-manifest $AcquisitionManifestPath
 
 Write-Host ""

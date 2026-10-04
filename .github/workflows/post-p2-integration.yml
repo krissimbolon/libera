@@ -1,4 +1,10 @@
-name: Post-P2 Integration Audit
+name: LIBERA CI
+
+# Repository gate for the archived LIBERA research implementation.
+# CI exercises the public, reproducible part of the pipeline with a deterministic
+# hashing-embedding fallback and NO model calls. A CI run is never a study
+# result: the P8 lock step is expected to REFUSE these smoke outputs, which is
+# asserted below (fail-closed behaviour is a feature, not a CI failure).
 
 on:
   push:
@@ -23,13 +29,33 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
+
+      - name: Frozen P2 corpus integrity gate
+        shell: python
+        run: |
+          import csv, hashlib, json
+          from pathlib import Path
+          corpus = Path("data/adaptasi_indonesia/corpus_whatsapp_10000.csv")
+          manifest = json.loads(Path("data/adaptasi_indonesia/corpus_freeze_manifest.json").read_text(encoding="utf-8"))
+          digest = hashlib.sha256(corpus.read_bytes()).hexdigest()
+          with corpus.open(encoding="utf-8", newline="") as handle:
+              rows = sum(1 for _ in csv.DictReader(handle))
+          expected = "a014a02ebad298a33267da8631f3a2d1906a537ae558c1849622904c225467e6"
+          assert digest == expected == manifest["corpus_sha256"], digest
+          assert rows == manifest["final_row_count"] == 10000, rows
+          assert manifest["status"] == "FROZEN_FOR_FORENSIC_SIMULATION"
+          print(f"PASS corpus sha256={digest} rows={rows}")
+
       - name: Install test dependency
         run: python -m pip install --upgrade pip pytest
-      - name: Unit and integration tests
-        run: python -m pytest tests/test_p6_p7_pipeline.py tests/test_post_p2_pipeline.py -v
-      - name: Full CLI dry-run
+
+      - name: Automated test suite
+        run: python -m pytest -v
+
+      - name: CLI smoke (dry-run, hashing fallback, no model calls)
         shell: bash
         run: |
+          set -euo pipefail
           python -m src.forensics.acquisition_simulator
           python -m src.forensics.extract_artifacts
           python -m src.baseline.traditional_baseline
@@ -37,15 +63,36 @@ jobs:
           python -m src.ai_rag.leakage_check --input runtime/working/P6/chunks.jsonl
           python -m src.ai_rag.retriever build --chunks runtime/working/P6/chunks.jsonl --namespace case_evidence --index runtime/working/P6/index.json --embedding-method hashing
           python -m src.ai_rag.run_experiment --dry-run --index runtime/working/P6/index.json --questions configs/investigation_tasks.json --output runtime/working/P8/experiment_output.json --top-k 8
-          python tools/lock_p8_outputs.py --artifacts runtime/working/P4/artifacts.csv --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json
+
+      - name: Fail-closed check — P8 lock must refuse smoke outputs
+        shell: bash
+        run: |
+          set -uo pipefail
+          if python tools/lock_p8_outputs.py --artifacts runtime/working/P4/artifacts.csv --baseline runtime/working/P5/baseline_findings.json --experiment runtime/working/P8/experiment_output.json --run-log runtime/working/P8/run_log.jsonl --output runtime/working/P8/p8_lock_manifest.json > lock.log 2>&1; then
+            cat lock.log
+            echo "::error::P8 lock accepted a dry-run/hashing-fallback output"
+            exit 1
+          fi
+          cat lock.log
+          grep -q "Refuse P8 lock" lock.log
+          test ! -e runtime/working/P8/p8_lock_manifest.json
+          echo "PASS: smoke output was refused as a study lock"
+
+      - name: P9 precheck and P10 report (unlocked, no ground truth)
+        shell: bash
+        run: |
+          set -euo pipefail
           python -m src.evaluation.evaluate_experiment --artifacts runtime/working/P4/artifacts.csv --experiment runtime/working/P8/experiment_output.json --baseline runtime/working/P5/baseline_findings.json
           python -m src.report.build_report
+          grep -q "DRY-RUN (no model call" runtime/working/P10/run_report.md
+          grep -q "P8 lock: NOT_RUN" runtime/working/P10/run_report.md
+
       - name: Verify expected outputs
         shell: bash
         run: |
           test -s runtime/working/P4/artifacts.csv
           test -s runtime/working/P5/baseline_findings.json
           test -s runtime/working/P8/experiment_output.json
-          test -s runtime/working/P8/p8_lock_manifest.json
           test -s runtime/working/P9/evaluation.json
           test -s runtime/working/P10/run_report.md
+          git diff --exit-code -- data/adaptasi_indonesia/corpus_whatsapp_10000.csv

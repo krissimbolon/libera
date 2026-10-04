@@ -74,6 +74,8 @@ def main() -> None:
     p.add_argument("--evaluation", default="runtime/working/P9/evaluation.json")
     p.add_argument("--p8-lock", default="runtime/working/P8/p8_lock_manifest.json")
     p.add_argument("--config", default="configs/p6_p7_config.json")
+    p.add_argument("--experiment", default="runtime/working/P8/experiment_output.json",
+                   help="P8 output used only to state what was actually executed")
     args = p.parse_args()
 
     if args.acquisition_manifest:
@@ -88,6 +90,19 @@ def main() -> None:
     config = load_json(Path(args.config)) or {}
     ai = config.get("ollama", {})
     prompt = config.get("prompt", {})
+    registered_embedding = config.get("embedding", {})
+    experiment = load_json(Path(args.experiment)) if args.experiment else None
+    executed_embedding = "NOT_RUN"
+    execution_mode = "NOT_RUN"
+    if isinstance(experiment, list) and experiment:
+        trace = experiment[0].get("retrieval_trace") or {}
+        if trace:
+            executed_embedding = f"{trace.get('embedding_method')}:{trace.get('embedding_model')}"
+        dry = {bool((row.get(c) or {}).get("dry_run")) for row in experiment
+               for c in ("A_llm_only", "B_llm_rag", "C_llm_rag_structured")}
+        execution_mode = ("DRY-RUN (no model call; smoke test, not a study result)"
+                          if dry == {True} else "REAL LOCAL MODEL CALLS" if dry == {False}
+                          else "MIXED (invalid for study use)")
 
     acquisition_label, acquisition_disclosure = classify_acquisition(p3)
     acquisition_hash = first_value(
@@ -139,7 +154,9 @@ def main() -> None:
         "",
         "## P6–P8 AI/RAG",
         "",
-        "- Final embedding: bge-m3 via local Ollama",
+        f"- Registered embedding: {registered_embedding.get('final_model', 'bge-m3')} via {registered_embedding.get('final_method', 'ollama')}",
+        f"- Executed embedding (this run): {executed_embedding}",
+        f"- Execution mode (this run): {execution_mode}",
         f"- Local LLM: {ai.get('model', 'NOT_RUN')}",
         f"- Seed: {ai.get('seed')}; temperature: {ai.get('temperature')}; prompt: {prompt.get('prompt_version')}",
         f"- Context: {ai.get('num_ctx')}; max output tokens: {ai.get('num_predict', 'unspecified')}",

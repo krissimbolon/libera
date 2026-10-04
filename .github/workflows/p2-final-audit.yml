@@ -1,14 +1,15 @@
-name: P2 Final Audit
+name: P2 Corpus Audit (historical, manual)
+
+# Historical P2 dataset-construction audit. The corpus is frozen
+# (FROZEN_FOR_FORENSIC_SIMULATION); this workflow only re-runs the read-only
+# audit scripts on demand. The original trigger branch p2-10k-work no longer
+# exists. Reports are uploaded as artifacts and never committed back.
 
 on:
-  push:
-    branches:
-      - p2-10k-work
-    paths:
-      - 'data/adaptasi_indonesia/**'
-      - 'src/audit_*.py'
-      - '.github/workflows/p2-final-audit.yml'
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   audit:
