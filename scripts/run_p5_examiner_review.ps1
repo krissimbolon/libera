@@ -73,6 +73,17 @@ for ($i = 0; $i -lt $rows.Count; $i++) {
 $timer.Stop()
 $rows | Export-Csv $packetPath -NoTypeInformation -Encoding UTF8
 
+$elapsed = [Math]::Round($timer.Elapsed.TotalSeconds, 3)
+$timing = [ordered]@{
+    schema_version = "libera-p5-human-qc-timing-v1"
+    completed_at_utc = (Get-Date).ToUniversalTime().ToString("o")
+    reviewed_rows = $rows.Count
+    elapsed_seconds = $elapsed
+    timebox_seconds = 300
+    within_timebox = ($elapsed -le 300)
+}
+$timing | ConvertTo-Json -Depth 4 | Set-Content "runtime\working\P5\p5_examiner_timing.json" -Encoding UTF8
+
 Write-Host ""
 Write-Host ("Human QC elapsed: {0:N1} seconds" -f $timer.Elapsed.TotalSeconds)
 if ($timer.Elapsed.TotalSeconds -gt 300) {
@@ -88,5 +99,6 @@ Write-Host ""
 Write-Host "P5 READY FOR AI" -ForegroundColor Green
 Write-Host "  baseline : runtime\working\P5\baseline_findings.json"
 Write-Host "  QC packet: runtime\working\P5\p5_examiner_packet.csv"
+Write-Host "  timing   : runtime\working\P5\p5_examiner_timing.json"
 Write-Host "  P5 lock  : runtime\working\P5\p5_lock_manifest.json"
 Write-Host "Do not edit P5 outputs after this point. Continue P6-P8 only after verifying this lock."
